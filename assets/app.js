@@ -288,6 +288,65 @@ $("#feed-filters")?.addEventListener("click", (e) => {
   $(".feed-pane")?.scrollTo({ top: 0 });
 });
 
+/* ================= TOKEN METER ================= */
+
+const compact = (n) =>
+  new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(n);
+
+async function loadTokenMeter() {
+  const section = $("#token-meter");
+  const cellsEl = $("#meter-cells");
+  if (!section || !cellsEl) return;
+  try {
+    const res = await fetch("data/stats.json");
+    if (!res.ok) throw new Error(res.status);
+    const { claudeTokens = 0, tokenBudget = 0 } = await res.json();
+
+    const CELLS = 30;
+    const pct = tokenBudget ? Math.min(1, claudeTokens / tokenBudget) : 0;
+    const lit = Math.round(pct * CELLS);
+    cellsEl.innerHTML = "<i></i>".repeat(CELLS);
+    $("#token-sub").textContent = tokenBudget
+      ? `/ ${compact(tokenBudget)} · APPROX.`
+      : "· APPROX.";
+
+    const animate = () => {
+      // cells light up left to right
+      $$("i", cellsEl).forEach((cell, idx) => {
+        if (idx < lit) setTimeout(() => cell.classList.add("on"), 40 * idx);
+      });
+      // number counts up alongside
+      const valueEl = $("#token-value");
+      const dur = 40 * lit + 300;
+      const t0 = performance.now();
+      const tick = (t) => {
+        const p = Math.min(1, (t - t0) / dur);
+        valueEl.textContent = `≈ ${compact(claudeTokens * (1 - Math.pow(1 - p, 3)))}`;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      $$("i", cellsEl).forEach((cell, idx) => idx < lit && cell.classList.add("on"));
+      $("#token-value").textContent = `≈ ${compact(claudeTokens)}`;
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          animate();
+          io.disconnect();
+        }
+      },
+      { threshold: 0.4 }
+    );
+    io.observe(section);
+  } catch {
+    section.hidden = true;
+  }
+}
+
 /* ---------- reveal on scroll ---------- */
 
 function setupReveals() {
@@ -309,4 +368,5 @@ function setupReveals() {
 
 loadProjects();
 loadFeed();
+loadTokenMeter();
 setupReveals();

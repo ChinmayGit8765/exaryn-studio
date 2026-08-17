@@ -1,0 +1,5 @@
+{
+  "claudeTokens": 800000000,
+  "tokenBudget": 1000000000,
+  "_note": "Approximate lifetime Claude tokens burned across studio projects, vs a self-imposed budget for the bar fill. Both hand-updated — bump claudeTokens whenever it feels right."
+}
