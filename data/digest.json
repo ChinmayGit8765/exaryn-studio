@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-17T11:53:56.035303+00:00",
+ "generated_at": "2026-08-17T12:13:51.732765+00:00",
  "items": [
   {
    "title": "Anthropic explains how Claude’s invisible text watermarks will work",
@@ -55,47 +55,7 @@
    "source": "Hacker News",
    "kind": "news",
    "published": "2026-08-17T05:21:34+00:00",
-   "summary": "Article URL: https://linear.axler.net/ Comments URL: https://news.ycombinator.com/item?id=49326816 Points: 101 # Comments: 42"
-  },
-  {
-   "title": "L-FNO: Lorentzian Fourier Neural Operator for Stochastic Event Dynamics",
-   "url": "https://arxiv.org/abs/2608.13562",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-08-17T04:00:00+00:00",
-   "summary": "arXiv:2608.13562v1 Announce Type: new Abstract: Modern operational systems face uncertainty even in routine conditions, where rare, bursty, and self-exciting events emerge from both exogenous covariates and endogenous…"
-  },
-  {
-   "title": "Don't Claim Benchmark-Oriented Optimization Improves General Coding Capability -- Diverse Evaluation Is Required",
-   "url": "https://arxiv.org/abs/2608.13566",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-08-17T04:00:00+00:00",
-   "summary": "arXiv:2608.13566v1 Announce Type: new Abstract: Post-training papers, model cards, and blog posts often treat scores on a small set of coding benchmarks (e.g., SWE-bench and LiveCodeBench) as evidence of broad coding…"
-  },
-  {
-   "title": "Robust XGBoosting for Regression",
-   "url": "https://arxiv.org/abs/2608.13590",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-08-17T04:00:00+00:00",
-   "summary": "arXiv:2608.13590v1 Announce Type: new Abstract: XGBoost is a very popular and powerful method for prediction. It iteratively fits simple decision trees to the residuals of the previous step. An efficient and scalable…"
-  },
-  {
-   "title": "Training-Free Knowledge Transfer Across Model Scales through Activation-Guided Pruning",
-   "url": "https://arxiv.org/abs/2608.13596",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-08-17T04:00:00+00:00",
-   "summary": "arXiv:2608.13596v1 Announce Type: new Abstract: Heterogeneous model fusion seeks to combine models that differ in tasks, initializations, architectures, or scales. We study an underexplored cross-scale setting:…"
-  },
-  {
-   "title": "Hard Cases, Bad Labels: Testing Error Exposure and Error Location in Uncertainty Sampling Under Bounded Label Noise",
-   "url": "https://arxiv.org/abs/2608.13601",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-08-17T04:00:00+00:00",
-   "summary": "arXiv:2608.13601v1 Announce Type: new Abstract: Active learning can reduce labeling cost by selecting informative examples, but the most uncertain examples may also be the hardest to label correctly. This study tests…"
+   "summary": "Article URL: https://linear.axler.net/ Comments URL: https://news.ycombinator.com/item?id=49326816 Points: 109 # Comments: 45"
   },
   {
    "title": "Inducing Reward-Free Judging Rubrics that Reduce Over-Crediting in Agent Evaluation",
@@ -138,6 +98,46 @@
    "summary": "arXiv:2608.13574v1 Announce Type: new Abstract: LLM agents increasingly operate as execution systems that invoke tools, modify local state, use persistent memory, and interact with external protocols. These capabilities…"
   },
   {
+   "title": "L-FNO: Lorentzian Fourier Neural Operator for Stochastic Event Dynamics",
+   "url": "https://arxiv.org/abs/2608.13562",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-08-17T04:00:00+00:00",
+   "summary": "arXiv:2608.13562v1 Announce Type: new Abstract: Modern operational systems face uncertainty even in routine conditions, where rare, bursty, and self-exciting events emerge from both exogenous covariates and endogenous…"
+  },
+  {
+   "title": "Don't Claim Benchmark-Oriented Optimization Improves General Coding Capability -- Diverse Evaluation Is Required",
+   "url": "https://arxiv.org/abs/2608.13566",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-08-17T04:00:00+00:00",
+   "summary": "arXiv:2608.13566v1 Announce Type: new Abstract: Post-training papers, model cards, and blog posts often treat scores on a small set of coding benchmarks (e.g., SWE-bench and LiveCodeBench) as evidence of broad coding…"
+  },
+  {
+   "title": "Robust XGBoosting for Regression",
+   "url": "https://arxiv.org/abs/2608.13590",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-08-17T04:00:00+00:00",
+   "summary": "arXiv:2608.13590v1 Announce Type: new Abstract: XGBoost is a very popular and powerful method for prediction. It iteratively fits simple decision trees to the residuals of the previous step. An efficient and scalable…"
+  },
+  {
+   "title": "Training-Free Knowledge Transfer Across Model Scales through Activation-Guided Pruning",
+   "url": "https://arxiv.org/abs/2608.13596",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-08-17T04:00:00+00:00",
+   "summary": "arXiv:2608.13596v1 Announce Type: new Abstract: Heterogeneous model fusion seeks to combine models that differ in tasks, initializations, architectures, or scales. We study an underexplored cross-scale setting:…"
+  },
+  {
+   "title": "Hard Cases, Bad Labels: Testing Error Exposure and Error Location in Uncertainty Sampling Under Bounded Label Noise",
+   "url": "https://arxiv.org/abs/2608.13601",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-08-17T04:00:00+00:00",
+   "summary": "arXiv:2608.13601v1 Announce Type: new Abstract: Active learning can reduce labeling cost by selecting informative examples, but the most uncertain examples may also be the hardest to label correctly. This study tests…"
+  },
+  {
    "title": "New policy ideas for the Intelligence Age",
    "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
    "source": "OpenAI",
@@ -151,7 +151,15 @@
    "source": "Hacker News",
    "kind": "news",
    "published": "2026-08-17T03:08:47+00:00",
-   "summary": "Article URL: https://www.gimp.org/news/2026/08/16/dev-update-august-2026/ Comments URL: https://news.ycombinator.com/item?id=49326156 Points: 202 # Comments: 148"
+   "summary": "Article URL: https://www.gimp.org/news/2026/08/16/dev-update-august-2026/ Comments URL: https://news.ycombinator.com/item?id=49326156 Points: 206 # Comments: 156"
+  },
+  {
+   "title": "On A.I. regulation and messaging",
+   "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-08-17T01:59:56+00:00",
+   "summary": "https://xcancel.com/DarioAmodei/status/2088758816376807762 Comments URL: https://news.ycombinator.com/item?id=49325789 Points: 110 # Comments: 194"
   },
   {
    "title": "Markdown SVG upgrades",
@@ -167,7 +175,7 @@
    "source": "Hacker News",
    "kind": "news",
    "published": "2026-08-16T23:59:10+00:00",
-   "summary": "Article URL: https://reticulum.network/ Comments URL: https://news.ycombinator.com/item?id=49325061 Points: 142 # Comments: 44"
+   "summary": "Article URL: https://reticulum.network/ Comments URL: https://news.ycombinator.com/item?id=49325061 Points: 148 # Comments: 46"
   },
   {
    "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
@@ -175,7 +183,7 @@
    "source": "Hacker News",
    "kind": "news",
    "published": "2026-08-16T23:45:09+00:00",
-   "summary": "Article URL: https://simonwillison.net/2026/Aug/16/qwen-38-27b/ Comments URL: https://news.ycombinator.com/item?id=49324985 Points: 549 # Comments: 261"
+   "summary": "Article URL: https://simonwillison.net/2026/Aug/16/qwen-38-27b/ Comments URL: https://news.ycombinator.com/item?id=49324985 Points: 566 # Comments: 267"
   },
   {
    "title": "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing",
@@ -183,15 +191,7 @@
    "source": "Hacker News",
    "kind": "news",
    "published": "2026-08-16T21:53:43+00:00",
-   "summary": "Article URL: https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing Comments URL: https://news.ycombinator.com/item?id=49324087 Points: 345 # Comments: 332"
-  },
-  {
-   "title": "Young People Hate AI CEOs So Passionately That It's Almost Hard to Believe",
-   "url": "https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-08-16T21:34:06+00:00",
-   "summary": "Article URL: https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll Comments URL: https://news.ycombinator.com/item?id=49323932 Points: 120 # Comments: 128"
+   "summary": "Article URL: https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing Comments URL: https://news.ycombinator.com/item?id=49324087 Points: 371 # Comments: 354"
   },
   {
    "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
@@ -210,14 +210,6 @@
    "summary": "On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision."
   },
   {
-   "title": "Red queen hypothesis – A new way forward for self-improving AI",
-   "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-08-16T20:01:13+00:00",
-   "summary": "Article URL: https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai Comments URL: https://news.ycombinator.com/item?id=49323136 Points: 78 # Comments: 21"
-  },
-  {
    "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
    "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
    "source": "TechCrunch AI",
@@ -232,38 +224,6 @@
    "kind": "news",
    "published": "2026-08-16T15:05:36+00:00",
    "summary": "I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fundamentally a crisis…"
-  },
-  {
-   "title": "The AI Credit Resale Economy",
-   "url": "https://vectoral.com/blog/who-are-the-token-brokers",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-08-16T14:44:55+00:00",
-   "summary": "Article URL: https://vectoral.com/blog/who-are-the-token-brokers Comments URL: https://news.ycombinator.com/item?id=49320611 Points: 301 # Comments: 121"
-  },
-  {
-   "title": "Show HN: A public AI whose memory is shared across all users",
-   "url": "https://wildstatic.com/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-08-16T13:21:45+00:00",
-   "summary": "Article URL: https://wildstatic.com/ Comments URL: https://news.ycombinator.com/item?id=49319814 Points: 74 # Comments: 66"
-  },
-  {
-   "title": "AI Coding Without the Vibes",
-   "url": "https://peterbloem.nl/blog/craft-coding",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-08-16T10:31:36+00:00",
-   "summary": "Article URL: https://peterbloem.nl/blog/craft-coding Comments URL: https://news.ycombinator.com/item?id=49318735 Points: 88 # Comments: 53"
-  },
-  {
-   "title": "What happens when an LLM never sees material beyond fifth grade?",
-   "url": "https://littlelearner-ll.github.io/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-08-16T07:37:53+00:00",
-   "summary": "Article URL: https://littlelearner-ll.github.io/ Comments URL: https://news.ycombinator.com/item?id=49317760 Points: 240 # Comments: 207"
   },
   {
    "title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
