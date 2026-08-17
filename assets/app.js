@@ -300,14 +300,14 @@ async function loadTokenMeter() {
   try {
     const res = await fetch("data/stats.json");
     if (!res.ok) throw new Error(res.status);
-    const { claudeTokens = 0, tokenBudget = 0 } = await res.json();
+    const { claudeTokens = 0, tokenBudget = 0, goalNote = "" } = await res.json();
 
     const CELLS = 30;
     const pct = tokenBudget ? Math.min(1, claudeTokens / tokenBudget) : 0;
-    const lit = Math.round(pct * CELLS);
+    const lit = Math.max(1, Math.round(pct * CELLS));
     cellsEl.innerHTML = "<i></i>".repeat(CELLS);
     $("#token-sub").textContent = tokenBudget
-      ? `/ ${compact(tokenBudget)} · APPROX.`
+      ? `/ ${compact(tokenBudget)} ${goalNote} · APPROX.`.replace("  ", " ")
       : "· APPROX.";
 
     const animate = () => {

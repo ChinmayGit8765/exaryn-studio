@@ -1,5 +1,6 @@
 {
-  "claudeTokens": 800000000,
-  "tokenBudget": 1000000000,
-  "_note": "Approximate lifetime Claude tokens burned across studio projects, vs a self-imposed budget for the bar fill. Both hand-updated — bump claudeTokens whenever it feels right."
+  "claudeTokens": 1400000000,
+  "tokenBudget": 10000000000,
+  "goalNote": "GOAL BY EOY",
+  "_note": "Approximate lifetime Claude tokens burned across studio projects, vs the end-of-year goal that sets the bar fill. Both hand-updated — bump claudeTokens whenever it feels right."
 }
