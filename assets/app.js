@@ -144,6 +144,31 @@ async function loadProjects() {
 
 let feedItems = [];
 let activeKind = "all";
+let liveDigest = null;
+
+function fmtDay(iso) {
+  return new Date(iso + "T00:00:00Z")
+    .toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })
+    .toUpperCase();
+}
+
+function applyDigest(digest, dayLabel) {
+  feedItems = digest.items || [];
+  const updated = $("#feed-updated");
+  if (updated) {
+    updated.textContent = dayLabel
+      ? `VIEWING ${dayLabel}`
+      : digest.generated_at
+        ? `UPDATED ${ago(digest.generated_at).toUpperCase()}`
+        : "UPDATED —";
+  }
+  const counts = { all: feedItems.length, news: 0, video: 0, paper: 0 };
+  for (const i of feedItems) counts[i.kind] = (counts[i.kind] || 0) + 1;
+  $$("[data-count]").forEach((el) => {
+    el.textContent = counts[el.dataset.count] ?? 0;
+  });
+  renderFeed();
+}
 
 function feedItemHTML(i) {
   const tag = i.kind === "video" ? "▶ " : i.kind === "paper" ? "§ " : "";
@@ -185,6 +210,7 @@ async function loadFeed() {
     const res = await fetch("data/digest.json");
     if (!res.ok) throw new Error(res.status);
     const digest = await res.json();
+    liveDigest = digest;
     feedItems = digest.items || [];
 
     const updated = $("#feed-updated");
@@ -193,12 +219,8 @@ async function loadFeed() {
     }
 
     if (list) {
-      const counts = { all: feedItems.length, news: 0, video: 0, paper: 0 };
-      for (const i of feedItems) counts[i.kind] = (counts[i.kind] || 0) + 1;
-      $$("[data-count]").forEach((el) => {
-        el.textContent = counts[el.dataset.count] ?? 0;
-      });
-      renderFeed();
+      applyDigest(digest, null);
+      loadArchive();
     }
     if (snippet) {
       snippet.innerHTML = feedItems
@@ -213,6 +235,49 @@ async function loadFeed() {
     snippet && (snippet.innerHTML = msg);
   }
 }
+
+async function loadArchive() {
+  const wrap = $("#feed-archive");
+  const listEl = $("#archive-list");
+  if (!wrap || !listEl) return;
+  try {
+    const res = await fetch("data/archive/index.json");
+    if (!res.ok) return;
+    const { days = [] } = await res.json();
+    if (!days.length) return;
+    wrap.hidden = false;
+    listEl.innerHTML =
+      `<button class="day-btn mono active" data-day="latest">LATEST</button>` +
+      days
+        .map(
+          (d) =>
+            `<button class="day-btn mono" data-day="${esc(d.date)}">${fmtDay(d.date)}
+             <span class="count">${d.count}</span></button>`
+        )
+        .join("");
+  } catch {
+    /* no archive yet — section stays hidden */
+  }
+}
+
+$("#archive-list")?.addEventListener("click", async (e) => {
+  const btn = e.target.closest(".day-btn");
+  if (!btn) return;
+  $$(".day-btn").forEach((b) => b.classList.toggle("active", b === btn));
+  const day = btn.dataset.day;
+  try {
+    if (day === "latest") {
+      applyDigest(liveDigest || { items: [] }, null);
+    } else {
+      const res = await fetch(`data/archive/${day}.json`);
+      if (!res.ok) throw new Error(res.status);
+      applyDigest(await res.json(), fmtDay(day));
+    }
+    $(".feed-pane")?.scrollTo({ top: 0 });
+  } catch {
+    $("#feed-list").innerHTML = `<li class="feed-empty mono">COULDN'T LOAD THAT DAY.</li>`;
+  }
+});
 
 $("#feed-filters")?.addEventListener("click", (e) => {
   const btn = e.target.closest(".filter-btn");

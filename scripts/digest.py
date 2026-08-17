@@ -20,6 +20,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "digest.json"
+ARCHIVE_DIR = OUT.parent / "archive"
 
 # (source label, feed url, kind)  — kind: news | video | paper
 FEEDS = [
@@ -153,6 +154,38 @@ def pull(source: str, url: str, kind: str) -> list[dict]:
         return []
 
 
+def melbourne_today() -> str:
+    """Date label for the archive snapshot, in studio-local time."""
+    try:
+        from zoneinfo import ZoneInfo
+
+        return datetime.now(ZoneInfo("Australia/Melbourne")).date().isoformat()
+    except Exception:  # Windows without tzdata — fixed AEST offset is close enough
+        return (datetime.now(timezone.utc) + timedelta(hours=10)).date().isoformat()
+
+
+def archive(payload: str) -> None:
+    """Snapshot today's digest and rebuild the archive index."""
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    snap = ARCHIVE_DIR / f"{melbourne_today()}.json"
+    snap.write_text(payload, encoding="utf-8")
+
+    days = []
+    for f in sorted(ARCHIVE_DIR.glob("*.json"), reverse=True):
+        if f.name == "index.json":
+            continue
+        try:
+            days.append(
+                {"date": f.stem, "count": len(json.loads(f.read_text(encoding="utf-8"))["items"])}
+            )
+        except Exception:
+            continue
+    (ARCHIVE_DIR / "index.json").write_text(
+        json.dumps({"days": days}, indent=1), encoding="utf-8"
+    )
+    print(f"archived → {snap.name} ({len(days)} days in archive)")
+
+
 def main() -> None:
     print(f"building digest from {len(FEEDS)} feeds…")
     all_items: list[dict] = []
@@ -177,8 +210,10 @@ def main() -> None:
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(digest, indent=1, ensure_ascii=False), encoding="utf-8")
+    payload = json.dumps(digest, indent=1, ensure_ascii=False)
+    OUT.write_text(payload, encoding="utf-8")
     print(f"wrote {len(digest['items'])} items → {OUT}")
+    archive(payload)
 
     if not digest["items"]:
         sys.exit(1)  # all feeds failing means something is broken — fail loudly

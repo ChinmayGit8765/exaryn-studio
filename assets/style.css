@@ -452,6 +452,10 @@ em {
   position: sticky;
   top: 57px;
   align-self: start;
+  max-height: calc(100vh - 57px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
 }
 
 .feed-blurb {
@@ -494,6 +498,49 @@ em {
 .filter-btn.active::before { content: "● "; color: var(--accent); }
 
 .filter-btn .count { color: var(--muted); }
+
+.feed-archive { margin-top: 32px; }
+
+.archive-head {
+  color: var(--muted);
+  padding-bottom: 8px;
+}
+
+.archive-head::before { content: "✳ "; color: var(--accent); }
+
+.archive-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--line);
+  max-height: 230px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.day-btn {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 4px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+
+.day-btn:hover { color: var(--ink); padding-left: 10px; }
+
+.day-btn.active { color: var(--ink); }
+
+.day-btn.active::before { content: "● "; color: var(--accent); }
+
+.day-btn .count { color: var(--muted); }
 
 .feed-pane {
   max-height: calc(100vh - 57px);
