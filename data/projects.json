@@ -68,25 +68,5 @@
     "status": "in development",
     "year": "2026",
     "links": { "repo": "https://github.com/Monash-FIT3170/2026W2-GarticHands" }
-  },
-  {
-    "name": "LKG Sector Digest",
-    "slug": "lkg-sector-digest",
-    "tagline": "Agent that scans public sources and drafts a schema-gated daily sector digest.",
-    "description": "Anthropic's market-researcher agent template adapted into a daily digest for Australian bedding & furniture retail. Core idea: agents nominate, schemas gate, humans promote — a flag only exists if all seven fields validate, enforced mechanically at render time.",
-    "tech": ["Claude Code", "Python", "JSON Schema"],
-    "status": "shipped",
-    "year": "2026",
-    "links": {}
-  },
-  {
-    "name": "Lights Out",
-    "slug": "lights-out",
-    "tagline": "First-person Unity horror prototype, built with a team over a jam weekend.",
-    "description": "Unity 6 game jam entry: first-person controller with sprint and crouch, camera rig, new Input System, early level prefabs and audio. Merged through feature branches and PRs like adults.",
-    "tech": ["Unity 6", "C#"],
-    "status": "prototype",
-    "year": "2026",
-    "links": { "repo": "https://github.com/Dyurr/Lights-Out" }
   }
 ]
