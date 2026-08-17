@@ -7,9 +7,11 @@ itself every morning on a GitHub Actions cron.
 Pure static site. No framework, no build step, no dependencies.
 
 ```
-index.html              the whole site (one page)
+index.html              landing — hero + work snippet + feed teaser
+projects.html           full project index (click a row to expand details)
+feed.html               full daily signal with filters
 assets/style.css        design system — paper, hairlines, serif, one accent
-assets/app.js           renders projects + digest from JSON
+assets/app.js           renders projects + digest from JSON (page-aware)
 data/projects.json      the portfolio — edit this to add/update projects
 data/digest.json        generated daily, don't edit by hand
 scripts/digest.py       feed puller (stdlib-only Python)

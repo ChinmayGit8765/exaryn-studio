@@ -4,9 +4,10 @@
     "slug": "prompterjack",
     "tagline": "Design multi-agent AI systems visually, export runnable code for five frameworks.",
     "description": "Full-stack prompt-engineering and agent-design platform: pick an architecture style, design multi-agent systems visually, export production-ready code for Strands, OpenAI Agents, LangChain/LangGraph and LlamaIndex. Codebase-aware prompt generation, maintainability scoring, marketplace, real-time co-editing.",
-    "tech": ["React", "TypeScript", "Cloudflare Workers", "Neon Postgres"],
+    "tech": ["React", "TypeScript", "Cloudflare Workers", "Hono", "Neon Postgres", "Stripe", "Turborepo"],
     "status": "shipped",
     "year": "2026",
+    "devTime": "~6 months",
     "links": { "live": "https://prompterjack.com", "repo": "https://github.com/ChinmayGit8765/promptifyme" }
   },
   {
@@ -14,9 +15,10 @@
     "slug": "alfred",
     "tagline": "Local-first multi-agent life-optimization system. Your hardware, your data, no cloud.",
     "description": "Decomposes goals into weekly plans a Conductor reconciles against real capacity, delivers over Discord/Telegram, watches what happens, and adapts. Every tool call passes an allowlist, capability tier and audit trail. 529 offline tests in CI.",
-    "tech": ["Python", "Ollama", "SQLite", "MCP"],
+    "tech": ["Python", "Pydantic", "Ollama", "SQLite", "discord.py", "MCP"],
     "status": "in development",
     "year": "2026",
+    "devTime": "~3 months, ongoing",
     "links": { "repo": "https://github.com/ChinmayGit8765/AlfredOpenSource" }
   },
   {
@@ -24,9 +26,10 @@
     "slug": "quantflex",
     "tagline": "Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff.",
     "description": "Prices vanillas, American options, exotics and baskets under GBM, Merton and Heston with hand-rolled solvers and Greeks from a custom autodiff tape. Every price validated against analytic anchors; every Greek triple-verified against JAX.",
-    "tech": ["Python", "NumPy", "JAX", "FastAPI", "Vue 3"],
+    "tech": ["Python", "NumPy", "JAX", "FastAPI", "Vue 3", "Cloud Run"],
     "status": "in development",
     "year": "2026",
+    "devTime": "~2 months, ongoing",
     "links": { "repo": "https://github.com/ChinmayGit8765/thequantflex" }
   },
   {
@@ -34,9 +37,10 @@
     "slug": "quantlens",
     "tagline": "AI-narrated portfolio dashboard — Sharpe, VaR, Monte Carlo, factors, RAG Q&A.",
     "description": "Quant-finance Spring Boot backend plus Vue 3 SPA: P&L, risk metrics, Fama-French factors and cointegration pairs, narrated by Spring AI with RAG over pgvector. One docker compose up, no API keys, three seeded demo personas.",
-    "tech": ["Java", "Spring Boot", "pgvector", "Vue 3"],
+    "tech": ["Java", "Spring Boot", "Spring AI", "pgvector", "Vue 3", "Docker"],
     "status": "shipped",
     "year": "2026",
+    "devTime": "~3 weeks",
     "links": { "repo": "https://github.com/ChinmayGit8765/FinancialServicesDashboard" }
   },
   {
@@ -44,9 +48,10 @@
     "slug": "volforecast",
     "tagline": "MLOps platform forecasting short-horizon volatility, benchmarked honestly vs GARCH.",
     "description": "Realized-volatility forecasting for crypto and equities wrapped in a full MLOps lifecycle: leak-free walk-forward evaluation against GARCH/EWMA/HAR baselines, champion/challenger registry in MLflow, QLIKE-gated promotion, drift detection and automated retraining.",
-    "tech": ["Python", "LightGBM", "MLflow", "Prefect"],
+    "tech": ["Python", "LightGBM", "MLflow", "Prefect", "FastAPI", "Streamlit"],
     "status": "shipped",
     "year": "2026",
+    "devTime": "~1 month",
     "links": { "repo": "https://github.com/ChinmayGit8765/VolatilityModel" }
   },
   {
@@ -54,9 +59,10 @@
     "slug": "smartc",
     "tagline": "CLI wizard that writes compile-verified smart contracts plus deploy docs.",
     "description": "Single-binary Node CLI: short wizard in, one contract file plus a DEPLOY.md with copy-pasteable commands out. ERC-20/721/1155 and Solana SPL templates, every Solidity contract compiled in-process before it touches disk. Optional local-only AI patching via Ollama.",
-    "tech": ["TypeScript", "Solidity", "Anchor", "Ollama"],
+    "tech": ["TypeScript", "Node.js", "Solidity", "OpenZeppelin", "Anchor", "Ollama"],
     "status": "shipped",
     "year": "2026",
+    "devTime": "~2 weeks",
     "links": { "live": "https://www.npmjs.com/package/smartc", "repo": "https://github.com/ChinmayGit8765/SmartContract-Creator" }
   },
   {
@@ -64,9 +70,10 @@
     "slug": "gartic-hands",
     "tagline": "Multiplayer draw-and-guess where you draw with webcam hand tracking.",
     "description": "Gartic Phone, except players draw with their hands in front of a webcam via MediaPipe hand tracking. Server-held round state machine drives the full party loop. Built with a Monash FIT3170 team.",
-    "tech": ["React", "MediaPipe", "Socket.IO", "Docker"],
+    "tech": ["React", "TypeScript", "MediaPipe", "Express", "Socket.IO", "Docker"],
     "status": "in development",
     "year": "2026",
+    "devTime": "semester project",
     "links": { "repo": "https://github.com/Monash-FIT3170/2026W2-GarticHands" }
   }
 ]

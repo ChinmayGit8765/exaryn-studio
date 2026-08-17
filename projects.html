@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Exaryn</title>
+  <meta name="description" content="Everything Exaryn has shipped, broken, or honestly abandoned. Click a project for the full story, stack, and dev time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="projects.html" class="current">Work</a>
+      <a href="feed.html">Feed</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main id="top">
+
+    <section class="page-hero">
+      <p class="kicker mono">THE INDEX</p>
+      <h1 class="section-title xl">All the <em>work</em></h1>
+      <p class="page-lede">
+        Everything the studio has shipped, broken, or honestly abandoned.
+        Click a row for the full story — <span class="hint">the ↗ on the right goes straight to the project.</span>
+      </p>
+    </section>
+
+    <section class="work">
+      <ol class="project-index" id="project-index">
+        <li class="index-empty mono">LOADING INDEX…</li>
+      </ol>
+    </section>
+
+    <footer class="site-footer" id="about">
+      <p class="kicker mono inverse">ABOUT / CONTACT</p>
+      <h2 class="footer-title">Run by Chinmay Purohit.<br /><em>One person, many rabbit holes.</em></h2>
+      <div class="footer-links mono">
+        <a href="mailto:chinmaypurohit1010@gmail.com">EMAIL ↗</a>
+        <a href="https://github.com/ChinmayGit8765" target="_blank" rel="noopener">GITHUB ↗</a>
+      </div>
+      <div class="footer-base mono">
+        <span>© <span id="year">2026</span> EXARYN</span>
+        <span><a href="index.html">← BACK HOME</a></span>
+        <a href="#top">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

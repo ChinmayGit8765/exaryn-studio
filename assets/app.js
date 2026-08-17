@@ -1,4 +1,6 @@
 /* Exaryn — renders the project index and the daily signal feed.
+   Page-aware: index.html gets compact snippets, projects.html gets the
+   expandable index, feed.html gets the full filterable feed.
    All data lives in /data as JSON; no framework, no build step. */
 
 const $ = (sel, el = document) => el.querySelector(sel);
@@ -37,84 +39,148 @@ function ago(iso) {
   return new Date(iso).toLocaleDateString("en-AU", { day: "numeric", month: "short" });
 }
 
-/* ---------- projects ---------- */
+/* ================= PROJECTS ================= */
+
+async function fetchProjects() {
+  const res = await fetch("data/projects.json");
+  if (!res.ok) throw new Error(res.status);
+  return res.json();
+}
+
+function projectRow(p, { expandable }) {
+  const visit = p.links?.live || p.links?.repo || "";
+  const status =
+    p.status && p.status !== "shipped" ? ` <span class="status">[${esc(p.status)}]</span>` : "";
+
+  const head = `
+    <span class="num" aria-hidden="true"></span>
+    <span class="project-name">${esc(p.name)}</span>
+    <span class="project-desc">${esc(p.tagline || "")}</span>
+    <span class="project-tech">${esc((p.tech || []).slice(0, 3).join(" / "))}${status}</span>
+    ${
+      visit
+        ? `<a class="visit mono" href="${esc(visit)}" target="_blank" rel="noopener"
+             aria-label="Visit ${esc(p.name)}" title="Open ${esc(p.name)}">VISIT&nbsp;↗</a>`
+        : `<span class="visit mono empty">—</span>`
+    }
+    ${expandable ? `<span class="toggle" aria-hidden="true">+</span>` : ""}`;
+
+  if (!expandable) {
+    return `<li class="project-row compact">${
+      visit
+        ? `<a class="row-head" href="${esc(visit)}" target="_blank" rel="noopener">${head}</a>`
+        : `<div class="row-head">${head}</div>`
+    }</li>`;
+  }
+
+  const linkBtns = [
+    p.links?.live ? `<a href="${esc(p.links.live)}" target="_blank" rel="noopener">LIVE SITE ↗</a>` : "",
+    p.links?.repo ? `<a href="${esc(p.links.repo)}" target="_blank" rel="noopener">SOURCE ↗</a>` : "",
+  ].join("");
+
+  return `
+  <li class="project-row">
+    <div class="row-head" role="button" tabindex="0" aria-expanded="false">${head}</div>
+    <div class="row-detail">
+      <div class="detail-inner">
+        <p class="detail-desc">${esc(p.description || p.tagline || "")}</p>
+        <dl class="detail-meta">
+          <div><dt class="mono">STACK</dt><dd>${esc((p.tech || []).join(", "))}</dd></div>
+          <div><dt class="mono">DEV TIME</dt><dd>${esc(p.devTime || "—")}</dd></div>
+          <div><dt class="mono">STATUS</dt><dd>${esc(p.status || "—")} · ${esc(p.year || "")}</dd></div>
+        </dl>
+        ${linkBtns ? `<div class="detail-links mono">${linkBtns}</div>` : ""}
+      </div>
+    </div>
+  </li>`;
+}
+
+function wireAccordion(list) {
+  list.addEventListener("click", (e) => {
+    if (e.target.closest("a")) return; // VISIT / detail links navigate, never toggle
+    const head = e.target.closest(".row-head");
+    if (!head) return;
+    const row = head.closest(".project-row");
+    const open = row.classList.toggle("open");
+    head.setAttribute("aria-expanded", open);
+  });
+  list.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const head = e.target.closest('.row-head[role="button"]');
+    if (!head) return;
+    e.preventDefault();
+    head.click();
+  });
+}
 
 async function loadProjects() {
-  const list = $("#project-index");
+  const full = $("#project-index");
+  const snippet = $("#project-snippet");
+  if (!full && !snippet) return;
   try {
-    const res = await fetch("data/projects.json");
-    if (!res.ok) throw new Error(res.status);
-    const projects = await res.json();
+    const projects = await fetchProjects();
+    const count = String(projects.length).padStart(2, "0");
+    $("#project-count") && ($("#project-count").textContent = count);
+    $("#snippet-total") && ($("#snippet-total").textContent = count);
 
-    $("#project-count").textContent = String(projects.length).padStart(2, "0");
-    list.innerHTML = projects
-      .map((p) => {
-        const href = p.links?.live || p.links?.repo || "";
-        const tech = (p.tech || []).slice(0, 4).join(" / ");
-        const status =
-          p.status && p.status !== "shipped"
-            ? `<span class="status">[${esc(p.status)}]</span>`
-            : "";
-        const inner = `
-          <span class="num" aria-hidden="true"></span>
-          <span class="project-name">${esc(p.name)}</span>
-          <span class="project-desc">${esc(p.tagline || p.description || "")}</span>
-          <span class="project-tech">${esc(tech)}<span class="year"> · ${esc(p.year || "")}</span>${status}</span>
-          <span class="arrow" aria-hidden="true">${href ? "↗" : "·"}</span>`;
-        return `<li class="project-row">${
-          href
-            ? `<a href="${esc(href)}" target="_blank" rel="noopener">${inner}</a>`
-            : `<div class="row-inner">${inner}</div>`
-        }</li>`;
-      })
-      .join("");
+    if (full) {
+      full.innerHTML = projects.map((p) => projectRow(p, { expandable: true })).join("");
+      wireAccordion(full);
+    }
+    if (snippet) {
+      snippet.innerHTML = projects
+        .slice(0, 4)
+        .map((p) => projectRow(p, { expandable: false }))
+        .join("");
+    }
   } catch (err) {
-    list.innerHTML = `<li class="index-empty mono">COULDN'T LOAD PROJECTS — IF YOU'RE ON file://, RUN A LOCAL SERVER: python -m http.server</li>`;
+    const msg = `<li class="index-empty mono">COULDN'T LOAD PROJECTS — IF YOU'RE ON file://, RUN: npm run dev</li>`;
+    full && (full.innerHTML = msg);
+    snippet && (snippet.innerHTML = msg);
   }
 }
 
-/* ---------- daily signal feed ---------- */
+/* ================= DAILY SIGNAL ================= */
 
 let feedItems = [];
 let activeKind = "all";
 
+function feedItemHTML(i) {
+  const tag = i.kind === "video" ? "▶ " : i.kind === "paper" ? "§ " : "";
+  const thumb =
+    i.kind === "video" && i.thumbnail
+      ? `<img class="thumb" src="${esc(i.thumbnail)}" alt="" loading="lazy" />`
+      : "";
+  const summary = i.summary ? `<span class="summary">${esc(i.summary)}</span>` : "";
+  return `
+  <li class="feed-item">
+    <a href="${esc(i.url)}" target="_blank" rel="noopener">
+      <span class="when">${ago(i.published)}</span>
+      <span class="body">
+        <span class="src"><span class="tag">${tag}</span>${esc(i.source)}</span>
+        <span class="title">${esc(i.title)}</span>
+        ${summary}
+        ${thumb}
+      </span>
+      <span class="go" aria-hidden="true">↗</span>
+    </a>
+  </li>`;
+}
+
 function renderFeed() {
   const list = $("#feed-list");
+  if (!list) return;
   const items =
     activeKind === "all" ? feedItems : feedItems.filter((i) => i.kind === activeKind);
-
-  if (!items.length) {
-    list.innerHTML = `<li class="feed-empty mono">NOTHING HERE YET.</li>`;
-    return;
-  }
-
-  list.innerHTML = items
-    .map((i) => {
-      const tag = i.kind === "video" ? "▶ " : i.kind === "paper" ? "§ " : "";
-      const thumb =
-        i.kind === "video" && i.thumbnail
-          ? `<img class="thumb" src="${esc(i.thumbnail)}" alt="" loading="lazy" />`
-          : "";
-      const summary = i.summary ? `<span class="summary">${esc(i.summary)}</span>` : "";
-      return `
-      <li class="feed-item">
-        <a href="${esc(i.url)}" target="_blank" rel="noopener">
-          <span class="when">${ago(i.published)}</span>
-          <span class="body">
-            <span class="src"><span class="tag">${tag}</span>${esc(i.source)}</span>
-            <span class="title">${esc(i.title)}</span>
-            ${summary}
-            ${thumb}
-          </span>
-          <span class="go" aria-hidden="true">↗</span>
-        </a>
-      </li>`;
-    })
-    .join("");
+  list.innerHTML = items.length
+    ? items.map(feedItemHTML).join("")
+    : `<li class="feed-empty mono">NOTHING HERE YET.</li>`;
 }
 
 async function loadFeed() {
   const list = $("#feed-list");
+  const snippet = $("#feed-snippet");
+  if (!list && !snippet) return;
   try {
     const res = await fetch("data/digest.json");
     if (!res.ok) throw new Error(res.status);
@@ -122,19 +188,29 @@ async function loadFeed() {
     feedItems = digest.items || [];
 
     const updated = $("#feed-updated");
-    if (digest.generated_at) {
+    if (updated && digest.generated_at) {
       updated.textContent = `UPDATED ${ago(digest.generated_at).toUpperCase()}`;
     }
 
-    const counts = { all: feedItems.length, news: 0, video: 0, paper: 0 };
-    for (const i of feedItems) counts[i.kind] = (counts[i.kind] || 0) + 1;
-    $$("[data-count]").forEach((el) => {
-      el.textContent = counts[el.dataset.count] ?? 0;
-    });
-
-    renderFeed();
+    if (list) {
+      const counts = { all: feedItems.length, news: 0, video: 0, paper: 0 };
+      for (const i of feedItems) counts[i.kind] = (counts[i.kind] || 0) + 1;
+      $$("[data-count]").forEach((el) => {
+        el.textContent = counts[el.dataset.count] ?? 0;
+      });
+      renderFeed();
+    }
+    if (snippet) {
+      snippet.innerHTML = feedItems
+        .filter((i) => i.kind !== "paper") // landing teaser: headlines + videos only
+        .slice(0, 6)
+        .map(feedItemHTML)
+        .join("");
+    }
   } catch (err) {
-    list.innerHTML = `<li class="feed-empty mono">NO SIGNAL — RUN scripts/digest.py TO GENERATE data/digest.json, OR WAIT FOR THE MORNING CRON.</li>`;
+    const msg = `<li class="feed-empty mono">NO SIGNAL — RUN npm run digest, OR WAIT FOR THE MORNING CRON.</li>`;
+    list && (list.innerHTML = msg);
+    snippet && (snippet.innerHTML = msg);
   }
 }
 
@@ -150,7 +226,7 @@ $("#feed-filters")?.addEventListener("click", (e) => {
 /* ---------- reveal on scroll ---------- */
 
 function setupReveals() {
-  const targets = $$(".hero-title, .hero-lede, .hero-meta, .section-head, .feed-rail, .footer-title");
+  const targets = $$(".hero-title, .hero-lede, .hero-meta, .section-head, .page-hero, .feed-rail, .footer-title");
   targets.forEach((t) => t.classList.add("reveal"));
   const io = new IntersectionObserver(
     (entries) => {
