@@ -19,16 +19,18 @@ scripts/digest.py       feed puller (stdlib-only Python)
 ## Run locally
 
 ```sh
-python -m http.server 8080
-# open http://localhost:8080
+npm run dev
+# open http://localhost:3000
 ```
 
-(`fetch()` needs http, so opening `index.html` directly from disk won't load data.)
+(Uses `npx serve` under the hood — no install step. `python -m http.server 8080`
+works too. `fetch()` needs http, so opening `index.html` straight from disk
+won't load data.)
 
 Rebuild the digest whenever:
 
 ```sh
-python scripts/digest.py
+npm run digest   # = python scripts/digest.py
 ```
 
 ## Ship it
