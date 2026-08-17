@@ -221,55 +221,43 @@ em {
 
 .off-clock { border-bottom: 1px solid var(--line); }
 
-.passion-list {
+.interest-grid {
   list-style: none;
-  border-top: 1px solid var(--line);
-  counter-reset: passion;
-}
-
-.passion {
-  counter-increment: passion;
   display: grid;
-  grid-template-columns: minmax(240px, 1fr) minmax(0, 1.7fr);
-  gap: 48px;
-  padding: 48px var(--pad);
-  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
 }
 
-.passion-name {
+.interest {
+  padding: 36px var(--pad);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.interest:nth-child(3n) { border-right: none; }
+
+.interest:hover { background: var(--ink); color: var(--paper); }
+
+.interest-name {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(28px, 3.2vw, 44px);
-  line-height: 1.05;
+  font-size: clamp(23px, 2.3vw, 32px);
   letter-spacing: -0.01em;
-  position: sticky;
-  top: 90px;
-  align-self: start;
 }
 
-.passion-name::before {
-  content: "0" counter(passion);
-  display: block;
-  font-family: var(--mono);
-  font-size: 11.5px;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  margin-bottom: 10px;
-}
+.interest-name::before { content: "✳ "; color: var(--accent); font-size: 0.6em; vertical-align: middle; }
 
-.passion-body p {
-  font-size: clamp(16px, 1.6vw, 18px);
-  line-height: 1.7;
-  max-width: 58ch;
-}
-
-.passion-body p + p {
-  margin-top: 16px;
+.interest-desc {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--muted);
-  font-style: italic;
-  font-family: var(--serif);
-  font-size: clamp(17px, 1.7vw, 20px);
+  max-width: 34ch;
+  transition: color 0.18s ease;
 }
+
+.interest:hover .interest-desc { color: color-mix(in srgb, var(--paper) 78%, transparent); }
 
 /* ============ TOKEN METER ============ */
 
@@ -893,8 +881,8 @@ em {
 
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-facts { justify-self: stretch; max-width: none; }
-  .passion { grid-template-columns: 1fr; gap: 20px; padding: 36px var(--pad); }
-  .passion-name { position: static; }
+  .interest-grid { grid-template-columns: 1fr; }
+  .interest { border-right: none; }
 
   .section-head { flex-direction: column; align-items: flex-start; }
   .section-note { text-align: left; }
