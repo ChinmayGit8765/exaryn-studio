@@ -2,5 +2,6 @@
   "claudeTokens": 1400000000,
   "tokenBudget": 10000000000,
   "goalNote": "GOAL BY EOY",
-  "_note": "Approximate lifetime Claude tokens burned across studio projects, vs the end-of-year goal that sets the bar fill. Both hand-updated — bump claudeTokens whenever it feels right."
+  "blendedRatePerMTok": 2.0,
+  "_note": "claudeTokens: approximate Claude tokens burned this year, vs the EOY goal that sets the bar fill. blendedRatePerMTok: USD per million tokens used to compute the API-equivalent dollar stat (~$2/MTok reflects a Claude Code mix of ~85% cache reads at 0.1x input price, mostly Opus-tier $5/$25 with some Fable $10/$50). All hand-updated."
 }

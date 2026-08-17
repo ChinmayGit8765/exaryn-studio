@@ -216,9 +216,18 @@ em {
 
 .meter i.on { background: var(--accent); }
 
+.meter-figures {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
 .meter-value { white-space: nowrap; }
 
 .meter-value .meter-sub { color: var(--muted); }
+
+.meter-dollars { white-space: nowrap; color: var(--accent); }
 
 /* ============ SECTIONS ============ */
 
@@ -685,6 +694,20 @@ em {
 }
 
 .footer-title em { color: var(--accent); }
+
+.footer-bio {
+  margin-top: 32px;
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 58ch;
+  color: color-mix(in srgb, var(--paper) 78%, transparent);
+}
+
+.footer-tags {
+  margin-top: 20px;
+  color: var(--accent);
+  letter-spacing: 0.14em;
+}
 
 .footer-links {
   display: flex;

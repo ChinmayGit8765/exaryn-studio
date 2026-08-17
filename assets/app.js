@@ -300,7 +300,13 @@ async function loadTokenMeter() {
   try {
     const res = await fetch("data/stats.json");
     if (!res.ok) throw new Error(res.status);
-    const { claudeTokens = 0, tokenBudget = 0, goalNote = "" } = await res.json();
+    const {
+      claudeTokens = 0,
+      tokenBudget = 0,
+      goalNote = "",
+      blendedRatePerMTok = 0,
+    } = await res.json();
+    const dollars = (claudeTokens / 1e6) * blendedRatePerMTok;
 
     const CELLS = 30;
     const pct = tokenBudget ? Math.min(1, claudeTokens / tokenBudget) : 0;
@@ -315,13 +321,18 @@ async function loadTokenMeter() {
       $$("i", cellsEl).forEach((cell, idx) => {
         if (idx < lit) setTimeout(() => cell.classList.add("on"), 40 * idx);
       });
-      // number counts up alongside
+      // numbers count up alongside
       const valueEl = $("#token-value");
+      const dollarsEl = $("#token-dollars");
       const dur = 40 * lit + 300;
       const t0 = performance.now();
       const tick = (t) => {
         const p = Math.min(1, (t - t0) / dur);
-        valueEl.textContent = `≈ ${compact(claudeTokens * (1 - Math.pow(1 - p, 3)))}`;
+        const eased = 1 - Math.pow(1 - p, 3);
+        valueEl.textContent = `≈ ${compact(claudeTokens * eased)}`;
+        if (dollars && dollarsEl) {
+          dollarsEl.textContent = `≈ $${compact(dollars * eased)} API-EQUIV THIS YEAR`;
+        }
         if (p < 1) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
@@ -330,6 +341,9 @@ async function loadTokenMeter() {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
       $$("i", cellsEl).forEach((cell, idx) => idx < lit && cell.classList.add("on"));
       $("#token-value").textContent = `≈ ${compact(claudeTokens)}`;
+      if (dollars) {
+        $("#token-dollars").textContent = `≈ $${compact(dollars)} API-EQUIV THIS YEAR`;
+      }
       return;
     }
     const io = new IntersectionObserver(
