@@ -391,6 +391,37 @@ em {
 .toy:hover .toy-desc { color: color-mix(in srgb, var(--paper) 75%, transparent); }
 .toy:hover .toy-cta { color: var(--accent); padding-left: 8px; }
 
+/* play page — embedded game */
+
+.play-main { padding-top: 57px; }
+
+.play-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px var(--pad);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.play-bar .play-title { color: var(--muted); }
+
+.play-links { display: flex; gap: 18px; }
+
+.play-links a { color: var(--accent); }
+.play-links a:hover { text-decoration: underline; }
+
+.game-frame {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 105px);
+  min-height: 640px;
+  border: none;
+  background: #f0e6cf;
+}
+
 /* landing feed teaser */
 .feed-teaser { border-bottom: 1px solid var(--line); }
 
