@@ -11,6 +11,50 @@
     "links": { "live": "https://prompterjack.com", "repo": "https://github.com/ChinmayGit8765/promptifyme" }
   },
   {
+    "name": "Claude Work Manager",
+    "slug": "claude-work-manager",
+    "tagline": "Run a fleet of Claude Code agents across git worktrees — from your phone.",
+    "description": "Self-hosted, mobile-first dashboard for concurrent Claude Code sessions: spawn an isolated git worktree per agent, chat with each one, watch localhost previews of their dev servers, and commit/push from the couch. Rides the claude CLI you're already logged into — no API keys stored anywhere.",
+    "tech": ["Node.js", "Claude Code CLI", "Git worktrees", "Vanilla JS"],
+    "status": "shipped",
+    "year": "2026",
+    "devTime": "days, ongoing",
+    "links": { "repo": "https://github.com/ChinmayGit8765/claude-work-manager" }
+  },
+  {
+    "name": "Worktree Optimiser",
+    "slug": "worktree-optimiser",
+    "tagline": "Every branch of a repo as its own containerised dev server, routed by hostname.",
+    "description": "Run all your worktrees at once — main.localhost, fix-login.localhost — each in its own Docker container behind Traefik, managed from one dashboard. Review a PR and your own work side by side in two tabs. Ships an MCP server so coding agents can drive it too.",
+    "tech": ["Node.js", "Docker", "Traefik", "MCP", "Git worktrees"],
+    "status": "in development",
+    "year": "2026",
+    "devTime": "~2 weeks, ongoing",
+    "links": { "repo": "https://github.com/ChinmayGit8765/worktree-optimiser" }
+  },
+  {
+    "name": "One Piece Guess",
+    "slug": "one-piece-guess",
+    "tagline": "Wordle, but for One Piece — a daily character riddle picked by a cron job.",
+    "description": "Guess the daily character: eight attribute clues per guess (crew, bounty, haki, fruit, debut saga…), hints that unlock as you struggle, a shareable emoji grid. A GitHub Actions cron picks a new pirate every morning; the README doubles as a guide to building your own daily-anything game.",
+    "tech": ["Vanilla JS", "Python", "GitHub Actions", "GitHub Pages"],
+    "status": "shipped",
+    "year": "2026",
+    "devTime": "a weekend",
+    "links": { "live": "https://chinmaygit8765.github.io/one-piece-guess-game/", "repo": "https://github.com/ChinmayGit8765/one-piece-guess-game" }
+  },
+  {
+    "name": "Side by Side",
+    "slug": "side-by-side",
+    "tagline": "A self-updating Collingwood super-fan suite — reskinnable for any AFL club.",
+    "description": "Next-game countdown, form guide, live ladder and a daily news sweep, rebuilt every morning by a cron job from the free Squiggle API and Google News. Everything club-specific lives in one config file — fork it, edit club.json, and it's your club's suite.",
+    "tech": ["Vanilla JS", "Python", "Squiggle API", "GitHub Actions"],
+    "status": "shipped",
+    "year": "2026",
+    "devTime": "a weekend",
+    "links": { "live": "https://chinmaygit8765.github.io/collingwood-fan-suite/", "repo": "https://github.com/ChinmayGit8765/collingwood-fan-suite" }
+  },
+  {
     "name": "ALFRED",
     "slug": "alfred",
     "tagline": "Local-first multi-agent life-optimization system. Your hardware, your data, no cloud.",
