@@ -8,7 +8,7 @@
     "status": "shipped",
     "year": "2026",
     "devTime": "~6 months",
-    "links": { "live": "https://prompterjack.com", "repo": "https://github.com/ChinmayGit8765/promptifyme" }
+    "links": { "live": "https://prompterjack.com" }
   },
   {
     "name": "Claude Work Manager",
@@ -66,6 +66,17 @@
     "links": { "repo": "https://github.com/ChinmayGit8765/AlfredOpenSource" }
   },
   {
+    "name": "Solo Strength Quest",
+    "slug": "solo-strength-quest",
+    "tagline": "A fitness RPG — every workout is a quest, every PR is a boss kill.",
+    "description": "Gamified training app: workouts become quests, progressive overload becomes XP, and your profile is a character sheet that levels up because you did. Rust/Axum API with server-side gamification math, Flutter app with a custom design system, Postgres + Redis underneath.",
+    "tech": ["Rust", "Axum", "SQLx", "Flutter", "PostgreSQL", "Redis"],
+    "status": "in development",
+    "year": "2026",
+    "devTime": "ongoing",
+    "links": { "repo": "https://github.com/ChinmayGit8765/strength-quest" }
+  },
+  {
     "name": "QuantFlex",
     "slug": "quantflex",
     "tagline": "Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff.",
@@ -74,7 +85,7 @@
     "status": "in development",
     "year": "2026",
     "devTime": "~2 months, ongoing",
-    "links": {}
+    "links": { "repo": "https://github.com/ChinmayGit8765/quantflex" }
   },
   {
     "name": "QuantLens",
