@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuantFlex — interactive walkthrough · Exaryn</title>
+  <meta name="description" content="A 70-second interactive walkthrough of QuantFlex: price an American put under Heston, watch the Monte Carlo converge, and see every Greek triple-verified." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="demo.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+  <style>
+    /* ---- QuantFlex skin: dark pricing terminal, one blue, green = status only ---- */
+    .qf { background: #10141b; color: #e8ebf0; font-size: 12px; display: flex; flex-direction: column; }
+    .qf-top { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-bottom: 1px solid #232a36; }
+    .qf-logo { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; color: #8ab8ea; }
+    .qf-top .env { font-family: var(--mono); font-size: 9px; color: #6b7686; border: 1px solid #232a36; padding: 2px 7px; }
+    .qf-main { flex: 1; display: grid; grid-template-columns: 200px 1fr 210px; min-height: 0; }
+    .qf-form { border-right: 1px solid #232a36; padding: 12px; display: flex; flex-direction: column; gap: 9px; }
+    .qf-field label { display: block; font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.1em; color: #6b7686; margin-bottom: 3px; text-transform: uppercase; }
+    .qf-field .val { border: 1px solid #2b3444; background: #161b24; padding: 6px 8px; font-family: var(--mono); font-size: 11px; color: #e8ebf0; }
+    .qf-chips { display: flex; gap: 5px; flex-wrap: wrap; }
+    .qf-chip { border: 1px solid #2b3444; padding: 4px 8px; font-family: var(--mono); font-size: 9px; color: #6b7686; transition: all 0.3s; }
+    .qf-chip.sel { border-color: #8ab8ea; color: #8ab8ea; background: rgba(138, 184, 234, 0.08); }
+    .qf-badge { font-family: var(--mono); font-size: 9px; color: #56c288; border: 1px solid rgba(86, 194, 136, 0.4); padding: 4px 7px; }
+    .qf-run { margin-top: auto; text-align: center; font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; padding: 9px; background: #8ab8ea; color: #10141b; font-weight: 700; transition: transform 0.2s, filter 0.2s; }
+    .qf-run.pressed { transform: scale(0.97); filter: brightness(1.2); }
+    .qf-chart { padding: 12px 14px; display: flex; flex-direction: column; min-width: 0; }
+    .qf-chart h3, .qf-side h3 { font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em; color: #6b7686; text-transform: uppercase; margin-bottom: 8px; }
+    .qf-progress { height: 5px; background: #1c222d; margin-bottom: 4px; }
+    .qf-progress i { display: block; height: 100%; width: 0%; background: #8ab8ea; transition: width 2.4s linear; }
+    .qf-progress i.w10 { width: 10%; } .qf-progress i.w30 { width: 30%; } .qf-progress i.w50 { width: 50%; }
+    .qf-progress i.w70 { width: 70%; } .qf-progress i.w90 { width: 90%; } .qf-progress i.w100 { width: 100%; }
+    .qf-simmeta { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 9px; color: #6b7686; margin-bottom: 8px; }
+    .chart-reveal { flex: 1; min-height: 0; clip-path: inset(0 100% 0 0); transition: clip-path 2.6s ease; }
+    .chart-reveal.on { clip-path: inset(0 0 0 0); }
+    .qf-svg { width: 100%; height: 100%; }
+    #mean-line { stroke-dasharray: 700; stroke-dashoffset: 700; transition: stroke-dashoffset 2.2s ease 0.2s; }
+    #mean-line.on { stroke-dashoffset: 0; }
+    .qf-side { border-left: 1px solid #232a36; padding: 12px; display: flex; flex-direction: column; gap: 10px; overflow: hidden; }
+    .qf-price { border: 1px solid #2b3444; padding: 10px; }
+    .qf-price .big { font-family: var(--serif); font-size: 30px; color: #fdfcf9; line-height: 1; }
+    .qf-price .ci { font-family: var(--mono); font-size: 9px; color: #8ab8ea; margin-top: 4px; }
+    .qf-greeks { display: flex; flex-direction: column; gap: 4px; }
+    .qf-greek { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 10px; color: #aeb7c4; border-bottom: 1px solid #1c222d; padding: 3px 1px; }
+    .qf-greek b { color: #e8ebf0; font-weight: 500; }
+    .qf-verify { font-family: var(--mono); font-size: 8.5px; color: #56c288; line-height: 1.6; }
+    .qf-anchors { position: absolute; left: 200px; right: 210px; bottom: 0; background: rgba(13, 17, 23, 0.96); border-top: 1px solid #2b3444; padding: 10px 14px; transform: translateY(105%); transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .qf-anchors.on { transform: none; }
+    .qf-anchor { display: flex; justify-content: space-between; gap: 10px; font-family: var(--mono); font-size: 9.5px; color: #aeb7c4; padding: 3px 0; }
+    .qf-anchor .ok { color: #56c288; }
+    .qf-end { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(13, 17, 23, 0.93); z-index: 20; text-align: center; }
+    .qf-end .t { font-family: var(--serif); font-size: clamp(24px, 3.5vw, 40px); color: #fdfcf9; max-width: 22ch; }
+    .qf-end .s { font-family: var(--mono); font-size: 10px; color: #8ab8ea; margin-top: 12px; letter-spacing: 0.12em; }
+    @media (max-width: 760px) { .qf-main { grid-template-columns: 150px 1fr 160px; } .qf-price .big { font-size: 22px; } }
+  </style>
+</head>
+<body>
+
+  <header class="demo-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <a class="back mono" href="../projects.html">← ALL PROJECTS</a>
+  </header>
+
+  <div class="demo-wrap">
+    <div class="demo-title">
+      <h1>QuantFlex — <em>how it works</em></h1>
+      <span class="sim-tag">SIMULATED WALKTHROUGH · NOT A SCREEN RECORDING</span>
+    </div>
+
+    <div class="demo-stage qf" id="stage">
+      <div class="qf-top fx" id="qf-shell">
+        <span class="qf-logo">QUANTFLEX</span>
+        <span class="env">PRICING TERMINAL</span>
+        <span class="env">FREE TIER</span>
+      </div>
+      <div class="qf-main">
+        <div class="qf-form">
+          <div class="qf-field fx" id="f-inst"><label>Instrument</label><div class="val">American Put</div></div>
+          <div class="qf-field fx" id="f-spot"><label>Spot / Strike</label><div class="val">100.00 / 110.00</div></div>
+          <div class="qf-field fx" id="f-rate"><label>Rate / Div / Maturity</label><div class="val">3.0% / 1.0% / 1.0Y</div></div>
+          <div class="qf-field fx" id="f-model"><label>Model</label>
+            <div class="qf-chips">
+              <span class="qf-chip">GBM</span><span class="qf-chip">MERTON</span><span class="qf-chip" id="chip-heston">HESTON</span>
+            </div>
+          </div>
+          <div class="fx" id="f-feller"><span class="qf-badge">✓ FELLER 2κθ ≥ ξ² (0.36 ≥ 0.16)</span></div>
+          <div class="qf-run fx" id="run-btn">RUN ▸</div>
+        </div>
+        <div class="qf-chart">
+          <h3>Simulated paths — P5–P95 &amp; interquartile bands</h3>
+          <div class="fx" id="progress-wrap">
+            <div class="qf-progress"><i id="sim-fill"></i></div>
+            <div class="qf-simmeta"><span id="path-count">0 PATHS</span><span>SSE STREAM · SEED 42</span></div>
+          </div>
+          <div class="chart-reveal" id="chart-reveal">
+            <svg class="qf-svg" viewBox="0 0 560 250" preserveAspectRatio="none" aria-label="Monte Carlo fan chart">
+              <g stroke="#1c222d" stroke-width="1">
+                <line x1="0" y1="50" x2="560" y2="50"/><line x1="0" y1="110" x2="560" y2="110"/>
+                <line x1="0" y1="170" x2="560" y2="170"/><line x1="0" y1="230" x2="560" y2="230"/>
+              </g>
+              <path d="M0,130 C140,110 300,80 560,34 L560,238 C300,214 140,175 0,130 Z" fill="rgba(138,184,234,0.14)"/>
+              <path d="M0,130 C150,120 320,102 560,74 L560,196 C320,180 150,152 0,130 Z" fill="rgba(138,184,234,0.26)"/>
+              <path id="mean-line" d="M0,130 C160,126 340,120 560,112" fill="none" stroke="#8ab8ea" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <div class="qf-side">
+          <div class="qf-price fx" id="price-card">
+            <h3>Price</h3>
+            <div class="big" id="price-val">0.00</div>
+            <div class="ci">± 0.03 · 95% CI · 500K PATHS</div>
+          </div>
+          <div class="qf-greeks">
+            <h3>Greeks</h3>
+            <div class="qf-greek fx" id="g1"><span>DELTA</span><b>−0.421</b></div>
+            <div class="qf-greek fx" id="g2"><span>GAMMA</span><b>0.017</b></div>
+            <div class="qf-greek fx" id="g3"><span>VEGA</span><b>38.5</b></div>
+            <div class="qf-greek fx" id="g4"><span>THETA</span><b>−4.12</b></div>
+            <div class="qf-greek fx" id="g5"><span>RHO</span><b>−45.2</b></div>
+          </div>
+          <div class="qf-verify fx" id="greek-badge">✓ AAD TAPE = JAX = FINITE DIFF<br/>TRIPLE-VERIFIED, EVERY GREEK</div>
+        </div>
+      </div>
+      <div class="qf-anchors" id="val-panel">
+        <div class="qf-anchor fx" id="a1"><span>EUROPEAN ANCHOR vs CLOSED-FORM BLACK–SCHOLES</span><span class="ok">Δ 2.1e-13 ✓ PASS</span></div>
+        <div class="qf-anchor fx" id="a2"><span>CRANK–NICOLSON PDE vs MONTE CARLO</span><span class="ok">3.8bp ✓ PASS</span></div>
+        <div class="qf-anchor fx" id="a3"><span>PUT–CALL PARITY · FIXED SEEDS · PARAM GUARDS</span><span class="ok">✓ PASS</span></div>
+      </div>
+      <div class="qf-end fx" id="end-card">
+        <div>
+          <div class="t">Every number can defend itself.</div>
+          <div class="s">QUANTFLEX · IN DEVELOPMENT · WATCH github.com/ChinmayGit8765/quantflex</div>
+        </div>
+      </div>
+      <div class="subtitle-layer"><div id="subtitle"></div></div>
+    </div>
+
+    <div class="demo-controls">
+      <button id="btn-play" class="ctl-btn">▶ PLAY</button>
+      <button id="btn-restart" class="ctl-btn secondary">↻</button>
+      <span id="demo-time"></span>
+      <div id="progress-bar"><div id="progress-fill"></div></div>
+    </div>
+    <div id="chapters"></div>
+    <p class="demo-note">
+      A hand-animated simulation of the QuantFlex flow — numbers are illustrative,
+      the correctness story is not.
+      <a href="https://github.com/ChinmayGit8765/quantflex" target="_blank" rel="noopener">Watch the repo ↗</a>
+      for the live release.
+    </p>
+  </div>
+
+  <script src="demo.js"></script>
+  <script>
+    const stage = document.getElementById("stage");
+
+    function countPrice(target, instant) {
+      const el = demoEl("#price-val");
+      if (instant) { el.textContent = target.toFixed(2); return; }
+      const t0 = performance.now();
+      const tick = (t) => {
+        const p = Math.min(1, (t - t0) / 900);
+        el.textContent = (target * (1 - Math.pow(1 - p, 3))).toFixed(2);
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }
+
+    const fill = (cls, n) => () => {
+      const el = demoEl("#sim-fill");
+      el.className = cls;
+      setText("#path-count", n);
+    };
+
+    initWalkthrough({
+      duration: 72,
+      chapters: [
+        { name: "The trade", at: 0 },
+        { name: "Run the engine", at: 18 },
+        { name: "Read the results", at: 33 },
+        { name: "Trust, but verify", at: 55 },
+      ],
+      cues: [
+        { at: 0.3, sub: "This is <b>QuantFlex</b> — a free web pricing engine where every number can defend itself.", do: () => on("#qf-shell") },
+        { at: 3.5, sub: "Let's price something awkward: an <b>American put</b>, one year out.", do: () => on("#f-inst") },
+        { at: 6.5, sub: "Spot 100, strike 110 — and real rates and dividends, not a toy setup.", do: () => { on("#f-spot"); on("#f-rate"); } },
+        { at: 10.5, sub: "Model: <b>Heston</b> stochastic volatility.", do: () => { on("#f-model"); demoEl("#chip-heston").classList.add("sel"); } },
+        { at: 14, sub: "The Feller condition is checked before a single path runs — invalid params fail fast.", do: () => on("#f-feller") },
+        { at: 18, sub: "<b>Run.</b> 500,000 paths, antithetic + control variates — hand-rolled NumPy, no library solvers.", do: () => { on("#run-btn"); demoEl("#run-btn").classList.add("pressed"); on("#progress-wrap"); } },
+        { at: 20, do: fill("w10", "52,000 PATHS") },
+        { at: 22, sub: "Progress streams to the browser over SSE — you watch the estimator converge live.", do: fill("w30", "148,000 PATHS") },
+        { at: 24.5, do: fill("w50", "251,000 PATHS") },
+        { at: 27, sub: "Standard error tightens as √N does its thing.", do: fill("w70", "355,000 PATHS") },
+        { at: 29.5, do: fill("w90", "462,000 PATHS") },
+        { at: 31.5, do: fill("w100", "500,000 PATHS · DONE") },
+        { at: 33, sub: "The fan: 5th–95th and interquartile bands of the simulated paths. One hue — magnitude, not rainbow.", do: () => on("#chart-reveal") },
+        { at: 37, do: () => on("#mean-line") },
+        { at: 39, sub: "Price: <b>13.62 ± 0.03</b> at 95% confidence.", do: (i) => { on("#price-card"); countPrice(13.62, i); } },
+        { at: 44, sub: "Greeks come off a hand-built automatic-differentiation tape…", do: () => on("#g1") },
+        { at: 45.5, do: () => on("#g2") },
+        { at: 47, do: () => on("#g3") },
+        { at: 48.5, do: () => on("#g4") },
+        { at: 50, do: () => on("#g5") },
+        { at: 51.5, sub: "…and every Greek is <b>triple-verified</b>: AAD vs JAX vs finite differences.", do: () => on("#greek-badge") },
+        { at: 55, sub: "Trust, but verify — the anchors.", do: () => on("#val-panel") },
+        { at: 57, do: () => on("#a1") },
+        { at: 59.5, do: () => on("#a2") },
+        { at: 62, sub: "If a pricing path has no anchor test, it doesn't ship. House rule.", do: () => on("#a3") },
+        { at: 67, sub: "QuantFlex — in development. Watch the repo to catch the release.", do: () => on("#end-card") },
+      ],
+      reset() {
+        stage.querySelectorAll(".on").forEach((el) => el.classList.remove("on"));
+        demoEl("#chip-heston").classList.remove("sel");
+        demoEl("#run-btn").classList.remove("pressed");
+        demoEl("#sim-fill").className = "";
+        setText("#path-count", "0 PATHS");
+        setText("#price-val", "0.00");
+      },
+    });
+  </script>
+</body>
+</html>

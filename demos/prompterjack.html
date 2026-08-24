@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompterjack — interactive walkthrough · Exaryn</title>
+  <meta name="description" content="A 70-second interactive walkthrough of Prompterjack: design a multi-agent system visually, score its maintainability, and export runnable code for five frameworks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="demo.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+  <style>
+    /* ---- Prompterjack skin: light canvas app, one violet ---- */
+    .pj { background: #fafaf8; color: #22212e; font-size: 12px; display: flex; flex-direction: column; }
+    .pj-top { display: flex; align-items: center; gap: 12px; padding: 9px 16px; border-bottom: 1px solid #e6e4ee; background: #fff; }
+    .pj-logo { font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #6d51e8; }
+    .pj-top .doc { font-family: var(--mono); font-size: 9px; color: #8d8a9e; }
+    .pj-tpls { display: flex; gap: 6px; margin-left: auto; }
+    .pj-tpl { font-family: var(--mono); font-size: 9px; padding: 4px 9px; border: 1px solid #e6e4ee; color: #8d8a9e; border-radius: 99px; transition: all 0.3s; }
+    .pj-tpl.sel { border-color: #6d51e8; color: #6d51e8; background: rgba(109, 81, 232, 0.07); }
+    .pj-main { flex: 1; display: grid; grid-template-columns: 1fr 240px; min-height: 0; }
+    .pj-canvas { position: relative; background-image: radial-gradient(#e2e0ec 1px, transparent 1px); background-size: 22px 22px; }
+    .pj-node { position: absolute; width: 148px; background: #fff; border: 1.5px solid #d9d6e6; border-radius: 8px; padding: 9px 11px; box-shadow: 0 4px 14px rgba(34, 33, 46, 0.07); }
+    .pj-node .role { font-weight: 600; font-size: 12.5px; }
+    .pj-node .kind { font-family: var(--mono); font-size: 8px; letter-spacing: 0.1em; color: #8d8a9e; text-transform: uppercase; }
+    .pj-node .chip { display: inline-block; margin-top: 6px; font-family: var(--mono); font-size: 8px; color: #6d51e8; border: 1px solid rgba(109, 81, 232, 0.35); border-radius: 99px; padding: 1.5px 7px; opacity: 0; transition: opacity 0.5s; }
+    .pj-node.badged .chip { opacity: 1; }
+    .pj-node.focus { border-color: #6d51e8; box-shadow: 0 0 0 3px rgba(109, 81, 232, 0.15); }
+    #node-sup { left: 34%; top: 9%; }
+    #node-res { left: 8%; top: 52%; }
+    #node-code { left: 37%; top: 58%; }
+    #node-crit { left: 66%; top: 50%; }
+    #edges { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    #edges path { stroke: #b9b2d8; stroke-width: 1.5; fill: none; stroke-dasharray: 320; stroke-dashoffset: 320; transition: stroke-dashoffset 1.6s ease; }
+    #edges.on path { stroke-dashoffset: 0; }
+    #edges path:nth-child(2) { transition-delay: 0.3s; } #edges path:nth-child(3) { transition-delay: 0.6s; }
+    .pj-side { border-left: 1px solid #e6e4ee; background: #fff; padding: 12px; display: flex; flex-direction: column; gap: 10px; overflow: hidden; }
+    .pj-side h3 { font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em; color: #8d8a9e; text-transform: uppercase; }
+    .pj-prompt { border: 1px solid #e6e4ee; border-radius: 6px; padding: 8px 10px; font-family: var(--mono); font-size: 9.5px; line-height: 1.7; color: #4a4760; min-height: 88px; }
+    .pj-prompt .pl { display: block; opacity: 0; transform: translateX(6px); transition: all 0.45s; }
+    .pj-prompt .pl.on { opacity: 1; transform: none; }
+    .pj-score { display: flex; align-items: center; gap: 12px; }
+    .pj-dial { width: 58px; height: 58px; }
+    .pj-dial .track { stroke: #eeecf5; }
+    .pj-dial .arc { stroke: #6d51e8; stroke-linecap: round; stroke-dasharray: 138; stroke-dashoffset: 58; transition: stroke-dashoffset 1.4s ease; }
+    .pj-score.good .arc { stroke-dashoffset: 12.4; }
+    .pj-score .num { font-family: var(--serif); font-size: 30px; line-height: 1; }
+    .pj-score .lbl { font-family: var(--mono); font-size: 8px; color: #8d8a9e; letter-spacing: 0.1em; }
+    .pj-lint { font-family: var(--mono); font-size: 8.5px; padding: 4px 8px; border-radius: 4px; border: 1px solid #f0c9a8; background: #fdf4ea; color: #a05b16; }
+    .pj-lint.fixed { border-color: #b7dcc4; background: #eefaf1; color: #1f7a41; }
+    .pj-export { position: absolute; inset: auto 240px 0 0; background: #22212e; color: #d8d5e6; padding: 10px 14px 12px; transform: translateY(105%); transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .pj-export.on { transform: none; }
+    .pj-tabs { display: flex; gap: 6px; margin-bottom: 8px; }
+    .pj-tab { font-family: var(--mono); font-size: 8.5px; padding: 3px 9px; border: 1px solid #3d3b52; color: #8d8a9e; border-radius: 4px; transition: all 0.3s; }
+    .pj-tab.sel { border-color: #a08dff; color: #a08dff; }
+    .pj-code { font-family: var(--mono); font-size: 9px; line-height: 1.65; color: #c6c1dd; }
+    .pj-code .cl { display: block; opacity: 0; transform: translateY(4px); transition: all 0.35s; }
+    .pj-code.on .cl { opacity: 1; transform: none; }
+    .pj-code.on .cl:nth-child(2) { transition-delay: 0.15s; } .pj-code.on .cl:nth-child(3) { transition-delay: 0.3s; }
+    .pj-code.on .cl:nth-child(4) { transition-delay: 0.45s; } .pj-code.on .cl:nth-child(5) { transition-delay: 0.6s; }
+    .pj-code .k { color: #a08dff; } .pj-code .s { color: #8fd0a5; }
+    .pj-toast { position: absolute; top: 10px; right: 12px; font-family: var(--mono); font-size: 9px; background: #1f7a41; color: #fff; padding: 5px 10px; border-radius: 4px; }
+    .pj-end { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(250, 250, 248, 0.94); z-index: 20; text-align: center; }
+    .pj-end .t { font-family: var(--serif); font-size: clamp(24px, 3.5vw, 40px); color: #22212e; max-width: 24ch; }
+    .pj-end .s { font-family: var(--mono); font-size: 10px; color: #6d51e8; margin-top: 12px; letter-spacing: 0.12em; }
+    @media (max-width: 760px) { .pj-main { grid-template-columns: 1fr 170px; } .pj-node { width: 108px; } .pj-tpls { display: none; } }
+  </style>
+</head>
+<body>
+
+  <header class="demo-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <a class="back mono" href="../projects.html">← ALL PROJECTS</a>
+  </header>
+
+  <div class="demo-wrap">
+    <div class="demo-title">
+      <h1>Prompterjack — <em>how it works</em></h1>
+      <span class="sim-tag">SIMULATED WALKTHROUGH · NOT A SCREEN RECORDING</span>
+    </div>
+
+    <div class="demo-stage pj" id="stage">
+      <div class="pj-top fx" id="pj-shell">
+        <span class="pj-logo">PROMPTERJACK</span>
+        <span class="doc">research-crew.agentflow</span>
+        <div class="pj-tpls fx" id="tpl-row">
+          <span class="pj-tpl">SOLO</span><span class="pj-tpl">PIPELINE</span>
+          <span class="pj-tpl" id="tpl-sw">SUPERVISOR–WORKERS</span><span class="pj-tpl">DEBATE</span>
+        </div>
+      </div>
+      <div class="pj-main">
+        <div class="pj-canvas">
+          <svg id="edges" viewBox="0 0 600 340" preserveAspectRatio="none">
+            <path d="M262,72 C200,140 130,150 105,178" />
+            <path d="M275,72 C275,120 268,150 262,196" />
+            <path d="M290,72 C360,135 420,145 448,172" />
+          </svg>
+          <div class="pj-node fx" id="node-sup"><span class="kind">Orchestrator</span><div class="role">Supervisor</div><span class="chip">claude-sonnet · routing</span></div>
+          <div class="pj-node fx" id="node-res"><span class="kind">Worker</span><div class="role">Researcher</div><span class="chip">web_search · citations</span></div>
+          <div class="pj-node fx" id="node-code"><span class="kind">Worker</span><div class="role">Coder</div><span class="chip">sandboxed exec</span></div>
+          <div class="pj-node fx" id="node-crit"><span class="kind">Worker</span><div class="role">Critic</div><span class="chip">rubric · veto power</span></div>
+        </div>
+        <div class="pj-side fx" id="inspector">
+          <h3>Inspector — Researcher</h3>
+          <div class="pj-prompt">
+            <span class="pl" id="p1">You are the crew's researcher.</span>
+            <span class="pl" id="p2">Search, read, extract — return findings as structured claims with sources.</span>
+            <span class="pl" id="p3">Never speculate past your citations.</span>
+          </div>
+          <div class="pj-score fx" id="score-card">
+            <svg class="pj-dial" viewBox="0 0 50 50">
+              <circle class="track" cx="25" cy="25" r="22" fill="none" stroke-width="5"/>
+              <circle class="arc" cx="25" cy="25" r="22" fill="none" stroke-width="5" transform="rotate(-90 25 25)"/>
+            </svg>
+            <div><div class="num" id="score-num">58</div><div class="lbl">MAINTAINABILITY</div></div>
+          </div>
+          <div class="pj-lint fx" id="lint1">▲ NO OUTPUT SCHEMA DECLARED</div>
+          <div class="pj-lint fx" id="lint2">▲ TOOL SCOPE UNBOUNDED</div>
+        </div>
+      </div>
+      <div class="pj-export" id="export-panel">
+        <div class="pj-tabs">
+          <span class="pj-tab">STRANDS</span><span class="pj-tab">OPENAI AGENTS</span>
+          <span class="pj-tab" id="tab-lg">LANGGRAPH</span><span class="pj-tab">LLAMAINDEX</span>
+        </div>
+        <div class="pj-code" id="code">
+          <span class="cl"><span class="k">from</span> langgraph.graph <span class="k">import</span> StateGraph</span>
+          <span class="cl">graph = StateGraph(CrewState)</span>
+          <span class="cl">graph.add_node(<span class="s">"supervisor"</span>, supervisor)  <span class="k"># routes on structured output</span></span>
+          <span class="cl">graph.add_edge(<span class="s">"researcher"</span>, <span class="s">"critic"</span>)</span>
+          <span class="cl">app = graph.compile()  <span class="k"># runnable, typed, tested</span></span>
+        </div>
+        <div class="pj-toast fx" id="copied">COPIED ✓</div>
+      </div>
+      <div class="pj-end fx" id="end-card">
+        <div>
+          <div class="t">Design the system. Export the code. Ship it.</div>
+          <div class="s">PROMPTERJACK · LIVE AT PROMPTERJACK.COM</div>
+        </div>
+      </div>
+      <div class="subtitle-layer"><div id="subtitle"></div></div>
+    </div>
+
+    <div class="demo-controls">
+      <button id="btn-play" class="ctl-btn">▶ PLAY</button>
+      <button id="btn-restart" class="ctl-btn secondary">↻</button>
+      <span id="demo-time"></span>
+      <div id="progress-bar"><div id="progress-fill"></div></div>
+    </div>
+    <div id="chapters"></div>
+    <p class="demo-note">
+      A hand-animated simulation of the Prompterjack flow.
+      The real thing is live — <a href="https://prompterjack.com" target="_blank" rel="noopener">prompterjack.com ↗</a>.
+    </p>
+  </div>
+
+  <script src="demo.js"></script>
+  <script>
+    const stage = document.getElementById("stage");
+
+    function scoreTo(target, instant) {
+      demoEl("#score-card").classList.add("good");
+      const el = demoEl("#score-num");
+      if (instant) { el.textContent = target; return; }
+      const from = 58, t0 = performance.now();
+      const tick = (t) => {
+        const p = Math.min(1, (t - t0) / 1200);
+        el.textContent = Math.round(from + (target - from) * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }
+
+    initWalkthrough({
+      duration: 72,
+      chapters: [
+        { name: "Pick an architecture", at: 0 },
+        { name: "Wire the agents", at: 11 },
+        { name: "Tune & score", at: 26 },
+        { name: "Export the code", at: 53 },
+      ],
+      cues: [
+        { at: 0.3, sub: "<b>Prompterjack</b> — design multi-agent systems visually, export code that actually runs.", do: () => on("#pj-shell") },
+        { at: 4, sub: "Start from an architecture, not a blank page.", do: () => on("#tpl-row") },
+        { at: 7, sub: "<b>Supervisor–workers</b>: one orchestrator, three specialists.", do: () => demoEl("#tpl-sw").classList.add("sel") },
+        { at: 11, sub: "Drop in the agents…", do: () => on("#node-sup") },
+        { at: 13, do: () => on("#node-res") },
+        { at: 14.2, do: () => on("#node-code") },
+        { at: 15.4, do: () => on("#node-crit") },
+        { at: 17, sub: "…and wire the delegation paths.", do: () => on("#edges") },
+        { at: 21, sub: "Each node carries its own model, tools, and output contract.", do: () => stage.querySelectorAll(".pj-node").forEach((n) => n.classList.add("badged")) },
+        { at: 26, sub: "Open the Researcher. The system prompt is where most agent systems quietly rot.", do: () => { on("#inspector"); demoEl("#node-res").classList.add("focus"); } },
+        { at: 30, do: () => on("#p1") },
+        { at: 32, do: () => on("#p2") },
+        { at: 34.5, do: () => on("#p3") },
+        { at: 37.5, sub: "Prompterjack scores maintainability — this prompt starts at a wobbly <b>58</b>.", do: () => on("#score-card") },
+        { at: 41, do: () => on("#lint1") },
+        { at: 43, sub: "The linter names the problems: no output schema, unbounded tool scope.", do: () => on("#lint2") },
+        { at: 46.5, sub: "Accept the suggested fixes…", do: (i) => { demoEl("#lint1").classList.add("fixed"); demoEl("#lint1").textContent = "✓ OUTPUT SCHEMA: CLAIMS[] + SOURCES[]"; demoEl("#lint2").classList.add("fixed"); demoEl("#lint2").textContent = "✓ TOOLS SCOPED: web_search ONLY"; scoreTo(91, i); } },
+        { at: 50, sub: "…and it's a <b>91</b>: scoped tools, typed outputs, a role you can test." },
+        { at: 53, sub: "Export runnable code — Strands, OpenAI Agents, LangChain/LangGraph, LlamaIndex.", do: () => on("#export-panel") },
+        { at: 56.5, sub: "Same graph, five frameworks. Pick your poison.", do: () => { demoEl("#tab-lg").classList.add("sel"); on("#code"); } },
+        { at: 63, sub: "Copy, paste, run.", do: () => on("#copied") },
+        { at: 66.5, sub: "Prompterjack is live — go break it.", do: () => on("#end-card") },
+      ],
+      reset() {
+        stage.querySelectorAll(".on").forEach((el) => el.classList.remove("on"));
+        stage.querySelectorAll(".sel, .focus, .badged, .good, .fixed").forEach((el) =>
+          el.classList.remove("sel", "focus", "badged", "good", "fixed"));
+        setText("#score-num", "58");
+        demoEl("#lint1").textContent = "▲ NO OUTPUT SCHEMA DECLARED";
+        demoEl("#lint2").textContent = "▲ TOOL SCOPE UNBOUNDED";
+      },
+    });
+  </script>
+</body>
+</html>

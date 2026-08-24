@@ -48,7 +48,7 @@ async function fetchProjects() {
 }
 
 function projectRow(p, { expandable }) {
-  const visit = p.links?.live || p.links?.repo || "";
+  const visit = p.links?.live || p.links?.demo || p.links?.repo || "";
   const status =
     p.status && p.status !== "shipped" ? ` <span class="status">[${esc(p.status)}]</span>` : "";
 
@@ -74,6 +74,7 @@ function projectRow(p, { expandable }) {
   }
 
   const linkBtns = [
+    p.links?.demo ? `<a href="${esc(p.links.demo)}" target="_blank" rel="noopener">WATCH DEMO ▶</a>` : "",
     p.links?.live ? `<a href="${esc(p.links.live)}" target="_blank" rel="noopener">LIVE SITE ↗</a>` : "",
     p.links?.repo ? `<a href="${esc(p.links.repo)}" target="_blank" rel="noopener">SOURCE ↗</a>` : "",
   ].join("");

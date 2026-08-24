@@ -8,7 +8,7 @@
     "status": "shipped",
     "year": "2026",
     "devTime": "~6 months",
-    "links": { "live": "https://prompterjack.com" }
+    "links": { "live": "https://prompterjack.com", "demo": "demos/prompterjack.html" }
   },
   {
     "name": "Claude Work Manager",
@@ -74,7 +74,7 @@
     "status": "in development",
     "year": "2026",
     "devTime": "ongoing",
-    "links": { "repo": "https://github.com/ChinmayGit8765/strength-quest" }
+    "links": { "demo": "demos/strength-quest.html", "repo": "https://github.com/ChinmayGit8765/strength-quest" }
   },
   {
     "name": "QuantFlex",
@@ -85,7 +85,7 @@
     "status": "in development",
     "year": "2026",
     "devTime": "~2 months, ongoing",
-    "links": { "repo": "https://github.com/ChinmayGit8765/quantflex" }
+    "links": { "demo": "demos/quantflex.html", "repo": "https://github.com/ChinmayGit8765/quantflex" }
   },
   {
     "name": "QuantLens",

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solo Strength Quest — interactive walkthrough · Exaryn</title>
+  <meta name="description" content="A 70-second interactive walkthrough of Solo Strength Quest: log a workout, hit a PR, watch it land as a boss kill and a level-up." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="demo.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+  <style>
+    /* ---- Solo Strength Quest skin: dark RPG backdrop, real app screenshots ---- */
+    .sq { background: #0b0e14 radial-gradient(ellipse at 50% 0%, rgba(106, 91, 255, 0.12), transparent 60%); display: flex; align-items: center; justify-content: center; }
+    .sq-phone { position: relative; height: 92%; aspect-ratio: 486 / 1046; border: 3px solid #2a2f3d; border-radius: 26px; overflow: hidden; box-shadow: 0 18px 60px rgba(0, 0, 0, 0.6); }
+    .sq-phone img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .sq-phone img.fx { transform: none; transition: opacity 0.7s ease; }
+    .sq-dim { position: absolute; inset: 0; background: rgba(6, 8, 12, 0.72); opacity: 0; transition: opacity 0.5s; }
+    .sq-dim.on { opacity: 1; }
+    /* callouts */
+    .co { position: absolute; border: 1.5px solid #ffb648; border-radius: 10px; box-shadow: 0 0 0 3px rgba(255, 182, 72, 0.18); }
+    .co .tag { position: absolute; left: -2px; top: 100%; margin-top: 5px; white-space: nowrap; font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.08em; text-transform: uppercase; background: #ffb648; color: #14100a; padding: 2px 7px; border-radius: 3px; }
+    .co.up .tag { top: auto; bottom: 100%; margin: 0 0 5px; }
+    #co-ring  { left: 4%; top: 7.5%; width: 92%; height: 12.5%; }
+    #co-start { left: 3%; top: 23.5%; width: 94%; height: 5%; }
+    #co-week  { left: 3%; top: 32.5%; width: 94%; height: 7.5%; }
+    #co-quests{ left: 3%; top: 44.5%; width: 94%; height: 23%; }
+    #co-attr  { left: 3%; top: 21%; width: 94%; height: 15.5%; }
+    #co-pr    { left: 3%; top: 39.5%; width: 94%; height: 20%; }
+    /* set-logging overlay */
+    .sq-log { position: absolute; left: 6%; right: 6%; top: 18%; background: #141824; border: 1px solid #2a2f3d; border-radius: 14px; padding: 14px; color: #e8eaf2; }
+    .sq-log h4 { font-family: var(--mono); font-size: 9px; letter-spacing: 0.14em; color: #8f96ad; text-transform: uppercase; }
+    .sq-log .lift { font-weight: 600; font-size: 16px; margin-top: 2px; }
+    .sq-set { display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 11px; color: #8f96ad; padding: 8px 2px; border-bottom: 1px solid #1d2230; }
+    .sq-set .tick { color: #3ddc84; opacity: 0; transition: opacity 0.4s; }
+    .sq-set.on { color: #e8eaf2; }
+    .sq-set.on .tick { opacity: 1; }
+    .sq-xpfloat { position: absolute; right: 10px; font-family: var(--mono); font-size: 11px; color: #ffb648; opacity: 0; }
+    .sq-set.on .sq-xpfloat { animation: xpfloat 1.4s ease forwards; }
+    @keyframes xpfloat { 0% { opacity: 0; transform: translateY(4px); } 25% { opacity: 1; } 100% { opacity: 0; transform: translateY(-22px); } }
+    /* boss / level-up layers */
+    .sq-boss { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; background: rgba(8, 6, 14, 0.88); z-index: 15; }
+    .sq-boss .sw { font-size: 40px; }
+    .sq-boss .t1 { font-family: var(--serif); font-size: clamp(26px, 4vw, 44px); color: #ffb648; letter-spacing: 0.02em; }
+    .sq-boss .t2 { font-family: var(--mono); font-size: 10px; color: #e8eaf2; letter-spacing: 0.18em; margin-top: 8px; }
+    .sq-boss .t3 { font-family: var(--mono); font-size: 9.5px; color: #8f96ad; margin-top: 14px; letter-spacing: 0.1em; opacity: 0; transition: opacity 0.5s; }
+    .sq-boss .t3.on { opacity: 1; }
+    .sq-xpbar { width: min(320px, 70%); height: 8px; background: #1d2230; border-radius: 99px; margin: 16px auto 0; overflow: hidden; }
+    .sq-xpbar i { display: block; height: 100%; width: 46%; border-radius: 99px; background: linear-gradient(90deg, #6a5bff, #3ddc84); transition: width 1.6s ease; }
+    .sq-xpbar.surge i { width: 100%; }
+    .sq-lvl { font-family: var(--serif); font-size: clamp(30px, 5vw, 54px); color: #fdfcf9; margin-top: 14px; transform: scale(0.7); transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); opacity: 0; }
+    .sq-lvl.on { opacity: 1; transform: none; }
+    .sq-lvl b { color: #3ddc84; }
+    .sq-end { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(8, 6, 14, 0.92); z-index: 20; text-align: center; }
+    .sq-end .t { font-family: var(--serif); font-size: clamp(24px, 3.5vw, 40px); color: #fdfcf9; max-width: 20ch; }
+    .sq-end .s { font-family: var(--mono); font-size: 10px; color: #ffb648; margin-top: 12px; letter-spacing: 0.12em; }
+  </style>
+</head>
+<body>
+
+  <header class="demo-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <a class="back mono" href="../projects.html">← ALL PROJECTS</a>
+  </header>
+
+  <div class="demo-wrap">
+    <div class="demo-title">
+      <h1>Solo Strength Quest — <em>how it works</em></h1>
+      <span class="sim-tag">REAL APP SCREENS · SIMULATED INTERACTIONS</span>
+    </div>
+
+    <div class="demo-stage portrait sq" id="stage">
+      <div class="sq-phone">
+        <img src="assets/home.png" alt="Home — quest board" />
+        <img class="fx" id="img-profile" src="assets/profile.png" alt="Hunter profile" />
+        <img class="fx" id="img-history" src="assets/history.png" alt="Quest log" />
+        <div class="sq-dim" id="dim"></div>
+        <div class="co fx" id="co-ring"><span class="tag">LEVEL RING · 738 XP · 162 TO LVL 4</span></div>
+        <div class="co fx" id="co-week"><span class="tag up">THE WEEK BAR KEEPS YOU HONEST</span></div>
+        <div class="co fx" id="co-quests"><span class="tag up">RECENT QUESTS = WORKOUT RUNS</span></div>
+        <div class="co fx" id="co-start"><span class="tag">TONIGHT: DEADLIFTS</span></div>
+        <div class="co fx" id="co-attr"><span class="tag">ATTRIBUTES TRAINED BY REAL LIFTS</span></div>
+        <div class="co fx" id="co-pr"><span class="tag up">THE BOSS LEDGER — e1RM PER LIFT</span></div>
+        <div class="sq-log fx" id="logcard">
+          <h4>Quest in progress</h4>
+          <div class="lift">Barbell Deadlift</div>
+          <div class="sq-set" id="set1"><span>SET 1 — 120 KG × 5</span><span class="sq-xpfloat">+40 XP</span><span class="tick">✓</span></div>
+          <div class="sq-set" id="set2"><span>SET 2 — 140 KG × 3</span><span class="sq-xpfloat">+55 XP</span><span class="tick">✓</span></div>
+          <div class="sq-set" id="set3"><span>SET 3 — 150 KG × 3</span><span class="sq-xpfloat">+85 XP</span><span class="tick">✓</span></div>
+        </div>
+      </div>
+      <div class="sq-boss fx" id="boss-flash">
+        <div>
+          <div class="sw">⚔️</div>
+          <div class="t1">BOSS DOWN</div>
+          <div class="t2">NEW PERSONAL RECORD</div>
+          <div class="t3" id="pr-detail">BARBELL DEADLIFT · 150 KG × 3 · e1RM 165 (WAS 160)</div>
+          <div class="sq-xpbar" id="xpbar"><i></i></div>
+          <div class="sq-lvl" id="levelup">LEVEL 3 → <b>4</b></div>
+        </div>
+      </div>
+      <div class="sq-end fx" id="end-card">
+        <div>
+          <div class="t">Level up in real life.</div>
+          <div class="s">SOLO STRENGTH QUEST · IN DEVELOPMENT · WATCH github.com/ChinmayGit8765/strength-quest</div>
+        </div>
+      </div>
+      <div class="subtitle-layer"><div id="subtitle"></div></div>
+    </div>
+
+    <div class="demo-controls">
+      <button id="btn-play" class="ctl-btn">▶ PLAY</button>
+      <button id="btn-restart" class="ctl-btn secondary">↻</button>
+      <span id="demo-time"></span>
+      <div id="progress-bar"><div id="progress-fill"></div></div>
+    </div>
+    <div id="chapters"></div>
+    <p class="demo-note">
+      Real screenshots from the Flutter app; the interactions are hand-animated.
+      <a href="https://github.com/ChinmayGit8765/strength-quest" target="_blank" rel="noopener">Watch the repo ↗</a>
+      for the beta.
+    </p>
+  </div>
+
+  <script src="demo.js"></script>
+  <script>
+    const stage = document.getElementById("stage");
+    const hideCallouts = () => ["#co-ring", "#co-week", "#co-quests", "#co-start"].forEach((s) => off(s));
+
+    initWalkthrough({
+      duration: 70,
+      chapters: [
+        { name: "The quest board", at: 0 },
+        { name: "Log the workout", at: 17 },
+        { name: "Boss kill", at: 35 },
+        { name: "Character sheet", at: 50 },
+      ],
+      cues: [
+        { at: 0.5, sub: "<b>Solo Strength Quest</b> — a fitness RPG where the character sheet is you." },
+        { at: 4, sub: "Home is the quest board: level ring, XP, a streak on the line.", do: () => on("#co-ring") },
+        { at: 8, sub: "The week bar and recent quests keep the log honest.", do: () => { off("#co-ring"); on("#co-week"); on("#co-quests"); } },
+        { at: 13, sub: "Tap <b>START QUEST</b> — tonight is deadlifts.", do: () => { off("#co-week"); off("#co-quests"); on("#co-start"); } },
+        { at: 17, sub: "Sets are quest objectives. Tick them off.", do: () => { hideCallouts(); on("#dim"); on("#logcard"); } },
+        { at: 21, do: () => on("#set1") },
+        { at: 25, do: () => on("#set2") },
+        { at: 29, sub: "Third set: <b>150 kg × 3</b> — heavier than anything in the log…", do: () => on("#set3") },
+        { at: 35, sub: "<b>New personal record.</b> The app calls it what it is: a boss kill.", do: () => on("#boss-flash") },
+        { at: 40, do: () => on("#pr-detail") },
+        { at: 43, sub: "+180 XP — enough to tip the level. 738 needed 162 more; the maths is server-side, so it can't drift.", do: () => demoEl("#xpbar").classList.add("surge") },
+        { at: 46.5, sub: "", do: () => on("#levelup") },
+        { at: 50, sub: "The Hunter profile: attributes trained by what you actually lift.", do: () => { off("#boss-flash"); off("#dim"); off("#logcard"); on("#img-profile"); on("#co-attr"); } },
+        { at: 55, sub: "Personal records with estimated one-rep maxes — the boss ledger.", do: () => { off("#co-attr"); on("#co-pr"); } },
+        { at: 60, sub: "And the quest log: an honest training history, no vanity metrics.", do: () => { off("#co-pr"); on("#img-history"); } },
+        { at: 65, sub: "Rust API, Flutter app, in development — watch the repo for the beta.", do: () => on("#end-card") },
+      ],
+      reset() {
+        stage.querySelectorAll(".on").forEach((el) => el.classList.remove("on"));
+        demoEl("#xpbar").classList.remove("surge");
+      },
+    });
+  </script>
+</body>
+</html>
