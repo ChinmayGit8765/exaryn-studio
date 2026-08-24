@@ -341,6 +341,51 @@ em {
 
 .section-cta:hover { background: var(--ink); color: var(--paper); }
 
+/* ============ SCREENING ROOM ============ */
+
+.screening { border-bottom: 1px solid var(--line); }
+
+.reel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+}
+
+.reel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px var(--pad);
+  border-right: 1px solid var(--line);
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.reel:last-child { border-right: none; }
+
+.reel-kicker { color: var(--accent); letter-spacing: 0.14em; }
+
+.reel-name {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(24px, 2.6vw, 34px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.reel-desc {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 38ch;
+  transition: color 0.18s ease;
+}
+
+.reel-meta { margin-top: auto; padding-top: 6px; color: var(--muted); transition: color 0.18s ease; }
+
+.reel:hover { background: var(--ink); color: var(--paper); }
+.reel:hover .reel-desc { color: color-mix(in srgb, var(--paper) 75%, transparent); }
+.reel:hover .reel-meta { color: var(--accent); }
+
 /* ============ PLAYGROUND ============ */
 
 .playground { border-bottom: 1px solid var(--line); }
@@ -963,6 +1008,10 @@ em {
   .toy-grid { grid-template-columns: 1fr; }
   .toy { border-right: none; border-bottom: 1px solid var(--line); }
   .toy:last-child { border-bottom: none; }
+
+  .reel-grid { grid-template-columns: 1fr; }
+  .reel { border-right: none; border-bottom: 1px solid var(--line); }
+  .reel:last-child { border-bottom: none; }
 
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-facts { justify-self: stretch; max-width: none; }

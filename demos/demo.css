@@ -50,8 +50,20 @@ a { color: inherit; text-decoration: none; }
 .demo-header .wordmark { font-family: var(--serif); font-size: 24px; }
 .demo-header .wordmark .mark { color: var(--accent); }
 
-.demo-header .back { margin-left: auto; color: var(--muted); }
-.demo-header .back:hover { color: var(--accent); }
+.demo-nav { display: flex; gap: 22px; margin-left: auto; }
+
+.demo-nav a { position: relative; padding: 4px 0; }
+
+.demo-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 100%; bottom: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: right 0.25s ease;
+}
+
+.demo-nav a:hover::after { right: 0; }
 
 /* ---------- title strip ---------- */
 
