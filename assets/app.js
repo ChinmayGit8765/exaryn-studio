@@ -10,6 +10,33 @@ const esc = (s) =>
   String(s ?? "").replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
+/* ---------- data loading ---------- */
+
+/* One request per file per page. Three landing-page sections read the same
+   200KB+ brain bundle; without memoising they each start their own fetch
+   before any of them resolves, so the HTTP cache never gets a chance and the
+   page pulls the bundle three times over. A failed load is evicted so a later
+   caller can retry rather than inheriting a poisoned promise. */
+const _cache = new Map();
+
+function json(path) {
+  if (!_cache.has(path)) {
+    _cache.set(
+      path,
+      fetch(path)
+        .then((res) => {
+          if (!res.ok) throw new Error(`${path}: ${res.status}`);
+          return res.json();
+        })
+        .catch((err) => {
+          _cache.delete(path);
+          throw err;
+        })
+    );
+  }
+  return _cache.get(path);
+}
+
 /* ---------- clock (Melbourne time) ---------- */
 
 function tickClock() {
@@ -41,11 +68,7 @@ function ago(iso) {
 
 /* ================= PROJECTS ================= */
 
-async function fetchProjects() {
-  const res = await fetch("data/projects.json");
-  if (!res.ok) throw new Error(res.status);
-  return res.json();
-}
+const fetchProjects = () => json("data/projects.json");
 
 function projectRow(p, { expandable }) {
   const visit = p.links?.live || p.links?.demo || p.links?.repo || "";
@@ -208,9 +231,7 @@ async function loadFeed() {
   const snippet = $("#feed-snippet");
   if (!list && !snippet) return;
   try {
-    const res = await fetch("data/digest.json");
-    if (!res.ok) throw new Error(res.status);
-    const digest = await res.json();
+    const digest = await json("data/digest.json");
     liveDigest = digest;
     feedItems = digest.items || [];
 
@@ -242,9 +263,7 @@ async function loadArchive() {
   const listEl = $("#archive-list");
   if (!wrap || !listEl) return;
   try {
-    const res = await fetch("data/archive/index.json");
-    if (!res.ok) return;
-    const { days = [] } = await res.json();
+    const { days = [] } = await json("data/archive/index.json");
     if (!days.length) return;
     wrap.hidden = false;
     listEl.innerHTML =
@@ -270,9 +289,7 @@ $("#archive-list")?.addEventListener("click", async (e) => {
     if (day === "latest") {
       applyDigest(liveDigest || { items: [] }, null);
     } else {
-      const res = await fetch(`data/archive/${day}.json`);
-      if (!res.ok) throw new Error(res.status);
-      applyDigest(await res.json(), fmtDay(day));
+      applyDigest(await json(`data/archive/${day}.json`), fmtDay(day));
     }
     $(".feed-pane")?.scrollTo({ top: 0 });
   } catch {
@@ -308,18 +325,12 @@ async function loadLedger() {
   const list = $("#ledger-stats");
   if (!list) return;
 
-  const grab = async (path) => {
-    const res = await fetch(path);
-    if (!res.ok) throw new Error(`${path}: ${res.status}`);
-    return res.json();
-  };
-
   let counted = [];
   try {
     const [projects, repos, vault] = await Promise.all([
-      grab("data/projects.json"),
-      grab("data/repos.json"),
-      grab("data/brain.json"),
+      json("data/projects.json"),
+      json("data/repos.json"),
+      json("data/brain.json"),
     ]);
     const of = (type) => vault.notes.filter((n) => n.type === type).length;
     counted = [
@@ -341,11 +352,11 @@ async function loadLedger() {
   // The estimate is optional: if stats.json is missing or malformed the
   // counted ledger still stands on its own.
   try {
-    const { claudeTokens, updatedAt, measured } = await grab("data/stats.json");
+    const { claudeTokens, updatedAt, measured } = await json("data/stats.json");
     if (!claudeTokens) return;
     $("#ledger-est").innerHTML =
       `≈ <b>${compact(claudeTokens)}</b> CLAUDE TOKENS THIS YEAR` +
-      (measured ? "" : `<span class="est-flag">EST. ${updatedAt ? asOf(updatedAt) : "UNDATED"}</span>`);
+      (measured ? "" : ` <span class="est-flag">EST. ${updatedAt ? asOf(updatedAt) : "UNDATED"}</span>`);
   } catch {
     /* no estimate today; the counted figures are the point anyway */
   }
@@ -381,9 +392,7 @@ async function loadBrainTeaser() {
   const el = $("#brain-teaser-meta");
   if (!el) return;
   try {
-    const res = await fetch("data/brain.json");
-    if (!res.ok) throw new Error(res.status);
-    const { count, edges, words } = await res.json();
+    const { count, edges, words } = await json("data/brain.json");
     el.textContent = `${count} NOTES · ${edges} LINKS · ${words.toLocaleString()} WORDS`;
   } catch {
     el.textContent = "RUN npm run brain TO BUILD THE VAULT";
@@ -398,9 +407,7 @@ async function loadGuidesStrip() {
   const strip = $("#guides-strip");
   if (!strip) return;
   try {
-    const res = await fetch("data/brain.json");
-    if (!res.ok) throw new Error(res.status);
-    const { notes } = await res.json();
+    const { notes } = await json("data/brain.json");
     const guides = notes
       .filter((n) => n.type === "guide")
       .sort((a, b) => (Number(a.meta.order) || 99) - (Number(b.meta.order) || 99));
