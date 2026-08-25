@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain — Exaryn</title>
+  <meta name="description" content="The Exaryn Brain — an Obsidian vault of every project, agent, system and repo the studio has built, browsable in the page with backlinks, tags, search and a graph." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body class="brain-body">
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="projects.html">Work</a>
+      <a href="agents.html" class="current">Agents</a>
+      <a href="feed.html">Feed</a>
+      <a href="play.html">Play</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main class="brain-main">
+
+    <div class="brain-bar mono">
+      <span class="brain-title">✳ THE EXARYN BRAIN — AN OBSIDIAN VAULT OF EVERYTHING BUILT HERE</span>
+      <span class="brain-stats">
+        <span><b id="stat-notes">—</b> NOTES</span>
+        <span><b id="stat-links">—</b> LINKS</span>
+        <span><b id="stat-words">—</b> WORDS</span>
+        <span>BUILT <b id="stat-built">—</b></span>
+      </span>
+      <span class="brain-actions">
+        <button class="ghost-btn mono" id="graph-toggle">GRAPH VIEW ◈</button>
+        <a class="ghost-btn mono" href="agents.html">← AGENT STRUCT</a>
+        <a class="ghost-btn mono" href="https://github.com/ChinmayGit8765/exaryn-studio/tree/main/brain"
+           target="_blank" rel="noopener">VAULT SOURCE ↗</a>
+      </span>
+    </div>
+
+    <div id="brain-status">
+      <p class="brain-loading mono">OPENING THE VAULT…</p>
+    </div>
+
+    <div class="brain-shell" id="brain-shell" hidden>
+
+      <!-- ============ LEFT: FILE TREE ============ -->
+      <aside class="brain-rail">
+        <div class="rail-search">
+          <input id="brain-search" type="search" class="mono"
+                 placeholder="SEARCH EVERY NOTE  ( / )" aria-label="Search the vault" />
+          <span class="mono tree-count" id="tree-count">—</span>
+        </div>
+        <div class="tag-cloud" id="tag-cloud"></div>
+        <nav class="note-tree" id="note-tree" aria-label="Vault contents"></nav>
+      </aside>
+
+      <!-- ============ CENTRE: THE NOTE ============ -->
+      <section class="brain-pane">
+        <div class="graph-wrap" id="graph-wrap" hidden>
+          <canvas id="graph" width="900" height="420" aria-label="Link graph of the vault"></canvas>
+          <p class="graph-legend mono">
+            <span class="dot t-map"></span> MAP
+            <span class="dot t-agent"></span> AGENT
+            <span class="dot t-project"></span> PROJECT
+            <span class="dot t-system"></span> SYSTEM
+            <span class="dot t-stack"></span> STACK
+            <span class="dot t-repo"></span> REPO
+            <span class="dot t-note"></span> NOTE
+            <em>— click a node to open it</em>
+          </p>
+        </div>
+        <div id="note-pane"></div>
+      </section>
+
+      <!-- ============ RIGHT: LINKS ============ -->
+      <aside class="brain-rel" id="rel-pane"></aside>
+
+    </div>
+  </main>
+
+  <script src="assets/app.js"></script>
+  <script src="assets/brain.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Struct — Exaryn</title>
+  <meta name="description" content="The agent structure of the Exaryn studio — every autonomous system built here, sorted by how much supervision it needs, and the door into the Exaryn Brain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="projects.html">Work</a>
+      <a href="agents.html" class="current">Agents</a>
+      <a href="feed.html">Feed</a>
+      <a href="play.html">Play</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main id="top">
+
+    <section class="page-hero">
+      <p class="kicker mono">THE AGENT STRUCT</p>
+      <h1 class="section-title xl">How the machines <em>are wired</em></h1>
+      <p class="page-lede">
+        <b id="lede-agents">—</b> autonomous or semi-autonomous systems run in
+        this studio, across <b id="lede-projects">—</b> projects and
+        <b id="lede-repos">—</b> repositories. This page is the structure. <span class="hint">The full reasoning lives in the brain — an
+        Obsidian vault you can read right here in the browser.</span>
+      </p>
+    </section>
+
+    <!-- ============ THE DOOR INTO THE BRAIN ============ -->
+    <section class="brain-door">
+      <a class="door" href="brain.html">
+        <span class="door-kicker mono">◈ THE EXARYN BRAIN</span>
+        <span class="door-name">Open the vault</span>
+        <p class="door-desc">
+          Every project, agent, system, technology and repository as a linked
+          markdown note — with backlinks, tags, full-text search and a live link
+          graph. A real Obsidian vault, rendered in the page.
+        </p>
+        <span class="door-meta mono" id="door-meta">— NOTES · — LINKS · — WORDS</span>
+        <span class="door-cta mono">ENTER THE BRAIN →</span>
+      </a>
+      <ul class="door-jumps mono">
+        <li><a href="brain.html#/maps/Agent%20Structure">AGENT STRUCTURE</a></li>
+        <li><a href="brain.html#/agents/Agent%20Ledger">AGENT LEDGER</a></li>
+        <li><a href="brain.html#/agents/Agent%20Patterns">RECURRING PATTERNS</a></li>
+        <li><a href="brain.html#/agents/Tool%20Safety">TOOL SAFETY</a></li>
+        <li><a href="brain.html#/maps/Projects%20Map">PROJECTS MAP</a></li>
+        <li><a href="brain.html#/maps/Repos%20Map">ALL 35 REPOS</a></li>
+        <li><a href="brain.html#/systems/Cron%20Ledger">CRON LEDGER</a></li>
+        <li><a href="brain.html#/notes/Roadmap">THE TODO LIST</a></li>
+      </ul>
+    </section>
+
+    <!-- ============ SCOREBOARD ============ -->
+    <section class="scoreboard" id="scoreboard" aria-label="What the studio has built">
+      <div class="score"><span class="score-num" id="n-projects">—</span><span class="mono">PROJECTS</span></div>
+      <div class="score"><span class="score-num" id="n-agents">—</span><span class="mono">AGENTS</span></div>
+      <div class="score"><span class="score-num" id="n-systems">—</span><span class="mono">SYSTEMS</span></div>
+      <div class="score"><span class="score-num" id="n-repos">—</span><span class="mono">REPOS</span></div>
+      <div class="score"><span class="score-num" id="n-langs">—</span><span class="mono">LANGUAGES</span></div>
+      <div class="score"><span class="score-num" id="n-notes">—</span><span class="mono">BRAIN NOTES</span></div>
+    </section>
+
+    <!-- ============ THE TIERS ============ -->
+    <section class="tiers">
+      <div class="section-head">
+        <h2 class="section-title">Three <em>tiers</em></h2>
+        <span class="section-note mono">SORTED BY HOW MUCH SUPERVISION EACH ONE NEEDS</span>
+      </div>
+      <div class="tier-grid" id="tier-grid">
+        <p class="index-empty mono">LOADING THE STRUCTURE…</p>
+      </div>
+    </section>
+
+    <!-- ============ THE RULES ============ -->
+    <section class="rules">
+      <div class="section-head">
+        <h2 class="section-title">What every agent here <em>has in common</em></h2>
+      </div>
+      <ol class="rule-list">
+        <li>
+          <span class="rule-num mono">01</span>
+          <h3>An isolation boundary</h3>
+          <p>
+            A git worktree, a container, a local model, a committed file.
+            Nothing shares mutable state with anything else. The hard part of
+            running several agents is not reasoning — it is write conflicts, and
+            isolation deletes the problem rather than managing it.
+          </p>
+          <a class="rule-link mono" href="brain.html#/systems/Worktree%20Workflow">WORKTREE WORKFLOW →</a>
+        </li>
+        <li>
+          <span class="rule-num mono">02</span>
+          <h3>A gate before consequence</h3>
+          <p>
+            Compile before write. Allowlist before call. Human before push. It
+            turns "the model is usually right" into "the output is always
+            valid", which is a different product entirely.
+          </p>
+          <a class="rule-link mono" href="brain.html#/agents/Tool%20Safety">TOOL SAFETY →</a>
+        </li>
+        <li>
+          <span class="rule-num mono">03</span>
+          <h3>A written trail</h3>
+          <p>
+            Committed JSON, audit logs, git history. Every scheduled run in this
+            studio ends as a diffable commit, so a regression is bisectable and
+            an unrecorded action did not happen.
+          </p>
+          <a class="rule-link mono" href="brain.html#/systems/Cron%20Ledger">CRON LEDGER →</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ THE SHAPE ============ -->
+    <section class="shape">
+      <div class="section-head">
+        <h2 class="section-title">The shape that <em>keeps repeating</em></h2>
+        <span class="section-note mono">THREE UNRELATED PRODUCTS, ONE MECHANISM</span>
+      </div>
+      <pre class="shape-diagram mono">cron (21:00 UTC) ──► stdlib python ──► JSON in /data ──► git commit [skip ci] ──► Pages redeploy</pre>
+      <p class="shape-note">
+        That is the entire studio backend. No server to keep alive, no database
+        to back up, no bill when nobody visits — and every run is a commit you
+        can diff, bisect and roll back. The daily AI signal, the daily One Piece
+        character, the footy suite and this brain all run on it.
+      </p>
+      <div class="shape-links mono">
+        <a href="brain.html#/agents/Agent%20Patterns">ALL THE PATTERNS ↗</a>
+        <a href="brain.html#/systems/Daily%20Signal%20Pipeline">DAILY SIGNAL PIPELINE ↗</a>
+        <a href="brain.html#/systems/Brain%20Pipeline">BRAIN PIPELINE ↗</a>
+      </div>
+    </section>
+
+    <!-- ============ EVERYTHING BUILT ============ -->
+    <section class="everything">
+      <div class="section-head">
+        <h2 class="section-title">Everything <em>built</em></h2>
+        <a class="more-link mono" href="brain.html#/maps/Repos%20Map">ALL 35 REPOS ↗</a>
+      </div>
+      <p class="page-lede everything-lede">
+        Every project in the index, with the repository metadata behind it —
+        swept from the GitHub API, not typed by hand.
+      </p>
+      <div class="table-wrap">
+        <table class="built-table" id="built-table">
+          <thead>
+            <tr>
+              <th class="mono">PROJECT</th>
+              <th class="mono">CATEGORY</th>
+              <th class="mono">STACK</th>
+              <th class="mono">AGENTS</th>
+              <th class="mono">REPO</th>
+              <th class="mono">LAST PUSH</th>
+              <th class="mono">STATUS</th>
+            </tr>
+          </thead>
+          <tbody><tr><td colspan="7" class="mono">LOADING…</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer" id="about">
+      <p class="kicker mono inverse">ABOUT / CONTACT</p>
+      <h2 class="footer-title">Run by Chinmay Purohit.<br /><em>One person, many rabbit holes.</em></h2>
+      <p class="footer-bio">
+        Away from the keyboard: Brazilian Jiu-Jitsu, footy, hiking, the gym,
+        a good book, and a well-made latte.
+        <a href="about.html" class="footer-more">More on the about page →</a>
+      </p>
+      <div class="footer-tags mono">BJJ ✳ AFL ✳ HIKING ✳ GYM ✳ BOOKS ✳ LATTE</div>
+      <div class="footer-links mono">
+        <a href="mailto:careers.chinmay@gmail.com">EMAIL ↗</a>
+        <a href="https://github.com/ChinmayGit8765" target="_blank" rel="noopener">GITHUB ↗</a>
+      </div>
+      <div class="footer-base mono">
+        <span>© <span id="year">2026</span> EXARYN</span>
+        <span><a href="index.html">← BACK HOME</a></span>
+        <a href="#top">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="assets/app.js"></script>
+  <script src="assets/agents.js"></script>
+</body>
+</html>
