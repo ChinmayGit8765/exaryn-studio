@@ -49,6 +49,7 @@ Traefik does hostname routing; every worktree gets a container and a `<branch>.l
 | Created | 2026-08-12 |
 | Last push | 2026-08-20 |
 | Visibility | public |
+| Language mix | TypeScript 86.3%, JavaScript 7.0%, CSS 6.6%, HTML 0.1% |
 
 ## Stack
 

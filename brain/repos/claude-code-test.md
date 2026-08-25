@@ -31,6 +31,14 @@ generated: true
 | GitHub Pages | no |
 | Archived | no |
 
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| Vue | 95.4% |
+| HTML | 2.7% |
+| JavaScript | 1.9% |
+
 ## Related
 
 [[Repos Map]] · [[Home]]

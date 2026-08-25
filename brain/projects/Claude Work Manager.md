@@ -49,6 +49,7 @@ A Node server wraps the local `claude` CLI. One git worktree per agent means age
 | Created | 2026-08-21 |
 | Last push | 2026-08-22 |
 | Visibility | public |
+| Language mix | JavaScript 80.0%, CSS 16.8%, HTML 3.2% |
 
 ## Stack
 

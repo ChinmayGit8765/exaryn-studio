@@ -49,6 +49,7 @@ Spring Boot 3.5 runs the quant engine; Spring AI runs tool-calling and RAG over 
 | Created | 2026-06-06 |
 | Last push | 2026-06-10 |
 | Visibility | public |
+| Language mix | Java 77.4%, Vue 12.7%, TypeScript 8.9%, CSS 0.4%, PowerShell 0.3% |
 
 ## Stack
 

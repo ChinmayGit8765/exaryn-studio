@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[QuantLens]]
 
+> An AI-augmented portfolio and market intelligence dashboard fusing a quantitative-finance Spring Boot backend with a Vue 3 SPA. Features real portfolio analytics (P&L, risk metrics, Sharpe, VaR, Monte Carlo), Spring AI narration, and a one-click demo mode — no API keys needed.
+
 ## Metadata
 
 | | |
@@ -32,6 +34,18 @@ Project note: [[QuantLens]]
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| Java | 77.4% |
+| Vue | 12.7% |
+| TypeScript | 8.9% |
+| CSS | 0.4% |
+| PowerShell | 0.3% |
+| Dockerfile | 0.3% |
+| HTML | 0.0% |
 
 ## Related
 

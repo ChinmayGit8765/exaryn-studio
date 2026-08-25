@@ -3,7 +3,7 @@ title: collingwood-fan-suite
 type: repo
 tags: [repo, public]
 language: CSS
-pushed: 2026-08-24
+pushed: 2026-08-25
 generated: true
 ---
 
@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[Side by Side]]
 
+> A self-updating home page for Collingwood tragics — and, with a one-file edit, for fans of **any AFL club**.
+
 ## Metadata
 
 | | |
@@ -27,11 +29,20 @@ Project note: [[Side by Side]]
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-08-24 |
+| Last push | 2026-08-25 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| CSS | 32.4% |
+| JavaScript | 24.7% |
+| Python | 22.1% |
+| HTML | 20.8% |
 
 ## Related
 

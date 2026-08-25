@@ -14,6 +14,8 @@ generated: true
 
 Project note: [[PDF Compiler]]
 
+> This code is mainly used to compile many PDF files into one when you have a zip
+
 ## Metadata
 
 | | |
@@ -30,6 +32,14 @@ Project note: [[PDF Compiler]]
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| HTML | 74.5% |
+| TeX | 25.3% |
+| Python | 0.3% |
 
 ## Related
 

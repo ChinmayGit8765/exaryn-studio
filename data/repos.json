@@ -1,9 +1,184 @@
 {
-  "generated_at": "2026-08-25T00:00:00Z",
+  "generated_at": "2026-08-25T21:08:37+00:00",
   "owner": "ChinmayGit8765",
   "count": 35,
-  "source": "GitHub REST search API (user:ChinmayGit8765)",
+  "source": "GitHub REST API",
   "repos": [
+    {
+      "name": "collingwood-fan-suite",
+      "full_name": "ChinmayGit8765/collingwood-fan-suite",
+      "html_url": "https://github.com/ChinmayGit8765/collingwood-fan-suite",
+      "description": "Side by Side \u26ab\u26aa \u2014 a self-updating super-fan suite for Collingwood (or any AFL club): next-game countdown, form guide, live ladder, daily news \u2014 rebuilt every morning by a GitHub Actions cron.",
+      "language": "CSS",
+      "topics": [],
+      "homepage": "",
+      "size": 17,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "watchers_count": 0,
+      "created_at": "2026-08-24T11:34:48Z",
+      "updated_at": "2026-08-25T20:55:38Z",
+      "pushed_at": "2026-08-25T20:55:34Z",
+      "default_branch": "main",
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "has_pages": true,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "CSS": 32.4,
+        "JavaScript": 24.7,
+        "Python": 22.1,
+        "HTML": 20.8
+      },
+      "readme": "A self-updating home page for Collingwood tragics \u2014 and, with a one-file edit, for fans of **any AFL club**."
+    },
+    {
+      "name": "solo-strength-quest-play",
+      "full_name": "ChinmayGit8765/solo-strength-quest-play",
+      "html_url": "https://github.com/ChinmayGit8765/solo-strength-quest-play",
+      "description": "Solo Strength Quest \u2014 playable web demo. Generated output; source lives in a private repo.",
+      "language": "JavaScript",
+      "topics": [],
+      "homepage": "",
+      "size": 9763,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "watchers_count": 0,
+      "created_at": "2026-08-24T11:14:58Z",
+      "updated_at": "2026-08-25T13:16:02Z",
+      "pushed_at": "2026-08-25T13:01:00Z",
+      "default_branch": "main",
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "has_pages": true,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "JavaScript": 98.9,
+        "HTML": 0.7,
+        "CSS": 0.4
+      },
+      "readme": "Live: **https://chinmaygit8765.github.io/solo-strength-quest-play/**"
+    },
+    {
+      "name": "exaryn-studio",
+      "full_name": "ChinmayGit8765/exaryn-studio",
+      "html_url": "https://github.com/ChinmayGit8765/exaryn-studio",
+      "description": "Exaryn - studio portfolio + self-updating daily AI signal digest",
+      "language": "HTML",
+      "topics": [],
+      "homepage": "",
+      "size": 677,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "watchers_count": 0,
+      "created_at": "2026-08-17T12:13:05Z",
+      "updated_at": "2026-08-25T12:40:28Z",
+      "pushed_at": "2026-08-25T12:38:00Z",
+      "default_branch": "main",
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "has_pages": true,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "HTML": 41.3,
+        "CSS": 22.2,
+        "JavaScript": 19.0,
+        "Python": 17.4
+      },
+      "readme": "The studio site \u2014 a portfolio of everything Exaryn has built, **The Daily Signal** (a digest of AI news, papers and videos that rebuilds itself every morning on a GitHub Actions cron), and **the Exaryn Brain**: an Obsidian vault of markdown notes about every project, agent, system and repo, readable in the browser with backlinks, tags, search and a graph."
+    },
+    {
+      "name": "AlfredOpenSource",
+      "full_name": "ChinmayGit8765/AlfredOpenSource",
+      "html_url": "https://github.com/ChinmayGit8765/AlfredOpenSource",
+      "description": "",
+      "language": "Python",
+      "topics": [],
+      "homepage": "",
+      "size": 846,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 9,
+      "watchers_count": 0,
+      "created_at": "2026-06-11T08:32:56Z",
+      "updated_at": "2026-08-25T07:38:10Z",
+      "pushed_at": "2026-08-25T07:36:46Z",
+      "default_branch": "main",
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "has_pages": false,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_discussions": false,
+      "license": "MIT",
+      "languages": {
+        "Python": 100.0
+      },
+      "readme": "**A self-hosted, local-first, multi-agent life-optimization system.**"
+    },
+    {
+      "name": "quantflex-site",
+      "full_name": "ChinmayGit8765/quantflex-site",
+      "html_url": "https://github.com/ChinmayGit8765/quantflex-site",
+      "description": "QuantFlex \u2014 derivatives pricing & risk engine. Landing page with live engine output and a daily market feed.",
+      "language": "JavaScript",
+      "topics": [
+        "automatic-differentiation",
+        "black-scholes",
+        "derivatives",
+        "monte-carlo",
+        "numerical-methods",
+        "options-pricing",
+        "portfolio-project",
+        "quantitative-finance"
+      ],
+      "homepage": "https://chinmaygit8765.github.io/quantflex-site/",
+      "size": 38,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "watchers_count": 0,
+      "created_at": "2026-08-24T11:28:29Z",
+      "updated_at": "2026-08-25T06:27:07Z",
+      "pushed_at": "2026-08-25T06:27:00Z",
+      "default_branch": "main",
+      "visibility": "public",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "has_pages": true,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "JavaScript": 44.1,
+        "CSS": 21.1,
+        "HTML": 20.2,
+        "Python": 14.6
+      },
+      "readme": "Public landing page for **QuantFlex**, a derivatives pricing and risk engine. The engine itself lives in a separate private repository; this repo holds only the static page and the data it renders."
+    },
     {
       "name": "one-piece-guess-game",
       "full_name": "ChinmayGit8765/one-piece-guess-game",
@@ -11,7 +186,6 @@
       "description": "Wordle, but for One Piece \u2014 a daily character riddle. New pirate every morning, picked by a GitHub Actions cron. Includes a how-to guide for building your own daily-anything game.",
       "language": "JavaScript",
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 19,
       "stargazers_count": 0,
@@ -29,61 +203,15 @@
       "has_pages": true,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
-    },
-    {
-      "name": "exaryn-studio",
-      "full_name": "ChinmayGit8765/exaryn-studio",
-      "html_url": "https://github.com/ChinmayGit8765/exaryn-studio",
-      "description": "Exaryn - studio portfolio + self-updating daily AI signal digest",
-      "language": "CSS",
-      "topics": [],
+      "has_discussions": false,
       "license": null,
-      "homepage": "",
-      "size": 351,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "watchers_count": 0,
-      "created_at": "2026-08-17T12:13:05Z",
-      "updated_at": "2026-08-24T21:10:13Z",
-      "pushed_at": "2026-08-24T21:08:48Z",
-      "default_branch": "main",
-      "visibility": "public",
-      "private": false,
-      "fork": false,
-      "archived": false,
-      "has_pages": true,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_discussions": false
-    },
-    {
-      "name": "collingwood-fan-suite",
-      "full_name": "ChinmayGit8765/collingwood-fan-suite",
-      "html_url": "https://github.com/ChinmayGit8765/collingwood-fan-suite",
-      "description": "Side by Side \u26ab\u26aa \u2014 a self-updating super-fan suite for Collingwood (or any AFL club): next-game countdown, form guide, live ladder, daily news \u2014 rebuilt every morning by a GitHub Actions cron.",
-      "language": "CSS",
-      "topics": [],
-      "license": null,
-      "homepage": "",
-      "size": 17,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "watchers_count": 0,
-      "created_at": "2026-08-24T11:34:48Z",
-      "updated_at": "2026-08-24T21:08:58Z",
-      "pushed_at": "2026-08-24T20:56:24Z",
-      "default_branch": "main",
-      "visibility": "public",
-      "private": false,
-      "fork": false,
-      "archived": false,
-      "has_pages": true,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_discussions": false
+      "languages": {
+        "JavaScript": 46.6,
+        "CSS": 31.1,
+        "HTML": 13.5,
+        "Python": 8.8
+      },
+      "readme": "Wordle, but for One Piece. Guess the daily character \u2014 every wrong guess tells you how close you are on **gender, crew, devil fruit, haki, bounty, height, origin and debut saga**, with arrows when you're over or under. Hints unlock as you struggle. New pirate every morning, **picked by a GitHub Actions cron**."
     },
     {
       "name": "strength-quest",
@@ -97,7 +225,6 @@
         "gamification",
         "rust"
       ],
-      "license": null,
       "homepage": "",
       "size": 156,
       "stargazers_count": 0,
@@ -115,7 +242,10 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {},
+      "readme": "**Level up in real life.** A fitness RPG: every workout is a quest, every PR is a boss kill."
     },
     {
       "name": "quantflex",
@@ -129,7 +259,6 @@
         "options-pricing",
         "quant-finance"
       ],
-      "license": null,
       "homepage": "",
       "size": 2,
       "stargazers_count": 0,
@@ -147,7 +276,10 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {},
+      "readme": "**A free web derivatives pricing and risk engine \u2014 with the numerics hand-rolled and provably correct.**"
     },
     {
       "name": "solo_strength-quest",
@@ -174,69 +306,6 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": false,
-      "has_discussions": false
-    },
-    {
-      "name": "solo-strength-quest-play",
-      "full_name": "ChinmayGit8765/solo-strength-quest-play",
-      "html_url": "https://github.com/ChinmayGit8765/solo-strength-quest-play",
-      "description": "Solo Strength Quest \u2014 playable web demo. Generated output; source lives in a private repo.",
-      "language": "JavaScript",
-      "topics": [],
-      "license": null,
-      "homepage": "",
-      "size": 9724,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "watchers_count": 0,
-      "created_at": "2026-08-24T11:14:58Z",
-      "updated_at": "2026-08-24T12:07:22Z",
-      "pushed_at": "2026-08-24T12:03:52Z",
-      "default_branch": "main",
-      "visibility": "public",
-      "private": false,
-      "fork": false,
-      "archived": false,
-      "has_pages": true,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_discussions": false
-    },
-    {
-      "name": "quantflex-site",
-      "full_name": "ChinmayGit8765/quantflex-site",
-      "html_url": "https://github.com/ChinmayGit8765/quantflex-site",
-      "description": "QuantFlex \u2014 derivatives pricing & risk engine. Landing page with live engine output and a daily market feed.",
-      "language": "JavaScript",
-      "topics": [
-        "automatic-differentiation",
-        "black-scholes",
-        "derivatives",
-        "monte-carlo",
-        "numerical-methods",
-        "options-pricing",
-        "portfolio-project",
-        "quantitative-finance"
-      ],
-      "license": null,
-      "homepage": "https://chinmaygit8765.github.io/quantflex-site/",
-      "size": 32,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "watchers_count": 0,
-      "created_at": "2026-08-24T11:28:29Z",
-      "updated_at": "2026-08-24T11:59:12Z",
-      "pushed_at": "2026-08-24T11:58:32Z",
-      "default_branch": "main",
-      "visibility": "public",
-      "private": false,
-      "fork": false,
-      "archived": false,
-      "has_pages": true,
-      "has_issues": true,
-      "has_wiki": true,
       "has_discussions": false
     },
     {
@@ -273,7 +342,6 @@
       "description": "A deliberately simple todo app built like a real codebase \u2014 .NET Web API + Angular, proper layering, presentational components, tests on both sides. Subtasks, inline edit, active/completed tabs.",
       "language": "C#",
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 105,
       "stargazers_count": 1,
@@ -291,7 +359,15 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "C#": 45.8,
+        "TypeScript": 33.2,
+        "HTML": 20.6,
+        "CSS": 0.4
+      },
+      "readme": "A small TODO list app with an Angular front-end and a .NET Web API back-end. Tasks live in memory inside the API and reset on each restart \u2014 no database is required."
     },
     {
       "name": "ContactUsPage",
@@ -300,7 +376,6 @@
       "description": "Contact Flow \u2014 a production-shaped contact/lead-capture stack: NestJS + TypeORM + PostgreSQL API, Next.js 14 + Tailwind frontend, one docker compose up. Validation done properly on both sides.",
       "language": "TypeScript",
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 311,
       "stargazers_count": 0,
@@ -318,7 +393,15 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "TypeScript": 86.9,
+        "JavaScript": 10.1,
+        "Dockerfile": 1.8,
+        "CSS": 1.1
+      },
+      "readme": "A production-shaped **contact / lead-capture flow**, end to end: validated form in, reviewed contact out. NestJS + TypeORM + PostgreSQL API, Next.js 14 (App Router) + Tailwind frontend, one `docker compose up` to run the lot."
     },
     {
       "name": "thequantflex",
@@ -354,7 +437,6 @@
       "description": "Self-hosted, mobile-first dashboard for running concurrent Claude Code sessions across git worktrees \u2014 spawn agents per worktree, git commit/push, localhost preview widgets.",
       "language": "JavaScript",
       "topics": [],
-      "license": "MIT",
       "homepage": "",
       "size": 44,
       "stargazers_count": 0,
@@ -372,7 +454,14 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": "MIT",
+      "languages": {
+        "JavaScript": 80.0,
+        "CSS": 16.8,
+        "HTML": 3.2
+      },
+      "readme": "A self-hosted, mobile-first dashboard for running **concurrent Claude Code sessions across git worktrees** \u2014 spawn isolated worktrees, chat with a Claude Code agent in each one, watch localhost previews of your dev servers, and commit/push from your phone."
     },
     {
       "name": "worktree-optimiser",
@@ -390,7 +479,6 @@
         "model-context-protocol",
         "traefik"
       ],
-      "license": "MIT",
       "homepage": "",
       "size": 303,
       "stargazers_count": 0,
@@ -408,7 +496,15 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": "MIT",
+      "languages": {
+        "TypeScript": 86.3,
+        "JavaScript": 7.0,
+        "CSS": 6.6,
+        "HTML": 0.1
+      },
+      "readme": "Run every branch of a repo as its own containerised dev server, all at once, each on its own hostname \u2014 and manage the lot from one dashboard."
     },
     {
       "name": "financial-services-lkg-test",
@@ -438,40 +534,12 @@
       "has_discussions": false
     },
     {
-      "name": "AlfredOpenSource",
-      "full_name": "ChinmayGit8765/AlfredOpenSource",
-      "html_url": "https://github.com/ChinmayGit8765/AlfredOpenSource",
-      "description": "",
-      "language": "Python",
-      "topics": [],
-      "license": "MIT",
-      "homepage": "",
-      "size": 598,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "watchers_count": 0,
-      "created_at": "2026-06-11T08:32:56Z",
-      "updated_at": "2026-07-22T07:57:38Z",
-      "pushed_at": "2026-07-22T07:57:18Z",
-      "default_branch": "main",
-      "visibility": "public",
-      "private": false,
-      "fork": false,
-      "archived": false,
-      "has_pages": false,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_discussions": false
-    },
-    {
       "name": "VolatilityModel",
       "full_name": "ChinmayGit8765/VolatilityModel",
       "html_url": "https://github.com/ChinmayGit8765/VolatilityModel",
       "description": "",
       "language": "Python",
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 2601,
       "stargazers_count": 0,
@@ -489,7 +557,14 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "Python": 98.8,
+        "Dockerfile": 1.0,
+        "Shell": 0.2
+      },
+      "readme": "A short-horizon realized volatility forecasting system covering crypto (BTC, ETH) and equities (SPY + large caps), wrapped in a full production MLOps lifecycle: ingestion, validation, feature engineering, classical + ML models, serving, monitoring, drift detection, and automated retraining."
     },
     {
       "name": "SmartContract-Creator",
@@ -498,7 +573,6 @@
       "description": "This projects purpose is creating an easy tool to create rust/solidity based smart contract and is code that can be used within services. It is also to showcase knowledge.",
       "language": "TypeScript",
       "topics": [],
-      "license": "MIT",
       "homepage": "",
       "size": 1016,
       "stargazers_count": 1,
@@ -516,7 +590,14 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": "MIT",
+      "languages": {
+        "TypeScript": 99.0,
+        "JavaScript": 1.0,
+        "Python": 0.0
+      },
+      "readme": "**Generate working, compile-verified smart contracts from a wizard \u2014 no boilerplate, no remembering EIPs, no scaffolding a whole project just to write one contract.**"
     },
     {
       "name": "FinancialServicesDashboard",
@@ -525,7 +606,6 @@
       "description": "AI-augmented portfolio & market-intelligence dashboard. Spring Boot 3.5 + Spring AI (RAG, tool-calling, embedded MCP server) over a real quant engine (Monte Carlo SDEs, VaR, cointegration), with a Vue 3 SPA and one-click, zero-key demo mode.",
       "language": "Java",
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 1986,
       "stargazers_count": 0,
@@ -543,7 +623,18 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "Java": 77.4,
+        "Vue": 12.7,
+        "TypeScript": 8.9,
+        "CSS": 0.4,
+        "PowerShell": 0.3,
+        "Dockerfile": 0.3,
+        "HTML": 0.0
+      },
+      "readme": "An AI-augmented portfolio and market intelligence dashboard fusing a quantitative-finance Spring Boot backend with a Vue 3 SPA. Features real portfolio analytics (P&L, risk metrics, Sharpe, VaR, Monte Carlo), Spring AI narration, and a one-click demo mode \u2014 no API keys needed."
     },
     {
       "name": "gymapp-v2",
@@ -579,7 +670,6 @@
       "description": "This repo is a test of claude code",
       "language": "Vue",
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 5,
       "stargazers_count": 0,
@@ -597,7 +687,14 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "Vue": 95.4,
+        "HTML": 2.7,
+        "JavaScript": 1.9
+      },
+      "readme": ""
     },
     {
       "name": "json_api_simplifier",
@@ -606,7 +703,6 @@
       "description": "The purpose of this code is to allow myself to put in a api structure into here hard coded to get a stripped down version without any data in it, to make sure the api calls I am making are correct and I do not need to worry about miss interpretting values as the specific data fields.",
       "language": "Python",
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 4,
       "stargazers_count": 0,
@@ -624,7 +720,12 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "Python": 100.0
+      },
+      "readme": ""
     },
     {
       "name": "chinmay-tech-portfolio",
@@ -633,7 +734,6 @@
       "description": "this is my personal github page highlighting all projects and stuff",
       "language": null,
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 0,
       "stargazers_count": 0,
@@ -651,7 +751,10 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {},
+      "readme": ""
     },
     {
       "name": "exaryn-website",
@@ -822,7 +925,6 @@
       "description": "This mini coding project is too showcase my ability and skills with the framework in vue js and to make it easier for interested parties to see my knowledge clearly.",
       "language": null,
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 0,
       "stargazers_count": 0,
@@ -840,7 +942,10 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {},
+      "readme": ""
     },
     {
       "name": "ai_development_project_one",
@@ -876,7 +981,6 @@
       "description": "",
       "language": "HTML",
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 18812,
       "stargazers_count": 0,
@@ -894,7 +998,14 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {
+        "HTML": 74.5,
+        "TeX": 25.3,
+        "Python": 0.3
+      },
+      "readme": "This code is mainly used to compile many PDF files into one when you have a zip"
     },
     {
       "name": "coolAudioApplication",
@@ -957,7 +1068,6 @@
       "description": "This is my blog that will get deployed onto azure and will host my cool reviews",
       "language": null,
       "topics": [],
-      "license": null,
       "homepage": "",
       "size": 0,
       "stargazers_count": 0,
@@ -975,7 +1085,10 @@
       "has_pages": false,
       "has_issues": true,
       "has_wiki": true,
-      "has_discussions": false
+      "has_discussions": false,
+      "license": null,
+      "languages": {},
+      "readme": "This is my blog that will get deployed onto azure and will host my cool reviews"
     }
   ]
 }

@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[Claude Work Manager]]
 
+> A self-hosted, mobile-first dashboard for running **concurrent Claude Code sessions across git worktrees** — spawn isolated worktrees, chat with a Claude Code agent in each one, watch localhost previews of your dev servers, and commit/push from your phone.
+
 ## Metadata
 
 | | |
@@ -32,6 +34,14 @@ Project note: [[Claude Work Manager]]
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| JavaScript | 80.0% |
+| CSS | 16.8% |
+| HTML | 3.2% |
 
 ## Related
 

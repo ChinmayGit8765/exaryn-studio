@@ -45,11 +45,12 @@ Local models via Ollama, SQLite for state, Pydantic contracts between every agen
 | Category | Agents & Tooling |
 | Repository | [ChinmayGit8765/AlfredOpenSource](https://github.com/ChinmayGit8765/AlfredOpenSource) |
 | Primary language | Python |
-| Size | 598 KB |
+| Size | 846 KB |
 | Licence | MIT |
 | Created | 2026-06-11 |
-| Last push | 2026-07-22 |
+| Last push | 2026-08-25 |
 | Visibility | public |
+| Language mix | Python 100.0% |
 
 ## Stack
 

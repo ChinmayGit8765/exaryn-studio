@@ -47,6 +47,7 @@ One script. Walk the parsed JSON, keep keys and container types, drop leaf value
 | Created | 2025-10-12 |
 | Last push | 2025-10-16 |
 | Visibility | public |
+| Language mix | Python 100.0% |
 
 ## Stack
 

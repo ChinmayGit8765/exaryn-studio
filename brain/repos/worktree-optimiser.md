@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[Worktree Optimiser]]
 
+> Run every branch of a repo as its own containerised dev server, all at once, each on its own hostname — and manage the lot from one dashboard.
+
 ## Metadata
 
 | | |
@@ -32,6 +34,15 @@ Project note: [[Worktree Optimiser]]
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| TypeScript | 86.3% |
+| JavaScript | 7.0% |
+| CSS | 6.6% |
+| HTML | 0.1% |
 
 ## Topics
 

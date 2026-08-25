@@ -16,18 +16,18 @@ All 35 repositories on the account — including the ones that went nowhere. 21 
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
+| [[collingwood-fan-suite]] | CSS | 2026-08-25 | 17 KB | [[Side by Side]] |
+| [[solo-strength-quest-play]] | JavaScript | 2026-08-25 | 9.5 MB | [[Solo Strength Quest]] |
+| [[exaryn-studio]] | HTML | 2026-08-25 | 677 KB | [[Exaryn Studio]] |
+| [[AlfredOpenSource]] | Python | 2026-08-25 | 846 KB | [[ALFRED]] |
+| [[quantflex-site]] | JavaScript | 2026-08-25 | 38 KB | [[QuantFlex]] |
 | [[one-piece-guess-game]] | JavaScript | 2026-08-24 | 19 KB | [[One Piece Guess]] |
-| [[exaryn-studio]] | CSS | 2026-08-24 | 351 KB | [[Exaryn Studio]] |
-| [[collingwood-fan-suite]] | CSS | 2026-08-24 | 17 KB | [[Side by Side]] |
 | [[strength-quest]] | — | 2026-08-24 | 156 KB | [[Solo Strength Quest]] |
 | [[quantflex]] | — | 2026-08-24 | 2 KB | [[QuantFlex]] |
-| [[solo-strength-quest-play]] | JavaScript | 2026-08-24 | 9.5 MB | [[Solo Strength Quest]] |
-| [[quantflex-site]] | JavaScript | 2026-08-24 | 32 KB | [[QuantFlex]] |
 | [[TODO-list]] | C# | 2026-08-24 | 105 KB | [[TODO List]] |
 | [[ContactUsPage]] | TypeScript | 2026-08-24 | 311 KB | [[Contact Flow]] |
 | [[claude-work-manager]] | JavaScript | 2026-08-22 | 44 KB | [[Claude Work Manager]] |
 | [[worktree-optimiser]] | TypeScript | 2026-08-20 | 303 KB | [[Worktree Optimiser]] |
-| [[AlfredOpenSource]] | Python | 2026-07-22 | 598 KB | [[ALFRED]] |
 | [[VolatilityModel]] | Python | 2026-07-19 | 2.5 MB | [[VolForecast]] |
 | [[SmartContract-Creator]] | TypeScript | 2026-07-06 | 1016 KB | [[smartc]] |
 | [[FinancialServicesDashboard]] | Java | 2026-06-10 | 1.9 MB | [[QuantLens]] |

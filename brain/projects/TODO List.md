@@ -48,6 +48,7 @@ A todo app that is deliberately boring on the surface and deliberately rigorous 
 | Created | 2026-05-12 |
 | Last push | 2026-08-24 |
 | Visibility | public |
+| Language mix | C# 45.8%, TypeScript 33.2%, HTML 20.6%, CSS 0.4% |
 
 ## Stack
 

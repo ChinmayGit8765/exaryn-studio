@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[One Piece Guess]]
 
+> Wordle, but for One Piece. Guess the daily character — every wrong guess tells you how close you are on **gender, crew, devil fruit, haki, bounty, height, origin and debut saga**, with arrows when you're over or under. Hints unlock as you struggle. New pirate every morning, **picked by a GitHub Actions cron**.
+
 ## Metadata
 
 | | |
@@ -32,6 +34,15 @@ Project note: [[One Piece Guess]]
 | Open issues | 0 |
 | GitHub Pages | yes |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| JavaScript | 46.6% |
+| CSS | 31.1% |
+| HTML | 13.5% |
+| Python | 8.8% |
 
 ## Related
 

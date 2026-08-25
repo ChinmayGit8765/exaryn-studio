@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[QuantFlex]]
 
+> **A free web derivatives pricing and risk engine — with the numerics hand-rolled and provably correct.**
+
 ## Metadata
 
 | | |

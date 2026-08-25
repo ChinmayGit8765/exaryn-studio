@@ -49,6 +49,7 @@ Prefect orchestrates the lifecycle; MLflow holds the champion/challenger registr
 | Created | 2026-06-10 |
 | Last push | 2026-07-19 |
 | Visibility | public |
+| Language mix | Python 98.8%, Dockerfile 1.0%, Shell 0.2% |
 
 ## Stack
 

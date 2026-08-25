@@ -14,6 +14,8 @@ generated: true
 
 Project note: [[VolForecast]]
 
+> A short-horizon realized volatility forecasting system covering crypto (BTC, ETH) and equities (SPY + large caps), wrapped in a full production MLOps lifecycle: ingestion, validation, feature engineering, classical + ML models, serving, monitoring, drift detection, and automated retraining.
+
 ## Metadata
 
 | | |
@@ -30,6 +32,14 @@ Project note: [[VolForecast]]
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| Python | 98.8% |
+| Dockerfile | 1.0% |
+| Shell | 0.2% |
 
 ## Related
 

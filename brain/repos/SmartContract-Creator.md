@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[smartc]]
 
+> **Generate working, compile-verified smart contracts from a wizard — no boilerplate, no remembering EIPs, no scaffolding a whole project just to write one contract.**
+
 ## Metadata
 
 | | |
@@ -32,6 +34,14 @@ Project note: [[smartc]]
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| TypeScript | 99.0% |
+| JavaScript | 1.0% |
+| Python | 0.0% |
 
 ## Related
 

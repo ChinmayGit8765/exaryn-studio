@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[Contact Flow]]
 
+> A production-shaped **contact / lead-capture flow**, end to end: validated form in, reviewed contact out. NestJS + TypeORM + PostgreSQL API, Next.js 14 (App Router) + Tailwind frontend, one `docker compose up` to run the lot.
+
 ## Metadata
 
 | | |
@@ -32,6 +34,15 @@ Project note: [[Contact Flow]]
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| TypeScript | 86.9% |
+| JavaScript | 10.1% |
+| Dockerfile | 1.8% |
+| CSS | 1.1% |
 
 ## Related
 

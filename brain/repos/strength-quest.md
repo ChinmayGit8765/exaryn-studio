@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[Solo Strength Quest]]
 
+> **Level up in real life.** A fitness RPG: every workout is a quest, every PR is a boss kill.
+
 ## Metadata
 
 | | |

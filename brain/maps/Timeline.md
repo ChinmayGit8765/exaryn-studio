@@ -30,7 +30,7 @@ What got built when, by repository creation date. The narrative version — why 
 | 2026-06-13 | [[ContactUsPage]] | TypeScript | [[Contact Flow]] |
 | 2026-07-22 | [[financial-services-lkg-test]] | Python | — |
 | 2026-08-12 | [[worktree-optimiser]] | TypeScript | [[Worktree Optimiser]] |
-| 2026-08-17 | [[exaryn-studio]] | CSS | [[Exaryn Studio]] |
+| 2026-08-17 | [[exaryn-studio]] | HTML | [[Exaryn Studio]] |
 | 2026-08-20 | [[solo_strength-quest]] | Dart | [[Solo Strength Quest]] |
 | 2026-08-21 | [[claude-work-manager]] | JavaScript | [[Claude Work Manager]] |
 | 2026-08-24 | [[solo-strength-quest-play]] | JavaScript | [[Solo Strength Quest]] |

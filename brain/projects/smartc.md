@@ -49,6 +49,7 @@ One Node binary. Wizard collects intent, templates emit Solidity or Anchor, solc
 | Created | 2026-05-14 |
 | Last push | 2026-07-06 |
 | Visibility | public |
+| Language mix | TypeScript 99.0%, JavaScript 1.0%, Python 0.0% |
 
 ## Stack
 

@@ -33,6 +33,12 @@ Project note: [[JSON API Simplifier]]
 | GitHub Pages | no |
 | Archived | no |
 
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| Python | 100.0% |
+
 ## Related
 
 [[Repos Map]] · [[Home]]

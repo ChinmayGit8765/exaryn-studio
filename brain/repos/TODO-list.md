@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[TODO List]]
 
+> A small TODO list app with an Angular front-end and a .NET Web API back-end. Tasks live in memory inside the API and reset on each restart — no database is required.
+
 ## Metadata
 
 | | |
@@ -32,6 +34,15 @@ Project note: [[TODO List]]
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| C# | 45.8% |
+| TypeScript | 33.2% |
+| HTML | 20.6% |
+| CSS | 0.4% |
 
 ## Related
 

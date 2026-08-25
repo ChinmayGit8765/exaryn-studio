@@ -46,6 +46,7 @@ Browser-side only. No build, no server, no tests.
 | Created | 2025-05-26 |
 | Last push | 2025-05-26 |
 | Visibility | public |
+| Language mix | HTML 74.5%, TeX 25.3%, Python 0.3% |
 
 ## Stack
 
