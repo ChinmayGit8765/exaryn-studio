@@ -385,3 +385,20 @@ loadProjects();
 loadFeed();
 loadTokenMeter();
 setupReveals();
+
+/* ---------- brain teaser (landing page) ---------- */
+
+async function loadBrainTeaser() {
+  const el = $("#brain-teaser-meta");
+  if (!el) return;
+  try {
+    const res = await fetch("data/brain.json");
+    if (!res.ok) throw new Error(res.status);
+    const { count, edges, words } = await res.json();
+    el.textContent = `${count} NOTES · ${edges} LINKS · ${words.toLocaleString()} WORDS`;
+  } catch {
+    el.textContent = "RUN npm run brain TO BUILD THE VAULT";
+  }
+}
+
+loadBrainTeaser();

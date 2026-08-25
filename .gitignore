@@ -3,3 +3,7 @@ Thumbs.db
 node_modules/
 __pycache__/
 *.pyc
+
+# Obsidian per-user state — the vault itself is committed, the workspace is not
+brain/.obsidian/workspace*
+brain/.obsidian/cache
