@@ -94,7 +94,7 @@ def write_note(path: Path, meta: dict, body: str) -> None:
             lines.append(f"{key}: {value}")
     lines.append("---")
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(lines) + "\n\n" + body.strip() + "\n")
+    path.write_text("\n".join(lines) + "\n\n" + body.strip() + "\n", encoding="utf-8")
 
 
 def link(name: str) -> str:
@@ -109,7 +109,7 @@ def vocabulary() -> set[str]:
     """
     names = set()
     for path in VAULT.rglob("*.md"):
-        meta, _ = parse_note(path.read_text())
+        meta, _ = parse_note(path.read_text(encoding="utf-8"))
         names.add(path.stem.lower())
         if meta.get("title"):
             names.add(str(meta["title"]).lower())
@@ -343,7 +343,7 @@ def agent_ledger(projects: list) -> tuple[Path, dict, str]:
     """Table of every agent note, read back out of the hand-written agent files."""
     rows = []
     for path in sorted((VAULT / "agents").glob("*.md")):
-        meta, _ = parse_note(path.read_text())
+        meta, _ = parse_note(path.read_text(encoding="utf-8"))
         if meta.get("type") != "agent":
             continue
         rows.append((int(meta.get("tier", 0)), meta.get("title", path.stem),
@@ -375,8 +375,8 @@ def agent_ledger(projects: list) -> tuple[Path, dict, str]:
 
 
 def generate() -> int:
-    projects = json.loads((DATA / "projects.json").read_text())
-    repos_doc = json.loads((DATA / "repos.json").read_text())
+    projects = json.loads((DATA / "projects.json").read_text(encoding="utf-8"))
+    repos_doc = json.loads((DATA / "repos.json").read_text(encoding="utf-8"))
     repos = repos_doc["repos"]
 
     repos_by_name = {r["name"]: r for r in repos}
@@ -419,7 +419,7 @@ def generate() -> int:
 def bundle() -> dict:
     notes = []
     for path in sorted(VAULT.rglob("*.md")):
-        meta, body = parse_note(path.read_text())
+        meta, body = parse_note(path.read_text(encoding="utf-8"))
         rel = path.relative_to(VAULT)
         notes.append({
             "id": rel.with_suffix("").as_posix(),
@@ -495,7 +495,7 @@ def main() -> None:
 
     print("bundling vault…")
     doc = bundle()
-    BUNDLE.write_text(json.dumps(doc, indent=1) + "\n")
+    BUNDLE.write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8")
     print(f"wrote data/brain.json — {doc['count']} notes, {doc['edges']} links, "
           f"{doc['words']:,} words")
     if doc["unresolved"]:
