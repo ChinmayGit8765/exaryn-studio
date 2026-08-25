@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloudflare vs AWS: the decision matrix — Field Notes · Exaryn</title>
+  <meta name="description" content="Why Prompterjack shifted to Cloudflare Workers, where AWS is still the right answer, and the evaluation framework that matters more than either logo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="../projects.html">Work</a>
+      <a href="../agents.html">Agents</a>
+      <a href="../notes.html" class="current">Notes</a>
+      <a href="../feed.html">Feed</a>
+      <a href="../play.html">Play</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main>
+    <article class="article">
+      <p class="kicker mono">FIELD NOTES · DECISIONS · 25 AUG 2026 · 10 MIN READ</p>
+      <h1 class="article-title">Cloudflare vs AWS: the decision matrix</h1>
+      <p class="article-dek">
+        Prompterjack — the biggest thing this studio has shipped — didn't start
+        on Cloudflare. It shifted there. This is the reasoning, written up as
+        the decision matrix I now use for every new project, because the real
+        lesson isn't "Cloudflare good": it's how to evaluate clouds by workload
+        shape instead of by logo.
+      </p>
+
+      <div class="article-body">
+        <p>
+          The default move for a new SaaS is to reach for AWS, because AWS is
+          the default. That's not a decision — it's the absence of one. When
+          <a href="https://prompterjack.com" target="_blank" rel="noopener">Prompterjack</a>
+          was young, it wore the default big-cloud outfit: containerised API,
+          managed Postgres, a load balancer in front, the works. It ran fine.
+          The problem was never that AWS couldn't do the job. The problem was a
+          mismatch between the <strong>shape of the workload</strong> and the
+          <strong>shape of the platform</strong> — and a solo developer pays for
+          that mismatch in the two currencies they can least afford: idle cost
+          and operational attention.
+        </p>
+
+        <h2>Start with the workload, not the vendor</h2>
+        <p>Prompterjack's traffic profile, described honestly:</p>
+        <ul>
+          <li><strong>Request-shaped.</strong> A user saves an agent design, exports code, hits Stripe checkout. Milliseconds-to-seconds of compute, then silence. No long-lived processes, no background daemons.</li>
+          <li><strong>Bursty and global.</strong> Traffic arrives in spikes from wherever a link got shared, then goes quiet. A fixed-size container is wrong in both directions: idle when quiet, queueing when spiked.</li>
+          <li><strong>Small state, relational.</strong> Designs, users, subscriptions — classic Postgres, gigabytes not terabytes.</li>
+          <li><strong>Solo-operated.</strong> Every hour spent on infrastructure is an hour not spent on the product. "It's possible to manage" is not the bar; "it doesn't need managing" is.</li>
+        </ul>
+        <p>
+          That shape has a name: it's an <strong>edge function workload</strong>.
+          Once you say it out loud, the platform question mostly answers itself.
+        </p>
+
+        <h2>The matrix</h2>
+        <p>
+          Score your workload down these seven axes. Neither column "wins" — the
+          point is that your workload lands clearly on one side, and if it
+          doesn't, that ambiguity is itself the answer (see the last section).
+        </p>
+        <div class="table-scroll-x">
+        <table>
+          <thead>
+            <tr><th>Axis</th><th>Cloudflare (Workers)</th><th>AWS</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Compute model</strong></td>
+              <td>V8 isolates. No cold starts worth the name, but also no long-lived processes, limited CPU time per request, no arbitrary binaries.</td>
+              <td>Anything: containers, VMs, Lambda, GPU boxes. If it runs on Linux, it runs here.</td>
+            </tr>
+            <tr>
+              <td><strong>Idle cost</strong></td>
+              <td>Zero. No traffic, no bill. The free tier absorbs an indie product's entire early life.</td>
+              <td>Rarely zero in practice — NAT gateways, load balancers, and "small" RDS instances bill while you sleep.</td>
+            </tr>
+            <tr>
+              <td><strong>Pricing legibility</strong></td>
+              <td>Per-request, flat, predictable. You can estimate a month's bill on a napkin. No egress fees is the quiet killer feature.</td>
+              <td>Powerful but adversarial. Cost is a skill you must acquire; egress pricing punishes success.</td>
+            </tr>
+            <tr>
+              <td><strong>Latency profile</strong></td>
+              <td>Code runs in every city your users are in, automatically. Global is the default, not an architecture project.</td>
+              <td>Fast <em>in its region</em>. Going global is a deliberate, expensive design decision.</td>
+            </tr>
+            <tr>
+              <td><strong>Long-running / batch work</strong></td>
+              <td>Wrong tool. Workers are request-scoped; a 40-minute training job or a persistent websocket daemon fights the platform.</td>
+              <td>The home game. Batch, queues-with-workers, spot fleets, step functions — this is what AWS is <em>for</em>.</td>
+            </tr>
+            <tr>
+              <td><strong>Data gravity</strong></td>
+              <td>Happiest with edge-native stores (KV, D1, R2) or HTTP-speaking databases. Classic TCP-to-Postgres needs a serverless driver.</td>
+              <td>If your data is already in a VPC — or compliance says it must be — the compute comes to the data, full stop.</td>
+            </tr>
+            <tr>
+              <td><strong>Ops surface for one person</strong></td>
+              <td>Deploy is <code>wrangler deploy</code>. There is no server to patch because there is no server.</td>
+              <td>Everything is configurable, which means everything must be configured. IAM alone is a part-time job.</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <h2>What the shift actually looked like</h2>
+        <p>
+          The API was rewritten on <strong>Hono</strong> — an Express-shaped
+          framework built for Workers — which made the move feel less like a
+          migration and more like a change of shoes: routes, middleware and
+          handlers map one-to-one. The interesting problem was Postgres.
+          Workers don't hold classic TCP connections open, so the database moved
+          to <strong>Neon</strong>, whose serverless driver speaks to Postgres
+          over HTTP/WebSockets and whose scale-to-zero pricing matches the
+          Workers philosophy: silence costs nothing. Stripe, being an HTTP API,
+          did not care where it was called from. The Turborepo monorepo kept the
+          React frontend and the Workers API in one place with shared types.
+        </p>
+        <p>
+          What was gained: a bill that tracks usage instead of existence, global
+          latency for free, and a deploy pipeline with one command in it. What
+          was given up — and this is real — is optionality: no long-running
+          compute, CPU limits per request, and a platform you can't replicate
+          locally with perfect fidelity. Those constraints are fine <em>for this
+          workload</em>. They would be disqualifying for others.
+        </p>
+
+        <h2>Where I would still choose AWS without hesitation</h2>
+        <p>
+          This studio's own portfolio makes the case both ways.
+          <a href="../projects.html">VolForecast</a> — walk-forward
+          model training, MLflow registries, scheduled retraining — is
+          batch-shaped, long-running, and compute-hungry: an AWS workload to its
+          bones. Anything with GPU inference, VPC-bound data, strict compliance
+          regimes, or a genuine always-on daemon belongs on the big cloud.
+          The matrix isn't a verdict; it's a sorting function.
+        </p>
+
+        <h2>The transferable lesson</h2>
+        <p>Strip the logos off and the evaluation method is four questions:</p>
+        <ol>
+          <li><strong>What shape is the compute?</strong> Request-scoped, batch, or resident? This eliminates more options than any benchmark.</li>
+          <li><strong>Can you predict the bill on a napkin?</strong> If you can't estimate next month's cost in five minutes, you'll discover it the hard way.</li>
+          <li><strong>What's the exit cost?</strong> Hono-on-Workers can move; a system woven through twelve proprietary services cannot. Price the lock-in <em>before</em> it prices you.</li>
+          <li><strong>Whose attention runs it?</strong> A platform is only "managed" relative to the size of your team. For a team of one, ops you don't do beats ops you could do.</li>
+        </ol>
+        <p>
+          And a closing honesty check: if your workload sits ambiguously between
+          the columns, the boring answer is usually to split it — edge for the
+          request path, big cloud for the batch path — rather than forcing one
+          platform to be something it isn't. Clouds are tools, not teams to
+          barrack for. I say that as someone with a whole
+          <a href="https://chinmaygit8765.github.io/collingwood-fan-suite/" target="_blank" rel="noopener">website about barracking</a>.
+        </p>
+      </div>
+
+      <div class="article-foot mono">
+        <a href="../notes.html">← ALL NOTES</a>
+        <a href="https://prompterjack.com" target="_blank" rel="noopener">PROMPTERJACK, LIVE ON WORKERS →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const clockEl = document.getElementById("clock");
+    const tick = () => clockEl.textContent = "MEL " + new Date().toLocaleTimeString("en-AU", { timeZone: "Australia/Melbourne", hour12: false });
+    tick(); setInterval(tick, 1000);
+  </script>
+</body>
+</html>

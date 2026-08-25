@@ -402,3 +402,39 @@ async function loadBrainTeaser() {
 }
 
 loadBrainTeaser();
+
+/* ================= FIELD NOTES ================= */
+
+function noteRow(a) {
+  const day = new Date(a.date + "T00:00:00Z")
+    .toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })
+    .toUpperCase();
+  return `
+  <li class="note-row">
+    <a href="notes/${esc(a.slug)}.html">
+      <span class="note-meta mono"><span class="note-tag">${esc(a.tag)}</span>${day} · ${a.minutes} MIN</span>
+      <span class="note-title">${esc(a.title)}</span>
+      <span class="note-dek">${esc(a.dek)}</span>
+      <span class="note-go mono" aria-hidden="true">READ →</span>
+    </a>
+  </li>`;
+}
+
+async function loadNotes() {
+  const index = $("#notes-index");
+  const snippet = $("#notes-snippet");
+  if (!index && !snippet) return;
+  try {
+    const res = await fetch("data/articles.json");
+    if (!res.ok) throw new Error(res.status);
+    const articles = await res.json();
+    index && (index.innerHTML = articles.map(noteRow).join(""));
+    snippet && (snippet.innerHTML = articles.slice(0, 5).map(noteRow).join(""));
+  } catch {
+    const msg = `<li class="index-empty mono">COULDN'T LOAD NOTES — IF YOU'RE ON file://, RUN: npm run dev</li>`;
+    index && (index.innerHTML = msg);
+    snippet && (snippet.innerHTML = msg);
+  }
+}
+
+loadNotes();

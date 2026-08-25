@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The cron job is the game engine — Field Notes · Exaryn</title>
+  <meta name="description" content="A guide to building daily games and self-updating sites with GitHub Actions: the idempotent picker, the commit-back workflow, the client fallback — and every pitfall in between." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="../projects.html">Work</a>
+      <a href="../agents.html">Agents</a>
+      <a href="../notes.html" class="current">Notes</a>
+      <a href="../feed.html">Feed</a>
+      <a href="../play.html">Play</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main>
+    <article class="article">
+      <p class="kicker mono">FIELD NOTES · GUIDE · 25 AUG 2026 · 9 MIN READ</p>
+      <h1 class="article-title">The cron job is the game engine</h1>
+      <p class="article-dek">
+        Three of this studio's projects rebuild themselves every morning with no
+        server, no database, and no bill: a daily guessing game, a footy fan
+        suite, and an AI news digest. They all run on the same three moving
+        parts. This is the guide I wish I'd had before building the first one —
+        and honestly the best way I know to <em>learn</em> cron jobs.
+      </p>
+
+      <div class="article-body">
+        <p>
+          The genre I keep returning to is the <strong>daily thing</strong>: a
+          Wordle-like with a new answer each morning
+          (<a href="https://chinmaygit8765.github.io/one-piece-guess-game/" target="_blank" rel="noopener">One Piece Guess</a>),
+          a fan page whose ladder and fixtures refresh themselves
+          (<a href="https://chinmaygit8765.github.io/collingwood-fan-suite/" target="_blank" rel="noopener">Side by Side</a>),
+          a news digest that resweeps its sources at 7am
+          (<a href="../feed.html">the Daily Signal</a>). They feel alive, and
+          people come back to alive things. The trick is that "alive" costs
+          nothing: GitHub Actions runs your script on a schedule, commits the
+          result into the repo, and GitHub Pages serves it as static files. The
+          repository <em>is</em> the database. The workflow <em>is</em> the
+          backend.
+        </p>
+
+        <h2>The three moving parts</h2>
+
+        <h3>1 — An idempotent script</h3>
+        <p>
+          The script's only job is to compute today's state and write it to a
+          JSON file. The one property it must have is
+          <strong>idempotence</strong>: run it twice, and the second run changes
+          nothing. This is what makes retries, manual dispatches, and overlapping
+          runs completely safe — and it's the single most transferable lesson in
+          this whole guide. Every scheduled system you ever build, from this toy
+          to a production billing sweep, gets its reliability from the same
+          property.
+        </p>
+<pre><code>def main():
+    today = game_date()                # in YOUR timezone, not UTC
+    history = load("data/history.json")
+
+    if any(p["date"] == today for p in history["picks"]):
+        print("today already exists — nothing to do")
+        return                         # &#8592; the idempotence check
+
+    pick = choose(exclude=last_n(history, 30))   # no repeats
+    append(history, today, pick)
+    write("data/daily.json", {"date": today, "pick": encode(pick)})</code></pre>
+        <p>
+          Details that matter: compute "today" in the timezone your players wake
+          up in, not UTC — the day should tick over with their morning coffee.
+          Keep a history file so the picker can refuse to repeat itself. And if
+          the answer must be secret-ish, encode it (base64 is fine — Wordle
+          shipped its whole answer list to the client for years; cheaters only
+          cheat themselves).
+        </p>
+
+        <h3>2 — A workflow that picks, commits, and deploys</h3>
+        <p>Three triggers, one job:</p>
+<pre><code>on:
+  push:              # every push deploys
+    branches: [main]
+  schedule:
+    - cron: "15 21 * * *"   # 21:15 UTC &#8776; 7am Melbourne
+  workflow_dispatch:        # a manual "run it now" button
+
+permissions:
+  contents: write           # or the bot's push gets rejected</code></pre>
+        <p>
+          On scheduled and manual runs, the job executes the picker and commits
+          whatever changed:
+        </p>
+<pre><code>- run: python3 scripts/pick_daily.py
+- run: |
+    git config user.name "daily-bot"
+    git add data/
+    git diff --cached --quiet || \
+      (git commit -m "daily: refresh [skip ci]" &amp;&amp; git push)</code></pre>
+        <p>
+          Then the <em>same job</em> uploads the site and deploys to Pages. Doing
+          the pick and the deploy in one job means they can never race each
+          other — the site you deploy always contains the data you just
+          committed.
+        </p>
+
+        <h3>3 — A client that trusts the JSON but has a fallback</h3>
+        <p>
+          The page fetches <code>data/daily.json</code> and plays whatever it
+          says. If the fetch fails — local development, a cron that died — it
+          falls back to a deterministic pick seeded by the date, so the game
+          never shows a blank screen. The cron doesn't make the game
+          <em>work</em>; it makes it <em>better</em>: true randomness, no-repeat
+          memory, a stable puzzle number everyone shares.
+        </p>
+
+        <h2>The pitfalls, so you don't collect them yourself</h2>
+        <ul>
+          <li>
+            <strong><code>[skip ci]</code> in the bot's commit message.</strong>
+            The bot pushes to main; pushes to main trigger the workflow. Without
+            this tag you've built an infinite loop with your free minutes.
+          </li>
+          <li>
+            <strong><code>permissions: contents: write</code></strong> — the
+            default token is read-only, and the error you get without it is not
+            obviously about permissions. Budget an afternoon or copy this line.
+          </li>
+          <li>
+            <strong>GitHub cron is best-effort.</strong> It fires minutes late
+            under load, occasionally very late. Design for "roughly morning",
+            never "exactly 7:00:00" — nothing in your system should depend on
+            punctuality.
+          </li>
+          <li>
+            <strong>The 60-day timeout.</strong> Scheduled workflows are
+            disabled after 60 days of repo inactivity. The elegant part: the
+            bot's daily commit <em>counts as activity</em>, so a working daily
+            cron keeps itself alive forever. A weekly one might not.
+          </li>
+          <li>
+            <strong>One try/except per output file.</strong> Side by Side pulls
+            from two sources — the Squiggle API and Google News. Either can
+            flake. A single failure should skip one file, not blank both.
+          </li>
+        </ul>
+
+        <h2>Why this is the way to learn cron</h2>
+        <p>
+          Most people meet cron for the first time inside a production system,
+          where the stakes are real and the feedback loop is a pager. A daily
+          game inverts that: the stakes are zero, the feedback is a friend
+          texting you their score, and yet you touch every real concept —
+          scheduling syntax, idempotence, timezone maths, permissions, race
+          conditions, dead-man switches, graceful degradation. When you later
+          meet a "refresh the materialised view nightly" ticket at work, you've
+          already made every mistake on a pirate-guessing game.
+        </p>
+        <p>
+          Reskin it and it's yours: swap the character roster for Premier League
+          players, horror films, Pokémon; swap the club config in Side by Side
+          for your team. The engine — picker, workflow, fallback — carries over
+          untouched. Both repos are open:
+          <a href="https://github.com/ChinmayGit8765/one-piece-guess-game" target="_blank" rel="noopener">one-piece-guess-game</a>
+          and
+          <a href="https://github.com/ChinmayGit8765/collingwood-fan-suite" target="_blank" rel="noopener">collingwood-fan-suite</a>,
+          each with a README that walks the setup end to end.
+        </p>
+      </div>
+
+      <div class="article-foot mono">
+        <a href="../notes.html">← ALL NOTES</a>
+        <a href="../play.html">PLAY THE RESULT →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const clockEl = document.getElementById("clock");
+    const tick = () => clockEl.textContent = "MEL " + new Date().toLocaleTimeString("en-AU", { timeZone: "Australia/Melbourne", hour12: false });
+    tick(); setInterval(tick, 1000);
+  </script>
+</body>
+</html>

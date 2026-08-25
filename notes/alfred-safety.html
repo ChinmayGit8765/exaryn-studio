@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Letting an agent act while you sleep — Field Notes · Exaryn</title>
+  <meta name="description" content="ALFRED runs on my hardware and acts on its own schedule. The tool-safety envelope — allowlists, capability tiers, audit trails — is what makes that survivable." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="../projects.html">Work</a>
+      <a href="../agents.html">Agents</a>
+      <a href="../notes.html" class="current">Notes</a>
+      <a href="../feed.html">Feed</a>
+      <a href="../play.html">Play</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main>
+    <article class="article">
+      <p class="kicker mono">FIELD NOTES · AGENTS · 25 AUG 2026 · 7 MIN READ</p>
+      <h1 class="article-title">Letting an agent act while you sleep</h1>
+      <p class="article-dek">
+        ALFRED is a local-first life-optimisation system: it plans my week,
+        watches what actually happens, and adapts — over Discord, on my
+        hardware, with no cloud in the loop. It is also the only agent in this
+        studio allowed to act on its own schedule. This is the safety envelope
+        that makes that tolerable, and what building it taught me about
+        autonomy's real price.
+      </p>
+
+      <div class="article-body">
+        <p>
+          Every other agent in the <a href="../agents.html">studio's
+          structure</a> acts when spoken to: the coding fleet works a prompt,
+          the cron bots run a fixed script and touch nothing but their own JSON.
+          ALFRED is different in kind. Its Conductor decomposes goals into
+          weekly plans, reconciles them against real capacity, sends messages,
+          and reschedules — <em>unprompted</em>. The moment software crosses
+          from "answers me" to "acts for me", the design question inverts. It
+          stops being "what can it do?" and becomes
+          <strong>"what happens when it's wrong?"</strong> — because at some
+          point, unattended, it will be.
+        </p>
+
+        <h2>Local-first is a safety property</h2>
+        <p>
+          ALFRED runs on my own hardware, on local models via Ollama, with
+          SQLite as its memory. That's usually pitched as privacy, and it is —
+          your goals, habits and failures are the most personal dataset you own.
+          But it's also containment: the blast radius of a misbehaving agent is
+          bounded by the machine it lives on and the credentials it holds. A
+          local agent with no cloud writes can embarrass itself; it cannot
+          surprise you with a bill, leak a life's telemetry, or act somewhere
+          you can't see. Constraint one costs nothing and buys the most.
+        </p>
+
+        <h2>The envelope: three gates on every tool call</h2>
+        <p>
+          Inside the process, nothing the model "decides" is trusted directly.
+          Every tool call passes through the same three gates:
+        </p>
+        <ol>
+          <li>
+            <strong>An allowlist.</strong> The set of callable tools is closed
+            and enumerated. There is no "the model found a clever way to..." —
+            capability that isn't on the list doesn't exist, no matter how
+            persuasive the plan that wanted it.
+          </li>
+          <li>
+            <strong>A capability tier.</strong> Tools are ranked by
+            consequence: reading state is cheap, writing plans costs more,
+            messaging a human or touching the schedule sits at the top. Higher
+            tiers face stricter checks — the agent's authority is graduated,
+            not binary. The Conductor earns its tier-3 autonomy; it isn't
+            granted by default to everything in the process.
+          </li>
+          <li>
+            <strong>An audit trail.</strong> Every call is logged with its
+            arguments and outcome. Not because I read it daily — because when
+            something odd happens (and "huh, why did it reschedule that?" does
+            happen), the answer is a query away instead of a vibe. An unlogged
+            agent action is unreviewable, and unreviewable autonomy is just
+            hope with a scheduler.
+          </li>
+        </ol>
+        <p>
+          The pattern generalises far beyond agents: allowlist, tiered
+          consequence, audit. It's the same envelope banks put around payment
+          operations and ops teams put around production access. LLMs didn't
+          make it necessary; they made it necessary <em>at home</em>.
+        </p>
+
+        <h2>529 tests, none of them online</h2>
+        <p>
+          ALFRED's CI runs 529 tests fully offline — the model layer mocked, the
+          tool layer real. That split is deliberate. What needs proving isn't
+          whether the LLM writes a nice weekly plan (it varies; that's the
+          nature of the beast). What needs proving is that <em>no plan, however
+          malformed, can escape the envelope</em>: that a tool outside the
+          allowlist is refused, that a tier violation is blocked, that every
+          refusal is logged. Determinism belongs at the boundary. Test the
+          cage, not the tiger.
+        </p>
+
+        <h2>The honest open question</h2>
+        <p>
+          The <a href="../brain.html">Brain</a> keeps a note called Open
+          Questions, and the first one is ALFRED's: <em>how autonomous should
+          tier 3 get?</em> The uncomfortable finding after months of running it
+          is that every increase in autonomy has been paid for with an increase
+          in audit surface. Let the Conductor reschedule freely and you must
+          now review schedules; let it message proactively and you must now
+          review tone. The work doesn't disappear — it changes shape, from
+          doing to supervising. Autonomy is not free labour; it's a trade where
+          you swap execution for oversight, and the trade is only good when
+          oversight is genuinely cheaper.
+        </p>
+        <p>
+          Which yields my only firm rule so far:
+          <strong>expand autonomy one tier at a time, and only after the audit
+          trail for the current tier has become boring.</strong> Boring is the
+          signal. If reviewing the log still surprises you, the agent isn't
+          ready for the next tier — and neither are you.
+        </p>
+        <p>
+          ALFRED is open source and in active development —
+          <a href="https://github.com/ChinmayGit8765/AlfredOpenSource" target="_blank" rel="noopener">the
+          repo is here</a>, envelope, tests and all.
+        </p>
+      </div>
+
+      <div class="article-foot mono">
+        <a href="../notes.html">← ALL NOTES</a>
+        <a href="../agents.html">THE AGENT STRUCTURE →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const clockEl = document.getElementById("clock");
+    const tick = () => clockEl.textContent = "MEL " + new Date().toLocaleTimeString("en-AU", { timeZone: "Australia/Melbourne", hour12: false });
+    tick(); setInterval(tick, 1000);
+  </script>
+</body>
+</html>

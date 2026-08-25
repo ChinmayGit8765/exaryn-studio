@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Every number defends itself — Field Notes · Exaryn</title>
+  <meta name="description" content="Correctness engineering in QuantFlex: anchor tests, triple-verified Greeks, and a static import gate that keeps the hand-rolled claim honest." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="../projects.html">Work</a>
+      <a href="../agents.html">Agents</a>
+      <a href="../notes.html" class="current">Notes</a>
+      <a href="../feed.html">Feed</a>
+      <a href="../play.html">Play</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main>
+    <article class="article">
+      <p class="kicker mono">FIELD NOTES · QUANT · 25 AUG 2026 · 8 MIN READ</p>
+      <h1 class="article-title">Every number defends itself</h1>
+      <p class="article-dek">
+        A wrong option price looks exactly like a right one. That single fact
+        shapes everything about how QuantFlex is engineered — anchors for every
+        pricing path, three independent witnesses for every Greek, and a static
+        gate that keeps the "hand-rolled" claim from quietly becoming a lie.
+      </p>
+
+      <div class="article-body">
+        <p>
+          Most software tells you when it's broken: the page 404s, the test goes
+          red, the user files a bug. Numerical software doesn't extend that
+          courtesy. A Monte Carlo engine with a subtle drift bug will happily
+          print <code>13.58</code> where the truth is <code>13.62</code>, with
+          the same confident formatting, forever. Nobody's eye catches it. No
+          exception fires. The only defence is to build the system so that
+          <strong>every number has to survive an ambush</strong> before it's
+          allowed on screen. In <a href="../demos/quantflex.html">QuantFlex</a>
+          that discipline has three layers.
+        </p>
+
+        <h2>Layer one: anchors</h2>
+        <p>
+          The house rule is blunt: <em>no pricing path ships without an anchor
+          test</em>. An anchor is a case where the truth is known exactly, so
+          the engine can be checked against reality rather than against itself:
+        </p>
+        <ul>
+          <li>
+            <strong>Closed-form Black–Scholes.</strong> Set the model to plain
+            GBM and a European vanilla has an analytic price. The Monte Carlo
+            and PDE engines must reproduce it to tolerance — not "look
+            reasonable", <em>reproduce it</em>.
+          </li>
+          <li>
+            <strong>Put–call parity.</strong> A model-free identity: if
+            <code>C − P ≠ S·e<sup>−qT</sup> − K·e<sup>−rT</sup></code>, something is wrong
+            <em>somewhere</em>, and the test refuses to care about excuses.
+          </li>
+          <li>
+            <strong>Cross-method agreement.</strong> The Crank–Nicolson PDE
+            solver and the Monte Carlo engine share no code, no discretisation,
+            no failure modes. When two strangers agree on an American option
+            price to a few basis points, that agreement is evidence. When they
+            drift apart, one of them is lying and the build fails until I know
+            which.
+          </li>
+        </ul>
+        <p>
+          Anchors work because they're <em>independent</em> of the thing they
+          check. A unit test that asserts the code does what the code does is a
+          tautology with a green checkmark. An anchor asserts the code agrees
+          with mathematics.
+        </p>
+
+        <h2>Layer two: three witnesses per Greek</h2>
+        <p>
+          Greeks — the sensitivities desks actually trade on — are more
+          dangerous than prices, because a plausible-but-wrong delta actively
+          mis-hedges you. QuantFlex computes every Greek three ways:
+        </p>
+        <ol>
+          <li>the <strong>hand-built AAD tape</strong> — the product code path, automatic differentiation written from scratch;</li>
+          <li><strong>JAX</strong> — an industrial autodiff system that shares zero lineage with my tape;</li>
+          <li><strong>finite differences</strong> — the dumb, slow bump-and-reprice that's hard to get subtly wrong.</li>
+        </ol>
+        <p>
+          Agreement between all three is required before a Greek is believed.
+          The reasoning is jury logic: any one witness can be fooled — the tape
+          by a bug I wrote, finite differences by step-size noise — but they
+          fail <em>differently</em>, so collusion is close to impossible. It's
+          the same instinct as the PDE-vs-MC anchor, applied one derivative
+          deeper.
+        </p>
+
+        <h2>Layer three: the import gate</h2>
+        <p>
+          QuantFlex's pitch includes the phrase "hand-rolled solvers", and a
+          claim like that rots silently: one convenient
+          <code>scipy.linalg.solve_banded</code> in a hot path, eighteen months
+          from now, and the README is fiction. So the claim is enforced by
+          machine: a static AST walk over the numerical core's import graph
+          fails the build if a library solver appears outside the clearly-marked
+          <strong>anchor lane</strong> — the one place SciPy is welcome, because
+          checking your work against a reference implementation is the entire
+          point of a reference implementation.
+        </p>
+        <p>
+          I'd generalise this further: <strong>any claim you make about your
+          architecture should be a test</strong>. "The core has no network
+          calls", "the parser never throws", "this module doesn't import that
+          one" — all of these are one AST walk away from being guarantees
+          instead of aspirations.
+        </p>
+
+        <h2>The supporting cast</h2>
+        <p>
+          Two smaller disciplines hold the layers together. <strong>Fixed
+          seeds</strong>: every simulation is reproducible by construction,
+          because "it failed once, randomly" is the worst bug report in
+          numerical computing and seeded streams make it extinct.
+          <strong>Fail-fast parameter guards</strong>: Heston with
+          <code>2κθ &lt; ξ²</code> violates the Feller condition, and the engine
+          refuses the input with a named reason instead of returning a number
+          that looks fine and means nothing. A rejected request is annoying; a
+          silently garbage price is a trap.
+        </p>
+
+        <h2>Why bother, for a free web tool?</h2>
+        <p>
+          Because the correctness machinery <em>is</em> the product. Plenty of
+          repos price options; the interesting question a quant interviewer — or
+          a user — should ask is "why should I believe your numbers?", and
+          QuantFlex's answer is designed to be better than "trust me": here are
+          the anchors, here are the three witnesses, here is the gate that keeps
+          the claims honest, all running in CI on every commit. The walkthrough
+          in <a href="../demos/quantflex.html">the screening room</a> ends on
+          exactly that beat, because it's the beat that matters.
+        </p>
+        <p>
+          The transferable version, for any domain where wrong output looks like
+          right output — pricing, ML pipelines, analytics, payroll: find your
+          closed forms, hire independent witnesses, turn your architectural
+          claims into tests, and make invalid inputs loud. Correctness isn't a
+          property you have; it's a property you keep proving.
+        </p>
+      </div>
+
+      <div class="article-foot mono">
+        <a href="../notes.html">← ALL NOTES</a>
+        <a href="../demos/quantflex.html">WATCH THE WALKTHROUGH →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const clockEl = document.getElementById("clock");
+    const tick = () => clockEl.textContent = "MEL " + new Date().toLocaleTimeString("en-AU", { timeZone: "Australia/Melbourne", hour12: false });
+    tick(); setInterval(tick, 1000);
+  </script>
+</body>
+</html>

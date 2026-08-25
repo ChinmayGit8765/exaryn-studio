@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Running a fleet of Claude agents — Field Notes · Exaryn</title>
+  <meta name="description" content="Git worktrees as the isolation primitive, one agent per checkout, containerised previews routed by hostname — the concurrency model behind Claude Work Manager and Worktree Optimiser." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="../projects.html">Work</a>
+      <a href="../agents.html">Agents</a>
+      <a href="../notes.html" class="current">Notes</a>
+      <a href="../feed.html">Feed</a>
+      <a href="../play.html">Play</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main>
+    <article class="article">
+      <p class="kicker mono">FIELD NOTES · AGENTS · 25 AUG 2026 · 8 MIN READ</p>
+      <h1 class="article-title">Running a fleet of Claude agents without them trampling each other</h1>
+      <p class="article-dek">
+        The hard part of running multiple coding agents at once isn't the
+        agents — it's the filesystem. Two tools came out of solving that
+        properly: Claude Work Manager and Worktree Optimiser. This is the
+        concurrency model they share, and the lessons that transfer to any
+        system where independent workers share a codebase.
+      </p>
+
+      <div class="article-body">
+        <p>
+          One coding agent is an assistant. Three coding agents in the same
+          checkout are a demolition crew: they edit the same files, fight over
+          the same branch, and trip over each other's dev servers on the same
+          port. The naive fixes — locks, turn-taking, "please coordinate" in the
+          system prompt — all try to make sharing safe. The right fix is older
+          and simpler than any of them: <strong>stop sharing</strong>.
+        </p>
+
+        <h2>Worktrees are the isolation primitive</h2>
+        <p>
+          Git has had the answer since 2015: <code>git worktree add</code> gives
+          you a second working directory backed by the same repository — same
+          object store, same history, different checkout, different branch. It's
+          the cheapest isolation you can buy: no clone, no duplicated history,
+          near-instant to create and destroy.
+        </p>
+<pre><code>repo/
+├─ .git/                     one object store, shared
+└─ .claude/worktrees/
+   ├─ feature-login/         branch wt/feature-login &#8592; agent 1
+   ├─ bugfix-nav/            branch wt/bugfix-nav    &#8592; agent 2
+   └─ refactor-api/          branch wt/refactor-api  &#8592; agent 3</code></pre>
+        <p>
+          Every agent gets exactly one worktree, on its own <code>wt/</code>
+          branch. Now the concurrency proof is trivial: two agents can't
+          conflict on files because they don't share files; they can't conflict
+          on commits because they don't share branches. The merge point moves to
+          where it belongs — a human reviewing a diff — instead of being
+          scattered through a hundred racing file writes. Conventions do the
+          rest: worktrees live under <code>.claude/worktrees/</code> and get
+          added to <code>.git/info/exclude</code>, so the agents' scratch space
+          never pollutes anyone's <code>git status</code>.
+        </p>
+
+        <h2>Sessions that survive</h2>
+        <p>
+          <a href="https://github.com/ChinmayGit8765/claude-work-manager" target="_blank" rel="noopener">Claude Work Manager</a>
+          sits on top of this as a self-hosted dashboard: it spawns each agent
+          as a <code>claude -p --output-format stream-json</code> process in its
+          worktree, parses the event stream into a chat UI with tool-use cards
+          and per-turn cost, and — the feature I'd defend in a fight —
+          <strong>resumes sessions automatically</strong> via
+          <code>--resume</code> when a process dies. A fleet where any crash
+          loses context isn't a fleet, it's a gamble. Resumability changed how I
+          use the thing more than any other property: agents became
+          fire-and-forget, checkable from a phone on the couch, because the
+          worst case stopped being "lost an afternoon of context" and became
+          "picked up where it left off."
+        </p>
+        <p>
+          It runs through the <code>claude</code> CLI you're already logged into
+          — your account, no API keys stored — and the whole personal layer
+          (registered repos, chat history, settings) lives in gitignored
+          directories, so the open-source core and the personal instance never
+          mix.
+        </p>
+
+        <h2>The second problem: seeing what they built</h2>
+        <p>
+          Isolation creates a new problem. Three agents means three dev servers,
+          and port juggling (<code>5173</code>, <code>5174</code>, was it
+          <code>5175</code>?) is exactly the kind of coordination we just
+          abolished for files.
+          <a href="https://github.com/ChinmayGit8765/worktree-optimiser" target="_blank" rel="noopener">Worktree Optimiser</a>
+          abolishes it for servers: every worktree runs in its own Docker
+          container, and Traefik routes by hostname —
+        </p>
+<pre><code>http://main.localhost               &#8594;  worktree: main
+http://feature-login.localhost      &#8594;  worktree: feature/login
+http://bugfix-nav.localhost         &#8594;  worktree: bugfix/nav</code></pre>
+        <p>
+          The name of the thing you want to look at <em>is</em> its address.
+          Review a PR and your own branch side by side in two tabs; nothing was
+          stopped to look at anything else. Traefik reads container labels and
+          rebuilds its routing when a container starts, so "add a worktree"
+          and "get a URL" are the same action. There's an MCP server on top,
+          which closes a pleasing loop: the agents can drive the machinery that
+          hosts them — spawn a worktree, boot its container, report the preview
+          URL — without a human in the middle.
+        </p>
+
+        <h2>What transfers beyond agents</h2>
+        <ul>
+          <li>
+            <strong>Isolation beats coordination.</strong> Every concurrency bug
+            in this system was designed out by giving workers disjoint state,
+            not by making shared state safer. This is the same insight as
+            share-nothing architectures and actor models — worktrees just
+            happen to be the filesystem's native version of it.
+          </li>
+          <li>
+            <strong>Resumability is the real feature.</strong> Parallelism gets
+            the demo applause; recovery is what makes the system usable daily.
+            Design the crash story before the happy path.
+          </li>
+          <li>
+            <strong>Name things after what they are.</strong> Branch
+            <code>wt/feature-login</code>, container
+            <code>wt-app-feature-login</code>, host
+            <code>feature-login.localhost</code> — one name, three layers, zero
+            lookup tables. Boring naming is load-bearing at fleet scale.
+          </li>
+          <li>
+            <strong>The bottleneck moves to review.</strong> Once agents run in
+            parallel safely, the scarce resource is your attention on their
+            diffs. That's the honest ceiling on fleet size — not compute, not
+            tokens: how many diffs you can genuinely read in a day.
+          </li>
+        </ul>
+        <p>
+          Both tools are open source, and the
+          <a href="../agents.html">Agents page</a> maps how they fit into the
+          studio's wider structure. The fleet built a decent chunk of what's on
+          this site — including, in a turn I enjoy, parts of the tools that run
+          the fleet.
+        </p>
+      </div>
+
+      <div class="article-foot mono">
+        <a href="../notes.html">← ALL NOTES</a>
+        <a href="../agents.html">THE AGENT STRUCTURE →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const clockEl = document.getElementById("clock");
+    const tick = () => clockEl.textContent = "MEL " + new Date().toLocaleTimeString("en-AU", { timeZone: "Australia/Melbourne", hour12: false });
+    tick(); setInterval(tick, 1000);
+  </script>
+</body>
+</html>

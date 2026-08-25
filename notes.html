@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Play — One Piece Guess · Exaryn</title>
-  <meta name="description" content="One Piece Guess, playable right here — a daily character riddle. Eight clues per guess, a new pirate every morning, picked by a cron job." />
+  <title>Field Notes — Exaryn</title>
+  <meta name="description" content="Essays and guides from the Exaryn workshop: cron-powered games, cloud decision matrices, agent fleets, and correctness engineering — the complexities behind the projects." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -18,24 +18,28 @@
     <nav class="site-nav mono">
       <a href="projects.html">Work</a>
       <a href="agents.html">Agents</a>
-      <a href="notes.html">Notes</a>
+      <a href="notes.html" class="current">Notes</a>
       <a href="feed.html">Feed</a>
-      <a href="play.html" class="current">Play</a>
+      <a href="play.html">Play</a>
       <a href="about.html">About</a>
     </nav>
     <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
   </header>
 
-  <main class="play-main">
-    <div class="play-bar mono">
-      <span class="play-title">☠ ONE PIECE GUESS — A DAILY CHARACTER RIDDLE. NEW PIRATE EVERY MORNING, PICKED BY A CRON JOB.</span>
-      <span class="play-links">
-        <a href="https://chinmaygit8765.github.io/one-piece-guess-game/" target="_blank" rel="noopener">FULL SCREEN ↗</a>
-        <a href="https://github.com/ChinmayGit8765/one-piece-guess-game" target="_blank" rel="noopener">SOURCE ↗</a>
-      </span>
-    </div>
-    <iframe class="game-frame" src="https://chinmaygit8765.github.io/one-piece-guess-game/?embed=1"
-            title="One Piece Guess — daily character riddle"></iframe>
+  <main>
+    <section class="page-hero">
+      <p class="kicker mono">FIELD NOTES — WRITING FROM THE WORKSHOP</p>
+      <h1 class="section-title xl">Essays &amp; <em>guides</em></h1>
+      <p class="page-lede">
+        The digest links to other people's thinking; this page is mine. What got
+        built, what it cost to build it, and the decisions worth stealing —
+        written up properly, one essay per rabbit hole.
+      </p>
+    </section>
+
+    <ol class="notes-index" id="notes-index">
+      <li class="index-empty mono">LOADING…</li>
+    </ol>
   </main>
 
   <script src="assets/app.js"></script>

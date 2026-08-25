@@ -40,6 +40,23 @@ render as checked in the browser.
 - [ ] Wire the token meter to something measured rather than hand-updated
 - [ ] Per-note "last touched" dates from git history rather than frontmatter
 
+## Ideas — new projects, now that concurrency is down pat
+
+- [ ] **Foreman** — one step above [[Claude Work Manager]]: point a fleet at a
+      *backlog* instead of a prompt. Issues go in a queue, agents claim one each
+      in their own worktree, a reviewer agent gates the PRs, a human merges.
+      The dashboard already exists; this is the pipeline on top.
+- [ ] **One Piece Guess — duel mode** — realtime head-to-head daily riddle
+      (same character, race to fewer guesses) on Cloudflare Durable Objects.
+      Concurrency in product form, and a live case study for the
+      Cloudflare-vs-AWS note.
+- [ ] **QuantFlex parallel pricing farm** — fan a Monte Carlo run out across
+      worker processes/machines and aggregate over SSE; the anchor tests make
+      distributed-vs-single equivalence *provable*, which is the whole trick.
+- [ ] **Solo Strength Quest live raids** — shared boss fights: a weekly
+      community lift target hammered concurrently by every hunter's logged
+      sets, over websockets on the Rust/Axum side.
+
 ## Someday / maybe
 
 - [ ] Retire the three superseded Solo Strength Quest repos properly instead of leaving them private

@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "cron-games",
+    "title": "The cron job is the game engine",
+    "dek": "A guide to building daily games and self-updating sites with nothing but GitHub Actions, a JSON file, and an idempotent script. The whole genre is three moving parts.",
+    "tag": "GUIDE",
+    "date": "2026-08-25",
+    "minutes": 9
+  },
+  {
+    "slug": "cloudflare-vs-aws",
+    "title": "Cloudflare vs AWS: the decision matrix",
+    "dek": "Why Prompterjack shifted to Workers, where AWS is still the right answer, and the evaluation framework that matters more than either logo.",
+    "tag": "DECISIONS",
+    "date": "2026-08-25",
+    "minutes": 10
+  },
+  {
+    "slug": "claude-fleet",
+    "title": "Running a fleet of Claude agents without them trampling each other",
+    "dek": "Git worktrees as the isolation primitive, one agent per checkout, containerised previews routed by hostname — the concurrency model behind Claude Work Manager and Worktree Optimiser.",
+    "tag": "AGENTS",
+    "date": "2026-08-25",
+    "minutes": 8
+  },
+  {
+    "slug": "triple-verified-greeks",
+    "title": "Every number defends itself",
+    "dek": "Correctness engineering in QuantFlex: anchor tests, triple-verified Greeks, and a static import gate that keeps the 'hand-rolled' claim honest.",
+    "tag": "QUANT",
+    "date": "2026-08-25",
+    "minutes": 8
+  },
+  {
+    "slug": "alfred-safety",
+    "title": "Letting an agent act while you sleep",
+    "dek": "ALFRED runs on my hardware and acts on its own schedule. The tool-safety envelope — allowlists, capability tiers, audit trails — is what makes that survivable.",
+    "tag": "AGENTS",
+    "date": "2026-08-25",
+    "minutes": 7
+  }
+]
