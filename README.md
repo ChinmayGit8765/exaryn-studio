@@ -2,15 +2,17 @@
 
 The studio site — a portfolio of everything Exaryn has built, **The Daily
 Signal** (a digest of AI news, papers and videos that rebuilds itself every
-morning on a GitHub Actions cron), and **the Exaryn Brain**: an Obsidian vault
-of markdown notes about every project, agent, system and repo, readable in the
-browser with backlinks, tags, search and a graph.
+morning on a GitHub Actions cron), **the Tech Guides** (build-it-yourself
+write-ups of the techniques behind the work), and **the Exaryn Brain**: an
+Obsidian vault of markdown notes about every project, agent, system and repo,
+readable in the browser with backlinks, tags, search and a graph.
 
 Pure static site. No framework, no build step, no dependencies.
 
 ```
-index.html              landing — hero + work + brain + feed teaser
+index.html              landing — hero + work + guides + brain + feed teaser
 projects.html           full project index (click a row to expand details)
+guides.html             tech guides — filterable index + long-form reader
 agents.html             the agent struct — tiers, rules, everything built
 brain.html              the Obsidian vault, rendered in the browser
 feed.html               full daily signal with filters
@@ -18,10 +20,13 @@ play.html               One Piece Guess, embedded
 
 assets/style.css        design system — paper, hairlines, serif, one accent
 assets/app.js           projects + digest + token meter (page-aware)
+assets/markdown.js      the markdown renderer — shared by brain + guides
+assets/guides.js        the guides index and reader
 assets/agents.js        the agent struct page
-assets/brain.js         markdown renderer, wikilinks, backlinks, graph
+assets/brain.js         vault browser — wikilinks, backlinks, graph
 
 brain/                  THE VAULT — real .md files, open it in Obsidian
+brain/guides/           the tech guides live here as markdown
 data/projects.json      the portfolio — edit this to add/update projects
 data/repos.json         generated: metadata swept from the GitHub API
 data/brain.json         generated: the whole vault bundled for the browser
@@ -65,8 +70,9 @@ ways to read it:
   notes, rendered from `data/brain.json`.
 
 Start at [`brain/Home.md`](brain/Home.md); the hub everything hangs off is
-[`brain/maps/Agent Structure.md`](brain/maps/Agent%20Structure.md), and the
-studio's todo list is [`brain/notes/Roadmap.md`](brain/notes/Roadmap.md).
+[`brain/maps/Agent Structure.md`](brain/maps/Agent%20Structure.md), the guides
+are in [`brain/guides/`](brain/guides), and the studio's todo list is
+[`brain/notes/Roadmap.md`](brain/notes/Roadmap.md).
 
 ### Hand-written vs generated
 
@@ -99,6 +105,34 @@ the note appears in the browser view and the graph. `type` decides its colour;
 
 An `agents/` note with `type: agent` and a `tier:` of 1, 2 or 3 also shows up
 automatically on `agents.html` and in the Agent Ledger.
+
+## Add a guide
+
+Guides are just vault notes with `type: guide`, so writing one is writing
+markdown. Drop a file in `brain/guides/`:
+
+```markdown
+---
+title: Do The Thing
+type: guide
+level: intermediate          # beginner | intermediate | advanced
+time: 15 min
+order: 9                     # position in the index and in prev/next
+stack: [Python, Docker]      # becomes the stack filter chips
+built: Some Project          # which project it was extracted from
+summary: One line for the card and the reader subhead.
+tags: [guide, docker]
+---
+
+# Do The Thing
+
+## 1. First step
+```
+
+Then `npm run brain`. It appears on `guides.html`, in the landing-page strip,
+in the Guides Map, and in the brain's graph — no page edits. `##` and `###`
+headings become the contents rail automatically, and `[[wikilinks]]` to other
+guides stay on the guides page while everything else opens in the brain.
 
 ## Add a project
 

@@ -402,3 +402,37 @@ async function loadBrainTeaser() {
 }
 
 loadBrainTeaser();
+
+/* ---------- guides strip (landing page) ---------- */
+
+async function loadGuidesStrip() {
+  const strip = $("#guides-strip");
+  if (!strip) return;
+  try {
+    const res = await fetch("data/brain.json");
+    if (!res.ok) throw new Error(res.status);
+    const { notes } = await res.json();
+    const guides = notes
+      .filter((n) => n.type === "guide")
+      .sort((a, b) => (Number(a.meta.order) || 99) - (Number(b.meta.order) || 99));
+
+    $("#guides-count") && ($("#guides-count").textContent = guides.length);
+    const slug = (g) => g.id.split("/").pop().toLowerCase().replace(/\s+/g, "-");
+
+    strip.innerHTML = guides
+      .slice(0, 3)
+      .map(
+        (g) => `
+      <a href="guides.html#/${slug(g)}">
+        <span class="strip-level mono">${esc(g.meta.level || "guide")} · ${esc(g.meta.time || "")}</span>
+        <span class="strip-title">${esc(g.title)}</span>
+        <p class="strip-desc">${esc(g.meta.summary || "")}</p>
+      </a>`
+      )
+      .join("");
+  } catch {
+    strip.innerHTML = `<p class="index-empty mono">RUN npm run brain TO BUILD THE GUIDES.</p>`;
+  }
+}
+
+loadGuidesStrip();

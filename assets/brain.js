@@ -5,8 +5,8 @@
    directory listing, so one bundle is how the whole vault arrives at once —
    which also makes search instant and the graph free.
 
-   No framework, no markdown library. The renderer below covers exactly the
-   subset of markdown this vault uses, wikilinks and callouts included. */
+   No framework, no markdown library — assets/markdown.js renders the notes and
+   is shared with the guides page. */
 
 /* Wrapped in an IIFE: assets/app.js loads alongside this for the clock and
    shares the global scope, so $ / esc / vault state stay private here. */
@@ -27,147 +27,10 @@ let filter = { text: "", tag: null, folder: null };
 
 /* ================= markdown ================= */
 
-/* Inline: code spans first (so nothing inside them is touched), then
-   wikilinks, then the ordinary emphasis/link syntax. */
-function inline(src) {
-  const code = [];
-  let out = String(src).replace(/`([^`]+)`/g, (_, c) => {
-    code.push(c);
-    return `\uE000${code.length - 1}\uE000`;
-  });
-
-  out = esc(out);
-
-  // [[Target|alias]] and [[Target#heading]]
-  out = out.replace(/\[\[([^\]|#]+)(#[^\]|]*)?(?:\|([^\]]+))?\]\]/g, (_, target, hash, alias) => {
-    const id = resolve(target.trim());
-    const label = esc(alias || target.trim());
-    if (!id) return `<span class="wl broken" title="No note called “${esc(target.trim())}” yet">${label}</span>`;
-    return `<a class="wl" href="#/${encodeURI(id)}">${label}</a>`;
-  });
-
-  out = out
-    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, "")                     // images: the vault has none
-    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, text, href) =>
-      /^https?:/i.test(href)
-        ? `<a href="${href}" target="_blank" rel="noopener">${text} <span class="ext">↗</span></a>`
-        : `<a href="${href}">${text}</a>`)
-    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/(^|[\s(])\*([^*\n]+)\*/g, "$1<em>$2</em>")
-    .replace(/(^|\s)_([^_\n]+)_(?=\s|$|[.,;:!?])/g, "$1<em>$2</em>");
-
-  return out.replace(/\uE000(\d+)\uE000/g, (_, i) => `<code>${esc(code[+i])}</code>`);
-}
-
-const CALLOUT = /^\[!(\w+)\]\s*(.*)$/;
-
-function renderTable(rows) {
-  // rows[1] is the |---|---| separator; drop it.
-  const cells = (row) => row.replace(/^\||\|$/g, "").split("|").map((c) => inline(c.trim()));
-  const head = cells(rows[0]);
-  const body = rows.slice(2).map(cells);
-  const headHTML = head.some((h) => h)
-    ? `<thead><tr>${head.map((h) => `<th>${h}</th>`).join("")}</tr></thead>`
-    : "";
-  return `<div class="table-wrap"><table>${headHTML}<tbody>${body
-    .map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`)
-    .join("")}</tbody></table></div>`;
-}
-
-function markdown(src) {
-  const lines = String(src).replace(/\r/g, "").split("\n");
-  const out = [];
-  let i = 0;
-
-  while (i < lines.length) {
-    const line = lines[i];
-
-    if (!line.trim()) { i++; continue; }
-
-    // fenced code
-    if (/^```/.test(line)) {
-      const lang = line.slice(3).trim();
-      const buf = [];
-      i++;
-      while (i < lines.length && !/^```/.test(lines[i])) buf.push(lines[i++]);
-      i++;
-      out.push(`<pre class="code"${lang ? ` data-lang="${esc(lang)}"` : ""}><code>${esc(buf.join("\n"))}</code></pre>`);
-      continue;
-    }
-
-    // headings
-    const heading = /^(#{1,6})\s+(.*)$/.exec(line);
-    if (heading) {
-      const level = heading[1].length;
-      const text = inline(heading[2]);
-      const slug = heading[2].toLowerCase().replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
-      out.push(`<h${level} id="h-${slug}">${text}</h${level}>`);
-      i++;
-      continue;
-    }
-
-    if (/^(---|\*\*\*|___)\s*$/.test(line)) { out.push("<hr />"); i++; continue; }
-
-    // table
-    if (/^\|/.test(line) && /^\|[\s:|-]+\|?\s*$/.test(lines[i + 1] || "")) {
-      const buf = [];
-      while (i < lines.length && /^\|/.test(lines[i])) buf.push(lines[i++]);
-      out.push(renderTable(buf));
-      continue;
-    }
-
-    // blockquote / Obsidian callout
-    if (/^>\s?/.test(line)) {
-      const buf = [];
-      while (i < lines.length && /^>\s?/.test(lines[i])) buf.push(lines[i++].replace(/^>\s?/, ""));
-      const callout = CALLOUT.exec(buf[0] || "");
-      if (callout) {
-        const kind = callout[1].toLowerCase();
-        const title = callout[2] || kind;
-        out.push(`<div class="callout ${esc(kind)}"><p class="callout-title mono">${inline(title)}</p>${markdown(buf.slice(1).join("\n"))}</div>`);
-      } else {
-        out.push(`<blockquote>${markdown(buf.join("\n"))}</blockquote>`);
-      }
-      continue;
-    }
-
-    // lists (task lists included)
-    if (/^\s*([-*+]|\d+\.)\s+/.test(line)) {
-      const ordered = /^\s*\d+\./.test(line);
-      const items = [];
-      while (i < lines.length && /^\s*([-*+]|\d+\.)\s+/.test(lines[i])) {
-        let text = lines[i].replace(/^\s*([-*+]|\d+\.)\s+/, "");
-        i++;
-        // continuation lines belong to the item above
-        while (i < lines.length && lines[i].trim() && !/^\s*([-*+]|\d+\.)\s+/.test(lines[i]) &&
-               !/^(#{1,6}\s|>|\||```)/.test(lines[i])) {
-          text += " " + lines[i++].trim();
-        }
-        const task = /^\[([ xX])\]\s+(.*)$/.exec(text);
-        if (task) {
-          const done = task[1].toLowerCase() === "x";
-          items.push(`<li class="task${done ? " done" : ""}"><span class="box mono" aria-hidden="true">${done ? "×" : ""}</span>${inline(task[2])}</li>`);
-        } else {
-          items.push(`<li>${inline(text)}</li>`);
-        }
-      }
-      const tag = ordered ? "ol" : "ul";
-      const cls = items.some((it) => it.includes('class="task')) ? ' class="tasks"' : "";
-      out.push(`<${tag}${cls}>${items.join("")}</${tag}>`);
-      continue;
-    }
-
-    // paragraph
-    const buf = [];
-    while (i < lines.length && lines[i].trim() &&
-           !/^(#{1,6}\s|>|\||```|---|\s*([-*+]|\d+\.)\s)/.test(lines[i])) {
-      buf.push(lines[i++]);
-    }
-    if (buf.length) out.push(`<p>${inline(buf.join(" "))}</p>`);
-  }
-
-  return out.join("\n");
-}
+/* The renderer lives in assets/markdown.js — shared with the guides page.
+   We hand it our own link resolver so [[wikilinks]] route within this view. */
+const markdown = (src) =>
+  ExarynMD.render(src, { resolve, hrefFor: (id) => `#/${encodeURI(id)}` }).html;
 
 /* ================= vault ================= */
 
@@ -193,6 +56,7 @@ function buildIndex(notes) {
 const FOLDER_LABEL = {
   "": "Root",
   maps: "Maps of content",
+  guides: "Guides",
   agents: "Agents",
   projects: "Projects",
   repos: "Repositories",
@@ -201,7 +65,7 @@ const FOLDER_LABEL = {
   notes: "Notes",
 };
 
-const FOLDER_ORDER = ["", "maps", "agents", "systems", "projects", "stack", "notes", "repos"];
+const FOLDER_ORDER = ["", "maps", "guides", "agents", "systems", "projects", "stack", "notes", "repos"];
 
 /* ================= sidebar ================= */
 
@@ -336,6 +200,7 @@ let raf = null;
 
 const TYPE_COLOR = {
   map: "#ff4d00",
+  guide: "#b8322a",
   agent: "#171512",
   project: "#3d6b4a",
   repo: "#8a8378",

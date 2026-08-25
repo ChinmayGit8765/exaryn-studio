@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guides — Exaryn</title>
+  <meta name="description" content="Build-it-yourself guides from the Exaryn studio — daily games, self-updating sites, agent fleets, MCP servers, AI narration, and validating quant engines. Written from things that actually shipped." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="projects.html">Work</a>
+      <a href="guides.html" class="current">Guides</a>
+      <a href="agents.html">Agents</a>
+      <a href="feed.html">Feed</a>
+      <a href="play.html">Play</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ INDEX VIEW ============ -->
+    <div id="guide-index">
+
+      <section class="page-hero">
+        <p class="kicker mono">THE TECH GUIDES</p>
+        <h1 class="section-title xl">Build it <em>yourself</em></h1>
+        <p class="page-lede">
+          <b id="lede-count">—</b> guides to the techniques behind the work —
+          written <em>from</em> the projects, not about them, so every one has
+          shipping code behind it.
+          <span class="hint">Each guide is a note in the brain, so it links
+          straight into the project it came out of.</span>
+        </p>
+      </section>
+
+      <section class="guide-filters" aria-label="Filter guides">
+        <div class="filter-row mono" id="level-filter">
+          <span class="filter-label">LEVEL</span>
+          <button class="chip active" data-level="all">ALL</button>
+          <button class="chip" data-level="beginner">BEGINNER</button>
+          <button class="chip" data-level="intermediate">INTERMEDIATE</button>
+          <button class="chip" data-level="advanced">ADVANCED</button>
+        </div>
+        <div class="filter-row mono" id="stack-filter">
+          <span class="filter-label">STACK</span>
+        </div>
+      </section>
+
+      <section class="guide-grid-wrap">
+        <ol class="guide-grid" id="guide-grid">
+          <li class="index-empty mono">LOADING GUIDES…</li>
+        </ol>
+      </section>
+
+      <section class="guides-outro">
+        <div class="section-head">
+          <h2 class="section-title">Where these <em>come from</em></h2>
+          <a class="more-link mono" href="brain.html#/maps/Guides%20Map">GUIDES MAP ↗</a>
+        </div>
+        <p class="shape-note">
+          Every guide is a markdown note in the
+          <a class="inline-link" href="brain.html">Exaryn Brain</a> — the same
+          vault that documents the projects, agents and systems. So a guide can
+          link to the project it was extracted from, and that project links back.
+          Open the vault in Obsidian and you can read them offline, or fork the
+          repo and write your own.
+        </p>
+        <div class="shape-links mono">
+          <a href="agents.html">THE AGENT STRUCT ↗</a>
+          <a href="projects.html">ALL THE WORK ↗</a>
+          <a href="https://github.com/ChinmayGit8765/exaryn-studio/tree/main/brain/guides"
+             target="_blank" rel="noopener">GUIDE SOURCE ↗</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ READER VIEW ============ -->
+    <div id="guide-reader" hidden>
+      <article class="guide-article">
+        <header class="guide-head">
+          <a class="guide-back mono" href="#">← ALL GUIDES</a>
+          <p class="kicker mono" id="guide-kicker">GUIDE</p>
+          <h1 class="section-title xl" id="guide-title">—</h1>
+          <p class="page-lede" id="guide-summary"></p>
+          <ul class="guide-facts mono" id="guide-facts"></ul>
+        </header>
+        <div class="guide-body-wrap">
+          <nav class="guide-toc" aria-label="Contents">
+            <p class="toc-head mono">CONTENTS</p>
+            <ol id="guide-toc-list"></ol>
+            <a class="toc-brain mono" id="guide-in-brain" href="brain.html">OPEN IN BRAIN ↗</a>
+          </nav>
+          <div class="guide-body" id="guide-body"></div>
+        </div>
+        <footer class="guide-nav" id="guide-nav"></footer>
+      </article>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer" id="about">
+      <p class="kicker mono inverse">ABOUT / CONTACT</p>
+      <h2 class="footer-title">Run by Chinmay Purohit.<br /><em>One person, many rabbit holes.</em></h2>
+      <p class="footer-bio">
+        Away from the keyboard: Brazilian Jiu-Jitsu, footy, hiking, the gym,
+        a good book, and a well-made latte.
+        <a href="about.html" class="footer-more">More on the about page →</a>
+      </p>
+      <div class="footer-tags mono">BJJ ✳ AFL ✳ HIKING ✳ GYM ✳ BOOKS ✳ LATTE</div>
+      <div class="footer-links mono">
+        <a href="mailto:careers.chinmay@gmail.com">EMAIL ↗</a>
+        <a href="https://github.com/ChinmayGit8765" target="_blank" rel="noopener">GITHUB ↗</a>
+      </div>
+      <div class="footer-base mono">
+        <span>© <span id="year">2026</span> EXARYN</span>
+        <span><a href="index.html">← BACK HOME</a></span>
+        <a href="#top">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="assets/app.js"></script>
+  <script src="assets/markdown.js"></script>
+  <script src="assets/guides.js"></script>
+</body>
+</html>

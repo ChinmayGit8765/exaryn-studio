@@ -1,14 +1,15 @@
 {
- "generated_at": "2026-08-25T05:11:06+00:00",
+ "generated_at": "2026-08-25T06:34:04+00:00",
  "vault": "brain",
  "home": "Home",
- "count": 100,
- "words": 18396,
- "edges": 639,
+ "count": 109,
+ "words": 24122,
+ "edges": 699,
  "folders": {
   "": 2,
   "agents": 14,
-  "maps": 6,
+  "guides": 8,
+  "maps": 7,
   "notes": 5,
   "projects": 17,
   "repos": 35,
@@ -21,10 +22,11 @@
   "project": 17,
   "stack": 17,
   "private": 14,
+  "agents": 11,
   "agent": 10,
-  "agents": 8,
-  "cron": 8,
-  "moc": 8,
+  "cron": 10,
+  "moc": 9,
+  "guide": 8,
   "agents-tooling": 5,
   "system": 5,
   "games-play": 4,
@@ -32,22 +34,29 @@
   "quant-finance": 4,
   "web-product": 4,
   "architecture": 3,
+  "feeds": 3,
   "local-first": 3,
+  "mcp": 3,
   "meta": 3,
+  "rag": 3,
+  "static": 3,
   "ci": 2,
   "database": 2,
   "derivatives": 2,
-  "feeds": 2,
+  "docker": 2,
+  "finance": 2,
   "frontend": 2,
+  "games": 2,
+  "git": 2,
   "history": 2,
   "llm": 2,
-  "mcp": 2,
   "monte-carlo": 2,
   "options-pricing": 2,
   "planning": 2,
   "practice": 2,
   "prompts": 2,
-  "rag": 2,
+  "protocol": 2,
+  "quant": 2,
   "rust": 2,
   "automatic-differentiation": 1,
   "black-scholes": 1,
@@ -57,29 +66,30 @@
   "dart": 1,
   "developer-tools": 1,
   "devtools": 1,
-  "docker": 1,
   "dotnet": 1,
   "edge": 1,
   "entry": 1,
-  "finance": 1,
+  "evaluation": 1,
   "fitness": 1,
   "flutter": 1,
-  "games": 1,
   "gamification": 1,
-  "git": 1,
   "git-worktree": 1,
+  "guides": 1,
   "index": 1,
   "infrastructure": 1,
   "java": 1,
   "jvm": 1,
   "log": 1,
+  "markdown": 1,
+  "mlops": 1,
   "mobile": 1,
   "numerical-methods": 1,
+  "numerics": 1,
+  "obsidian": 1,
   "pages": 1,
   "patterns": 1,
   "principles": 1,
   "projects": 1,
-  "protocol": 1,
   "python": 1,
   "questions": 1,
   "reference": 1,
@@ -89,6 +99,7 @@
   "solidity": 1,
   "sport": 1,
   "systems": 1,
+  "testing": 1,
   "todo": 1,
   "typescript": 1,
   "unresolved": 1,
@@ -111,10 +122,11 @@
    "aliases": [],
    "meta": {},
    "generated": false,
-   "body": "# Exaryn \u2733 \u2014 the brain\n\nEverything the studio has built, why it was built, and how the pieces connect.\nWritten as a linked vault rather than a list, because most of what matters here\nis the wiring between projects rather than any one project.\n\n> [!tip] New here?\n> Start with [[Agent Structure]] \u2014 it is the spine of the whole vault.\n\n## The four hubs\n\n- **[[Agent Structure]]** \u2014 every autonomous system built here, what drives it, and what it is allowed to touch.\n- **[[Projects Map]]** \u2014 the full project index, grouped by what kind of thing it is.\n- **[[Systems Map]]** \u2014 the pipelines, crons and deploys that run without anyone watching.\n- **[[Stack Map]]** \u2014 the technologies, and which projects lean on each.\n\n## The rest\n\n- [[Repos Map]] \u2014 all 35 GitHub repositories, including the dead ends.\n- [[Timeline]] \u2014 what got built when.\n- [[Roadmap]] \u2014 the todo list. What is actually next.\n- [[Build Log]] \u2014 a running record of what changed and why.\n- [[Studio Principles]] \u2014 the handful of rules that survived contact with reality.\n- [[Open Questions]] \u2014 things not resolved yet.\n- [[Glossary]] \u2014 the vocabulary this vault assumes.\n\n## The shape of it\n\nSeventeen projects across five categories, ten autonomous agents, five\nscheduled systems, thirty-five repositories. One person. The pattern that\nrepeats everywhere:\n\n> **Cron job \u2192 Python script \u2192 committed JSON \u2192 static site.**\n\nNo servers to keep alive, no databases to back up, no bill when nobody visits.\n[[Daily Signal Pipeline]] and [[Pirate Picker]] and [[Fan Suite Bot]] are all\nthe same idea wearing different hats \u2014 see [[Agent Patterns]].\n",
-   "words": 275,
+   "body": "# Exaryn \u2733 \u2014 the brain\n\nEverything the studio has built, why it was built, and how the pieces connect.\nWritten as a linked vault rather than a list, because most of what matters here\nis the wiring between projects rather than any one project.\n\n> [!tip] New here?\n> Start with [[Agent Structure]] \u2014 it is the spine of the whole vault.\n\n## The five hubs\n\n- **[[Agent Structure]]** \u2014 every autonomous system built here, what drives it, and what it is allowed to touch.\n- **[[Guides Map]]** \u2014 how to build these things yourself. Eight guides, written from the projects.\n- **[[Projects Map]]** \u2014 the full project index, grouped by what kind of thing it is.\n- **[[Systems Map]]** \u2014 the pipelines, crons and deploys that run without anyone watching.\n- **[[Stack Map]]** \u2014 the technologies, and which projects lean on each.\n\n## The rest\n\n- [[Repos Map]] \u2014 all 35 GitHub repositories, including the dead ends.\n- [[Timeline]] \u2014 what got built when.\n- [[Roadmap]] \u2014 the todo list. What is actually next.\n- [[Build Log]] \u2014 a running record of what changed and why.\n- [[Studio Principles]] \u2014 the handful of rules that survived contact with reality.\n- [[Open Questions]] \u2014 things not resolved yet.\n- [[Glossary]] \u2014 the vocabulary this vault assumes.\n\n## The shape of it\n\nSeventeen projects across five categories, ten autonomous agents, five\nscheduled systems, thirty-five repositories. One person. The pattern that\nrepeats everywhere:\n\n> **Cron job \u2192 Python script \u2192 committed JSON \u2192 static site.**\n\nNo servers to keep alive, no databases to back up, no bill when nobody visits.\n[[Daily Signal Pipeline]] and [[Pirate Picker]] and [[Fan Suite Bot]] are all\nthe same idea wearing different hats \u2014 see [[Agent Patterns]].\n",
+   "words": 291,
    "links": [
     "maps/Agent Structure",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Systems Map",
     "maps/Stack Map",
@@ -134,6 +146,7 @@
    "backlinks": [
     "README",
     "agents/Agent Ledger",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Stack Map",
@@ -210,8 +223,8 @@
    "aliases": [],
    "meta": {},
    "generated": false,
-   "body": "# Exaryn Brain\n\nThis folder is a real [Obsidian](https://obsidian.md) vault. Every note is a\nplain `.md` file with YAML frontmatter and `[[wikilinks]]` \u2014 no plugins\nrequired, no proprietary format, nothing that stops working if Obsidian does.\n\n## Two ways to read it\n\n| Where | How |\n| --- | --- |\n| **In Obsidian** | *Open folder as vault* \u2192 pick this `brain/` directory. Graph view, backlinks and search all work out of the box. |\n| **In the browser** | [`/brain.html`](../brain.html) on the site \u2014 the same notes, with backlinks, tags, search and a graph, rendered from `data/brain.json`. |\n\n## Layout\n\n```\nbrain/\n  Home.md            entry point \u2014 start here\n  maps/              maps of content: the hubs everything hangs off\n  agents/            the agent structure \u2014 every autonomous thing built here\n  projects/          one note per project        (generated from data/projects.json)\n  repos/             one note per GitHub repo    (generated from data/repos.json)\n  systems/           the pipelines and cron jobs that keep the studio running\n  stack/             one note per technology, backlinked to what uses it\n  notes/             principles, roadmap, build log, glossary, open questions\n```\n\n## Generated vs hand-written\n\nNotes under `projects/` and `repos/`, plus a few maps, carry\n`generated: true` in their frontmatter and a banner at the top. **Do not edit\nthose by hand** \u2014 they are rebuilt from `data/projects.json` and\n`data/repos.json` by `scripts/brain.py`, and your edits will be overwritten.\n\nEverything else is hand-written and safe to edit in Obsidian.\n\n## Rebuilding\n\n```sh\nnpm run repos    # refresh data/repos.json from the GitHub API\nnpm run brain    # regenerate the generated notes + bundle data/brain.json\n```\n\n`npm run brain` is what makes the vault visible on the site: it walks every\n`.md` file here, resolves the wikilinks into a graph, and writes one\n`data/brain.json` the browser reads. The morning cron runs both.\n\nSee [[Brain Pipeline]] for how that works, and [[Home]] to start reading.\n",
-   "words": 307,
+   "body": "# Exaryn Brain\n\nThis folder is a real [Obsidian](https://obsidian.md) vault. Every note is a\nplain `.md` file with YAML frontmatter and `[[wikilinks]]` \u2014 no plugins\nrequired, no proprietary format, nothing that stops working if Obsidian does.\n\n## Two ways to read it\n\n| Where | How |\n| --- | --- |\n| **In Obsidian** | *Open folder as vault* \u2192 pick this `brain/` directory. Graph view, backlinks and search all work out of the box. |\n| **In the browser** | [`/brain.html`](../brain.html) on the site \u2014 the same notes, with backlinks, tags, search and a graph, rendered from `data/brain.json`. Guides get their own reading view at [`/guides.html`](../guides.html). |\n\n## Layout\n\n```\nbrain/\n  Home.md            entry point \u2014 start here\n  maps/              maps of content: the hubs everything hangs off\n  guides/            build-it-yourself guides, one per technique\n  agents/            the agent structure \u2014 every autonomous thing built here\n  projects/          one note per project        (generated from data/projects.json)\n  repos/             one note per GitHub repo    (generated from data/repos.json)\n  systems/           the pipelines and cron jobs that keep the studio running\n  stack/             one note per technology, backlinked to what uses it\n  notes/             principles, roadmap, build log, glossary, open questions\n```\n\n## Generated vs hand-written\n\nNotes under `projects/` and `repos/`, plus a few maps, carry\n`generated: true` in their frontmatter and a banner at the top. **Do not edit\nthose by hand** \u2014 they are rebuilt from `data/projects.json` and\n`data/repos.json` by `scripts/brain.py`, and your edits will be overwritten.\n\nEverything else is hand-written and safe to edit in Obsidian.\n\n## Rebuilding\n\n```sh\nnpm run repos    # refresh data/repos.json from the GitHub API\nnpm run brain    # regenerate the generated notes + bundle data/brain.json\n```\n\n`npm run brain` is what makes the vault visible on the site: it walks every\n`.md` file here, resolves the wikilinks into a graph, and writes one\n`data/brain.json` the browser reads. The morning cron runs both.\n\nSee [[Brain Pipeline]] for how that works, and [[Home]] to start reading.\n",
+   "words": 321,
    "links": [
     "systems/Brain Pipeline",
     "Home"
@@ -353,6 +366,8 @@
     "agents/QuantLens Narrator",
     "agents/Tool Safety",
     "agents/smartc Patcher",
+    "guides/Build a Daily Anything Game",
+    "guides/Let an LLM Narrate Numbers",
     "maps/Agent Structure",
     "maps/Systems Map",
     "notes/Build Log",
@@ -392,6 +407,7 @@
    "backlinks": [
     "agents/Agent Ledger",
     "agents/Agent Patterns",
+    "guides/Publish an Obsidian Vault to a Static Site",
     "maps/Agent Structure",
     "notes/Build Log",
     "notes/Glossary",
@@ -467,6 +483,7 @@
     "agents/Agent Ledger",
     "agents/Agent Patterns",
     "agents/Fan Suite Bot",
+    "guides/A Website That Updates Itself",
     "maps/Agent Structure",
     "projects/Exaryn Studio",
     "stack/Python",
@@ -546,6 +563,7 @@
     "agents/Agent Ledger",
     "agents/Agent Patterns",
     "agents/Worktree MCP Server",
+    "guides/Run a Fleet of Coding Agents",
     "maps/Agent Structure",
     "projects/Claude Work Manager",
     "stack/Claude",
@@ -585,6 +603,7 @@
     "agents/Agent Ledger",
     "agents/Agent Patterns",
     "agents/Fan Suite Bot",
+    "guides/Build a Daily Anything Game",
     "maps/Agent Structure",
     "projects/One Piece Guess",
     "stack/Python",
@@ -659,6 +678,7 @@
    "backlinks": [
     "agents/Agent Ledger",
     "agents/Agent Patterns",
+    "guides/Let an LLM Narrate Numbers",
     "maps/Agent Structure",
     "projects/QuantLens",
     "stack/Java",
@@ -696,6 +716,7 @@
     "agents/ALFRED Conductor",
     "agents/Agent Ledger",
     "agents/Agent Patterns",
+    "guides/Give Your Tool to Agents with MCP",
     "maps/Agent Structure",
     "notes/Glossary",
     "notes/Open Questions",
@@ -736,6 +757,8 @@
     "agents/Agent Ledger",
     "agents/Agent Patterns",
     "agents/Fleet Supervisor",
+    "guides/Give Your Tool to Agents with MCP",
+    "guides/Run a Fleet of Coding Agents",
     "maps/Agent Structure",
     "notes/Roadmap",
     "projects/Worktree Optimiser",
@@ -777,6 +800,338 @@
     "maps/Agent Structure",
     "notes/Studio Principles",
     "projects/smartc"
+   ]
+  },
+  {
+   "id": "guides/A Website That Updates Itself",
+   "title": "A Website That Updates Itself",
+   "path": "brain/guides/A Website That Updates Itself.md",
+   "folder": "guides",
+   "type": "guide",
+   "tags": [
+    "guide",
+    "cron",
+    "static",
+    "feeds"
+   ],
+   "aliases": [],
+   "meta": {
+    "level": "beginner",
+    "time": "18 min",
+    "order": 2,
+    "stack": [
+     "Python",
+     "GitHub Actions",
+     "GitHub Pages"
+    ],
+    "built": "Exaryn Studio",
+    "summary": "A content site that rebuilds from live sources every morning, costs nothing, and has no server to keep alive."
+   },
+   "generated": false,
+   "body": "# A Website That Updates Itself\n\nA site with fresh content usually implies a server, a database and a bill. It\ndoesn't have to. If content changes on a *schedule* rather than on a *request*,\nyou can regenerate it in CI and serve plain files.\n\nThis is how the [[Daily Signal Pipeline]] on this site works: ~20 feeds swept\nevery morning into a JSON file the page fetches.\n\n## Why not fetch the feeds in the browser\n\nThree reasons, and they all bite immediately:\n\n1. **CORS.** Most feeds don't send permissive headers. You can't read them.\n2. **Speed.** Twenty sequential fetches per visitor is a slow page.\n3. **Fragility.** A source that is down breaks the page for everyone, live.\n\nFetching at build time fixes all three: one machine pays the cost once a day,\nand visitors get a single fast JSON file.\n\n## 1. Normalise everything into one shape\n\nRSS and Atom disagree about nearly every field name. Flatten them at the door\nso nothing downstream has to care:\n\n```python\n{\n  \"title\": \"...\",\n  \"url\": \"https://...\",\n  \"source\": \"Hacker News\",\n  \"kind\": \"news\",           # news | video | paper\n  \"published\": \"2026-08-25T02:14:00Z\",\n  \"summary\": \"...\",\n}\n```\n\nOne normalised record type means the renderer is a single function, and adding\na source later is a one-line change to a list.\n\n## 2. Fetch in parallel, fail softly\n\n```python\nfrom concurrent.futures import ThreadPoolExecutor, as_completed\n\ndef pull(source, url, kind):\n    try:\n        return parse_feed(fetch(url), source, kind)\n    except Exception as err:\n        print(f\"  ! {source}: {err}\", file=sys.stderr)\n        return []          # a dead feed is a warning, never a build failure\n\nitems = []\nwith ThreadPoolExecutor(max_workers=8) as pool:\n    futures = [pool.submit(pull, *feed) for feed in FEEDS]\n    for future in as_completed(futures):\n        items.extend(future.result())\n```\n\n> [!tip] The failure policy is the whole design\n> One dead source must never take the site down. It logs, it's skipped, and\n> yesterday's file stays live until a good run replaces it. Degrade to *slightly\n> stale*, never to *broken*.\n\n## 3. Cap per source, not just overall\n\nWithout per-source caps one prolific feed eats the page. arXiv will publish\nforty papers while The Verge publishes two:\n\n```python\nMAX_PER_SOURCE = {\"news\": 6, \"video\": 3, \"paper\": 5}\nMAX_AGE_DAYS   = {\"news\": 7, \"video\": 21, \"paper\": 7}\n```\n\nDifferent content types have genuinely different half-lives. A three-week-old\nexplainer video is still worth watching; a three-week-old news item is not.\n\n## 4. Archive every run\n\nWrite today's file *and* a dated copy:\n\n```python\nOUT.write_text(payload)\n(ARCHIVE / f\"{today}.json\").write_text(payload)\n```\n\nA few KB per day buys you a browsable history for free. This site's day-by-day\narchive is literally just a directory listing written to `index.json`.\n\n## 5. One workflow, two behaviours\n\nLet the trigger decide whether to regenerate:\n\n```yaml\non:\n  push: { branches: [main] }\n  schedule: [{ cron: \"0 21 * * *\" }]\n  workflow_dispatch:\n\n# \u2026\n      - name: Refresh\n        if: github.event_name != 'push'\n        run: python3 scripts/digest.py\n```\n\nA plain push deploys exactly what you committed \u2014 which keeps rollbacks\nhonest. A cron or manual run regenerates first, commits with `[skip ci]`, then\ndeploys.\n\n## 6. Keep the script dependency-free\n\nThe digest script here is stdlib only: `urllib`, `xml.etree`, `json`. No\n`pip install` step in CI means no transitive dependency that can break your\nTuesday morning. For feed parsing, the stdlib genuinely is enough:\n\n```python\nimport xml.etree.ElementTree as ET\n\ndef local(tag):                      # strip the namespace Atom insists on\n    return tag.rsplit(\"}\", 1)[-1]\n```\n\n## What you get\n\nNo server. No database. No cold starts. A CDN-served page that is as fast as a\nstatic site because it *is* one \u2014 and every daily update is a git commit you\ncan diff, bisect and revert.\n\n## Related\n\n[[Build a Daily Anything Game]] \u00b7 [[Daily Signal Pipeline]] \u00b7 [[Digest Bot]] \u00b7 [[Cron Ledger]] \u00b7 [[Python]]\n",
+   "words": 620,
+   "links": [
+    "systems/Daily Signal Pipeline",
+    "guides/Build a Daily Anything Game",
+    "agents/Digest Bot",
+    "systems/Cron Ledger",
+    "stack/Python"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "guides/Build a Daily Anything Game",
+    "guides/Publish an Obsidian Vault to a Static Site",
+    "maps/Guides Map"
+   ]
+  },
+  {
+   "id": "guides/Benchmark a Model Honestly",
+   "title": "Benchmark a Model Honestly",
+   "path": "brain/guides/Benchmark a Model Honestly.md",
+   "folder": "guides",
+   "type": "guide",
+   "tags": [
+    "guide",
+    "quant",
+    "mlops",
+    "evaluation"
+   ],
+   "aliases": [],
+   "meta": {
+    "level": "advanced",
+    "time": "18 min",
+    "order": 7,
+    "stack": [
+     "Python",
+     "LightGBM",
+     "MLflow",
+     "Prefect"
+    ],
+    "built": "VolForecast",
+    "summary": "Most forecasting results are leaks or strawmen. Build the baselines first, evaluate walk-forward, and gate promotion on a loss that matches the cost of being wrong."
+   },
+   "generated": false,
+   "body": "# Benchmark a Model Honestly\n\nAlmost every impressive time-series result is one of two things: a leak, or a\ncomparison against a baseline nobody serious uses.\n\n[[VolForecast]] forecasts realised volatility, which is a domain with decades\nof strong, boring baselines. That makes it very hard to fool yourself \u2014 if you\nbuild them first.\n\n## 1. Build the baselines before the model\n\nNot after. Before. If your model cannot beat HAR, you do not have a model, you\nhave a plot.\n\n| Baseline | Why it's in the set |\n| --- | --- |\n| **EWMA** | The trivial one. If you lose here, stop. |\n| **GARCH(1,1)** | The academic default for forty years. |\n| **HAR-RV** | Heterogeneous autoregressive. Brutally hard to beat. |\n\nBuilding them first also forces the data pipeline into shape before any\nmodelling choice can quietly depend on it.\n\n## 2. Walk forward, and be paranoid about it\n\nA random train/test split on time series is not a weak evaluation, it is a\nbroken one \u2014 the model trains on the future.\n\n```\n|--- train ---|-- test --|\n      |--- train ---|-- test --|\n            |--- train ---|-- test --|\n```\n\nRefit at each step using only data available at that time. Then check the three\nleaks that survive a correct-looking split:\n\n- **Feature leaks.** A rolling feature computed over the whole series before\n  splitting has already seen the test set.\n- **Scaler leaks.** Fit normalisation inside the fold, never on the full frame.\n- **Target leaks.** Realised vol over `[t, t+h]` cannot use anything after `t`.\n\n> [!warning] The tell\n> A model that beats HAR by a wide margin on the first try has a leak. Assume\n> so and go find it. It is faster than the alternative, which is discovering it\n> after you have written it up.\n\n## 3. Pick a loss that matches the cost of the error\n\nRMSE on volatility is the wrong objective and it flatters you. Volatility is\npositive, heteroskedastic and heavy-tailed; squared error is dominated by the\nfew largest observations.\n\n**QLIKE** is the standard for a reason \u2014 it penalises *under*-forecasting\nvolatility much harder than over-forecasting, which is the asymmetry that\nactually costs money:\n\n```python\ndef qlike(actual, pred):\n    # Robust to noise in the realised-vol proxy; asymmetric in the\n    # direction that matters \u2014 under-forecasting risk is the expensive error.\n    r = actual / pred\n    return float(np.mean(r - np.log(r) - 1))\n```\n\nReport RMSE too if you like. Gate on QLIKE.\n\n## 4. Champion / challenger, with an actual gate\n\nTrack every run. Promotion is a rule, not a judgement call:\n\n```python\nif challenger.qlike < champion.qlike * (1 - MIN_IMPROVEMENT):\n    registry.transition(challenger.version, \"Production\")\nelse:\n    log.info(\"challenger %s did not clear the gate\", challenger.version)\n```\n\n`MIN_IMPROVEMENT` exists so noise cannot promote a model. Without a margin you\nwill ship whichever run got a lucky fold.\n\nRecord for every run: data window, feature set, hyperparameters, all baseline\nscores, and the git SHA. A result you cannot reproduce is an anecdote.\n\n## 5. Watch for drift, retrain on a trigger\n\nMarkets regime-shift; a model tuned on 2023 calm degrades in a vol spike.\nMonitor feature distributions and live error, and retrain on a *trigger* rather\nthan a calendar:\n\n```python\nif psi(reference_features, live_features) > 0.2 or rolling_qlike > threshold:\n    flow.run(\"retrain\")\n```\n\nRetraining on a schedule burns compute when nothing changed and does nothing\nwhen everything did.\n\n## 6. Publish the losses\n\nThe most credible section in any model write-up is the one where it loses.\nState where the baselines win \u2014 short horizons, quiet regimes, thin instruments\n\u2014 because a model that wins everywhere is a model whose evaluation is broken.\n\n## Related\n\n[[VolForecast]] \u00b7 [[Validate a Pricing Engine]] \u00b7 [[Python]] \u00b7 [[Studio Principles]]\n",
+   "words": 623,
+   "links": [
+    "projects/VolForecast",
+    "guides/Validate a Pricing Engine",
+    "stack/Python",
+    "notes/Studio Principles"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "guides/Validate a Pricing Engine",
+    "maps/Guides Map"
+   ]
+  },
+  {
+   "id": "guides/Build a Daily Anything Game",
+   "title": "Build a Daily Anything Game",
+   "path": "brain/guides/Build a Daily Anything Game.md",
+   "folder": "guides",
+   "type": "guide",
+   "tags": [
+    "guide",
+    "games",
+    "cron",
+    "static"
+   ],
+   "aliases": [],
+   "meta": {
+    "level": "beginner",
+    "time": "15 min",
+    "order": 1,
+    "stack": [
+     "Python",
+     "GitHub Actions",
+     "Vanilla JS"
+    ],
+    "built": "One Piece Guess",
+    "summary": "Wordle-style daily puzzles need no server, no database and no auth \u2014 just a cron job and a committed JSON file."
+   },
+   "generated": false,
+   "body": "# Build a Daily Anything Game\n\nWordle spawned a genre, and the genre has one mechanical requirement: **everyone\nmust see the same answer on the same day, and nobody may see tomorrow's.**\n\nThat is it. Every daily game is that sentence plus decoration. And you can\nsatisfy it with a cron job and a file in git \u2014 no server, no database, no auth,\nno bill. [[One Piece Guess]] and [[Side by Side]] both run this way.\n\n## The shape\n\n```\nGitHub Actions cron \u2500\u2500\u25ba picker script \u2500\u2500\u25ba today.json \u2500\u2500\u25ba git commit \u2500\u2500\u25ba Pages\n                                                                          \u2502\n                                                     browser fetches \u2500\u2500\u2500\u2500\u2500\u2518\n```\n\nThe site is static. The \"backend\" is a scheduled workflow that writes a file.\n\n## 1. Model the answer as data\n\nStart with the answer set, not the UI. For a character-guessing game each entry\nneeds the attributes you will compare against:\n\n```json\n{\n  \"name\": \"Nico Robin\",\n  \"crew\": \"Straw Hat Pirates\",\n  \"bounty\": 930000000,\n  \"haki\": [\"Armament\"],\n  \"fruit\": \"Hana Hana no Mi\",\n  \"debut\": \"Arabasta\"\n}\n```\n\nEvery clue in the game is a comparison between two of these objects. Get the\nschema right and the game logic is twenty lines.\n\n## 2. Pick deterministically, not randomly\n\nThe picker runs once a day and commits its choice. Seed it on the date so a\nre-run of the same day produces the same answer:\n\n```python\nimport hashlib, json, datetime\nfrom pathlib import Path\n\nDATA = Path(\"data/characters.json\")\nOUT = Path(\"data/today.json\")\n\ndef pick(day: str, pool: list) -> dict:\n    # Deterministic: the same date always yields the same character, so a\n    # re-run or a retried workflow can never change today's answer.\n    seed = int(hashlib.sha256(day.encode()).hexdigest()[:8], 16)\n    return pool[seed % len(pool)]\n\nday = datetime.date.today().isoformat()\npool = json.loads(DATA.read_text())\nOUT.write_text(json.dumps({\"date\": day, **pick(day, pool)}, indent=2))\n```\n\n> [!warning] Don't use `random` without a seed\n> A workflow that retries \u2014 and they do retry \u2014 would silently change the\n> answer halfway through the day, invalidating everyone's in-progress board.\n\nKeep a `recent.json` of the last N picks and exclude them from the pool if you\nwant to avoid repeats.\n\n## 3. Commit it from CI\n\n```yaml\nname: daily pick\non:\n  schedule:\n    - cron: \"0 21 * * *\"   # 21:00 UTC \u2248 7am Melbourne\n  workflow_dispatch:\npermissions:\n  contents: write\njobs:\n  pick:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - run: python3 scripts/pick.py\n      - run: |\n          git config user.name \"pick-bot\"\n          git config user.email \"actions@users.noreply.github.com\"\n          git add data/\n          git diff --cached --quiet || git commit -m \"pick: $(date -u +%F) [skip ci]\"\n          git push\n```\n\n`[skip ci]` matters \u2014 without it the commit triggers your deploy workflow,\nwhich commits again, forever.\n\n## 4. Client side: compare and colour\n\nThe browser fetches `today.json` once and every guess is a local comparison.\nNo round trip, so it feels instant:\n\n```js\nconst clue = (guess, answer, key) => {\n  if (guess[key] === answer[key]) return \"exact\";\n  if (typeof guess[key] === \"number\")\n    return guess[key] < answer[key] ? \"higher\" : \"lower\";\n  if (Array.isArray(guess[key]) && guess[key].some(v => answer[key].includes(v)))\n    return \"partial\";\n  return \"miss\";\n};\n```\n\nStore progress in `localStorage`, keyed by the date. Returning mid-game\nrestores the board; a new day starts clean because the key changed.\n\n## 5. The share grid\n\nThe single feature that makes these games spread. Turn the board into emoji and\ncopy it to the clipboard \u2014 no link, no image, nothing that needs hosting:\n\n```js\nconst GRID = { exact: \"\ud83d\udfe9\", partial: \"\ud83d\udfe8\", higher: \"\u2b06\ufe0f\", lower: \"\u2b07\ufe0f\", miss: \"\u2b1b\" };\nconst share = rows.map(r => r.map(c => GRID[c]).join(\"\")).join(\"\\n\");\nnavigator.clipboard.writeText(`Guess #${dayNumber}\\n${share}`);\n```\n\n## The traps\n\n- **Timezones.** Pick one and put it in the UI. \"New pirate every morning\" is\n  fine; silently rolling over at UTC midnight while your players are at dinner\n  is not.\n- **Spoilers in the payload.** If you ship the whole answer set to the client,\n  someone will read `today.json`. Ship only today's answer, or hash it.\n- **A pool that is too small.** Repeats within a fortnight feel broken. Aim for\n  at least 150 entries before launch.\n\n## Where to look\n\nThe [[One Piece Guess]] repo is deliberately written as a template for this \u2014\nits README is a how-to, not just docs. [[Pirate Picker]] is the note on the\ncron side, and [[Agent Patterns]] covers why this shape keeps reappearing.\n\n## Related\n\n[[A Website That Updates Itself]] \u00b7 [[One Piece Guess]] \u00b7 [[Side by Side]] \u00b7 [[GitHub Actions]]\n",
+   "words": 715,
+   "links": [
+    "projects/One Piece Guess",
+    "projects/Side by Side",
+    "agents/Pirate Picker",
+    "agents/Agent Patterns",
+    "guides/A Website That Updates Itself",
+    "stack/GitHub Actions"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "guides/A Website That Updates Itself",
+    "maps/Guides Map"
+   ]
+  },
+  {
+   "id": "guides/Give Your Tool to Agents with MCP",
+   "title": "Give Your Tool to Agents with MCP",
+   "path": "brain/guides/Give Your Tool to Agents with MCP.md",
+   "folder": "guides",
+   "type": "guide",
+   "tags": [
+    "guide",
+    "agents",
+    "mcp",
+    "protocol"
+   ],
+   "aliases": [],
+   "meta": {
+    "level": "intermediate",
+    "time": "14 min",
+    "order": 5,
+    "stack": [
+     "TypeScript",
+     "MCP",
+     "Node.js"
+    ],
+    "built": "Worktree Optimiser",
+    "summary": "If a human can click it, an agent should be able to call it. How to wrap an existing tool in a Model Context Protocol server without rewriting it."
+   },
+   "generated": false,
+   "body": "# Give Your Tool to Agents with MCP\n\nYou built a dev tool with a dashboard. An agent now wants to use it, and its\nonly options are driving your browser UI or shelling out to your CLI and\nparsing stdout. Both are bad.\n\nMCP is the fix: describe your operations as typed tools, and any MCP-speaking\nagent can call them. [[Worktree Optimiser]] does this for container lifecycle;\n[[QuantLens]] embeds one so external agents query the same quant engine the UI\ndoes.\n\n## Design the lifecycle once, expose it twice\n\nThe mistake \u2014 the one made here, and worth not repeating \u2014 is building the UI\nfirst and retrofitting tools onto it. UI-shaped code leaks UI assumptions:\noptimistic updates, implicit \"current selection\", multi-step wizards.\n\nExtract a plain service layer first. Then both front doors are thin:\n\n```\n              \u250c\u2500 dashboard (HTTP)\n  lifecycle \u2500\u2500\u2524\n              \u2514\u2500 MCP server (tools)\n```\n\n```ts\n// The only place that knows how a worktree becomes a running container.\nexport const lifecycle = {\n  async start(branch: string): Promise<{ url: string }> { \u2026 },\n  async stop(branch: string): Promise<void> { \u2026 },\n  async list(): Promise<Worktree[]> { \u2026 },\n  async logs(branch: string, lines: number): Promise<string> { \u2026 },\n};\n```\n\n## A minimal server\n\n```ts\nimport { McpServer } from \"@modelcontextprotocol/sdk/server/mcp.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\nimport { z } from \"zod\";\n\nconst server = new McpServer({ name: \"worktree-optimiser\", version: \"1.0.0\" });\n\nserver.tool(\n  \"worktree_start\",\n  \"Start the dev container for a branch and return the URL it is served at.\",\n  { branch: z.string().describe(\"Branch name, e.g. fix-login\") },\n  async ({ branch }) => {\n    const { url } = await lifecycle.start(branch);\n    return { content: [{ type: \"text\", text: `Running at ${url}` }] };\n  },\n);\n\nawait server.connect(new StdioServerTransport());\n```\n\n## Write descriptions for the model, not the docs site\n\nThe tool description **is** the prompt. It is the only thing the model sees when\ndeciding whether to call you. Two rules:\n\n- Say what it does *and when to use it*. `\"Start the dev container for a branch\"`\n  beats `\"Starts a container\"`.\n- Say what it costs. If a call takes 40 seconds or spends money, put that in\n  the description. Models route around expensive tools sensibly when told.\n\n```ts\n{ branch: z.string().describe(\"Branch name as shown by `git branch`, e.g. fix-login\") }\n```\n\nZod `.describe()` calls become the JSON Schema the model reads. Fill them in.\n\n## Return text the model can act on\n\nReturning `{\"ok\": true}` is a dead end \u2014 the model learns nothing. Return the\nnext useful fact:\n\n```ts\nreturn { content: [{ type: \"text\", text:\n  `fix-login is running at http://fix-login.localhost (started 2.1s ago). ` +\n  `Logs: worktree_logs({branch:\"fix-login\"}).` }] };\n```\n\nErrors especially. `\"Branch 'fix-logon' not found. Existing: fix-login,\nrefactor-api, main.\"` turns a dead end into a self-correction.\n\n## Keep tools coarse\n\nOne tool per *intent*, not per HTTP endpoint. `worktree_start` that creates the\nworktree, builds and routes it beats three tools the model has to sequence.\nEvery tool boundary is a chance for the model to stop halfway.\n\n## Gate the dangerous ones\n\nAn MCP server is an execution surface. Anything destructive gets the treatment\nin [[Tool Safety]] \u2014 allowlist, capability tier, audit trail:\n\n```ts\nconst TIER = { worktree_list: \"read\", worktree_logs: \"read\",\n               worktree_start: \"write\", worktree_destroy: \"destructive\" };\n```\n\nReads flow freely; destructive calls justify themselves. A flat permission list\nmakes everything look equally serious, so it gets approved in bulk and stops\nmeaning anything.\n\n## Test it without an agent\n\nThe transport is JSON-RPC over stdio, so it is scriptable:\n\n```sh\necho '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/list\"}' | node dist/mcp.js\n```\n\nIf `tools/list` returns descriptions you would be happy to read cold, the\nserver is done.\n\n## Related\n\n[[Worktree MCP Server]] \u00b7 [[Worktree Optimiser]] \u00b7 [[MCP]] \u00b7 [[Tool Safety]] \u00b7 [[Run a Fleet of Coding Agents]]\n",
+   "words": 626,
+   "links": [
+    "projects/Worktree Optimiser",
+    "projects/QuantLens",
+    "agents/Tool Safety",
+    "agents/Worktree MCP Server",
+    "stack/MCP",
+    "guides/Run a Fleet of Coding Agents"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "guides/Run a Fleet of Coding Agents",
+    "maps/Guides Map"
+   ]
+  },
+  {
+   "id": "guides/Let an LLM Narrate Numbers",
+   "title": "Let an LLM Narrate Numbers",
+   "path": "brain/guides/Let an LLM Narrate Numbers.md",
+   "folder": "guides",
+   "type": "guide",
+   "tags": [
+    "guide",
+    "agents",
+    "rag",
+    "finance"
+   ],
+   "aliases": [],
+   "meta": {
+    "level": "intermediate",
+    "time": "15 min",
+    "order": 6,
+    "stack": [
+     "Java",
+     "Spring AI",
+     "pgvector",
+     "PostgreSQL"
+    ],
+    "built": "QuantLens",
+    "summary": "How to put an AI narration layer over a real engine so that every figure in the prose is one you can point at."
+   },
+   "generated": false,
+   "body": "# Let an LLM Narrate Numbers\n\nA hallucinated sentence is embarrassing. A hallucinated Sharpe ratio is\nactionable and wrong.\n\nIf you are putting an AI layer over anything numeric \u2014 a portfolio, a\ndashboard, an analytics product \u2014 you need one architectural rule, and\n[[QuantLens]] is built entirely around it:\n\n> **Narrate, never calculate.** The model chooses what to *say* about a number.\n> It never chooses the number.\n\n## The split\n\n```\n        question\n            \u2502\n            \u25bc\n     model decides which tools to call\n            \u2502\n   \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n   \u25bc                 \u25bc\nquant engine     RAG over docs\n(the numbers)    (the context)\n   \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n            \u25bc\n   model writes prose about\n   values it did not invent\n```\n\nEverything numeric comes back from a tool call. The model's job is selection\nand explanation.\n\n## 1. Make the engine callable, not promptable\n\nDo not put your metrics in the system prompt. Expose them as tools with typed\narguments:\n\n```java\n@Bean\npublic FunctionCallback riskMetrics(PortfolioService portfolios) {\n  return FunctionCallbackWrapper.builder(\n      (RiskRequest req) -> portfolios.riskMetrics(req.portfolioId(), req.window()))\n    .withName(\"risk_metrics\")\n    .withDescription(\"Sharpe, Sortino, max drawdown and 95% VaR for a portfolio \"\n                   + \"over a window. Use whenever the user asks how risky \"\n                   + \"something is or how it performed.\")\n    .build();\n}\n```\n\nNumbers in the prompt go stale, get truncated and get averaged by the model.\nNumbers from a tool call are current and traceable.\n\n## 2. RAG for context, tools for values\n\nThese are different jobs and mixing them is the usual failure:\n\n| Question | Answered by |\n| --- | --- |\n| \"What is my VaR?\" | tool call |\n| \"What does VaR mean here?\" | retrieval over docs |\n| \"Why did drawdown spike in March?\" | tool call **and** retrieval |\n\nEmbeddings retrieve *explanations*. They must never be the source of a figure \u2014\na nearest-neighbour match on last quarter's report will confidently return last\nquarter's number.\n\nKeeping vectors in [[pgvector]] rather than a separate vector database means\nretrieval and the engine share one connection, one backup, and one\n`docker compose up`.\n\n## 3. Constrain the narration prompt\n\n```\nYou explain portfolio analytics to an informed but non-expert reader.\n\nRULES\n- Every figure you state must come from a tool result in this conversation.\n- If you need a figure you do not have, call the tool. Never estimate.\n- If a tool fails, say the figure is unavailable. Do not substitute.\n- Round for readability, but never restate a rounded figure as exact.\n```\n\nThat fourth rule matters more than it looks. Without it a model handed a failed\ncall will reach for something plausible from context.\n\n## 4. Show your working in the UI\n\nRender each figure with its provenance \u2014 which tool, which window, what time.\nIt costs a tooltip and it converts \"the AI said\" into \"the engine said, and\nhere is the call\".\n\nIt also makes the failure mode loud instead of silent: a number with no\nprovenance is a bug you can see.\n\n## 5. Test the refusals\n\nYour test suite should assert the model **declines**:\n\n- Ask for a metric with the tool stubbed to fail \u2192 must say unavailable.\n- Ask about a portfolio that doesn't exist \u2192 must not invent one.\n- Ask for a figure outside the available window \u2192 must say so.\n\nAnyone can test the happy path. The refusals are the product.\n\n## 6. Seed a demo that runs offline\n\n[[QuantLens]] ships three seeded personas and comes up with one\n`docker compose up`, no API keys. If a reviewer needs a setup guide, the\nproject failed before they read a line of code \u2014 and a demo that can't run\nwithout live market data can't run at all in six months.\n\n## Related\n\n[[QuantLens]] \u00b7 [[QuantLens Narrator]] \u00b7 [[Agent Patterns]] \u00b7 [[pgvector]] \u00b7 [[Java]]\n",
+   "words": 625,
+   "links": [
+    "projects/QuantLens",
+    "stack/pgvector",
+    "agents/QuantLens Narrator",
+    "agents/Agent Patterns",
+    "stack/Java"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Guides Map"
+   ]
+  },
+  {
+   "id": "guides/Publish an Obsidian Vault to a Static Site",
+   "title": "Publish an Obsidian Vault to a Static Site",
+   "path": "brain/guides/Publish an Obsidian Vault to a Static Site.md",
+   "folder": "guides",
+   "type": "guide",
+   "tags": [
+    "guide",
+    "obsidian",
+    "markdown",
+    "static"
+   ],
+   "aliases": [],
+   "meta": {
+    "level": "intermediate",
+    "time": "20 min",
+    "order": 3,
+    "stack": [
+     "Python",
+     "Vanilla JS",
+     "Obsidian"
+    ],
+    "built": "Exaryn Studio",
+    "summary": "Turn a folder of markdown notes into a browsable web vault with backlinks, tags, search and a graph \u2014 no static site generator."
+   },
+   "generated": false,
+   "body": "# Publish an Obsidian Vault to a Static Site\n\nObsidian's own publish product is excellent and costs money. If your vault is\nalready in a git repo next to a static site, you can serve it yourself for\nnothing, and keep the vault fully usable in Obsidian at the same time.\n\nThis guide is how the brain on this site works \u2014 see [[Brain Pipeline]].\n\n## The one hard constraint\n\n**A static host has no directory listing.** The browser cannot walk `brain/` to\ndiscover ninety markdown files, because there is nothing to walk. Any solution\nstarts by answering \"how does the client learn what exists?\"\n\nThree options:\n\n| Approach | Requests | Search | Graph |\n| --- | --- | --- | --- |\n| One file per note + a manifest | 1 + 1 per note | needs a search index | needs an edge list |\n| Pre-render each note to HTML | 1 per note | needs an index | needs an edge list |\n| **Bundle the whole vault into one JSON** | **1** | **free** | **free** |\n\nFor a vault under a few thousand notes, bundle. This one is 100 notes and\n~200KB \u2014 smaller than a hero image, and it arrives before the first paint\nfinishes.\n\n## 1. Parse the frontmatter\n\nYou do not need a YAML library for the subset Obsidian writes:\n\n```python\ndef parse_note(text):\n    \"\"\"Split a markdown file into (frontmatter dict, body).\"\"\"\n    if not text.startswith(\"---\"):\n        return {}, text\n    end = text.find(\"\\n---\", 3)\n    if end == -1:\n        return {}, text\n    head, body = text[3:end], text[end + 4:]\n    meta, key = {}, None\n    for line in head.splitlines():\n        if line.lstrip().startswith(\"- \") and key:      # block list\n            meta.setdefault(key, []).append(line.lstrip()[2:].strip())\n            continue\n        if \":\" not in line:\n            continue\n        key, _, raw = line.partition(\":\")\n        meta[key.strip()] = fm_value(raw)               # inline list / bool / str\n    return meta, body.lstrip(\"\\n\")\n```\n\n## 2. Resolve wikilinks the way Obsidian does\n\n`[[Target]]`, `[[Target|alias]]` and `[[Target#heading]]` all point at a note by\n**title first, then filename, then alias**. Build one lowercased index and\nresolve against it:\n\n```python\nWIKILINK_RE = re.compile(r\"\\[\\[([^\\]|#]+)(?:#[^\\]|]+)?(?:\\|([^\\]]+))?\\]\\]\")\nCODE_RE = re.compile(r\"```.*?```|`[^`\\n]*`\", re.S)\n\nindex = {}\nfor n in notes:\n    index.setdefault(n[\"title\"].lower(), n[\"id\"])\n    index.setdefault(Path(n[\"id\"]).name.lower(), n[\"id\"])\n    for alias in n[\"aliases\"]:\n        index.setdefault(alias.lower(), n[\"id\"])\n```\n\n> [!warning] Strip code before extracting links\n> A guide that *documents* wikilink syntax contains `[[like this]]` inside\n> backticks. Without `CODE_RE.sub(\"\", body)` first, every such example becomes\n> a broken link in your graph. This exact bug produced four phantom edges here.\n\n## 3. Compute backlinks once, server side\n\nBacklinks are just the reverse index, and computing them at build time means\nthe browser never has to:\n\n```python\nbacklinks = {n[\"id\"]: [] for n in notes}\nfor n in notes:\n    prose = CODE_RE.sub(\"\", n[\"body\"])\n    n[\"links\"] = [index[m.group(1).strip().lower()]\n                  for m in WIKILINK_RE.finditer(prose)\n                  if m.group(1).strip().lower() in index]\n    for target in n[\"links\"]:\n        backlinks[target].append(n[\"id\"])\n```\n\n## 4. Never generate a broken link\n\nIf you also *generate* notes from data \u2014 one per project, one per repo \u2014 the\ngenerator must only link things that exist:\n\n```python\ndef maybe_link(name, vocab):\n    \"\"\"[[Name]] when a note exists for it, plain text when it does not.\"\"\"\n    return f\"[[{name}]]\" if name.lower() in vocab else name\n```\n\nBuild `vocab` by scanning the vault before generating. Now `\"FastAPI\"` renders\nas plain text until the day you write `stack/FastAPI.md`, at which point it\nbecomes a link everywhere, automatically.\n\n## 5. Render markdown in the browser\n\nYou need less than you think. Headings, lists, tables, fenced code,\nblockquotes, callouts and links cover a whole vault \u2014 about 180 lines, versus\n40KB of library. The one subtlety is inline parsing order:\n\n**Lift code spans out first**, then escape HTML, then handle wikilinks, then\nemphasis. Otherwise `` `**not bold**` `` renders bold.\n\n```js\nconst code = [];\nlet out = src.replace(/`([^`]+)`/g, (_, c) => {\n  code.push(c);\n  return `\ue000${code.length - 1}\ue000`;   // sentinel, not a bare number\n});\n// \u2026 escape, wikilinks, emphasis \u2026\nreturn out.replace(/\ue000(\\d+)\ue000/g, (_, i) => `<code>${esc(code[+i])}</code>`);\n```\n\nUse a private-use sentinel, not `` ` 0 ` ``. A bare number placeholder will\nhappily eat \"529 offline tests\" out of your prose. Ask how I know.\n\n## 6. The graph is 40 lines\n\nNodes are notes, edges are resolved links, and a naive O(n\u00b2) repulsion loop is\nperfectly fine under a few hundred nodes:\n\n```js\nfor (const a of nodes) {                          // pull toward centre\n  a.vx += (cx - a.x) * 0.0016;\n  a.vy += (cy - a.y) * 0.0016;\n}\n// \u2026 pairwise repulsion, then spring along each edge, then damp \u2026\n```\n\nRun the simulation for a few seconds and stop. A graph that jitters forever\ncosts battery and adds nothing.\n\n## Keep the vault a vault\n\nThe point of doing it this way is that `brain/` stays openable in Obsidian.\nSo: commit the generated notes, mark them `generated: true` with a visible\nbanner, and never introduce syntax that only your renderer understands.\n\n## Related\n\n[[Brain Pipeline]] \u00b7 [[Brain Indexer]] \u00b7 [[A Website That Updates Itself]] \u00b7 [[Python]]\n",
+   "words": 827,
+   "links": [
+    "systems/Brain Pipeline",
+    "agents/Brain Indexer",
+    "guides/A Website That Updates Itself",
+    "stack/Python"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Guides Map"
+   ]
+  },
+  {
+   "id": "guides/Run a Fleet of Coding Agents",
+   "title": "Run a Fleet of Coding Agents",
+   "path": "brain/guides/Run a Fleet of Coding Agents.md",
+   "folder": "guides",
+   "type": "guide",
+   "tags": [
+    "guide",
+    "agents",
+    "git",
+    "docker"
+   ],
+   "aliases": [],
+   "meta": {
+    "level": "intermediate",
+    "time": "16 min",
+    "order": 4,
+    "stack": [
+     "Node.js",
+     "Git worktrees",
+     "Docker",
+     "Traefik"
+    ],
+    "built": "Claude Work Manager",
+    "summary": "Running five coding agents at once is a write-conflict problem, not a reasoning problem. Give each one its own checkout."
+   },
+   "generated": false,
+   "body": "# Run a Fleet of Coding Agents\n\nEveryone's first attempt at parallel coding agents fails the same way: two\nagents edit the same file, one clobbers the other, and the session becomes an\narchaeology exercise.\n\nThe instinct is to coordinate \u2014 locks, turn-taking, a supervisor that assigns\nfiles. Don't. **Isolate instead.** [[Claude Work Manager]] and\n[[Worktree Optimiser]] are the two halves of that idea.\n\n## Worktrees, not clones\n\n`git worktree` gives you a second working directory backed by the *same* object\nstore. Cheap, instant, and every worktree is a real checkout:\n\n```sh\ngit worktree add ../work/fix-login -b fix-login\ngit worktree add ../work/refactor-api -b refactor-api\ngit worktree list\n```\n\nOne agent per worktree means two agents editing the same file is *impossible*,\nnot merely discouraged. No locks, no coordination protocol, no supervisor\narbitrating writes.\n\n```\nrepo/.git  \u2500\u252c\u2500 repo/                 (you)\n            \u251c\u2500 work/fix-login/       (agent 1)\n            \u251c\u2500 work/refactor-api/    (agent 2)\n            \u2514\u2500 work/flaky-test/      (agent 3)\n```\n\n## Spawn agents against the CLI you already authenticated\n\nDon't build an API-key vault. If you have a coding CLI logged in on the\nmachine, wrap it:\n\n```js\nimport { spawn } from \"node:child_process\";\n\nfunction startAgent({ id, cwd, prompt }) {\n  const proc = spawn(\"claude\", [\"-p\", prompt], { cwd, stdio: [\"pipe\", \"pipe\", \"pipe\"] });\n  sessions.set(id, { proc, cwd, log: [] });\n  proc.stdout.on(\"data\", (d) => sessions.get(id).log.push(d.toString()));\n  return id;\n}\n```\n\nNo keys are stored anywhere, and revoking access is `claude logout`.\n\n> [!tip] Make it mobile-first\n> Most fleet supervision is *reading* \u2014 checking whether an agent went sideways\n> and nudging it. That is phone work. Build the read path for a 390px screen\n> first and the desktop layout falls out for free.\n\n## Give every branch a running environment\n\nIsolation solves *who is editing what*. It doesn't solve *what is running\nwhere* \u2014 three agents all trying to bind port 3000. Container per worktree,\nrouted by hostname:\n\n```yaml\nservices:\n  fix-login:\n    build: ../work/fix-login\n    labels:\n      - \"traefik.http.routers.fix-login.rule=Host(`fix-login.localhost`)\"\n```\n\nNow `fix-login.localhost` and `refactor-api.localhost` are both live. Reviewing\na PR against your own branch is two browser tabs instead of a stash-and-swap \u2014\nwhich is, empirically, the most common way to lose an hour.\n\n## Expose the lifecycle as tools, not just UI\n\nThe mistake worth avoiding: building the dashboard first and the agent\ninterface second. Everything a human can click should be callable:\n\n```js\nserver.tool(\"worktree_start\", { branch: z.string() }, async ({ branch }) => {\n  await compose.up(branch);\n  return { url: `http://${branch}.localhost` };\n});\n```\n\nNow an agent working on `fix-login` can bring its own environment up, check it,\nand tear it down without a human in the loop. See\n[[Give Your Tool to Agents with MCP]] and [[Worktree MCP Server]].\n\n## Merging back\n\nWorktrees make the writes safe; they don't make the merges disappear. What\nworks:\n\n- **Small branches.** An agent that touches four files merges cleanly. One that\n  touches forty does not.\n- **Merge the base in, don't rebase.** On a branch someone (or something) else\n  may have checked out, a merge commit keeps every existing checkout valid.\n- **Regenerate lockfiles with the tooling**, never resolve them by hand.\n- **Review the diff, not the transcript.** The diff is what ships.\n\n## The lesson\n\n> The hard part of running several agents is not reasoning. It is write\n> conflicts \u2014 and isolation deletes the problem instead of managing it.\n\nWhich is [[Studio Principles|principle 2]], and it generalises well past coding\nagents.\n\n## Related\n\n[[Claude Work Manager]] \u00b7 [[Worktree Optimiser]] \u00b7 [[Worktree Workflow]] \u00b7 [[Fleet Supervisor]] \u00b7 [[Give Your Tool to Agents with MCP]]\n",
+   "words": 585,
+   "links": [
+    "projects/Claude Work Manager",
+    "projects/Worktree Optimiser",
+    "guides/Give Your Tool to Agents with MCP",
+    "agents/Worktree MCP Server",
+    "notes/Studio Principles",
+    "systems/Worktree Workflow",
+    "agents/Fleet Supervisor"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "guides/Give Your Tool to Agents with MCP",
+    "maps/Guides Map"
+   ]
+  },
+  {
+   "id": "guides/Validate a Pricing Engine",
+   "title": "Validate a Pricing Engine",
+   "path": "brain/guides/Validate a Pricing Engine.md",
+   "folder": "guides",
+   "type": "guide",
+   "tags": [
+    "guide",
+    "quant",
+    "numerics",
+    "testing"
+   ],
+   "aliases": [],
+   "meta": {
+    "level": "advanced",
+    "time": "17 min",
+    "order": 8,
+    "stack": [
+     "Python",
+     "NumPy",
+     "JAX",
+     "FastAPI"
+    ],
+    "built": "QuantFlex",
+    "summary": "If you hand-roll Monte Carlo, PDE solvers and autodiff, the hard part is not writing them \u2014 it is proving they are right."
+   },
+   "generated": false,
+   "body": "# Validate a Pricing Engine\n\nWriting a Monte Carlo pricer is a weekend. Knowing whether it is *correct* is\nthe actual project \u2014 a subtly wrong pricer produces plausible numbers forever\nand never throws.\n\n[[QuantFlex]] prices vanillas, Americans, exotics and baskets under GBM,\nMerton and Heston with hand-rolled solvers. Here is the validation scaffolding\nthat makes that defensible.\n\n## Principle: write the oracle before the solver\n\nAn oracle is anything that gives you the right answer independently. You have\nmore of them than you think, and each catches a different class of bug.\n\n## 1. Anchor to closed form wherever one exists\n\nBlack-Scholes is the anchor for every GBM engine. Your Monte Carlo, your PDE\ngrid and your tree must all converge to it:\n\n```python\ndef test_mc_matches_black_scholes():\n    analytic = bs_call(S=100, K=100, r=0.05, q=0.0, sigma=0.2, T=1.0)\n    mc = monte_carlo_call(S=100, K=100, r=0.05, sigma=0.2, T=1.0,\n                          paths=1_000_000, seed=0)\n    # 3 standard errors: tight enough to catch bugs, loose enough not to flake.\n    assert abs(mc.price - analytic) < 3 * mc.stderr\n```\n\nAssert against the **standard error**, not a hard tolerance. A hard tolerance\neither flakes or hides a real drift when you change the path count.\n\n## 2. Test the invariants, not just the values\n\nInvariants hold across every model and catch whole categories of error:\n\n- **Put\u2013call parity.** `C - P == S\u00b7e^{-qT} - K\u00b7e^{-rT}`. Fails loudly on sign\n  and discounting bugs.\n- **Monotonicity.** A call is non-decreasing in spot and in volatility.\n- **Bounds.** `max(S - Ke^{-rT}, 0) \u2264 C \u2264 S`. Cheap and surprisingly effective.\n- **American \u2265 European.** Early exercise cannot be worth negative.\n- **Convergence.** Halve the timestep, expect the error to fall at the scheme's\n  advertised order. If it doesn't, your discretisation is wrong even when the\n  price looks fine.\n\n## 3. Triple-verify the Greeks\n\nGreeks are where hand-rolled autodiff quietly goes wrong, because a tape bug\ngives you a *smooth, plausible* number. Three independent routes must agree:\n\n| Route | Catches |\n| --- | --- |\n| Your autodiff tape | \u2014 (the thing under test) |\n| Bump-and-revalue | tape wiring, sign errors |\n| JAX `grad` on the same payoff | your entire tape implementation |\n\n```python\n@pytest.mark.parametrize(\"greek\", [\"delta\", \"vega\", \"rho\", \"theta\"])\ndef test_greeks_agree(greek):\n    tape = engine.greeks(**params)[greek]\n    bump = finite_difference(engine.price, greek, **params)\n    ref  = jax.grad(jax_price, argnums=ARG[greek])(**jax_params)\n    assert abs(tape - bump) < 1e-3\n    assert abs(tape - ref)  < 1e-6      # same maths, so this should be tight\n```\n\nJAX is a **test-time oracle only** here. Shipping it as the engine would defeat\nthe point of writing the tape; not testing against it would be negligent.\n\n## 4. Fix your seeds and use common random numbers\n\nSame seed, same paths, every run. Then price the bumped and unbumped cases on\n*the same* paths \u2014 common random numbers cut finite-difference Greek variance\nby orders of magnitude and make the comparison in step 3 meaningful at all.\n\n## 5. Keep a benchmark table under version control\n\nPublished values for Heston and Merton exist in the literature. Pin them:\n\n```python\nHESTON_BENCHMARKS = [\n    # (S, K, T, v0, kappa, theta, xi, rho, expected, source)\n    (100, 100, 1.0, 0.04, 2.0, 0.04, 0.3, -0.7, 8.1663, \"Albrecher et al. 2007\"),\n]\n```\n\nNow a refactor that shifts the fourth decimal fails CI with a citation\nattached, instead of being noticed a month later.\n\n## 6. Make the American case explicit\n\nLongstaff\u2013Schwartz is where regression choices leak into prices. Test that the\nAmerican price sits above the European one, that it converges as basis\nfunctions increase, and that a zero-dividend American call equals the European\none \u2014 a specific, well-known identity that catches early-exercise logic bugs\nimmediately.\n\n## The takeaway\n\n> The analytic anchors caught more bugs than the unit tests did.\n\nWhich is [[Studio Principles|principle 5]]. Write the oracle first; the solver\nis the easy half.\n\n## Related\n\n[[QuantFlex]] \u00b7 [[Benchmark a Model Honestly]] \u00b7 [[Python]] \u00b7 [[Studio Principles]]\n",
+   "words": 647,
+   "links": [
+    "projects/QuantFlex",
+    "notes/Studio Principles",
+    "guides/Benchmark a Model Honestly",
+    "stack/Python"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "guides/Benchmark a Model Honestly",
+    "maps/Guides Map"
    ]
   },
   {
@@ -834,6 +1189,48 @@
    ]
   },
   {
+   "id": "maps/Guides Map",
+   "title": "Guides Map",
+   "path": "brain/maps/Guides Map.md",
+   "folder": "maps",
+   "type": "map",
+   "tags": [
+    "moc",
+    "guides"
+   ],
+   "aliases": [],
+   "meta": {
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/../brain/guides/*.md`. Hand edits are overwritten \u2014 change the data instead.\n\n# Guides Map\n\n8 guides to building the things in [[Projects Map]] \u2014 written from the projects rather than about them, so every one of them has shipping code behind it.\n\n## Beginner\n\n| Guide | What it covers | Built from | Time |\n| --- | --- | --- | --- |\n| [[Build a Daily Anything Game]] | Wordle-style daily puzzles need no server, no database and no auth \u2014 just a cron job and a committed JSON file. | [[One Piece Guess]] | 15 min |\n| [[A Website That Updates Itself]] | A content site that rebuilds from live sources every morning, costs nothing, and has no server to keep alive. | [[Exaryn Studio]] | 18 min |\n\n## Intermediate\n\n| Guide | What it covers | Built from | Time |\n| --- | --- | --- | --- |\n| [[Publish an Obsidian Vault to a Static Site]] | Turn a folder of markdown notes into a browsable web vault with backlinks, tags, search and a graph \u2014 no static site generator. | [[Exaryn Studio]] | 20 min |\n| [[Run a Fleet of Coding Agents]] | Running five coding agents at once is a write-conflict problem, not a reasoning problem. Give each one its own checkout. | [[Claude Work Manager]] | 16 min |\n| [[Give Your Tool to Agents with MCP]] | If a human can click it, an agent should be able to call it. How to wrap an existing tool in a Model Context Protocol server without rewriting it. | [[Worktree Optimiser]] | 14 min |\n| [[Let an LLM Narrate Numbers]] | How to put an AI narration layer over a real engine so that every figure in the prose is one you can point at. | [[QuantLens]] | 15 min |\n\n## Advanced\n\n| Guide | What it covers | Built from | Time |\n| --- | --- | --- | --- |\n| [[Benchmark a Model Honestly]] | Most forecasting results are leaks or strawmen. Build the baselines first, evaluate walk-forward, and gate promotion on a loss that matches the cost of being wrong. | [[VolForecast]] | 18 min |\n| [[Validate a Pricing Engine]] | If you hand-roll Monte Carlo, PDE solvers and autodiff, the hard part is not writing them \u2014 it is proving they are right. | [[QuantFlex]] | 17 min |\n\n## Related\n\n[[Projects Map]] \u00b7 [[Stack Map]] \u00b7 [[Home]]\n",
+   "words": 428,
+   "links": [
+    "maps/Projects Map",
+    "guides/Build a Daily Anything Game",
+    "projects/One Piece Guess",
+    "guides/A Website That Updates Itself",
+    "projects/Exaryn Studio",
+    "guides/Publish an Obsidian Vault to a Static Site",
+    "guides/Run a Fleet of Coding Agents",
+    "projects/Claude Work Manager",
+    "guides/Give Your Tool to Agents with MCP",
+    "projects/Worktree Optimiser",
+    "guides/Let an LLM Narrate Numbers",
+    "projects/QuantLens",
+    "guides/Benchmark a Model Honestly",
+    "projects/VolForecast",
+    "guides/Validate a Pricing Engine",
+    "projects/QuantFlex",
+    "maps/Stack Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "Home"
+   ]
+  },
+  {
    "id": "maps/Projects Map",
    "title": "Projects Map",
    "path": "brain/maps/Projects Map.md",
@@ -877,6 +1274,7 @@
    "unresolved": [],
    "backlinks": [
     "Home",
+    "maps/Guides Map",
     "maps/Repos Map",
     "maps/Stack Map",
     "notes/Build Log",
@@ -1058,6 +1456,7 @@
    "unresolved": [],
    "backlinks": [
     "Home",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Systems Map",
     "notes/Glossary"
@@ -1370,6 +1769,9 @@
     "Home",
     "agents/Context Engineering",
     "agents/Tool Safety",
+    "guides/Benchmark a Model Honestly",
+    "guides/Run a Fleet of Coding Agents",
+    "guides/Validate a Pricing Engine",
     "maps/Agent Structure",
     "maps/Stack Map",
     "maps/Systems Map",
@@ -1455,6 +1857,8 @@
    "backlinks": [
     "agents/Agent Ledger",
     "agents/Fleet Supervisor",
+    "guides/Run a Fleet of Coding Agents",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Timeline",
@@ -1541,6 +1945,7 @@
     "agents/Agent Ledger",
     "agents/Brain Indexer",
     "agents/Digest Bot",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Timeline",
@@ -1660,6 +2065,8 @@
    "backlinks": [
     "agents/Agent Ledger",
     "agents/Pirate Picker",
+    "guides/Build a Daily Anything Game",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Timeline",
@@ -1784,6 +2191,8 @@
    ],
    "unresolved": [],
    "backlinks": [
+    "guides/Validate a Pricing Engine",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Timeline",
@@ -1831,6 +2240,9 @@
    "backlinks": [
     "agents/Agent Ledger",
     "agents/QuantLens Narrator",
+    "guides/Give Your Tool to Agents with MCP",
+    "guides/Let an LLM Narrate Numbers",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Timeline",
@@ -1878,6 +2290,7 @@
    "backlinks": [
     "agents/Agent Ledger",
     "agents/Fan Suite Bot",
+    "guides/Build a Daily Anything Game",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Timeline",
@@ -1999,6 +2412,8 @@
    ],
    "unresolved": [],
    "backlinks": [
+    "guides/Benchmark a Model Honestly",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Timeline",
@@ -2042,6 +2457,9 @@
    "backlinks": [
     "agents/Agent Ledger",
     "agents/Worktree MCP Server",
+    "guides/Give Your Tool to Agents with MCP",
+    "guides/Run a Fleet of Coding Agents",
+    "maps/Guides Map",
     "maps/Projects Map",
     "maps/Repos Map",
     "maps/Timeline",
@@ -3356,6 +3774,7 @@
    "backlinks": [
     "agents/Digest Bot",
     "agents/Pirate Picker",
+    "guides/Build a Daily Anything Game",
     "maps/Stack Map",
     "maps/Systems Map",
     "projects/Exaryn Studio",
@@ -3397,6 +3816,7 @@
    "unresolved": [],
    "backlinks": [
     "agents/QuantLens Narrator",
+    "guides/Let an LLM Narrate Numbers",
     "maps/Stack Map",
     "projects/QuantLens"
    ]
@@ -3429,6 +3849,7 @@
     "agents/ALFRED Conductor",
     "agents/QuantLens Narrator",
     "agents/Worktree MCP Server",
+    "guides/Give Your Tool to Agents with MCP",
     "maps/Stack Map",
     "projects/ALFRED",
     "projects/Worktree Optimiser",
@@ -3566,6 +3987,10 @@
     "agents/Brain Indexer",
     "agents/Digest Bot",
     "agents/Fan Suite Bot",
+    "guides/A Website That Updates Itself",
+    "guides/Benchmark a Model Honestly",
+    "guides/Publish an Obsidian Vault to a Static Site",
+    "guides/Validate a Pricing Engine",
     "maps/Stack Map",
     "projects/ALFRED",
     "projects/Exaryn Studio",
@@ -3767,6 +4192,7 @@
    "unresolved": [],
    "backlinks": [
     "agents/QuantLens Narrator",
+    "guides/Let an LLM Narrate Numbers",
     "maps/Stack Map",
     "projects/QuantLens",
     "stack/Java",
@@ -3801,6 +4227,7 @@
    "backlinks": [
     "README",
     "agents/Brain Indexer",
+    "guides/Publish an Obsidian Vault to a Static Site",
     "maps/Systems Map",
     "notes/Build Log",
     "stack/GitHub Actions",
@@ -3838,6 +4265,7 @@
    "backlinks": [
     "agents/Fan Suite Bot",
     "agents/Pirate Picker",
+    "guides/A Website That Updates Itself",
     "maps/Systems Map",
     "stack/GitHub Actions",
     "stack/Python",
@@ -3874,6 +4302,7 @@
    "backlinks": [
     "Home",
     "agents/Digest Bot",
+    "guides/A Website That Updates Itself",
     "maps/Systems Map",
     "stack/GitHub Actions",
     "systems/Cron Ledger",
@@ -3938,6 +4367,7 @@
    "unresolved": [],
    "backlinks": [
     "agents/Fleet Supervisor",
+    "guides/Run a Fleet of Coding Agents",
     "maps/Systems Map",
     "notes/Build Log",
     "notes/Glossary",

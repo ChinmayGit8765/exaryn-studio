@@ -13,9 +13,10 @@ is the wiring between projects rather than any one project.
 > [!tip] New here?
 > Start with [[Agent Structure]] — it is the spine of the whole vault.
 
-## The four hubs
+## The five hubs
 
 - **[[Agent Structure]]** — every autonomous system built here, what drives it, and what it is allowed to touch.
+- **[[Guides Map]]** — how to build these things yourself. Eight guides, written from the projects.
 - **[[Projects Map]]** — the full project index, grouped by what kind of thing it is.
 - **[[Systems Map]]** — the pipelines, crons and deploys that run without anyone watching.
 - **[[Stack Map]]** — the technologies, and which projects lean on each.

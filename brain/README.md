@@ -15,7 +15,7 @@ required, no proprietary format, nothing that stops working if Obsidian does.
 | Where | How |
 | --- | --- |
 | **In Obsidian** | *Open folder as vault* → pick this `brain/` directory. Graph view, backlinks and search all work out of the box. |
-| **In the browser** | [`/brain.html`](../brain.html) on the site — the same notes, with backlinks, tags, search and a graph, rendered from `data/brain.json`. |
+| **In the browser** | [`/brain.html`](../brain.html) on the site — the same notes, with backlinks, tags, search and a graph, rendered from `data/brain.json`. Guides get their own reading view at [`/guides.html`](../guides.html). |
 
 ## Layout
 
@@ -23,6 +23,7 @@ required, no proprietary format, nothing that stops working if Obsidian does.
 brain/
   Home.md            entry point — start here
   maps/              maps of content: the hubs everything hangs off
+  guides/            build-it-yourself guides, one per technique
   agents/            the agent structure — every autonomous thing built here
   projects/          one note per project        (generated from data/projects.json)
   repos/             one note per GitHub repo    (generated from data/repos.json)

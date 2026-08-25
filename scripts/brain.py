@@ -339,6 +339,42 @@ def timeline(repos: list, project_by_repo: dict) -> tuple[Path, dict, str]:
     return VAULT / "maps" / "Timeline.md", meta, "\n".join(out)
 
 
+def guides_map() -> tuple[Path, dict, str]:
+    """Index of every guide, read back out of the hand-written guide files."""
+    rows = []
+    for path in sorted((VAULT / "guides").glob("*.md")):
+        meta, _ = parse_note(path.read_text())
+        if meta.get("type") != "guide":
+            continue
+        rows.append((int(meta.get("order", 99)), meta.get("title", path.stem), meta))
+    rows.sort()
+
+    by_level: dict[str, list] = {}
+    for _, title, meta in rows:
+        by_level.setdefault(str(meta.get("level", "unsorted")), []).append((title, meta))
+
+    out = [BANNER.format(src="../brain/guides/*.md"), "# Guides Map", "",
+           f"{len(rows)} guides to building the things in {link('Projects Map')} — "
+           "written from the projects rather than about them, so every one of them "
+           "has shipping code behind it.", ""]
+    for level in ("beginner", "intermediate", "advanced"):
+        items = by_level.get(level, [])
+        if not items:
+            continue
+        out += [f"## {level.title()}", "",
+                "| Guide | What it covers | Built from | Time |",
+                "| --- | --- | --- | --- |"]
+        for title, meta in items:
+            built = meta.get("built", "")
+            out.append(f"| {link(title)} | {meta.get('summary','')} | "
+                       f"{link(built) if built else '—'} | {meta.get('time','—')} |")
+        out.append("")
+    out += ["## Related", "", " · ".join([link("Projects Map"), link("Stack Map"),
+                                          link("Home")]), ""]
+    meta = {"title": "Guides Map", "type": "map", "tags": ["moc", "guides"], "generated": "true"}
+    return VAULT / "maps" / "Guides Map.md", meta, "\n".join(out)
+
+
 def agent_ledger(projects: list) -> tuple[Path, dict, str]:
     """Table of every agent note, read back out of the hand-written agent files."""
     rows = []
@@ -400,6 +436,7 @@ def generate() -> int:
         lambda: repos_map(repos, project_by_repo),
         lambda: timeline(repos, project_by_repo),
         lambda: agent_ledger(projects),
+        guides_map,
     ):
         write_note(*maker())
         written += 1
