@@ -4,14 +4,23 @@
     "slug": "prompterjack",
     "tagline": "Design multi-agent AI systems visually, export runnable code for five frameworks.",
     "description": "Full-stack prompt-engineering and agent-design platform: pick an architecture style, design multi-agent systems visually, export production-ready code for Strands, OpenAI Agents, LangChain/LangGraph and LlamaIndex. Codebase-aware prompt generation, maintainability scoring, marketplace, real-time co-editing.",
-    "tech": ["React", "TypeScript", "Cloudflare Workers", "Hono", "Neon Postgres", "Stripe", "Turborepo"],
+    "tech": [
+      "React",
+      "TypeScript",
+      "Cloudflare Workers",
+      "Hono",
+      "Neon Postgres",
+      "Stripe",
+      "Turborepo"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "~6 months",
     "featured": true,
     "category": "Agents & Tooling",
-    "repo": "ChinmayGit8765/promptifyme",
-    "agents": ["Prompterjack Crew Designer"],
+    "agents": [
+      "Prompterjack Crew Designer"
+    ],
     "architecture": "Turborepo monorepo. React SPA on the edge, Hono API on Cloudflare Workers, Neon Postgres for state, Stripe for billing. The canvas is the source of truth: a crew graph compiles down to whichever framework you export to.",
     "highlights": [
       "Visual canvas for supervisor/worker, router, and pipeline crew shapes",
@@ -21,21 +30,32 @@
       "Real-time co-editing and a marketplace for published crews"
     ],
     "lessons": "Agent frameworks disagree about everything except the shape of the graph. Model the graph, generate the framework.",
-    "links": { "live": "https://prompterjack.com", "demo": "demos/prompterjack.html" }
+    "links": {
+      "live": "https://prompterjack.com",
+      "demo": "demos/prompterjack.html"
+    },
+    "source": "private"
   },
   {
     "name": "Claude Work Manager",
     "slug": "claude-work-manager",
     "tagline": "Run a fleet of Claude Code agents across git worktrees — from your phone.",
     "description": "Self-hosted, mobile-first dashboard for concurrent Claude Code sessions: spawn an isolated git worktree per agent, chat with each one, watch localhost previews of their dev servers, and commit/push from the couch. Rides the claude CLI you're already logged into — no API keys stored anywhere.",
-    "tech": ["Node.js", "Claude Code CLI", "Git worktrees", "Vanilla JS"],
+    "tech": [
+      "Node.js",
+      "Claude Code CLI",
+      "Git worktrees",
+      "Vanilla JS"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "days, ongoing",
     "featured": true,
     "category": "Agents & Tooling",
     "repo": "ChinmayGit8765/claude-work-manager",
-    "agents": ["Fleet Supervisor"],
+    "agents": [
+      "Fleet Supervisor"
+    ],
     "architecture": "A Node server wraps the local `claude` CLI. One git worktree per agent means agents never fight over the working tree. The browser talks to the server; the server talks to the CLI you already authenticated.",
     "highlights": [
       "One isolated git worktree per agent — parallel work with no merge chaos",
@@ -45,21 +65,32 @@
       "Commit and push per worktree without leaving the dashboard"
     ],
     "lessons": "Isolation is the whole trick. Once each agent owns a worktree, running five at once stops being scary.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/claude-work-manager" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/claude-work-manager"
+    }
   },
   {
     "name": "Worktree Optimiser",
     "slug": "worktree-optimiser",
     "tagline": "Every branch of a repo as its own containerised dev server, routed by hostname.",
     "description": "Run all your worktrees at once — main.localhost, fix-login.localhost — each in its own Docker container behind Traefik, managed from one dashboard. Review a PR and your own work side by side in two tabs. Ships an MCP server so coding agents can drive it too.",
-    "tech": ["Node.js", "Docker", "Traefik", "MCP", "Git worktrees", "TypeScript"],
+    "tech": [
+      "Node.js",
+      "Docker",
+      "Traefik",
+      "MCP",
+      "Git worktrees",
+      "TypeScript"
+    ],
     "status": "in development",
     "year": "2026",
     "devTime": "~2 weeks, ongoing",
     "featured": true,
     "category": "Agents & Tooling",
     "repo": "ChinmayGit8765/worktree-optimiser",
-    "agents": ["Worktree MCP Server"],
+    "agents": [
+      "Worktree MCP Server"
+    ],
     "architecture": "Traefik does hostname routing; every worktree gets a container and a `<branch>.localhost` name. A dashboard drives the lifecycle, and an MCP server exposes the same lifecycle to coding agents as tools.",
     "highlights": [
       "`main.localhost`, `fix-login.localhost` — every branch live at once",
@@ -69,21 +100,33 @@
       "MIT licensed"
     ],
     "lessons": "Anything a human clicks in a dashboard, an agent should be able to call as a tool. Building the MCP layer second was a mistake worth not repeating.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/worktree-optimiser" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/worktree-optimiser"
+    }
   },
   {
     "name": "ALFRED",
     "slug": "alfred",
     "tagline": "Local-first multi-agent life-optimization system. Your hardware, your data, no cloud.",
     "description": "Decomposes goals into weekly plans a Conductor reconciles against real capacity, delivers over Discord/Telegram, watches what happens, and adapts. Every tool call passes an allowlist, capability tier and audit trail. 529 offline tests in CI.",
-    "tech": ["Python", "Pydantic", "Ollama", "SQLite", "discord.py", "MCP"],
+    "tech": [
+      "Python",
+      "Pydantic",
+      "Ollama",
+      "SQLite",
+      "discord.py",
+      "MCP"
+    ],
     "status": "in development",
     "year": "2026",
     "devTime": "~3 months, ongoing",
     "featured": true,
     "category": "Agents & Tooling",
     "repo": "ChinmayGit8765/AlfredOpenSource",
-    "agents": ["ALFRED Conductor", "Tool Safety"],
+    "agents": [
+      "ALFRED Conductor",
+      "Tool Safety"
+    ],
     "architecture": "Local models via Ollama, SQLite for state, Pydantic contracts between every agent. A Conductor reconciles specialist plans against real capacity before anything reaches you. Chat surfaces are Discord and Telegram.",
     "highlights": [
       "Runs entirely on your hardware — no cloud, no data leaving the house",
@@ -94,20 +137,31 @@
       "MIT licensed"
     ],
     "lessons": "A planner that ignores capacity is a to-do list generator. The Conductor exists because the first version cheerfully planned 60-hour weeks.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/AlfredOpenSource" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/AlfredOpenSource"
+    }
   },
   {
     "name": "QuantFlex",
     "slug": "quantflex",
     "tagline": "Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff.",
     "description": "Prices vanillas, American options, exotics and baskets under GBM, Merton and Heston with hand-rolled solvers and Greeks from a custom autodiff tape. Every price validated against analytic anchors; every Greek triple-verified against JAX.",
-    "tech": ["Python", "NumPy", "JAX", "FastAPI", "Vue 3", "Cloud Run"],
+    "tech": [
+      "Python",
+      "NumPy",
+      "JAX",
+      "FastAPI",
+      "Vue 3",
+      "Cloud Run"
+    ],
     "status": "in development",
     "year": "2026",
     "devTime": "~2 months, ongoing",
     "category": "Quant & Finance",
     "repo": "ChinmayGit8765/quantflex",
-    "relatedRepos": ["ChinmayGit8765/quantflex-site", "ChinmayGit8765/thequantflex"],
+    "relatedRepos": [
+      "ChinmayGit8765/quantflex-site"
+    ],
     "architecture": "Hand-rolled numerics in NumPy — Monte Carlo, finite-difference PDE, and a custom reverse-mode autodiff tape for Greeks. FastAPI in front, Vue 3 SPA on top, Cloud Run underneath. JAX is used only as an oracle in tests.",
     "highlights": [
       "Vanillas, Americans, exotics and baskets under GBM, Merton jump-diffusion and Heston",
@@ -117,20 +171,33 @@
       "Separate landing site with live engine output and a daily market feed"
     ],
     "lessons": "Write the oracle before the solver. The analytic anchors caught more bugs than the unit tests did.",
-    "links": { "demo": "demos/quantflex.html", "repo": "https://github.com/ChinmayGit8765/quantflex", "live": "https://chinmaygit8765.github.io/quantflex-site/" }
+    "links": {
+      "demo": "demos/quantflex.html",
+      "repo": "https://github.com/ChinmayGit8765/quantflex",
+      "live": "https://chinmaygit8765.github.io/quantflex-site/"
+    }
   },
   {
     "name": "QuantLens",
     "slug": "quantlens",
     "tagline": "AI-narrated portfolio dashboard — Sharpe, VaR, Monte Carlo, factors, RAG Q&A.",
     "description": "Quant-finance Spring Boot backend plus Vue 3 SPA: P&L, risk metrics, Fama-French factors and cointegration pairs, narrated by Spring AI with RAG over pgvector. One docker compose up, no API keys, three seeded demo personas.",
-    "tech": ["Java", "Spring Boot", "Spring AI", "pgvector", "Vue 3", "Docker"],
+    "tech": [
+      "Java",
+      "Spring Boot",
+      "Spring AI",
+      "pgvector",
+      "Vue 3",
+      "Docker"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "~3 weeks",
     "category": "Quant & Finance",
     "repo": "ChinmayGit8765/FinancialServicesDashboard",
-    "agents": ["QuantLens Narrator"],
+    "agents": [
+      "QuantLens Narrator"
+    ],
     "architecture": "Spring Boot 3.5 runs the quant engine; Spring AI runs tool-calling and RAG over pgvector, with an embedded MCP server. Vue 3 on the front. `docker compose up` brings the whole thing, seed data included.",
     "highlights": [
       "P&L, Sharpe, VaR, Monte Carlo, Fama-French factors, cointegration pairs",
@@ -140,14 +207,23 @@
       "One `docker compose up`, no API keys, three seeded demo personas"
     ],
     "lessons": "Let the model narrate, never calculate. Every number in the prose comes from a tool call you can point at.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/FinancialServicesDashboard" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/FinancialServicesDashboard"
+    }
   },
   {
     "name": "VolForecast",
     "slug": "volforecast",
     "tagline": "MLOps platform forecasting short-horizon volatility, benchmarked honestly vs GARCH.",
     "description": "Realized-volatility forecasting for crypto and equities wrapped in a full MLOps lifecycle: leak-free walk-forward evaluation against GARCH/EWMA/HAR baselines, champion/challenger registry in MLflow, QLIKE-gated promotion, drift detection and automated retraining.",
-    "tech": ["Python", "LightGBM", "MLflow", "Prefect", "FastAPI", "Streamlit"],
+    "tech": [
+      "Python",
+      "LightGBM",
+      "MLflow",
+      "Prefect",
+      "FastAPI",
+      "Streamlit"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "~1 month",
@@ -162,20 +238,28 @@
       "Covers both crypto and equities"
     ],
     "lessons": "A vol model that can't beat HAR isn't a model, it's a plot. Building the baselines first made the whole project honest.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/VolatilityModel" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/VolatilityModel"
+    }
   },
   {
     "name": "Solo Strength Quest",
     "slug": "solo-strength-quest",
     "tagline": "A fitness RPG — every workout is a quest, every PR is a boss kill.",
     "description": "Gamified training app: workouts become quests, progressive overload becomes XP, and your profile is a character sheet that levels up because you did. Rust/Axum API with server-side gamification math, Flutter app with a custom design system, Postgres + Redis underneath.",
-    "tech": ["Rust", "Axum", "SQLx", "Flutter", "PostgreSQL", "Redis"],
+    "tech": [
+      "Rust",
+      "Axum",
+      "SQLx",
+      "Flutter",
+      "PostgreSQL",
+      "Redis"
+    ],
     "status": "in development",
     "year": "2026",
     "devTime": "ongoing",
     "category": "Games & Play",
     "repo": "ChinmayGit8765/strength-quest",
-    "relatedRepos": ["ChinmayGit8765/solo-strength-quest-play", "ChinmayGit8765/solo_strength-quest"],
     "architecture": "Rust/Axum API owns all gamification maths server-side — the client never decides what an XP award is. SQLx over Postgres, Redis for hot state, Flutter client with its own design system.",
     "highlights": [
       "Workouts become quests; progressive overload becomes XP",
@@ -185,20 +269,30 @@
       "Playable web demo published separately"
     ],
     "lessons": "Third attempt at this app. The two rewrites before it died of client-side game logic and no schema discipline.",
-    "links": { "demo": "demos/strength-quest.html", "repo": "https://github.com/ChinmayGit8765/strength-quest", "live": "https://chinmaygit8765.github.io/solo-strength-quest-play/" }
+    "links": {
+      "demo": "demos/strength-quest.html",
+      "repo": "https://github.com/ChinmayGit8765/strength-quest"
+    }
   },
   {
     "name": "One Piece Guess",
     "slug": "one-piece-guess",
     "tagline": "Wordle, but for One Piece — a daily character riddle picked by a cron job.",
     "description": "Guess the daily character: eight attribute clues per guess (crew, bounty, haki, fruit, debut saga…), hints that unlock as you struggle, a shareable emoji grid. A GitHub Actions cron picks a new pirate every morning; the README doubles as a guide to building your own daily-anything game.",
-    "tech": ["Vanilla JS", "Python", "GitHub Actions", "GitHub Pages"],
+    "tech": [
+      "Vanilla JS",
+      "Python",
+      "GitHub Actions",
+      "GitHub Pages"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "a weekend",
     "category": "Games & Play",
     "repo": "ChinmayGit8765/one-piece-guess-game",
-    "agents": ["Pirate Picker"],
+    "agents": [
+      "Pirate Picker"
+    ],
     "architecture": "Entirely static. A GitHub Actions cron runs a Python picker each morning, commits the day's character, and Pages redeploys. No backend to keep alive.",
     "highlights": [
       "Eight attribute clues per guess: crew, bounty, haki, devil fruit, debut saga and more",
@@ -208,20 +302,30 @@
       "Embedded and playable on this site's Play tab"
     ],
     "lessons": "The whole 'daily game' genre is one cron job and a committed JSON file. Everything else is decoration.",
-    "links": { "live": "https://chinmaygit8765.github.io/one-piece-guess-game/", "repo": "https://github.com/ChinmayGit8765/one-piece-guess-game" }
+    "links": {
+      "live": "https://chinmaygit8765.github.io/one-piece-guess-game/",
+      "repo": "https://github.com/ChinmayGit8765/one-piece-guess-game"
+    }
   },
   {
     "name": "Side by Side",
     "slug": "side-by-side",
     "tagline": "A self-updating Collingwood super-fan suite — reskinnable for any AFL club.",
     "description": "Next-game countdown, form guide, live ladder and a daily news sweep, rebuilt every morning by a cron job from the free Squiggle API and Google News. Everything club-specific lives in one config file — fork it, edit club.json, and it's your club's suite.",
-    "tech": ["Vanilla JS", "Python", "Squiggle API", "GitHub Actions"],
+    "tech": [
+      "Vanilla JS",
+      "Python",
+      "Squiggle API",
+      "GitHub Actions"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "a weekend",
     "category": "Games & Play",
     "repo": "ChinmayGit8765/collingwood-fan-suite",
-    "agents": ["Fan Suite Bot"],
+    "agents": [
+      "Fan Suite Bot"
+    ],
     "architecture": "Same shape as One Piece Guess: cron job, Python fetcher, committed JSON, static Pages. Everything club-specific is isolated in `club.json` so the suite reskins by config, not by fork-and-edit.",
     "highlights": [
       "Next-game countdown, form guide and live ladder from the free Squiggle API",
@@ -230,14 +334,24 @@
       "Rebuilt every morning by a cron job — nothing to host"
     ],
     "lessons": "Config file over fork. Making the club swappable took an hour and turned a personal page into something anyone can use.",
-    "links": { "live": "https://chinmaygit8765.github.io/collingwood-fan-suite/", "repo": "https://github.com/ChinmayGit8765/collingwood-fan-suite" }
+    "links": {
+      "live": "https://chinmaygit8765.github.io/collingwood-fan-suite/",
+      "repo": "https://github.com/ChinmayGit8765/collingwood-fan-suite"
+    }
   },
   {
     "name": "Gartic Hands",
     "slug": "gartic-hands",
     "tagline": "Multiplayer draw-and-guess where you draw with webcam hand tracking.",
     "description": "Gartic Phone, except players draw with their hands in front of a webcam via MediaPipe hand tracking. Server-held round state machine drives the full party loop. Built with a Monash FIT3170 team.",
-    "tech": ["React", "TypeScript", "MediaPipe", "Express", "Socket.IO", "Docker"],
+    "tech": [
+      "React",
+      "TypeScript",
+      "MediaPipe",
+      "Express",
+      "Socket.IO",
+      "Docker"
+    ],
     "status": "in development",
     "year": "2026",
     "devTime": "semester project",
@@ -251,20 +365,31 @@
       "Built with a Monash FIT3170 team — the only group project in the index"
     ],
     "lessons": "Hand tracking is the easy half. Keeping eight browsers agreed on whose turn it is was the actual project.",
-    "links": { "repo": "https://github.com/Monash-FIT3170/2026W2-GarticHands" }
+    "links": {
+      "repo": "https://github.com/Monash-FIT3170/2026W2-GarticHands"
+    }
   },
   {
     "name": "smartc",
     "slug": "smartc",
     "tagline": "CLI wizard that writes compile-verified smart contracts plus deploy docs.",
     "description": "Single-binary Node CLI: short wizard in, one contract file plus a DEPLOY.md with copy-pasteable commands out. ERC-20/721/1155 and Solana SPL templates, every Solidity contract compiled in-process before it touches disk. Optional local-only AI patching via Ollama.",
-    "tech": ["TypeScript", "Node.js", "Solidity", "OpenZeppelin", "Anchor", "Ollama"],
+    "tech": [
+      "TypeScript",
+      "Node.js",
+      "Solidity",
+      "OpenZeppelin",
+      "Anchor",
+      "Ollama"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "~2 weeks",
     "category": "Web & Product",
     "repo": "ChinmayGit8765/SmartContract-Creator",
-    "agents": ["smartc Patcher"],
+    "agents": [
+      "smartc Patcher"
+    ],
     "architecture": "One Node binary. Wizard collects intent, templates emit Solidity or Anchor, solc compiles in-process, and only verified output hits disk. Ollama patching is opt-in and local-only.",
     "highlights": [
       "ERC-20, ERC-721, ERC-1155 and Solana SPL templates",
@@ -274,14 +399,25 @@
       "Published on npm; MIT licensed"
     ],
     "lessons": "Refuse to write a file that doesn't compile. It turns a code generator into a tool you can trust half-asleep.",
-    "links": { "live": "https://www.npmjs.com/package/smartc", "repo": "https://github.com/ChinmayGit8765/SmartContract-Creator" }
+    "links": {
+      "live": "https://www.npmjs.com/package/smartc",
+      "repo": "https://github.com/ChinmayGit8765/SmartContract-Creator"
+    }
   },
   {
     "name": "Contact Flow",
     "slug": "contact-flow",
     "tagline": "A production-shaped contact and lead-capture stack, one docker compose up.",
     "description": "Contact/lead-capture done the way a real product would do it: NestJS + TypeORM + PostgreSQL API, Next.js 14 + Tailwind frontend, validation implemented properly on both sides rather than trusted from the client. Whole stack comes up with one docker compose command.",
-    "tech": ["TypeScript", "NestJS", "TypeORM", "PostgreSQL", "Next.js", "Tailwind", "Docker"],
+    "tech": [
+      "TypeScript",
+      "NestJS",
+      "TypeORM",
+      "PostgreSQL",
+      "Next.js",
+      "Tailwind",
+      "Docker"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "~2 weeks",
@@ -295,14 +431,22 @@
       "One `docker compose up` brings the whole stack"
     ],
     "lessons": "'Simple CRUD form' is the best place to practise the boring parts — layering, validation, migrations — where nothing exotic hides the mistakes.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/ContactUsPage" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/ContactUsPage"
+    }
   },
   {
     "name": "TODO List",
     "slug": "todo-list",
     "tagline": "A deliberately simple todo app built like a real codebase — .NET + Angular.",
     "description": "A todo app that is deliberately boring on the surface and deliberately rigorous underneath: .NET Web API with proper layering, Angular frontend with presentational components, tests on both sides. Subtasks, inline edit, active/completed tabs. Built as a reference implementation for how a small app should actually be structured.",
-    "tech": ["C#", ".NET", "Web API", "Angular", "TypeScript"],
+    "tech": [
+      "C#",
+      ".NET",
+      "Web API",
+      "Angular",
+      "TypeScript"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "~2 weeks",
@@ -316,20 +460,32 @@
       "Tests on both the .NET and the Angular side"
     ],
     "lessons": "The point was never the todo app. It was having one small codebase where the structure is right, to compare bigger ones against.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/TODO-list" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/TODO-list"
+    }
   },
   {
     "name": "Exaryn Studio",
     "slug": "exaryn-studio",
     "tagline": "This site — portfolio, daily AI signal digest, and the Obsidian brain.",
     "description": "The studio's own site: a pure static portfolio with no framework and no build step, a self-updating daily AI digest rebuilt every morning by a GitHub Actions cron, and the Exaryn Brain — an Obsidian vault of markdown notes about everything built here, browsable in-page with backlinks and a graph view.",
-    "tech": ["Vanilla JS", "CSS", "Python", "GitHub Actions", "GitHub Pages", "Obsidian"],
+    "tech": [
+      "Vanilla JS",
+      "CSS",
+      "Python",
+      "GitHub Actions",
+      "GitHub Pages",
+      "Obsidian"
+    ],
     "status": "shipped",
     "year": "2026",
     "devTime": "ongoing",
     "category": "Infrastructure",
     "repo": "ChinmayGit8765/exaryn-studio",
-    "agents": ["Digest Bot", "Brain Indexer"],
+    "agents": [
+      "Digest Bot",
+      "Brain Indexer"
+    ],
     "architecture": "No framework, no build step. HTML pages fetch JSON out of `/data`; Python scripts in `/scripts` regenerate that JSON on a cron; GitHub Actions commits the result and redeploys Pages.",
     "highlights": [
       "Zero dependencies — the whole site is HTML, CSS and one JS file per surface",
@@ -339,14 +495,19 @@
       "Everything regenerates on one morning cron"
     ],
     "lessons": "A static site that regenerates itself is the cheapest infrastructure there is. The cron job is the whole backend.",
-    "links": { "live": "https://chinmaygit8765.github.io/exaryn-studio/", "repo": "https://github.com/ChinmayGit8765/exaryn-studio" }
+    "links": {
+      "live": "https://chinmaygit8765.github.io/exaryn-studio/",
+      "repo": "https://github.com/ChinmayGit8765/exaryn-studio"
+    }
   },
   {
     "name": "JSON API Simplifier",
     "slug": "json-api-simplifier",
     "tagline": "Strip a JSON API response down to its shape so you can read the contract.",
     "description": "A small Python utility: paste in a real API response, get back the same structure with all the values emptied out. Makes it obvious what fields an endpoint actually returns, so you stop misreading a value for a schema when wiring up calls.",
-    "tech": ["Python"],
+    "tech": [
+      "Python"
+    ],
     "status": "shipped",
     "year": "2025",
     "devTime": "a few evenings",
@@ -359,14 +520,19 @@
       "Small enough to paste into anything"
     ],
     "lessons": "The smallest tool in the index and one of the most reused. Structure is the thing you need; the sample data is noise.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/json_api_simplifier" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/json_api_simplifier"
+    }
   },
   {
     "name": "PDF Compiler",
     "slug": "pdf-compiler",
     "tagline": "An early browser-side document compiler — the oldest thing still in the index.",
     "description": "An early experiment in assembling and compiling documents in the browser. Kept in the index as the honest starting point: it predates the studio, has no tests, and is here because the timeline should include the beginning, not just the parts that went well.",
-    "tech": ["HTML", "JavaScript"],
+    "tech": [
+      "HTML",
+      "JavaScript"
+    ],
     "status": "archived",
     "year": "2025",
     "devTime": "a weekend",
@@ -378,6 +544,8 @@
       "Kept unchanged as a before-picture"
     ],
     "lessons": "Left as-is on purpose. Every index should contain at least one thing you'd write differently now.",
-    "links": { "repo": "https://github.com/ChinmayGit8765/PDFCompiler" }
+    "links": {
+      "repo": "https://github.com/ChinmayGit8765/PDFCompiler"
+    }
   }
 ]

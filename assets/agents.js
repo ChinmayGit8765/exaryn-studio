@@ -92,6 +92,7 @@ function renderScoreboard(vault, projects, repos) {
   A("#lede-projects").textContent = projects.length;
   A("#n-repos").textContent = repos.length;
   A("#lede-repos").textContent = repos.length;
+  A("#repo-link-count").textContent = repos.length;
   A("#n-notes").textContent = vault.count;
   A("#n-systems").textContent = vault.notes.filter((n) => n.type === "system").length;
 
@@ -123,11 +124,14 @@ function renderBuilt(vault, projects, repos) {
             })
             .join(", ")
         : "—";
+      // A project with a closed codebase says so; it never names a private repo.
       const repoCell = repo
         ? `<a href="${escA(repo.html_url)}" target="_blank" rel="noopener">${escA(repo.name)} ↗</a>`
-        : p.repo
-          ? escA(p.repo.split("/").pop())
-          : "—";
+        : p.source === "private"
+          ? `<span class="built-private">private</span>`
+          : p.repo
+            ? escA(p.repo.split("/").pop())
+            : "—";
       return `
       <tr>
         <td class="built-name">${name}</td>

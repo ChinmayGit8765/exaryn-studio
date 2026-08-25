@@ -5,17 +5,20 @@ Sweeps the GitHub REST API for all repos under OWNER, keeps the fields the
 brain actually uses, and (unless --fast) enriches each one with its language
 byte-breakdown and the first useful paragraph of its README.
 
-Stdlib only, so CI needs no pip install.
+PUBLISHING POLICY — data/repos.json is served to the public internet, so it
+carries only repositories that are meant to be seen:
 
-Auth:
-  GITHUB_TOKEN  — raises the rate limit from 60 to 5000 req/h. GitHub Actions
-                  injects one for free, but it is scoped to a single repo, so
-                  listing still goes through the public search API.
-  GH_PAT        — a personal access token with `repo` scope. Only this can
-                  enumerate private repositories. Optional.
+  * private repositories are never written, at all;
+  * generated demo/output mirrors, empty placeholders and throwaway tests are
+    excluded by name (EXCLUDE below);
+  * anything else needs either a data/projects.json entry or a description and
+    some actual content.
 
-Private repos already recorded in data/repos.json are kept across a run that
-cannot see them, so a sweep without a PAT never silently deletes them.
+Everything dropped is printed, with the reason, on every run.
+
+Stdlib only, so CI needs no pip install. GITHUB_TOKEN raises the rate limit
+from 60 to 5000 req/h; GitHub Actions injects one for free. There is
+deliberately no option to include private repos.
 
 Run:  python scripts/repos.py            # full sweep, needs network
       python scripts/repos.py --fast     # skip languages + READMEs
@@ -46,6 +49,18 @@ KEEP = [
     "pushed_at", "default_branch", "visibility", "private", "fork",
     "archived", "has_pages", "has_issues", "has_wiki", "has_discussions",
 ]
+
+# Public repos deliberately kept out of anything published. Private repos are
+# dropped automatically and are not listed here — naming them would defeat the
+# point. These are public repos that are not work to show: build output whose
+# source is private, empty placeholders, and throwaway tests.
+EXCLUDE = {
+    "solo-strength-quest-play",   # generated web build, not a source repo
+    "chinmay-tech-portfolio",     # empty placeholder
+    "VueSkillShowcase",           # empty placeholder
+    "MyBlog",                     # empty placeholder
+    "claude-code-test",           # throwaway test
+}
 
 BADGE_RE = re.compile(r"^\s*[\[!]*\[!\[.*$")      # badge-only lines
 HEADING_RE = re.compile(r"^\s*#")
@@ -154,6 +169,34 @@ def shrink(repo: dict) -> dict:
     return out
 
 
+def referenced_repos() -> set[str]:
+    """Repo names data/projects.json points at — these are published by choice."""
+    projects = OUT.parent / "projects.json"
+    if not projects.exists():
+        return set()
+    names = set()
+    for project in json.loads(projects.read_text()):
+        for full in [project.get("repo")] + list(project.get("relatedRepos") or []):
+            if full:
+                names.add(full.split("/")[-1])
+    return names
+
+
+def publishable(repo: dict, referenced: set[str]) -> str:
+    """Empty string when the repo may be published, else the reason it may not."""
+    if repo.get("private"):
+        return "private"
+    if repo["name"] in EXCLUDE:
+        return "excluded by policy"
+    if repo["name"] in referenced:
+        return ""                       # a project points at it: publish it
+    if not (repo.get("description") or "").strip():
+        return "no description"
+    if not repo.get("size"):
+        return "empty"
+    return ""
+
+
 def main() -> None:
     fast = "--fast" in sys.argv
     print(f"sweeping repos for {OWNER}…")
@@ -162,13 +205,26 @@ def main() -> None:
         print("no repos returned — check network/token; leaving data/repos.json alone",
               file=sys.stderr)
         sys.exit(1)
-    print(f"  {len(repos)} repos")
+    print(f"  {len(repos)} repos visible")
+
+    referenced = referenced_repos()
+    keep, dropped = [], []
+    for repo in repos:
+        reason = publishable(repo, referenced)
+        (dropped if reason else keep).append((repo, reason))
+    for repo, reason in dropped:
+        # Private repos are counted, never named — this log ends up in CI output.
+        label = "(private)" if reason == "private" else repo["name"]
+        print(f"  - skipping {label}: {reason}")
+    print(f"  {len(keep)} publishable, {len(dropped)} withheld")
+    repos = [repo for repo, _ in keep]
 
     if not fast:
         with ThreadPoolExecutor(max_workers=6) as pool:
             repos = list(pool.map(enrich, repos))
 
-    # Keep whatever the previous run learned about repos this run couldn't reach.
+    # Carry forward the language mix and README blurb for anything this run
+    # couldn't enrich. Repos withheld above are never resurrected from here.
     previous = {}
     if OUT.exists():
         try:
@@ -183,22 +239,17 @@ def main() -> None:
         row["languages"] = row["languages"] or old.get("languages") or {}
         row["readme"] = row["readme"] or old.get("readme") or ""
         rows.append(row)
-
-    # A sweep without a PAT cannot see private repos — keep the ones we already
-    # know about rather than deleting them from the record.
-    seen = {r["name"] for r in rows}
-    kept = [r for name, r in previous.items()
-            if name not in seen and r.get("private")]
-    if kept:
-        print(f"  keeping {len(kept)} private repos this run could not see")
-    rows.extend(kept)
     rows.sort(key=lambda r: r["pushed_at"] or "", reverse=True)
+
+    assert not any(r["private"] for r in rows), "private repo reached the payload"
 
     OUT.write_text(json.dumps({
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "owner": OWNER,
         "count": len(rows),
+        "withheld": len(dropped),
         "source": "GitHub REST API",
+        "policy": "public repositories only; see PUBLISHING POLICY in scripts/repos.py",
         "repos": rows,
     }, indent=2) + "\n")
     print(f"wrote {OUT.relative_to(OUT.parent.parent)} — {len(rows)} repos")

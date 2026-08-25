@@ -4,7 +4,7 @@ type: agent
 tier: 2
 tags: [agent, prompts, codegen]
 project: Prompterjack
-repo: ChinmayGit8765/promptifyme
+source: private
 ---
 
 # Prompterjack Crew Designer

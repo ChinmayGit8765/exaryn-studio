@@ -22,12 +22,18 @@ The number on the site's front page is hand-updated and the dollar figure is a
 blended estimate. Either wire it to something real or label it more loudly than
 "APPROX." — see [[Roadmap]].
 
-## What happens to the superseded repos?
+## How much of the closed work should be visible?
 
-Three private repos supersede each other on the way to [[Solo Strength Quest]],
-plus `gymapp-v2` and `GymAPP` before them. Archiving them loses the history of
-how the design converged; leaving them makes [[Repos Map]] misleading about how
-much is live.
+Several projects have closed codebases — [[Prompterjack]] most obviously, and
+the earlier attempts that led to [[Solo Strength Quest]]. Right now the site
+names none of them: private repositories are excluded from `data/repos.json`
+outright, and a project with a closed codebase simply says so and links to the
+live product.
+
+That is the right default. The open question is whether the *history* is worth
+telling anyway — the three rewrites behind Solo Strength Quest are a genuinely
+useful story — and how to tell it without turning [[Repos Map]] into an index
+of things nobody can open.
 
 ## Should generated notes be committed at all?
 

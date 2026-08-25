@@ -56,12 +56,7 @@ Rust/Axum API owns all gamification maths server-side — the client never decid
 
 ## Links
 
-[Live](https://chinmaygit8765.github.io/solo-strength-quest-play/) · [Source](https://github.com/ChinmayGit8765/strength-quest) · [Demo](demos/strength-quest.html)
-
-## Related repositories
-
-- [[solo-strength-quest-play]]
-- [[solo_strength-quest]]
+[Source](https://github.com/ChinmayGit8765/strength-quest) · [Demo](demos/strength-quest.html)
 
 ## Related
 

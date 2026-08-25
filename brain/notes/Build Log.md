@@ -17,10 +17,22 @@ and a bundler that turns every `.md` in `brain/` into `data/brain.json` for the
 browser. Added an **Agents** tab to the site as the front door. See
 [[Brain Pipeline]] and [[Brain Indexer]].
 
-Also: audited the project index against all 35 repositories and found several
-real projects missing from it — [[TODO List]], [[Contact Flow]],
+Also: audited the project index against every repository on the account and
+found several real projects missing from it — [[TODO List]], [[Contact Flow]],
 [[JSON API Simplifier]], [[PDF Compiler]] and the site itself. All now in
 [[Projects Map]].
+
+## 2026-08 — public-only publishing
+
+The first version of the repo sweep wrote every repository on the account into
+`data/repos.json`, private ones included — which published fourteen private
+repo names on a public site, among them the closed source behind
+[[Prompterjack]]. Fixed by making the sweep refuse: private repos are never
+written, generated build output and empty placeholders are excluded by name,
+and anything else needs a project entry or a description. A project with a
+closed codebase now says *private* and links to the live product instead. The
+rule is in `scripts/repos.py` and every withheld repo is logged, counted but
+never named.
 
 ## 2026-08 — the daily machines
 

@@ -23,7 +23,7 @@ is the wiring between projects rather than any one project.
 
 ## The rest
 
-- [[Repos Map]] — all 35 GitHub repositories, including the dead ends.
+- [[Repos Map]] — the public repositories behind the work.
 - [[Timeline]] — what got built when.
 - [[Roadmap]] — the todo list. What is actually next.
 - [[Build Log]] — a running record of what changed and why.
@@ -34,7 +34,7 @@ is the wiring between projects rather than any one project.
 ## The shape of it
 
 Seventeen projects across five categories, ten autonomous agents, five
-scheduled systems, thirty-five repositories. One person. The pattern that
+scheduled systems, sixteen public repositories. One person. The pattern that
 repeats everywhere:
 
 > **Cron job → Python script → committed JSON → static site.**

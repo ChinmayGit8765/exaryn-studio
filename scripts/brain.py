@@ -185,6 +185,8 @@ def project_note(p: dict, repos_by_name: dict, vocab: set[str]) -> tuple[Path, d
         if repo.get("languages"):
             mix = ", ".join(f"{k} {v}%" for k, v in list(repo["languages"].items())[:5])
             out.append(f"| Language mix | {mix} |")
+    elif p.get("source") == "private":
+        out.append("| Repository | closed source — the live product is linked below |")
     elif repo_full:
         out.append(f"| Repository | `{repo_full}` |")
     out.append("")
@@ -287,12 +289,16 @@ def projects_map(projects: list) -> tuple[Path, dict, str]:
 
 
 def repos_map(repos: list, project_by_repo: dict) -> tuple[Path, dict, str]:
-    live = [r for r in repos if not r.get("archived") and not r.get("private")]
-    private = [r for r in repos if r.get("private")]
+    live = [r for r in repos if not r.get("archived")]
     out = [BANNER.format(src="repos.json"), "# Repos Map", "",
-           f"All {len(repos)} repositories on the account — including the ones that went "
-           f"nowhere. {len(live)} public and active, {len(private)} private. "
-           f"The curated subset is {link('Projects Map')}.", ""]
+           f"The {len(repos)} public repositories behind the work. "
+           f"The curated subset — the ones written up as projects — is "
+           f"{link('Projects Map')}.", "",
+           "> [!note] Public only",
+           "> Private repositories are never written to `data/repos.json` and are "
+           "not listed, counted or named anywhere on this site. Some projects here "
+           "have closed codebases; those say so and link to the live product "
+           "instead. The rule lives in `scripts/repos.py`.", ""]
 
     def table(rows):
         lines = ["| Repo | Language | Last push | Size | Project |", "| --- | --- | --- | --- | --- |"]
@@ -302,12 +308,7 @@ def repos_map(repos: list, project_by_repo: dict) -> tuple[Path, dict, str]:
                          f"{day(r.get('pushed_at'))} | {human_size(r.get('size'))} | {proj} |")
         return lines
 
-    out += ["## Public", ""] + table(live) + [""]
-    if private:
-        out += ["## Private", "",
-                "Visible here because the sweep runs authenticated. Mostly superseded "
-                "attempts — see the note on them in " + link("Open Questions") + ".", ""]
-        out += table(private) + [""]
+    out += ["## Active", ""] + table(live) + [""]
     archived = [r for r in repos if r.get("archived")]
     if archived:
         out += ["## Archived", ""] + table(archived) + [""]
@@ -382,8 +383,10 @@ def agent_ledger(projects: list) -> tuple[Path, dict, str]:
         meta, _ = parse_note(path.read_text())
         if meta.get("type") != "agent":
             continue
+        closed = str(meta.get("source", "")) == "private"
         rows.append((int(meta.get("tier", 0)), meta.get("title", path.stem),
-                     meta.get("project", "—"), meta.get("repo", "—")))
+                     meta.get("project", "—"),
+                     "private" if closed else meta.get("repo", "—")))
     rows.sort()
 
     tier_note = {
@@ -402,7 +405,8 @@ def agent_ledger(projects: list) -> tuple[Path, dict, str]:
                 "| Agent | Project | Repository |", "| --- | --- | --- |"]
         for _, title, project, repo in tier_rows:
             proj = link(project) if project != "—" else "—"
-            out.append(f"| {link(title)} | {proj} | `{repo}` |")
+            cell = "*closed source*" if repo == "private" else f"`{repo}`"
+            out.append(f"| {link(title)} | {proj} | {cell} |")
         out.append("")
     out += ["## Related", "", " · ".join([link("Agent Structure"), link("Agent Patterns"),
                                           link("Tool Safety"), link("Home")]), ""]

@@ -58,7 +58,7 @@
         <li><a href="brain.html#/agents/Agent%20Patterns">RECURRING PATTERNS</a></li>
         <li><a href="brain.html#/agents/Tool%20Safety">TOOL SAFETY</a></li>
         <li><a href="brain.html#/maps/Projects%20Map">PROJECTS MAP</a></li>
-        <li><a href="brain.html#/maps/Repos%20Map">ALL 35 REPOS</a></li>
+        <li><a href="brain.html#/maps/Repos%20Map">THE REPOSITORIES</a></li>
         <li><a href="brain.html#/systems/Cron%20Ledger">CRON LEDGER</a></li>
         <li><a href="brain.html#/notes/Roadmap">THE TODO LIST</a></li>
       </ul>
@@ -69,7 +69,7 @@
       <div class="score"><span class="score-num" id="n-projects">—</span><span class="mono">PROJECTS</span></div>
       <div class="score"><span class="score-num" id="n-agents">—</span><span class="mono">AGENTS</span></div>
       <div class="score"><span class="score-num" id="n-systems">—</span><span class="mono">SYSTEMS</span></div>
-      <div class="score"><span class="score-num" id="n-repos">—</span><span class="mono">REPOS</span></div>
+      <div class="score"><span class="score-num" id="n-repos">—</span><span class="mono">PUBLIC REPOS</span></div>
       <div class="score"><span class="score-num" id="n-langs">—</span><span class="mono">LANGUAGES</span></div>
       <div class="score"><span class="score-num" id="n-notes">—</span><span class="mono">BRAIN NOTES</span></div>
     </section>
@@ -149,11 +149,12 @@
     <section class="everything">
       <div class="section-head">
         <h2 class="section-title">Everything <em>built</em></h2>
-        <a class="more-link mono" href="brain.html#/maps/Repos%20Map">ALL 35 REPOS ↗</a>
+        <a class="more-link mono" href="brain.html#/maps/Repos%20Map">ALL <span id="repo-link-count">—</span> REPOS ↗</a>
       </div>
       <p class="page-lede everything-lede">
         Every project in the index, with the repository metadata behind it —
-        swept from the GitHub API, not typed by hand.
+        swept from the GitHub API, not typed by hand. Public repositories only:
+        closed codebases show as <em>private</em> rather than being named.
       </p>
       <div class="table-wrap">
         <table class="built-table" id="built-table">

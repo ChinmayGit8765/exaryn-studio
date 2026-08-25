@@ -30,7 +30,7 @@ Model-in-the-loop. A human sees the output before it counts.
 | Agent | Project | Repository |
 | --- | --- | --- |
 | [[Fleet Supervisor]] | [[Claude Work Manager]] | `ChinmayGit8765/claude-work-manager` |
-| [[Prompterjack Crew Designer]] | [[Prompterjack]] | `ChinmayGit8765/promptifyme` |
+| [[Prompterjack Crew Designer]] | [[Prompterjack]] | *closed source* |
 | [[QuantLens Narrator]] | [[QuantLens]] | `ChinmayGit8765/FinancialServicesDashboard` |
 | [[Worktree MCP Server]] | [[Worktree Optimiser]] | `ChinmayGit8765/worktree-optimiser` |
 | [[smartc Patcher]] | [[smartc]] | `ChinmayGit8765/SmartContract-Creator` |

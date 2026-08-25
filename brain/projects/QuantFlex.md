@@ -61,7 +61,6 @@ Hand-rolled numerics in NumPy — Monte Carlo, finite-difference PDE, and a cust
 ## Related repositories
 
 - [[quantflex-site]]
-- [[thequantflex]]
 
 ## Related
 

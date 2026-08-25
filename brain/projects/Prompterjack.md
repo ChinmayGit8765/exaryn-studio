@@ -5,7 +5,7 @@ tags: [project, agents-tooling]
 status: shipped
 year: 2026
 category: Agents & Tooling
-repo: ChinmayGit8765/promptifyme
+repo: 
 generated: true
 ---
 
@@ -42,13 +42,7 @@ Turborepo monorepo. React SPA on the edge, Hono API on Cloudflare Workers, Neon 
 | Year | 2026 |
 | Dev time | ~6 months |
 | Category | Agents & Tooling |
-| Repository | [ChinmayGit8765/promptifyme](https://github.com/ChinmayGit8765/promptifyme) |
-| Primary language | JavaScript |
-| Size | 7.7 MB |
-| Licence | none declared |
-| Created | 2026-02-04 |
-| Last push | 2026-08-24 |
-| Visibility | private |
+| Repository | closed source — the live product is linked below |
 
 ## Stack
 

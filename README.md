@@ -172,13 +172,31 @@ A feed that dies just logs a warning — it never breaks the build.
 
 ## The repo sweep
 
-`scripts/repos.py` pulls every repository on the account into
-`data/repos.json` — language breakdown, topics, licence, sizes, timestamps and
-a README blurb. It runs unauthenticated against the public search API, so it
-works out of the box in CI. To include **private** repositories, add a personal
-access token with `repo` scope as a repository secret and pass it as `GH_PAT`
-in the workflow. Repos already recorded as private are kept across a run that
-cannot see them, so a sweep without a PAT never deletes them.
+`scripts/repos.py` pulls repository metadata into `data/repos.json` — language
+breakdown, topics, licence, sizes, timestamps and a README blurb. It runs
+unauthenticated against the public search API, so it works out of the box in
+CI. `GITHUB_TOKEN` only raises the rate limit.
+
+### Publishing policy
+
+`data/repos.json` is served to the public internet, so the sweep is deliberately
+narrow about what it writes:
+
+- **Private repositories are never written.** Not named, not counted, not
+  linked — anywhere. There is no flag to turn this off, and the script asserts
+  it before writing.
+- **Excluded by name** (`EXCLUDE` in the script): generated build output whose
+  source is private, empty placeholders, throwaway tests.
+- **Everything else** needs either an entry in `data/projects.json` or a
+  description plus some actual content.
+
+Every withheld repo is logged with its reason on each run; private ones are
+counted, never named, because that log ends up in CI output.
+
+A project whose codebase is closed sets `"source": "private"` in
+`data/projects.json` instead of a `repo`. It then shows as *private* on the
+Agents page and says "closed source" in its brain note, and links to the live
+product rather than to a repository nobody can open.
 
 ## Ship it
 

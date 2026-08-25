@@ -2180,3 +2180,5 @@ em {
 }
 
 .toc-brain { white-space: nowrap; }
+
+.built-private { color: var(--muted); font-style: italic; }

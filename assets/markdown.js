@@ -56,7 +56,6 @@ function inline(src, opts) {
     .replace(/(^|[\s(])\*([^*\n]+)\*/g, "$1<em>$2</em>")
     .replace(/(^|\s)_([^_\n]+)_(?=\s|$|[.,;:!?])/g, "$1<em>$2</em>");
   return out.replace(/\uE000(\d+)\uE000/g, (_, i) => `<code>${esc(code[+i])}</code>`);
-  return out.replace(/(\d+)/g, (_, i) => `<code>${esc(code[+i])}</code>`);
 }
 
 function renderTable(rows, opts) {
