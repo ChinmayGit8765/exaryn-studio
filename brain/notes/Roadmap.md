@@ -38,7 +38,13 @@ render as checked in the browser.
 - [x] Publish the vault in the browser with backlinks, tags, search and a graph
 - [x] Add an **Agents** tab to the site linking into the brain
 - [x] Put every project in the index, including the ones that were missing
-- [ ] Wire the token meter to something measured rather than hand-updated
+- [x] Demote the token figure — the front page now leads with counted numbers
+- [ ] **Wire the token figure to something measured, or drop it.** Still the only
+      hand-updated number on the site. Nothing reports Claude usage back, so the
+      options are: log it per session from the CLI into `data/stats.json`, replace
+      it with a genuinely measured proxy (commits, or lines changed across the
+      public repos), or cut it. Until then it carries an `EST.` flag and the date
+      it was last touched — see [[Open Questions]].
 - [ ] Per-note "last touched" dates from git history rather than frontmatter
 
 ## Someday / maybe

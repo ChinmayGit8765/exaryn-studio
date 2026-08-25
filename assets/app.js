@@ -289,76 +289,65 @@ $("#feed-filters")?.addEventListener("click", (e) => {
   $(".feed-pane")?.scrollTo({ top: 0 });
 });
 
-/* ================= TOKEN METER ================= */
+/* ================= STUDIO LEDGER ================= */
+
+/* Everything here except the token figure is counted from the data files at
+   load time, so it cannot drift. The token figure is a hand-updated estimate —
+   it is rendered last, smaller, flagged, and dated, so a stale number looks
+   stale instead of authoritative. */
 
 const compact = (n) =>
   new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(n);
 
-async function loadTokenMeter() {
-  const section = $("#token-meter");
-  const cellsEl = $("#meter-cells");
-  if (!section || !cellsEl) return;
+const asOf = (iso) =>
+  new Date(iso + "T00:00:00Z")
+    .toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })
+    .toUpperCase();
+
+async function loadLedger() {
+  const list = $("#ledger-stats");
+  if (!list) return;
+
+  const grab = async (path) => {
+    const res = await fetch(path);
+    if (!res.ok) throw new Error(`${path}: ${res.status}`);
+    return res.json();
+  };
+
+  let counted = [];
   try {
-    const res = await fetch("data/stats.json");
-    if (!res.ok) throw new Error(res.status);
-    const {
-      claudeTokens = 0,
-      tokenBudget = 0,
-      goalNote = "",
-      blendedRatePerMTok = 0,
-    } = await res.json();
-    const dollars = (claudeTokens / 1e6) * blendedRatePerMTok;
-
-    const CELLS = 30;
-    const pct = tokenBudget ? Math.min(1, claudeTokens / tokenBudget) : 0;
-    const lit = Math.max(1, Math.round(pct * CELLS));
-    cellsEl.innerHTML = "<i></i>".repeat(CELLS);
-    $("#token-sub").textContent = tokenBudget
-      ? `/ ${compact(tokenBudget)} ${goalNote} · APPROX.`.replace("  ", " ")
-      : "· APPROX.";
-
-    const animate = () => {
-      // cells light up left to right
-      $$("i", cellsEl).forEach((cell, idx) => {
-        if (idx < lit) setTimeout(() => cell.classList.add("on"), 40 * idx);
-      });
-      // numbers count up alongside
-      const valueEl = $("#token-value");
-      const dollarsEl = $("#token-dollars");
-      const dur = 40 * lit + 300;
-      const t0 = performance.now();
-      const tick = (t) => {
-        const p = Math.min(1, (t - t0) / dur);
-        const eased = 1 - Math.pow(1 - p, 3);
-        valueEl.textContent = `≈ ${compact(claudeTokens * eased)}`;
-        if (dollars && dollarsEl) {
-          dollarsEl.textContent = `≈ $${compact(dollars * eased)} API-EQUIV THIS YEAR`;
-        }
-        if (p < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-    };
-
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      $$("i", cellsEl).forEach((cell, idx) => idx < lit && cell.classList.add("on"));
-      $("#token-value").textContent = `≈ ${compact(claudeTokens)}`;
-      if (dollars) {
-        $("#token-dollars").textContent = `≈ $${compact(dollars)} API-EQUIV THIS YEAR`;
-      }
-      return;
-    }
-    const io = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          animate();
-          io.disconnect();
-        }
-      },
-      { threshold: 0.4 }
-    );
-    io.observe(section);
+    const [projects, repos, vault] = await Promise.all([
+      grab("data/projects.json"),
+      grab("data/repos.json"),
+      grab("data/brain.json"),
+    ]);
+    const of = (type) => vault.notes.filter((n) => n.type === type).length;
+    counted = [
+      [projects.length, "PROJECTS"],
+      [repos.count ?? (repos.repos || []).length, "PUBLIC REPOS"],
+      [of("agent"), "AGENTS"],
+      [of("guide"), "GUIDES"],
+      [vault.count, "BRAIN NOTES"],
+    ];
   } catch {
-    section.hidden = true;
+    $("#ledger").hidden = true;
+    return;
+  }
+
+  list.innerHTML = counted
+    .map(([n, label]) => `<li><b>${n}</b> ${label}</li>`)
+    .join("");
+
+  // The estimate is optional: if stats.json is missing or malformed the
+  // counted ledger still stands on its own.
+  try {
+    const { claudeTokens, updatedAt, measured } = await grab("data/stats.json");
+    if (!claudeTokens) return;
+    $("#ledger-est").innerHTML =
+      `≈ <b>${compact(claudeTokens)}</b> CLAUDE TOKENS THIS YEAR` +
+      (measured ? "" : `<span class="est-flag">EST. ${updatedAt ? asOf(updatedAt) : "UNDATED"}</span>`);
+  } catch {
+    /* no estimate today; the counted figures are the point anyway */
   }
 }
 
@@ -383,7 +372,7 @@ function setupReveals() {
 
 loadProjects();
 loadFeed();
-loadTokenMeter();
+loadLedger();
 setupReveals();
 
 /* ---------- brain teaser (landing page) ---------- */

@@ -58,14 +58,13 @@
       </div>
     </div>
 
-    <!-- ============ TOKEN METER ============ -->
-    <section class="token-meter" id="token-meter" aria-label="Approximate Claude tokens used by the studio">
-      <span class="mono meter-label">CLAUDE TOKENS BURNED</span>
-      <div class="meter" id="meter-cells" aria-hidden="true"></div>
-      <div class="meter-figures mono">
-        <span class="meter-value"><span id="token-value">—</span> <span class="meter-sub" id="token-sub"></span></span>
-        <span class="meter-dollars" id="token-dollars"></span>
-      </div>
+    <!-- ============ STUDIO LEDGER ============ -->
+    <section class="ledger" id="ledger" aria-label="What the studio has shipped">
+      <p class="ledger-label mono">STUDIO LEDGER</p>
+      <ul class="ledger-stats mono" id="ledger-stats">
+        <li class="ledger-loading">COUNTING…</li>
+      </ul>
+      <p class="ledger-est mono" id="ledger-est"></p>
     </section>
 
     <!-- ============ WORK SNIPPET ============ -->

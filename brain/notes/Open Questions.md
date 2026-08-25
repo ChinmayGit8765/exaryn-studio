@@ -16,11 +16,28 @@ on its own schedule. The [[Tool Safety]] envelope makes that survivable, but the
 honest answer to *how much should it decide alone* is still unknown. Every
 increase in autonomy has so far been paid for with an increase in audit surface.
 
-## Is the token meter measuring anything?
+## Is the token figure measuring anything?
 
-The number on the site's front page is hand-updated and the dollar figure is a
-blended estimate. Either wire it to something real or label it more loudly than
-"APPROX." — see [[Roadmap]].
+No, and it is now the only number on the site that isn't.
+
+It used to be the boldest thing on the front page: a full-width meter, a
+progress bar against an invented end-of-year goal, and an "API-equivalent"
+dollar figure that multiplied one estimate by another and read as a
+measurement. That has been cut back. The front page now leads with figures
+counted from `data/` at load time — projects, public repos, agents, guides,
+brain notes — and the token estimate sits after them, smaller, flagged `EST.`
+and stamped with the date it was last touched, so a stale number looks stale.
+
+The question that remains is whether to keep it at all. Three honest options:
+
+1. **Measure it.** Log usage per session from the CLI into `data/stats.json`.
+   Real, but it is a build step and a habit, and habits lapse.
+2. **Replace it** with a measured proxy — commits, or lines changed across the
+   public repos. Weaker as a claim, but true without anyone remembering to
+   update it.
+3. **Cut it.** "AI-native studio" is already evidenced by the work itself.
+
+Currently: option zero, honestly labelled. See [[Roadmap]].
 
 ## How much of the closed work should be visible?
 

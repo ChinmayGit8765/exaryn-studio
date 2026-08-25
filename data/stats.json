@@ -1,7 +1,6 @@
 {
   "claudeTokens": 1400000000,
-  "tokenBudget": 10000000000,
-  "goalNote": "GOAL BY EOY",
-  "blendedRatePerMTok": 2.0,
-  "_note": "claudeTokens: approximate Claude tokens burned this year, vs the EOY goal that sets the bar fill. blendedRatePerMTok: USD per million tokens used to compute the API-equivalent dollar stat (~$2/MTok reflects a Claude Code mix of ~85% cache reads at 0.1x input price, mostly Opus-tier $5/$25 with some Fable $10/$50). All hand-updated."
+  "measured": false,
+  "updatedAt": "2026-08-25",
+  "_note": "claudeTokens is a HAND-UPDATED ESTIMATE of Claude tokens used this year. Nothing reports it back, so the site labels it as an estimate and prints the date it was last touched rather than presenting it as a measurement \u2014 a stale figure should look stale. Update the number and updatedAt together. Every other figure in the ledger is counted from data/ at page load. The old API-equivalent dollar figure was removed: it multiplied one estimate by another and read as a measurement."
 }
