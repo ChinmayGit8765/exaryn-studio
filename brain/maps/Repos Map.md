@@ -16,12 +16,12 @@ All 35 repositories on the account — including the ones that went nowhere. 21 
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[collingwood-fan-suite]] | CSS | 2026-08-25 | 17 KB | [[Side by Side]] |
+| [[collingwood-fan-suite]] | CSS | 2026-08-26 | 24 KB | [[Side by Side]] |
+| [[quantflex-site]] | JavaScript | 2026-08-26 | 43 KB | [[QuantFlex]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-08-25 | 20 KB | [[One Piece Guess]] |
+| [[exaryn-studio]] | HTML | 2026-08-25 | 750 KB | [[Exaryn Studio]] |
 | [[solo-strength-quest-play]] | JavaScript | 2026-08-25 | 9.5 MB | [[Solo Strength Quest]] |
-| [[exaryn-studio]] | HTML | 2026-08-25 | 677 KB | [[Exaryn Studio]] |
 | [[AlfredOpenSource]] | Python | 2026-08-25 | 846 KB | [[ALFRED]] |
-| [[quantflex-site]] | JavaScript | 2026-08-25 | 38 KB | [[QuantFlex]] |
-| [[one-piece-guess-game]] | JavaScript | 2026-08-24 | 19 KB | [[One Piece Guess]] |
 | [[strength-quest]] | — | 2026-08-24 | 156 KB | [[Solo Strength Quest]] |
 | [[quantflex]] | — | 2026-08-24 | 2 KB | [[QuantFlex]] |
 | [[TODO-list]] | C# | 2026-08-24 | 105 KB | [[TODO List]] |

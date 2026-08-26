@@ -44,10 +44,10 @@ Entirely static. A GitHub Actions cron runs a Python picker each morning, commit
 | Category | Games & Play |
 | Repository | [ChinmayGit8765/one-piece-guess-game](https://github.com/ChinmayGit8765/one-piece-guess-game) |
 | Primary language | JavaScript |
-| Size | 19 KB |
+| Size | 20 KB |
 | Licence | none declared |
 | Created | 2026-08-24 |
-| Last push | 2026-08-24 |
+| Last push | 2026-08-25 |
 | Visibility | public |
 | Language mix | JavaScript 46.6%, CSS 31.1%, HTML 13.5%, Python 8.8% |
 
