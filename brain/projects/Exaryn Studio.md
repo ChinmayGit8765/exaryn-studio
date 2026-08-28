@@ -44,10 +44,10 @@ No framework, no build step. HTML pages fetch JSON out of `/data`; Python script
 | Category | Infrastructure |
 | Repository | [ChinmayGit8765/exaryn-studio](https://github.com/ChinmayGit8765/exaryn-studio) |
 | Primary language | HTML |
-| Size | 769 KB |
+| Size | 790 KB |
 | Licence | none declared |
 | Created | 2026-08-17 |
-| Last push | 2026-08-26 |
+| Last push | 2026-08-28 |
 | Visibility | public |
 | Language mix | HTML 41.3%, CSS 22.2%, JavaScript 19.0%, Python 17.4% |
 
