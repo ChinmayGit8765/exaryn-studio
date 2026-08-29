@@ -3,7 +3,7 @@ title: collingwood-fan-suite
 type: repo
 tags: [repo, public]
 language: CSS
-pushed: 2026-08-28
+pushed: 2026-08-29
 generated: true
 ---
 
@@ -25,11 +25,11 @@ Project note: [[Side by Side]]
 | Full name | [ChinmayGit8765/collingwood-fan-suite](https://github.com/ChinmayGit8765/collingwood-fan-suite) |
 | Visibility | public |
 | Primary language | CSS |
-| Size | 30 KB |
+| Size | 36 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-08-28 |
+| Last push | 2026-08-29 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |
