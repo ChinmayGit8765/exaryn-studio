@@ -3,7 +3,7 @@ title: one-piece-guess-game
 type: repo
 tags: [repo, public]
 language: JavaScript
-pushed: 2026-08-28
+pushed: 2026-08-29
 generated: true
 ---
 
@@ -25,11 +25,11 @@ Project note: [[One Piece Guess]]
 | Full name | [ChinmayGit8765/one-piece-guess-game](https://github.com/ChinmayGit8765/one-piece-guess-game) |
 | Visibility | public |
 | Primary language | JavaScript |
-| Size | 22 KB |
+| Size | 23 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-08-28 |
+| Last push | 2026-08-29 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |

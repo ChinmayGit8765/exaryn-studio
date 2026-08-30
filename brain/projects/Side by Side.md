@@ -43,10 +43,10 @@ Same shape as One Piece Guess: cron job, Python fetcher, committed JSON, static 
 | Category | Games & Play |
 | Repository | [ChinmayGit8765/collingwood-fan-suite](https://github.com/ChinmayGit8765/collingwood-fan-suite) |
 | Primary language | CSS |
-| Size | 36 KB |
+| Size | 41 KB |
 | Licence | none declared |
 | Created | 2026-08-24 |
-| Last push | 2026-08-29 |
+| Last push | 2026-08-30 |
 | Visibility | public |
 | Language mix | CSS 32.4%, JavaScript 24.7%, Python 22.1%, HTML 20.8% |
 
