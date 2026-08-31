@@ -1,5 +1,13 @@
 [
   {
+    "slug": "attribution-leak",
+    "title": "The graph was never counting the work",
+    "dek": "Six of 156 commits in a month reached my contribution graph. The other 150 were signed with an email GitHub reads as somebody else — and every ephemeral environment has the same failure mode.",
+    "tag": "TOOLING",
+    "date": "2026-08-31",
+    "minutes": 6
+  },
+  {
     "slug": "cron-games",
     "title": "The cron job is the game engine",
     "dek": "A guide to building daily games and self-updating sites with nothing but GitHub Actions, a JSON file, and an idempotent script. The whole genre is three moving parts.",

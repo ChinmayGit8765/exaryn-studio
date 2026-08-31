@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The graph was never counting the work — Field Notes · Exaryn</title>
+  <meta name="description" content="Six of 156 commits in a month reached my contribution graph. The other 150 were signed with an email GitHub reads as somebody else — and every automation pipeline has the same failure mode." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="site-nav mono">
+      <a href="../projects.html">Work</a>
+      <a href="../agents.html">Agents</a>
+      <a href="../notes.html" class="current">Notes</a>
+      <a href="../feed.html">Feed</a>
+      <a href="../play.html">Play</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <div class="clock mono" id="clock" aria-hidden="true">MEL --:--:--</div>
+  </header>
+
+  <main>
+    <article class="article">
+      <p class="kicker mono">FIELD NOTES · TOOLING · 31 AUG 2026 · 6 MIN READ</p>
+      <h1 class="article-title">The graph was never counting the work</h1>
+      <p class="article-dek">
+        In August this studio pushed 156 commits. GitHub credited six of them to
+        me. Nothing was broken, nothing failed, no error was raised — the other
+        150 commits were simply signed with an email address GitHub reads as
+        somebody else. The interesting part isn't the vanity metric. It's that
+        an identity mismatch is the quietest failure mode in any pipeline that
+        attributes work.
+      </p>
+
+      <div class="article-body">
+        <p>
+          A contribution graph is not a record of work. It is an index keyed on
+          an email address, and I had been handing it the wrong key for a year.
+          The reason it took a year to notice is that there is no failure state:
+          the commit is written, the push succeeds, the diff lands, CI goes
+          green. The commit is real and the work is real. It is just filed under
+          a name that isn't yours, and nothing anywhere says so.
+        </p>
+
+        <h2>The rule, in full</h2>
+        <p>
+          GitHub counts a commit toward a profile only when all three of these
+          hold:
+        </p>
+        <ol>
+          <li>
+            the commit's <strong>author email is a verified email on that
+            account</strong> — not the pusher, not the repo owner, the author
+            email baked into the commit object;
+          </li>
+          <li>
+            the commit sits on the repository's <strong>default branch</strong>
+            (or <code>gh-pages</code>);
+          </li>
+          <li>
+            the repository is <strong>not a fork</strong>, and is yours or one
+            you collaborate on.
+          </li>
+        </ol>
+        <p>
+          Miss any of them and the commit is worth zero, silently. That third
+          gate is the one everyone knows. The first is the one that quietly ate
+          a year.
+        </p>
+
+        <h2>Where the month actually went</h2>
+        <p>
+          I wrote a script to tally every commit on the account for August by
+          author email, and by the account GitHub actually credited. Six
+          identities, one month:
+        </p>
+        <div style="overflow-x:auto">
+          <table>
+          <thead>
+            <tr><th>Authored as</th><th>Credited to</th><th>Commits</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>a university address</td><td>a second account I opened years ago</td><td>88</td></tr>
+            <tr><td>the cron bots' identity</td><td>nobody</td><td>30</td></tr>
+            <tr><td>an old personal address</td><td>nobody — verified on no account</td><td>15</td></tr>
+            <tr><td>an agent container's default</td><td>the vendor's own account</td><td>8</td></tr>
+            <tr><td>the Actions bot</td><td>the Actions app</td><td>7</td></tr>
+            <tr><td>my verified address</td><td><strong>me</strong></td><td><strong>6</strong></td></tr>
+          </tbody>
+          </table>
+        </div>
+        <p>
+          Three point eight percent. Every row is a different mechanism, and
+          each one arrived from a different direction: a laptop configured
+          during a degree, a cron job I wrote to be a good citizen and label its
+          commits as a bot, a machine I set up in a hurry, a container I never
+          configured because I never touched its shell.
+        </p>
+
+        <h2>The one that should worry you</h2>
+        <p>
+          The eight commits credited to the vendor are the ones worth staring
+          at. Those came from cloud agent sessions — a container that ships with
+          a git identity already set, because it has to have one. It is a
+          sensible default and it is not mine, and no amount of configuring
+          <em>my machines</em> reaches inside a container that gets built fresh
+          for every session.
+        </p>
+        <p>
+          That generalises past attribution. A <a href="../agents.html">fleet of
+          agents</a> is a fleet of environments you did not personally set up,
+          each carrying defaults from whoever built the image. Identity is the
+          visible case because a graph renders it. The invisible cases —
+          which credentials, which region, which model, which timezone a
+          scheduled job thinks it's in — are the same class of bug with no
+          picture attached.
+        </p>
+        <blockquote>
+          Anything an agent produces on your behalf inherits an identity from
+          somewhere. If you cannot name where, it isn't yours.
+        </blockquote>
+
+        <h2>The fix is boring, which is the point</h2>
+        <p>
+          Three layers, in increasing order of how much they actually help:
+        </p>
+        <ol>
+          <li>
+            <strong>Set the global identity.</strong> Necessary, insufficient —
+            it covers exactly the machines you remember to touch.
+          </li>
+          <li>
+            <strong>Guard the commit, not the machine.</strong> A
+            <code>pre-commit</code> hook in a global <code>core.hooksPath</code>
+            that refuses any commit whose author email isn't on an allowlist.
+            Now a wrong identity fails loudly at the moment it would have been
+            written, instead of silently a year later.
+          </li>
+          <li>
+            <strong>Pin it inside ephemeral environments.</strong> A session
+            hook, committed to the repo, that sets the identity per checkout
+            when a session starts. This is the only layer that reaches a
+            container built after you stopped paying attention.
+          </li>
+        </ol>
+        <p>
+          And then measure it, because a fix you can't see is a belief. The
+          audit script now runs weekly and fails when under 90% of the week's
+          commits are credited to me — the same shape as every other check in
+          this studio: a cron, a threshold, a build that goes red.
+        </p>
+
+        <h2>What the graph is still not telling you</h2>
+        <p>
+          Fixing attribution recovered the history. It did not turn 156 commits
+          into the number I'd have guessed, and that gap is worth being honest
+          about: 156 commits over 30 days is about five a day landing on default
+          branches. Work on an unmerged branch counts zero until it lands, and a
+          squash merge collapses a forty-commit branch into a single counted
+          commit. Commits in a local worktree count nothing at all until they
+          are pushed.
+        </p>
+        <p>
+          Which is the real lesson, and it cuts against the fix: after all that
+          work to make the graph accurate, the graph still measures how work is
+          <em>filed</em>, not how much was done. Worth getting right, because
+          being credited for your own work is not vanity. Worth not confusing
+          for the work.
+        </p>
+      </div>
+
+      <div class="article-foot mono">
+        <a href="../notes.html">← ALL NOTES</a>
+        <a href="../agents.html">THE AGENT STRUCTURE →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const clockEl = document.getElementById("clock");
+    const tick = () => clockEl.textContent = "MEL " + new Date().toLocaleTimeString("en-AU", { timeZone: "Australia/Melbourne", hour12: false });
+    tick(); setInterval(tick, 1000);
+  </script>
+</body>
+</html>
