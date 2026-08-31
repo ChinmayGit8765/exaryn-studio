@@ -2,8 +2,8 @@
 title: ChinmayGit8765
 type: repo
 tags: [repo, public]
-language: 
-pushed: 2026-08-30
+language: Python
+pushed: 2026-08-31
 generated: true
 ---
 
@@ -22,16 +22,23 @@ generated: true
 | --- | --- |
 | Full name | [ChinmayGit8765/ChinmayGit8765](https://github.com/ChinmayGit8765/ChinmayGit8765) |
 | Visibility | public |
-| Primary language | — |
-| Size | 1 KB |
+| Primary language | Python |
+| Size | 3.7 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-30 |
-| Last push | 2026-08-30 |
+| Last push | 2026-08-31 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
+
+## Language mix
+
+| Language | Share |
+| --- | --- |
+| Python | 55.1% |
+| Shell | 44.9% |
 
 ## Related
 
