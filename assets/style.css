@@ -684,6 +684,7 @@ em {
   display: grid;
   grid-template-columns: minmax(280px, 380px) 1fr;
   border-bottom: 1px solid var(--line);
+  padding-top: 57px; /* clear the fixed header, like .play-main and .brain-main */
 }
 
 .feed-rail {
@@ -1764,20 +1765,93 @@ em {
 /* ---- header at narrow widths: five nav items need the room ---- */
 
 @media (max-width: 620px) {
-  .site-header { gap: 14px; padding: 12px 16px; }
-  .wordmark { font-size: 21px; }
-  .site-nav {
-    gap: 14px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+  /* Two rows: wordmark, then the nav across the full width. It used to be one
+     row with the nav scrolling sideways, which hid About behind the edge — a
+     nav you have to swipe to discover is a nav nobody finds. */
+  .site-header {
+    flex-wrap: wrap;
+    gap: 0;
+    /* the rows carry their own vertical padding, so the bar stays compact */
+    padding: 0 16px;
   }
-  .site-nav::-webkit-scrollbar { display: none; }
-  .site-nav a { white-space: nowrap; }
+  .wordmark { font-size: 21px; }
+
+  .site-nav {
+    width: 100%;
+    margin-left: 0;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  /* 44px of vertical target around 12px of text */
+  .site-nav a { white-space: nowrap; padding: 13px 6px; }
+  .site-nav a::after { left: 6px; right: calc(100% - 6px); bottom: 9px; }
+  .site-nav a:hover::after,
+  .site-nav a.current::after { right: 6px; }
+
+  /* the taller header pushes everything that was clearing the old one */
+  .hero,
+  .page-hero,
+  .article { padding-top: calc(104px + var(--pad)); }
+  .play-main,
+  .brain-main,
+  .feed { padding-top: 104px; }
 
   /* the brain bar can't be sticky under a header this tight */
   .brain-bar { position: static; }
   .brain-rail, .brain-rel { top: 0; }
+}
+
+/* ---- phone: legibility and tap targets ---- */
+
+@media (max-width: 620px) {
+  /* the mono voice of the site sits at 11.5px, which is a label size on a
+     desktop and a squint on a handset */
+  .mono { font-size: 12.5px; }
+  .project-tech,
+  .feed-item .src,
+  .filter-btn,
+  .tag,
+  .tag.mini { font-size: 12px; }
+
+  /* the filters go from a full-width column to a wrapped row here, and
+     space-between collapses once each button shrinks to its content —
+     "ALL59" instead of "ALL  59" */
+  .feed-filters { column-gap: 18px; align-content: flex-start; align-items: flex-start; }
+  .filter-btn { gap: 7px; }
+
+  /* inline anchors that were 14-20px tall get a real box around them */
+  .visit,
+  .door-jumps a,
+  .rule-link,
+  .shape-links a,
+  .footer-base a,
+  .note-foot a,
+  .article-foot a,
+  .play-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  /* things that are already boxes just need height, not a new display mode */
+  .wordmark { padding-block: 11px; }  /* 43px tap target for home */
+
+  .more-link,
+  .tree-item,
+  .filter-btn,
+  .day-btn,
+  .ghost-btn,
+  .tag,
+  .tag.mini {
+    /* .filter-btn does `all: unset`, which drops border-box — without this the
+       padding stacks on top of min-height instead of counting toward it */
+    box-sizing: border-box;
+    min-height: 44px;
+    padding-block: 10px;
+  }
+
+  .built-table td a { display: inline-block; padding-block: 11px; }
 }
 
 /* ============ FIELD NOTES ============ */
