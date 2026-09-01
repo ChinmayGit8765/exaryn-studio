@@ -14,7 +14,7 @@ What got built when, by repository creation date. The narrative version — why 
 
 ## 2026
 
-22 repositories created.
+23 repositories created.
 
 | Created | Repo | Language | Project |
 | --- | --- | --- | --- |
@@ -40,6 +40,7 @@ What got built when, by repository creation date. The narrative version — why 
 | 2026-08-24 | [[quantflex]] | — | [[QuantFlex]] |
 | 2026-08-24 | [[strength-quest]] | — | [[Solo Strength Quest]] |
 | 2026-08-30 | [[ChinmayGit8765]] | Python | — |
+| 2026-09-01 | [[holdem-ml]] | — | [[holdem-ml]] |
 
 ## 2025
 

@@ -3,7 +3,7 @@ title: exaryn-studio
 type: repo
 tags: [repo, public]
 language: HTML
-pushed: 2026-08-31
+pushed: 2026-09-01
 generated: true
 ---
 
@@ -25,11 +25,11 @@ Project note: [[Exaryn Studio]]
 | Full name | [ChinmayGit8765/exaryn-studio](https://github.com/ChinmayGit8765/exaryn-studio) |
 | Visibility | public |
 | Primary language | HTML |
-| Size | 858 KB |
+| Size | 1.0 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-17 |
-| Last push | 2026-08-31 |
+| Last push | 2026-09-01 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |
@@ -39,10 +39,10 @@ Project note: [[Exaryn Studio]]
 
 | Language | Share |
 | --- | --- |
-| HTML | 41.3% |
-| CSS | 22.2% |
-| JavaScript | 19.0% |
-| Python | 17.4% |
+| HTML | 38.9% |
+| CSS | 23.4% |
+| JavaScript | 21.7% |
+| Python | 16.0% |
 
 ## Related
 

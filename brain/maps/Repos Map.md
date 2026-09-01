@@ -10,17 +10,18 @@ generated: true
 
 # Repos Map
 
-All 36 repositories on the account — including the ones that went nowhere. 22 public and active, 14 private. The curated subset is [[Projects Map]].
+All 37 repositories on the account — including the ones that went nowhere. 23 public and active, 14 private. The curated subset is [[Projects Map]].
 
 ## Public
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[collingwood-fan-suite]] | CSS | 2026-08-31 | 44 KB | [[Side by Side]] |
-| [[exaryn-studio]] | HTML | 2026-08-31 | 858 KB | [[Exaryn Studio]] |
-| [[quantflex-site]] | JavaScript | 2026-08-31 | 72 KB | [[QuantFlex]] |
-| [[ChinmayGit8765]] | Python | 2026-08-31 | 3.7 MB | — |
-| [[one-piece-guess-game]] | JavaScript | 2026-08-30 | 24 KB | [[One Piece Guess]] |
+| [[collingwood-fan-suite]] | CSS | 2026-09-01 | 46 KB | [[Side by Side]] |
+| [[exaryn-studio]] | HTML | 2026-09-01 | 1.0 MB | [[Exaryn Studio]] |
+| [[holdem-ml]] | — | 2026-09-01 | 1 KB | [[holdem-ml]] |
+| [[ChinmayGit8765]] | Python | 2026-09-01 | 24 KB | — |
+| [[quantflex-site]] | JavaScript | 2026-09-01 | 78 KB | [[QuantFlex]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-08-31 | 25 KB | [[One Piece Guess]] |
 | [[solo-strength-quest-play]] | JavaScript | 2026-08-25 | 9.5 MB | [[Solo Strength Quest]] |
 | [[AlfredOpenSource]] | Python | 2026-08-25 | 846 KB | [[ALFRED]] |
 | [[strength-quest]] | — | 2026-08-24 | 156 KB | [[Solo Strength Quest]] |
