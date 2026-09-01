@@ -1780,12 +1780,6 @@ em {
   .brain-rail, .brain-rel { top: 0; }
 }
 
-/* ============ VIEW TRANSITIONS ============ */
-
-@view-transition { navigation: auto; }
-
-::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.16s; }
-
 /* ============ THE MACHINES ============ */
 
 .machines {
@@ -1976,6 +1970,10 @@ a.rm-name:hover { color: var(--accent); }
 }
 
 .palette-hint:hover { border-color: var(--accent); color: var(--accent); }
+
+/* the hidden attribute must beat the display:flex below, or the overlay
+   can never actually close */
+#palette-overlay[hidden] { display: none; }
 
 #palette-overlay {
   position: fixed;

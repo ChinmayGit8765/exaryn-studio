@@ -640,10 +640,20 @@ function paletteRender() {
 }
 
 function paletteGo(row) {
-  if (row.dataset.ext) window.open(row.dataset.href, "_blank", "noopener");
-  else location.href = row.dataset.href;
-  paletteClose();
+  paletteClose(); // close BEFORE navigating so no overlay is left in any snapshot
+  if (row.dataset.ext) {
+    window.open(row.dataset.href, "_blank", "noopener");
+  } else {
+    // let the close paint first, then navigate
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      location.href = row.dataset.href;
+    }));
+  }
 }
+
+// a page restored from the back/forward cache must never wake up with the
+// palette still covering it
+window.addEventListener("pageshow", () => paletteClose());
 
 async function paletteOpen() {
   paletteInject();
