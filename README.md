@@ -30,7 +30,11 @@ data/digest.json        generated daily, don't edit by hand
 scripts/digest.py       feed puller (stdlib-only Python)
 scripts/repos.py        GitHub metadata sweep
 scripts/brain.py        vault generator + bundler
+scripts/llms.py         llms.txt + llms-full.txt generator
 .github/workflows/      daily cron + GitHub Pages deploy
+
+llms.txt                generated: the site mapped for LLMs and agents
+llms-full.txt           generated: the same, with everything inlined
 ```
 
 ## Run locally
@@ -50,7 +54,8 @@ Regenerate things:
 npm run digest   # data/digest.json     — the daily signal
 npm run repos    # data/repos.json      — GitHub metadata sweep (needs network)
 npm run brain    # brain/** + data/brain.json — the vault and its bundle
-npm run build    # all three, in order
+npm run llms     # llms.txt + llms-full.txt — the site, mapped for machines
+npm run build    # all four, in order
 ```
 
 ## The Exaryn Brain
@@ -99,6 +104,29 @@ the note appears in the browser view and the graph. `type` decides its colour;
 
 An `agents/` note with `type: agent` and a `tier:` of 1, 2 or 3 also shows up
 automatically on `agents.html` and in the Agent Ledger.
+
+## llms.txt
+
+`llms.txt` and `llms-full.txt` are the site described for LLMs and agents, in the
+[llmstxt.org](https://llmstxt.org) shape. The pages here are static HTML and
+perfectly readable, so these files are a map rather than a substitute: every
+page, all 17 projects with status and stack, the essays, the shape of the vault,
+and — the part that is genuinely hard to discover by crawling — the fact that
+all of it is available as plain JSON under `data/`.
+
+`llms-full.txt` expands that with each project's full description, architecture
+and lessons, plus every hand-written note in the brain. Generated notes are left
+out; they are derived from `data/projects.json` and `data/repos.json`, which the
+file already covers.
+
+Both are built by `scripts/llms.py` from the same data the site reads, so they
+cannot drift from it. The workflow regenerates them on **every** event, pushes
+included, so a hand edit to `data/projects.json` can never deploy behind a stale
+map. Neither file carries a timestamp — with a daily cron, a date line would
+churn the history whether or not anything changed.
+
+Run `npm run llms` after editing `data/projects.json` or `data/articles.json` if
+you want to see the result before pushing.
 
 ## Add a project
 

@@ -1,0 +1,1754 @@
+# Exaryn — full site content
+
+> Exaryn is a one-person R&D studio run by Chinmay Purohit from Melbourne, Australia — AI agents, quant engines, daily games and developer tooling, built and written up in public. This site is the portfolio, a daily digest of AI news that rebuilds itself every morning on a cron, and the Exaryn Brain: an Obsidian vault documenting every project, agent and system, readable in the browser.
+
+The index version of this file, with links only, is at https://chinmaygit8765.github.io/exaryn-studio/llms.txt.
+
+Contents: every project in full, the essays, and every hand-written note from
+the Exaryn Brain. Generated notes (one per project and per repo, plus the map
+tables) are omitted here — they are derived from the project data already
+above, and reproducing them would only pad the file.
+
+---
+
+# Projects
+
+## Claude Work Manager
+
+Status: shipped · Year: 2026 · Category: Agents & Tooling · Build time: days, ongoing · Repo: https://github.com/ChinmayGit8765/claude-work-manager
+
+Built with: Node.js, Claude Code CLI, Git worktrees, Vanilla JS.
+
+**Run a fleet of Claude Code agents across git worktrees — from your phone.**
+
+Self-hosted, mobile-first dashboard for concurrent Claude Code sessions: spawn an isolated git worktree per agent, chat with each one, watch localhost previews of their dev servers, and commit/push from the couch. Rides the claude CLI you're already logged into — no API keys stored anywhere.
+
+Architecture — A Node server wraps the local `claude` CLI. One git worktree per agent means agents never fight over the working tree. The browser talks to the server; the server talks to the CLI you already authenticated.
+
+What is in it:
+
+- One isolated git worktree per agent — parallel work with no merge chaos
+- Mobile-first: review, steer, and push from a phone
+- Live localhost previews of each agent's dev server
+- No API keys stored: it borrows the CLI session you already have
+- Commit and push per worktree without leaving the dashboard
+
+Lesson — Isolation is the whole trick. Once each agent owns a worktree, running five at once stops being scary.
+
+Agents involved: Fleet Supervisor.
+
+## Contact Flow
+
+Status: shipped · Year: 2026 · Category: Web & Product · Build time: ~2 weeks · Repo: https://github.com/ChinmayGit8765/ContactUsPage
+
+Built with: TypeScript, NestJS, TypeORM, PostgreSQL, Next.js, Tailwind, Docker.
+
+**A production-shaped contact and lead-capture stack, one docker compose up.**
+
+Contact/lead-capture done the way a real product would do it: NestJS + TypeORM + PostgreSQL API, Next.js 14 + Tailwind frontend, validation implemented properly on both sides rather than trusted from the client. Whole stack comes up with one docker compose command.
+
+Architecture — NestJS + TypeORM over Postgres on the API side, Next.js 14 App Router with Tailwind on the front. Validation schemas run in both places; the server never trusts the client's word for it.
+
+What is in it:
+
+- Validation done properly on both sides — the server re-checks everything
+- NestJS + TypeORM + PostgreSQL API with real layering
+- Next.js 14 + Tailwind frontend
+- One `docker compose up` brings the whole stack
+
+Lesson — 'Simple CRUD form' is the best place to practise the boring parts — layering, validation, migrations — where nothing exotic hides the mistakes.
+
+## Exaryn Studio
+
+Status: shipped · Year: 2026 · Category: Infrastructure · Build time: ongoing · Repo: https://github.com/ChinmayGit8765/exaryn-studio · Live: https://chinmaygit8765.github.io/exaryn-studio/
+
+Built with: Vanilla JS, CSS, Python, GitHub Actions, GitHub Pages, Obsidian.
+
+**This site — portfolio, daily AI signal digest, and the Obsidian brain.**
+
+The studio's own site: a pure static portfolio with no framework and no build step, a self-updating daily AI digest rebuilt every morning by a GitHub Actions cron, and the Exaryn Brain — an Obsidian vault of markdown notes about everything built here, browsable in-page with backlinks and a graph view.
+
+Architecture — No framework, no build step. HTML pages fetch JSON out of `/data`; Python scripts in `/scripts` regenerate that JSON on a cron; GitHub Actions commits the result and redeploys Pages.
+
+What is in it:
+
+- Zero dependencies — the whole site is HTML, CSS and one JS file per surface
+- Daily AI digest with a browsable day-by-day archive
+- Repo metadata swept from the GitHub API into `data/repos.json`
+- The Exaryn Brain: a real Obsidian vault, readable in the browser
+- Everything regenerates on one morning cron
+
+Lesson — A static site that regenerates itself is the cheapest infrastructure there is. The cron job is the whole backend.
+
+Agents involved: Digest Bot, Brain Indexer.
+
+## One Piece Guess
+
+Status: shipped · Year: 2026 · Category: Games & Play · Build time: a weekend · Repo: https://github.com/ChinmayGit8765/one-piece-guess-game · Live: https://chinmaygit8765.github.io/one-piece-guess-game/
+
+Built with: Vanilla JS, Python, GitHub Actions, GitHub Pages.
+
+**Wordle, but for One Piece — a daily character riddle picked by a cron job.**
+
+Guess the daily character: eight attribute clues per guess (crew, bounty, haki, fruit, debut saga…), hints that unlock as you struggle, a shareable emoji grid. A GitHub Actions cron picks a new pirate every morning; the README doubles as a guide to building your own daily-anything game.
+
+Architecture — Entirely static. A GitHub Actions cron runs a Python picker each morning, commits the day's character, and Pages redeploys. No backend to keep alive.
+
+What is in it:
+
+- Eight attribute clues per guess: crew, bounty, haki, devil fruit, debut saga and more
+- Hints unlock as you struggle; shareable emoji grid at the end
+- New pirate every morning, chosen by a cron job
+- README doubles as a how-to for building your own daily-anything game
+- Embedded and playable on this site's Play tab
+
+Lesson — The whole 'daily game' genre is one cron job and a committed JSON file. Everything else is decoration.
+
+Agents involved: Pirate Picker.
+
+## Prompterjack
+
+Status: shipped · Year: 2026 · Category: Agents & Tooling · Build time: ~6 months · Repo: https://github.com/ChinmayGit8765/promptifyme · Live: https://prompterjack.com
+
+Built with: React, TypeScript, Cloudflare Workers, Hono, Neon Postgres, Stripe, Turborepo.
+
+**Design multi-agent AI systems visually, export runnable code for five frameworks.**
+
+Full-stack prompt-engineering and agent-design platform: pick an architecture style, design multi-agent systems visually, export production-ready code for Strands, OpenAI Agents, LangChain/LangGraph and LlamaIndex. Codebase-aware prompt generation, maintainability scoring, marketplace, real-time co-editing.
+
+Architecture — Turborepo monorepo. React SPA on the edge, Hono API on Cloudflare Workers, Neon Postgres for state, Stripe for billing. The canvas is the source of truth: a crew graph compiles down to whichever framework you export to.
+
+What is in it:
+
+- Visual canvas for supervisor/worker, router, and pipeline crew shapes
+- One graph exports to five agent frameworks — Strands, OpenAI Agents, LangChain, LangGraph, LlamaIndex
+- Prompt linter scores maintainability and flags ambiguity before you ship
+- Codebase-aware generation: point it at a repo, get prompts that know your types
+- Real-time co-editing and a marketplace for published crews
+
+Lesson — Agent frameworks disagree about everything except the shape of the graph. Model the graph, generate the framework.
+
+Agents involved: Prompterjack Crew Designer.
+
+## QuantLens
+
+Status: shipped · Year: 2026 · Category: Quant & Finance · Build time: ~3 weeks · Repo: https://github.com/ChinmayGit8765/FinancialServicesDashboard
+
+Built with: Java, Spring Boot, Spring AI, pgvector, Vue 3, Docker.
+
+**AI-narrated portfolio dashboard — Sharpe, VaR, Monte Carlo, factors, RAG Q&A.**
+
+Quant-finance Spring Boot backend plus Vue 3 SPA: P&L, risk metrics, Fama-French factors and cointegration pairs, narrated by Spring AI with RAG over pgvector. One docker compose up, no API keys, three seeded demo personas.
+
+Architecture — Spring Boot 3.5 runs the quant engine; Spring AI runs tool-calling and RAG over pgvector, with an embedded MCP server. Vue 3 on the front. `docker compose up` brings the whole thing, seed data included.
+
+What is in it:
+
+- P&L, Sharpe, VaR, Monte Carlo, Fama-French factors, cointegration pairs
+- The AI narrates real engine output — it calls tools, it does not hallucinate numbers
+- RAG over pgvector for portfolio Q&A
+- Embedded MCP server so external agents can query the same engine
+- One `docker compose up`, no API keys, three seeded demo personas
+
+Lesson — Let the model narrate, never calculate. Every number in the prose comes from a tool call you can point at.
+
+Agents involved: QuantLens Narrator.
+
+## Side by Side
+
+Status: shipped · Year: 2026 · Category: Games & Play · Build time: a weekend · Repo: https://github.com/ChinmayGit8765/collingwood-fan-suite · Live: https://chinmaygit8765.github.io/collingwood-fan-suite/
+
+Built with: Vanilla JS, Python, Squiggle API, GitHub Actions.
+
+**A self-updating Collingwood super-fan suite — reskinnable for any AFL club.**
+
+Next-game countdown, form guide, live ladder and a daily news sweep, rebuilt every morning by a cron job from the free Squiggle API and Google News. Everything club-specific lives in one config file — fork it, edit club.json, and it's your club's suite.
+
+Architecture — Same shape as One Piece Guess: cron job, Python fetcher, committed JSON, static Pages. Everything club-specific is isolated in `club.json` so the suite reskins by config, not by fork-and-edit.
+
+What is in it:
+
+- Next-game countdown, form guide and live ladder from the free Squiggle API
+- Daily news sweep via Google News
+- Reskins to any AFL club by editing one config file
+- Rebuilt every morning by a cron job — nothing to host
+
+Lesson — Config file over fork. Making the club swappable took an hour and turned a personal page into something anyone can use.
+
+Agents involved: Fan Suite Bot.
+
+## TODO List
+
+Status: shipped · Year: 2026 · Category: Web & Product · Build time: ~2 weeks · Repo: https://github.com/ChinmayGit8765/TODO-list
+
+Built with: C#, .NET, Web API, Angular, TypeScript.
+
+**A deliberately simple todo app built like a real codebase — .NET + Angular.**
+
+A todo app that is deliberately boring on the surface and deliberately rigorous underneath: .NET Web API with proper layering, Angular frontend with presentational components, tests on both sides. Subtasks, inline edit, active/completed tabs. Built as a reference implementation for how a small app should actually be structured.
+
+Architecture — .NET Web API split into real layers — controllers, services, data — rather than one fat controller. Angular front end keeps components presentational and pushes state up. Both halves have tests.
+
+What is in it:
+
+- Subtasks, inline edit, and active/completed tabs
+- Proper layering in the API instead of logic in controllers
+- Presentational Angular components with state kept above them
+- Tests on both the .NET and the Angular side
+
+Lesson — The point was never the todo app. It was having one small codebase where the structure is right, to compare bigger ones against.
+
+## VolForecast
+
+Status: shipped · Year: 2026 · Category: Quant & Finance · Build time: ~1 month · Repo: https://github.com/ChinmayGit8765/VolatilityModel
+
+Built with: Python, LightGBM, MLflow, Prefect, FastAPI, Streamlit.
+
+**MLOps platform forecasting short-horizon volatility, benchmarked honestly vs GARCH.**
+
+Realized-volatility forecasting for crypto and equities wrapped in a full MLOps lifecycle: leak-free walk-forward evaluation against GARCH/EWMA/HAR baselines, champion/challenger registry in MLflow, QLIKE-gated promotion, drift detection and automated retraining.
+
+Architecture — Prefect orchestrates the lifecycle; MLflow holds the champion/challenger registry; LightGBM does the forecasting; FastAPI serves and Streamlit inspects. Promotion is gated on QLIKE against the baselines.
+
+What is in it:
+
+- Leak-free walk-forward evaluation — no peeking, ever
+- Benchmarked against GARCH, EWMA and HAR instead of a strawman
+- Champion/challenger registry with QLIKE-gated promotion
+- Drift detection triggers automated retraining
+- Covers both crypto and equities
+
+Lesson — A vol model that can't beat HAR isn't a model, it's a plot. Building the baselines first made the whole project honest.
+
+## smartc
+
+Status: shipped · Year: 2026 · Category: Web & Product · Build time: ~2 weeks · Repo: https://github.com/ChinmayGit8765/SmartContract-Creator · Live: https://www.npmjs.com/package/smartc
+
+Built with: TypeScript, Node.js, Solidity, OpenZeppelin, Anchor, Ollama.
+
+**CLI wizard that writes compile-verified smart contracts plus deploy docs.**
+
+Single-binary Node CLI: short wizard in, one contract file plus a DEPLOY.md with copy-pasteable commands out. ERC-20/721/1155 and Solana SPL templates, every Solidity contract compiled in-process before it touches disk. Optional local-only AI patching via Ollama.
+
+Architecture — One Node binary. Wizard collects intent, templates emit Solidity or Anchor, solc compiles in-process, and only verified output hits disk. Ollama patching is opt-in and local-only.
+
+What is in it:
+
+- ERC-20, ERC-721, ERC-1155 and Solana SPL templates
+- Every Solidity contract compiled in-process before it's written out
+- Emits a DEPLOY.md with copy-pasteable commands, not just a contract
+- Optional AI patching runs locally through Ollama — nothing leaves your machine
+- Published on npm; MIT licensed
+
+Lesson — Refuse to write a file that doesn't compile. It turns a code generator into a tool you can trust half-asleep.
+
+Agents involved: smartc Patcher.
+
+## JSON API Simplifier
+
+Status: shipped · Year: 2025 · Category: Agents & Tooling · Build time: a few evenings · Repo: https://github.com/ChinmayGit8765/json_api_simplifier
+
+Built with: Python.
+
+**Strip a JSON API response down to its shape so you can read the contract.**
+
+A small Python utility: paste in a real API response, get back the same structure with all the values emptied out. Makes it obvious what fields an endpoint actually returns, so you stop misreading a value for a schema when wiring up calls.
+
+Architecture — One script. Walk the parsed JSON, keep keys and container types, drop leaf values.
+
+What is in it:
+
+- Turns a fat API response into a readable shape
+- Removes the risk of mistaking one sample value for the field's type
+- Small enough to paste into anything
+
+Lesson — The smallest tool in the index and one of the most reused. Structure is the thing you need; the sample data is noise.
+
+## ALFRED
+
+Status: in development · Year: 2026 · Category: Agents & Tooling · Build time: ~3 months, ongoing · Repo: https://github.com/ChinmayGit8765/AlfredOpenSource
+
+Built with: Python, Pydantic, Ollama, SQLite, discord.py, MCP.
+
+**Local-first multi-agent life-optimization system. Your hardware, your data, no cloud.**
+
+Decomposes goals into weekly plans a Conductor reconciles against real capacity, delivers over Discord/Telegram, watches what happens, and adapts. Every tool call passes an allowlist, capability tier and audit trail. 529 offline tests in CI.
+
+Architecture — Local models via Ollama, SQLite for state, Pydantic contracts between every agent. A Conductor reconciles specialist plans against real capacity before anything reaches you. Chat surfaces are Discord and Telegram.
+
+What is in it:
+
+- Runs entirely on your hardware — no cloud, no data leaving the house
+- Conductor reconciles specialist plans against actual weekly capacity
+- Every tool call checked against an allowlist and a capability tier, then audited
+- Adapts from what actually happened, not what was planned
+- 529 offline tests in CI — the whole suite runs with no network
+- MIT licensed
+
+Lesson — A planner that ignores capacity is a to-do list generator. The Conductor exists because the first version cheerfully planned 60-hour weeks.
+
+Agents involved: ALFRED Conductor, Tool Safety.
+
+## Gartic Hands
+
+Status: in development · Year: 2026 · Category: Games & Play · Build time: semester project · Repo: https://github.com/Monash-FIT3170/2026W2-GarticHands
+
+Built with: React, TypeScript, MediaPipe, Express, Socket.IO, Docker.
+
+**Multiplayer draw-and-guess where you draw with webcam hand tracking.**
+
+Gartic Phone, except players draw with their hands in front of a webcam via MediaPipe hand tracking. Server-held round state machine drives the full party loop. Built with a Monash FIT3170 team.
+
+Architecture — MediaPipe hand tracking in the browser turns a webcam into a brush. Round state lives on an Express + Socket.IO server so no client can desync the party loop. Dockerised for the team.
+
+What is in it:
+
+- Draw with your hands in front of a webcam — no mouse, no stylus
+- Server-held round state machine drives the full Gartic-style loop
+- Real-time multiplayer over Socket.IO
+- Built with a Monash FIT3170 team — the only group project in the index
+
+Lesson — Hand tracking is the easy half. Keeping eight browsers agreed on whose turn it is was the actual project.
+
+## QuantFlex
+
+Status: in development · Year: 2026 · Category: Quant & Finance · Build time: ~2 months, ongoing · Repo: https://github.com/ChinmayGit8765/quantflex · Live: https://chinmaygit8765.github.io/quantflex-site/
+
+Built with: Python, NumPy, JAX, FastAPI, Vue 3, Cloud Run.
+
+**Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff.**
+
+Prices vanillas, American options, exotics and baskets under GBM, Merton and Heston with hand-rolled solvers and Greeks from a custom autodiff tape. Every price validated against analytic anchors; every Greek triple-verified against JAX.
+
+Architecture — Hand-rolled numerics in NumPy — Monte Carlo, finite-difference PDE, and a custom reverse-mode autodiff tape for Greeks. FastAPI in front, Vue 3 SPA on top, Cloud Run underneath. JAX is used only as an oracle in tests.
+
+What is in it:
+
+- Vanillas, Americans, exotics and baskets under GBM, Merton jump-diffusion and Heston
+- Greeks from a custom autodiff tape, not bumped finite differences
+- Every price anchored to a closed-form or published benchmark
+- Every Greek triple-verified: tape vs bump vs JAX
+- Separate landing site with live engine output and a daily market feed
+
+Lesson — Write the oracle before the solver. The analytic anchors caught more bugs than the unit tests did.
+
+## Solo Strength Quest
+
+Status: in development · Year: 2026 · Category: Games & Play · Build time: ongoing · Repo: https://github.com/ChinmayGit8765/strength-quest · Live: https://chinmaygit8765.github.io/solo-strength-quest-play/
+
+Built with: Rust, Axum, SQLx, Flutter, PostgreSQL, Redis.
+
+**A fitness RPG — every workout is a quest, every PR is a boss kill.**
+
+Gamified training app: workouts become quests, progressive overload becomes XP, and your profile is a character sheet that levels up because you did. Rust/Axum API with server-side gamification math, Flutter app with a custom design system, Postgres + Redis underneath.
+
+Architecture — Rust/Axum API owns all gamification maths server-side — the client never decides what an XP award is. SQLx over Postgres, Redis for hot state, Flutter client with its own design system.
+
+What is in it:
+
+- Workouts become quests; progressive overload becomes XP
+- Personal records land as boss kills and level-ups
+- All gamification maths server-side — clients can't mint XP
+- Flutter client with a hand-built design system
+- Playable web demo published separately
+
+Lesson — Third attempt at this app. The two rewrites before it died of client-side game logic and no schema discipline.
+
+## Worktree Optimiser
+
+Status: in development · Year: 2026 · Category: Agents & Tooling · Build time: ~2 weeks, ongoing · Repo: https://github.com/ChinmayGit8765/worktree-optimiser
+
+Built with: Node.js, Docker, Traefik, MCP, Git worktrees, TypeScript.
+
+**Every branch of a repo as its own containerised dev server, routed by hostname.**
+
+Run all your worktrees at once — main.localhost, fix-login.localhost — each in its own Docker container behind Traefik, managed from one dashboard. Review a PR and your own work side by side in two tabs. Ships an MCP server so coding agents can drive it too.
+
+Architecture — Traefik does hostname routing; every worktree gets a container and a `<branch>.localhost` name. A dashboard drives the lifecycle, and an MCP server exposes the same lifecycle to coding agents as tools.
+
+What is in it:
+
+- `main.localhost`, `fix-login.localhost` — every branch live at once
+- Container per worktree, routed by Traefik, no port juggling
+- Review a PR and your own branch side by side in two tabs
+- MCP server so Claude Code can spin environments up and down itself
+- MIT licensed
+
+Lesson — Anything a human clicks in a dashboard, an agent should be able to call as a tool. Building the MCP layer second was a mistake worth not repeating.
+
+Agents involved: Worktree MCP Server.
+
+## PDF Compiler
+
+Status: archived · Year: 2025 · Category: Web & Product · Build time: a weekend · Repo: https://github.com/ChinmayGit8765/PDFCompiler
+
+Built with: HTML, JavaScript.
+
+**An early browser-side document compiler — the oldest thing still in the index.**
+
+An early experiment in assembling and compiling documents in the browser. Kept in the index as the honest starting point: it predates the studio, has no tests, and is here because the timeline should include the beginning, not just the parts that went well.
+
+Architecture — Browser-side only. No build, no server, no tests.
+
+What is in it:
+
+- The oldest surviving project in the index
+- Kept unchanged as a before-picture
+
+Lesson — Left as-is on purpose. Every index should contain at least one thing you'd write differently now.
+
+---
+
+# Field notes
+
+## The cron job is the game engine
+
+https://chinmaygit8765.github.io/exaryn-studio/notes/cron-games.html · 2026-08-25 · 9 min read
+
+A guide to building daily games and self-updating sites with nothing but GitHub Actions, a JSON file, and an idempotent script. The whole genre is three moving parts.
+
+## Cloudflare vs AWS: the decision matrix
+
+https://chinmaygit8765.github.io/exaryn-studio/notes/cloudflare-vs-aws.html · 2026-08-25 · 10 min read
+
+Why Prompterjack shifted to Workers, where AWS is still the right answer, and the evaluation framework that matters more than either logo.
+
+## Running a fleet of Claude agents without them trampling each other
+
+https://chinmaygit8765.github.io/exaryn-studio/notes/claude-fleet.html · 2026-08-25 · 8 min read
+
+Git worktrees as the isolation primitive, one agent per checkout, containerised previews routed by hostname — the concurrency model behind Claude Work Manager and Worktree Optimiser.
+
+## Every number defends itself
+
+https://chinmaygit8765.github.io/exaryn-studio/notes/triple-verified-greeks.html · 2026-08-25 · 8 min read
+
+Correctness engineering in QuantFlex: anchor tests, triple-verified Greeks, and a static import gate that keeps the 'hand-rolled' claim honest.
+
+## Letting an agent act while you sleep
+
+https://chinmaygit8765.github.io/exaryn-studio/notes/alfred-safety.html · 2026-08-25 · 7 min read
+
+ALFRED runs on my hardware and acts on its own schedule. The tool-safety envelope — allowlists, capability tiers, audit trails — is what makes that survivable.
+
+---
+
+# The Exaryn Brain — hand-written notes
+
+44 of the vault's 101 notes are written by hand; the rest are generated from data/projects.json and data/repos.json. Wikilinks are left as [[Title]] — they resolve against the note titles in this section.
+
+## Exaryn Brain
+
+Path: brain/README.md · Type: meta · Tags: meta, vault
+
+This folder is a real [Obsidian](https://obsidian.md) vault. Every note is a
+plain `.md` file with YAML frontmatter and `[[wikilinks]]` — no plugins
+required, no proprietary format, nothing that stops working if Obsidian does.
+
+#### Two ways to read it
+
+| Where | How |
+| --- | --- |
+| **In Obsidian** | *Open folder as vault* → pick this `brain/` directory. Graph view, backlinks and search all work out of the box. |
+| **In the browser** | [`/brain.html`](../brain.html) on the site — the same notes, with backlinks, tags, search and a graph, rendered from `data/brain.json`. |
+
+#### Layout
+
+```
+brain/
+  Home.md            entry point — start here
+  maps/              maps of content: the hubs everything hangs off
+  agents/            the agent structure — every autonomous thing built here
+  projects/          one note per project        (generated from data/projects.json)
+  repos/             one note per GitHub repo    (generated from data/repos.json)
+  systems/           the pipelines and cron jobs that keep the studio running
+  stack/             one note per technology, backlinked to what uses it
+  notes/             principles, roadmap, build log, glossary, open questions
+```
+
+#### Generated vs hand-written
+
+Notes under `projects/` and `repos/`, plus a few maps, carry
+`generated: true` in their frontmatter and a banner at the top. **Do not edit
+those by hand** — they are rebuilt from `data/projects.json` and
+`data/repos.json` by `scripts/brain.py`, and your edits will be overwritten.
+
+Everything else is hand-written and safe to edit in Obsidian.
+
+#### Rebuilding
+
+```sh
+npm run repos    # refresh data/repos.json from the GitHub API
+npm run brain    # regenerate the generated notes + bundle data/brain.json
+```
+
+`npm run brain` is what makes the vault visible on the site: it walks every
+`.md` file here, resolves the wikilinks into a graph, and writes one
+`data/brain.json` the browser reads. The morning cron runs both.
+
+See [[Brain Pipeline]] for how that works, and [[Home]] to start reading.
+
+## Home
+
+Path: brain/Home.md · Type: map · Tags: entry, moc
+
+### Exaryn ✳ — the brain
+
+Everything the studio has built, why it was built, and how the pieces connect.
+Written as a linked vault rather than a list, because most of what matters here
+is the wiring between projects rather than any one project.
+
+
+
+#### The four hubs
+
+- **[[Agent Structure]]** — every autonomous system built here, what drives it, and what it is allowed to touch.
+- **[[Projects Map]]** — the full project index, grouped by what kind of thing it is.
+- **[[Systems Map]]** — the pipelines, crons and deploys that run without anyone watching.
+- **[[Stack Map]]** — the technologies, and which projects lean on each.
+
+#### The rest
+
+- [[Repos Map]] — all 35 GitHub repositories, including the dead ends.
+- [[Timeline]] — what got built when.
+- [[Roadmap]] — the todo list. What is actually next.
+- [[Build Log]] — a running record of what changed and why.
+- [[Studio Principles]] — the handful of rules that survived contact with reality.
+- [[Open Questions]] — things not resolved yet.
+- [[Glossary]] — the vocabulary this vault assumes.
+
+#### The shape of it
+
+Seventeen projects across five categories, ten autonomous agents, five
+scheduled systems, thirty-five repositories. One person. The pattern that
+repeats everywhere:
+
+> **Cron job → Python script → committed JSON → static site.**
+
+No servers to keep alive, no databases to back up, no bill when nobody visits.
+[[Daily Signal Pipeline]] and [[Pirate Picker]] and [[Fan Suite Bot]] are all
+the same idea wearing different hats — see [[Agent Patterns]].
+
+## ALFRED Conductor
+
+Path: brain/agents/ALFRED Conductor.md · Type: agent · Tags: agent, local-first, planning
+
+The only tier-3 agent in the studio: it plans across time, acts on its own
+schedule, and adapts from what actually happened.
+
+#### The loop
+
+```
+goal ──► specialists decompose ──► Conductor reconciles vs capacity
+                                          │
+                            delivered over Discord / Telegram
+                                          │
+                        observe outcomes ──┘  (and re-plan)
+```
+
+#### The Conductor's actual job
+
+Specialists are optimists. Each one produces a plan that is reasonable in
+isolation, and the sum of them is a 60-hour week. The Conductor's only job is
+to reconcile those plans against real capacity and refuse the surplus — see
+[[Agent Patterns|plan against capacity, not ambition]].
+
+#### Safety envelope
+
+Every tool call passes the allowlist, capability tier and audit trail described
+in [[Tool Safety]]. Models run locally through [[Ollama]]; nothing leaves the
+machine. 529 tests run offline in CI, envelope included.
+
+#### Related
+
+- [[ALFRED]] · [[Tool Safety]] · [[Agent Structure]] · [[Python]] · [[MCP]]
+
+## Agent Patterns
+
+Path: brain/agents/Agent Patterns.md · Type: note · Tags: agents, architecture, patterns
+
+The shapes that keep reappearing. Each one is named here so notes elsewhere can
+just point at it.
+
+#### Cron → script → commit → deploy
+
+The cheapest autonomous system that exists. A GitHub Actions cron runs a
+stdlib-only Python script, the script writes JSON into `data/`, the workflow
+commits it, Pages redeploys. No server, no database, no bill.
+
+Used by [[Digest Bot]], [[Pirate Picker]], [[Fan Suite Bot]], [[Brain Indexer]].
+
+**Why it holds up:** the output is a git commit. Every run is diffable, every
+regression is bisectable, and a failed run leaves yesterday's data standing.
+
+#### One worktree per agent
+
+Concurrency without coordination. Each agent gets its own git worktree, so two
+agents editing the same file is impossible rather than merely discouraged.
+
+Used by [[Fleet Supervisor]], [[Worktree MCP Server]].
+
+**Why it holds up:** the hard problem in multi-agent coding is not reasoning,
+it is write conflicts. Worktrees delete the problem instead of managing it.
+
+#### Narrate, never calculate
+
+The model gets tool access to a real engine and is allowed to describe the
+numbers it gets back. It is never allowed to produce a number itself.
+
+Used by [[QuantLens Narrator]], and it is the reason QuantLens output can be
+checked line by line against the engine.
+
+#### Gate before write
+
+Nothing reaches disk, or a user, until a deterministic check passes. `solc`
+compiles the contract before [[smartc Patcher]] writes it. The allowlist clears
+the call before [[ALFRED Conductor]] makes it.
+
+**Why it holds up:** it converts "the model is usually right" into "the output
+is always valid", which is a different product.
+
+#### Model the graph, generate the framework
+
+Agent frameworks disagree about naming, lifecycle and state, and agree about
+topology. [[Prompterjack Crew Designer]] models the topology once and emits
+five frameworks from it.
+
+#### Plan against capacity, not against ambition
+
+A planner with no capacity model produces a fantasy. [[ALFRED Conductor]]
+reconciles every specialist's plan against real available hours before anything
+is delivered.
+
+#### Related
+
+- [[Agent Structure]] · [[Agent Ledger]] · [[Tool Safety]] · [[Context Engineering]]
+
+## Brain Indexer
+
+Path: brain/agents/Brain Indexer.md · Type: agent · Tags: agent, cron, meta
+
+The newest bot, and the one that makes this vault readable on the web.
+Two scripts, run in order by the morning cron.
+
+#### `scripts/repos.py`
+
+Sweeps the GitHub API for every repository under the account, keeps the fields
+that matter (language breakdown, topics, licence, sizes, timestamps, README
+blurb) and writes `data/repos.json`. Anything a run cannot reach keeps its
+previous values rather than being blanked.
+
+#### `scripts/brain.py`
+
+Two jobs:
+
+1. **Generate** — writes one note per project into `brain/projects/` and one
+   per repository into `brain/repos/`, from `data/projects.json` and
+   `data/repos.json`. Those files are marked `generated: true`; hand edits get
+   overwritten.
+2. **Bundle** — walks every `.md` in `brain/`, parses frontmatter, resolves
+   `[[wikilinks]]` into a real link graph with backlinks, and writes
+   `data/brain.json`. That single file is what `brain.html` reads.
+
+#### Why bundle instead of fetching files
+
+GitHub Pages has no directory listing, so a browser cannot discover the vault
+by walking it. One bundle means one request, instant search across every note,
+and a graph that already knows every edge before the first render.
+
+#### Related
+
+- [[Brain Pipeline]] · [[Exaryn Studio]] · [[Agent Patterns]] · [[Python]]
+
+## Context Engineering
+
+Path: brain/agents/Context Engineering.md · Type: note · Tags: agents, prompts, practice
+
+How prompts are actually built here, as opposed to how prompt guides say they
+should be.
+
+#### Structure beats wording
+
+[[Prompterjack]] exists because of this. Rewording a prompt moves quality a
+little; changing the topology of who-asks-whom moves it a lot. The canvas
+edits topology; the linter nags about wording.
+
+#### Give the model the shape, not the sample
+
+The single most reused tool in the index is [[JSON API Simplifier]] — it strips
+values out of a JSON response and leaves the structure. That habit generalises:
+show the model the schema, not one example row it will overfit to.
+
+#### Score maintainability, not cleverness
+
+Prompterjack's linter scores prompts on whether the next person can change
+them: are the roles distinct, is the output contract explicit, is there exactly
+one place that decides each thing. A clever prompt nobody can edit is technical
+debt with better prose.
+
+#### Codebase-aware or nothing
+
+Prompts written against imagined types drift the moment the code moves.
+Generating prompts from the actual repo is more work up front and less work
+forever after.
+
+#### Related
+
+- [[Prompterjack Crew Designer]] · [[Agent Patterns]] · [[Claude]] · [[Studio Principles]]
+
+## Digest Bot
+
+Path: brain/agents/Digest Bot.md · Type: agent · Tags: agent, cron, feeds
+
+`scripts/digest.py`. Rebuilds the studio's daily AI signal every morning at
+21:00 UTC — roughly 7–8am Melbourne, which is the only timezone that matters
+here.
+
+#### What it sweeps
+
+Around twenty RSS and Atom feeds across three kinds:
+
+- **news** — Hacker News, TechCrunch AI, The Verge, VentureBeat, MIT Tech
+  Review, Hugging Face, Google AI, OpenAI, Simon Willison
+- **papers** — arXiv `cs.AI` and `cs.LG`
+- **video** — YouTube channel feeds (Fireship, Two Minute Papers, AI Explained,
+  3Blue1Brown and others)
+
+Each kind has its own per-source cap and freshness window, so papers cannot
+drown out news and one prolific channel cannot take the whole page.
+
+#### Failure behaviour
+
+A dead feed logs a warning and is skipped. It never fails the build, and
+yesterday's `digest.json` stays live until a good run replaces it. Every run is
+also archived by date, which is where the day-by-day archive on the feed page
+comes from.
+
+#### Stdlib only
+
+No pip install in CI. `urllib` and `xml.etree` do the whole job, which means
+the workflow has no dependency that can break on a Tuesday.
+
+#### Related
+
+- [[Daily Signal Pipeline]] · [[Exaryn Studio]] · [[Agent Patterns]] · [[GitHub Actions]] · [[Python]]
+
+## Fan Suite Bot
+
+Path: brain/agents/Fan Suite Bot.md · Type: agent · Tags: agent, cron, sport
+
+Rebuilds [[Side by Side]] every morning: next-game countdown, form guide, live
+ladder from the free Squiggle API, plus a news sweep from Google News.
+
+#### The config-file trick
+
+Everything club-specific lives in `club.json`. Fork the repo, edit one file,
+and it is your club's suite — no code changes. That took about an hour and is
+the difference between a personal page and something anyone can use.
+
+#### Same skeleton, different data
+
+Structurally identical to [[Pirate Picker]] and [[Digest Bot]]: cron, Python,
+committed JSON, static Pages. Three unrelated products, one mechanism.
+
+#### Related
+
+- [[Side by Side]] · [[Agent Patterns]] · [[Cron Ledger]] · [[Python]]
+
+## Fleet Supervisor
+
+Path: brain/agents/Fleet Supervisor.md · Type: agent · Tags: agent, claude, worktrees
+
+The agent layer inside [[Claude Work Manager]]. Not one agent — a supervisor
+over however many Claude Code sessions are running, each pinned to its own git
+worktree.
+
+#### What it does
+
+Spawns a Claude Code session per worktree, keeps their transcripts separate,
+surfaces each one's dev server as a live preview, and lets a human steer any of
+them from a phone. Commit and push happen per worktree.
+
+#### Why it works
+
+The pattern is [[Agent Patterns|one worktree per agent]]. Five agents editing
+one checkout is a merge nightmare; five agents editing five checkouts is just
+five branches. The isolation is the product.
+
+#### Trust model
+
+Tier 2 — model-in-the-loop, human-gated. Agents write freely inside their own
+worktree; nothing reaches a shared branch without a human pressing push. No API
+keys are stored: it rides the `claude` CLI session already authenticated on the
+machine.
+
+#### Related
+
+- [[Claude Work Manager]] · [[Worktree MCP Server]] · [[Worktree Workflow]] · [[Agent Structure]]
+
+## Pirate Picker
+
+Path: brain/agents/Pirate Picker.md · Type: agent · Tags: agent, cron, games
+
+The cron job behind [[One Piece Guess]]. It picks one character each morning,
+commits it, and that is the entire backend.
+
+#### Why this is the whole game
+
+A daily puzzle needs exactly one thing: everyone must see the same answer on
+the same day, and nobody may see tomorrow's. A committed file plus a date does
+that with no server, no auth and no database. Everything else — the eight
+attribute clues, the unlocking hints, the shareable emoji grid — is front-end
+decoration on top.
+
+#### The reusable part
+
+The repo's README is deliberately written as a how-to for building your own
+daily-anything game, because the mechanism generalises far past One Piece. See
+[[Agent Patterns|cron → script → commit → deploy]].
+
+#### Related
+
+- [[One Piece Guess]] · [[Fan Suite Bot]] · [[Cron Ledger]] · [[GitHub Actions]]
+
+## Prompterjack Crew Designer
+
+Path: brain/agents/Prompterjack Crew Designer.md · Type: agent · Tags: agent, prompts, codegen
+
+The engine inside [[Prompterjack]]: it turns a crew you drew on a canvas into
+code that runs in five different agent frameworks.
+
+#### What it exports to
+
+Strands · OpenAI Agents · LangChain · LangGraph · LlamaIndex.
+
+#### Why one canvas can serve five frameworks
+
+Because they only disagree about surface. Lifecycle names, state containers and
+decorators differ; the topology — who supervises whom, who routes to what, what
+the output contract is — is the same graph in all five. Model the graph once,
+generate the framework. See [[Agent Patterns]].
+
+#### The linter
+
+Every design gets scored for maintainability, not cleverness: distinct roles,
+explicit output contracts, one owner per decision. The score is the part people
+argue with, which means they are reading it.
+
+#### Codebase awareness
+
+Point it at a repository and generated prompts reference the actual types in
+that repo instead of invented ones — the difference between a prompt that
+survives a refactor and one that silently rots. More in [[Context Engineering]].
+
+#### Related
+
+- [[Prompterjack]] · [[Context Engineering]] · [[Agent Structure]] · [[TypeScript]]
+
+## QuantLens Narrator
+
+Path: brain/agents/QuantLens Narrator.md · Type: agent · Tags: agent, rag, finance
+
+The Spring AI layer inside [[QuantLens]]. It explains a portfolio in prose, and
+it is structurally incapable of making a number up.
+
+#### The rule
+
+**Narrate, never calculate.** Every figure in the narration comes back from a
+tool call into the Java quant engine. The model chooses what to say about a
+number; it never chooses the number.
+
+#### How it answers questions
+
+RAG over [[pgvector]] for the documents, tool-calling for the live metrics —
+Sharpe, VaR, Monte Carlo paths, Fama-French factor loadings, cointegration
+pairs. An embedded MCP server exposes the same engine to outside agents, so the
+narration path and the programmatic path use identical numbers.
+
+#### Why this matters more in finance
+
+A hallucinated sentence is embarrassing. A hallucinated Sharpe ratio is
+actionable and wrong. Splitting narration from calculation is the only version
+of this that is safe to demo.
+
+#### Related
+
+- [[QuantLens]] · [[Agent Patterns]] · [[Java]] · [[MCP]] · [[Agent Structure]]
+
+## Tool Safety
+
+Path: brain/agents/Tool Safety.md · Type: note · Tags: agents, safety, architecture
+
+The envelope every tool call in [[ALFRED]] passes through, and the model the
+rest of the studio borrows when an agent gets to touch anything real.
+
+#### Three checks, in order
+
+1. **Allowlist.** Is this tool callable at all, in this context? Default deny.
+   An unknown tool name is a failure, not a fallback.
+2. **Capability tier.** What class of consequence does this call carry — read,
+   write, notify, spend? Tiers are assigned to the tool, not inferred from the
+   arguments.
+3. **Audit trail.** Every call, its arguments, its tier and its result are
+   recorded before the result is used. Unrecorded means unexecuted.
+
+#### Why tiers and not permissions
+
+A flat permission list makes every call look equally serious, so it gets
+approved in bulk and stops meaning anything. Tiers let reads flow freely and
+force writes and spends to justify themselves.
+
+#### Local-first is part of the envelope
+
+[[ALFRED]] runs its models through Ollama on the user's own hardware. The
+strongest guarantee about data that never leaves the machine is architectural,
+not contractual — the same reasoning applies to the optional local patching in
+[[smartc]].
+
+#### Testing it offline
+
+ALFRED's 529 CI tests run with no network at all. A safety envelope you can
+only exercise against live services is one you will stop exercising.
+
+#### Related
+
+- [[Agent Structure]] · [[Agent Patterns]] · [[ALFRED Conductor]] · [[Studio Principles]]
+
+## Worktree MCP Server
+
+Path: brain/agents/Worktree MCP Server.md · Type: agent · Tags: agent, mcp, infra
+
+The [[MCP]] surface of [[Worktree Optimiser]]. Everything the dashboard lets a
+human do — start a worktree's container, stop it, route it, inspect it — is
+exposed to coding agents as tools.
+
+#### The principle
+
+**Anything a human clicks should be callable.** A dashboard-only tool forces an
+agent to drive a browser, which is slow and fragile. A tools-only tool forces a
+human to read JSON. Building both over one lifecycle costs very little if you
+do it from the start.
+
+#### What it lets an agent do
+
+Give a Claude Code session working on `fix-login` the ability to bring
+`fix-login.localhost` up, check it, and tear it down again — without a human in
+the loop for any of it. Combined with [[Fleet Supervisor]], each agent in the
+fleet can own a running environment as well as a worktree.
+
+#### The regret
+
+This was built second, after the dashboard. Retrofitting a tool surface onto a
+UI-shaped lifecycle is meaningfully harder than designing one lifecycle with
+two front doors.
+
+#### Related
+
+- [[Worktree Optimiser]] · [[Fleet Supervisor]] · [[MCP]] · [[Docker]] · [[Agent Structure]]
+
+## smartc Patcher
+
+Path: brain/agents/smartc Patcher.md · Type: agent · Tags: agent, local-first, solidity
+
+The optional AI layer in [[smartc]]. Opt-in, local-only, and gated behind a
+compiler.
+
+#### The gate
+
+`solc` compiles every Solidity contract **in process, before anything touches
+disk**. If the patched contract does not compile, it is not written. The model
+gets to propose; the compiler decides. See [[Agent Patterns|gate before write]].
+
+#### Local only
+
+Patching runs through [[Ollama]] on your own machine. Contract source — often
+the most sensitive thing in the repo — never goes to a third party.
+
+#### Why the wizard is not AI
+
+The templates (ERC-20, ERC-721, ERC-1155, Solana SPL) are deterministic on
+purpose. The model is there for the deltas nobody templated, not for the
+standard path where a template is simply more trustworthy.
+
+#### Related
+
+- [[smartc]] · [[Agent Structure]] · [[TypeScript]] · [[Ollama]]
+
+## Agent Structure
+
+Path: brain/maps/Agent Structure.md · Type: map · Tags: moc, agents, architecture
+
+The spine of the vault. Ten autonomous or semi-autonomous systems have been
+built here. They fall into three tiers, and the tier decides how much
+supervision each one needs.
+
+#### The three tiers
+
+##### Tier 1 — Scheduled bots
+No reasoning. A cron fires, a script runs, JSON is committed, a site
+redeploys. If one dies, nothing else notices.
+
+- [[Digest Bot]] — sweeps ~20 feeds every morning into the daily signal
+- [[Pirate Picker]] — chooses the day's One Piece character
+- [[Fan Suite Bot]] — pulls fixtures, ladder and news for the footy suite
+- [[Brain Indexer]] — rebuilds this vault's bundle and repo metadata
+
+##### Tier 2 — Model-in-the-loop, human-gated
+A model does real work but a human sees the output before it counts.
+
+- [[Fleet Supervisor]] — the Claude Work Manager dashboard: many Claude Code agents, one worktree each
+- [[Prompterjack Crew Designer]] — designs and exports agent crews, human presses export
+- [[QuantLens Narrator]] — narrates real engine output via tool calls, never invents a number
+- [[smartc Patcher]] — optional local model patching, compile-gated before anything is written
+- [[Worktree MCP Server]] — hands the container lifecycle to coding agents as tools
+
+##### Tier 3 — Autonomous with a safety envelope
+Plans and acts across time. This is the only tier that needs [[Tool Safety]].
+
+- [[ALFRED Conductor]] — decomposes goals, reconciles against real capacity, adapts from outcomes
+
+#### The control surface
+
+Everything in tiers 2 and 3 is reachable as tools, not just as UI. That is
+deliberate — see [[Worktree MCP Server]], which exposes the same lifecycle to
+Claude Code that the dashboard exposes to a human.
+
+```
+        human ──────┐                    ┌────── coding agent
+                    ▼                    ▼
+              dashboard UI  ─── same ───  MCP tools
+                    │        surface           │
+                    └──────────┬──────────────┘
+                               ▼
+                    worktrees · containers · git
+```
+
+#### What every agent here has in common
+
+1. **An isolation boundary.** A worktree, a container, a local model, a
+   committed file. Nothing shares mutable state with anything else.
+2. **A gate before consequence.** Compile before write, human before merge,
+   allowlist before tool call. See [[Tool Safety]].
+3. **A written trail.** Committed JSON, audit logs, git history. If it cannot
+   be reconstructed afterwards it did not happen.
+
+Those three rules are the whole architecture. [[Agent Patterns]] has the
+recurring shapes; [[Agent Ledger]] is the full table.
+
+#### Related
+
+- [[Context Engineering]] — how prompts and context are actually built here
+- [[Systems Map]] — the scheduled half of the picture
+- [[Studio Principles]] — why any of this is shaped the way it is
+
+## Stack Map
+
+Path: brain/maps/Stack Map.md · Type: map · Tags: moc, stack
+
+What gets used, and the reason it was picked. Each note lists the projects that
+lean on it.
+
+#### Languages
+
+- [[Python]] — everything scheduled, and all the quant work
+- [[TypeScript]] — everything with a UI or a published package
+- [[Rust]] — exactly where its guarantees pay for its friction
+- [[Java]] — one project, thoroughly
+- [[Flutter]] — the mobile client
+- [[C Sharp and .NET]] — the deliberately boring reference codebase
+
+#### Front ends
+
+- [[Vue]] — dense data dashboards
+- [[React]] — direct-manipulation interfaces
+- Vanilla JS — the static sites, on purpose: no framework, no build step
+
+#### Data
+
+- [[PostgreSQL]] — the default when state must be relational and correct
+- [[pgvector]] — RAG without a second datastore
+
+#### Agents & models
+
+- [[Claude]] — the model the studio builds with
+- [[Ollama]] — local serving, where "no cloud" has to be a real claim
+- [[MCP]] — how tools get handed to agents, not just to humans
+
+#### Infrastructure
+
+- [[GitHub Actions]] — the studio backend
+- [[Docker]] — isolation, and the one-command demo contract
+- [[Cloudflare Workers]] — the edge runtime under Prompterjack
+
+#### The bias
+
+Boring by default, exotic only where a specific guarantee is needed. Stdlib
+Python because CI dependencies rot. Vanilla JS on static sites because a build
+step is a thing that can break between you and a page that was already working.
+
+#### Related
+
+- [[Projects Map]] · [[Systems Map]] · [[Studio Principles]] · [[Home]]
+
+## Systems Map
+
+Path: brain/maps/Systems Map.md · Type: map · Tags: moc, systems, infra
+
+The parts of the studio that run without anyone watching.
+
+#### The pipelines
+
+- [[Daily Signal Pipeline]] — ~20 feeds → `data/digest.json` → the feed page, every morning
+- [[Brain Pipeline]] — GitHub API → repo notes → `data/brain.json` → this vault in the browser
+- [[Deploy Pipeline]] — one workflow, two behaviours: push deploys, cron regenerates then deploys
+- [[Worktree Workflow]] — how parallel work is isolated, for humans and agents alike
+
+#### The schedule
+
+[[Cron Ledger]] is the full table of everything scheduled. All of it fires at
+21:00 UTC, which is morning in Melbourne, and all of it follows the same
+failure policy: a dead source is a warning, never a failed build, and the last
+good data stays live.
+
+#### The shape they share
+
+```
+cron ──► stdlib python ──► JSON in data/ ──► git commit [skip ci] ──► Pages
+```
+
+That is the entire studio backend. It costs nothing when nobody visits, every
+run is a diffable commit, and a regression is bisectable. See
+[[Agent Patterns]] and principle 1 in [[Studio Principles]].
+
+#### Related
+
+- [[Agent Structure]] · [[Stack Map]] · [[GitHub Actions]] · [[Home]]
+
+## Build Log
+
+Path: brain/notes/Build Log.md · Type: note · Tags: log, history
+
+A running record of what changed and why. Newest first. Hand-maintained —
+[[Timeline]] is the generated version built from repository dates.
+
+#### 2026-08 — the brain
+
+Built the vault you are reading. Three moving parts: a GitHub API sweep into
+`data/repos.json`, a generator that writes project and repo notes from JSON,
+and a bundler that turns every `.md` in `brain/` into `data/brain.json` for the
+browser. Added an **Agents** tab to the site as the front door. See
+[[Brain Pipeline]] and [[Brain Indexer]].
+
+Also: audited the project index against all 35 repositories and found several
+real projects missing from it — [[TODO List]], [[Contact Flow]],
+[[JSON API Simplifier]], [[PDF Compiler]] and the site itself. All now in
+[[Projects Map]].
+
+#### 2026-08 — the daily machines
+
+Three cron-driven products in quick succession: [[One Piece Guess]],
+[[Side by Side]], and the daily signal on this site. All three landed on the
+same skeleton, which is what turned it into a named pattern in
+[[Agent Patterns]].
+
+#### 2026-08 — the fleet
+
+[[Claude Work Manager]] and [[Worktree Optimiser]], built within weeks of each
+other, both solving halves of the same problem: who is editing what, and what is
+running where. Together they became [[Worktree Workflow]].
+
+#### 2026-06 → 2026-07 — the quant run
+
+[[QuantLens]], [[VolForecast]] and [[QuantFlex]] overlapping. The through-line
+was benchmarking honestly — analytic anchors in QuantFlex, GARCH/EWMA/HAR
+baselines in VolForecast, tool-called numbers in QuantLens. Became principle 5
+in [[Studio Principles]].
+
+#### 2026-02 → 2026-08 — Prompterjack
+
+Six months, the longest single project. Started as prompt tooling, became agent
+design once it was clear that topology mattered more than wording — see
+[[Context Engineering]].
+
+#### 2025 — before the studio
+
+[[PDF Compiler]], [[JSON API Simplifier]], and several gym-app attempts that
+did not survive. Kept, because principle 8.
+
+#### Related
+
+- [[Timeline]] · [[Roadmap]] · [[Studio Principles]] · [[Home]]
+
+## Glossary
+
+Path: brain/notes/Glossary.md · Type: note · Tags: reference
+
+The vocabulary this vault assumes.
+
+**Agent tier** — the supervision level a system needs. Tier 1 is a scheduled
+script, tier 2 is model-in-the-loop with a human gate, tier 3 plans and acts
+across time. Defined in [[Agent Structure]].
+
+**Backlink** — a note that links *to* the one you are reading. The browser view
+and Obsidian both compute these from `[[wikilinks]]`; the bundle in
+`data/brain.json` ships them pre-resolved.
+
+**Bundle** — `data/brain.json`. Every note in this vault, its frontmatter, and
+the full link graph, in one file so a static host can serve the whole vault in
+one request. Built by [[Brain Indexer]].
+
+**Capability tier** — what class of consequence a tool call carries: read,
+write, notify, spend. Assigned to the tool, not inferred from arguments. See
+[[Tool Safety]].
+
+**Generated note** — a note written by `scripts/brain.py` from JSON rather than
+by hand. Carries `generated: true`. Everything in `projects/` and `repos/`.
+
+**MOC** — map of content. A hub note that exists to link outward: [[Home]],
+[[Agent Structure]], [[Projects Map]], [[Systems Map]], [[Stack Map]].
+
+**QLIKE** — the loss function [[VolForecast]] gates model promotion on. Chosen
+because it penalises under-forecasting volatility, which is the error that
+actually hurts.
+
+**Worktree** — a second checkout of the same git repository. The unit of
+isolation for everything in [[Worktree Workflow]].
+
+#### Related
+
+- [[Home]] · [[Agent Structure]] · [[Studio Principles]]
+
+## Open Questions
+
+Path: brain/notes/Open Questions.md · Type: note · Tags: questions, unresolved
+
+Things genuinely unresolved. Kept here so they stop being re-litigated from
+scratch every few weeks.
+
+#### How autonomous should tier 3 get?
+
+[[ALFRED Conductor]] is the only agent here allowed to plan across time and act
+on its own schedule. The [[Tool Safety]] envelope makes that survivable, but the
+honest answer to *how much should it decide alone* is still unknown. Every
+increase in autonomy has so far been paid for with an increase in audit surface.
+
+#### Is the token meter measuring anything?
+
+The number on the site's front page is hand-updated and the dollar figure is a
+blended estimate. Either wire it to something real or label it more loudly than
+"APPROX." — see [[Roadmap]].
+
+#### What happens to the superseded repos?
+
+Three private repos supersede each other on the way to [[Solo Strength Quest]],
+plus `gymapp-v2` and `GymAPP` before them. Archiving them loses the history of
+how the design converged; leaving them makes [[Repos Map]] misleading about how
+much is live.
+
+#### Should generated notes be committed at all?
+
+`brain/projects/` and `brain/repos/` are generated but committed, so the vault
+works in Obsidian straight out of a clone. The cost is noisy diffs on every
+sweep. The alternative — generate on demand — breaks the offline vault.
+Currently: committed, noise accepted.
+
+#### Where does the line sit between a project and an experiment?
+
+[[JSON API Simplifier]] is forty lines and gets used constantly.
+[[PDF Compiler]] is a weekend that went nowhere. Both are in the index; only one
+of them is a project in any meaningful sense, and no rule currently separates
+them.
+
+#### Related
+
+- [[Studio Principles]] · [[Roadmap]] · [[Build Log]]
+
+## Roadmap
+
+Path: brain/notes/Roadmap.md · Type: note · Tags: todo, roadmap, planning
+
+### Roadmap — the todo list
+
+The studio's actual todo list. Hand-maintained: edit this file in Obsidian and
+it shows up on the site the next time [[Brain Indexer]] runs. Checked boxes
+render as checked in the browser.
+
+
+
+#### Now — in flight
+
+- [ ] **[[Solo Strength Quest]]** — third attempt; Rust/Axum API and Flutter client both moving
+- [ ] **[[QuantFlex]]** — exotics and basket coverage, keep every Greek triple-verified
+- [ ] **[[ALFRED]]** — Conductor tuning against real capacity data
+- [ ] **[[Worktree Optimiser]]** — round out the [[Worktree MCP Server]] tool surface
+- [ ] **[[Gartic Hands]]** — semester project, round state machine hardening
+
+#### Next — queued
+
+- [ ] Give [[QuantFlex]] a stable public deploy rather than a landing page with sampled output
+- [ ] Publish the [[Claude Work Manager]] setup as a one-command install
+- [ ] Backfill READMEs on the older repos in [[Repos Map]] so the sweep has something to quote
+- [ ] Add per-project dev-time tracking to [[Build Log]] instead of estimating after the fact
+
+#### Brain / site
+
+- [x] Build the brain as a real Obsidian vault under `brain/`
+- [x] Sweep metadata from every repo into `data/repos.json`
+- [x] Publish the vault in the browser with backlinks, tags, search and a graph
+- [x] Add an **Agents** tab to the site linking into the brain
+- [x] Put every project in the index, including the ones that were missing
+- [ ] Wire the token meter to something measured rather than hand-updated
+- [ ] Per-note "last touched" dates from git history rather than frontmatter
+
+#### Ideas — new projects, now that concurrency is down pat
+
+- [ ] **Foreman** — one step above [[Claude Work Manager]]: point a fleet at a
+      *backlog* instead of a prompt. Issues go in a queue, agents claim one each
+      in their own worktree, a reviewer agent gates the PRs, a human merges.
+      The dashboard already exists; this is the pipeline on top.
+- [ ] **One Piece Guess — duel mode** — realtime head-to-head daily riddle
+      (same character, race to fewer guesses) on Cloudflare Durable Objects.
+      Concurrency in product form, and a live case study for the
+      Cloudflare-vs-AWS note.
+- [ ] **QuantFlex parallel pricing farm** — fan a Monte Carlo run out across
+      worker processes/machines and aggregate over SSE; the anchor tests make
+      distributed-vs-single equivalence *provable*, which is the whole trick.
+- [ ] **Solo Strength Quest live raids** — shared boss fights: a weekly
+      community lift target hammered concurrently by every hunter's logged
+      sets, over websockets on the Rust/Axum side.
+
+#### Someday / maybe
+
+- [ ] Retire the three superseded Solo Strength Quest repos properly instead of leaving them private
+- [ ] A written post-mortem note for each archived repo — [[PDF Compiler]] first
+- [ ] Let the brain graph filter by tag, not just by note type
+
+#### Related
+
+- [[Home]] · [[Build Log]] · [[Open Questions]] · [[Projects Map]]
+
+## Studio Principles
+
+Path: brain/notes/Studio Principles.md · Type: note · Tags: principles, practice
+
+The handful of rules that survived contact with reality. Each one is here
+because breaking it cost something.
+
+#### 1. The cron job is the backend
+
+If a thing can be a scheduled script that commits JSON to a static site, it
+should be. No server to keep alive, no database to back up, no bill when nobody
+visits, and every run is a diffable git commit. Three unrelated products —
+[[One Piece Guess]], [[Side by Side]], [[Exaryn Studio]] — run on the identical
+mechanism. See [[Agent Patterns]].
+
+#### 2. Isolate, don't coordinate
+
+The hard part of running several agents is not reasoning, it is write
+conflicts. A worktree each, a container each, a local model each. Delete the
+conflict instead of managing it. See [[Worktree Workflow]].
+
+#### 3. Gate before consequence
+
+Compile before write. Allowlist before call. Human before push. It turns "the
+model is usually right" into "the output is always valid", which is a different
+product. See [[Tool Safety]] and [[smartc Patcher]].
+
+#### 4. Narrate, never calculate
+
+A model may describe a number it was handed. It may not produce one. This is
+the only reason [[QuantLens]] is safe to demo.
+
+#### 5. Write the oracle before the solver
+
+[[QuantFlex]]'s analytic anchors caught more bugs than its unit tests did.
+[[VolForecast]] built GARCH, EWMA and HAR baselines before the model it wanted
+to ship — which is what made the result honest rather than flattering.
+
+#### 6. One command to run it
+
+[[QuantLens]] and [[Contact Flow]] both come up with a single
+`docker compose up`, seed data included. If someone needs a setup guide, the
+project failed before they read any code.
+
+#### 7. Config over fork
+
+Making the club swappable in [[Side by Side]] took an hour and turned a
+personal page into something anyone can use. Ask what the one file is.
+
+#### 8. Keep the before-picture
+
+[[PDF Compiler]] stays in the index unchanged. An index with nothing in it you
+would write differently now is an index that is lying.
+
+#### Related
+
+- [[Home]] · [[Agent Structure]] · [[Agent Patterns]] · [[Open Questions]]
+
+## C Sharp and .NET
+
+Path: brain/stack/C Sharp and .NET.md · Type: stack · Tags: stack, dotnet
+
+One project, on purpose: [[TODO List]]. A .NET Web API with real layering — controllers, services, data access as separate concerns rather than one fat controller — paired with an Angular front end and tests on both sides.
+
+It is deliberately the most boring product in the index so that the structure is the only thing to look at.
+
+#### Where it shows up
+
+[[TODO List]]
+
+## Claude
+
+Path: brain/stack/Claude.md · Type: stack · Tags: stack, llm, agents
+
+The model the studio actually builds with. Over a billion tokens this year, tracked on the site's token meter.
+
+Two projects exist specifically to make working with it better: [[Claude Work Manager]] runs a fleet of Claude Code sessions across worktrees, and [[Worktree Optimiser]] gives those sessions running environments through [[MCP]].
+
+The working style it encourages is in [[Context Engineering]]; the supervision model is in [[Agent Structure]].
+
+#### Where it shows up
+
+[[Claude Work Manager]] · [[Worktree Optimiser]] · [[Fleet Supervisor]] · [[Exaryn Studio]]
+
+## Cloudflare Workers
+
+Path: brain/stack/Cloudflare Workers.md · Type: stack · Tags: stack, edge, infra
+
+The runtime under [[Prompterjack]], with Hono for routing and Neon [[PostgreSQL]] for state. Edge-first because a prompt linter and a code exporter are both short, bursty, and embarrassing when cold-start latency shows.
+
+#### Where it shows up
+
+[[Prompterjack]]
+
+## Docker
+
+Path: brain/stack/Docker.md · Type: stack · Tags: stack, infra
+
+Two distinct uses.
+
+**As a demo contract.** [[QuantLens]] and [[Contact Flow]] both come up with one `docker compose up`, seed data included, no API keys. If a reviewer needs a setup guide, the project has failed before they read a line of code.
+
+**As isolation.** [[Worktree Optimiser]] gives every git worktree its own container behind Traefik, so every branch runs at once at its own hostname. See [[Worktree Workflow]].
+
+#### Where it shows up
+
+[[QuantLens]] · [[Contact Flow]] · [[Worktree Optimiser]] · [[Gartic Hands]]
+
+## Flutter
+
+Path: brain/stack/Flutter.md · Type: stack · Tags: stack, mobile, dart
+
+The [[Solo Strength Quest]] client, with a hand-built design system rather than stock Material. A fitness RPG has to feel like a game; default widgets feel like a form.
+
+#### Where it shows up
+
+[[Solo Strength Quest]]
+
+## GitHub Actions
+
+Path: brain/stack/GitHub Actions.md · Type: stack · Tags: stack, ci, cron
+
+The studio backend. Every scheduled system in the [[Cron Ledger]] is an Actions cron, and every static site here deploys from one.
+
+The shape, repeated everywhere: cron fires → stdlib Python runs → JSON is committed with `[skip ci]` → Pages redeploys. No server, no database, no bill when nobody visits. See [[Agent Patterns]].
+
+#### Where it shows up
+
+[[Exaryn Studio]] · [[One Piece Guess]] · [[Side by Side]] · [[Deploy Pipeline]] · [[Daily Signal Pipeline]] · [[Brain Pipeline]]
+
+## Java
+
+Path: brain/stack/Java.md · Type: stack · Tags: stack, java, jvm
+
+One project, thoroughly: [[QuantLens]]. Spring Boot 3.5 runs the quant engine, Spring AI runs tool-calling and RAG over [[pgvector]], and an embedded [[MCP]] server exposes the same engine to outside agents.
+
+The interesting part is not the language, it is that the AI layer and the programmatic layer call identical code — see [[QuantLens Narrator]].
+
+#### Where it shows up
+
+[[QuantLens]]
+
+## MCP
+
+Path: brain/stack/MCP.md · Type: stack · Tags: stack, agents, protocol
+
+Model Context Protocol — the way tools get handed to agents here rather than to humans only.
+
+Three places: [[Worktree MCP Server]] exposes container lifecycle to coding agents; [[QuantLens]] embeds an MCP server so external agents query the same quant engine the UI does; [[ALFRED]] uses it on the tool side of its safety envelope.
+
+The rule it enforces: **anything a human clicks should be callable**.
+
+#### Where it shows up
+
+[[Worktree Optimiser]] · [[QuantLens]] · [[ALFRED]] · [[Agent Structure]]
+
+## Ollama
+
+Path: brain/stack/Ollama.md · Type: stack · Tags: stack, local-first, llm
+
+Local model serving. It is what makes "no cloud" a real claim rather than a preference in two projects.
+
+[[ALFRED]] runs entirely on it — that is the point of the project. [[smartc]] uses it for opt-in contract patching, so source code that is often the most sensitive thing in a repo never leaves the machine.
+
+#### Where it shows up
+
+[[ALFRED]] · [[smartc]] · [[Tool Safety]]
+
+## PostgreSQL
+
+Path: brain/stack/PostgreSQL.md · Type: stack · Tags: stack, database
+
+The default store when state has to be relational and correct: [[Solo Strength Quest]] (via SQLx), [[Contact Flow]] (via TypeORM), [[QuantLens]] (with the [[pgvector]] extension), and Neon-hosted for [[Prompterjack]].
+
+Redis sits in front of it in Solo Strength Quest for hot state, and nowhere else — caching before there is a measured problem is how you get two sources of truth.
+
+#### Where it shows up
+
+[[Solo Strength Quest]] · [[Contact Flow]] · [[QuantLens]] · [[Prompterjack]]
+
+## Python
+
+Path: brain/stack/Python.md · Type: stack · Tags: stack, python
+
+The studio default for anything that runs on a schedule. Every cron job in the [[Cron Ledger]] is Python, and every one of them is **stdlib only** — `urllib`, `xml.etree`, `json`, `pathlib`, `concurrent.futures`. No `pip install` step in CI means no dependency that can break on a Tuesday.
+
+Also the language of the quant work: [[QuantFlex]] (NumPy, JAX) and [[VolForecast]] (LightGBM, MLflow, Prefect), and of [[ALFRED]] (Pydantic, SQLite, discord.py).
+
+#### Where it shows up
+
+[[Digest Bot]] · [[Brain Indexer]] · [[Pirate Picker]] · [[Fan Suite Bot]] · [[QuantFlex]] · [[VolForecast]] · [[ALFRED]] · [[JSON API Simplifier]]
+
+## React
+
+Path: brain/stack/React.md · Type: stack · Tags: stack, frontend
+
+Used where the interface is the product rather than a window onto data: the [[Prompterjack]] canvas, and the [[Gartic Hands]] drawing surface. Both are direct-manipulation UIs where component-level state and a large ecosystem of interaction libraries genuinely earn their weight.
+
+#### Where it shows up
+
+[[Prompterjack]] · [[Gartic Hands]]
+
+## Rust
+
+Path: brain/stack/Rust.md · Type: stack · Tags: stack, rust
+
+Used exactly where its guarantees pay for its friction: the [[Solo Strength Quest]] API, where all gamification maths lives server-side and a client must never be able to mint XP. Axum for HTTP, SQLx for a checked-at-compile-time relationship with [[PostgreSQL]].
+
+Two earlier versions of that app died partly because game logic drifted into the client. Putting it in Rust made "the server decides" structural rather than a convention.
+
+#### Where it shows up
+
+[[Solo Strength Quest]]
+
+## TypeScript
+
+Path: brain/stack/TypeScript.md · Type: stack · Tags: stack, typescript, web
+
+The default for anything with a UI or a package to publish. [[Prompterjack]] is TypeScript end to end across a Turborepo monorepo; [[Worktree Optimiser]] and [[smartc]] are Node CLIs; [[Contact Flow]] runs NestJS on the API side and Next.js on the front.
+
+The pattern across all of them: types at the boundary. Every one of these projects validates at the edge and trusts nothing that crossed a wire.
+
+#### Where it shows up
+
+[[Prompterjack]] · [[Worktree Optimiser]] · [[smartc]] · [[Contact Flow]] · [[Gartic Hands]] · [[TODO List]]
+
+## Vue
+
+Path: brain/stack/Vue.md · Type: stack · Tags: stack, frontend
+
+The front end for both big quant projects — [[QuantFlex]] and [[QuantLens]] — plus an early skills showcase. Chosen for the same reason both times: dense, data-heavy dashboards where reactivity over plain objects beats ceremony.
+
+#### Where it shows up
+
+[[QuantFlex]] · [[QuantLens]]
+
+## pgvector
+
+Path: brain/stack/pgvector.md · Type: stack · Tags: stack, database, rag
+
+The Postgres extension that lets [[QuantLens]] do RAG without adding a second datastore. Portfolio documents get embedded alongside the relational data they describe, so retrieval and the quant engine share one connection, one backup and one `docker compose up`.
+
+A separate vector database would have been one more thing to run for a project whose whole promise is *one command*.
+
+#### Where it shows up
+
+[[QuantLens]] · [[QuantLens Narrator]] · [[PostgreSQL]]
+
+## Brain Pipeline
+
+Path: brain/systems/Brain Pipeline.md · Type: system · Tags: system, cron, meta
+
+How this vault stays true and how it reaches the browser.
+
+```
+GitHub API ──► scripts/repos.py ──► data/repos.json
+                                          │
+data/projects.json ───────────────────────┤
+                                          ▼
+                              scripts/brain.py
+                                  │        │
+              brain/projects/*.md │        │ brain/repos/*.md   (generated)
+                                  │        │
+              every .md in brain/ ┴────────┴──► data/brain.json  (bundle)
+                                                      │
+                                                 brain.html
+```
+
+#### Two halves
+
+**Generation.** Project and repo notes are written from data, not by hand, so
+they cannot drift from `data/projects.json` and `data/repos.json`. They carry
+`generated: true` and a banner.
+
+**Bundling.** Every markdown file in `brain/` — generated or hand-written — is
+parsed, its frontmatter read, its `[[wikilinks]]` resolved, and the whole thing
+written to one `data/brain.json` with a full link graph and backlink index.
+
+#### Why a bundle
+
+GitHub Pages serves files, not directory listings. A browser has no way to
+discover 90 markdown files by crawling. One bundle gives the viewer instant
+full-text search, an already-computed graph, and a single network request.
+
+#### Running it
+
+```sh
+npm run repos    # refresh repo metadata  (needs network + GITHUB_TOKEN)
+npm run brain    # regenerate notes + bundle
+```
+
+`brain.py` never needs the network. If `repos.py` cannot reach GitHub, the
+previous `data/repos.json` is used unchanged and the vault still rebuilds.
+
+#### Related
+
+- [[Brain Indexer]] · [[Deploy Pipeline]] · [[Exaryn Studio]] · [[Cron Ledger]]
+
+## Cron Ledger
+
+Path: brain/systems/Cron Ledger.md · Type: system · Tags: system, cron, index
+
+Everything in the studio that runs without being asked.
+
+| Job | Schedule | Repo | Writes | Note |
+| --- | --- | --- | --- | --- |
+| Daily signal | `0 21 * * *` UTC | `exaryn-studio` | `data/digest.json`, `data/archive/` | [[Digest Bot]] |
+| Repo sweep | `0 21 * * *` UTC | `exaryn-studio` | `data/repos.json` | [[Brain Indexer]] |
+| Brain bundle | `0 21 * * *` UTC | `exaryn-studio` | `brain/**`, `data/brain.json` | [[Brain Indexer]] |
+| Daily pirate | morning | `one-piece-guess-game` | the day's character | [[Pirate Picker]] |
+| Fan suite refresh | morning | `collingwood-fan-suite` | fixtures, ladder, news | [[Fan Suite Bot]] |
+
+21:00 UTC is ~7am Melbourne in winter and ~8am in summer. Nothing here is
+precise enough for that to matter.
+
+#### Shared failure policy
+
+Every one of these jobs follows the same rule: a failed fetch is a logged
+warning, never a failed build, and the previous good data stays live. The site
+degrades to *slightly stale* rather than *broken*.
+
+#### Related
+
+- [[Daily Signal Pipeline]] · [[Brain Pipeline]] · [[Deploy Pipeline]] · [[Agent Patterns]]
+
+## Daily Signal Pipeline
+
+Path: brain/systems/Daily Signal Pipeline.md · Type: system · Tags: system, cron, feeds
+
+The studio's oldest running automation and the template for everything else.
+
+```
+21:00 UTC  cron ──► scripts/digest.py ──► ~20 RSS/Atom feeds
+                          │
+                          ├─► data/digest.json      (today)
+                          └─► data/archive/YYYY-MM-DD.json + index.json
+                                     │
+              git commit "digest: daily refresh [skip ci]"
+                                     │
+                          GitHub Pages redeploy
+```
+
+#### Design decisions worth keeping
+
+- **Per-kind caps and freshness windows.** News, papers and video each get
+  their own limits, so a prolific arXiv day cannot bury the news.
+- **Archive every run.** The feed page's day-by-day browser is free once every
+  run writes a dated file. Costs a few KB, buys a whole feature.
+- **`[skip ci]` on the commit.** Otherwise the digest commit triggers the push
+  workflow, which triggers a deploy, forever.
+- **A dead feed is a warning.** Never a build failure. Yesterday's data stays
+  live until a good run replaces it.
+
+#### Related
+
+- [[Digest Bot]] · [[Cron Ledger]] · [[Deploy Pipeline]] · [[Exaryn Studio]]
+
+## Deploy Pipeline
+
+Path: brain/systems/Deploy Pipeline.md · Type: system · Tags: system, ci, pages
+
+`.github/workflows/site.yml`. One workflow does both jobs — regenerate and
+deploy — with the trigger deciding which.
+
+| Trigger | Regenerates data? | Deploys? |
+| --- | --- | --- |
+| `push` to `main` | no | yes |
+| `schedule` (21:00 UTC) | yes | yes |
+| `workflow_dispatch` | yes | yes |
+
+A plain push deploys what you committed. A cron or manual run refreshes the
+digest, repo metadata and brain bundle first, commits anything that changed
+with `[skip ci]`, then deploys.
+
+#### Why the split
+
+Pushing should be fast and predictable — you deploy exactly what you wrote.
+Regenerating on every push would mean the site content depends on when you
+pushed, which makes rollbacks lie.
+
+#### Concurrency
+
+The `pages` concurrency group with `cancel-in-progress: false` means two runs
+queue rather than racing. A cancelled Pages deploy can leave the site on a
+half-published artifact, which is worse than waiting.
+
+#### Related
+
+- [[Daily Signal Pipeline]] · [[Brain Pipeline]] · [[GitHub Actions]] · [[Cron Ledger]]
+
+## Worktree Workflow
+
+Path: brain/systems/Worktree Workflow.md · Type: system · Tags: system, git, agents
+
+How parallel work actually happens here — the human half and the agent half of
+the same idea.
+
+#### The rule
+
+**One worktree per unit of work.** A branch you are reviewing, a branch you are
+writing, and each agent in the fleet all get their own checkout. Nothing shares
+a working tree.
+
+#### The two tools
+
+- [[Claude Work Manager]] — a worktree per Claude Code agent, steerable from a
+  phone. Solves *who is editing what*.
+- [[Worktree Optimiser]] — a container and a `<branch>.localhost` hostname per
+  worktree, routed by Traefik. Solves *what is running where*.
+
+Together: every branch is simultaneously checked out, running, and addressable.
+Reviewing a PR against your own work is two browser tabs, not a stash-and-swap.
+
+#### Why it is worth the disk
+
+Stashing is the single most common way to lose an hour. Disk is cheaper than
+that, by a lot.
+
+#### Related
+
+- [[Fleet Supervisor]] · [[Worktree MCP Server]] · [[Docker]] · [[Agent Patterns]]
+
+---
+
+Generated by scripts/llms.py from data/. Do not edit by hand.

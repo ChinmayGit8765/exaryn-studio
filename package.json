@@ -2,12 +2,13 @@
   "name": "exaryn-studio",
   "version": "1.0.0",
   "private": true,
-  "description": "Exaryn — studio portfolio, daily AI signal digest, and the Exaryn Brain (an Obsidian vault, browsable in-page). Pure static, no build step.",
+  "description": "Exaryn \u2014 studio portfolio, daily AI signal digest, and the Exaryn Brain (an Obsidian vault, browsable in-page). Pure static, no build step.",
   "scripts": {
     "dev": "npx -y serve -l 3000 .",
     "digest": "python scripts/digest.py",
     "repos": "python scripts/repos.py",
     "brain": "python scripts/brain.py",
-    "build": "python scripts/digest.py && python scripts/repos.py && python scripts/brain.py"
+    "llms": "python scripts/llms.py",
+    "build": "python scripts/digest.py && python scripts/repos.py && python scripts/brain.py && python scripts/llms.py"
   }
 }

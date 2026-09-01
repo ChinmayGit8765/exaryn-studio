@@ -43,16 +43,23 @@ jobs:
         if: github.event_name != 'push'
         run: python3 scripts/brain.py
 
+      # Stdlib-only, offline and instant, so it runs on EVERY event including a
+      # plain push: a hand edit to data/projects.json must never deploy behind a
+      # stale llms.txt. The commit step below still only runs on cron/manual —
+      # on a push the regenerated files ride along in the Pages artifact.
+      - name: Write llms.txt
+        run: python3 scripts/llms.py
+
       - name: Commit refreshed data
         if: github.event_name != 'push'
         run: |
           git config user.name "exaryn-digest-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/ brain/
+          git add data/ brain/ llms.txt llms-full.txt
           if git diff --cached --quiet; then
             echo "nothing changed, nothing to commit"
           else
-            git commit -m "data: daily refresh — digest, repos, brain [skip ci]"
+            git commit -m "data: daily refresh — digest, repos, brain, llms.txt [skip ci]"
             git push
           fi
 

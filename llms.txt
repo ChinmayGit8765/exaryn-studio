@@ -1,0 +1,90 @@
+# Exaryn
+
+> Exaryn is a one-person R&D studio run by Chinmay Purohit from Melbourne, Australia — AI agents, quant engines, daily games and developer tooling, built and written up in public. This site is the portfolio, a daily digest of AI news that rebuilds itself every morning on a cron, and the Exaryn Brain: an Obsidian vault documenting every project, agent and system, readable in the browser.
+
+This file follows the llms.txt convention (https://llmstxt.org). The site is
+pure static HTML with no build step, so every page below is directly readable —
+this file is a map of what is where, not a substitute for the pages. For the
+same map with full project descriptions and the hand-written notes from the
+vault inlined, see https://chinmaygit8765.github.io/exaryn-studio/llms-full.txt.
+
+## Pages
+
+- [Home](https://chinmaygit8765.github.io/exaryn-studio/index.html): Landing page — hero, featured work, the brain, and a teaser of the day's digest.
+- [Work — project index](https://chinmaygit8765.github.io/exaryn-studio/projects.html): Every project, filterable by category. Click a row to expand its details.
+- [Agents — the agent struct](https://chinmaygit8765.github.io/exaryn-studio/agents.html): The agent roster: tiers, the rules each one runs under, and everything built with them.
+- [The Exaryn Brain](https://chinmaygit8765.github.io/exaryn-studio/brain.html): The Obsidian vault rendered in the browser — wikilinks, backlinks, tags, search and a force-directed graph.
+- [Field Notes](https://chinmaygit8765.github.io/exaryn-studio/notes.html): Long-form essays from the workshop.
+- [The Daily Signal](https://chinmaygit8765.github.io/exaryn-studio/feed.html): The full AI digest with source and kind filters. Rebuilt every morning by a GitHub Actions cron.
+- [Play](https://chinmaygit8765.github.io/exaryn-studio/play.html): One Piece Guess, embedded and playable in the page.
+- [About](https://chinmaygit8765.github.io/exaryn-studio/about.html): Who runs this and how to get in touch.
+
+## Projects
+
+17 projects, 11 of them shipped. Full details on each are in llms-full.txt and in data/projects.json; each also has a note in the brain.
+
+- [Claude Work Manager](https://github.com/ChinmayGit8765/claude-work-manager): Run a fleet of Claude Code agents across git worktrees — from your phone. (shipped · 2026 · Agents & Tooling — Node.js, Claude Code CLI, Git worktrees, Vanilla JS)
+- [Contact Flow](https://github.com/ChinmayGit8765/ContactUsPage): A production-shaped contact and lead-capture stack, one docker compose up. (shipped · 2026 · Web & Product — TypeScript, NestJS, TypeORM, PostgreSQL)
+- [Exaryn Studio](https://chinmaygit8765.github.io/exaryn-studio/): This site — portfolio, daily AI signal digest, and the Obsidian brain. (shipped · 2026 · Infrastructure — Vanilla JS, CSS, Python, GitHub Actions)
+- [One Piece Guess](https://chinmaygit8765.github.io/one-piece-guess-game/): Wordle, but for One Piece — a daily character riddle picked by a cron job. (shipped · 2026 · Games & Play — Vanilla JS, Python, GitHub Actions, GitHub Pages)
+- [Prompterjack](https://prompterjack.com): Design multi-agent AI systems visually, export runnable code for five frameworks. (shipped · 2026 · Agents & Tooling — React, TypeScript, Cloudflare Workers, Hono)
+- [QuantLens](https://github.com/ChinmayGit8765/FinancialServicesDashboard): AI-narrated portfolio dashboard — Sharpe, VaR, Monte Carlo, factors, RAG Q&A. (shipped · 2026 · Quant & Finance — Java, Spring Boot, Spring AI, pgvector)
+- [Side by Side](https://chinmaygit8765.github.io/collingwood-fan-suite/): A self-updating Collingwood super-fan suite — reskinnable for any AFL club. (shipped · 2026 · Games & Play — Vanilla JS, Python, Squiggle API, GitHub Actions)
+- [TODO List](https://github.com/ChinmayGit8765/TODO-list): A deliberately simple todo app built like a real codebase — .NET + Angular. (shipped · 2026 · Web & Product — C#, .NET, Web API, Angular)
+- [VolForecast](https://github.com/ChinmayGit8765/VolatilityModel): MLOps platform forecasting short-horizon volatility, benchmarked honestly vs GARCH. (shipped · 2026 · Quant & Finance — Python, LightGBM, MLflow, Prefect)
+- [smartc](https://www.npmjs.com/package/smartc): CLI wizard that writes compile-verified smart contracts plus deploy docs. (shipped · 2026 · Web & Product — TypeScript, Node.js, Solidity, OpenZeppelin)
+- [JSON API Simplifier](https://github.com/ChinmayGit8765/json_api_simplifier): Strip a JSON API response down to its shape so you can read the contract. (shipped · 2025 · Agents & Tooling — Python)
+- [ALFRED](https://github.com/ChinmayGit8765/AlfredOpenSource): Local-first multi-agent life-optimization system. Your hardware, your data, no cloud. (in development · 2026 · Agents & Tooling — Python, Pydantic, Ollama, SQLite)
+- [Gartic Hands](https://github.com/Monash-FIT3170/2026W2-GarticHands): Multiplayer draw-and-guess where you draw with webcam hand tracking. (in development · 2026 · Games & Play — React, TypeScript, MediaPipe, Express)
+- [QuantFlex](https://chinmaygit8765.github.io/quantflex-site/): Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff. (in development · 2026 · Quant & Finance — Python, NumPy, JAX, FastAPI)
+- [Solo Strength Quest](https://chinmaygit8765.github.io/solo-strength-quest-play/): A fitness RPG — every workout is a quest, every PR is a boss kill. (in development · 2026 · Games & Play — Rust, Axum, SQLx, Flutter)
+- [Worktree Optimiser](https://github.com/ChinmayGit8765/worktree-optimiser): Every branch of a repo as its own containerised dev server, routed by hostname. (in development · 2026 · Agents & Tooling — Node.js, Docker, Traefik, MCP)
+- [PDF Compiler](https://github.com/ChinmayGit8765/PDFCompiler): An early browser-side document compiler — the oldest thing still in the index. (archived · 2025 · Web & Product — HTML, JavaScript)
+
+## Field notes
+
+Newest first.
+
+- [The cron job is the game engine](https://chinmaygit8765.github.io/exaryn-studio/notes/cron-games.html): A guide to building daily games and self-updating sites with nothing but GitHub Actions, a JSON file, and an idempotent script. The whole genre is three moving parts. (9 min read)
+- [Cloudflare vs AWS: the decision matrix](https://chinmaygit8765.github.io/exaryn-studio/notes/cloudflare-vs-aws.html): Why Prompterjack shifted to Workers, where AWS is still the right answer, and the evaluation framework that matters more than either logo. (10 min read)
+- [Running a fleet of Claude agents without them trampling each other](https://chinmaygit8765.github.io/exaryn-studio/notes/claude-fleet.html): Git worktrees as the isolation primitive, one agent per checkout, containerised previews routed by hostname — the concurrency model behind Claude Work Manager and Worktree Optimiser. (8 min read)
+- [Every number defends itself](https://chinmaygit8765.github.io/exaryn-studio/notes/triple-verified-greeks.html): Correctness engineering in QuantFlex: anchor tests, triple-verified Greeks, and a static import gate that keeps the 'hand-rolled' claim honest. (8 min read)
+- [Letting an agent act while you sleep](https://chinmaygit8765.github.io/exaryn-studio/notes/alfred-safety.html): ALFRED runs on my hardware and acts on its own schedule. The tool-safety envelope — allowlists, capability tiers, audit trails — is what makes that survivable. (7 min read)
+
+## The Exaryn Brain
+
+An Obsidian vault of 101 notes (19,877 words, 643 resolved wikilinks) documenting every project, agent, system and repo. Plain markdown with YAML frontmatter — clone the repo and open brain/ as a vault, or read it in the browser.
+
+- [Read it in the browser](https://chinmaygit8765.github.io/exaryn-studio/brain.html): rendered from data/brain.json, with backlinks, tags, search and a graph.
+- `brain/repos/` — 36 notes
+- `brain/projects/` — 17 notes
+- `brain/stack/` — 16 notes
+- `brain/agents/` — 14 notes
+- `brain/maps/` — 6 notes
+- `brain/notes/` — 5 notes
+- `brain/systems/` — 5 notes
+
+## Machine-readable data
+
+Every page on this site is rendered from these files. If you want the underlying
+facts rather than the prose, read these instead of scraping the HTML.
+
+- [data/projects.json](https://chinmaygit8765.github.io/exaryn-studio/data/projects.json): The portfolio, hand-maintained. Name, tagline, description, tech, status, year, category, repo, architecture, highlights, lessons, links.
+- [data/articles.json](https://chinmaygit8765.github.io/exaryn-studio/data/articles.json): Essay index — slug, title, dek, tag, date, reading time.
+- [data/brain.json](https://chinmaygit8765.github.io/exaryn-studio/data/brain.json): The whole Obsidian vault bundled for the browser: every note's frontmatter, body, resolved links and backlinks.
+- [data/repos.json](https://chinmaygit8765.github.io/exaryn-studio/data/repos.json): Generated: a sweep of the GitHub account — language breakdown, topics, licence, sizes, timestamps, README blurb.
+- [data/digest.json](https://chinmaygit8765.github.io/exaryn-studio/data/digest.json): Generated daily: the AI news, papers and videos in the current digest.
+- [data/stats.json](https://chinmaygit8765.github.io/exaryn-studio/data/stats.json): The token meter shown on the site.
+
+## Optional
+
+Secondary material — skip unless the question is specifically about it.
+
+- [The Daily Signal](https://chinmaygit8765.github.io/exaryn-studio/feed.html): 69 items in the current digest, pulled from RSS and Atom feeds by scripts/digest.py each morning. The contents change daily; read data/digest.json for the live set rather than relying on anything cached here.
+- [Repo metadata](https://chinmaygit8765.github.io/exaryn-studio/data/repos.json): 36 repositories swept from the GitHub API, refreshed on the same daily cron.
+- [Interactive demos](https://chinmaygit8765.github.io/exaryn-studio/demos/): recorded walkthroughs of QuantFlex, Prompterjack and Solo Strength Quest.
+- [Source](https://github.com/ChinmayGit8765/exaryn-studio): the site itself — static HTML, no framework, no build step.
+
+---
+
+Generated by scripts/llms.py from data/. Do not edit by hand.
