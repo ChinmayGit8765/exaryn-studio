@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-08-31T21:09:32+00:00",
+ "generated_at": "2026-09-01T11:46:36+00:00",
  "vault": "brain",
  "home": "Home",
- "count": 101,
- "words": 19877,
- "edges": 643,
+ "count": 102,
+ "words": 20216,
+ "edges": 647,
  "folders": {
   "": 2,
   "agents": 14,
   "maps": 6,
   "notes": 5,
-  "projects": 17,
+  "projects": 18,
   "repos": 36,
   "stack": 16,
   "systems": 5
@@ -18,7 +18,7 @@
  "tags": {
   "repo": 36,
   "public": 22,
-  "project": 17,
+  "project": 18,
   "stack": 17,
   "private": 14,
   "agent": 10,
@@ -26,8 +26,8 @@
   "cron": 8,
   "moc": 8,
   "agents-tooling": 5,
+  "games-play": 5,
   "system": 5,
-  "games-play": 4,
   "infra": 4,
   "quant-finance": 4,
   "web-product": 4,
@@ -98,167 +98,6 @@
  },
  "unresolved": {},
  "notes": [
-  {
-   "id": "Home",
-   "title": "Home",
-   "path": "brain/Home.md",
-   "folder": "",
-   "type": "map",
-   "tags": [
-    "entry",
-    "moc"
-   ],
-   "aliases": [],
-   "meta": {},
-   "generated": false,
-   "body": "# Exaryn \u2733 \u2014 the brain\n\nEverything the studio has built, why it was built, and how the pieces connect.\nWritten as a linked vault rather than a list, because most of what matters here\nis the wiring between projects rather than any one project.\n\n> [!tip] New here?\n> Start with [[Agent Structure]] \u2014 it is the spine of the whole vault.\n\n## The four hubs\n\n- **[[Agent Structure]]** \u2014 every autonomous system built here, what drives it, and what it is allowed to touch.\n- **[[Projects Map]]** \u2014 the full project index, grouped by what kind of thing it is.\n- **[[Systems Map]]** \u2014 the pipelines, crons and deploys that run without anyone watching.\n- **[[Stack Map]]** \u2014 the technologies, and which projects lean on each.\n\n## The rest\n\n- [[Repos Map]] \u2014 all 35 GitHub repositories, including the dead ends.\n- [[Timeline]] \u2014 what got built when.\n- [[Roadmap]] \u2014 the todo list. What is actually next.\n- [[Build Log]] \u2014 a running record of what changed and why.\n- [[Studio Principles]] \u2014 the handful of rules that survived contact with reality.\n- [[Open Questions]] \u2014 things not resolved yet.\n- [[Glossary]] \u2014 the vocabulary this vault assumes.\n\n## The shape of it\n\nSeventeen projects across five categories, ten autonomous agents, five\nscheduled systems, thirty-five repositories. One person. The pattern that\nrepeats everywhere:\n\n> **Cron job \u2192 Python script \u2192 committed JSON \u2192 static site.**\n\nNo servers to keep alive, no databases to back up, no bill when nobody visits.\n[[Daily Signal Pipeline]] and [[Pirate Picker]] and [[Fan Suite Bot]] are all\nthe same idea wearing different hats \u2014 see [[Agent Patterns]].\n",
-   "words": 275,
-   "links": [
-    "maps/Agent Structure",
-    "maps/Projects Map",
-    "maps/Systems Map",
-    "maps/Stack Map",
-    "maps/Repos Map",
-    "maps/Timeline",
-    "notes/Roadmap",
-    "notes/Build Log",
-    "notes/Studio Principles",
-    "notes/Open Questions",
-    "notes/Glossary",
-    "systems/Daily Signal Pipeline",
-    "agents/Pirate Picker",
-    "agents/Fan Suite Bot",
-    "agents/Agent Patterns"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "README",
-    "agents/Agent Ledger",
-    "maps/Projects Map",
-    "maps/Repos Map",
-    "maps/Stack Map",
-    "maps/Systems Map",
-    "maps/Timeline",
-    "notes/Build Log",
-    "notes/Glossary",
-    "notes/Roadmap",
-    "notes/Studio Principles",
-    "projects/ALFRED",
-    "projects/Claude Work Manager",
-    "projects/Contact Flow",
-    "projects/Exaryn Studio",
-    "projects/Gartic Hands",
-    "projects/JSON API Simplifier",
-    "projects/One Piece Guess",
-    "projects/PDF Compiler",
-    "projects/Prompterjack",
-    "projects/QuantFlex",
-    "projects/QuantLens",
-    "projects/Side by Side",
-    "projects/Solo Strength Quest",
-    "projects/TODO List",
-    "projects/VolForecast",
-    "projects/Worktree Optimiser",
-    "projects/smartc",
-    "repos/AlfredOpenSource",
-    "repos/ChinmayGit8765",
-    "repos/ContactUsPage",
-    "repos/FinancialServicesDashboard",
-    "repos/GymAPP",
-    "repos/MyBlog",
-    "repos/PDFCompiler",
-    "repos/RPGGame",
-    "repos/SmartContract-Creator",
-    "repos/TODO-list",
-    "repos/VolatilityModel",
-    "repos/VueSkillShowcase",
-    "repos/ai_development_project_one",
-    "repos/chinmay-tech-portfolio",
-    "repos/claude-code-test",
-    "repos/claude-work-manager",
-    "repos/collingwood-fan-suite",
-    "repos/coolAudioApplication",
-    "repos/exaryn-studio",
-    "repos/exaryn-website",
-    "repos/financial-services-lkg-test",
-    "repos/gymapp-v2",
-    "repos/json_api_simplifier",
-    "repos/one-piece-guess-game",
-    "repos/promptifyme",
-    "repos/quantflex-site",
-    "repos/quantflex",
-    "repos/solo-strength-quest-play",
-    "repos/solo-strength-quest",
-    "repos/solo_strength-quest-app",
-    "repos/solo_strength-quest-back-end",
-    "repos/solo_strength-quest",
-    "repos/strength-quest",
-    "repos/study-tracker",
-    "repos/thequantflex",
-    "repos/worktree-optimiser"
-   ]
-  },
-  {
-   "id": "README",
-   "title": "Exaryn Brain",
-   "path": "brain/README.md",
-   "folder": "",
-   "type": "meta",
-   "tags": [
-    "meta",
-    "vault"
-   ],
-   "aliases": [],
-   "meta": {},
-   "generated": false,
-   "body": "# Exaryn Brain\n\nThis folder is a real [Obsidian](https://obsidian.md) vault. Every note is a\nplain `.md` file with YAML frontmatter and `[[wikilinks]]` \u2014 no plugins\nrequired, no proprietary format, nothing that stops working if Obsidian does.\n\n## Two ways to read it\n\n| Where | How |\n| --- | --- |\n| **In Obsidian** | *Open folder as vault* \u2192 pick this `brain/` directory. Graph view, backlinks and search all work out of the box. |\n| **In the browser** | [`/brain.html`](../brain.html) on the site \u2014 the same notes, with backlinks, tags, search and a graph, rendered from `data/brain.json`. |\n\n## Layout\n\n```\nbrain/\n  Home.md            entry point \u2014 start here\n  maps/              maps of content: the hubs everything hangs off\n  agents/            the agent structure \u2014 every autonomous thing built here\n  projects/          one note per project        (generated from data/projects.json)\n  repos/             one note per GitHub repo    (generated from data/repos.json)\n  systems/           the pipelines and cron jobs that keep the studio running\n  stack/             one note per technology, backlinked to what uses it\n  notes/             principles, roadmap, build log, glossary, open questions\n```\n\n## Generated vs hand-written\n\nNotes under `projects/` and `repos/`, plus a few maps, carry\n`generated: true` in their frontmatter and a banner at the top. **Do not edit\nthose by hand** \u2014 they are rebuilt from `data/projects.json` and\n`data/repos.json` by `scripts/brain.py`, and your edits will be overwritten.\n\nEverything else is hand-written and safe to edit in Obsidian.\n\n## Rebuilding\n\n```sh\nnpm run repos    # refresh data/repos.json from the GitHub API\nnpm run brain    # regenerate the generated notes + bundle data/brain.json\n```\n\n`npm run brain` is what makes the vault visible on the site: it walks every\n`.md` file here, resolves the wikilinks into a graph, and writes one\n`data/brain.json` the browser reads. The morning cron runs both.\n\nSee [[Brain Pipeline]] for how that works, and [[Home]] to start reading.\n",
-   "words": 307,
-   "links": [
-    "systems/Brain Pipeline",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": []
-  },
-  {
-   "id": "agents/ALFRED Conductor",
-   "title": "ALFRED Conductor",
-   "path": "brain/agents/ALFRED Conductor.md",
-   "folder": "agents",
-   "type": "agent",
-   "tags": [
-    "agent",
-    "local-first",
-    "planning"
-   ],
-   "aliases": [],
-   "meta": {
-    "tier": 3,
-    "project": "ALFRED",
-    "repo": "ChinmayGit8765/AlfredOpenSource"
-   },
-   "generated": false,
-   "body": "# ALFRED Conductor\n\nThe only tier-3 agent in the studio: it plans across time, acts on its own\nschedule, and adapts from what actually happened.\n\n## The loop\n\n```\ngoal \u2500\u2500\u25ba specialists decompose \u2500\u2500\u25ba Conductor reconciles vs capacity\n                                          \u2502\n                            delivered over Discord / Telegram\n                                          \u2502\n                        observe outcomes \u2500\u2500\u2518  (and re-plan)\n```\n\n## The Conductor's actual job\n\nSpecialists are optimists. Each one produces a plan that is reasonable in\nisolation, and the sum of them is a 60-hour week. The Conductor's only job is\nto reconcile those plans against real capacity and refuse the surplus \u2014 see\n[[Agent Patterns|plan against capacity, not ambition]].\n\n## Safety envelope\n\nEvery tool call passes the allowlist, capability tier and audit trail described\nin [[Tool Safety]]. Models run locally through [[Ollama]]; nothing leaves the\nmachine. 529 tests run offline in CI, envelope included.\n\n## Related\n\n- [[ALFRED]] \u00b7 [[Tool Safety]] \u00b7 [[Agent Structure]] \u00b7 [[Python]] \u00b7 [[MCP]]\n",
-   "words": 151,
-   "links": [
-    "agents/Agent Patterns",
-    "agents/Tool Safety",
-    "stack/Ollama",
-    "projects/ALFRED",
-    "maps/Agent Structure",
-    "stack/Python",
-    "stack/MCP"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "agents/Agent Ledger",
-    "agents/Agent Patterns",
-    "agents/Tool Safety",
-    "maps/Agent Structure",
-    "notes/Open Questions",
-    "projects/ALFRED"
-   ]
-  },
   {
    "id": "agents/Agent Ledger",
    "title": "Agent Ledger",
@@ -341,9 +180,8 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "Home",
-    "agents/ALFRED Conductor",
     "agents/Agent Ledger",
+    "agents/ALFRED Conductor",
     "agents/Brain Indexer",
     "agents/Context Engineering",
     "agents/Digest Bot",
@@ -352,8 +190,9 @@
     "agents/Pirate Picker",
     "agents/Prompterjack Crew Designer",
     "agents/QuantLens Narrator",
-    "agents/Tool Safety",
     "agents/smartc Patcher",
+    "agents/Tool Safety",
+    "Home",
     "maps/Agent Structure",
     "maps/Systems Map",
     "notes/Build Log",
@@ -361,6 +200,45 @@
     "stack/GitHub Actions",
     "systems/Cron Ledger",
     "systems/Worktree Workflow"
+   ]
+  },
+  {
+   "id": "agents/ALFRED Conductor",
+   "title": "ALFRED Conductor",
+   "path": "brain/agents/ALFRED Conductor.md",
+   "folder": "agents",
+   "type": "agent",
+   "tags": [
+    "agent",
+    "local-first",
+    "planning"
+   ],
+   "aliases": [],
+   "meta": {
+    "tier": 3,
+    "project": "ALFRED",
+    "repo": "ChinmayGit8765/AlfredOpenSource"
+   },
+   "generated": false,
+   "body": "# ALFRED Conductor\n\nThe only tier-3 agent in the studio: it plans across time, acts on its own\nschedule, and adapts from what actually happened.\n\n## The loop\n\n```\ngoal \u2500\u2500\u25ba specialists decompose \u2500\u2500\u25ba Conductor reconciles vs capacity\n                                          \u2502\n                            delivered over Discord / Telegram\n                                          \u2502\n                        observe outcomes \u2500\u2500\u2518  (and re-plan)\n```\n\n## The Conductor's actual job\n\nSpecialists are optimists. Each one produces a plan that is reasonable in\nisolation, and the sum of them is a 60-hour week. The Conductor's only job is\nto reconcile those plans against real capacity and refuse the surplus \u2014 see\n[[Agent Patterns|plan against capacity, not ambition]].\n\n## Safety envelope\n\nEvery tool call passes the allowlist, capability tier and audit trail described\nin [[Tool Safety]]. Models run locally through [[Ollama]]; nothing leaves the\nmachine. 529 tests run offline in CI, envelope included.\n\n## Related\n\n- [[ALFRED]] \u00b7 [[Tool Safety]] \u00b7 [[Agent Structure]] \u00b7 [[Python]] \u00b7 [[MCP]]\n",
+   "words": 151,
+   "links": [
+    "agents/Agent Patterns",
+    "agents/Tool Safety",
+    "stack/Ollama",
+    "projects/ALFRED",
+    "maps/Agent Structure",
+    "stack/Python",
+    "stack/MCP"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "agents/Agent Ledger",
+    "agents/Agent Patterns",
+    "agents/Tool Safety",
+    "maps/Agent Structure",
+    "notes/Open Questions",
+    "projects/ALFRED"
    ]
   },
   {
@@ -505,10 +383,10 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "Home",
     "agents/Agent Ledger",
     "agents/Agent Patterns",
     "agents/Pirate Picker",
+    "Home",
     "maps/Agent Structure",
     "projects/Side by Side",
     "stack/Python",
@@ -582,10 +460,10 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "Home",
     "agents/Agent Ledger",
     "agents/Agent Patterns",
     "agents/Fan Suite Bot",
+    "Home",
     "maps/Agent Structure",
     "projects/One Piece Guess",
     "stack/Python",
@@ -667,6 +545,42 @@
    ]
   },
   {
+   "id": "agents/smartc Patcher",
+   "title": "smartc Patcher",
+   "path": "brain/agents/smartc Patcher.md",
+   "folder": "agents",
+   "type": "agent",
+   "tags": [
+    "agent",
+    "local-first",
+    "solidity"
+   ],
+   "aliases": [],
+   "meta": {
+    "tier": 2,
+    "project": "smartc",
+    "repo": "ChinmayGit8765/SmartContract-Creator"
+   },
+   "generated": false,
+   "body": "# smartc Patcher\n\nThe optional AI layer in [[smartc]]. Opt-in, local-only, and gated behind a\ncompiler.\n\n## The gate\n\n`solc` compiles every Solidity contract **in process, before anything touches\ndisk**. If the patched contract does not compile, it is not written. The model\ngets to propose; the compiler decides. See [[Agent Patterns|gate before write]].\n\n## Local only\n\nPatching runs through [[Ollama]] on your own machine. Contract source \u2014 often\nthe most sensitive thing in the repo \u2014 never goes to a third party.\n\n## Why the wizard is not AI\n\nThe templates (ERC-20, ERC-721, ERC-1155, Solana SPL) are deterministic on\npurpose. The model is there for the deltas nobody templated, not for the\nstandard path where a template is simply more trustworthy.\n\n## Related\n\n- [[smartc]] \u00b7 [[Agent Structure]] \u00b7 [[TypeScript]] \u00b7 [[Ollama]]\n",
+   "words": 133,
+   "links": [
+    "projects/smartc",
+    "agents/Agent Patterns",
+    "stack/Ollama",
+    "maps/Agent Structure",
+    "stack/TypeScript"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "agents/Agent Ledger",
+    "agents/Agent Patterns",
+    "maps/Agent Structure",
+    "notes/Studio Principles",
+    "projects/smartc"
+   ]
+  },
+  {
    "id": "agents/Tool Safety",
    "title": "Tool Safety",
    "path": "brain/agents/Tool Safety.md",
@@ -694,9 +608,9 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "agents/ALFRED Conductor",
     "agents/Agent Ledger",
     "agents/Agent Patterns",
+    "agents/ALFRED Conductor",
     "maps/Agent Structure",
     "notes/Glossary",
     "notes/Open Questions",
@@ -745,39 +659,104 @@
    ]
   },
   {
-   "id": "agents/smartc Patcher",
-   "title": "smartc Patcher",
-   "path": "brain/agents/smartc Patcher.md",
-   "folder": "agents",
-   "type": "agent",
+   "id": "Home",
+   "title": "Home",
+   "path": "brain/Home.md",
+   "folder": "",
+   "type": "map",
    "tags": [
-    "agent",
-    "local-first",
-    "solidity"
+    "entry",
+    "moc"
    ],
    "aliases": [],
-   "meta": {
-    "tier": 2,
-    "project": "smartc",
-    "repo": "ChinmayGit8765/SmartContract-Creator"
-   },
+   "meta": {},
    "generated": false,
-   "body": "# smartc Patcher\n\nThe optional AI layer in [[smartc]]. Opt-in, local-only, and gated behind a\ncompiler.\n\n## The gate\n\n`solc` compiles every Solidity contract **in process, before anything touches\ndisk**. If the patched contract does not compile, it is not written. The model\ngets to propose; the compiler decides. See [[Agent Patterns|gate before write]].\n\n## Local only\n\nPatching runs through [[Ollama]] on your own machine. Contract source \u2014 often\nthe most sensitive thing in the repo \u2014 never goes to a third party.\n\n## Why the wizard is not AI\n\nThe templates (ERC-20, ERC-721, ERC-1155, Solana SPL) are deterministic on\npurpose. The model is there for the deltas nobody templated, not for the\nstandard path where a template is simply more trustworthy.\n\n## Related\n\n- [[smartc]] \u00b7 [[Agent Structure]] \u00b7 [[TypeScript]] \u00b7 [[Ollama]]\n",
-   "words": 133,
+   "body": "# Exaryn \u2733 \u2014 the brain\n\nEverything the studio has built, why it was built, and how the pieces connect.\nWritten as a linked vault rather than a list, because most of what matters here\nis the wiring between projects rather than any one project.\n\n> [!tip] New here?\n> Start with [[Agent Structure]] \u2014 it is the spine of the whole vault.\n\n## The four hubs\n\n- **[[Agent Structure]]** \u2014 every autonomous system built here, what drives it, and what it is allowed to touch.\n- **[[Projects Map]]** \u2014 the full project index, grouped by what kind of thing it is.\n- **[[Systems Map]]** \u2014 the pipelines, crons and deploys that run without anyone watching.\n- **[[Stack Map]]** \u2014 the technologies, and which projects lean on each.\n\n## The rest\n\n- [[Repos Map]] \u2014 all 35 GitHub repositories, including the dead ends.\n- [[Timeline]] \u2014 what got built when.\n- [[Roadmap]] \u2014 the todo list. What is actually next.\n- [[Build Log]] \u2014 a running record of what changed and why.\n- [[Studio Principles]] \u2014 the handful of rules that survived contact with reality.\n- [[Open Questions]] \u2014 things not resolved yet.\n- [[Glossary]] \u2014 the vocabulary this vault assumes.\n\n## The shape of it\n\nSeventeen projects across five categories, ten autonomous agents, five\nscheduled systems, thirty-five repositories. One person. The pattern that\nrepeats everywhere:\n\n> **Cron job \u2192 Python script \u2192 committed JSON \u2192 static site.**\n\nNo servers to keep alive, no databases to back up, no bill when nobody visits.\n[[Daily Signal Pipeline]] and [[Pirate Picker]] and [[Fan Suite Bot]] are all\nthe same idea wearing different hats \u2014 see [[Agent Patterns]].\n",
+   "words": 275,
    "links": [
-    "projects/smartc",
-    "agents/Agent Patterns",
-    "stack/Ollama",
     "maps/Agent Structure",
-    "stack/TypeScript"
+    "maps/Projects Map",
+    "maps/Systems Map",
+    "maps/Stack Map",
+    "maps/Repos Map",
+    "maps/Timeline",
+    "notes/Roadmap",
+    "notes/Build Log",
+    "notes/Studio Principles",
+    "notes/Open Questions",
+    "notes/Glossary",
+    "systems/Daily Signal Pipeline",
+    "agents/Pirate Picker",
+    "agents/Fan Suite Bot",
+    "agents/Agent Patterns"
    ],
    "unresolved": [],
    "backlinks": [
     "agents/Agent Ledger",
-    "agents/Agent Patterns",
-    "maps/Agent Structure",
+    "maps/Projects Map",
+    "maps/Repos Map",
+    "maps/Stack Map",
+    "maps/Systems Map",
+    "maps/Timeline",
+    "notes/Build Log",
+    "notes/Glossary",
+    "notes/Roadmap",
     "notes/Studio Principles",
-    "projects/smartc"
+    "projects/ALFRED",
+    "projects/Claude Work Manager",
+    "projects/Contact Flow",
+    "projects/Exaryn Studio",
+    "projects/Gartic Hands",
+    "projects/holdem-ml",
+    "projects/JSON API Simplifier",
+    "projects/One Piece Guess",
+    "projects/PDF Compiler",
+    "projects/Prompterjack",
+    "projects/QuantFlex",
+    "projects/QuantLens",
+    "projects/Side by Side",
+    "projects/smartc",
+    "projects/Solo Strength Quest",
+    "projects/TODO List",
+    "projects/VolForecast",
+    "projects/Worktree Optimiser",
+    "README",
+    "repos/ai_development_project_one",
+    "repos/AlfredOpenSource",
+    "repos/chinmay-tech-portfolio",
+    "repos/ChinmayGit8765",
+    "repos/claude-code-test",
+    "repos/claude-work-manager",
+    "repos/collingwood-fan-suite",
+    "repos/ContactUsPage",
+    "repos/coolAudioApplication",
+    "repos/exaryn-studio",
+    "repos/exaryn-website",
+    "repos/financial-services-lkg-test",
+    "repos/FinancialServicesDashboard",
+    "repos/gymapp-v2",
+    "repos/GymAPP",
+    "repos/json_api_simplifier",
+    "repos/MyBlog",
+    "repos/one-piece-guess-game",
+    "repos/PDFCompiler",
+    "repos/promptifyme",
+    "repos/quantflex-site",
+    "repos/quantflex",
+    "repos/RPGGame",
+    "repos/SmartContract-Creator",
+    "repos/solo-strength-quest-play",
+    "repos/solo-strength-quest",
+    "repos/solo_strength-quest-app",
+    "repos/solo_strength-quest-back-end",
+    "repos/solo_strength-quest",
+    "repos/strength-quest",
+    "repos/study-tracker",
+    "repos/thequantflex",
+    "repos/TODO-list",
+    "repos/VolatilityModel",
+    "repos/VueSkillShowcase",
+    "repos/worktree-optimiser"
    ]
   },
   {
@@ -816,16 +795,16 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "Home",
-    "agents/ALFRED Conductor",
     "agents/Agent Ledger",
     "agents/Agent Patterns",
+    "agents/ALFRED Conductor",
     "agents/Fleet Supervisor",
     "agents/Prompterjack Crew Designer",
     "agents/QuantLens Narrator",
+    "agents/smartc Patcher",
     "agents/Tool Safety",
     "agents/Worktree MCP Server",
-    "agents/smartc Patcher",
+    "Home",
     "maps/Projects Map",
     "maps/Systems Map",
     "notes/Glossary",
@@ -849,8 +828,8 @@
     "generated": true
    },
    "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/projects.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# Projects Map\n\nEvery project in the index \u2014 17 of them, grouped by what kind of thing it is. The full repository list, dead ends included, is in [[Repos Map]].\n\n## Agents & Tooling\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[Prompterjack]] | Design multi-agent AI systems visually, export runnable code for five frameworks. | shipped | 2026 |\n| [[Claude Work Manager]] | Run a fleet of Claude Code agents across git worktrees \u2014 from your phone. | shipped | 2026 |\n| [[Worktree Optimiser]] | Every branch of a repo as its own containerised dev server, routed by hostname. | in development | 2026 |\n| [[ALFRED]] | Local-first multi-agent life-optimization system. Your hardware, your data, no cloud. | in development | 2026 |\n| [[JSON API Simplifier]] | Strip a JSON API response down to its shape so you can read the contract. | shipped | 2025 |\n\n## Games & Play\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[Solo Strength Quest]] | A fitness RPG \u2014 every workout is a quest, every PR is a boss kill. | in development | 2026 |\n| [[One Piece Guess]] | Wordle, but for One Piece \u2014 a daily character riddle picked by a cron job. | shipped | 2026 |\n| [[Side by Side]] | A self-updating Collingwood super-fan suite \u2014 reskinnable for any AFL club. | shipped | 2026 |\n| [[Gartic Hands]] | Multiplayer draw-and-guess where you draw with webcam hand tracking. | in development | 2026 |\n\n## Infrastructure\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[Exaryn Studio]] | This site \u2014 portfolio, daily AI signal digest, and the Obsidian brain. | shipped | 2026 |\n\n## Quant & Finance\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[QuantFlex]] | Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff. | in development | 2026 |\n| [[QuantLens]] | AI-narrated portfolio dashboard \u2014 Sharpe, VaR, Monte Carlo, factors, RAG Q&A. | shipped | 2026 |\n| [[VolForecast]] | MLOps platform forecasting short-horizon volatility, benchmarked honestly vs GARCH. | shipped | 2026 |\n\n## Web & Product\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[smartc]] | CLI wizard that writes compile-verified smart contracts plus deploy docs. | shipped | 2026 |\n| [[Contact Flow]] | A production-shaped contact and lead-capture stack, one docker compose up. | shipped | 2026 |\n| [[TODO List]] | A deliberately simple todo app built like a real codebase \u2014 .NET + Angular. | shipped | 2026 |\n| [[PDF Compiler]] | An early browser-side document compiler \u2014 the oldest thing still in the index. | archived | 2025 |\n\n## Related\n\n[[Agent Structure]] \u00b7 [[Stack Map]] \u00b7 [[Timeline]] \u00b7 [[Home]]\n",
-   "words": 541,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/projects.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# Projects Map\n\nEvery project in the index \u2014 18 of them, grouped by what kind of thing it is. The full repository list, dead ends included, is in [[Repos Map]].\n\n## Agents & Tooling\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[Prompterjack]] | Design multi-agent AI systems visually, export runnable code for five frameworks. | shipped | 2026 |\n| [[Claude Work Manager]] | Run a fleet of Claude Code agents across git worktrees \u2014 from your phone. | shipped | 2026 |\n| [[Worktree Optimiser]] | Every branch of a repo as its own containerised dev server, routed by hostname. | in development | 2026 |\n| [[ALFRED]] | Local-first multi-agent life-optimization system. Your hardware, your data, no cloud. | in development | 2026 |\n| [[JSON API Simplifier]] | Strip a JSON API response down to its shape so you can read the contract. | shipped | 2025 |\n\n## Games & Play\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[Solo Strength Quest]] | A fitness RPG \u2014 every workout is a quest, every PR is a boss kill. | in development | 2026 |\n| [[One Piece Guess]] | Wordle, but for One Piece \u2014 a daily character riddle picked by a cron job. | shipped | 2026 |\n| [[Side by Side]] | A self-updating Collingwood super-fan suite \u2014 reskinnable for any AFL club. | shipped | 2026 |\n| [[holdem-ml]] | Texas Hold'em vs bots trained from scratch \u2014 no PyTorch, every gradient hand-checked. | in development | 2026 |\n| [[Gartic Hands]] | Multiplayer draw-and-guess where you draw with webcam hand tracking. | in development | 2026 |\n\n## Infrastructure\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[Exaryn Studio]] | This site \u2014 portfolio, daily AI signal digest, and the Obsidian brain. | shipped | 2026 |\n\n## Quant & Finance\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[QuantFlex]] | Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff. | in development | 2026 |\n| [[QuantLens]] | AI-narrated portfolio dashboard \u2014 Sharpe, VaR, Monte Carlo, factors, RAG Q&A. | shipped | 2026 |\n| [[VolForecast]] | MLOps platform forecasting short-horizon volatility, benchmarked honestly vs GARCH. | shipped | 2026 |\n\n## Web & Product\n\n| Project | What it is | Status | Year |\n| --- | --- | --- | --- |\n| [[smartc]] | CLI wizard that writes compile-verified smart contracts plus deploy docs. | shipped | 2026 |\n| [[Contact Flow]] | A production-shaped contact and lead-capture stack, one docker compose up. | shipped | 2026 |\n| [[TODO List]] | A deliberately simple todo app built like a real codebase \u2014 .NET + Angular. | shipped | 2026 |\n| [[PDF Compiler]] | An early browser-side document compiler \u2014 the oldest thing still in the index. | archived | 2025 |\n\n## Related\n\n[[Agent Structure]] \u00b7 [[Stack Map]] \u00b7 [[Timeline]] \u00b7 [[Home]]\n",
+   "words": 563,
    "links": [
     "maps/Repos Map",
     "projects/Prompterjack",
@@ -861,6 +840,7 @@
     "projects/Solo Strength Quest",
     "projects/One Piece Guess",
     "projects/Side by Side",
+    "projects/holdem-ml",
     "projects/Gartic Hands",
     "projects/Exaryn Studio",
     "projects/QuantFlex",
@@ -888,6 +868,7 @@
     "projects/Contact Flow",
     "projects/Exaryn Studio",
     "projects/Gartic Hands",
+    "projects/holdem-ml",
     "projects/JSON API Simplifier",
     "projects/One Piece Guess",
     "projects/PDF Compiler",
@@ -895,11 +876,11 @@
     "projects/QuantFlex",
     "projects/QuantLens",
     "projects/Side by Side",
+    "projects/smartc",
     "projects/Solo Strength Quest",
     "projects/TODO List",
     "projects/VolForecast",
-    "projects/Worktree Optimiser",
-    "projects/smartc"
+    "projects/Worktree Optimiser"
    ]
   },
   {
@@ -983,33 +964,30 @@
     "maps/Timeline",
     "notes/Open Questions",
     "notes/Roadmap",
-    "repos/AlfredOpenSource",
-    "repos/ChinmayGit8765",
-    "repos/ContactUsPage",
-    "repos/FinancialServicesDashboard",
-    "repos/GymAPP",
-    "repos/MyBlog",
-    "repos/PDFCompiler",
-    "repos/RPGGame",
-    "repos/SmartContract-Creator",
-    "repos/TODO-list",
-    "repos/VolatilityModel",
-    "repos/VueSkillShowcase",
     "repos/ai_development_project_one",
+    "repos/AlfredOpenSource",
     "repos/chinmay-tech-portfolio",
+    "repos/ChinmayGit8765",
     "repos/claude-code-test",
     "repos/claude-work-manager",
     "repos/collingwood-fan-suite",
+    "repos/ContactUsPage",
     "repos/coolAudioApplication",
     "repos/exaryn-studio",
     "repos/exaryn-website",
     "repos/financial-services-lkg-test",
+    "repos/FinancialServicesDashboard",
     "repos/gymapp-v2",
+    "repos/GymAPP",
     "repos/json_api_simplifier",
+    "repos/MyBlog",
     "repos/one-piece-guess-game",
+    "repos/PDFCompiler",
     "repos/promptifyme",
     "repos/quantflex-site",
     "repos/quantflex",
+    "repos/RPGGame",
+    "repos/SmartContract-Creator",
     "repos/solo-strength-quest-play",
     "repos/solo-strength-quest",
     "repos/solo_strength-quest-app",
@@ -1018,6 +996,9 @@
     "repos/strength-quest",
     "repos/study-tracker",
     "repos/thequantflex",
+    "repos/TODO-list",
+    "repos/VolatilityModel",
+    "repos/VueSkillShowcase",
     "repos/worktree-optimiser"
    ]
   },
@@ -1371,9 +1352,9 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "Home",
     "agents/Context Engineering",
     "agents/Tool Safety",
+    "Home",
     "maps/Agent Structure",
     "maps/Stack Map",
     "maps/Systems Map",
@@ -1415,8 +1396,8 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "agents/ALFRED Conductor",
     "agents/Agent Ledger",
+    "agents/ALFRED Conductor",
     "agents/Tool Safety",
     "maps/Projects Map",
     "maps/Repos Map",
@@ -1591,6 +1572,37 @@
     "stack/Docker",
     "stack/React",
     "stack/TypeScript"
+   ]
+  },
+  {
+   "id": "projects/holdem-ml",
+   "title": "holdem-ml",
+   "path": "brain/projects/holdem-ml.md",
+   "folder": "projects",
+   "type": "project",
+   "tags": [
+    "project",
+    "games-play"
+   ],
+   "aliases": [],
+   "meta": {
+    "status": "in development",
+    "year": 2026,
+    "category": "Games & Play",
+    "repo": "ChinmayGit8765/holdem-ml",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/projects.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# holdem-ml\n\n*Texas Hold'em vs bots trained from scratch \u2014 no PyTorch, every gradient hand-checked.*\n\nFull no-limit Hold'em (terminal + browser multiplayer) against a from-scratch poker AI: hand-written NN framework, Monte-Carlo CFR blueprint distilled into a self-play RL policy, online opponent modelling that learns your specific leaks, card vision that reads table photos, and an analyser that grades every decision in big blinds.\n\n## How it is put together\n\nEverything from scratch in NumPy: a hand-written NN framework (gradients checked against finite differences to 1e-6), external-sampling Monte-Carlo CFR over an engineered abstraction, REINFORCE self-play on the real engine, and a two-headed rank/suit CNN for card vision. Multiplayer table served on the Python standard library.\n\n## What is actually in it\n\n- Hand evaluator exact over all 2,598,960 five-card hands; ~450k evals/sec in pure NumPy\n- Trained bot beats every baseline; the difficulty ladder is real \u2014 novice loses where pro crushes\n- Opponent model learns you mid-game from public info only, then bluffs you exactly as often as you deserve\n- 98.9% end-to-end card reading on rendered tables, validated on deck styles it never trained on\n- Every README number produced by benchmark code in the repo, honest-limitations section included\n\n## What it taught\n\n> Measuring beats guessing: sweeping the blueprint blend weight found the strong bot played better with none of it \u2014 so the textbook-but-exploitable blueprint became the personality of the easy levels instead.\n\n## Facts\n\n| | |\n| --- | --- |\n| Status | in development |\n| Year | 2026 |\n| Dev time | days, ongoing |\n| Category | Games & Play |\n| Repository | `ChinmayGit8765/holdem-ml` |\n\n## Stack\n\n[[Python]] \u00b7 [[NumPy]] \u00b7 CFR \u00b7 Self-play RL \u00b7 Computer vision\n\n## Links\n\n[Source](https://github.com/ChinmayGit8765/holdem-ml)\n\n## Related\n\n[[Projects Map]] \u00b7 [[Home]]\n",
+   "words": 317,
+   "links": [
+    "stack/Python",
+    "maps/Projects Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Projects Map"
    ]
   },
   {
@@ -1844,9 +1856,9 @@
     "stack/Docker",
     "stack/Java",
     "stack/MCP",
+    "stack/pgvector",
     "stack/PostgreSQL",
-    "stack/Vue",
-    "stack/pgvector"
+    "stack/Vue"
    ]
   },
   {
@@ -1889,6 +1901,47 @@
     "notes/Studio Principles",
     "repos/collingwood-fan-suite",
     "stack/GitHub Actions"
+   ]
+  },
+  {
+   "id": "projects/smartc",
+   "title": "smartc",
+   "path": "brain/projects/smartc.md",
+   "folder": "projects",
+   "type": "project",
+   "tags": [
+    "project",
+    "web-product"
+   ],
+   "aliases": [],
+   "meta": {
+    "status": "shipped",
+    "year": 2026,
+    "category": "Web & Product",
+    "repo": "ChinmayGit8765/SmartContract-Creator",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/projects.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# smartc\n\n*CLI wizard that writes compile-verified smart contracts plus deploy docs.*\n\nSingle-binary Node CLI: short wizard in, one contract file plus a DEPLOY.md with copy-pasteable commands out. ERC-20/721/1155 and Solana SPL templates, every Solidity contract compiled in-process before it touches disk. Optional local-only AI patching via Ollama.\n\n## How it is put together\n\nOne Node binary. Wizard collects intent, templates emit Solidity or Anchor, solc compiles in-process, and only verified output hits disk. Ollama patching is opt-in and local-only.\n\n## What is actually in it\n\n- ERC-20, ERC-721, ERC-1155 and Solana SPL templates\n- Every Solidity contract compiled in-process before it's written out\n- Emits a DEPLOY.md with copy-pasteable commands, not just a contract\n- Optional AI patching runs locally through Ollama \u2014 nothing leaves your machine\n- Published on npm; MIT licensed\n\n## What it taught\n\n> Refuse to write a file that doesn't compile. It turns a code generator into a tool you can trust half-asleep.\n\n## Facts\n\n| | |\n| --- | --- |\n| Status | shipped |\n| Year | 2026 |\n| Dev time | ~2 weeks |\n| Category | Web & Product |\n| Repository | [ChinmayGit8765/SmartContract-Creator](https://github.com/ChinmayGit8765/SmartContract-Creator) |\n| Primary language | TypeScript |\n| Size | 1016 KB |\n| Licence | MIT |\n| Created | 2026-05-14 |\n| Last push | 2026-07-06 |\n| Visibility | public |\n| Language mix | TypeScript 99.0%, JavaScript 1.0%, Python 0.0% |\n\n## Stack\n\n[[TypeScript]] \u00b7 [[Node.js]] \u00b7 Solidity \u00b7 OpenZeppelin \u00b7 Anchor \u00b7 [[Ollama]]\n\n## Agents\n\n[[smartc Patcher]]\n\n## Links\n\n[Live](https://www.npmjs.com/package/smartc) \u00b7 [Source](https://github.com/ChinmayGit8765/SmartContract-Creator)\n\n## Related\n\n[[Projects Map]] \u00b7 [[Home]]\n",
+   "words": 289,
+   "links": [
+    "stack/TypeScript",
+    "stack/Ollama",
+    "agents/smartc Patcher",
+    "maps/Projects Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "agents/Agent Ledger",
+    "agents/smartc Patcher",
+    "agents/Tool Safety",
+    "maps/Projects Map",
+    "maps/Repos Map",
+    "maps/Timeline",
+    "repos/SmartContract-Creator",
+    "stack/Ollama",
+    "stack/TypeScript"
    ]
   },
   {
@@ -2060,44 +2113,54 @@
    ]
   },
   {
-   "id": "projects/smartc",
-   "title": "smartc",
-   "path": "brain/projects/smartc.md",
-   "folder": "projects",
-   "type": "project",
+   "id": "README",
+   "title": "Exaryn Brain",
+   "path": "brain/README.md",
+   "folder": "",
+   "type": "meta",
    "tags": [
-    "project",
-    "web-product"
+    "meta",
+    "vault"
+   ],
+   "aliases": [],
+   "meta": {},
+   "generated": false,
+   "body": "# Exaryn Brain\n\nThis folder is a real [Obsidian](https://obsidian.md) vault. Every note is a\nplain `.md` file with YAML frontmatter and `[[wikilinks]]` \u2014 no plugins\nrequired, no proprietary format, nothing that stops working if Obsidian does.\n\n## Two ways to read it\n\n| Where | How |\n| --- | --- |\n| **In Obsidian** | *Open folder as vault* \u2192 pick this `brain/` directory. Graph view, backlinks and search all work out of the box. |\n| **In the browser** | [`/brain.html`](../brain.html) on the site \u2014 the same notes, with backlinks, tags, search and a graph, rendered from `data/brain.json`. |\n\n## Layout\n\n```\nbrain/\n  Home.md            entry point \u2014 start here\n  maps/              maps of content: the hubs everything hangs off\n  agents/            the agent structure \u2014 every autonomous thing built here\n  projects/          one note per project        (generated from data/projects.json)\n  repos/             one note per GitHub repo    (generated from data/repos.json)\n  systems/           the pipelines and cron jobs that keep the studio running\n  stack/             one note per technology, backlinked to what uses it\n  notes/             principles, roadmap, build log, glossary, open questions\n```\n\n## Generated vs hand-written\n\nNotes under `projects/` and `repos/`, plus a few maps, carry\n`generated: true` in their frontmatter and a banner at the top. **Do not edit\nthose by hand** \u2014 they are rebuilt from `data/projects.json` and\n`data/repos.json` by `scripts/brain.py`, and your edits will be overwritten.\n\nEverything else is hand-written and safe to edit in Obsidian.\n\n## Rebuilding\n\n```sh\nnpm run repos    # refresh data/repos.json from the GitHub API\nnpm run brain    # regenerate the generated notes + bundle data/brain.json\n```\n\n`npm run brain` is what makes the vault visible on the site: it walks every\n`.md` file here, resolves the wikilinks into a graph, and writes one\n`data/brain.json` the browser reads. The morning cron runs both.\n\nSee [[Brain Pipeline]] for how that works, and [[Home]] to start reading.\n",
+   "words": 307,
+   "links": [
+    "systems/Brain Pipeline",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": []
+  },
+  {
+   "id": "repos/ai_development_project_one",
+   "title": "ai_development_project_one",
+   "path": "brain/repos/ai_development_project_one.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "private"
    ],
    "aliases": [],
    "meta": {
-    "status": "shipped",
-    "year": 2026,
-    "category": "Web & Product",
-    "repo": "ChinmayGit8765/SmartContract-Creator",
+    "language": [],
+    "pushed": "2025-08-08",
     "generated": true
    },
    "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/projects.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# smartc\n\n*CLI wizard that writes compile-verified smart contracts plus deploy docs.*\n\nSingle-binary Node CLI: short wizard in, one contract file plus a DEPLOY.md with copy-pasteable commands out. ERC-20/721/1155 and Solana SPL templates, every Solidity contract compiled in-process before it touches disk. Optional local-only AI patching via Ollama.\n\n## How it is put together\n\nOne Node binary. Wizard collects intent, templates emit Solidity or Anchor, solc compiles in-process, and only verified output hits disk. Ollama patching is opt-in and local-only.\n\n## What is actually in it\n\n- ERC-20, ERC-721, ERC-1155 and Solana SPL templates\n- Every Solidity contract compiled in-process before it's written out\n- Emits a DEPLOY.md with copy-pasteable commands, not just a contract\n- Optional AI patching runs locally through Ollama \u2014 nothing leaves your machine\n- Published on npm; MIT licensed\n\n## What it taught\n\n> Refuse to write a file that doesn't compile. It turns a code generator into a tool you can trust half-asleep.\n\n## Facts\n\n| | |\n| --- | --- |\n| Status | shipped |\n| Year | 2026 |\n| Dev time | ~2 weeks |\n| Category | Web & Product |\n| Repository | [ChinmayGit8765/SmartContract-Creator](https://github.com/ChinmayGit8765/SmartContract-Creator) |\n| Primary language | TypeScript |\n| Size | 1016 KB |\n| Licence | MIT |\n| Created | 2026-05-14 |\n| Last push | 2026-07-06 |\n| Visibility | public |\n| Language mix | TypeScript 99.0%, JavaScript 1.0%, Python 0.0% |\n\n## Stack\n\n[[TypeScript]] \u00b7 [[Node.js]] \u00b7 Solidity \u00b7 OpenZeppelin \u00b7 Anchor \u00b7 [[Ollama]]\n\n## Agents\n\n[[smartc Patcher]]\n\n## Links\n\n[Live](https://www.npmjs.com/package/smartc) \u00b7 [Source](https://github.com/ChinmayGit8765/SmartContract-Creator)\n\n## Related\n\n[[Projects Map]] \u00b7 [[Home]]\n",
-   "words": 289,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# ai_development_project_one\n\n*This is my first ai development idea.*\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/ai_development_project_one](https://github.com/ChinmayGit8765/ai_development_project_one) |\n| Visibility | private |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-08-08 |\n| Last push | 2025-08-08 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 111,
    "links": [
-    "stack/TypeScript",
-    "stack/Ollama",
-    "agents/smartc Patcher",
-    "maps/Projects Map",
+    "maps/Repos Map",
     "Home"
    ],
    "unresolved": [],
    "backlinks": [
-    "agents/Agent Ledger",
-    "agents/Tool Safety",
-    "agents/smartc Patcher",
-    "maps/Projects Map",
     "maps/Repos Map",
-    "maps/Timeline",
-    "repos/SmartContract-Creator",
-    "stack/Ollama",
-    "stack/TypeScript"
+    "maps/Timeline"
    ]
   },
   {
@@ -2131,360 +2194,6 @@
    ]
   },
   {
-   "id": "repos/ChinmayGit8765",
-   "title": "ChinmayGit8765",
-   "path": "brain/repos/ChinmayGit8765.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": "Python",
-    "pushed": "2026-08-31",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# ChinmayGit8765\n\n*\u2733 profile*\n\n> I run **[Exaryn](https://chinmaygit8765.github.io/exaryn-studio/)** \u2014 a one-person R&D studio in Melbourne. AI agents, quant engines, daily games \u2014 built, shipped, and written up honestly. Happily AI-native: over a billion Claude tokens this year, turned into working software.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/ChinmayGit8765](https://github.com/ChinmayGit8765/ChinmayGit8765) |\n| Visibility | public |\n| Primary language | Python |\n| Size | 3.7 MB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-08-30 |\n| Last push | 2026-08-31 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| Python | 55.1% |\n| Shell | 44.9% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 167,
-   "links": [
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/ContactUsPage",
-   "title": "ContactUsPage",
-   "path": "brain/repos/ContactUsPage.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": "TypeScript",
-    "pushed": "2026-08-24",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# ContactUsPage\n\n*Contact Flow \u2014 a production-shaped contact/lead-capture stack: NestJS + TypeORM + PostgreSQL API, Next.js 14 + Tailwind frontend, one docker compose up. Validation done properly on both sides.*\n\nProject note: [[Contact Flow]]\n\n> A production-shaped **contact / lead-capture flow**, end to end: validated form in, reviewed contact out. NestJS + TypeORM + PostgreSQL API, Next.js 14 (App Router) + Tailwind frontend, one `docker compose up` to run the lot.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/ContactUsPage](https://github.com/ChinmayGit8765/ContactUsPage) |\n| Visibility | public |\n| Primary language | TypeScript |\n| Size | 311 KB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-06-13 |\n| Last push | 2026-08-24 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| TypeScript | 86.9% |\n| JavaScript | 10.1% |\n| Dockerfile | 1.8% |\n| CSS | 1.1% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 207,
-   "links": [
-    "projects/Contact Flow",
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/FinancialServicesDashboard",
-   "title": "FinancialServicesDashboard",
-   "path": "brain/repos/FinancialServicesDashboard.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": "Java",
-    "pushed": "2026-06-10",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# FinancialServicesDashboard\n\n*AI-augmented portfolio & market-intelligence dashboard. Spring Boot 3.5 + Spring AI (RAG, tool-calling, embedded MCP server) over a real quant engine (Monte Carlo SDEs, VaR, cointegration), with a Vue 3 SPA and one-click, zero-key demo mode.*\n\nProject note: [[QuantLens]]\n\n> An AI-augmented portfolio and market intelligence dashboard fusing a quantitative-finance Spring Boot backend with a Vue 3 SPA. Features real portfolio analytics (P&L, risk metrics, Sharpe, VaR, Monte Carlo), Spring AI narration, and a one-click demo mode \u2014 no API keys needed.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/FinancialServicesDashboard](https://github.com/ChinmayGit8765/FinancialServicesDashboard) |\n| Visibility | public |\n| Primary language | Java |\n| Size | 1.9 MB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-06-06 |\n| Last push | 2026-06-10 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| Java | 77.4% |\n| Vue | 12.7% |\n| TypeScript | 8.9% |\n| CSS | 0.4% |\n| PowerShell | 0.3% |\n| Dockerfile | 0.3% |\n| HTML | 0.0% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 235,
-   "links": [
-    "projects/QuantLens",
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/GymAPP",
-   "title": "GymAPP",
-   "path": "brain/repos/GymAPP.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "private"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": [],
-    "pushed": "2025-08-26",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# GymAPP\n\n*This is the repo of my gym app*\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/GymAPP](https://github.com/ChinmayGit8765/GymAPP) |\n| Visibility | private |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-08-26 |\n| Last push | 2025-08-26 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 112,
-   "links": [
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/MyBlog",
-   "title": "MyBlog",
-   "path": "brain/repos/MyBlog.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": [],
-    "pushed": "2024-12-29",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# MyBlog\n\n*This is my blog that will get deployed onto azure and will host my cool reviews*\n\n> This is my blog that will get deployed onto azure and will host my cool reviews\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/MyBlog](https://github.com/ChinmayGit8765/MyBlog) |\n| Visibility | public |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2024-12-29 |\n| Last push | 2024-12-29 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 137,
-   "links": [
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/PDFCompiler",
-   "title": "PDFCompiler",
-   "path": "brain/repos/PDFCompiler.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": "HTML",
-    "pushed": "2025-05-26",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# PDFCompiler\n\nProject note: [[PDF Compiler]]\n\n> This code is mainly used to compile many PDF files into one when you have a zip\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/PDFCompiler](https://github.com/ChinmayGit8765/PDFCompiler) |\n| Visibility | public |\n| Primary language | HTML |\n| Size | 18.4 MB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-05-26 |\n| Last push | 2025-05-26 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| HTML | 74.5% |\n| TeX | 25.3% |\n| Python | 0.3% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 155,
-   "links": [
-    "projects/PDF Compiler",
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/RPGGame",
-   "title": "RPGGame",
-   "path": "brain/repos/RPGGame.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "private"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": [],
-    "pushed": "2025-02-04",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# RPGGame\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/RPGGame](https://github.com/ChinmayGit8765/RPGGame) |\n| Visibility | private |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-02-04 |\n| Last push | 2025-02-04 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 104,
-   "links": [
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/SmartContract-Creator",
-   "title": "SmartContract-Creator",
-   "path": "brain/repos/SmartContract-Creator.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": "TypeScript",
-    "pushed": "2026-07-06",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# SmartContract-Creator\n\n*This projects purpose is creating an easy tool to create rust/solidity based smart contract and is code that can be used within services. It is also to showcase knowledge.*\n\nProject note: [[smartc]]\n\n> **Generate working, compile-verified smart contracts from a wizard \u2014 no boilerplate, no remembering EIPs, no scaffolding a whole project just to write one contract.**\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/SmartContract-Creator](https://github.com/ChinmayGit8765/SmartContract-Creator) |\n| Visibility | public |\n| Primary language | TypeScript |\n| Size | 1016 KB |\n| Licence | MIT |\n| Default branch | main |\n| Created | 2026-05-14 |\n| Last push | 2026-07-06 |\n| Stars | 1 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| TypeScript | 99.0% |\n| JavaScript | 1.0% |\n| Python | 0.0% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 189,
-   "links": [
-    "projects/smartc",
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/TODO-list",
-   "title": "TODO-list",
-   "path": "brain/repos/TODO-list.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": "C#",
-    "pushed": "2026-08-24",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# TODO-list\n\n*A deliberately simple todo app built like a real codebase \u2014 .NET Web API + Angular, proper layering, presentational components, tests on both sides. Subtasks, inline edit, active/completed tabs.*\n\nProject note: [[TODO List]]\n\n> A small TODO list app with an Angular front-end and a .NET Web API back-end. Tasks live in memory inside the API and reset on each restart \u2014 no database is required.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/TODO-list](https://github.com/ChinmayGit8765/TODO-list) |\n| Visibility | public |\n| Primary language | C# |\n| Size | 105 KB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-05-12 |\n| Last push | 2026-08-24 |\n| Stars | 1 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| C# | 45.8% |\n| TypeScript | 33.2% |\n| HTML | 20.6% |\n| CSS | 0.4% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 204,
-   "links": [
-    "projects/TODO List",
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/VolatilityModel",
-   "title": "VolatilityModel",
-   "path": "brain/repos/VolatilityModel.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": "Python",
-    "pushed": "2026-07-19",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# VolatilityModel\n\nProject note: [[VolForecast]]\n\n> A short-horizon realized volatility forecasting system covering crypto (BTC, ETH) and equities (SPY + large caps), wrapped in a full production MLOps lifecycle: ingestion, validation, feature engineering, classical + ML models, serving, monitoring, drift detection, and automated retraining.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/VolatilityModel](https://github.com/ChinmayGit8765/VolatilityModel) |\n| Visibility | public |\n| Primary language | Python |\n| Size | 2.5 MB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-06-10 |\n| Last push | 2026-07-19 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| Python | 98.8% |\n| Dockerfile | 1.0% |\n| Shell | 0.2% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 175,
-   "links": [
-    "projects/VolForecast",
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/VueSkillShowcase",
-   "title": "VueSkillShowcase",
-   "path": "brain/repos/VueSkillShowcase.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "public"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": [],
-    "pushed": "2025-08-22",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# VueSkillShowcase\n\n*This mini coding project is too showcase my ability and skills with the framework in vue js and to make it easier for interested parties to see my knowledge clearly.*\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/VueSkillShowcase](https://github.com/ChinmayGit8765/VueSkillShowcase) |\n| Visibility | public |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-08-22 |\n| Last push | 2025-08-22 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 134,
-   "links": [
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
-   "id": "repos/ai_development_project_one",
-   "title": "ai_development_project_one",
-   "path": "brain/repos/ai_development_project_one.md",
-   "folder": "repos",
-   "type": "repo",
-   "tags": [
-    "repo",
-    "private"
-   ],
-   "aliases": [],
-   "meta": {
-    "language": [],
-    "pushed": "2025-08-08",
-    "generated": true
-   },
-   "generated": true,
-   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# ai_development_project_one\n\n*This is my first ai development idea.*\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/ai_development_project_one](https://github.com/ChinmayGit8765/ai_development_project_one) |\n| Visibility | private |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-08-08 |\n| Last push | 2025-08-08 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
-   "words": 111,
-   "links": [
-    "maps/Repos Map",
-    "Home"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "maps/Repos Map",
-    "maps/Timeline"
-   ]
-  },
-  {
    "id": "repos/chinmay-tech-portfolio",
    "title": "chinmay-tech-portfolio",
    "path": "brain/repos/chinmay-tech-portfolio.md",
@@ -2503,6 +2212,35 @@
    "generated": true,
    "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# chinmay-tech-portfolio\n\n*this is my personal github page highlighting all projects and stuff*\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/chinmay-tech-portfolio](https://github.com/ChinmayGit8765/chinmay-tech-portfolio) |\n| Visibility | public |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-09-20 |\n| Last push | 2025-09-20 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
    "words": 115,
+   "links": [
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
+   "id": "repos/ChinmayGit8765",
+   "title": "ChinmayGit8765",
+   "path": "brain/repos/ChinmayGit8765.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": "Python",
+    "pushed": "2026-08-31",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# ChinmayGit8765\n\n*\u2733 profile*\n\n> I run **[Exaryn](https://chinmaygit8765.github.io/exaryn-studio/)** \u2014 a one-person R&D studio in Melbourne. AI agents, quant engines, daily games \u2014 built, shipped, and written up honestly. Happily AI-native: over a billion Claude tokens this year, turned into working software.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/ChinmayGit8765](https://github.com/ChinmayGit8765/ChinmayGit8765) |\n| Visibility | public |\n| Primary language | Python |\n| Size | 3.7 MB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-08-30 |\n| Last push | 2026-08-31 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| Python | 55.1% |\n| Shell | 44.9% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 167,
    "links": [
     "maps/Repos Map",
     "Home"
@@ -2593,6 +2331,36 @@
    "words": 195,
    "links": [
     "projects/Side by Side",
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
+   "id": "repos/ContactUsPage",
+   "title": "ContactUsPage",
+   "path": "brain/repos/ContactUsPage.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": "TypeScript",
+    "pushed": "2026-08-24",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# ContactUsPage\n\n*Contact Flow \u2014 a production-shaped contact/lead-capture stack: NestJS + TypeORM + PostgreSQL API, Next.js 14 + Tailwind frontend, one docker compose up. Validation done properly on both sides.*\n\nProject note: [[Contact Flow]]\n\n> A production-shaped **contact / lead-capture flow**, end to end: validated form in, reviewed contact out. NestJS + TypeORM + PostgreSQL API, Next.js 14 (App Router) + Tailwind frontend, one `docker compose up` to run the lot.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/ContactUsPage](https://github.com/ChinmayGit8765/ContactUsPage) |\n| Visibility | public |\n| Primary language | TypeScript |\n| Size | 311 KB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-06-13 |\n| Last push | 2026-08-24 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| TypeScript | 86.9% |\n| JavaScript | 10.1% |\n| Dockerfile | 1.8% |\n| CSS | 1.1% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 207,
+   "links": [
+    "projects/Contact Flow",
     "maps/Repos Map",
     "Home"
    ],
@@ -2720,6 +2488,36 @@
    ]
   },
   {
+   "id": "repos/FinancialServicesDashboard",
+   "title": "FinancialServicesDashboard",
+   "path": "brain/repos/FinancialServicesDashboard.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": "Java",
+    "pushed": "2026-06-10",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# FinancialServicesDashboard\n\n*AI-augmented portfolio & market-intelligence dashboard. Spring Boot 3.5 + Spring AI (RAG, tool-calling, embedded MCP server) over a real quant engine (Monte Carlo SDEs, VaR, cointegration), with a Vue 3 SPA and one-click, zero-key demo mode.*\n\nProject note: [[QuantLens]]\n\n> An AI-augmented portfolio and market intelligence dashboard fusing a quantitative-finance Spring Boot backend with a Vue 3 SPA. Features real portfolio analytics (P&L, risk metrics, Sharpe, VaR, Monte Carlo), Spring AI narration, and a one-click demo mode \u2014 no API keys needed.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/FinancialServicesDashboard](https://github.com/ChinmayGit8765/FinancialServicesDashboard) |\n| Visibility | public |\n| Primary language | Java |\n| Size | 1.9 MB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-06-06 |\n| Last push | 2026-06-10 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| Java | 77.4% |\n| Vue | 12.7% |\n| TypeScript | 8.9% |\n| CSS | 0.4% |\n| PowerShell | 0.3% |\n| Dockerfile | 0.3% |\n| HTML | 0.0% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 235,
+   "links": [
+    "projects/QuantLens",
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
    "id": "repos/gymapp-v2",
    "title": "gymapp-v2",
    "path": "brain/repos/gymapp-v2.md",
@@ -2738,6 +2536,35 @@
    "generated": true,
    "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# gymapp-v2\n\n*I am starting again since the first version was complete garbage*\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/gymapp-v2](https://github.com/ChinmayGit8765/gymapp-v2) |\n| Visibility | private |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-02-01 |\n| Last push | 2026-02-01 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
    "words": 115,
+   "links": [
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
+   "id": "repos/GymAPP",
+   "title": "GymAPP",
+   "path": "brain/repos/GymAPP.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "private"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": [],
+    "pushed": "2025-08-26",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# GymAPP\n\n*This is the repo of my gym app*\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/GymAPP](https://github.com/ChinmayGit8765/GymAPP) |\n| Visibility | private |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-08-26 |\n| Last push | 2025-08-26 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 112,
    "links": [
     "maps/Repos Map",
     "Home"
@@ -2779,6 +2606,35 @@
    ]
   },
   {
+   "id": "repos/MyBlog",
+   "title": "MyBlog",
+   "path": "brain/repos/MyBlog.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": [],
+    "pushed": "2024-12-29",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# MyBlog\n\n*This is my blog that will get deployed onto azure and will host my cool reviews*\n\n> This is my blog that will get deployed onto azure and will host my cool reviews\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/MyBlog](https://github.com/ChinmayGit8765/MyBlog) |\n| Visibility | public |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2024-12-29 |\n| Last push | 2024-12-29 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 137,
+   "links": [
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
    "id": "repos/one-piece-guess-game",
    "title": "one-piece-guess-game",
    "path": "brain/repos/one-piece-guess-game.md",
@@ -2799,6 +2655,36 @@
    "words": 227,
    "links": [
     "projects/One Piece Guess",
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
+   "id": "repos/PDFCompiler",
+   "title": "PDFCompiler",
+   "path": "brain/repos/PDFCompiler.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": "HTML",
+    "pushed": "2025-05-26",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# PDFCompiler\n\nProject note: [[PDF Compiler]]\n\n> This code is mainly used to compile many PDF files into one when you have a zip\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/PDFCompiler](https://github.com/ChinmayGit8765/PDFCompiler) |\n| Visibility | public |\n| Primary language | HTML |\n| Size | 18.4 MB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-05-26 |\n| Last push | 2025-05-26 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| HTML | 74.5% |\n| TeX | 25.3% |\n| Python | 0.3% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 155,
+   "links": [
+    "projects/PDF Compiler",
     "maps/Repos Map",
     "Home"
    ],
@@ -2905,6 +2791,65 @@
    ],
    "unresolved": [],
    "backlinks": []
+  },
+  {
+   "id": "repos/RPGGame",
+   "title": "RPGGame",
+   "path": "brain/repos/RPGGame.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "private"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": [],
+    "pushed": "2025-02-04",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# RPGGame\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/RPGGame](https://github.com/ChinmayGit8765/RPGGame) |\n| Visibility | private |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-02-04 |\n| Last push | 2025-02-04 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 104,
+   "links": [
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
+   "id": "repos/SmartContract-Creator",
+   "title": "SmartContract-Creator",
+   "path": "brain/repos/SmartContract-Creator.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": "TypeScript",
+    "pushed": "2026-07-06",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# SmartContract-Creator\n\n*This projects purpose is creating an easy tool to create rust/solidity based smart contract and is code that can be used within services. It is also to showcase knowledge.*\n\nProject note: [[smartc]]\n\n> **Generate working, compile-verified smart contracts from a wizard \u2014 no boilerplate, no remembering EIPs, no scaffolding a whole project just to write one contract.**\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/SmartContract-Creator](https://github.com/ChinmayGit8765/SmartContract-Creator) |\n| Visibility | public |\n| Primary language | TypeScript |\n| Size | 1016 KB |\n| Licence | MIT |\n| Default branch | main |\n| Created | 2026-05-14 |\n| Last push | 2026-07-06 |\n| Stars | 1 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| TypeScript | 99.0% |\n| JavaScript | 1.0% |\n| Python | 0.0% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 189,
+   "links": [
+    "projects/smartc",
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
   },
   {
    "id": "repos/solo-strength-quest-play",
@@ -3147,6 +3092,95 @@
     "maps/Repos Map",
     "maps/Timeline",
     "projects/QuantFlex"
+   ]
+  },
+  {
+   "id": "repos/TODO-list",
+   "title": "TODO-list",
+   "path": "brain/repos/TODO-list.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": "C#",
+    "pushed": "2026-08-24",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# TODO-list\n\n*A deliberately simple todo app built like a real codebase \u2014 .NET Web API + Angular, proper layering, presentational components, tests on both sides. Subtasks, inline edit, active/completed tabs.*\n\nProject note: [[TODO List]]\n\n> A small TODO list app with an Angular front-end and a .NET Web API back-end. Tasks live in memory inside the API and reset on each restart \u2014 no database is required.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/TODO-list](https://github.com/ChinmayGit8765/TODO-list) |\n| Visibility | public |\n| Primary language | C# |\n| Size | 105 KB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-05-12 |\n| Last push | 2026-08-24 |\n| Stars | 1 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| C# | 45.8% |\n| TypeScript | 33.2% |\n| HTML | 20.6% |\n| CSS | 0.4% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 204,
+   "links": [
+    "projects/TODO List",
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
+   "id": "repos/VolatilityModel",
+   "title": "VolatilityModel",
+   "path": "brain/repos/VolatilityModel.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": "Python",
+    "pushed": "2026-07-19",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# VolatilityModel\n\nProject note: [[VolForecast]]\n\n> A short-horizon realized volatility forecasting system covering crypto (BTC, ETH) and equities (SPY + large caps), wrapped in a full production MLOps lifecycle: ingestion, validation, feature engineering, classical + ML models, serving, monitoring, drift detection, and automated retraining.\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/VolatilityModel](https://github.com/ChinmayGit8765/VolatilityModel) |\n| Visibility | public |\n| Primary language | Python |\n| Size | 2.5 MB |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2026-06-10 |\n| Last push | 2026-07-19 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Language mix\n\n| Language | Share |\n| --- | --- |\n| Python | 98.8% |\n| Dockerfile | 1.0% |\n| Shell | 0.2% |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 175,
+   "links": [
+    "projects/VolForecast",
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
+   ]
+  },
+  {
+   "id": "repos/VueSkillShowcase",
+   "title": "VueSkillShowcase",
+   "path": "brain/repos/VueSkillShowcase.md",
+   "folder": "repos",
+   "type": "repo",
+   "tags": [
+    "repo",
+    "public"
+   ],
+   "aliases": [],
+   "meta": {
+    "language": [],
+    "pushed": "2025-08-22",
+    "generated": true
+   },
+   "generated": true,
+   "body": "> [!warning] Generated note\n> Written by `scripts/brain.py` from `data/repos.json`. Hand edits are overwritten \u2014 change the data instead.\n\n# VueSkillShowcase\n\n*This mini coding project is too showcase my ability and skills with the framework in vue js and to make it easier for interested parties to see my knowledge clearly.*\n\n## Metadata\n\n| | |\n| --- | --- |\n| Full name | [ChinmayGit8765/VueSkillShowcase](https://github.com/ChinmayGit8765/VueSkillShowcase) |\n| Visibility | public |\n| Primary language | \u2014 |\n| Size | \u2014 |\n| Licence | none declared |\n| Default branch | main |\n| Created | 2025-08-22 |\n| Last push | 2025-08-22 |\n| Stars | 0 |\n| Open issues | 0 |\n| GitHub Pages | no |\n| Archived | no |\n\n## Related\n\n[[Repos Map]] \u00b7 [[Home]]\n",
+   "words": 134,
+   "links": [
+    "maps/Repos Map",
+    "Home"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "maps/Repos Map",
+    "maps/Timeline"
    ]
   },
   {
@@ -3500,6 +3534,36 @@
    ]
   },
   {
+   "id": "stack/pgvector",
+   "title": "pgvector",
+   "path": "brain/stack/pgvector.md",
+   "folder": "stack",
+   "type": "stack",
+   "tags": [
+    "stack",
+    "database",
+    "rag"
+   ],
+   "aliases": [],
+   "meta": {},
+   "generated": false,
+   "body": "# pgvector\n\nThe Postgres extension that lets [[QuantLens]] do RAG without adding a second datastore. Portfolio documents get embedded alongside the relational data they describe, so retrieval and the quant engine share one connection, one backup and one `docker compose up`.\n\nA separate vector database would have been one more thing to run for a project whose whole promise is *one command*.\n\n## Where it shows up\n\n[[QuantLens]] \u00b7 [[QuantLens Narrator]] \u00b7 [[PostgreSQL]]\n",
+   "words": 73,
+   "links": [
+    "projects/QuantLens",
+    "agents/QuantLens Narrator",
+    "stack/PostgreSQL"
+   ],
+   "unresolved": [],
+   "backlinks": [
+    "agents/QuantLens Narrator",
+    "maps/Stack Map",
+    "projects/QuantLens",
+    "stack/Java",
+    "stack/PostgreSQL"
+   ]
+  },
+  {
    "id": "stack/PostgreSQL",
    "title": "PostgreSQL",
    "path": "brain/stack/PostgreSQL.md",
@@ -3541,8 +3605,8 @@
     "projects/Prompterjack",
     "projects/Solo Strength Quest",
     "stack/Cloudflare Workers",
-    "stack/Rust",
-    "stack/pgvector"
+    "stack/pgvector",
+    "stack/Rust"
    ]
   },
   {
@@ -3602,6 +3666,7 @@
     "maps/Stack Map",
     "projects/ALFRED",
     "projects/Exaryn Studio",
+    "projects/holdem-ml",
     "projects/JSON API Simplifier",
     "projects/One Piece Guess",
     "projects/QuantFlex",
@@ -3737,9 +3802,9 @@
     "projects/PDF Compiler",
     "projects/Prompterjack",
     "projects/Side by Side",
+    "projects/smartc",
     "projects/TODO List",
-    "projects/Worktree Optimiser",
-    "projects/smartc"
+    "projects/Worktree Optimiser"
    ]
   },
   {
@@ -3777,36 +3842,6 @@
    ]
   },
   {
-   "id": "stack/pgvector",
-   "title": "pgvector",
-   "path": "brain/stack/pgvector.md",
-   "folder": "stack",
-   "type": "stack",
-   "tags": [
-    "stack",
-    "database",
-    "rag"
-   ],
-   "aliases": [],
-   "meta": {},
-   "generated": false,
-   "body": "# pgvector\n\nThe Postgres extension that lets [[QuantLens]] do RAG without adding a second datastore. Portfolio documents get embedded alongside the relational data they describe, so retrieval and the quant engine share one connection, one backup and one `docker compose up`.\n\nA separate vector database would have been one more thing to run for a project whose whole promise is *one command*.\n\n## Where it shows up\n\n[[QuantLens]] \u00b7 [[QuantLens Narrator]] \u00b7 [[PostgreSQL]]\n",
-   "words": 73,
-   "links": [
-    "projects/QuantLens",
-    "agents/QuantLens Narrator",
-    "stack/PostgreSQL"
-   ],
-   "unresolved": [],
-   "backlinks": [
-    "agents/QuantLens Narrator",
-    "maps/Stack Map",
-    "projects/QuantLens",
-    "stack/Java",
-    "stack/PostgreSQL"
-   ]
-  },
-  {
    "id": "systems/Brain Pipeline",
    "title": "Brain Pipeline",
    "path": "brain/systems/Brain Pipeline.md",
@@ -3832,10 +3867,10 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "README",
     "agents/Brain Indexer",
     "maps/Systems Map",
     "notes/Build Log",
+    "README",
     "stack/GitHub Actions",
     "systems/Cron Ledger",
     "systems/Deploy Pipeline"
@@ -3905,8 +3940,8 @@
    ],
    "unresolved": [],
    "backlinks": [
-    "Home",
     "agents/Digest Bot",
+    "Home",
     "maps/Systems Map",
     "stack/GitHub Actions",
     "systems/Cron Ledger",

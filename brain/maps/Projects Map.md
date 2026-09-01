@@ -10,7 +10,7 @@ generated: true
 
 # Projects Map
 
-Every project in the index — 17 of them, grouped by what kind of thing it is. The full repository list, dead ends included, is in [[Repos Map]].
+Every project in the index — 18 of them, grouped by what kind of thing it is. The full repository list, dead ends included, is in [[Repos Map]].
 
 ## Agents & Tooling
 
@@ -29,6 +29,7 @@ Every project in the index — 17 of them, grouped by what kind of thing it is. 
 | [[Solo Strength Quest]] | A fitness RPG — every workout is a quest, every PR is a boss kill. | in development | 2026 |
 | [[One Piece Guess]] | Wordle, but for One Piece — a daily character riddle picked by a cron job. | shipped | 2026 |
 | [[Side by Side]] | A self-updating Collingwood super-fan suite — reskinnable for any AFL club. | shipped | 2026 |
+| [[holdem-ml]] | Texas Hold'em vs bots trained from scratch — no PyTorch, every gradient hand-checked. | in development | 2026 |
 | [[Gartic Hands]] | Multiplayer draw-and-guess where you draw with webcam hand tracking. | in development | 2026 |
 
 ## Infrastructure
