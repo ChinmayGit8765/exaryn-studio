@@ -438,3 +438,194 @@ async function loadNotes() {
 }
 
 loadNotes();
+
+/* ================= THE MACHINES (landing telemetry) ================= */
+/* Every self-updating system, reporting in. Same-origin: all the studio's
+   sites live on the one github.io host. */
+
+async function loadMachines() {
+  if (!$("#m-signal")) return;
+  const cell = (id, val, dead = false) => {
+    const el = $(id);
+    if (!el) return;
+    el.querySelector(".m-val").textContent = val;
+    if (dead) el.classList.add("dead");
+  };
+  try {
+    const d = await (await fetch("data/digest.json")).json();
+    cell("#m-signal", `UPDATED ${ago(d.generated_at).toUpperCase()} · ${(d.items || []).length} ITEMS`);
+  } catch { cell("#m-signal", "OFFLINE", true); }
+  try {
+    const p = await (await fetch("/one-piece-guess-game/data/daily.json")).json();
+    cell("#m-pirate", `RIDDLE #${p.number} LIVE · ${p.date}`);
+  } catch { cell("#m-pirate", "OFFLINE", true); }
+  try {
+    const f = await (await fetch("/collingwood-fan-suite/data/footy.json")).json();
+    if (f.nextGame) {
+      const ms = new Date(f.nextGame.date) - Date.now();
+      const when = ms > 0 ? `IN ${Math.floor(ms / 864e5)}D ${Math.floor((ms % 864e5) / 36e5)}H` : "GAME ON";
+      const opp = f.nextGame.home === f.club ? f.nextGame.away : f.nextGame.home;
+      cell("#m-footy", `PIES V ${opp.toUpperCase()} ${when}`);
+    } else {
+      cell("#m-footy", `SEASON DONE · RANK ${f.clubRow?.rank ?? "—"}`);
+    }
+  } catch { cell("#m-footy", "OFFLINE", true); }
+  try {
+    const b = await (await fetch("data/brain.json")).json();
+    cell("#m-brain", `${b.count} NOTES · ${b.edges} LINKS`);
+  } catch { cell("#m-brain", "OFFLINE", true); }
+}
+
+loadMachines();
+
+/* ================= COMMAND PALETTE (⌘K / CTRL+K) ================= */
+
+const PALETTE_PAGES = [
+  ["Home", "the front page", "index.html"],
+  ["Work", "the full project index", "projects.html"],
+  ["Agents", "the studio's agent structure", "agents.html"],
+  ["The Brain", "obsidian vault, in the browser", "brain.html"],
+  ["Notes", "essays & guides", "notes.html"],
+  ["Feed", "the daily AI signal", "feed.html"],
+  ["Play", "one piece guess, embedded", "play.html"],
+  ["About", "the human behind the ✳", "about.html"],
+];
+
+const PALETTE_DEMOS = [
+  ["QuantFlex walkthrough", "price an american put under heston", "demos/quantflex.html"],
+  ["Prompterjack walkthrough", "wire an agent crew, export code", "demos/prompterjack.html"],
+  ["Solo Strength Quest walkthrough", "boss kills on real app screens", "demos/strength-quest.html"],
+];
+
+let paletteData = null;
+let paletteIdx = 0;
+
+function paletteInject() {
+  if ($("#palette-overlay")) return;
+  const wrap = document.createElement("div");
+  wrap.id = "palette-overlay";
+  wrap.hidden = true;
+  wrap.innerHTML = `
+    <div class="palette" role="dialog" aria-label="Command palette">
+      <input id="palette-input" class="palette-input" type="text" autocomplete="off"
+             spellcheck="false" placeholder="Jump to a project, note, demo, page…" />
+      <ol class="palette-list" id="palette-list"></ol>
+      <div class="palette-foot mono">
+        <span>↑↓ NAVIGATE</span><span>↵ OPEN</span><span>ESC CLOSE</span>
+      </div>
+    </div>`;
+  document.body.appendChild(wrap);
+  wrap.addEventListener("click", (e) => { if (e.target === wrap) paletteClose(); });
+  $("#palette-input").addEventListener("input", paletteRender);
+  $("#palette-list").addEventListener("click", (e) => {
+    const row = e.target.closest("[data-href]");
+    if (row) paletteGo(row);
+  });
+  const hint = document.createElement("button");
+  hint.className = "palette-hint mono";
+  hint.type = "button";
+  hint.title = "Command palette";
+  hint.textContent = navigator.platform.startsWith("Mac") ? "⌘K" : "CTRL K";
+  hint.addEventListener("click", paletteOpen);
+  const header = $(".site-header");
+  header && header.insertBefore(hint, $(".clock"));
+}
+
+async function paletteLoad() {
+  if (paletteData) return paletteData;
+  const grab = async (p) => { try { return await (await fetch(p)).json(); } catch { return []; } };
+  const [projects, articles] = await Promise.all([grab("data/projects.json"), grab("data/articles.json")]);
+  paletteData = [
+    ...PALETTE_PAGES.map(([t, s, h]) => ({ type: "PAGE", t, s, h })),
+    ...projects.map((p) => ({
+      type: "PROJECT", t: p.name, s: p.tagline || "",
+      h: p.links?.live || p.links?.demo || p.links?.repo || "projects.html",
+    })),
+    ...articles.map((a) => ({ type: "NOTE", t: a.title, s: a.dek || "", h: `notes/${a.slug}.html` })),
+    ...PALETTE_DEMOS.map(([t, s, h]) => ({ type: "DEMO", t, s, h })),
+    { type: "TOY", t: "Side by Side", s: "the collingwood super-fan suite", h: "https://chinmaygit8765.github.io/collingwood-fan-suite/" },
+  ];
+  return paletteData;
+}
+
+function paletteMatches(q) {
+  if (!q) return paletteData.slice(0, 9);
+  const score = (it) => {
+    const t = it.t.toLowerCase(), s = it.s.toLowerCase();
+    if (t.startsWith(q)) return 0;
+    if (t.includes(q)) return 1;
+    if (s.includes(q)) return 2;
+    return -1;
+  };
+  return paletteData
+    .map((it) => [score(it), it])
+    .filter(([sc]) => sc >= 0)
+    .sort((a, b) => a[0] - b[0])
+    .slice(0, 9)
+    .map(([, it]) => it);
+}
+
+function paletteRender() {
+  const q = $("#palette-input").value.trim().toLowerCase();
+  const hits = paletteMatches(q);
+  paletteIdx = Math.min(paletteIdx, Math.max(0, hits.length - 1));
+  $("#palette-list").innerHTML = hits.length
+    ? hits.map((it, i) => `
+      <li><button data-href="${esc(it.h)}" ${it.h.startsWith("http") ? 'data-ext="1"' : ""}
+                  class="${i === paletteIdx ? "active" : ""}">
+        <span class="pk-type mono">${it.type}</span>
+        <span class="pk-title">${esc(it.t)}</span>
+        <span class="pk-sub">${esc(it.s)}</span>
+      </button></li>`).join("")
+    : `<li class="palette-empty mono">NOTHING IN THE STUDIO MATCHES THAT.</li>`;
+}
+
+function paletteGo(row) {
+  if (row.dataset.ext) window.open(row.dataset.href, "_blank", "noopener");
+  else location.href = row.dataset.href;
+  paletteClose();
+}
+
+async function paletteOpen() {
+  paletteInject();
+  await paletteLoad();
+  paletteIdx = 0;
+  const overlay = $("#palette-overlay");
+  overlay.hidden = false;
+  const input = $("#palette-input");
+  input.value = "";
+  paletteRender();
+  input.focus();
+}
+
+function paletteClose() {
+  const overlay = $("#palette-overlay");
+  if (overlay) overlay.hidden = true;
+}
+
+document.addEventListener("keydown", (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+    e.preventDefault();
+    const overlay = $("#palette-overlay");
+    overlay && !overlay.hidden ? paletteClose() : paletteOpen();
+    return;
+  }
+  const overlay = $("#palette-overlay");
+  if (!overlay || overlay.hidden) return;
+  const rows = $$("#palette-list [data-href]");
+  if (e.key === "Escape") { paletteClose(); }
+  else if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+    e.preventDefault();
+    if (!rows.length) return;
+    paletteIdx = e.key === "ArrowDown"
+      ? (paletteIdx + 1) % rows.length
+      : (paletteIdx - 1 + rows.length) % rows.length;
+    rows.forEach((r, i) => r.classList.toggle("active", i === paletteIdx));
+    rows[paletteIdx].scrollIntoView({ block: "nearest" });
+  } else if (e.key === "Enter" && rows[paletteIdx]) {
+    e.preventDefault();
+    paletteGo(rows[paletteIdx]);
+  }
+});
+
+paletteInject();

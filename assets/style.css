@@ -1780,6 +1780,182 @@ em {
   .brain-rail, .brain-rel { top: 0; }
 }
 
+/* ============ VIEW TRANSITIONS ============ */
+
+@view-transition { navigation: auto; }
+
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.16s; }
+
+/* ============ THE MACHINES ============ */
+
+.machines {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: stretch;
+  border-bottom: 1px solid var(--line);
+}
+
+.machines-label {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 var(--pad);
+  color: var(--muted);
+  border-right: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.machine-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.machine {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "dot name" "dot val";
+  column-gap: 10px;
+  row-gap: 2px;
+  align-content: center;
+  padding: 12px 18px;
+  border-right: 1px solid var(--line);
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.machine:last-child { border-right: none; }
+
+.m-dot {
+  grid-area: dot;
+  align-self: center;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #2e7d43;
+  animation: machine-pulse 2.4s ease-in-out infinite;
+}
+
+.machine.dead .m-dot { background: var(--muted); animation: none; }
+.machine.dead .m-val { color: var(--muted); }
+
+@keyframes machine-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(46, 125, 67, 0.45); }
+  50% { box-shadow: 0 0 0 5px rgba(46, 125, 67, 0); }
+}
+
+.m-name { grid-area: name; color: var(--muted); font-size: 9.5px; }
+.m-val { grid-area: val; font-size: 10.5px; color: var(--ink); }
+
+.machine:hover { background: var(--ink); color: var(--paper); }
+.machine:hover .m-name { color: color-mix(in srgb, var(--paper) 60%, transparent); }
+.machine:hover .m-val { color: var(--accent); }
+
+@media (max-width: 900px) {
+  .machines { grid-template-columns: 1fr; }
+  .machines-label { padding: 10px var(--pad); border-right: none; border-bottom: 1px solid var(--line); }
+  .machine-grid { grid-template-columns: 1fr 1fr; }
+  .machine:nth-child(2n) { border-right: none; }
+  .machine { border-bottom: 1px solid var(--line); }
+  .machine:nth-last-child(-n+2) { border-bottom: none; }
+}
+
+/* ============ COMMAND PALETTE ============ */
+
+.palette-hint {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.palette-hint:hover { border-color: var(--accent); color: var(--accent); }
+
+#palette-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: color-mix(in srgb, var(--ink) 32%, transparent);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  padding: 12vh 20px 20px;
+}
+
+.palette {
+  width: min(600px, 100%);
+  height: fit-content;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 rgba(23, 21, 18, 0.25);
+}
+
+.palette-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  font-family: var(--sans);
+  font-size: 17px;
+  padding: 16px 18px;
+  color: var(--ink);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.palette-list {
+  list-style: none;
+  max-height: 46vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.palette-list button {
+  all: unset;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  grid-template-areas: "type title" "type sub";
+  column-gap: 14px;
+  width: 100%;
+  padding: 10px 18px;
+  border-bottom: 1px solid var(--line);
+  box-sizing: border-box;
+}
+
+.palette-list .pk-type {
+  grid-area: type;
+  align-self: center;
+  font-size: 9px;
+  color: var(--accent);
+}
+
+.palette-list .pk-title { grid-area: title; font-weight: 500; font-size: 15.5px; }
+
+.palette-list .pk-sub {
+  grid-area: sub;
+  font-size: 12.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.palette-list button:hover, .palette-list button.active { background: var(--ink); color: var(--paper); }
+.palette-list button:hover .pk-sub, .palette-list button.active .pk-sub { color: color-mix(in srgb, var(--paper) 65%, transparent); }
+
+.palette-empty { padding: 22px 18px; color: var(--muted); }
+
+.palette-foot {
+  display: flex;
+  gap: 20px;
+  padding: 9px 18px;
+  color: var(--muted);
+  font-size: 9.5px;
+}
+
 /* ============ FIELD NOTES ============ */
 
 .notes-index { list-style: none; border-top: 1px solid var(--line); }
