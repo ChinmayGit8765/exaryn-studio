@@ -1,0 +1,38 @@
+{
+  "updated": "2026-09-01",
+  "lanes": [
+    {
+      "name": "Building now",
+      "note": "ON THE BENCH THIS WEEK",
+      "items": [
+        { "name": "holdem-ml", "progress": 80, "note": "Playable end to end, every model trained and benchmarked — source release prep is what's left.", "link": "https://github.com/ChinmayGit8765/holdem-ml" },
+        { "name": "Worktree Optimiser", "progress": 70, "note": "Containerised worktrees and hostname routing work; rounding out the MCP tool surface, then npm.", "link": "https://github.com/ChinmayGit8765/worktree-optimiser" },
+        { "name": "QuantFlex", "progress": 65, "note": "Engine, anchors and triple-verified Greeks are solid — the stable public deploy is the missing piece.", "link": "https://chinmaygit8765.github.io/quantflex-site/" },
+        { "name": "ALFRED", "progress": 60, "note": "Conductor tuning against real capacity data; autonomy expands one tier at a time.", "link": "https://github.com/ChinmayGit8765/AlfredOpenSource" },
+        { "name": "Solo Strength Quest", "progress": 55, "note": "Rust API and Flutter app both functional — the beta and the app-store run are ahead.", "link": "https://github.com/ChinmayGit8765/strength-quest" },
+        { "name": "Gartic Hands", "progress": 40, "note": "Round state machine hardening with the Monash team.", "link": "https://github.com/Monash-FIT3170/2026W2-GarticHands" }
+      ]
+    },
+    {
+      "name": "Up next",
+      "note": "QUEUED, IN ORDER OF ITCH",
+      "items": [
+        { "name": "Claude Work Manager — one-command install", "progress": 15, "note": "From clone-and-npm-install to a single npx." },
+        { "name": "Token meter, measured", "progress": 10, "note": "Wire the front-page number to real usage instead of a hand-updated estimate." },
+        { "name": "Older repo README backfill", "progress": 25, "note": "So the nightly repo sweep has something honest to quote." },
+        { "name": "One Piece Guess — duel mode", "progress": 5, "note": "Realtime head-to-head on the same daily riddle. Durable Objects experiment." },
+        { "name": "Foreman", "progress": 5, "note": "Point the agent fleet at a backlog: agents claim issues in their own worktrees, a reviewer agent gates the PRs." }
+      ]
+    },
+    {
+      "name": "Ideas on deck",
+      "note": "NO PROMISES, GOOD ODDS",
+      "items": [
+        { "name": "QuantFlex parallel pricing farm", "note": "Fan Monte Carlo across workers — the anchor tests make distributed-vs-single equivalence provable." },
+        { "name": "Solo Strength Quest — live raids", "note": "Community boss fights: one weekly lift target, every hunter's sets counting toward it." },
+        { "name": "Brain graph tag filtering", "note": "Filter the vault graph by tag, not just note type." },
+        { "name": "Post-mortem notes for retired repos", "note": "What each abandoned experiment taught — PDF Compiler first." }
+      ]
+    }
+  ]
+}

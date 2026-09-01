@@ -1856,6 +1856,111 @@ em {
   .machine:nth-last-child(-n+2) { border-bottom: none; }
 }
 
+/* ============ ROADMAP ============ */
+
+.roadmap { border-top: 1px solid var(--line); }
+
+.roadmap-lede {
+  padding: 0 var(--pad) 8px;
+  color: var(--muted);
+  font-size: 15.5px;
+  max-width: 60ch;
+}
+
+.roadmap-brain-link { color: var(--accent); }
+.roadmap-brain-link:hover { text-decoration: underline; }
+
+.roadmap-lanes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  margin-top: 18px;
+}
+
+.rm-lane { border-right: 1px solid var(--line); padding-bottom: 28px; }
+.rm-lane:last-child { border-right: none; }
+
+.rm-lane-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 22px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.rm-lane-name {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(20px, 2vw, 26px);
+  letter-spacing: -0.01em;
+}
+
+.rm-lane-name::before { content: "✳ "; color: var(--accent); font-size: 0.65em; vertical-align: middle; }
+
+.rm-lane-note { color: var(--muted); font-size: 9px; text-align: right; }
+
+.rm-item { padding: 16px 22px 4px; }
+
+.rm-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "name pct" "track track";
+  align-items: baseline;
+  column-gap: 12px;
+  row-gap: 7px;
+}
+
+.rm-name {
+  grid-area: name;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+a.rm-name:hover { color: var(--accent); }
+
+.rm-pct { grid-area: pct; color: var(--accent); font-size: 10.5px; font-variant-numeric: tabular-nums; }
+
+.rm-idea { grid-area: pct; color: var(--muted); font-size: 9.5px; border: 1px dashed var(--muted); padding: 2px 7px; }
+
+.rm-track {
+  grid-area: track;
+  height: 8px;
+  border: 1px solid var(--ink);
+  background:
+    repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 10%);
+}
+
+.rm-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  transition: width 1.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.rm-track.go .rm-fill { width: var(--p); }
+
+.rm-note {
+  margin-top: 8px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 44ch;
+}
+
+@media (max-width: 900px) {
+  .roadmap-lanes { grid-template-columns: 1fr; }
+  .rm-lane { border-right: none; border-bottom: 1px solid var(--line); }
+  .rm-lane:last-child { border-bottom: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rm-fill { transition: none; }
+  .rm-track .rm-fill { width: var(--p); }
+}
+
 /* ============ COMMAND PALETTE ============ */
 
 .palette-hint {

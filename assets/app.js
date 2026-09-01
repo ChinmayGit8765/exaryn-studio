@@ -478,11 +478,70 @@ async function loadMachines() {
 
 loadMachines();
 
+/* ================= ROADMAP (projects page) ================= */
+
+function roadmapItem(it) {
+  const name = it.link
+    ? `<a class="rm-name" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.name)} ↗</a>`
+    : `<span class="rm-name">${esc(it.name)}</span>`;
+  const bar =
+    typeof it.progress === "number"
+      ? `<div class="rm-track" role="img" aria-label="${it.progress}% complete">
+           <i class="rm-fill" style="--p:${Math.max(0, Math.min(100, it.progress))}%"></i>
+         </div>
+         <span class="rm-pct mono">${it.progress}%</span>`
+      : `<span class="rm-idea mono">IDEA</span>`;
+  return `
+  <div class="rm-item">
+    <div class="rm-head">${name}${bar}</div>
+    <p class="rm-note">${esc(it.note || "")}</p>
+  </div>`;
+}
+
+async function loadRoadmap() {
+  const wrap = $("#roadmap-lanes");
+  if (!wrap) return;
+  try {
+    const res = await fetch("data/roadmap.json");
+    if (!res.ok) throw new Error(res.status);
+    const map = await res.json();
+    $("#roadmap-updated") &&
+      ($("#roadmap-updated").textContent = new Date(map.updated + "T00:00:00Z")
+        .toLocaleDateString("en-AU", { day: "numeric", month: "short", timeZone: "UTC" })
+        .toUpperCase());
+    wrap.innerHTML = map.lanes
+      .map(
+        (lane) => `
+      <div class="rm-lane">
+        <div class="rm-lane-head">
+          <h3 class="rm-lane-name">${esc(lane.name)}</h3>
+          <span class="rm-lane-note mono">${esc(lane.note || "")}</span>
+        </div>
+        ${lane.items.map(roadmapItem).join("")}
+      </div>`
+      )
+      .join("");
+    // bars animate in when scrolled into view
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("go"); io.unobserve(e.target); }
+      }),
+      { threshold: 0.4 }
+    );
+    $$(".rm-track", wrap).forEach((t) => io.observe(t));
+  } catch {
+    wrap.innerHTML = `<div class="index-empty mono">COULDN'T LOAD THE ROADMAP.</div>`;
+  }
+}
+
+loadRoadmap();
+
 /* ================= COMMAND PALETTE (⌘K / CTRL+K) ================= */
 
 const PALETTE_PAGES = [
   ["Home", "the front page", "index.html"],
   ["Work", "the full project index", "projects.html"],
+  ["Roadmap", "what's being built, with progress bars", "projects.html#roadmap"],
   ["Agents", "the studio's agent structure", "agents.html"],
   ["The Brain", "obsidian vault, in the browser", "brain.html"],
   ["Notes", "essays & guides", "notes.html"],
