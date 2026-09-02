@@ -3,7 +3,7 @@ title: worktree-optimiser
 type: repo
 tags: [repo, public, claude-code, developer-tools, devtools, docker, git-worktree, mcp]
 language: TypeScript
-pushed: 2026-08-20
+pushed: 2026-09-02
 generated: true
 ---
 
@@ -25,11 +25,11 @@ Project note: [[Worktree Optimiser]]
 | Full name | [ChinmayGit8765/worktree-optimiser](https://github.com/ChinmayGit8765/worktree-optimiser) |
 | Visibility | public |
 | Primary language | TypeScript |
-| Size | 303 KB |
+| Size | 467 KB |
 | Licence | MIT |
 | Default branch | main |
 | Created | 2026-08-12 |
-| Last push | 2026-08-20 |
+| Last push | 2026-09-02 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

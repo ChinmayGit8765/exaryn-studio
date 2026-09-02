@@ -44,10 +44,10 @@ Traefik does hostname routing; every worktree gets a container and a `<branch>.l
 | Category | Agents & Tooling |
 | Repository | [ChinmayGit8765/worktree-optimiser](https://github.com/ChinmayGit8765/worktree-optimiser) |
 | Primary language | TypeScript |
-| Size | 303 KB |
+| Size | 467 KB |
 | Licence | MIT |
 | Created | 2026-08-12 |
-| Last push | 2026-08-20 |
+| Last push | 2026-09-02 |
 | Visibility | public |
 | Language mix | TypeScript 86.3%, JavaScript 7.0%, CSS 6.6%, HTML 0.1% |
 
