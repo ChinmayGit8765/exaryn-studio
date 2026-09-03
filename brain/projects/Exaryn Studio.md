@@ -47,7 +47,7 @@ No framework, no build step. HTML pages fetch JSON out of `/data`; Python script
 | Size | 1.1 MB |
 | Licence | none declared |
 | Created | 2026-08-17 |
-| Last push | 2026-09-01 |
+| Last push | 2026-09-02 |
 | Visibility | public |
 | Language mix | HTML 38.9%, CSS 23.4%, JavaScript 21.7%, Python 16.0% |
 

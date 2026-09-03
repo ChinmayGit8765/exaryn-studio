@@ -3,7 +3,7 @@ title: quantflex-site
 type: repo
 tags: [repo, public, automatic-differentiation, black-scholes, derivatives, monte-carlo, numerical-methods, options-pricing]
 language: JavaScript
-pushed: 2026-09-02
+pushed: 2026-09-03
 generated: true
 ---
 
@@ -25,11 +25,11 @@ Project note: [[QuantFlex]]
 | Full name | [ChinmayGit8765/quantflex-site](https://github.com/ChinmayGit8765/quantflex-site) |
 | Visibility | public |
 | Primary language | JavaScript |
-| Size | 84 KB |
+| Size | 89 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-09-02 |
+| Last push | 2026-09-03 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |

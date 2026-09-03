@@ -3,7 +3,7 @@ title: exaryn-studio
 type: repo
 tags: [repo, public]
 language: HTML
-pushed: 2026-09-01
+pushed: 2026-09-02
 generated: true
 ---
 
@@ -29,7 +29,7 @@ Project note: [[Exaryn Studio]]
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-17 |
-| Last push | 2026-09-01 |
+| Last push | 2026-09-02 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |
