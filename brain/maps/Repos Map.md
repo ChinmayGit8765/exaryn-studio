@@ -16,10 +16,10 @@ All 37 repositories on the account — including the ones that went nowhere. 23 
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[collingwood-fan-suite]] | CSS | 2026-09-08 | 65 KB | [[Side by Side]] |
-| [[quantflex-site]] | JavaScript | 2026-09-08 | 116 KB | [[QuantFlex]] |
-| [[one-piece-guess-game]] | JavaScript | 2026-09-07 | 30 KB | [[One Piece Guess]] |
-| [[exaryn-studio]] | HTML | 2026-09-07 | 734 KB | [[Exaryn Studio]] |
+| [[collingwood-fan-suite]] | CSS | 2026-09-09 | 67 KB | [[Side by Side]] |
+| [[quantflex-site]] | JavaScript | 2026-09-09 | 122 KB | [[QuantFlex]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-09-08 | 31 KB | [[One Piece Guess]] |
+| [[exaryn-studio]] | HTML | 2026-09-08 | 753 KB | [[Exaryn Studio]] |
 | [[worktree-optimiser]] | TypeScript | 2026-09-02 | 467 KB | [[Worktree Optimiser]] |
 | [[holdem-ml]] | — | 2026-09-01 | 1 KB | [[holdem-ml]] |
 | [[ChinmayGit8765]] | Python | 2026-09-01 | 24 KB | — |
