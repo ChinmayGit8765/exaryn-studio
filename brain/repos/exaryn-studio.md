@@ -3,7 +3,7 @@ title: exaryn-studio
 type: repo
 tags: [repo, public]
 language: HTML
-pushed: 2026-09-15
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[Exaryn Studio]]
 
-> The studio site — a portfolio of everything Exaryn has built, **The Daily Signal** (a digest of AI news, papers and videos that rebuilds itself every morning on a GitHub Actions cron), and **the Exaryn Brain**: an Obsidian vault of markdown notes about every project, agent, system and repo, readable in the browser with backlinks, tags, search and a graph.
+> The front door of a one-person R&amp;D studio — and a website that rewrites itself every morning before anyone reads it.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[Exaryn Studio]]
 | Full name | [ChinmayGit8765/exaryn-studio](https://github.com/ChinmayGit8765/exaryn-studio) |
 | Visibility | public |
 | Primary language | HTML |
-| Size | 892 KB |
+| Size | 2.6 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-17 |
-| Last push | 2026-09-15 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |

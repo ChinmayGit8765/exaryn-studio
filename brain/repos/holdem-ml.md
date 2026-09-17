@@ -3,7 +3,7 @@ title: holdem-ml
 type: repo
 tags: [repo, public, cfr, computer-vision, numpy, poker, reinforcement-learning]
 language: 
-pushed: 2026-09-01
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[holdem-ml]]
 
-> **Texas Hold'em you can sit down and play — against bots whose poker brain was written and trained from scratch. No PyTorch, no TensorFlow, no pretrained anything. Every matrix multiply, every backward pass, every regret update, hand-written.**
+> Texas Hold'em you can sit down and play — against bots whose poker brain was written and trained from scratch. No PyTorch, no TensorFlow, no pretrained anything. Every matrix multiply, every backward pass, every regret update, hand-written.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[holdem-ml]]
 | Full name | [ChinmayGit8765/holdem-ml](https://github.com/ChinmayGit8765/holdem-ml) |
 | Visibility | public |
 | Primary language | — |
-| Size | 1 KB |
+| Size | 16 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-09-01 |
-| Last push | 2026-09-01 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

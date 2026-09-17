@@ -42,10 +42,10 @@ One script. Walk the parsed JSON, keep keys and container types, drop leaf value
 | Category | Agents & Tooling |
 | Repository | [ChinmayGit8765/json_api_simplifier](https://github.com/ChinmayGit8765/json_api_simplifier) |
 | Primary language | Python |
-| Size | 4 KB |
+| Size | 59 KB |
 | Licence | none declared |
 | Created | 2025-10-12 |
-| Last push | 2025-10-16 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 | Language mix | Python 100.0% |
 

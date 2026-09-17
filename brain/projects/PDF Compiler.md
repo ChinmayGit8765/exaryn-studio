@@ -44,7 +44,7 @@ Browser-side only. No build, no server, no tests.
 | Size | 18.4 MB |
 | Licence | none declared |
 | Created | 2025-05-26 |
-| Last push | 2025-05-26 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 | Language mix | HTML 74.5%, TeX 25.3%, Python 0.3% |
 

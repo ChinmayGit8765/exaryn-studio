@@ -44,10 +44,10 @@ A Node server wraps the local `claude` CLI. One git worktree per agent means age
 | Category | Agents & Tooling |
 | Repository | [ChinmayGit8765/claude-work-manager](https://github.com/ChinmayGit8765/claude-work-manager) |
 | Primary language | JavaScript |
-| Size | 44 KB |
+| Size | 412 KB |
 | Licence | MIT |
 | Created | 2026-08-21 |
-| Last push | 2026-08-22 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 | Language mix | JavaScript 80.0%, CSS 16.8%, HTML 3.2% |
 

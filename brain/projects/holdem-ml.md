@@ -44,10 +44,10 @@ Everything from scratch in NumPy: a hand-written NN framework (gradients checked
 | Category | Games & Play |
 | Repository | [ChinmayGit8765/holdem-ml](https://github.com/ChinmayGit8765/holdem-ml) |
 | Primary language | — |
-| Size | 1 KB |
+| Size | 16 KB |
 | Licence | none declared |
 | Created | 2026-09-01 |
-| Last push | 2026-09-01 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 
 ## Stack

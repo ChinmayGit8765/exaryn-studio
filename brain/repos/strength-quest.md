@@ -3,7 +3,7 @@ title: strength-quest
 type: repo
 tags: [repo, public, fitness, flutter, gamification, rust]
 language: 
-pushed: 2026-08-24
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[Solo Strength Quest]]
 
-> **Level up in real life.** A fitness RPG: every workout is a quest, every PR is a boss kill.
+> Level up in real life. A fitness RPG: every workout is a quest, every PR is a boss kill.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[Solo Strength Quest]]
 | Full name | [ChinmayGit8765/strength-quest](https://github.com/ChinmayGit8765/strength-quest) |
 | Visibility | public |
 | Primary language | — |
-| Size | 156 KB |
+| Size | 425 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-08-24 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

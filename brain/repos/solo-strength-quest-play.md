@@ -3,7 +3,7 @@ title: solo-strength-quest-play
 type: repo
 tags: [repo, public]
 language: JavaScript
-pushed: 2026-08-25
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[Solo Strength Quest]]
 
-> Live: **https://chinmaygit8765.github.io/solo-strength-quest-play/**
+> Solo Strength Quest turns training into an RPG — this repo is the playable web build. 🗡
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[Solo Strength Quest]]
 | Full name | [ChinmayGit8765/solo-strength-quest-play](https://github.com/ChinmayGit8765/solo-strength-quest-play) |
 | Visibility | public |
 | Primary language | JavaScript |
-| Size | 9.5 MB |
+| Size | 9.9 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-08-25 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |

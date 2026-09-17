@@ -44,10 +44,10 @@ Rust/Axum API owns all gamification maths server-side — the client never decid
 | Category | Games & Play |
 | Repository | [ChinmayGit8765/strength-quest](https://github.com/ChinmayGit8765/strength-quest) |
 | Primary language | — |
-| Size | 156 KB |
+| Size | 425 KB |
 | Licence | none declared |
 | Created | 2026-08-24 |
-| Last push | 2026-08-24 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 
 ## Stack

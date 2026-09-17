@@ -3,7 +3,7 @@ title: SmartContract-Creator
 type: repo
 tags: [repo, public]
 language: TypeScript
-pushed: 2026-07-06
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[smartc]]
 
-> **Generate working, compile-verified smart contracts from a wizard — no boilerplate, no remembering EIPs, no scaffolding a whole project just to write one contract.**
+> Answer a few questions, get a smart contract that already compiles — and the DEPLOY.md that tells you how to ship it safely.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[smartc]]
 | Full name | [ChinmayGit8765/SmartContract-Creator](https://github.com/ChinmayGit8765/SmartContract-Creator) |
 | Visibility | public |
 | Primary language | TypeScript |
-| Size | 1016 KB |
+| Size | 1.2 MB |
 | Licence | MIT |
 | Default branch | main |
 | Created | 2026-05-14 |
-| Last push | 2026-07-06 |
+| Last push | 2026-09-17 |
 | Stars | 1 |
 | Open issues | 0 |
 | GitHub Pages | no |

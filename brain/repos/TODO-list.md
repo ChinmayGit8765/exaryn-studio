@@ -3,7 +3,7 @@ title: TODO-list
 type: repo
 tags: [repo, public]
 language: C#
-pushed: 2026-08-24
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[TODO List]]
 
-> A small TODO list app with an Angular front-end and a .NET Web API back-end. Tasks live in memory inside the API and reset on each restart — no database is required.
+> A todo app with nothing clever in it — and every convention of a production codebase around it. .NET 10 Web API · Angular 21 signals · Tailwind v4 · in-memory store, no database to install
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[TODO List]]
 | Full name | [ChinmayGit8765/TODO-list](https://github.com/ChinmayGit8765/TODO-list) |
 | Visibility | public |
 | Primary language | C# |
-| Size | 105 KB |
+| Size | 407 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-05-12 |
-| Last push | 2026-08-24 |
+| Last push | 2026-09-17 |
 | Stars | 1 |
 | Open issues | 0 |
 | GitHub Pages | no |

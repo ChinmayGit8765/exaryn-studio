@@ -3,7 +3,7 @@ title: PDFCompiler
 type: repo
 tags: [repo, public]
 language: HTML
-pushed: 2025-05-26
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -14,7 +14,7 @@ generated: true
 
 Project note: [[PDF Compiler]]
 
-> This code is mainly used to compile many PDF files into one when you have a zip
+> Drop in a ZIP of scanned pages, get back one merged PDF — from the command line or a two-field GUI.
 
 ## Metadata
 
@@ -27,7 +27,7 @@ Project note: [[PDF Compiler]]
 | Licence | none declared |
 | Default branch | main |
 | Created | 2025-05-26 |
-| Last push | 2025-05-26 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

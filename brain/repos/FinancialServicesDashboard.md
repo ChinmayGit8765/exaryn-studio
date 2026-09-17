@@ -3,7 +3,7 @@ title: FinancialServicesDashboard
 type: repo
 tags: [repo, public]
 language: Java
-pushed: 2026-06-10
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[QuantLens]]
 
-> An AI-augmented portfolio and market intelligence dashboard fusing a quantitative-finance Spring Boot backend with a Vue 3 SPA. Features real portfolio analytics (P&L, risk metrics, Sharpe, VaR, Monte Carlo), Spring AI narration, and a one-click demo mode — no API keys needed.
+> A portfolio dashboard that does the quant math for real — Monte Carlo SDEs, VaR, cointegration — and lets an LLM narrate it. docker compose up, no API key, and it is already full of data.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[QuantLens]]
 | Full name | [ChinmayGit8765/FinancialServicesDashboard](https://github.com/ChinmayGit8765/FinancialServicesDashboard) |
 | Visibility | public |
 | Primary language | Java |
-| Size | 1.9 MB |
+| Size | 2.6 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-06-06 |
-| Last push | 2026-06-10 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

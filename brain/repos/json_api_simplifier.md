@@ -3,7 +3,7 @@ title: json_api_simplifier
 type: repo
 tags: [repo, public]
 language: Python
-pushed: 2025-10-16
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,6 +16,8 @@ generated: true
 
 Project note: [[JSON API Simplifier]]
 
+> Paste in a real API response, get back its exact shape with every value zeroed out.
+
 ## Metadata
 
 | | |
@@ -23,11 +25,11 @@ Project note: [[JSON API Simplifier]]
 | Full name | [ChinmayGit8765/json_api_simplifier](https://github.com/ChinmayGit8765/json_api_simplifier) |
 | Visibility | public |
 | Primary language | Python |
-| Size | 4 KB |
+| Size | 59 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2025-10-12 |
-| Last push | 2025-10-16 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

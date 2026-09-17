@@ -44,10 +44,10 @@ One Node binary. Wizard collects intent, templates emit Solidity or Anchor, solc
 | Category | Web & Product |
 | Repository | [ChinmayGit8765/SmartContract-Creator](https://github.com/ChinmayGit8765/SmartContract-Creator) |
 | Primary language | TypeScript |
-| Size | 1016 KB |
+| Size | 1.2 MB |
 | Licence | MIT |
 | Created | 2026-05-14 |
-| Last push | 2026-07-06 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 | Language mix | TypeScript 99.0%, JavaScript 1.0%, Python 0.0% |
 

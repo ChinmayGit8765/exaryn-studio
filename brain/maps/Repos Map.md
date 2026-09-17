@@ -16,29 +16,29 @@ All 37 repositories on the account — including the ones that went nowhere. 23 
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[collingwood-fan-suite]] | CSS | 2026-09-16 | 82 KB | [[Side by Side]] |
-| [[quantflex-site]] | JavaScript | 2026-09-16 | 161 KB | [[QuantFlex]] |
-| [[one-piece-guess-game]] | JavaScript | 2026-09-15 | 36 KB | [[One Piece Guess]] |
-| [[exaryn-studio]] | HTML | 2026-09-15 | 892 KB | [[Exaryn Studio]] |
-| [[worktree-optimiser]] | TypeScript | 2026-09-02 | 467 KB | [[Worktree Optimiser]] |
-| [[holdem-ml]] | — | 2026-09-01 | 1 KB | [[holdem-ml]] |
+| [[collingwood-fan-suite]] | CSS | 2026-09-17 | 1.3 MB | [[Side by Side]] |
+| [[PDFCompiler]] | HTML | 2026-09-17 | 18.4 MB | [[PDF Compiler]] |
+| [[MyBlog]] | — | 2026-09-17 | 5 KB | — |
+| [[quantflex-site]] | JavaScript | 2026-09-17 | 1.3 MB | [[QuantFlex]] |
+| [[holdem-ml]] | — | 2026-09-17 | 16 KB | [[holdem-ml]] |
+| [[exaryn-studio]] | HTML | 2026-09-17 | 2.6 MB | [[Exaryn Studio]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-09-17 | 1.3 MB | [[One Piece Guess]] |
+| [[claude-work-manager]] | JavaScript | 2026-09-17 | 412 KB | [[Claude Work Manager]] |
+| [[worktree-optimiser]] | TypeScript | 2026-09-17 | 819 KB | [[Worktree Optimiser]] |
+| [[VueSkillShowcase]] | — | 2026-09-17 | 5 KB | — |
+| [[VolatilityModel]] | Python | 2026-09-17 | 3.1 MB | [[VolForecast]] |
+| [[TODO-list]] | C# | 2026-09-17 | 407 KB | [[TODO List]] |
+| [[strength-quest]] | — | 2026-09-17 | 425 KB | [[Solo Strength Quest]] |
+| [[solo-strength-quest-play]] | JavaScript | 2026-09-17 | 9.9 MB | [[Solo Strength Quest]] |
+| [[SmartContract-Creator]] | TypeScript | 2026-09-17 | 1.2 MB | [[smartc]] |
+| [[quantflex]] | — | 2026-09-17 | 237 KB | [[QuantFlex]] |
+| [[json_api_simplifier]] | Python | 2026-09-17 | 59 KB | [[JSON API Simplifier]] |
+| [[FinancialServicesDashboard]] | Java | 2026-09-17 | 2.6 MB | [[QuantLens]] |
+| [[ContactUsPage]] | TypeScript | 2026-09-17 | 628 KB | [[Contact Flow]] |
+| [[claude-code-test]] | Vue | 2026-09-17 | 135 KB | — |
+| [[AlfredOpenSource]] | Python | 2026-09-17 | 949 KB | [[ALFRED]] |
 | [[ChinmayGit8765]] | Python | 2026-09-01 | 24 KB | — |
-| [[solo-strength-quest-play]] | JavaScript | 2026-08-25 | 9.5 MB | [[Solo Strength Quest]] |
-| [[AlfredOpenSource]] | Python | 2026-08-25 | 846 KB | [[ALFRED]] |
-| [[strength-quest]] | — | 2026-08-24 | 156 KB | [[Solo Strength Quest]] |
-| [[quantflex]] | — | 2026-08-24 | 2 KB | [[QuantFlex]] |
-| [[TODO-list]] | C# | 2026-08-24 | 105 KB | [[TODO List]] |
-| [[ContactUsPage]] | TypeScript | 2026-08-24 | 311 KB | [[Contact Flow]] |
-| [[claude-work-manager]] | JavaScript | 2026-08-22 | 44 KB | [[Claude Work Manager]] |
-| [[VolatilityModel]] | Python | 2026-07-19 | 2.5 MB | [[VolForecast]] |
-| [[SmartContract-Creator]] | TypeScript | 2026-07-06 | 1016 KB | [[smartc]] |
-| [[FinancialServicesDashboard]] | Java | 2026-06-10 | 1.9 MB | [[QuantLens]] |
-| [[claude-code-test]] | Vue | 2026-01-30 | 5 KB | — |
-| [[json_api_simplifier]] | Python | 2025-10-16 | 4 KB | [[JSON API Simplifier]] |
 | [[chinmay-tech-portfolio]] | — | 2025-09-20 | — | — |
-| [[VueSkillShowcase]] | — | 2025-08-22 | — | — |
-| [[PDFCompiler]] | HTML | 2025-05-26 | 18.4 MB | [[PDF Compiler]] |
-| [[MyBlog]] | — | 2024-12-29 | — | — |
 
 ## Private
 

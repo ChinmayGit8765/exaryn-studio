@@ -3,7 +3,7 @@ title: claude-work-manager
 type: repo
 tags: [repo, public]
 language: JavaScript
-pushed: 2026-08-22
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[Claude Work Manager]]
 
-> A self-hosted, mobile-first dashboard for running **concurrent Claude Code sessions across git worktrees** — spawn isolated worktrees, chat with a Claude Code agent in each one, watch localhost previews of your dev servers, and commit/push from your phone.
+> A self-hosted dashboard that runs concurrent Claude Code agents — one per git worktree — and hands you the whole fleet on your phone.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[Claude Work Manager]]
 | Full name | [ChinmayGit8765/claude-work-manager](https://github.com/ChinmayGit8765/claude-work-manager) |
 | Visibility | public |
 | Primary language | JavaScript |
-| Size | 44 KB |
+| Size | 412 KB |
 | Licence | MIT |
 | Default branch | master |
 | Created | 2026-08-21 |
-| Last push | 2026-08-22 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

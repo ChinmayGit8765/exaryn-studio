@@ -3,7 +3,7 @@ title: ContactUsPage
 type: repo
 tags: [repo, public]
 language: TypeScript
-pushed: 2026-08-24
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[Contact Flow]]
 
-> A production-shaped **contact / lead-capture flow**, end to end: validated form in, reviewed contact out. NestJS + TypeORM + PostgreSQL API, Next.js 14 (App Router) + Tailwind frontend, one `docker compose up` to run the lot.
+> A contact form is the easiest thing in web dev to get wrong. This one is done properly on both sides — and it boots with one command.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[Contact Flow]]
 | Full name | [ChinmayGit8765/ContactUsPage](https://github.com/ChinmayGit8765/ContactUsPage) |
 | Visibility | public |
 | Primary language | TypeScript |
-| Size | 311 KB |
+| Size | 628 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-06-13 |
-| Last push | 2026-08-24 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

@@ -3,7 +3,7 @@ title: collingwood-fan-suite
 type: repo
 tags: [repo, public]
 language: CSS
-pushed: 2026-09-16
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[Side by Side]]
 
-> A self-updating home page for Collingwood tragics — and, with a one-file edit, for fans of **any AFL club**.
+> A footy home page that updates itself. No backend, no build step, no API keys — just a cron job, two JSON files and one club you care about.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[Side by Side]]
 | Full name | [ChinmayGit8765/collingwood-fan-suite](https://github.com/ChinmayGit8765/collingwood-fan-suite) |
 | Visibility | public |
 | Primary language | CSS |
-| Size | 82 KB |
+| Size | 1.3 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-09-16 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |

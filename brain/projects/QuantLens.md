@@ -44,10 +44,10 @@ Spring Boot 3.5 runs the quant engine; Spring AI runs tool-calling and RAG over 
 | Category | Quant & Finance |
 | Repository | [ChinmayGit8765/FinancialServicesDashboard](https://github.com/ChinmayGit8765/FinancialServicesDashboard) |
 | Primary language | Java |
-| Size | 1.9 MB |
+| Size | 2.6 MB |
 | Licence | none declared |
 | Created | 2026-06-06 |
-| Last push | 2026-06-10 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 | Language mix | Java 77.4%, Vue 12.7%, TypeScript 8.9%, CSS 0.4%, PowerShell 0.3% |
 

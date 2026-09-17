@@ -43,10 +43,10 @@ NestJS + TypeORM over Postgres on the API side, Next.js 14 App Router with Tailw
 | Category | Web & Product |
 | Repository | [ChinmayGit8765/ContactUsPage](https://github.com/ChinmayGit8765/ContactUsPage) |
 | Primary language | TypeScript |
-| Size | 311 KB |
+| Size | 628 KB |
 | Licence | none declared |
 | Created | 2026-06-13 |
-| Last push | 2026-08-24 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 | Language mix | TypeScript 86.9%, JavaScript 10.1%, Dockerfile 1.8%, CSS 1.1% |
 

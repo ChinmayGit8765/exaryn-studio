@@ -43,10 +43,10 @@ A todo app that is deliberately boring on the surface and deliberately rigorous 
 | Category | Web & Product |
 | Repository | [ChinmayGit8765/TODO-list](https://github.com/ChinmayGit8765/TODO-list) |
 | Primary language | C# |
-| Size | 105 KB |
+| Size | 407 KB |
 | Licence | none declared |
 | Created | 2026-05-12 |
-| Last push | 2026-08-24 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 | Language mix | C# 45.8%, TypeScript 33.2%, HTML 20.6%, CSS 0.4% |
 

@@ -3,7 +3,7 @@ title: one-piece-guess-game
 type: repo
 tags: [repo, public]
 language: JavaScript
-pushed: 2026-09-15
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[One Piece Guess]]
 
-> Wordle, but for One Piece. Guess the daily character — every wrong guess tells you how close you are on **gender, crew, devil fruit, haki, bounty, height, origin and debut saga**, with arrows when you're over or under. Hints unlock as you struggle. New pirate every morning, **picked by a GitHub Actions cron**.
+> Wordle, but for One Piece. One pirate a day, chosen by a cron job at 21:15 UTC — breakfast in Melbourne — and every wrong guess tells you how close you are on crew, bounty, haki, devil fruit and five more columns.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[One Piece Guess]]
 | Full name | [ChinmayGit8765/one-piece-guess-game](https://github.com/ChinmayGit8765/one-piece-guess-game) |
 | Visibility | public |
 | Primary language | JavaScript |
-| Size | 36 KB |
+| Size | 1.3 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-09-15 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |

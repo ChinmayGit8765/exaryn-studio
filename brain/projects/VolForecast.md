@@ -44,10 +44,10 @@ Prefect orchestrates the lifecycle; MLflow holds the champion/challenger registr
 | Category | Quant & Finance |
 | Repository | [ChinmayGit8765/VolatilityModel](https://github.com/ChinmayGit8765/VolatilityModel) |
 | Primary language | Python |
-| Size | 2.5 MB |
+| Size | 3.1 MB |
 | Licence | none declared |
 | Created | 2026-06-10 |
-| Last push | 2026-07-19 |
+| Last push | 2026-09-17 |
 | Visibility | public |
 | Language mix | Python 98.8%, Dockerfile 1.0%, Shell 0.2% |
 
