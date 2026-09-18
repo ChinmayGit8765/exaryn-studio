@@ -16,13 +16,13 @@ All 37 repositories on the account — including the ones that went nowhere. 23 
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[collingwood-fan-suite]] | CSS | 2026-09-17 | 1.3 MB | [[Side by Side]] |
+| [[collingwood-fan-suite]] | CSS | 2026-09-18 | 1.3 MB | [[Side by Side]] |
+| [[quantflex-site]] | JavaScript | 2026-09-18 | 1.3 MB | [[QuantFlex]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-09-17 | 1.3 MB | [[One Piece Guess]] |
+| [[exaryn-studio]] | HTML | 2026-09-17 | 2.6 MB | [[Exaryn Studio]] |
 | [[PDFCompiler]] | HTML | 2026-09-17 | 18.4 MB | [[PDF Compiler]] |
 | [[MyBlog]] | — | 2026-09-17 | 5 KB | — |
-| [[quantflex-site]] | JavaScript | 2026-09-17 | 1.3 MB | [[QuantFlex]] |
 | [[holdem-ml]] | — | 2026-09-17 | 16 KB | [[holdem-ml]] |
-| [[exaryn-studio]] | HTML | 2026-09-17 | 2.6 MB | [[Exaryn Studio]] |
-| [[one-piece-guess-game]] | JavaScript | 2026-09-17 | 1.3 MB | [[One Piece Guess]] |
 | [[claude-work-manager]] | JavaScript | 2026-09-17 | 412 KB | [[Claude Work Manager]] |
 | [[worktree-optimiser]] | TypeScript | 2026-09-17 | 819 KB | [[Worktree Optimiser]] |
 | [[VueSkillShowcase]] | — | 2026-09-17 | 5 KB | — |
