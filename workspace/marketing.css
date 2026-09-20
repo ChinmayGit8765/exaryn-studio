@@ -1,0 +1,343 @@
+/* Marketing workspace — colocated. Does not change the public site stylesheet. */
+
+:root {
+  --paper: #f4f1ea;
+  --paper-raise: #eeeae1;
+  --ink: #171512;
+  --muted: #57524b;
+  --line: #d8d2c6;
+  --grid: #ebe7dd;
+  --accent: #ff4d00;
+  --danger: #9b1d1d;
+  --ok: #1f6b3a;
+  --serif: "Instrument Serif", Georgia, serif;
+  --sans: "Inter", -apple-system, system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+  --pad: clamp(16px, 4vw, 40px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 96px 96px;
+  background-attachment: fixed;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 80;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 8px 12px;
+}
+
+.skip-link:focus { top: 12px; }
+
+.mono {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.workspace-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding: 14px var(--pad) 16px;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px 24px;
+}
+
+.wordmark {
+  font-family: var(--serif);
+  font-size: 26px;
+  letter-spacing: -0.01em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wordmark .mark { color: var(--accent); }
+
+.draft-tag {
+  color: var(--accent);
+}
+
+.privacy-banner,
+.limit-banner {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  background: var(--paper-raise);
+  max-width: 72ch;
+}
+
+.privacy-banner strong { color: var(--accent); }
+
+.live-status {
+  margin: 0 var(--pad);
+  min-height: 0;
+}
+
+.live-status[data-kind="ok"],
+.live-status[data-kind="error"] {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+}
+
+.live-status[data-kind="ok"] { border-color: var(--ok); }
+.live-status[data-kind="error"] { border-color: var(--danger); color: var(--danger); }
+
+main { padding: 28px var(--pad) 72px; }
+
+.page-title {
+  font-family: var(--serif);
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 400;
+  line-height: 0.95;
+  max-width: 16ch;
+  margin: 8px 0 16px;
+}
+
+.page-title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.lede {
+  max-width: 62ch;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.toolbar,
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: min(100%, 220px);
+}
+
+.field.grow { flex: 1; }
+
+label, .field-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+input, select, textarea, button {
+  font: inherit;
+}
+
+input, select, textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 10px 12px;
+  min-height: 44px;
+}
+
+textarea { min-height: 96px; resize: vertical; }
+
+input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.btn {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--ink);
+}
+
+.btn.danger {
+  background: transparent;
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.file-btn { position: relative; overflow: hidden; }
+.file-btn input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.record-grid {
+  display: grid;
+  gap: 22px;
+}
+
+@media (min-width: 960px) {
+  .record-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.panel {
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 88%, #fff);
+  padding: 16px;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.panel h2 {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.card-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  padding: 12px;
+  background: var(--paper);
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  overflow-wrap: anywhere;
+}
+
+.meta, .card p {
+  color: var(--muted);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.badge.unknown { border-color: var(--muted); }
+.badge.observed { border-color: var(--ok); color: var(--ok); }
+.badge.reported { border-color: var(--accent); color: var(--accent); }
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.empty {
+  padding: 18px 12px;
+  color: var(--muted);
+  border: 1px dashed var(--line);
+}
+
+dialog {
+  width: min(640px, 100%);
+  max-height: calc(100vh - 32px);
+  margin: auto;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0;
+}
+
+dialog::backdrop { background: rgb(23 21 18 / 0.55); }
+
+.dialog-form { padding: 18px; overflow: auto; }
+
+.dialog-form h2 {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .toolbar, .filters, .card-actions, .dialog-actions { flex-direction: column; align-items: stretch; }
+  .btn, .file-btn { width: 100%; }
+}

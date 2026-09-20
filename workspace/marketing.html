@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Marketing workspace (draft, local only) · ExarynStudio</title>
+  <meta name="description" content="Draft local-browser marketing workspace for product, project, asset and review records. Not public navigation and not authenticated hosting." />
+  <link rel="stylesheet" href="marketing.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+</head>
+<body>
+  <a class="skip-link" href="#workspace-main">Skip to workspace</a>
+
+  <header class="workspace-header">
+    <div class="header-row">
+      <span class="wordmark">Exaryn<span class="mark">✳</span></span>
+      <p class="mono draft-tag">Draft workspace · not in public navigation</p>
+    </div>
+    <p class="privacy-banner">
+      <strong>Local browser workspace.</strong>
+      This page is a manual evidence notebook in <em>this</em> browser, not authenticated private hosting.
+      The public repository must not receive studio account data, credentials, or live social exports.
+      Nothing here is uploaded, analysed by a third party, or connected to ExarynEngine.
+    </p>
+    <p class="limit-banner">
+      Manual capture only. There is no SEO, AEO, GEO, Search Console, or social-platform adapter in this slice.
+      Missing metrics stay <strong>unknown</strong> — they are never stored as zero or invented.
+    </p>
+  </header>
+
+  <div id="live-status" class="live-status" role="status" aria-live="polite"></div>
+
+  <main id="workspace-main">
+    <p class="mono">EXA-42 · PRODUCT / PROJECT / ASSET / CHANNEL / REVIEW</p>
+    <h1 class="page-title">Marketing <em>workspace</em></h1>
+    <p class="lede">
+      Create a product (ongoing offering) and an optional linked project (bounded effort),
+      add a content asset or product surface, then record an evidence-backed review.
+      Reload keeps the records in this browser. Export writes a JSON file you control.
+    </p>
+
+    <div class="filters" role="search">
+      <div class="field">
+        <label for="filter-product">Filter by product</label>
+        <select id="filter-product"></select>
+      </div>
+      <div class="field">
+        <label for="filter-project">Filter by project</label>
+        <select id="filter-project"></select>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button type="button" class="btn" id="export-json">Export JSON</button>
+      <label class="btn secondary file-btn">
+        Import JSON
+        <input id="import-json" type="file" accept="application/json,.json" />
+      </label>
+      <button type="button" class="btn secondary" id="load-example">Load fictional example</button>
+      <button type="button" class="btn danger" id="clear-workspace">Clear this browser</button>
+    </div>
+
+    <div class="record-grid">
+      <section class="panel" aria-labelledby="products-heading">
+        <div class="panel-head">
+          <h2 id="products-heading">Products</h2>
+          <button type="button" class="btn" data-create="product">New product</button>
+        </div>
+        <p class="meta">An ongoing offering. Distinct from a bounded project.</p>
+        <ul class="card-list" id="product-list"></ul>
+      </section>
+
+      <section class="panel" aria-labelledby="projects-heading">
+        <div class="panel-head">
+          <h2 id="projects-heading">Projects</h2>
+          <button type="button" class="btn" data-create="project">New project</button>
+        </div>
+        <p class="meta">A bounded effort. May optionally link to one product.</p>
+        <ul class="card-list" id="project-list"></ul>
+      </section>
+
+      <section class="panel" aria-labelledby="assets-heading">
+        <div class="panel-head">
+          <h2 id="assets-heading">Assets</h2>
+          <button type="button" class="btn" data-create="asset">New asset</button>
+        </div>
+        <p class="meta">A content asset or product surface, linked to a product or project, on one channel.</p>
+        <ul class="card-list" id="asset-list"></ul>
+      </section>
+
+      <section class="panel" aria-labelledby="reviews-heading">
+        <div class="panel-head">
+          <h2 id="reviews-heading">Reviews</h2>
+          <button type="button" class="btn" data-create="review">New review</button>
+        </div>
+        <p class="meta">Evidence status is observed, reported, or unknown. No live API reads.</p>
+        <ul class="card-list" id="review-list"></ul>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="record-dialog" aria-labelledby="dialog-title">
+    <form id="record-form" class="dialog-form">
+      <h2 id="dialog-title">Record</h2>
+      <div id="form-fields" class="form-grid"></div>
+      <div class="dialog-actions">
+        <button type="submit" class="btn">Save in this browser</button>
+        <button type="button" class="btn secondary" id="cancel-dialog">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="marketing-store.js"></script>
+  <script src="marketing.js"></script>
+</body>
+</html>
