@@ -232,6 +232,12 @@ input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.panel-head .btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .panel h2 {
