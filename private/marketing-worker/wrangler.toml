@@ -1,0 +1,23 @@
+# Private marketing workspace host (EXA-59). Deployed only behind Cloudflare
+# Access; the Worker additionally verifies the Access JWT itself and fails closed.
+#
+# Required secrets (set with `wrangler secret put`, never committed):
+#   ACCESS_TEAM_DOMAIN     <team>.cloudflareaccess.com
+#   ACCESS_AUD             Access application audience tag
+#   ACCESS_ALLOWED_EMAILS  optional comma-separated defence-in-depth allowlist
+#
+# Without ACCESS_TEAM_DOMAIN and ACCESS_AUD every request is answered 401.
+
+name = "exaryn-marketing-private"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+preview_urls = false
+
+[assets]
+directory = "../../workspace"
+binding = "ASSETS"
+run_worker_first = true
+
+[observability]
+enabled = false
