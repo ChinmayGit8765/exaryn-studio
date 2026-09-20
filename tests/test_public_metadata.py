@@ -84,10 +84,39 @@ class PublicFilterTests(unittest.TestCase):
         self.assertFalse(public_meta.is_public_repo(FIXTURE_PRIVATE))
         self.assertTrue(public_meta.is_public_repo(FIXTURE_PUBLIC))
 
-    def test_visibility_private_without_flag_is_dropped(self):
+    def test_internal_visibility_is_dropped(self):
         row = dict(FIXTURE_PUBLIC)
         row["private"] = False
-        row["visibility"] = "private"
+        row["visibility"] = "internal"
+        self.assertFalse(public_meta.is_public_repo(row))
+
+    def test_unknown_and_malformed_visibility_are_dropped(self):
+        unknown = dict(FIXTURE_PUBLIC)
+        unknown.pop("private", None)
+        unknown.pop("visibility", None)
+        self.assertFalse(public_meta.is_public_repo(unknown))
+
+        junk = dict(FIXTURE_PUBLIC)
+        junk["private"] = False
+        junk["visibility"] = "not-a-github-visibility"
+        self.assertFalse(public_meta.is_public_repo(junk))
+
+        malformed = dict(FIXTURE_PUBLIC)
+        malformed["visibility"] = ["public"]
+        self.assertFalse(public_meta.is_public_repo(malformed))
+        self.assertFalse(public_meta.is_public_repo("not-a-dict"))
+        self.assertFalse(public_meta.is_public_repo(None))
+
+    def test_private_false_with_blank_visibility_is_public(self):
+        row = dict(FIXTURE_PUBLIC)
+        row["private"] = False
+        row["visibility"] = ""
+        self.assertTrue(public_meta.is_public_repo(row))
+
+    def test_conflicting_private_flag_wins(self):
+        row = dict(FIXTURE_PUBLIC)
+        row["private"] = True
+        row["visibility"] = "public"
         self.assertFalse(public_meta.is_public_repo(row))
 
     def test_select_public_drops_private_rows(self):
@@ -126,6 +155,43 @@ class PublicFilterTests(unittest.TestCase):
         self.assertNotIn("## Private", body)
         self.assertNotIn("fixture-private-example", body)
         self.assertIn("Public repositories", body)
+
+    def test_generate_bundle_drops_stale_unpublished_repo_note(self):
+        """A previously generated unpublished note cannot re-enter the bundle."""
+        from io import StringIO
+
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            data = tmp_path / "data"
+            vault = tmp_path / "brain"
+            for folder in ("repos", "projects", "maps", "agents"):
+                (vault / folder).mkdir(parents=True)
+            data.mkdir()
+            stale = vault / "repos" / "fixture-stale-unpublished.md"
+            stale.write_text(
+                "---\ntitle: fixture-stale-unpublished\ntype: repo\ngenerated: true\n"
+                "---\n\n# fixture-stale-unpublished\n\nshould not survive\n",
+                encoding="utf-8",
+            )
+            (data / "projects.json").write_text("[]\n", encoding="utf-8")
+            (data / "repos.json").write_text(
+                json.dumps({"repos": [FIXTURE_PUBLIC]}) + "\n", encoding="utf-8"
+            )
+            bundle_path = data / "brain.json"
+            buf = StringIO()
+            with mock.patch.object(brain_mod, "DATA", data), mock.patch.object(
+                brain_mod, "VAULT", vault
+            ), mock.patch.object(brain_mod, "BUNDLE", bundle_path), mock.patch(
+                "sys.stdout", buf
+            ):
+                brain_mod.generate()
+                doc = brain_mod.bundle()
+            self.assertFalse(stale.exists())
+            ids = [n["id"] for n in doc["notes"]]
+            self.assertNotIn("repos/fixture-stale-unpublished", ids)
+            self.assertIn("repos/fixture-public-example", ids)
+            self.assertNotIn("## Private", json.dumps(doc))
+            self.assertNotIn("fixture-stale-unpublished", buf.getvalue())
 
     def test_committed_publication_files_are_public_only(self):
         repos_doc = json.loads((ROOT / "data" / "repos.json").read_text(encoding="utf-8"))
