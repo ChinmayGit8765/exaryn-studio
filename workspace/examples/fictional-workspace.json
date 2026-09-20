@@ -1,0 +1,68 @@
+{
+  "kind": "exaryn-studio-marketing-workspace",
+  "schemaVersion": 1,
+  "fictional": true,
+  "label": "Fictional example — not studio, product, or account data",
+  "privacy": "Local browser workspace only. This file is an opt-in fictional example.",
+  "products": [
+    {
+      "id": "ex-product-harbor-lamp",
+      "name": "Harbor Lamp Co. (fictional)",
+      "audience": "Apartment renters who want warmer evening light",
+      "problemOrExperience": "Harsh overhead lighting makes a rented room feel unfinished.",
+      "intendedValue": "A portable lamp that makes the room feel settled.",
+      "notes": "FICTIONAL EXAMPLE. Not an Exaryn offering.",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "ex-project-spring-landing",
+      "name": "Spring landing rewrite (fictional)",
+      "productId": "ex-product-harbor-lamp",
+      "outcome": "A bounded draft of the product page, not a live campaign.",
+      "owner": "Example reviewer",
+      "notes": "FICTIONAL EXAMPLE. No real publication.",
+      "createdAt": "2026-09-02T00:00:00.000Z",
+      "updatedAt": "2026-09-02T00:00:00.000Z"
+    }
+  ],
+  "assets": [
+    {
+      "id": "ex-asset-hero-draft",
+      "name": "Homepage hero draft (fictional)",
+      "kind": "content",
+      "productId": "ex-product-harbor-lamp",
+      "projectId": "ex-project-spring-landing",
+      "channel": "website_search",
+      "format": "Landing page copy",
+      "message": "A lamp for the hour after work.",
+      "sourceUrl": "https://example.com/fictional-harbor-lamp-hero",
+      "notes": "FICTIONAL EXAMPLE. URL is an example.com placeholder.",
+      "createdAt": "2026-09-03T00:00:00.000Z",
+      "updatedAt": "2026-09-03T00:00:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "ex-review-hero-unknown",
+      "assetId": "ex-asset-hero-draft",
+      "productId": "ex-product-harbor-lamp",
+      "projectId": "ex-project-spring-landing",
+      "channel": "website_search",
+      "intendedAudience": "Renters comparing a first lamp purchase",
+      "desiredOutcome": "Understand the product enough to open the shop path",
+      "sourceUrl": "https://example.com/fictional-harbor-lamp-hero",
+      "sourceNote": "Manual read of the fictional draft page.",
+      "observationDate": "2026-09-04",
+      "evidenceStatus": "unknown",
+      "metricName": "",
+      "metricValue": null,
+      "finding": "The first line names the hour, not the lamp. No search or answer-engine sample was collected, so discovery reach stays unknown — not zero.",
+      "nextAction": "Write a second sentence that states what the lamp is before any claim about mood.",
+      "createdAt": "2026-09-04T00:00:00.000Z",
+      "updatedAt": "2026-09-04T00:00:00.000Z"
+    }
+  ]
+}
