@@ -16,10 +16,11 @@ All 37 repositories on the account — including the ones that went nowhere. 23 
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[collingwood-fan-suite]] | CSS | 2026-09-19 | 1.3 MB | [[Side by Side]] |
-| [[quantflex-site]] | JavaScript | 2026-09-19 | 1.3 MB | [[QuantFlex]] |
-| [[one-piece-guess-game]] | JavaScript | 2026-09-18 | 1.3 MB | [[One Piece Guess]] |
-| [[exaryn-studio]] | HTML | 2026-09-18 | 2.6 MB | [[Exaryn Studio]] |
+| [[collingwood-fan-suite]] | CSS | 2026-09-20 | 1.3 MB | [[Side by Side]] |
+| [[exaryn-studio]] | JavaScript | 2026-09-20 | 2.7 MB | [[Exaryn Studio]] |
+| [[ChinmayGit8765]] | Python | 2026-09-20 | 25 KB | — |
+| [[quantflex-site]] | JavaScript | 2026-09-20 | 1.7 MB | [[QuantFlex]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-09-19 | 1.3 MB | [[One Piece Guess]] |
 | [[PDFCompiler]] | HTML | 2026-09-17 | 18.4 MB | [[PDF Compiler]] |
 | [[MyBlog]] | — | 2026-09-17 | 5 KB | — |
 | [[holdem-ml]] | — | 2026-09-17 | 16 KB | [[holdem-ml]] |
@@ -37,7 +38,6 @@ All 37 repositories on the account — including the ones that went nowhere. 23 
 | [[ContactUsPage]] | TypeScript | 2026-09-17 | 628 KB | [[Contact Flow]] |
 | [[claude-code-test]] | Vue | 2026-09-17 | 135 KB | — |
 | [[AlfredOpenSource]] | Python | 2026-09-17 | 949 KB | [[ALFRED]] |
-| [[ChinmayGit8765]] | Python | 2026-09-01 | 24 KB | — |
 | [[chinmay-tech-portfolio]] | — | 2025-09-20 | — | — |
 
 ## Private
