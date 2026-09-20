@@ -27,6 +27,9 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from public_meta import is_public_repo, select_public_repos
+
 ROOT = Path(__file__).resolve().parent.parent
 VAULT = ROOT / "brain"
 DATA = ROOT / "data"
@@ -148,9 +151,10 @@ def project_note(p: dict, repos_by_name: dict, vocab: set[str]) -> tuple[Path, d
         "status": p.get("status", ""),
         "year": p.get("year", ""),
         "category": p.get("category", ""),
-        "repo": repo_full,
         "generated": "true",
     }
+    if repo_full:
+        meta["repo"] = repo_full
 
     out = [BANNER.format(src="projects.json"), f"# {name}", "", f"*{p.get('tagline','')}*", ""]
     out += [p.get("description", ""), ""]
@@ -217,7 +221,7 @@ def repo_note(r: dict, project_by_repo: dict) -> tuple[Path, dict, str]:
     name = r["name"]
     project = project_by_repo.get(r.get("full_name", ""))
 
-    state = "archived" if r.get("archived") else ("private" if r.get("private") else "public")
+    state = "archived" if r.get("archived") else "public"
     meta = {
         "title": name,
         "type": "repo",
@@ -238,7 +242,7 @@ def repo_note(r: dict, project_by_repo: dict) -> tuple[Path, dict, str]:
     out += ["## Metadata", "", "| | |", "| --- | --- |"]
     out += [
         f"| Full name | [{r.get('full_name','')}]({r.get('html_url','')}) |",
-        f"| Visibility | {r.get('visibility') or ('private' if r.get('private') else 'public')} |",
+        f"| Visibility | public |",
         f"| Primary language | {r.get('language') or '—'} |",
         f"| Size | {human_size(r.get('size'))} |",
         f"| Licence | {r.get('license') or 'none declared'} |",
@@ -287,11 +291,10 @@ def projects_map(projects: list) -> tuple[Path, dict, str]:
 
 
 def repos_map(repos: list, project_by_repo: dict) -> tuple[Path, dict, str]:
-    live = [r for r in repos if not r.get("archived") and not r.get("private")]
-    private = [r for r in repos if r.get("private")]
+    live = [r for r in repos if not r.get("archived")]
     out = [BANNER.format(src="repos.json"), "# Repos Map", "",
-           f"All {len(repos)} repositories on the account — including the ones that went "
-           f"nowhere. {len(live)} public and active, {len(private)} private. "
+           f"Public repositories on the account — {len(repos)} of them, "
+           f"including experiments that went nowhere. {len(live)} are active. "
            f"The curated subset is {link('Projects Map')}.", ""]
 
     def table(rows):
@@ -303,11 +306,6 @@ def repos_map(repos: list, project_by_repo: dict) -> tuple[Path, dict, str]:
         return lines
 
     out += ["## Public", ""] + table(live) + [""]
-    if private:
-        out += ["## Private", "",
-                "Visible here because the sweep runs authenticated. Mostly superseded "
-                "attempts — see the note on them in " + link("Open Questions") + ".", ""]
-        out += table(private) + [""]
     archived = [r for r in repos if r.get("archived")]
     if archived:
         out += ["## Archived", ""] + table(archived) + [""]
@@ -377,7 +375,7 @@ def agent_ledger(projects: list) -> tuple[Path, dict, str]:
 def generate() -> int:
     projects = json.loads((DATA / "projects.json").read_text(encoding="utf-8"))
     repos_doc = json.loads((DATA / "repos.json").read_text(encoding="utf-8"))
-    repos = repos_doc["repos"]
+    repos = select_public_repos(repos_doc.get("repos") or [])
 
     repos_by_name = {r["name"]: r for r in repos}
     project_by_repo = {}
@@ -393,6 +391,8 @@ def generate() -> int:
         write_note(*project_note(p, repos_by_name, vocab))
         written += 1
     for r in repos:
+        if not is_public_repo(r):
+            continue
         write_note(*repo_note(r, project_by_repo))
         written += 1
     for maker in (
@@ -406,11 +406,14 @@ def generate() -> int:
 
     # Drop generated notes whose source row has disappeared.
     keep = {slugify(p["name"]) for p in projects} | {slugify(r["name"]) for r in repos}
+    removed = 0
     for folder in ("projects", "repos"):
         for path in (VAULT / folder).glob("*.md"):
             if path.stem not in keep:
                 path.unlink()
-                print(f"  - removed stale {folder}/{path.name}")
+                removed += 1
+    if removed:
+        print(f"  - removed {removed} stale generated notes")
     return written
 
 

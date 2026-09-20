@@ -2,11 +2,11 @@
 title: smartc
 type: project
 tags: [project, web-product]
-status: shipped
+status: available
 year: 2026
 category: Web & Product
-repo: ChinmayGit8765/SmartContract-Creator
 generated: true
+repo: ChinmayGit8765/SmartContract-Creator
 ---
 
 > [!warning] Generated note
@@ -38,7 +38,7 @@ One Node binary. Wizard collects intent, templates emit Solidity or Anchor, solc
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
 | Dev time | ~2 weeks |
 | Category | Web & Product |

@@ -5,8 +5,8 @@ tags: [project, agents-tooling]
 status: in development
 year: 2026
 category: Agents & Tooling
-repo: ChinmayGit8765/AlfredOpenSource
 generated: true
+repo: ChinmayGit8765/AlfredOpenSource
 ---
 
 > [!warning] Generated note
@@ -14,9 +14,9 @@ generated: true
 
 # ALFRED
 
-*Local-first multi-agent life-optimization system. Your hardware, your data, no cloud.*
+*Local-first multi-agent life-optimisation system. Your hardware, your data, no cloud.*
 
-Decomposes goals into weekly plans a Conductor reconciles against real capacity, delivers over Discord/Telegram, watches what happens, and adapts. Every tool call passes an allowlist, capability tier and audit trail. 529 offline tests in CI.
+Turns a goal into small wins a Conductor keeps inside one capacity budget, then delivers over CLI, Discord, Telegram or local HTTP. Every tool call passes an allowlist, capability tier and audit trail. Models stay local. The public README reports 578 offline tests across 34 files — not a live hosted product.
 
 ## How it is put together
 
@@ -24,11 +24,10 @@ Local models via Ollama, SQLite for state, Pydantic contracts between every agen
 
 ## What is actually in it
 
-- Runs entirely on your hardware — no cloud, no data leaving the house
-- Conductor reconciles specialist plans against actual weekly capacity
+- Runs on hardware you own — SQLite, local models, no cloud requirement
+- Conductor reconciles specialist plans against actual capacity
 - Every tool call checked against an allowlist and a capability tier, then audited
-- Adapts from what actually happened, not what was planned
-- 529 offline tests in CI — the whole suite runs with no network
+- 578 offline tests in CI against in-memory fakes
 - MIT licensed
 
 ## What it taught

@@ -17,11 +17,11 @@
 
 ## ✨ What it does
 
-- **A portfolio index** — 18 projects from `data/projects.json`, each row expanding into architecture, highlights and the one lesson it taught.
-- **The Daily Signal** — 20 RSS/Atom feeds (news, arXiv, YouTube) pulled by a stdlib-Python script on a 21:00 UTC cron, deduped, capped at 100 items, filed to `data/digest.json` **and** snapshotted into a per-day archive (28 days on file at the last sweep).
-- **The Exaryn Brain** — a real Obsidian vault of **103 notes / 652 links / 20,455 words**, committed as plain `.md` and rendered in the browser with backlinks, tags, full-text search and a live link graph.
-- **Live telemetry on the landing page** — each self-updating machine (signal, pirate picker, footy suite, brain) reports its own freshness, next to a token meter driven by `data/stats.json`.
-- **Field notes and screening room** — 5 long-form essays under `notes/`, plus 3 subtitled ~70-second product walkthroughs under `demos/`.
+- **A portfolio index** — projects from `data/projects.json`, each row expanding into architecture, highlights and the one lesson it taught. Status is labelled available, prototype, in development, concept or archived.
+- **The Daily Signal** — 20 RSS/Atom feeds (news, arXiv, YouTube) pulled by a stdlib-Python script on a 21:00 UTC cron, deduped, capped at 100 items, filed to `data/digest.json` **and** snapshotted into a per-day archive.
+- **The Exaryn Brain** — a real Obsidian vault of markdown notes, committed as plain `.md` and rendered in the browser with backlinks, tags, full-text search and a live link graph. Generated notes come from public data only.
+- **Live telemetry on the landing page** — each self-updating machine (signal, pirate picker, footy suite, brain) reports its own freshness. The token figure next to them is a **hand-updated estimate**, labelled unmeasured — not a product claim.
+- **Field notes, screening room, case studies** — long-form essays under `notes/`, staged ~70-second walkthroughs under `demos/` (not live product captures), and three public case studies on the work page.
 - **No framework, no build step, no dependencies.** Eight static HTML pages, one stylesheet, three vanilla JS files, three stdlib Python scripts. Everything the backend does ends as a diffable commit.
 
 ## 🎬 See it
@@ -36,8 +36,8 @@
 <td width="50%"><img src="docs/assets/projects.png" alt="Work index listing Prompterjack, Claude Work Manager, Worktree Optimiser and ALFRED with stack tags and status"><br><sub><b>projects.html</b> — the full index; click a row for architecture, highlights and lessons</sub></td>
 <td width="50%"><img src="docs/assets/feed.png" alt="The Daily Signal: filters for all 64 items, 45 news, 14 videos, 5 papers, a past-days archive, and dated headlines"><br><sub><b>feed.html</b> — filters by kind, an archive of past days, and what the cron pulled this morning</sub></td>
 </tr><tr>
-<td width="50%"><img src="docs/assets/brain.png" alt="The Exaryn Brain rendered in the browser: 103 notes, 652 links, 20,455 words, a tag cloud, file tree and outbound links rail"><br><sub><b>brain.html</b> — the Obsidian vault in the page: tree, tag cloud, backlinks, search, graph</sub></td>
-<td width="50%"><img src="docs/assets/agents.png" alt="Agent struct page: 'How the machines are wired', 10 autonomous systems across 18 projects and 37 repositories, and the door into the brain"><br><sub><b>agents.html</b> — the agent struct, sorted by how much supervision each system needs</sub></td>
+<td width="50%"><img src="docs/assets/brain.png" alt="The Exaryn Brain rendered in the browser: notes, a tag cloud, file tree and outbound links rail"><br><sub><b>brain.html</b> — the Obsidian vault in the page: tree, tag cloud, backlinks, search, graph</sub></td>
+<td width="50%"><img src="docs/assets/agents.png" alt="Agent struct page: how the machines are wired, with a door into the brain"><br><sub><b>agents.html</b> — the agent struct, sorted by how much supervision each system needs</sub></td>
 </tr></table>
 
 <p align="center"><img src="docs/assets/home-mobile.png" alt="The landing page on a 390px-wide phone viewport" width="330"><br><sub>390 × 844 — the grid, marquee and machine strip reflow to one column</sub></p>
@@ -67,8 +67,8 @@ flowchart LR
 Walk-through:
 
 1. **`digest.py`** hits 20 feeds in an 8-thread pool — 10 news/blogs, 2 arXiv categories, 8 YouTube channels. Per source it keeps 6 news / 3 videos / 5 papers within a 7-, 21- and 7-day freshness window, dedupes by URL, sorts newest-first and truncates to 100. A dead feed logs `FAIL` and is skipped; only *every* feed failing exits non-zero.
-2. **`repos.py`** sweeps every repository on the account — language breakdown, topics, licence, sizes, timestamps, a README blurb — into `data/repos.json`. In CI it is `continue-on-error`, so a rate-limited sweep leaves yesterday's metadata standing rather than blanking it.
-3. **`brain.py`** regenerates the vault's derived notes from `projects.json` + `repos.json`, then bundles all 103 notes into `data/brain.json` with wikilinks resolved and backlinks computed.
+2. **`repos.py`** sweeps **public** repositories on the account — language breakdown, topics, licence, sizes, timestamps, a README blurb — into `data/repos.json`. Private repositories are never listed or retained. In CI it is `continue-on-error`, so a rate-limited sweep leaves yesterday's public metadata standing rather than blanking it.
+3. **`brain.py`** regenerates the vault's derived notes from `projects.json` + public `repos.json`, then bundles the notes into `data/brain.json` with wikilinks resolved and backlinks computed.
 4. **The workflow** only regenerates on `schedule`/`workflow_dispatch`; a plain push deploys the tree as-is. Both paths end at `actions/deploy-pages`.
 5. **The pages** are dumb on purpose: each one `fetch()`es the JSON it needs and renders it client-side. That is why opening `index.html` off disk shows an empty page — see Quick start.
 
@@ -109,6 +109,7 @@ assets/agents.js    the agent struct page      assets/brain.js  markdown + graph
 
 brain/              THE VAULT — real .md files, open the folder in Obsidian
 data/projects.json  the portfolio — edit this to add or update a project
+data/cases.json     three public case studies rendered on home + work
 data/*.json         generated: repos · brain · digest (+ archive/) — don't hand-edit
 scripts/*.py        digest · repos · brain — stdlib only
 .github/workflows/  site.yml — daily cron, data commit, Pages deploy
@@ -134,13 +135,13 @@ these are the flagships with public source.
 
 | Project | What it is | Source | Live |
 |---|---|---|---|
-| **Claude Work Manager** | A fleet of Claude Code agents across git worktrees, driven from your phone | [`claude-work-manager`](https://github.com/ChinmayGit8765/claude-work-manager) | — |
+| **Claude Work Manager** | Self-hosted phone dashboard for Claude Code sessions (personal prototype) | [`claude-work-manager`](https://github.com/ChinmayGit8765/claude-work-manager) | — |
 | **Worktree Optimiser** | Every branch of a repo as its own containerised dev server, routed by hostname | [`worktree-optimiser`](https://github.com/ChinmayGit8765/worktree-optimiser) | — |
 | **ALFRED** | Local-first multi-agent life-optimisation system | [`AlfredOpenSource`](https://github.com/ChinmayGit8765/AlfredOpenSource) | — |
-| **QuantFlex** | Derivatives pricing and risk engine — hand-rolled Monte Carlo, triple-verified Greeks | [`quantflex`](https://github.com/ChinmayGit8765/quantflex) | [site](https://chinmaygit8765.github.io/quantflex-site/) |
+| **QuantFlex** | Pricing workbench with recorded engine output and a live app | [`quantflex`](https://github.com/ChinmayGit8765/quantflex) | [app](https://app.quantflex.dev) · [landing](https://chinmaygit8765.github.io/quantflex-site/) |
 | **QuantLens** | AI-augmented portfolio and market-intelligence dashboard | [`FinancialServicesDashboard`](https://github.com/ChinmayGit8765/FinancialServicesDashboard) | — |
 | **VolForecast** | Volatility modelling and forecasting | [`VolatilityModel`](https://github.com/ChinmayGit8765/VolatilityModel) | — |
-| **holdem-ml** | Texas Hold'em against bots trained from scratch, hand-written NN | [`holdem-ml`](https://github.com/ChinmayGit8765/holdem-ml) | — |
+| **holdem-ml** | Public home / architecture write-up — source not published yet | [`holdem-ml`](https://github.com/ChinmayGit8765/holdem-ml) | — |
 | **One Piece Guess** | Wordle, but for One Piece — a new pirate every morning, picked by a cron | [`one-piece-guess-game`](https://github.com/ChinmayGit8765/one-piece-guess-game) | [play](https://chinmaygit8765.github.io/one-piece-guess-game/) |
 | **Side by Side** | A self-updating Collingwood super-fan suite — reskin it for your club | [`collingwood-fan-suite`](https://github.com/ChinmayGit8765/collingwood-fan-suite) | [site](https://chinmaygit8765.github.io/collingwood-fan-suite/) |
 | **Solo Strength Quest** | A fitness RPG: every workout is a quest | [`strength-quest`](https://github.com/ChinmayGit8765/strength-quest) | [demo](https://chinmaygit8765.github.io/solo-strength-quest-play/) |
@@ -148,9 +149,12 @@ these are the flagships with public source.
 | **Contact Flow** | A production-shaped contact/lead-capture stack | [`ContactUsPage`](https://github.com/ChinmayGit8765/ContactUsPage) | — |
 | **TODO List** | A deliberately simple todo app built like a real codebase | [`TODO-list`](https://github.com/ChinmayGit8765/TODO-list) | — |
 
-**Prompterjack** — visual multi-agent AI system design, exporting runnable code for five
-frameworks — is the studio's flagship but its source is private; the product lives at
-[prompterjack.com](https://prompterjack.com).
+**Prompterjack** — the public product at [prompterjack.com](https://prompterjack.com)
+starts with a public GitHub repository scan and prepares `CLAUDE.md` / `AGENTS.md`.
+Connected tools (fleet, Agent Architect, prompt toolkit, security review) are listed
+on the [products page](https://prompterjack.com/products). Source is not in this
+public GitHub account. The in-site walkthrough is a **staged canvas**, not a capture
+of the current landing.
 
 ## 📓 The Exaryn Brain
 
@@ -221,7 +225,7 @@ Append an object to [`data/projects.json`](data/projects.json):
   "tagline": "One line on what it does.",
   "description": "A paragraph for the expanded row and the brain note.",
   "tech": ["TypeScript", "Postgres"],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "~2 weeks",
   "category": "Web & Product",
@@ -259,14 +263,15 @@ breaks the build. Each run also writes `data/archive/<Melbourne date>.json` and 
 </details>
 
 <details>
-<summary><b>The repo sweep and private repositories</b></summary>
+<summary><b>The repo sweep is public-only</b></summary>
 
-[`scripts/repos.py`](scripts/repos.py) pulls every repository on the account into
+[`scripts/repos.py`](scripts/repos.py) pulls **public** repositories on the account into
 [`data/repos.json`](data/repos.json) — language breakdown, topics, licence, sizes, timestamps
-and a README blurb. It runs unauthenticated against the public search API, so it works out of
-the box in CI. To include **private** repositories, add a personal access token with `repo`
-scope as a repository secret and pass it as `GH_PAT` in the workflow. Repos already recorded as
-private are kept across a run that cannot see them, so a sweep without a PAT never deletes them.
+and a README blurb. Listing always uses the public search API with `is:public`.
+A `GITHUB_TOKEN` only raises the rate limit. Private repositories are never written,
+and a previous private row is never retained. Run `npm test` to assert that contract.
+
+Do not ingest local or private vaults into this tree.
 
 </details>
 
@@ -291,10 +296,11 @@ The studio's live roadmap is the site itself — [the roadmap lanes on
 
 - ✅ Eight static pages, deployed to GitHub Pages by Actions on every push
 - ✅ Daily signal on a 21:00 UTC cron, 20 feeds, per-day archive
-- ✅ The brain: 103 notes bundled for the browser with backlinks, tags, search and a graph
+- ✅ The brain: notes bundled for the browser with backlinks, tags, search and a graph
 - ✅ Agent struct page generated from the vault's `type: agent` notes
-- ✅ Field notes (5 essays) and the screening room (3 walkthroughs)
-- 🚧 `data/stats.json` — the token meter is hand-updated, not measured
+- ✅ Field notes, staged walkthroughs, and three public case studies
+- ✅ Public-only repository metadata (private rows are not published)
+- 🚧 `data/stats.json` — the token figure is a hand-updated estimate, labelled unmeasured
 - 🔜 More essays, more walkthroughs, and whatever the next rabbit hole turns out to be
 
 ## 📄 License

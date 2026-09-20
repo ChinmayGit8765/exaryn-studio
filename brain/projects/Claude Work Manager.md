@@ -2,11 +2,11 @@
 title: Claude Work Manager
 type: project
 tags: [project, agents-tooling]
-status: shipped
+status: prototype
 year: 2026
 category: Agents & Tooling
-repo: ChinmayGit8765/claude-work-manager
 generated: true
+repo: ChinmayGit8765/claude-work-manager
 ---
 
 > [!warning] Generated note
@@ -14,9 +14,9 @@ generated: true
 
 # Claude Work Manager
 
-*Run a fleet of Claude Code agents across git worktrees — from your phone.*
+*Self-hosted, mobile-first dashboard for concurrent Claude Code sessions across git worktrees.*
 
-Self-hosted, mobile-first dashboard for concurrent Claude Code sessions: spawn an isolated git worktree per agent, chat with each one, watch localhost previews of their dev servers, and commit/push from the couch. Rides the claude CLI you're already logged into — no API keys stored anywhere.
+A personal Node dashboard that spawns the local claude CLI you already logged into — one isolated git worktree per session — then lets you chat, watch tool calls, iframe localhost previews, and commit or push from a phone. The public README calls this version 0.1.0: a working personal tool, not a product. No test suite yet. It should stay off the public internet.
 
 ## How it is put together
 
@@ -24,21 +24,20 @@ A Node server wraps the local `claude` CLI. One git worktree per agent means age
 
 ## What is actually in it
 
-- One isolated git worktree per agent — parallel work with no merge chaos
-- Mobile-first: review, steer, and push from a phone
-- Live localhost previews of each agent's dev server
-- No API keys stored: it borrows the CLI session you already have
-- Commit and push per worktree without leaving the dashboard
+- One git worktree per agent, matching Claude Code's wt/ convention
+- Uses the local CLI login — no API keys stored in the repo
+- Phone-first UI with git status, diff, commit and push
+- Access-key gate before the instance leaves localhost
 
 ## What it taught
 
-> Isolation is the whole trick. Once each agent owns a worktree, running five at once stops being scary.
+> Isolation is the whole trick. Once each agent owns a worktree, running several at once stops being a merge fight.
 
 ## Facts
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | prototype |
 | Year | 2026 |
 | Dev time | days, ongoing |
 | Category | Agents & Tooling |

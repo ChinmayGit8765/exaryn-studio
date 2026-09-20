@@ -2,11 +2,11 @@
 title: Exaryn Studio
 type: project
 tags: [project, infrastructure]
-status: shipped
+status: available
 year: 2026
 category: Infrastructure
-repo: ChinmayGit8765/exaryn-studio
 generated: true
+repo: ChinmayGit8765/exaryn-studio
 ---
 
 > [!warning] Generated note
@@ -14,9 +14,9 @@ generated: true
 
 # Exaryn Studio
 
-*This site — portfolio, daily AI signal digest, and the Obsidian brain.*
+*This site — public portfolio, daily AI signal, and an Obsidian vault in the browser.*
 
-The studio's own site: a pure static portfolio with no framework and no build step, a self-updating daily AI digest rebuilt every morning by a GitHub Actions cron, and the Exaryn Brain — an Obsidian vault of markdown notes about everything built here, browsable in-page with backlinks and a graph view.
+The studio's public front door: static HTML with no framework and no build step, a daily AI digest rebuilt by a GitHub Actions cron, and the Exaryn Brain — an Obsidian vault of markdown notes, browsable in-page. Generated repository metadata is public-only.
 
 ## How it is put together
 
@@ -24,11 +24,10 @@ No framework, no build step. HTML pages fetch JSON out of `/data`; Python script
 
 ## What is actually in it
 
-- Zero dependencies — the whole site is HTML, CSS and one JS file per surface
+- Zero install for readers — HTML, CSS and one JS file per surface
 - Daily AI digest with a browsable day-by-day archive
-- Repo metadata swept from the GitHub API into `data/repos.json`
+- Public repo metadata swept into data/repos.json
 - The Exaryn Brain: a real Obsidian vault, readable in the browser
-- Everything regenerates on one morning cron
 
 ## What it taught
 
@@ -38,18 +37,18 @@ No framework, no build step. HTML pages fetch JSON out of `/data`; Python script
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
 | Dev time | ongoing |
 | Category | Infrastructure |
 | Repository | [ChinmayGit8765/exaryn-studio](https://github.com/ChinmayGit8765/exaryn-studio) |
-| Primary language | HTML |
+| Primary language | JavaScript |
 | Size | 2.6 MB |
 | Licence | none declared |
 | Created | 2026-08-17 |
-| Last push | 2026-09-18 |
+| Last push | 2026-09-20 |
 | Visibility | public |
-| Language mix | HTML 38.9%, CSS 23.4%, JavaScript 21.7%, Python 16.0% |
+| Language mix | JavaScript 35.8%, HTML 31.7%, CSS 20.1%, Python 12.3% |
 
 ## Stack
 

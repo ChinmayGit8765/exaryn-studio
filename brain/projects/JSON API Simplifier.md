@@ -2,11 +2,11 @@
 title: JSON API Simplifier
 type: project
 tags: [project, agents-tooling]
-status: shipped
+status: available
 year: 2025
 category: Agents & Tooling
-repo: ChinmayGit8765/json_api_simplifier
 generated: true
+repo: ChinmayGit8765/json_api_simplifier
 ---
 
 > [!warning] Generated note
@@ -36,7 +36,7 @@ One script. Walk the parsed JSON, keep keys and container types, drop leaf value
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2025 |
 | Dev time | a few evenings |
 | Category | Agents & Tooling |

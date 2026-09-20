@@ -3,7 +3,7 @@ title: quantflex-site
 type: repo
 tags: [repo, public, automatic-differentiation, black-scholes, derivatives, monte-carlo, numerical-methods, options-pricing]
 language: JavaScript
-pushed: 2026-09-19
+pushed: 2026-09-20
 generated: true
 ---
 
@@ -16,7 +16,7 @@ generated: true
 
 Project note: [[QuantFlex]]
 
-> The public front page of QuantFlex — a derivatives pricing and risk engine. Move the sliders and it prices in your browser; scroll down and the tables are real engine output, hash by hash.
+> The public front page of QuantFlex — a derivatives pricing and risk workbench. Two ways in (Learn for newcomers, Research for practitioners), a calculator that prices in your browser, a labelled engine snapshot, an honest capability inventory, and a market feed rebuilt every morning.
 
 ## Metadata
 
@@ -25,11 +25,11 @@ Project note: [[QuantFlex]]
 | Full name | [ChinmayGit8765/quantflex-site](https://github.com/ChinmayGit8765/quantflex-site) |
 | Visibility | public |
 | Primary language | JavaScript |
-| Size | 1.3 MB |
+| Size | 1.7 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-09-19 |
+| Last push | 2026-09-20 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |
@@ -40,10 +40,10 @@ Project note: [[QuantFlex]]
 
 | Language | Share |
 | --- | --- |
-| JavaScript | 44.1% |
-| CSS | 21.1% |
-| HTML | 20.2% |
-| Python | 14.6% |
+| JavaScript | 32.8% |
+| HTML | 30.3% |
+| CSS | 28.1% |
+| Python | 8.8% |
 
 ## Topics
 

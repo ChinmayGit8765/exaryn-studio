@@ -5,8 +5,8 @@ tags: [project, games-play]
 status: in development
 year: 2026
 category: Games & Play
-repo: ChinmayGit8765/strength-quest
 generated: true
+repo: ChinmayGit8765/strength-quest
 ---
 
 > [!warning] Generated note
@@ -26,9 +26,8 @@ Rust/Axum API owns all gamification maths server-side — the client never decid
 
 - Workouts become quests; progressive overload becomes XP
 - Personal records land as boss kills and level-ups
-- All gamification maths server-side — clients can't mint XP
-- Flutter client with a hand-built design system
-- Playable web demo published separately
+- Public playable web demo published separately
+- Rust/Axum API described in the public source home; the app is still in development
 
 ## What it taught
 
@@ -61,7 +60,6 @@ Rust/Axum API owns all gamification maths server-side — the client never decid
 ## Related repositories
 
 - [[solo-strength-quest-play]]
-- [[solo_strength-quest]]
 
 ## Related
 

@@ -8,6 +8,7 @@
     "digest": "python scripts/digest.py",
     "repos": "python scripts/repos.py",
     "brain": "python scripts/brain.py",
-    "build": "python scripts/digest.py && python scripts/repos.py && python scripts/brain.py"
+    "build": "python scripts/digest.py && python scripts/repos.py && python scripts/brain.py",
+    "test": "node --test workspace/marketing.test.js && python3 -m unittest tests.test_public_metadata"
   }
 }

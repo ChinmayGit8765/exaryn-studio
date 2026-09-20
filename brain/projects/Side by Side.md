@@ -2,11 +2,11 @@
 title: Side by Side
 type: project
 tags: [project, games-play]
-status: shipped
+status: available
 year: 2026
 category: Games & Play
-repo: ChinmayGit8765/collingwood-fan-suite
 generated: true
+repo: ChinmayGit8765/collingwood-fan-suite
 ---
 
 > [!warning] Generated note
@@ -37,7 +37,7 @@ Same shape as One Piece Guess: cron job, Python fetcher, committed JSON, static 
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
 | Dev time | a weekend |
 | Category | Games & Play |

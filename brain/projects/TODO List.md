@@ -2,11 +2,11 @@
 title: TODO List
 type: project
 tags: [project, web-product]
-status: shipped
+status: available
 year: 2026
 category: Web & Product
-repo: ChinmayGit8765/TODO-list
 generated: true
+repo: ChinmayGit8765/TODO-list
 ---
 
 > [!warning] Generated note
@@ -37,7 +37,7 @@ A todo app that is deliberately boring on the surface and deliberately rigorous 
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
 | Dev time | ~2 weeks |
 | Category | Web & Product |

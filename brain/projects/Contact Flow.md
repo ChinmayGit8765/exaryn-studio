@@ -2,11 +2,11 @@
 title: Contact Flow
 type: project
 tags: [project, web-product]
-status: shipped
+status: available
 year: 2026
 category: Web & Product
-repo: ChinmayGit8765/ContactUsPage
 generated: true
+repo: ChinmayGit8765/ContactUsPage
 ---
 
 > [!warning] Generated note
@@ -37,7 +37,7 @@ NestJS + TypeORM over Postgres on the API side, Next.js 14 App Router with Tailw
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
 | Dev time | ~2 weeks |
 | Category | Web & Product |

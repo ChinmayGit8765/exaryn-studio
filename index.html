@@ -4,18 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exaryn — Independent R&amp;D Studio</title>
-  <meta name="description" content="Exaryn is a one-person R&D studio building software experiments — agents, tools, games, and the occasional rabbit hole. Plus a daily digest of AI news worth reading." />
+  <meta name="description" content="Exaryn is a one-person R&amp;D studio in Melbourne. Public tools, a daily AI signal, and honest write-ups of what actually shipped." />
+  <meta property="og:title" content="Exaryn — Independent R&amp;D Studio" />
+  <meta property="og:description" content="Public tools, a daily AI signal, and honest write-ups of what actually shipped." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chinmaygit8765.github.io/exaryn-studio/" />
+  <meta property="og:image" content="https://chinmaygit8765.github.io/exaryn-studio/docs/assets/home.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=2" />
+  <link rel="stylesheet" href="assets/style.css?v=3" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 
   <header class="site-header">
     <a class="wordmark" href="index.html">Exaryn<span class="mark">✳</span></a>
-    <nav class="site-nav mono">
+    <nav class="site-nav mono" aria-label="Primary">
       <a href="projects.html">Work</a>
       <a href="agents.html">Agents</a>
       <a href="notes.html">Notes</a>
@@ -37,9 +44,9 @@
       </h1>
       <div class="hero-grid">
         <p class="hero-lede">
-          Exaryn is a one-person research &amp; development studio. Agents, tools,
-          games, quant experiments — whatever the current rabbit hole is. Some of
-          it ships. All of it is documented here.
+          Exaryn is a one-person research &amp; development studio in Melbourne.
+          Useful public products, clear engineering decisions, and an honest
+          current status — not a highlight reel of unpublished plans.
         </p>
         <ul class="hero-meta mono">
           <li><span>EST.</span><span>2025</span></li>
@@ -47,6 +54,12 @@
           <li><span>PROJECTS</span><span id="project-count">—</span></li>
           <li><span>STATUS</span><span class="accent">● BUILDING</span></li>
         </ul>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="projects.html">See the work</a>
+        <a class="btn" href="https://prompterjack.com" target="_blank" rel="noopener">Try PrompterJack</a>
+        <a class="btn" href="projects.html#cases">Read case studies</a>
+        <a class="btn" href="mailto:careers.chinmay@gmail.com">Email</a>
       </div>
     </section>
 
@@ -86,8 +99,8 @@
     </section>
 
     <!-- ============ TOKEN METER ============ -->
-    <section class="token-meter" id="token-meter" aria-label="Approximate Claude tokens used by the studio">
-      <span class="mono meter-label">CLAUDE TOKENS BURNED</span>
+    <section class="token-meter" id="token-meter" aria-label="Unmeasured studio estimate of Claude token use">
+      <span class="mono meter-label">UNMEASURED TOKEN ESTIMATE</span>
       <div class="meter" id="meter-cells" aria-hidden="true"></div>
       <div class="meter-figures mono">
         <span class="meter-value"><span id="token-value">—</span> <span class="meter-sub" id="token-sub"></span></span>
@@ -105,6 +118,16 @@
         <li class="index-empty mono">LOADING…</li>
       </ol>
       <a class="section-cta mono" href="projects.html">SEE ALL <span id="snippet-total">—</span> PROJECTS →</a>
+    </section>
+
+    <section class="cases" id="cases" aria-label="Public case studies">
+      <div class="section-head">
+        <h2 class="section-title">Case <em>studies</em></h2>
+        <a class="more-link mono" href="projects.html#cases">ON THE WORK PAGE ↗</a>
+      </div>
+      <div class="case-grid" id="case-grid">
+        <p class="index-empty mono">LOADING CASE STUDIES…</p>
+      </div>
     </section>
 
     <!-- ============ THE BRAIN ============ -->
@@ -140,25 +163,25 @@
     <section class="screening" id="demos">
       <div class="section-head">
         <h2 class="section-title">The <em>screening room</em></h2>
-        <span class="section-note mono">70-SECOND WALKTHROUGHS · SUBTITLED · PLAY / PAUSE / SCRUB</span>
+        <span class="section-note mono">STAGED WALKTHROUGHS · SUBTITLED · NOT LIVE PRODUCT CAPTURES</span>
       </div>
       <div class="reel-grid">
         <a class="reel" href="demos/quantflex.html">
           <span class="reel-kicker mono">▶ PRICING ENGINE</span>
           <span class="reel-name">QuantFlex</span>
-          <p class="reel-desc">Price an American put under Heston, watch 500k paths converge, and see every Greek triple-verified.</p>
+          <p class="reel-desc">Staged walkthrough of the pricing workbench: an American put under Heston, Monte Carlo paths, and the Greek checks the snapshot actually shows.</p>
           <span class="reel-meta mono">1:12 · 4 CHAPTERS</span>
         </a>
         <a class="reel" href="demos/prompterjack.html">
-          <span class="reel-kicker mono">▶ AGENT DESIGNER</span>
+          <span class="reel-kicker mono">▶ STAGED CANVAS</span>
           <span class="reel-name">Prompterjack</span>
-          <p class="reel-desc">Wire a supervisor–workers crew on the canvas, lint the prompt to a 91, export runnable LangGraph.</p>
+          <p class="reel-desc">A staged Agent Architect canvas — not a capture of the current PrompterJack landing. The live product starts with a public-repo scan.</p>
           <span class="reel-meta mono">1:12 · 4 CHAPTERS</span>
         </a>
         <a class="reel" href="demos/strength-quest.html">
           <span class="reel-kicker mono">▶ FITNESS RPG</span>
           <span class="reel-name">Solo Strength Quest</span>
-          <p class="reel-desc">Log a deadlift session on the real app screens, hit a PR, and watch it land as a boss kill and a level-up.</p>
+          <p class="reel-desc">Staged walkthrough of the fitness RPG screens: log a session, hit a PR, watch it land as a boss kill. Not a live-app recording.</p>
           <span class="reel-meta mono">1:10 · 4 CHAPTERS</span>
         </a>
       </div>
@@ -232,6 +255,6 @@
 
   </main>
 
-  <script src="assets/app.js?v=2"></script>
+  <script src="assets/app.js?v=3"></script>
 </body>
 </html>

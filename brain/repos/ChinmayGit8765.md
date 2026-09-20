@@ -14,7 +14,7 @@ generated: true
 
 *✳ profile*
 
-> I run **[Exaryn](https://chinmaygit8765.github.io/exaryn-studio/)** — a one-person R&D studio in Melbourne. AI agents, quant engines, daily games — built, shipped, and written up honestly. Happily AI-native: over a billion Claude tokens this year, turned into working software.
+> I run Exaryn — a one-person R&D studio in Melbourne. Public tools, daily games, a pricing workbench, and honest write-ups of what actually shipped.
 
 ## Metadata
 

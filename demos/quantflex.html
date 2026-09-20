@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QuantFlex — interactive walkthrough · Exaryn</title>
-  <meta name="description" content="A 70-second interactive walkthrough of QuantFlex: price an American put under Heston, watch the Monte Carlo converge, and see every Greek triple-verified." />
+  <meta name="description" content="Staged QuantFlex walkthrough: an American put under Heston, Monte Carlo paths, and the Greek checks a recorded snapshot can show." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -57,10 +57,11 @@
   </style>
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 
   <header class="demo-header">
     <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
-    <nav class="demo-nav mono">
+    <nav class="demo-nav mono" aria-label="Primary">
       <a href="../projects.html">Work</a>
       <a href="../notes.html">Notes</a>
       <a href="../feed.html">Feed</a>
@@ -209,7 +210,7 @@
         { at: 47, do: () => on("#g3") },
         { at: 48.5, do: () => on("#g4") },
         { at: 50, do: () => on("#g5") },
-        { at: 51.5, sub: "…and every Greek is <b>triple-verified</b>: AAD vs JAX vs finite differences.", do: () => on("#greek-badge") },
+        { at: 51.5, sub: "…Greeks from an AAD tape, shown against finite differences. JAX is a snapshot check when that machine had it — not the live API.", do: () => on("#greek-badge") },
         { at: 55, sub: "Trust, but verify — the anchors.", do: () => on("#val-panel") },
         { at: 57, do: () => on("#a1") },
         { at: 59.5, do: () => on("#a2") },

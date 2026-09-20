@@ -2,11 +2,11 @@
 title: QuantFlex
 type: project
 tags: [project, quant-finance]
-status: in development
+status: available
 year: 2026
 category: Quant & Finance
-repo: ChinmayGit8765/quantflex
 generated: true
+repo: ChinmayGit8765/quantflex
 ---
 
 > [!warning] Generated note
@@ -14,31 +14,31 @@ generated: true
 
 # QuantFlex
 
-*Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff.*
+*Pricing workbench: see how an option price was made, then reproduce it.*
 
-Prices vanillas, American options, exotics and baskets under GBM, Merton and Heston with hand-rolled solvers and Greeks from a custom autodiff tape. Every price validated against analytic anchors; every Greek triple-verified against JAX.
+The public landing page and live app are the product you can use today. Closed form, Monte Carlo, Crank–Nicolson PDE and Longstaff–Schwartz across GBM, Merton and Heston; Greeks from a reverse-mode AAD tape shown against finite differences. The landing page's engine snapshot is recorded output, not a live market quote. The live API's JAX column is n/a — JAX appears on the snapshot when that machine had it, not as a standing live-API claim. The GitHub engine home is still landing source. Planned Excel workbooks, live Excel refresh and portfolio VaR are listed as coming soon, not shipped.
 
 ## How it is put together
 
-Hand-rolled numerics in NumPy — Monte Carlo, finite-difference PDE, and a custom reverse-mode autodiff tape for Greeks. FastAPI in front, Vue 3 SPA on top, Cloud Run underneath. JAX is used only as an oracle in tests.
+Public workbench at app.quantflex.dev, with methodology and a recorded engine snapshot on the GitHub Pages landing. Hand-rolled numerics (Monte Carlo, PDE, AAD) sit behind a documented HTTP API. JAX is an optional snapshot check, not the live-API verifier.
 
 ## What is actually in it
 
-- Vanillas, Americans, exotics and baskets under GBM, Merton jump-diffusion and Heston
-- Greeks from a custom autodiff tape, not bumped finite differences
-- Every price anchored to a closed-form or published benchmark
-- Every Greek triple-verified: tape vs bump vs JAX
-- Separate landing site with live engine output and a daily market feed
+- Live app plus a landing page with recorded engine output you can inspect
+- Methods and payoffs listed on the public landing, including American exercise and path-dependent options
+- Greeks panel shows AAD against finite differences with per-Greek tolerance
+- CSV/JSON export carries inputs, seed, engine version and request hash
+- Daily public headline feed on the landing page — not market data, not advice
 
 ## What it taught
 
-> Write the oracle before the solver. The analytic anchors caught more bugs than the unit tests did.
+> Show the checks that actually ran. A missing column beats a borrowed triple-verify slogan.
 
 ## Facts
 
 | | |
 | --- | --- |
-| Status | in development |
+| Status | available |
 | Year | 2026 |
 | Dev time | ~2 months, ongoing |
 | Category | Quant & Finance |
@@ -56,12 +56,11 @@ Hand-rolled numerics in NumPy — Monte Carlo, finite-difference PDE, and a cust
 
 ## Links
 
-[Live](https://chinmaygit8765.github.io/quantflex-site/) · [Source](https://github.com/ChinmayGit8765/quantflex) · [Demo](demos/quantflex.html)
+[Live](https://app.quantflex.dev) · [Source](https://github.com/ChinmayGit8765/quantflex) · [Demo](demos/quantflex.html)
 
 ## Related repositories
 
 - [[quantflex-site]]
-- [[thequantflex]]
 
 ## Related
 
