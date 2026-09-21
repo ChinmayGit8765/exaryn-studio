@@ -44,10 +44,10 @@ Hand-rolled numerics in NumPy — Monte Carlo, finite-difference PDE, and a cust
 | Category | Quant & Finance |
 | Repository | [ChinmayGit8765/quantflex](https://github.com/ChinmayGit8765/quantflex) |
 | Primary language | — |
-| Size | 237 KB |
+| Size | 241 KB |
 | Licence | none declared |
 | Created | 2026-08-24 |
-| Last push | 2026-09-17 |
+| Last push | 2026-09-21 |
 | Visibility | public |
 
 ## Stack

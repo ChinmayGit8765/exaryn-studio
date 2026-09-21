@@ -16,11 +16,12 @@ All 37 repositories on the account — including the ones that went nowhere. 23 
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[collingwood-fan-suite]] | CSS | 2026-09-20 | 1.3 MB | [[Side by Side]] |
-| [[exaryn-studio]] | JavaScript | 2026-09-20 | 2.7 MB | [[Exaryn Studio]] |
+| [[collingwood-fan-suite]] | CSS | 2026-09-21 | 1.3 MB | [[Side by Side]] |
+| [[quantflex-site]] | JavaScript | 2026-09-21 | 1.7 MB | [[QuantFlex]] |
+| [[quantflex]] | — | 2026-09-21 | 241 KB | [[QuantFlex]] |
+| [[exaryn-studio]] | JavaScript | 2026-09-21 | 2.8 MB | [[Exaryn Studio]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-09-20 | 1.3 MB | [[One Piece Guess]] |
 | [[ChinmayGit8765]] | Python | 2026-09-20 | 25 KB | — |
-| [[quantflex-site]] | JavaScript | 2026-09-20 | 1.7 MB | [[QuantFlex]] |
-| [[one-piece-guess-game]] | JavaScript | 2026-09-19 | 1.3 MB | [[One Piece Guess]] |
 | [[PDFCompiler]] | HTML | 2026-09-17 | 18.4 MB | [[PDF Compiler]] |
 | [[MyBlog]] | — | 2026-09-17 | 5 KB | — |
 | [[holdem-ml]] | — | 2026-09-17 | 16 KB | [[holdem-ml]] |
@@ -32,7 +33,6 @@ All 37 repositories on the account — including the ones that went nowhere. 23 
 | [[strength-quest]] | — | 2026-09-17 | 425 KB | [[Solo Strength Quest]] |
 | [[solo-strength-quest-play]] | JavaScript | 2026-09-17 | 9.9 MB | [[Solo Strength Quest]] |
 | [[SmartContract-Creator]] | TypeScript | 2026-09-17 | 1.2 MB | [[smartc]] |
-| [[quantflex]] | — | 2026-09-17 | 237 KB | [[QuantFlex]] |
 | [[json_api_simplifier]] | Python | 2026-09-17 | 59 KB | [[JSON API Simplifier]] |
 | [[FinancialServicesDashboard]] | Java | 2026-09-17 | 2.6 MB | [[QuantLens]] |
 | [[ContactUsPage]] | TypeScript | 2026-09-17 | 628 KB | [[Contact Flow]] |

@@ -3,7 +3,7 @@ title: quantflex-site
 type: repo
 tags: [repo, public, automatic-differentiation, black-scholes, derivatives, monte-carlo, numerical-methods, options-pricing]
 language: JavaScript
-pushed: 2026-09-20
+pushed: 2026-09-21
 generated: true
 ---
 
@@ -29,7 +29,7 @@ Project note: [[QuantFlex]]
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-09-20 |
+| Last push | 2026-09-21 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | yes |
