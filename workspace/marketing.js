@@ -79,7 +79,14 @@
   }
 
   function stampLabel(value, emptyText) {
-    return value ? value : emptyText;
+    if (!value) return emptyText;
+    return value.replace("T", " ").replace(/\.\d+Z$/, " UTC");
+  }
+
+  function stampHtml(value, emptyText) {
+    const label = stampLabel(value, emptyText);
+    if (!value) return lib.escapeHtml(label);
+    return `<time datetime="${lib.escapeHtml(value)}">${lib.escapeHtml(label)}</time>`;
   }
 
   function setTab(tab, options) {
@@ -149,7 +156,7 @@
         <span class="badge reported">reported ${lib.escapeHtml(String(summary.evidence.reported))}</span>
         <span class="badge unknown">unknown ${lib.escapeHtml(String(summary.evidence.unknown))}</span>
       </span>`;
-    $("#stamp-line").textContent = `Last updated ${stampLabel(summary.lastUpdatedAt, "not recorded")} · Last export ${stampLabel(summary.lastExportedAt, "not recorded in this browser")}`;
+    $("#stamp-line").innerHTML = `Last updated ${stampHtml(summary.lastUpdatedAt, "not recorded")} · Last export ${stampHtml(summary.lastExportedAt, "not recorded in this browser")}`;
     $("#fictional-line").hidden = !summary.fictional;
     return summary;
   }
