@@ -4,54 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Marketing workspace (draft, local only) · ExarynStudio</title>
-  <meta name="description" content="Draft local-browser marketing workspace for product, project, asset and review records. Not public navigation and not authenticated hosting." />
+  <title>Marketing desk (draft, local only) · Exaryn Digital Marketing</title>
+  <meta name="description" content="Draft local-browser marketing desk for product, project, asset and review records. Not public navigation and not authenticated hosting." />
   <link rel="stylesheet" href="marketing.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
 </head>
 <body>
   <a class="skip-link" href="#workspace-main">Skip to workspace</a>
 
-  <header class="workspace-header">
+  <header class="desk-header">
     <div class="header-row">
-      <span class="wordmark">Exaryn<span class="mark">✳</span></span>
-      <p class="mono draft-tag">Draft workspace · not in public navigation</p>
-    </div>
-    <p class="privacy-banner">
-      <strong>Local browser workspace.</strong>
-      This page is a manual evidence notebook in <em>this</em> browser, not authenticated private hosting.
-      The public repository must not receive studio account data, credentials, or live social exports.
-      Nothing here is uploaded, analysed by a third party, or connected to ExarynEngine.
-    </p>
-    <p class="limit-banner">
-      Manual capture only. There is no SEO, AEO, GEO, Search Console, or social-platform adapter in this slice.
-      Missing metrics stay <strong>unknown</strong> — they are never stored as zero or invented.
-    </p>
-  </header>
-
-  <div id="live-status" class="live-status" role="status" aria-live="polite"></div>
-
-  <main id="workspace-main">
-    <p class="mono">EXA-42 · PRODUCT / PROJECT / ASSET / CHANNEL / REVIEW</p>
-    <h1 class="page-title">Marketing <em>workspace</em></h1>
-    <p class="lede">
-      Create a product (ongoing offering) and an optional linked project (bounded effort),
-      add a content asset or product surface, then record an evidence-backed review.
-      Reload keeps the records in this browser. Export writes a JSON file you control.
-    </p>
-
-    <div class="filters" role="search">
-      <div class="field">
-        <label for="filter-product">Filter by product</label>
-        <select id="filter-product"></select>
+      <div class="brand">
+        <span class="wordmark">Exaryn<span class="mark">✳</span></span>
+        <p class="brand-sub">Digital Marketing · internal desk</p>
       </div>
-      <div class="field">
-        <label for="filter-project">Filter by project</label>
-        <select id="filter-project"></select>
-      </div>
+      <p class="mono draft-tag">Draft · local browser only · noindex</p>
     </div>
-
-    <div class="toolbar">
+    <details class="notices">
+      <summary>
+        Local browser workspace — not authenticated hosting. Missing metrics stay unknown.
+      </summary>
+      <p class="privacy-banner">
+        <strong>Privacy.</strong>
+        Records live in <em>this</em> browser only. The public repository must not receive studio account data, credentials, or live social exports.
+        Nothing here is uploaded, analysed by a third party, or connected to ExarynEngine.
+      </p>
+      <p class="limit-banner">
+        <strong>Limits.</strong>
+        Manual evidence capture only. There is no SEO, AEO, GEO, Search Console, or social-platform adapter in this slice.
+        Missing metrics stay unknown — they are never stored as zero or invented. Reviews are pre-publish notes, not campaign scores.
+      </p>
+    </details>
+    <div class="toolbar" aria-label="Workspace files">
       <button type="button" class="btn" id="export-json">Export JSON</button>
       <label class="btn secondary file-btn">
         Import JSON
@@ -60,44 +44,124 @@
       <button type="button" class="btn secondary" id="load-example">Load fictional example</button>
       <button type="button" class="btn danger" id="clear-workspace">Clear this browser</button>
     </div>
+  </header>
 
-    <div class="record-grid">
-      <section class="panel" aria-labelledby="products-heading">
-        <div class="panel-head">
-          <h2 id="products-heading">Products</h2>
-          <button type="button" class="btn" data-create="product">New product</button>
-        </div>
-        <p class="meta">An ongoing offering. Distinct from a bounded project.</p>
-        <ul class="card-list" id="product-list"></ul>
-      </section>
+  <div id="live-status" class="live-status" role="status" aria-live="polite"></div>
 
-      <section class="panel" aria-labelledby="projects-heading">
-        <div class="panel-head">
-          <h2 id="projects-heading">Projects</h2>
-          <button type="button" class="btn" data-create="project">New project</button>
+  <main id="workspace-main">
+    <section class="overview" id="overview" aria-labelledby="overview-heading">
+      <div class="overview-copy">
+        <p class="mono kicker">EXA-42 · PRODUCT / PROJECT / ASSET / REVIEW</p>
+        <h1 class="page-title" id="overview-heading">Marketing <em>desk</em></h1>
+        <p class="lede">
+          A small internal agency desk for evidence-backed notes: audience, CTA, finding, next action.
+          Reload keeps records in this browser. Export writes a JSON file you control. No live analytics.
+        </p>
+      </div>
+      <div id="overview-empty" class="empty-desk" hidden>
+        <p><strong>This desk is empty.</strong> Create a product to start, or load the labelled fictional example. Nothing is uploaded.</p>
+      </div>
+      <div id="overview-stats" class="overview-stats" hidden>
+        <ul class="stat-grid" id="stat-grid"></ul>
+        <div class="overview-meta">
+          <p id="evidence-line" class="evidence-line"></p>
+          <p id="stamp-line" class="stamp-line"></p>
+          <p id="fictional-line" class="fictional-line" hidden>Opt-in fictional example is loaded — not studio, product, or account data.</p>
         </div>
-        <p class="meta">A bounded effort. May optionally link to one product.</p>
-        <ul class="card-list" id="project-list"></ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="panel" aria-labelledby="assets-heading">
-        <div class="panel-head">
-          <h2 id="assets-heading">Assets</h2>
-          <button type="button" class="btn" data-create="asset">New asset</button>
+    <section class="queue-panel" id="attention-queue" aria-labelledby="queue-heading">
+      <div class="panel-head">
+        <div>
+          <h2 id="queue-heading">Next actions</h2>
+          <p class="meta">Taken from review <em>next action</em> fields. If that field is blank, the queue stays empty — tasks are not invented.</p>
         </div>
-        <p class="meta">A content asset or product surface, linked to a product or project, on one channel.</p>
-        <ul class="card-list" id="asset-list"></ul>
-      </section>
+      </div>
+      <ol class="queue-list" id="queue-list"></ol>
+    </section>
 
-      <section class="panel" aria-labelledby="reviews-heading">
-        <div class="panel-head">
-          <h2 id="reviews-heading">Reviews</h2>
-          <button type="button" class="btn" data-create="review">New review</button>
+    <section class="desk" aria-label="Records desk">
+      <div class="desk-tools">
+        <div class="filters" role="search">
+          <div class="field">
+            <label for="filter-product">Filter by product</label>
+            <select id="filter-product"></select>
+          </div>
+          <div class="field">
+            <label for="filter-project">Filter by project</label>
+            <select id="filter-project"></select>
+          </div>
         </div>
-        <p class="meta">Evidence status is observed, reported, or unknown. No live API reads.</p>
-        <ul class="card-list" id="review-list"></ul>
-      </section>
-    </div>
+      </div>
+
+      <div class="desk-shell">
+        <div class="desk-nav" role="tablist" aria-label="Record type" id="desk-tabs">
+          <button type="button" class="desk-tab" role="tab" id="tab-products" aria-controls="panel-products" data-tab="products" aria-selected="true">Products</button>
+          <button type="button" class="desk-tab" role="tab" id="tab-projects" aria-controls="panel-projects" data-tab="projects" aria-selected="false" tabindex="-1">Projects</button>
+          <button type="button" class="desk-tab" role="tab" id="tab-assets" aria-controls="panel-assets" data-tab="assets" aria-selected="false" tabindex="-1">Assets</button>
+          <button type="button" class="desk-tab" role="tab" id="tab-reviews" aria-controls="panel-reviews" data-tab="reviews" aria-selected="false" tabindex="-1">Reviews</button>
+        </div>
+
+        <div class="desk-stage">
+          <section class="desk-panel" role="tabpanel" id="panel-products" aria-labelledby="tab-products">
+            <div class="panel-head">
+              <div>
+                <h2 id="products-heading">Products</h2>
+                <p class="meta">An ongoing offering. Distinct from a bounded project.</p>
+              </div>
+              <button type="button" class="btn" data-create="product">New product</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="product-list"></ul>
+              <article class="detail" id="product-detail" aria-live="polite"></article>
+            </div>
+          </section>
+
+          <section class="desk-panel" role="tabpanel" id="panel-projects" aria-labelledby="tab-projects" hidden>
+            <div class="panel-head">
+              <div>
+                <h2 id="projects-heading">Projects</h2>
+                <p class="meta">A bounded effort. May optionally link to one product.</p>
+              </div>
+              <button type="button" class="btn" data-create="project">New project</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="project-list"></ul>
+              <article class="detail" id="project-detail" aria-live="polite"></article>
+            </div>
+          </section>
+
+          <section class="desk-panel" role="tabpanel" id="panel-assets" aria-labelledby="tab-assets" hidden>
+            <div class="panel-head">
+              <div>
+                <h2 id="assets-heading">Assets</h2>
+                <p class="meta">A content asset or product surface, linked to a product or project, on one channel.</p>
+              </div>
+              <button type="button" class="btn" data-create="asset">New asset</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="asset-list"></ul>
+              <article class="detail" id="asset-detail" aria-live="polite"></article>
+            </div>
+          </section>
+
+          <section class="desk-panel" role="tabpanel" id="panel-reviews" aria-labelledby="tab-reviews" hidden>
+            <div class="panel-head">
+              <div>
+                <h2 id="reviews-heading">Reviews</h2>
+                <p class="meta">Pre-publish evidence notes: audience, CTA, evidence status, finding, next action. No live API reads.</p>
+              </div>
+              <button type="button" class="btn" data-create="review">New review</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="review-list"></ul>
+              <article class="detail" id="review-detail" aria-live="polite"></article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
   </main>
 
   <dialog id="record-dialog" aria-labelledby="dialog-title">

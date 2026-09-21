@@ -42,6 +42,20 @@
       "notes": "FICTIONAL EXAMPLE. URL is an example.com placeholder.",
       "createdAt": "2026-09-03T00:00:00.000Z",
       "updatedAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "ex-asset-reel-caption",
+      "name": "Reel caption draft (fictional)",
+      "kind": "content",
+      "productId": "ex-product-harbor-lamp",
+      "projectId": "ex-project-spring-landing",
+      "channel": "instagram_reels",
+      "format": "Short caption",
+      "message": "Plug it in. The room stops looking temporary.",
+      "sourceUrl": "https://example.com/fictional-harbor-lamp-reel-caption",
+      "notes": "FICTIONAL EXAMPLE. No real Instagram account.",
+      "createdAt": "2026-09-05T00:00:00.000Z",
+      "updatedAt": "2026-09-05T00:00:00.000Z"
     }
   ],
   "reviews": [
@@ -63,6 +77,25 @@
       "nextAction": "Write a second sentence that states what the lamp is before any claim about mood.",
       "createdAt": "2026-09-04T00:00:00.000Z",
       "updatedAt": "2026-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "ex-review-reel-reported",
+      "assetId": "ex-asset-reel-caption",
+      "productId": "ex-product-harbor-lamp",
+      "projectId": "ex-project-spring-landing",
+      "channel": "instagram_reels",
+      "intendedAudience": "Renters scrolling for apartment lighting ideas",
+      "desiredOutcome": "Pause long enough to read what the lamp is",
+      "sourceUrl": "https://example.com/fictional-harbor-lamp-reel-caption",
+      "sourceNote": "Operator read of the fictional caption draft. Not a live post.",
+      "observationDate": "2026-09-06",
+      "evidenceStatus": "reported",
+      "metricName": "",
+      "metricValue": null,
+      "finding": "The caption assumes the viewer already knows it is a lamp. Pre-publish note only; no reach or watch-time figure exists.",
+      "nextAction": "Name the object in the first five words, then keep the rented-room line.",
+      "createdAt": "2026-09-06T00:00:00.000Z",
+      "updatedAt": "2026-09-06T00:00:00.000Z"
     }
   ]
 }

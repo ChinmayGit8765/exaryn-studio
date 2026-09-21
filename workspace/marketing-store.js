@@ -32,10 +32,71 @@
     return {
       kind: KIND,
       schemaVersion: SCHEMA_VERSION,
+      lastExportedAt: "",
+      fictional: false,
       products: [],
       projects: [],
       assets: [],
       reviews: [],
+    };
+  }
+
+  function optionalIsoStamp(value) {
+    const raw = String(value ?? "").trim();
+    if (!raw) return "";
+    if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$/.test(raw)) return "";
+    const dt = new Date(raw);
+    if (Number.isNaN(dt.getTime())) return "";
+    return raw;
+  }
+
+  function summarizeWorkspace(state) {
+    const snapshot = state && typeof state === "object" ? state : emptyState();
+    const products = Array.isArray(snapshot.products) ? snapshot.products : [];
+    const projects = Array.isArray(snapshot.projects) ? snapshot.projects : [];
+    const assets = Array.isArray(snapshot.assets) ? snapshot.assets : [];
+    const reviews = Array.isArray(snapshot.reviews) ? snapshot.reviews : [];
+    const evidence = { observed: 0, reported: 0, unknown: 0 };
+    for (const review of reviews) {
+      if (Object.prototype.hasOwnProperty.call(evidence, review.evidenceStatus)) {
+        evidence[review.evidenceStatus] += 1;
+      }
+    }
+    const stamps = [];
+    for (const collection of [products, projects, assets, reviews]) {
+      for (const item of collection) {
+        const stamp = optionalIsoStamp(item?.updatedAt) || optionalIsoStamp(item?.createdAt);
+        if (stamp) stamps.push(stamp);
+      }
+    }
+    const lastUpdatedAt = stamps.length ? stamps.reduce((latest, stamp) => (stamp > latest ? stamp : latest)) : "";
+    const nextActions = reviews
+      .filter((review) => String(review.nextAction || "").trim())
+      .slice()
+      .sort((a, b) => String(b.observationDate || "").localeCompare(String(a.observationDate || "")))
+      .map((review) => ({
+        reviewId: review.id,
+        assetId: review.assetId,
+        nextAction: String(review.nextAction).trim(),
+        finding: String(review.finding || "").trim(),
+        evidenceStatus: review.evidenceStatus,
+        observationDate: review.observationDate || "",
+        intendedAudience: String(review.intendedAudience || "").trim(),
+        desiredOutcome: String(review.desiredOutcome || "").trim(),
+      }));
+    return {
+      counts: {
+        products: products.length,
+        projects: projects.length,
+        assets: assets.length,
+        reviews: reviews.length,
+      },
+      evidence,
+      lastUpdatedAt,
+      lastExportedAt: optionalIsoStamp(snapshot.lastExportedAt),
+      fictional: snapshot.fictional === true,
+      isEmpty: products.length + projects.length + assets.length + reviews.length === 0,
+      nextActions,
     };
   }
 
@@ -442,6 +503,9 @@
 
     const relationError = validateRelations(state);
     if (relationError) return { ok: false, error: relationError };
+    state.lastExportedAt =
+      optionalIsoStamp(raw.lastExportedAt) || optionalIsoStamp(raw.exportedAt);
+    state.fictional = raw.fictional === true;
     return { ok: true, state };
   }
 
@@ -510,6 +574,20 @@
           createdAt: "2026-09-03T00:00:00.000Z",
           updatedAt: "2026-09-03T00:00:00.000Z",
         },
+        {
+          id: "ex-asset-reel-caption",
+          name: "Reel caption draft (fictional)",
+          kind: "content",
+          productId: "ex-product-harbor-lamp",
+          projectId: "ex-project-spring-landing",
+          channel: "instagram_reels",
+          format: "Short caption",
+          message: "Plug it in. The room stops looking temporary.",
+          sourceUrl: "https://example.com/fictional-harbor-lamp-reel-caption",
+          notes: "FICTIONAL EXAMPLE. No real Instagram account.",
+          createdAt: "2026-09-05T00:00:00.000Z",
+          updatedAt: "2026-09-05T00:00:00.000Z",
+        },
       ],
       reviews: [
         {
@@ -531,6 +609,26 @@
           nextAction: "Write a second sentence that states what the lamp is before any claim about mood.",
           createdAt: "2026-09-04T00:00:00.000Z",
           updatedAt: "2026-09-04T00:00:00.000Z",
+        },
+        {
+          id: "ex-review-reel-reported",
+          assetId: "ex-asset-reel-caption",
+          productId: "ex-product-harbor-lamp",
+          projectId: "ex-project-spring-landing",
+          channel: "instagram_reels",
+          intendedAudience: "Renters scrolling for apartment lighting ideas",
+          desiredOutcome: "Pause long enough to read what the lamp is",
+          sourceUrl: "https://example.com/fictional-harbor-lamp-reel-caption",
+          sourceNote: "Operator read of the fictional caption draft. Not a live post.",
+          observationDate: "2026-09-06",
+          evidenceStatus: "reported",
+          metricName: "",
+          metricValue: null,
+          finding:
+            "The caption assumes the viewer already knows it is a lamp. Pre-publish note only; no reach or watch-time figure exists.",
+          nextAction: "Name the object in the first five words, then keep the rented-room line.",
+          createdAt: "2026-09-06T00:00:00.000Z",
+          updatedAt: "2026-09-06T00:00:00.000Z",
         },
       ],
     };
@@ -604,7 +702,10 @@
       if (!result.ok) return result;
       const relationError = validateRelations(result.state);
       if (relationError) return { ok: false, error: relationError };
-      return persist(result.state);
+      const saved = persist(result.state);
+      if (!saved.ok) return saved;
+      if (result.record) saved.record = result.record;
+      return saved;
     }
 
     function upsert(listName, id, normalize) {
@@ -672,13 +773,19 @@
         });
       },
       exportJson() {
+        const exportedAt = nowIso(clock);
         const exported = cloneState(state);
         exported.kind = KIND;
         exported.schemaVersion = SCHEMA_VERSION;
-        exported.exportedAt = nowIso(clock);
+        exported.exportedAt = exportedAt;
+        exported.lastExportedAt = exportedAt;
         exported.privacy =
           "Local browser workspace only. This file may contain whatever you typed; do not commit private studio data.";
-        return JSON.stringify(exported, null, 2);
+        const json = JSON.stringify(exported, null, 2);
+        const next = cloneState(state);
+        next.lastExportedAt = exportedAt;
+        persist(next);
+        return json;
       },
       importJson(text) {
         const previous = cloneState(state);
@@ -755,6 +862,7 @@
     escapeHtml,
     sanitizeUrl,
     validateWorkspace,
+    summarizeWorkspace,
     memoryStorage,
     fictionalExample,
     channelLabel,

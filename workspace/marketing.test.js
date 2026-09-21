@@ -343,6 +343,77 @@ test("opt-in fictional example validates and is labelled fictional", () => {
   assert.equal(loaded.state.reviews[0].evidenceStatus, "unknown");
 });
 
+test("dashboard overview counts records and evidence without inventing metrics", () => {
+  const empty = storeLib.summarizeWorkspace(storeLib.emptyState());
+  assert.equal(empty.isEmpty, true);
+  assert.deepEqual(empty.counts, { products: 0, projects: 0, assets: 0, reviews: 0 });
+  assert.deepEqual(empty.evidence, { observed: 0, reported: 0, unknown: 0 });
+  assert.equal(empty.nextActions.length, 0);
+  assert.equal(empty.lastExportedAt, "");
+  assert.equal(empty.lastUpdatedAt, "");
+
+  const store = fresh();
+  const loaded = store.loadFictionalExample();
+  assert.equal(loaded.ok, true);
+  const summary = storeLib.summarizeWorkspace(loaded.state);
+  assert.equal(summary.isEmpty, false);
+  assert.equal(summary.fictional, true);
+  assert.deepEqual(summary.counts, { products: 1, projects: 1, assets: 2, reviews: 2 });
+  assert.equal(summary.evidence.unknown, 1);
+  assert.equal(summary.evidence.reported, 1);
+  assert.equal(summary.evidence.observed, 0);
+  assert.equal(summary.lastUpdatedAt, "2026-09-06T00:00:00.000Z");
+  assert.equal(summary.lastExportedAt, "");
+  assert.equal(summary.nextActions.length, 2);
+  assert.match(summary.nextActions[0].nextAction, /Name the object/);
+});
+
+test("next-action queue stays empty when the field is missing", () => {
+  const seeded = seedJourney(fresh());
+  seeded.store.upsertReview({
+    id: seeded.reviewId,
+    assetId: seeded.assetId,
+    channel: "website_search",
+    observationDate: "2026-09-18",
+    evidenceStatus: "unknown",
+    finding: "A finding without a next step.",
+    nextAction: "",
+  });
+  const summary = storeLib.summarizeWorkspace(seeded.store.getState());
+  assert.equal(summary.counts.reviews, 1);
+  assert.equal(summary.nextActions.length, 0);
+});
+
+test("export records lastExportedAt and import restores it", () => {
+  const original = seedJourney(fresh()).store;
+  const json = original.exportJson();
+  const parsed = JSON.parse(json);
+  assert.equal(parsed.exportedAt, "2026-09-20T12:00:00.000Z");
+  assert.equal(original.getState().lastExportedAt, "2026-09-20T12:00:00.000Z");
+  const summary = storeLib.summarizeWorkspace(original.getState());
+  assert.equal(summary.lastExportedAt, "2026-09-20T12:00:00.000Z");
+
+  const other = fresh();
+  const imported = other.importJson(json);
+  assert.equal(imported.ok, true);
+  assert.equal(imported.state.lastExportedAt, "2026-09-20T12:00:00.000Z");
+});
+
+test("desk markup keeps skip link, noindex, and overview landmarks", () => {
+  const fs = require("node:fs");
+  const path = require("node:path");
+  const html = fs.readFileSync(path.join(__dirname, "marketing.html"), "utf8");
+  assert.match(html, /noindex/);
+  assert.match(html, /class="skip-link"/);
+  assert.match(html, /id="overview"/);
+  assert.match(html, /id="attention-queue"/);
+  assert.match(html, /role="tablist"/);
+  assert.match(html, /Pre-publish evidence notes/);
+  assert.doesNotMatch(html, /googletagmanager|gtag\(|google-analytics/i);
+  assert.doesNotMatch(html, /src="https?:\/\//i);
+  assert.doesNotMatch(html, /href="\.\.\/index\.html"|site-nav/);
+});
+
 test("filters by product and project keep related records only", () => {
   const store = fresh();
   const a = store.upsertProduct({ name: "Product A" }).state.products.find((item) => item.name === "Product A");
