@@ -177,6 +177,13 @@ main { padding: 20px var(--pad) 64px; display: grid; gap: 18px; }
 
 .view.desk { gap: 12px; }
 
+.view[hidden],
+.overview-stats[hidden],
+.empty-desk[hidden],
+.desk-panel[hidden] {
+  display: none !important;
+}
+
 .kicker { color: var(--muted); }
 
 .page-title {

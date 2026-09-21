@@ -450,6 +450,9 @@ test("desk markup keeps skip link, noindex, and overview landmarks", () => {
   assert.match(html, /data-tab="publications"/);
   assert.match(html, /data-tab="observations"/);
   assert.match(html, /data-tab="learnings"/);
+  const css = fs.readFileSync(path.join(__dirname, "marketing.css"), "utf8");
+  assert.match(css, /\.view\[hidden\]/);
+  assert.match(css, /display:\s*none\s*!important/);
   assert.doesNotMatch(html, /googletagmanager|gtag\(|google-analytics/i);
   assert.doesNotMatch(html, /src="https?:\/\//i);
   assert.doesNotMatch(html, /href="\.\.\/index\.html"|site-nav/);

@@ -272,7 +272,15 @@
     const statsEl = $("#overview-stats");
     emptyEl.hidden = !summary.isEmpty;
     statsEl.hidden = summary.isEmpty;
-    if (summary.isEmpty) return summary;
+    if (summary.isEmpty) {
+      $("#stat-grid").innerHTML = "";
+      $("#catalog-grid").innerHTML = "";
+      $("#stage-strip").innerHTML = "";
+      $("#evidence-line").textContent = "";
+      $("#stamp-line").textContent = "";
+      $("#fictional-line").hidden = true;
+      return summary;
+    }
     const agency = [
       ["briefs", "Briefs"],
       ["jobs", "Jobs"],
