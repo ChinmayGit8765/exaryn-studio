@@ -7,16 +7,51 @@
   const $ = (sel, root) => (root || document).querySelector(sel);
   const $$ = (sel, root) => [...(root || document).querySelectorAll(sel)];
 
-  const TABS = ["products", "projects", "assets", "reviews"];
+  const VIEWS = ["home", "pipeline", "records"];
+  const RECORD_TABS = [
+    "briefs",
+    "jobs",
+    "products",
+    "projects",
+    "assets",
+    "reviews",
+    "publications",
+    "observations",
+    "learnings",
+  ];
+  const KIND_TO_LIST = {
+    brief: "briefs",
+    job: "jobs",
+    product: "products",
+    project: "projects",
+    asset: "assets",
+    review: "reviews",
+    publication: "publications",
+    observation: "observations",
+    learning: "learnings",
+  };
+  const LIST_TO_KIND = Object.fromEntries(Object.entries(KIND_TO_LIST).map(([kind, list]) => [list, kind]));
   const statusEl = $("#live-status");
   const dialog = $("#record-dialog");
   const form = $("#record-form");
   const fields = $("#form-fields");
   const dialogTitle = $("#dialog-title");
-  let currentKind = "product";
+  let currentKind = "brief";
   let editingId = null;
-  let activeTab = "products";
-  let selected = { products: null, projects: null, assets: null, reviews: null };
+  let activeView = "home";
+  let activeTab = "briefs";
+  let selected = {
+    briefs: null,
+    jobs: null,
+    products: null,
+    projects: null,
+    assets: null,
+    reviews: null,
+    publications: null,
+    observations: null,
+    learnings: null,
+  };
+  let pipelineJobId = null;
 
   function announce(message, kind) {
     statusEl.dataset.kind = kind || "ok";
@@ -40,11 +75,33 @@
     );
   }
 
+  function optionListByLabel(items, selectedId, blankLabel, labelFn) {
+    const blank = `<option value="">${lib.escapeHtml(blankLabel)}</option>`;
+    return (
+      blank +
+      items
+        .map((item) => {
+          const label = labelFn(item);
+          return `<option value="${lib.escapeHtml(item.id)}"${item.id === selectedId ? " selected" : ""}>${lib.escapeHtml(label)}</option>`;
+        })
+        .join("")
+    );
+  }
+
   function channelOptions(selectedId) {
     return lib.CHANNELS.map(
       (channel) =>
         `<option value="${lib.escapeHtml(channel.id)}"${channel.id === selectedId ? " selected" : ""}>${lib.escapeHtml(channel.label)}</option>`
     ).join("");
+  }
+
+  function enumOptions(values, selectedId, labels) {
+    return values
+      .map((value) => {
+        const label = labels && labels[value] ? labels[value] : value;
+        return `<option value="${lib.escapeHtml(value)}"${value === selectedId ? " selected" : ""}>${lib.escapeHtml(label)}</option>`;
+      })
+      .join("");
   }
 
   function fieldHtml(cfg) {
@@ -60,22 +117,40 @@
     return `<div class="field"><label for="${id}">${lib.escapeHtml(cfg.label)}</label><input id="${id}" name="${lib.escapeHtml(cfg.name)}" type="${lib.escapeHtml(cfg.type || "text")}" value="${lib.escapeHtml(value)}"${required} /></div>`;
   }
 
+  function named(list, id, fallback) {
+    return list.find((item) => item.id === id)?.name || fallback;
+  }
+
   function productName(id, state) {
-    return state.products.find((item) => item.id === id)?.name || "Unlinked";
+    return named(state.products, id, "Unlinked");
   }
 
   function projectName(id, state) {
-    return state.projects.find((item) => item.id === id)?.name || "Unlinked";
+    return named(state.projects, id, "Unlinked");
+  }
+
+  function briefName(id, state) {
+    return named(state.briefs, id, "No brief");
+  }
+
+  function jobName(id, state) {
+    return named(state.jobs, id, "No job");
   }
 
   function assetName(id, state) {
-    return state.assets.find((item) => item.id === id)?.name || "Unknown asset";
+    return named(state.assets, id, "Unknown asset");
   }
 
-  function metricLine(review) {
-    if (!review.metricName && review.metricValue == null) return "Metric: unknown (not recorded)";
-    if (review.metricValue == null) return `Metric ${review.metricName}: unknown`;
-    return `Metric ${review.metricName}: ${review.metricValue} (${review.evidenceStatus})`;
+  function publicationLabel(item, state) {
+    const asset = assetName(item.assetId, state);
+    const when = item.publishedAt || "date unknown";
+    return `${asset} · ${lib.channelLabel(item.channel) || item.channel} · ${when}`;
+  }
+
+  function metricLine(record) {
+    if (!record.metricName && record.metricValue == null) return "Metric: unknown (not recorded)";
+    if (record.metricValue == null) return `Metric ${record.metricName}: unknown`;
+    return `Metric ${record.metricName}: ${record.metricValue}`;
   }
 
   function stampLabel(value, emptyText) {
@@ -89,19 +164,71 @@
     return `<time datetime="${lib.escapeHtml(value)}">${lib.escapeHtml(label)}</time>`;
   }
 
-  function setTab(tab, options) {
-    const next = TABS.includes(tab) ? tab : "products";
+  function reasonLabel(code) {
+    const labels = {
+      blocked: "Blocked",
+      qc: "In QC",
+      unpublished: "Approved, unpublished",
+      due_soon: "Due soon",
+      overdue: "Overdue",
+    };
+    return labels[code] || code;
+  }
+
+  function hashForState() {
+    if (activeView === "home") return "#home";
+    if (activeView === "pipeline") return "#pipeline";
+    return `#${activeTab}`;
+  }
+
+  function applyHash(hash, options) {
+    const token = String(hash || "").replace("#", "");
+    if (token === "pipeline") {
+      setView("pipeline", options);
+      return;
+    }
+    if (RECORD_TABS.includes(token)) {
+      setView("records", { ...options, tab: token });
+      return;
+    }
+    setView("home", options);
+  }
+
+  function setView(view, options) {
+    const next = VIEWS.includes(view) ? view : "home";
+    activeView = next;
+    if (next === "records") {
+      const tab = options && options.tab && RECORD_TABS.includes(options.tab) ? options.tab : activeTab;
+      setRecordTab(tab, { updateHash: false });
+    }
+    $$(".app-tab").forEach((button) => {
+      const on = button.dataset.view === next;
+      button.setAttribute("aria-selected", on ? "true" : "false");
+      button.tabIndex = on ? 0 : -1;
+    });
+    VIEWS.forEach((name) => {
+      const panel = $(`#view-${name}`);
+      if (panel) panel.hidden = name !== next;
+    });
+    if (!options || options.updateHash !== false) {
+      const hash = hashForState();
+      if (location.hash !== hash) history.replaceState(null, "", hash);
+    }
+  }
+
+  function setRecordTab(tab, options) {
+    const next = RECORD_TABS.includes(tab) ? tab : "briefs";
     activeTab = next;
     $$(".desk-tab").forEach((button) => {
       const on = button.dataset.tab === next;
       button.setAttribute("aria-selected", on ? "true" : "false");
       button.tabIndex = on ? 0 : -1;
     });
-    TABS.forEach((name) => {
+    RECORD_TABS.forEach((name) => {
       const panel = $(`#panel-${name}`);
       if (panel) panel.hidden = name !== next;
     });
-    if (!options || options.updateHash !== false) {
+    if (activeView === "records" && (!options || options.updateHash !== false)) {
       const hash = `#${next}`;
       if (location.hash !== hash) history.replaceState(null, "", hash);
     }
@@ -131,25 +258,50 @@
       .join("")}</dl>`;
   }
 
+  function pickSelected(items, currentId) {
+    return items.some((item) => item.id === currentId) ? currentId : null;
+  }
+
+  function todayIso() {
+    return new Date().toISOString().slice(0, 10);
+  }
+
   function renderOverview(state) {
-    const summary = lib.summarizeWorkspace(state);
+    const summary = lib.summarizeWorkspace(state, { today: todayIso() });
     const emptyEl = $("#overview-empty");
     const statsEl = $("#overview-stats");
     emptyEl.hidden = !summary.isEmpty;
     statsEl.hidden = summary.isEmpty;
     if (summary.isEmpty) return summary;
-    const labels = [
+    const agency = [
+      ["briefs", "Briefs"],
+      ["jobs", "Jobs"],
+      ["publications", "Publications"],
+      ["observations", "Observations"],
+      ["learnings", "Learnings"],
+    ];
+    const catalog = [
       ["products", "Products"],
       ["projects", "Projects"],
       ["assets", "Assets"],
       ["reviews", "Reviews"],
     ];
-    $("#stat-grid").innerHTML = labels
+    $("#stat-grid").innerHTML = agency
       .map(
         ([key, label]) =>
           `<li class="stat"><span class="n">${lib.escapeHtml(String(summary.counts[key]))}</span><span class="l mono">${lib.escapeHtml(label)}</span></li>`
       )
       .join("");
+    $("#catalog-grid").innerHTML = catalog
+      .map(
+        ([key, label]) =>
+          `<li class="stat slim"><span class="n">${lib.escapeHtml(String(summary.counts[key]))}</span><span class="l mono">${lib.escapeHtml(label)}</span></li>`
+      )
+      .join("");
+    $("#stage-strip").innerHTML = lib.JOB_STAGES.map(
+      (stage) =>
+        `<div class="stage-chip"><span class="n">${lib.escapeHtml(String(summary.jobStages[stage]))}</span><span class="l mono">${lib.escapeHtml(lib.stageLabel(stage))}</span></div>`
+    ).join("");
     $("#evidence-line").innerHTML = `Reviews by evidence status
       <span class="evidence-chips">
         <span class="badge observed">observed ${lib.escapeHtml(String(summary.evidence.observed))}</span>
@@ -159,6 +311,28 @@
     $("#stamp-line").innerHTML = `Last updated ${stampHtml(summary.lastUpdatedAt, "not recorded")} · Last export ${stampHtml(summary.lastExportedAt, "not recorded in this browser")}`;
     $("#fictional-line").hidden = !summary.fictional;
     return summary;
+  }
+
+  function renderAttention(summary) {
+    const el = $("#attention-list");
+    if (!summary.attention.length) {
+      el.innerHTML = `<li class="empty">No jobs need attention. Due-soon, blocked, QC, and approved-unpublished jobs would appear here.</li>`;
+      return;
+    }
+    el.innerHTML = summary.attention
+      .map((item) => {
+        const reasons = item.reasons.map((code) => `<span class="badge">${lib.escapeHtml(reasonLabel(code))}</span>`).join("");
+        return `<li class="queue-item">
+          <div>
+            <h3>${lib.escapeHtml(item.name)}</h3>
+            <p class="meta">${lib.escapeHtml(lib.stageLabel(item.stage))} · ${lib.escapeHtml(item.owner || "Owner not recorded")} · due ${lib.escapeHtml(item.dueDate || "not recorded")}</p>
+            <div>${reasons}</div>
+            <p>${item.blocker ? lib.escapeHtml(item.blocker) : ""}</p>
+          </div>
+          <button type="button" class="btn ghost" data-focus-job="${lib.escapeHtml(item.jobId)}">Open job</button>
+        </li>`;
+      })
+      .join("");
   }
 
   function renderQueue(summary, state) {
@@ -173,7 +347,7 @@
         return `<li class="queue-item">
           <div>
             <h3>${lib.escapeHtml(item.nextAction)}</h3>
-            <p class="meta">${asset} · ${lib.escapeHtml(item.observationDate || "date unknown")} · evidence ${lib.escapeHtml(item.evidenceStatus)}</p>
+            <p class="meta">${asset} · ${lib.escapeHtml(item.observationDate || "date unknown")} · evidence ${lib.escapeHtml(item.evidenceStatus)} · ${lib.escapeHtml(item.recommendDecision)}</p>
             <p>${item.finding ? lib.escapeHtml(item.finding) : "Finding not recorded."}</p>
           </div>
           <button type="button" class="btn ghost" data-focus-review="${lib.escapeHtml(item.reviewId)}">Open review</button>
@@ -182,11 +356,57 @@
       .join("");
   }
 
+  function jobDetailHtml(record, state) {
+    return `<h3>${lib.escapeHtml(record.name)}</h3>
+      <span class="badge">${lib.escapeHtml(lib.stageLabel(record.stage))}</span>
+      ${record.blocker ? `<span class="badge">Blocked</span>` : ""}
+      ${dl([
+        { label: "Brief", value: record.briefId ? briefName(record.briefId, state) : "None" },
+        { label: "Product", value: record.productId ? productName(record.productId, state) : "None" },
+        { label: "Project", value: record.projectId ? projectName(record.projectId, state) : "None" },
+        { label: "Owner", value: record.owner },
+        { label: "Due date", value: record.dueDate },
+        { label: "Blocker", value: record.blocker },
+        { label: "Notes", value: record.notes },
+      ])}${cardActions("job", record.id)}`;
+  }
+
+  function renderPipeline(state, view) {
+    const jobs = view.jobs.slice().sort((a, b) => String(a.name).localeCompare(String(b.name)));
+    if (pipelineJobId && !jobs.some((job) => job.id === pipelineJobId)) pipelineJobId = null;
+    $("#pipeline-board").innerHTML = lib.JOB_STAGES.map((stage) => {
+      const column = jobs.filter((job) => job.stage === stage);
+      const cards = column.length
+        ? column
+            .map((job) => {
+              const on = job.id === pipelineJobId;
+              return `<button type="button" class="card pipeline-card${on ? " is-selected" : ""}" data-select-job="${lib.escapeHtml(job.id)}">
+                <h3>${lib.escapeHtml(job.name)}</h3>
+                <p class="meta">${lib.escapeHtml(job.owner || "Owner not recorded")}${job.dueDate ? ` · ${lib.escapeHtml(job.dueDate)}` : ""}</p>
+                ${job.blocker ? `<span class="badge">Blocked</span>` : ""}
+              </button>`;
+            })
+            .join("")
+        : `<p class="empty">None</p>`;
+      return `<section class="pipeline-col" data-stage="${lib.escapeHtml(stage)}">
+        <h3>${lib.escapeHtml(lib.stageLabel(stage))} <span class="count">${column.length}</span></h3>
+        ${cards}
+      </section>`;
+    }).join("");
+    const selectedJob = jobs.find((job) => job.id === pipelineJobId) || null;
+    const detail = $("#pipeline-detail");
+    if (!selectedJob) {
+      detail.innerHTML = `<p class="meta">Select a job on the board. Create or edit from the button above. Stage changes are an explicit save.</p>`;
+      return;
+    }
+    detail.innerHTML = jobDetailHtml(selectedJob, state);
+  }
+
   function renderDetail(kind, record, state) {
     const el = $(`#${kind}-detail`);
     if (!el) return;
     if (!record) {
-      el.innerHTML = `<p class="meta">Select a record to read it. Keyboard: arrow keys move between desk tabs.</p>`;
+      el.innerHTML = `<p class="meta">Select a record to read it. Keyboard: arrow keys move between record tabs.</p>`;
       return;
     }
     if (kind === "product") {
@@ -208,53 +428,139 @@
       ])}${cardActions("project", record.id)}`;
       return;
     }
+    if (kind === "brief") {
+      el.innerHTML = `<h3>${lib.escapeHtml(record.name)}</h3>${dl([
+        { label: "Product", value: record.productId ? productName(record.productId, state) : "None" },
+        { label: "Project", value: record.projectId ? projectName(record.projectId, state) : "None" },
+        { label: "Audience", value: record.audience },
+        { label: "Problem or insight", value: record.problemOrInsight },
+        { label: "Message hypothesis", value: record.messageHypothesis },
+        { label: "Mandatory claims", value: record.mandatoryClaims },
+        { label: "Out of scope", value: record.outOfScope },
+        { label: "Success definition", value: record.successDefinition },
+        { label: "Notes", value: record.notes },
+      ])}${cardActions("brief", record.id)}`;
+      return;
+    }
+    if (kind === "job") {
+      el.innerHTML = jobDetailHtml(record, state);
+      return;
+    }
     if (kind === "asset") {
       el.innerHTML = `<h3>${lib.escapeHtml(record.name)}</h3>
         <span class="badge">${lib.escapeHtml(record.kind === "product_surface" ? "Product surface" : "Content")}</span>
         <span class="badge">${lib.escapeHtml(lib.channelLabel(record.channel))}</span>
+        <span class="badge">${lib.escapeHtml(lib.creativeStatusLabel(record.creativeStatus))}</span>
+        ${record.versionLabel ? `<span class="badge">${lib.escapeHtml(record.versionLabel)}</span>` : ""}
         ${dl([
           { label: "Product", value: record.productId ? productName(record.productId, state) : "No product" },
           { label: "Project", value: record.projectId ? projectName(record.projectId, state) : "No project" },
           { label: "Format", value: record.format },
           { label: "Message", value: record.message },
+          { label: "Copy body", value: record.copyBody },
           { label: "Source URL", value: record.sourceUrl || "Unknown" },
           { label: "Notes", value: record.notes },
         ])}${cardActions("asset", record.id)}`;
       return;
     }
-    el.innerHTML = `<h3>${lib.escapeHtml(assetName(record.assetId, state))}</h3>
-      <span class="badge note">Pre-publish evidence note</span>
-      <span class="badge ${lib.escapeHtml(record.evidenceStatus)}">Evidence: ${lib.escapeHtml(record.evidenceStatus)}</span>
-      <span class="badge">${lib.escapeHtml(lib.channelLabel(record.channel))}</span>
+    if (kind === "review") {
+      el.innerHTML = `<h3>${lib.escapeHtml(assetName(record.assetId, state))}</h3>
+        <span class="badge note">Pre-publish QC note</span>
+        <span class="badge ${lib.escapeHtml(record.evidenceStatus)}">Evidence: ${lib.escapeHtml(record.evidenceStatus)}</span>
+        <span class="badge">${lib.escapeHtml(record.recommendDecision)}</span>
+        <span class="badge">${lib.escapeHtml(lib.channelLabel(record.channel))}</span>
+        ${dl([
+          { label: "Observation date", value: record.observationDate },
+          { label: "Audience", value: record.intendedAudience },
+          { label: "Desired outcome / CTA", value: record.desiredOutcome },
+          { label: "Claim truth", value: record.claimTruthOk },
+          { label: "Channel fit", value: record.channelFitOk },
+          { label: "CTA clear", value: record.ctaClearOk },
+          { label: "Recommend", value: record.recommendDecision },
+          { label: "Source URL", value: record.sourceUrl || "None" },
+          { label: "Source note", value: record.sourceNote },
+          { label: "Metric", value: metricLine(record) },
+          { label: "Finding", value: record.finding },
+          { label: "Next action", value: record.nextAction || "Not recorded" },
+        ])}${cardActions("review", record.id)}`;
+      return;
+    }
+    if (kind === "publication") {
+      el.innerHTML = `<h3>${lib.escapeHtml(assetName(record.assetId, state))}</h3>
+        <span class="badge">${lib.escapeHtml(lib.channelLabel(record.channel))}</span>
+        ${record.assetVersion ? `<span class="badge">${lib.escapeHtml(record.assetVersion)}</span>` : ""}
+        ${dl([
+          { label: "Account label", value: record.accountLabel },
+          { label: "Public URL", value: record.publicUrl || "Unknown" },
+          { label: "Platform id", value: record.platformId },
+          { label: "Published date", value: record.publishedAt },
+          { label: "Authorization note", value: record.authorizationNote },
+          { label: "Notes", value: record.notes },
+        ])}${cardActions("publication", record.id)}`;
+      return;
+    }
+    if (kind === "observation") {
+      el.innerHTML = `<h3>${lib.escapeHtml(record.metricName || "Observation")}</h3>
+        <span class="badge unknown">${record.metricValue == null ? "Metric unknown" : "Metric recorded"}</span>
+        ${dl([
+          { label: "Publication", value: record.publicationId || "None" },
+          { label: "Asset", value: record.assetId ? assetName(record.assetId, state) : "None" },
+          { label: "Metric", value: metricLine(record) },
+          { label: "Window", value: [record.windowStart, record.windowEnd].filter(Boolean).join(" → ") || "Not recorded" },
+          { label: "Captured at", value: stampLabel(record.capturedAt, "Not recorded") },
+          { label: "Source note", value: record.sourceNote },
+          { label: "Limitations", value: record.limitations },
+          { label: "Notes", value: record.notes },
+        ])}${cardActions("observation", record.id)}`;
+      return;
+    }
+    el.innerHTML = `<h3>${lib.escapeHtml(record.jobId ? jobName(record.jobId, state) : "Learning")}</h3>
       ${dl([
-        { label: "Observation date", value: record.observationDate },
-        { label: "Audience", value: record.intendedAudience },
-        { label: "Desired outcome / CTA", value: record.desiredOutcome },
-        { label: "Source URL", value: record.sourceUrl || "None" },
-        { label: "Source note", value: record.sourceNote },
-        { label: "Metric", value: metricLine(record) },
-        { label: "Finding", value: record.finding },
-        { label: "Next action", value: record.nextAction || "Not recorded" },
-      ])}${cardActions("review", record.id)}`;
+        { label: "Job", value: record.jobId ? jobName(record.jobId, state) : "None" },
+        { label: "Publication", value: record.publicationId || "None" },
+        { label: "Hypothesis", value: record.hypothesis },
+        { label: "Evidence supports", value: record.evidenceSupports },
+        { label: "Cannot show", value: record.cannotShow },
+        { label: "Next action", value: record.nextAction },
+        { label: "Notes", value: record.notes },
+      ])}${cardActions("learning", record.id)}`;
   }
 
-  function render() {
-    const state = store.getState();
-    const filters = {
-      productId: $("#filter-product").value,
-      projectId: $("#filter-project").value,
-    };
-    const view = store.filterRecords(filters);
-    const summary = renderOverview(state);
-    renderQueue(summary, state);
+  function renderRecordLists(state, view) {
+    selected.briefs = pickSelected(view.briefs, selected.briefs);
+    renderList(
+      $("#brief-list"),
+      view.briefs,
+      "No briefs yet. A brief is the source of truth for a job.",
+      (item, on) => `<li>
+        <button type="button" class="card${on ? " is-selected" : ""}" data-select="brief" data-id="${lib.escapeHtml(item.id)}">
+          <h3>${lib.escapeHtml(item.name)}</h3>
+          <p class="meta">${lib.escapeHtml(item.productId ? productName(item.productId, state) : "No product")}</p>
+          <p>${lib.escapeHtml(item.messageHypothesis || "Message hypothesis not recorded")}</p>
+        </button>
+      </li>`,
+      selected.briefs
+    );
+    renderDetail("brief", view.briefs.find((item) => item.id === selected.briefs) || null, state);
 
-    $("#filter-product").innerHTML = optionList(state.products, filters.productId, "All products");
-    $("#filter-project").innerHTML = optionList(state.projects, filters.projectId, "All projects");
+    selected.jobs = pickSelected(view.jobs, selected.jobs);
+    renderList(
+      $("#job-list"),
+      view.jobs,
+      "No jobs yet. A job is a traffic packet with a pipeline stage.",
+      (item, on) => `<li>
+        <button type="button" class="card${on ? " is-selected" : ""}" data-select="job" data-id="${lib.escapeHtml(item.id)}">
+          <h3>${lib.escapeHtml(item.name)}</h3>
+          <span class="badge">${lib.escapeHtml(lib.stageLabel(item.stage))}</span>
+          ${item.blocker ? `<span class="badge">Blocked</span>` : ""}
+          <p class="meta">${lib.escapeHtml(item.owner || "Owner not recorded")} · due ${lib.escapeHtml(item.dueDate || "not recorded")}</p>
+        </button>
+      </li>`,
+      selected.jobs
+    );
+    renderDetail("job", view.jobs.find((item) => item.id === selected.jobs) || null, state);
 
-    const productSelected = view.products.some((item) => item.id === selected.products)
-      ? selected.products
-      : null;
-    selected.products = productSelected;
+    selected.products = pickSelected(view.products, selected.products);
     renderList(
       $("#product-list"),
       view.products,
@@ -266,14 +572,11 @@
           <p>${lib.escapeHtml(item.audience || "Audience not recorded")}</p>
         </button>
       </li>`,
-      productSelected
+      selected.products
     );
-    renderDetail("product", view.products.find((item) => item.id === productSelected) || null, state);
+    renderDetail("product", view.products.find((item) => item.id === selected.products) || null, state);
 
-    const projectSelected = view.projects.some((item) => item.id === selected.projects)
-      ? selected.projects
-      : null;
-    selected.projects = projectSelected;
+    selected.projects = pickSelected(view.projects, selected.projects);
     renderList(
       $("#project-list"),
       view.projects,
@@ -285,14 +588,11 @@
           <p>${lib.escapeHtml(item.outcome || "Outcome not recorded")}</p>
         </button>
       </li>`,
-      projectSelected
+      selected.projects
     );
-    renderDetail("project", view.projects.find((item) => item.id === projectSelected) || null, state);
+    renderDetail("project", view.projects.find((item) => item.id === selected.projects) || null, state);
 
-    const assetSelected = view.assets.some((item) => item.id === selected.assets)
-      ? selected.assets
-      : null;
-    selected.assets = assetSelected;
+    selected.assets = pickSelected(view.assets, selected.assets);
     renderList(
       $("#asset-list"),
       view.assets,
@@ -300,38 +600,104 @@
       (item, on) => `<li>
         <button type="button" class="card${on ? " is-selected" : ""}" data-select="asset" data-id="${lib.escapeHtml(item.id)}">
           <h3>${lib.escapeHtml(item.name)}</h3>
-          <span class="badge">${lib.escapeHtml(item.kind === "product_surface" ? "Product surface" : "Content")}</span>
+          <span class="badge">${lib.escapeHtml(lib.creativeStatusLabel(item.creativeStatus))}</span>
           <span class="badge">${lib.escapeHtml(lib.channelLabel(item.channel))}</span>
-          <p class="meta">${lib.escapeHtml(item.productId ? productName(item.productId, state) : "No product")} · ${lib.escapeHtml(item.projectId ? projectName(item.projectId, state) : "No project")}</p>
+          <p class="meta">${lib.escapeHtml(item.versionLabel || "No version label")} · ${lib.escapeHtml(item.productId ? productName(item.productId, state) : "No product")}</p>
         </button>
       </li>`,
-      assetSelected
+      selected.assets
     );
-    renderDetail("asset", view.assets.find((item) => item.id === assetSelected) || null, state);
+    renderDetail("asset", view.assets.find((item) => item.id === selected.assets) || null, state);
 
-    const reviewSelected = view.reviews.some((item) => item.id === selected.reviews)
-      ? selected.reviews
-      : null;
-    selected.reviews = reviewSelected;
+    selected.reviews = pickSelected(view.reviews, selected.reviews);
     renderList(
       $("#review-list"),
       view.reviews,
-      "No reviews yet. Record an evidence-backed note. Missing metrics stay unknown.",
+      "No reviews yet. Record a pre-publish QC note. Missing metrics stay unknown.",
       (item, on) => `<li>
         <button type="button" class="card${on ? " is-selected" : ""}" data-select="review" data-id="${lib.escapeHtml(item.id)}">
           <h3>${lib.escapeHtml(assetName(item.assetId, state))}</h3>
-          <span class="badge note">Pre-publish note</span>
+          <span class="badge note">Pre-publish QC</span>
           <span class="badge ${lib.escapeHtml(item.evidenceStatus)}">Evidence: ${lib.escapeHtml(item.evidenceStatus)}</span>
+          <span class="badge">${lib.escapeHtml(item.recommendDecision)}</span>
           <p class="meta">${lib.escapeHtml(item.observationDate)} · ${lib.escapeHtml(item.nextAction ? "Next action recorded" : "No next action")}</p>
           <p>${lib.escapeHtml(item.finding)}</p>
         </button>
       </li>`,
-      reviewSelected
+      selected.reviews
     );
-    renderDetail("review", view.reviews.find((item) => item.id === reviewSelected) || null, state);
+    renderDetail("review", view.reviews.find((item) => item.id === selected.reviews) || null, state);
+
+    selected.publications = pickSelected(view.publications, selected.publications);
+    renderList(
+      $("#publication-list"),
+      view.publications,
+      "No publications yet. Publication is separate from the asset and is never created automatically.",
+      (item, on) => `<li>
+        <button type="button" class="card${on ? " is-selected" : ""}" data-select="publication" data-id="${lib.escapeHtml(item.id)}">
+          <h3>${lib.escapeHtml(assetName(item.assetId, state))}</h3>
+          <span class="badge">${lib.escapeHtml(lib.channelLabel(item.channel))}</span>
+          <p class="meta">${lib.escapeHtml(item.publishedAt || "Date unknown")} · ${lib.escapeHtml(item.accountLabel || "Account not recorded")}</p>
+        </button>
+      </li>`,
+      selected.publications
+    );
+    renderDetail("publication", view.publications.find((item) => item.id === selected.publications) || null, state);
+
+    selected.observations = pickSelected(view.observations, selected.observations);
+    renderList(
+      $("#observation-list"),
+      view.observations,
+      "No observations yet. Blank metric values stay unknown.",
+      (item, on) => `<li>
+        <button type="button" class="card${on ? " is-selected" : ""}" data-select="observation" data-id="${lib.escapeHtml(item.id)}">
+          <h3>${lib.escapeHtml(item.metricName || "Observation")}</h3>
+          <span class="badge unknown">${item.metricValue == null ? "Unknown" : "Recorded"}</span>
+          <p class="meta">${lib.escapeHtml(item.windowStart || "No window start")} → ${lib.escapeHtml(item.windowEnd || "No window end")}</p>
+          <p>${lib.escapeHtml(item.sourceNote || item.limitations || "No source note")}</p>
+        </button>
+      </li>`,
+      selected.observations
+    );
+    renderDetail("observation", view.observations.find((item) => item.id === selected.observations) || null, state);
+
+    selected.learnings = pickSelected(view.learnings, selected.learnings);
+    renderList(
+      $("#learning-list"),
+      view.learnings,
+      "No learnings yet. A debrief records what evidence can and cannot show.",
+      (item, on) => `<li>
+        <button type="button" class="card${on ? " is-selected" : ""}" data-select="learning" data-id="${lib.escapeHtml(item.id)}">
+          <h3>${lib.escapeHtml(item.jobId ? jobName(item.jobId, state) : "Learning")}</h3>
+          <p class="meta">${lib.escapeHtml(item.nextAction ? "Next action recorded" : "No next action")}</p>
+          <p>${lib.escapeHtml(item.hypothesis)}</p>
+        </button>
+      </li>`,
+      selected.learnings
+    );
+    renderDetail("learning", view.learnings.find((item) => item.id === selected.learnings) || null, state);
+  }
+
+  function render() {
+    const state = store.getState();
+    const filters = {
+      productId: $("#filter-product").value,
+      projectId: $("#filter-project").value,
+    };
+    const view = store.filterRecords(filters);
+    const summary = renderOverview(state);
+    renderAttention(summary);
+    renderQueue(summary, state);
+    renderPipeline(state, view);
+
+    $("#filter-product").innerHTML = optionList(state.products, filters.productId, "All products");
+    $("#filter-project").innerHTML = optionList(state.projects, filters.projectId, "All projects");
+    renderRecordLists(state, view);
   }
 
   function fieldsFor(kind, record, state) {
+    const tri = (selectedValue) =>
+      enumOptions(lib.TRI_STATES, selectedValue || "unknown", { unknown: "unknown", yes: "yes", no: "no" });
     if (kind === "product") {
       return [
         { name: "name", label: "Product name", value: record?.name, required: true },
@@ -350,6 +716,47 @@
         { name: "notes", label: "Notes", type: "textarea", value: record?.notes },
       ];
     }
+    if (kind === "brief") {
+      return [
+        { name: "name", label: "Brief name", value: record?.name, required: true },
+        { name: "productId", label: "Product (optional)", type: "select", options: optionList(state.products, record?.productId || "", "No product") },
+        { name: "projectId", label: "Project (optional)", type: "select", options: optionList(state.projects, record?.projectId || "", "No project") },
+        { name: "audience", label: "Audience", value: record?.audience },
+        { name: "problemOrInsight", label: "Problem or insight", type: "textarea", value: record?.problemOrInsight },
+        { name: "messageHypothesis", label: "Message hypothesis", type: "textarea", value: record?.messageHypothesis },
+        { name: "mandatoryClaims", label: "Mandatory claims", type: "textarea", value: record?.mandatoryClaims },
+        { name: "outOfScope", label: "Out of scope", type: "textarea", value: record?.outOfScope },
+        { name: "successDefinition", label: "Success definition", type: "textarea", value: record?.successDefinition },
+        { name: "notes", label: "Notes", type: "textarea", value: record?.notes },
+      ];
+    }
+    if (kind === "job") {
+      return [
+        { name: "name", label: "Job name", value: record?.name, required: true },
+        { name: "briefId", label: "Brief (optional)", type: "select", options: optionList(state.briefs, record?.briefId || "", "No brief") },
+        { name: "productId", label: "Product (optional)", type: "select", options: optionList(state.products, record?.productId || "", "No product") },
+        { name: "projectId", label: "Project (optional)", type: "select", options: optionList(state.projects, record?.projectId || "", "No project") },
+        {
+          name: "stage",
+          label: "Stage",
+          type: "select",
+          required: true,
+          options: enumOptions(lib.JOB_STAGES, record?.stage || "briefed", {
+            briefed: "Briefed",
+            drafting: "Drafting",
+            qc: "QC",
+            approved: "Approved",
+            published: "Published",
+            learning: "Learning",
+            killed: "Killed",
+          }),
+        },
+        { name: "owner", label: "Owner", value: record?.owner },
+        { name: "dueDate", label: "Due date", type: "date", value: record?.dueDate },
+        { name: "blocker", label: "Blocker (blank = none)", type: "textarea", value: record?.blocker },
+        { name: "notes", label: "Notes", type: "textarea", value: record?.notes },
+      ];
+    }
     if (kind === "asset") {
       return [
         { name: "name", label: "Asset name", value: record?.name, required: true },
@@ -358,30 +765,120 @@
         { name: "projectId", label: "Project", type: "select", options: optionList(state.projects, record?.projectId || "", "No project") },
         { name: "channel", label: "Channel", type: "select", required: true, options: channelOptions(record?.channel || "website_search") },
         { name: "format", label: "Format", value: record?.format },
+        { name: "versionLabel", label: "Version label", value: record?.versionLabel },
+        {
+          name: "creativeStatus",
+          label: "Creative status (approved only by this save — not auto-publish)",
+          type: "select",
+          required: true,
+          options: enumOptions(lib.CREATIVE_STATUSES, record?.creativeStatus || "draft", {
+            draft: "Draft",
+            ready_for_qc: "Ready for QC",
+            approved: "Approved",
+            killed: "Killed",
+          }),
+        },
         { name: "message", label: "Message", type: "textarea", value: record?.message },
+        { name: "copyBody", label: "Copy body (post-ready text)", type: "textarea", value: record?.copyBody },
         { name: "sourceUrl", label: "Source URL (http or https)", type: "url", value: record?.sourceUrl },
         { name: "notes", label: "Notes", type: "textarea", value: record?.notes },
       ];
     }
+    if (kind === "review") {
+      return [
+        { name: "assetId", label: "Asset", type: "select", required: true, options: optionList(state.assets, record?.assetId || "", "Select an asset") },
+        { name: "channel", label: "Channel observed", type: "select", required: true, options: channelOptions(record?.channel || "website_search") },
+        { name: "intendedAudience", label: "Intended audience", value: record?.intendedAudience },
+        { name: "desiredOutcome", label: "Desired outcome / CTA", type: "textarea", value: record?.desiredOutcome },
+        { name: "sourceUrl", label: "Source URL (http or https)", type: "url", value: record?.sourceUrl },
+        { name: "sourceNote", label: "Source note", type: "textarea", value: record?.sourceNote },
+        { name: "observationDate", label: "Observation date", type: "date", required: true, value: record?.observationDate },
+        { name: "evidenceStatus", label: "Evidence status", type: "select", required: true, options: lib.EVIDENCE_STATUSES.map((status) => `<option value="${status}"${(record?.evidenceStatus || "unknown") === status ? " selected" : ""}>${status}</option>`).join("") },
+        { name: "claimTruthOk", label: "Claim truth (unknown unless you checked)", type: "select", options: tri(record?.claimTruthOk) },
+        { name: "channelFitOk", label: "Channel fit (unknown unless you checked)", type: "select", options: tri(record?.channelFitOk) },
+        { name: "ctaClearOk", label: "CTA clear (unknown unless you checked)", type: "select", options: tri(record?.ctaClearOk) },
+        {
+          name: "recommendDecision",
+          label: "Recommend decision (does not auto-approve or publish the asset)",
+          type: "select",
+          required: true,
+          options: enumOptions(lib.RECOMMEND_DECISIONS, record?.recommendDecision || "unset", {
+            unset: "unset",
+            go: "go",
+            edit: "edit",
+            kill: "kill",
+          }),
+        },
+        { name: "metricName", label: "Metric name (optional)", value: record?.metricName },
+        { name: "metricValue", label: "Metric value (blank = unknown, never invent zero)", value: record?.metricValue == null ? "" : record.metricValue },
+        { name: "finding", label: "Finding", type: "textarea", required: true, value: record?.finding },
+        { name: "nextAction", label: "Next action", type: "textarea", value: record?.nextAction },
+      ];
+    }
+    if (kind === "publication") {
+      return [
+        { name: "assetId", label: "Asset", type: "select", required: true, options: optionList(state.assets, record?.assetId || "", "Select an asset") },
+        { name: "assetVersion", label: "Asset version", value: record?.assetVersion },
+        { name: "channel", label: "Channel", type: "select", required: true, options: channelOptions(record?.channel || "website_search") },
+        { name: "accountLabel", label: "Account label", value: record?.accountLabel },
+        { name: "publicUrl", label: "Public URL (http or https)", type: "url", value: record?.publicUrl },
+        { name: "platformId", label: "Platform id", value: record?.platformId },
+        { name: "publishedAt", label: "Published date", type: "date", value: record?.publishedAt },
+        { name: "authorizationNote", label: "Authorization note", type: "textarea", value: record?.authorizationNote },
+        { name: "notes", label: "Notes", type: "textarea", value: record?.notes },
+      ];
+    }
+    if (kind === "observation") {
+      return [
+        {
+          name: "publicationId",
+          label: "Publication",
+          type: "select",
+          options: optionListByLabel(state.publications, record?.publicationId || "", "No publication", (item) => publicationLabel(item, state)),
+        },
+        { name: "assetId", label: "Asset", type: "select", options: optionList(state.assets, record?.assetId || "", "No asset") },
+        { name: "metricName", label: "Metric name (optional)", value: record?.metricName },
+        { name: "metricValue", label: "Metric value (blank = unknown, never invent zero)", value: record?.metricValue == null ? "" : record.metricValue },
+        { name: "windowStart", label: "Window start", type: "date", value: record?.windowStart },
+        { name: "windowEnd", label: "Window end", type: "date", value: record?.windowEnd },
+        { name: "sourceNote", label: "Source note", type: "textarea", value: record?.sourceNote },
+        { name: "limitations", label: "Limitations", type: "textarea", value: record?.limitations },
+        { name: "notes", label: "Notes", type: "textarea", value: record?.notes },
+      ];
+    }
     return [
-      { name: "assetId", label: "Asset", type: "select", required: true, options: optionList(state.assets, record?.assetId || "", "Select an asset") },
-      { name: "channel", label: "Channel observed", type: "select", required: true, options: channelOptions(record?.channel || "website_search") },
-      { name: "intendedAudience", label: "Intended audience", value: record?.intendedAudience },
-      { name: "desiredOutcome", label: "Desired outcome / CTA", type: "textarea", value: record?.desiredOutcome },
-      { name: "sourceUrl", label: "Source URL (http or https)", type: "url", value: record?.sourceUrl },
-      { name: "sourceNote", label: "Source note", type: "textarea", value: record?.sourceNote },
-      { name: "observationDate", label: "Observation date", type: "date", required: true, value: record?.observationDate },
-      { name: "evidenceStatus", label: "Evidence status", type: "select", required: true, options: lib.EVIDENCE_STATUSES.map((status) => `<option value="${status}"${(record?.evidenceStatus || "unknown") === status ? " selected" : ""}>${status}</option>`).join("") },
-      { name: "metricName", label: "Metric name (optional)", value: record?.metricName },
-      { name: "metricValue", label: "Metric value (blank = unknown, never invent zero)", value: record?.metricValue == null ? "" : record.metricValue },
-      { name: "finding", label: "Finding", type: "textarea", required: true, value: record?.finding },
+      { name: "jobId", label: "Job", type: "select", options: optionList(state.jobs, record?.jobId || "", "No job") },
+      {
+        name: "publicationId",
+        label: "Publication",
+        type: "select",
+        options: optionListByLabel(state.publications, record?.publicationId || "", "No publication", (item) => publicationLabel(item, state)),
+      },
+      { name: "hypothesis", label: "Hypothesis", type: "textarea", required: true, value: record?.hypothesis },
+      { name: "evidenceSupports", label: "What evidence supports", type: "textarea", value: record?.evidenceSupports },
+      { name: "cannotShow", label: "What it cannot show", type: "textarea", value: record?.cannotShow },
       { name: "nextAction", label: "Next action", type: "textarea", value: record?.nextAction },
+      { name: "notes", label: "Notes", type: "textarea", value: record?.notes },
     ];
+  }
+
+  function emptySelected() {
+    return {
+      briefs: null,
+      jobs: null,
+      products: null,
+      projects: null,
+      assets: null,
+      reviews: null,
+      publications: null,
+      observations: null,
+      learnings: null,
+    };
   }
 
   function openEditor(kind, id) {
     const state = store.getState();
-    const listName = kind + "s";
+    const listName = KIND_TO_LIST[kind];
     const record = id ? state[listName].find((item) => item.id === id) : null;
     if (id && !record) {
       showError("That record is no longer in this browser.");
@@ -392,8 +889,13 @@
     const titles = {
       product: id ? "Edit product" : "Create product",
       project: id ? "Edit project" : "Create project",
+      brief: id ? "Edit brief" : "Create brief",
+      job: id ? "Edit job" : "Create job",
       asset: id ? "Edit asset" : "Create asset",
       review: id ? "Edit review" : "Record review",
+      publication: id ? "Edit publication" : "Record publication",
+      observation: id ? "Edit observation" : "Record observation",
+      learning: id ? "Edit learning" : "Record learning",
     };
     dialogTitle.textContent = titles[kind];
     fields.innerHTML = fieldsFor(kind, record, state).map(fieldHtml).join("");
@@ -417,8 +919,13 @@
     const writers = {
       product: (payload) => store.upsertProduct(payload),
       project: (payload) => store.upsertProject(payload),
+      brief: (payload) => store.upsertBrief(payload),
+      job: (payload) => store.upsertJob(payload),
       asset: (payload) => store.upsertAsset(payload),
       review: (payload) => store.upsertReview(payload),
+      publication: (payload) => store.upsertPublication(payload),
+      observation: (payload) => store.upsertObservation(payload),
+      learning: (payload) => store.upsertLearning(payload),
     };
     const result = writers[currentKind](input);
     if (!result.ok) {
@@ -426,8 +933,12 @@
       return;
     }
     const savedId = result.record ? result.record.id : editingId;
-    if (savedId) selected[currentKind + "s"] = savedId;
-    setTab(currentKind + "s");
+    const list = KIND_TO_LIST[currentKind];
+    if (savedId && list) selected[list] = savedId;
+    if (currentKind === "job" && savedId) pipelineJobId = savedId;
+    if (list) {
+      setView("records", { tab: list });
+    }
     dialog.close();
     announce(`${currentKind} saved in this browser only.`);
     render();
@@ -457,7 +968,8 @@
         showError(result.error);
         return;
       }
-      selected = { products: null, projects: null, assets: null, reviews: null };
+      selected = emptySelected();
+      pipelineJobId = null;
       announce("Import accepted after validation. Previous workspace in this browser was replaced.");
       render();
     };
@@ -466,16 +978,31 @@
 
   function focusReview(id) {
     selected.reviews = id;
-    setTab("reviews");
+    setView("records", { tab: "reviews" });
     render();
     const card = $(`[data-select="review"][data-id="${CSS.escape(id)}"]`);
     if (card) card.focus();
   }
 
+  function focusJob(id) {
+    selected.jobs = id;
+    pipelineJobId = id;
+    setView("pipeline");
+    render();
+    const card = $(`[data-select-job="${CSS.escape(id)}"]`);
+    if (card) card.focus();
+  }
+
   document.addEventListener("click", (event) => {
+    const viewTab = event.target.closest("[data-view]");
+    if (viewTab && viewTab.closest("#app-nav")) {
+      setView(viewTab.dataset.view);
+      viewTab.focus();
+      return;
+    }
     const tab = event.target.closest("[data-tab]");
     if (tab) {
-      setTab(tab.dataset.tab);
+      setView("records", { tab: tab.dataset.tab });
       tab.focus();
       return;
     }
@@ -492,8 +1019,9 @@
       const result = store.deleteRecord(remove.dataset.delete, remove.dataset.id);
       if (!result.ok) showError(result.error);
       else {
-        const list = remove.dataset.delete + "s";
-        if (selected[list] === remove.dataset.id) selected[list] = null;
+        const list = KIND_TO_LIST[remove.dataset.delete];
+        if (list && selected[list] === remove.dataset.id) selected[list] = null;
+        if (remove.dataset.delete === "job" && pipelineJobId === remove.dataset.id) pipelineJobId = null;
         announce("Record deleted from this browser.");
         render();
       }
@@ -501,10 +1029,19 @@
     const select = event.target.closest("[data-select]");
     if (select) {
       selected[select.dataset.select + "s"] = select.dataset.id;
+      if (select.dataset.select === "job") pipelineJobId = select.dataset.id;
+      render();
+    }
+    const selectJob = event.target.closest("[data-select-job]");
+    if (selectJob) {
+      pipelineJobId = selectJob.dataset.selectJob;
+      selected.jobs = pipelineJobId;
       render();
     }
     const focus = event.target.closest("[data-focus-review]");
     if (focus) focusReview(focus.dataset.focusReview);
+    const focusJobBtn = event.target.closest("[data-focus-job]");
+    if (focusJobBtn) focusJob(focusJobBtn.dataset.focusJob);
   });
 
   form.addEventListener("submit", saveForm);
@@ -531,7 +1068,8 @@
       showError(result.error);
       return;
     }
-    selected = { products: null, projects: null, assets: null, reviews: null };
+    selected = emptySelected();
+    pipelineJobId = null;
     announce("Loaded opt-in fictional example records. Not real studio data.");
     render();
   });
@@ -543,24 +1081,38 @@
       showError(result.error);
       return;
     }
-    selected = { products: null, projects: null, assets: null, reviews: null };
+    selected = emptySelected();
+    pipelineJobId = null;
     announce("This browser workspace is empty.");
     render();
   });
   $("#filter-product").addEventListener("change", render);
   $("#filter-project").addEventListener("change", render);
 
+  $("#app-nav").addEventListener("keydown", (event) => {
+    if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"].includes(event.key)) return;
+    event.preventDefault();
+    const index = VIEWS.indexOf(activeView);
+    let next = index;
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (index + 1) % VIEWS.length;
+    if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (index - 1 + VIEWS.length) % VIEWS.length;
+    if (event.key === "Home") next = 0;
+    if (event.key === "End") next = VIEWS.length - 1;
+    setView(VIEWS[next]);
+    $(`#view-tab-${VIEWS[next]}`).focus();
+  });
+
   $("#desk-tabs").addEventListener("keydown", (event) => {
     if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"].includes(event.key)) return;
     event.preventDefault();
-    const index = TABS.indexOf(activeTab);
+    const index = RECORD_TABS.indexOf(activeTab);
     let next = index;
-    if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (index + 1) % TABS.length;
-    if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (index - 1 + TABS.length) % TABS.length;
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (index + 1) % RECORD_TABS.length;
+    if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (index - 1 + RECORD_TABS.length) % RECORD_TABS.length;
     if (event.key === "Home") next = 0;
-    if (event.key === "End") next = TABS.length - 1;
-    setTab(TABS[next]);
-    $(`#tab-${TABS[next]}`).focus();
+    if (event.key === "End") next = RECORD_TABS.length - 1;
+    setView("records", { tab: RECORD_TABS[next] });
+    $(`#tab-${RECORD_TABS[next]}`).focus();
   });
 
   document.addEventListener("keydown", (event) => {
@@ -568,15 +1120,14 @@
   });
 
   window.addEventListener("hashchange", () => {
-    const tab = location.hash.replace("#", "");
-    if (TABS.includes(tab)) setTab(tab, { updateHash: false });
+    applyHash(location.hash, { updateHash: false });
   });
 
-  const hashTab = location.hash.replace("#", "");
-  setTab(TABS.includes(hashTab) ? hashTab : "products", { updateHash: false });
+  applyHash(location.hash, { updateHash: false });
 
   const loaded = store.load();
   if (!loaded.ok) showError(loaded.error);
+  else if (loaded.migratedFrom === 1) announce("Workspace migrated from schema v1 to v2 in this browser. Nothing was sent anywhere.");
   else announce("Workspace loaded from this browser. Nothing was sent anywhere.");
   render();
 })();

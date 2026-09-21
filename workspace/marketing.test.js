@@ -178,7 +178,7 @@ test("export/import round-trip restores the same records", () => {
   const json = original.exportJson();
   const incoming = JSON.parse(json);
   assert.equal(incoming.kind, storeLib.KIND);
-  assert.equal(incoming.schemaVersion, 1);
+  assert.equal(incoming.schemaVersion, 2);
 
   const other = fresh();
   other.upsertProduct({ name: "Temporary" });
@@ -188,6 +188,11 @@ test("export/import round-trip restores the same records", () => {
   assert.deepEqual(imported.state.projects, original.getState().projects);
   assert.deepEqual(imported.state.assets, original.getState().assets);
   assert.deepEqual(imported.state.reviews, original.getState().reviews);
+  assert.deepEqual(imported.state.briefs, original.getState().briefs);
+  assert.deepEqual(imported.state.jobs, original.getState().jobs);
+  assert.deepEqual(imported.state.publications, original.getState().publications);
+  assert.deepEqual(imported.state.observations, original.getState().observations);
+  assert.deepEqual(imported.state.learnings, original.getState().learnings);
 });
 
 test("invalid import preserves existing data", () => {
@@ -197,7 +202,7 @@ test("invalid import preserves existing data", () => {
   const cases = [
     "{not json",
     JSON.stringify({ hello: "world" }),
-    JSON.stringify({ kind: "other-app", schemaVersion: 1, products: [], projects: [], assets: [], reviews: [] }),
+    JSON.stringify({ kind: "other-app", schemaVersion: 2, products: [], projects: [], assets: [], reviews: [], briefs: [], jobs: [], publications: [], observations: [], learnings: [] }),
     JSON.stringify({
       kind: storeLib.KIND,
       schemaVersion: 1,
@@ -346,26 +351,54 @@ test("opt-in fictional example validates and is labelled fictional", () => {
 test("dashboard overview counts records and evidence without inventing metrics", () => {
   const empty = storeLib.summarizeWorkspace(storeLib.emptyState());
   assert.equal(empty.isEmpty, true);
-  assert.deepEqual(empty.counts, { products: 0, projects: 0, assets: 0, reviews: 0 });
+  assert.deepEqual(empty.counts, {
+    products: 0,
+    projects: 0,
+    assets: 0,
+    reviews: 0,
+    briefs: 0,
+    jobs: 0,
+    publications: 0,
+    observations: 0,
+    learnings: 0,
+  });
   assert.deepEqual(empty.evidence, { observed: 0, reported: 0, unknown: 0 });
   assert.equal(empty.nextActions.length, 0);
+  assert.equal(empty.attention.length, 0);
   assert.equal(empty.lastExportedAt, "");
   assert.equal(empty.lastUpdatedAt, "");
 
   const store = fresh();
   const loaded = store.loadFictionalExample();
   assert.equal(loaded.ok, true);
-  const summary = storeLib.summarizeWorkspace(loaded.state);
+  const summary = storeLib.summarizeWorkspace(loaded.state, { today: "2026-09-21" });
   assert.equal(summary.isEmpty, false);
   assert.equal(summary.fictional, true);
-  assert.deepEqual(summary.counts, { products: 1, projects: 1, assets: 2, reviews: 2 });
+  assert.deepEqual(summary.counts, {
+    products: 1,
+    projects: 1,
+    assets: 2,
+    reviews: 2,
+    briefs: 1,
+    jobs: 2,
+    publications: 1,
+    observations: 1,
+    learnings: 1,
+  });
   assert.equal(summary.evidence.unknown, 1);
   assert.equal(summary.evidence.reported, 1);
   assert.equal(summary.evidence.observed, 0);
-  assert.equal(summary.lastUpdatedAt, "2026-09-06T00:00:00.000Z");
+  assert.equal(summary.jobStages.learning, 1);
+  assert.equal(summary.jobStages.qc, 1);
+  assert.equal(summary.lastUpdatedAt, "2026-09-14T12:00:00.000Z");
   assert.equal(summary.lastExportedAt, "");
   assert.equal(summary.nextActions.length, 2);
-  assert.match(summary.nextActions[0].nextAction, /Name the object/);
+  assert.match(summary.nextActions[0].nextAction, /Keep the object-name sentence|Name the object/);
+  assert.equal(summary.attention.length, 1);
+  assert.equal(summary.attention[0].jobId, "ex-job-reel-caption");
+  assert.ok(summary.attention[0].reasons.includes("qc"));
+  assert.ok(summary.attention[0].reasons.includes("blocked"));
+  assert.ok(summary.attention[0].reasons.includes("due_soon"));
 });
 
 test("next-action queue stays empty when the field is missing", () => {
@@ -407,8 +440,16 @@ test("desk markup keeps skip link, noindex, and overview landmarks", () => {
   assert.match(html, /class="skip-link"/);
   assert.match(html, /id="overview"/);
   assert.match(html, /id="attention-queue"/);
+  assert.match(html, /id="view-home"/);
+  assert.match(html, /id="view-pipeline"/);
+  assert.match(html, /id="view-records"/);
   assert.match(html, /role="tablist"/);
-  assert.match(html, /Pre-publish evidence notes/);
+  assert.match(html, /Pre-publish QC notes/);
+  assert.match(html, /data-tab="briefs"/);
+  assert.match(html, /data-tab="jobs"/);
+  assert.match(html, /data-tab="publications"/);
+  assert.match(html, /data-tab="observations"/);
+  assert.match(html, /data-tab="learnings"/);
   assert.doesNotMatch(html, /googletagmanager|gtag\(|google-analytics/i);
   assert.doesNotMatch(html, /src="https?:\/\//i);
   assert.doesNotMatch(html, /href="\.\.\/index\.html"|site-nav/);
@@ -449,4 +490,339 @@ test("filters by product and project keep related records only", () => {
   const byProject = store.filterRecords({ projectId: pa.id });
   assert.equal(byProject.projects[0].id, pa.id);
   assert.equal(byProject.assets.length, 1);
+});
+
+test("schema v1 localStorage migrates to v2 and preserves records", () => {
+  const v1 = {
+    kind: storeLib.KIND,
+    schemaVersion: 1,
+    fictional: false,
+    products: [
+      {
+        id: "ex-product-harbor-lamp",
+        name: "Harbor Lamp Co. (fictional)",
+        audience: "Apartment renters",
+        problemOrExperience: "",
+        intendedValue: "",
+        notes: "",
+        createdAt: "2026-09-01T00:00:00.000Z",
+        updatedAt: "2026-09-01T00:00:00.000Z",
+      },
+    ],
+    projects: [],
+    assets: [
+      {
+        id: "ex-asset-hero-draft",
+        name: "Homepage hero draft (fictional)",
+        kind: "content",
+        productId: "ex-product-harbor-lamp",
+        projectId: null,
+        channel: "website_search",
+        format: "",
+        message: "A lamp for the hour after work.",
+        sourceUrl: "https://example.com/fictional-harbor-lamp-hero",
+        notes: "",
+        createdAt: "2026-09-03T00:00:00.000Z",
+        updatedAt: "2026-09-03T00:00:00.000Z",
+      },
+    ],
+    reviews: [
+      {
+        id: "ex-review-hero-unknown",
+        assetId: "ex-asset-hero-draft",
+        productId: "ex-product-harbor-lamp",
+        projectId: null,
+        channel: "website_search",
+        intendedAudience: "",
+        desiredOutcome: "",
+        sourceUrl: "https://example.com/fictional-harbor-lamp-hero",
+        sourceNote: "Manual read.",
+        observationDate: "2026-09-04",
+        evidenceStatus: "unknown",
+        metricName: "",
+        metricValue: null,
+        finding: "Reach stays unknown.",
+        nextAction: "Name the lamp.",
+        createdAt: "2026-09-04T00:00:00.000Z",
+        updatedAt: "2026-09-04T00:00:00.000Z",
+      },
+    ],
+  };
+  const storage = storeLib.memoryStorage();
+  storage.setItem(storeLib.STORAGE_KEY, JSON.stringify(v1));
+  const store = storeLib.createStore({
+    storage,
+    now: () => "2026-09-21T12:00:00.000Z",
+  });
+  const loaded = store.load();
+  assert.equal(loaded.ok, true);
+  assert.equal(loaded.migratedFrom, 1);
+  assert.equal(loaded.state.schemaVersion, 2);
+  assert.equal(loaded.state.products[0].id, "ex-product-harbor-lamp");
+  assert.equal(loaded.state.assets[0].creativeStatus, "draft");
+  assert.equal(loaded.state.assets[0].versionLabel, "");
+  assert.equal(loaded.state.assets[0].copyBody, "");
+  assert.equal(loaded.state.reviews[0].recommendDecision, "unset");
+  assert.equal(loaded.state.reviews[0].claimTruthOk, "unknown");
+  assert.equal(loaded.state.reviews[0].channelFitOk, "unknown");
+  assert.equal(loaded.state.reviews[0].ctaClearOk, "unknown");
+  assert.equal(loaded.state.briefs.length, 0);
+  assert.equal(loaded.state.jobs.length, 0);
+  assert.equal(loaded.state.publications.length, 0);
+  const persisted = JSON.parse(storage.getItem(storeLib.STORAGE_KEY));
+  assert.equal(persisted.schemaVersion, 2);
+  assert.equal(persisted.products[0].name, "Harbor Lamp Co. (fictional)");
+});
+
+test("v1 import migrates and invalid v2 import preserves data", () => {
+  const seeded = seedJourney(fresh());
+  const before = seeded.store.getState();
+  const v1ok = {
+    kind: storeLib.KIND,
+    schemaVersion: 1,
+    products: [
+      {
+        id: "ex-product-kept",
+        name: "Kept from v1",
+        audience: "",
+        problemOrExperience: "",
+        intendedValue: "",
+        notes: "",
+        createdAt: "2026-09-01T00:00:00.000Z",
+        updatedAt: "2026-09-01T00:00:00.000Z",
+      },
+    ],
+    projects: [],
+    assets: [],
+    reviews: [],
+  };
+  const migrated = seeded.store.importJson(JSON.stringify(v1ok));
+  assert.equal(migrated.ok, true);
+  assert.equal(migrated.migratedFrom, 1);
+  assert.equal(migrated.state.schemaVersion, 2);
+  assert.equal(migrated.state.products[0].name, "Kept from v1");
+
+  const afterMigrate = seeded.store.getState();
+  const bad = JSON.stringify({
+    kind: storeLib.KIND,
+    schemaVersion: 99,
+    products: [],
+    projects: [],
+    assets: [],
+    reviews: [],
+  });
+  const failed = seeded.store.importJson(bad);
+  assert.equal(failed.ok, false);
+  assert.match(failed.error, /unsupported|unchanged/i);
+  assert.deepEqual(seeded.store.getState(), afterMigrate);
+  assert.notDeepEqual(before.products, afterMigrate.products);
+});
+
+test("new entity relationships reject missing links", () => {
+  const store = fresh();
+  const product = store.upsertProduct({ name: "Solo product" });
+  assert.equal(product.ok, true);
+  const productId = product.state.products[0].id;
+
+  const badBrief = store.upsertBrief({
+    name: "Orphan brief",
+    productId: "missing-product-id",
+  });
+  assert.equal(badBrief.ok, false);
+  assert.match(badBrief.error, /unknown product/i);
+
+  const brief = store.upsertBrief({ name: "Spring brief", productId });
+  assert.equal(brief.ok, true);
+  const briefId = brief.state.briefs[0].id;
+
+  const badJob = store.upsertJob({
+    name: "Orphan job",
+    briefId: "missing-brief-id",
+  });
+  assert.equal(badJob.ok, false);
+  assert.match(badJob.error, /unknown brief/i);
+
+  const job = store.upsertJob({
+    name: "Traffic packet",
+    briefId,
+    productId,
+    stage: "drafting",
+    owner: "Traffic",
+    dueDate: "2026-09-24",
+  });
+  assert.equal(job.ok, true);
+
+  const asset = store.upsertAsset({
+    name: "Draft",
+    productId,
+    channel: "website_search",
+    versionLabel: "v1",
+    copyBody: "Post-ready line.",
+    creativeStatus: "draft",
+  });
+  assert.equal(asset.ok, true);
+  const assetId = asset.state.assets[0].id;
+
+  const badPub = store.upsertPublication({
+    assetId: "missing-asset-id",
+    channel: "website_search",
+  });
+  assert.equal(badPub.ok, false);
+  assert.match(badPub.error, /unknown asset/i);
+
+  const publication = store.upsertPublication({
+    assetId,
+    channel: "website_search",
+    assetVersion: "v1",
+    publishedAt: "2026-09-08",
+    authorizationNote: "Manual note only.",
+  });
+  assert.equal(publication.ok, true);
+  const publicationId = publication.state.publications[0].id;
+
+  const badObs = store.upsertObservation({
+    metricName: "sessions",
+    metricValue: "",
+  });
+  assert.equal(badObs.ok, false);
+  assert.match(badObs.error, /publication or an asset/i);
+
+  const observation = store.upsertObservation({
+    publicationId,
+    assetId,
+    metricName: "sessions",
+    metricValue: "",
+    sourceNote: "No adapter.",
+  });
+  assert.equal(observation.ok, true);
+  assert.equal(observation.state.observations[0].metricValue, null);
+
+  const badLearn = store.upsertLearning({
+    hypothesis: "A guess with no link.",
+  });
+  assert.equal(badLearn.ok, false);
+  assert.match(badLearn.error, /job or a publication/i);
+
+  const learning = store.upsertLearning({
+    jobId: job.state.jobs[0].id,
+    publicationId,
+    hypothesis: "Naming the object helps.",
+    cannotShow: "Reach stays unknown.",
+  });
+  assert.equal(learning.ok, true);
+});
+
+test("pipeline attention: due soon, blocked, qc, approved unpublished", () => {
+  const store = fresh();
+  store.upsertJob({ name: "Quiet job", stage: "briefed", dueDate: "2026-12-01" });
+  store.upsertJob({
+    name: "Blocked drafting",
+    stage: "drafting",
+    dueDate: "2026-12-01",
+    blocker: "Waiting on legal.",
+  });
+  store.upsertJob({ name: "In QC", stage: "qc", dueDate: "2026-12-01" });
+  store.upsertJob({ name: "Approved unpublished", stage: "approved", dueDate: "2026-12-01" });
+  store.upsertJob({ name: "Due soon", stage: "briefed", dueDate: "2026-09-24" });
+  store.upsertJob({ name: "Overdue", stage: "drafting", dueDate: "2026-09-10" });
+  store.upsertJob({ name: "Already published", stage: "published", dueDate: "2026-09-10" });
+  store.upsertJob({ name: "Killed", stage: "killed", dueDate: "2026-09-10", blocker: "Dead" });
+
+  const attention = storeLib.jobsNeedingAttention(store.getState(), "2026-09-21");
+  const names = attention.map((item) => item.name).sort();
+  assert.deepEqual(names, [
+    "Approved unpublished",
+    "Blocked drafting",
+    "Due soon",
+    "In QC",
+    "Overdue",
+  ]);
+  const approved = attention.find((item) => item.name === "Approved unpublished");
+  assert.ok(approved.reasons.includes("unpublished"));
+  const due = attention.find((item) => item.name === "Due soon");
+  assert.ok(due.reasons.includes("due_soon"));
+  const overdue = attention.find((item) => item.name === "Overdue");
+  assert.ok(overdue.reasons.includes("overdue"));
+});
+
+test("review Go does not auto-approve the asset or create a publication", () => {
+  const seeded = seedJourney(fresh());
+  assert.equal(seeded.store.getState().assets[0].creativeStatus, "draft");
+  const reviewed = seeded.store.upsertReview({
+    id: seeded.reviewId,
+    assetId: seeded.assetId,
+    channel: "website_search",
+    observationDate: "2026-09-18",
+    evidenceStatus: "unknown",
+    finding: "Copy names the object.",
+    recommendDecision: "go",
+    claimTruthOk: "yes",
+    channelFitOk: "unknown",
+    ctaClearOk: "unknown",
+  });
+  assert.equal(reviewed.ok, true);
+  assert.equal(reviewed.state.reviews[0].recommendDecision, "go");
+  assert.equal(reviewed.state.assets[0].creativeStatus, "draft");
+  assert.equal(reviewed.state.publications.length, 0);
+
+  const approved = seeded.store.upsertAsset({
+    id: seeded.assetId,
+    name: "Homepage hero draft (fictional)",
+    kind: "content",
+    productId: seeded.productId,
+    projectId: seeded.projectId,
+    channel: "website_search",
+    sourceUrl: "https://example.com/fictional-hero",
+    creativeStatus: "approved",
+    versionLabel: "v2",
+  });
+  assert.equal(approved.ok, true);
+  assert.equal(approved.state.assets[0].creativeStatus, "approved");
+  assert.equal(approved.state.publications.length, 0);
+});
+
+test("observation blank metric stays unknown and QC flags default to unknown", () => {
+  const seeded = seedJourney(fresh());
+  const review = seeded.store.getState().reviews[0];
+  assert.equal(review.recommendDecision, "unset");
+  assert.equal(review.claimTruthOk, "unknown");
+  assert.equal(review.channelFitOk, "unknown");
+  assert.equal(review.ctaClearOk, "unknown");
+
+  const publication = seeded.store.upsertPublication({
+    assetId: seeded.assetId,
+    channel: "website_search",
+    publishedAt: "2026-09-08",
+  });
+  assert.equal(publication.ok, true);
+  const observation = seeded.store.upsertObservation({
+    publicationId: publication.state.publications[0].id,
+    assetId: seeded.assetId,
+    metricName: "landing_sessions",
+    metricValue: "",
+    limitations: "No adapter.",
+  });
+  assert.equal(observation.ok, true);
+  assert.equal(observation.state.observations[0].metricValue, null);
+  assert.notEqual(observation.state.observations[0].metricValue, 0);
+});
+
+test("opt-in fictional example walks one job through publication and learning", () => {
+  const example = storeLib.fictionalExample();
+  assert.equal(example.schemaVersion, 2);
+  const checked = storeLib.validateWorkspace(example);
+  assert.equal(checked.ok, true);
+  const hero = example.assets.find((item) => item.id === "ex-asset-hero-draft");
+  assert.equal(hero.creativeStatus, "approved");
+  assert.equal(hero.versionLabel, "v2");
+  const qc = example.reviews.find((item) => item.id === "ex-review-hero-unknown");
+  assert.equal(qc.recommendDecision, "go");
+  assert.equal(qc.ctaClearOk, "unknown");
+  assert.equal(example.publications[0].assetId, "ex-asset-hero-draft");
+  assert.equal(example.observations[0].metricValue, null);
+  assert.match(example.learnings[0].cannotShow, /unknown/i);
+  const store = fresh();
+  const loaded = store.loadFictionalExample();
+  assert.equal(loaded.ok, true);
+  assert.equal(loaded.state.jobs.length, 2);
 });

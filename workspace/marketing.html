@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Marketing desk (draft, local only) · Exaryn Digital Marketing</title>
-  <meta name="description" content="Draft local-browser marketing desk for product, project, asset and review records. Not public navigation and not authenticated hosting." />
+  <meta name="description" content="Draft local-browser agency desk: brief, job pipeline, QC, publication, observation, and learning. Not public navigation and not authenticated hosting." />
   <link rel="stylesheet" href="marketing.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
 </head>
@@ -16,7 +16,7 @@
     <div class="header-row">
       <div class="brand">
         <span class="wordmark">Exaryn<span class="mark">✳</span></span>
-        <p class="brand-sub">Digital Marketing · internal desk</p>
+        <p class="brand-sub">Digital Marketing · internal agency desk</p>
       </div>
       <p class="mono draft-tag">Draft · local browser only · noindex</p>
     </div>
@@ -32,7 +32,7 @@
       <p class="limit-banner">
         <strong>Limits.</strong>
         Manual evidence capture only. There is no SEO, AEO, GEO, Search Console, or social-platform adapter in this slice.
-        Missing metrics stay unknown — they are never stored as zero or invented. Reviews are pre-publish notes, not campaign scores.
+        Missing metrics stay unknown — they are never stored as zero or invented. Reviews are pre-publish QC notes. Publication is a separate record and is never auto-created.
       </p>
     </details>
     <div class="toolbar" aria-label="Workspace files">
@@ -49,39 +49,73 @@
   <div id="live-status" class="live-status" role="status" aria-live="polite"></div>
 
   <main id="workspace-main">
-    <section class="overview" id="overview" aria-labelledby="overview-heading">
-      <div class="overview-copy">
-        <p class="mono kicker">EXA-42 · PRODUCT / PROJECT / ASSET / REVIEW</p>
-        <h1 class="page-title" id="overview-heading">Marketing <em>desk</em></h1>
-        <p class="lede">
-          A small internal agency desk for evidence-backed notes: audience, CTA, finding, next action.
-          Reload keeps records in this browser. Export writes a JSON file you control. No live analytics.
-        </p>
-      </div>
-      <div id="overview-empty" class="empty-desk" hidden>
-        <p><strong>This desk is empty.</strong> Create a product to start, or load the labelled fictional example. Nothing is uploaded.</p>
-      </div>
-      <div id="overview-stats" class="overview-stats" hidden>
-        <ul class="stat-grid" id="stat-grid"></ul>
-        <div class="overview-meta">
-          <p id="evidence-line" class="evidence-line"></p>
-          <p id="stamp-line" class="stamp-line"></p>
-          <p id="fictional-line" class="fictional-line" hidden>Opt-in fictional example is loaded — not studio, product, or account data.</p>
+    <nav class="app-nav" role="tablist" aria-label="Agency desk" id="app-nav">
+      <button type="button" class="app-tab" role="tab" id="view-tab-home" data-view="home" aria-controls="view-home" aria-selected="true">Home</button>
+      <button type="button" class="app-tab" role="tab" id="view-tab-pipeline" data-view="pipeline" aria-controls="view-pipeline" aria-selected="false" tabindex="-1">Pipeline</button>
+      <button type="button" class="app-tab" role="tab" id="view-tab-records" data-view="records" aria-controls="view-records" aria-selected="false" tabindex="-1">Records</button>
+    </nav>
+
+    <section class="view" id="view-home" role="tabpanel" aria-labelledby="view-tab-home">
+      <section class="overview" id="overview" aria-labelledby="overview-heading">
+        <div class="overview-copy">
+          <p class="mono kicker">INTAKE → BRIEF → TRAFFIC → CREATIVE → QC → APPROVAL → PUBLICATION → OBSERVATION → LEARNING</p>
+          <h1 class="page-title" id="overview-heading">Agency <em>desk</em></h1>
+          <p class="lede">
+            A local studio desk for one job at a time: brief, traffic, draft, QC, explicit approval, publication identity, observation, debrief.
+            Reload keeps records in this browser. Export writes a JSON file you control. No live analytics.
+          </p>
         </div>
-      </div>
+        <div id="overview-empty" class="empty-desk" hidden>
+          <p><strong>This desk is empty.</strong> Create a brief or job to start, or load the labelled fictional example. Nothing is uploaded.</p>
+        </div>
+        <div id="overview-stats" class="overview-stats" hidden>
+          <ul class="stat-grid" id="stat-grid"></ul>
+          <ul class="stat-grid compact" id="catalog-grid"></ul>
+          <div class="stage-strip" id="stage-strip" aria-label="Job pipeline counts"></div>
+          <div class="overview-meta">
+            <p id="evidence-line" class="evidence-line"></p>
+            <p id="stamp-line" class="stamp-line"></p>
+            <p id="fictional-line" class="fictional-line" hidden>Opt-in fictional example is loaded — not studio, product, or account data.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="queue-panel" id="attention-queue" aria-labelledby="attention-heading">
+        <div class="panel-head">
+          <div>
+            <h2 id="attention-heading">Jobs needing attention</h2>
+            <p class="meta">Due soon (7 days), blocked, in QC, or approved but unpublished. Killed jobs are omitted. Tasks are not invented.</p>
+          </div>
+        </div>
+        <ol class="queue-list" id="attention-list"></ol>
+      </section>
+
+      <section class="queue-panel" id="next-actions" aria-labelledby="queue-heading">
+        <div class="panel-head">
+          <div>
+            <h2 id="queue-heading">Review next actions</h2>
+            <p class="meta">Taken from review <em>next action</em> fields. If that field is blank, this list stays empty — tasks are not invented.</p>
+          </div>
+        </div>
+        <ol class="queue-list" id="queue-list"></ol>
+      </section>
     </section>
 
-    <section class="queue-panel" id="attention-queue" aria-labelledby="queue-heading">
+    <section class="view desk" id="view-pipeline" role="tabpanel" aria-labelledby="view-tab-pipeline" hidden>
       <div class="panel-head">
         <div>
-          <h2 id="queue-heading">Next actions</h2>
-          <p class="meta">Taken from review <em>next action</em> fields. If that field is blank, the queue stays empty — tasks are not invented.</p>
+          <h2 id="pipeline-heading">Traffic / pipeline</h2>
+          <p class="meta">Jobs by stage. Click a card to read it. Changing stage is an explicit save — publication is a separate record.</p>
         </div>
+        <button type="button" class="btn" data-create="job">New job</button>
       </div>
-      <ol class="queue-list" id="queue-list"></ol>
+      <div class="pipeline-layout">
+        <div class="pipeline" id="pipeline-board"></div>
+        <article class="detail" id="pipeline-detail" aria-live="polite"></article>
+      </div>
     </section>
 
-    <section class="desk" aria-label="Records desk">
+    <section class="view desk" id="view-records" role="tabpanel" aria-labelledby="view-tab-records" hidden>
       <div class="desk-tools">
         <div class="filters" role="search">
           <div class="field">
@@ -97,14 +131,51 @@
 
       <div class="desk-shell">
         <div class="desk-nav" role="tablist" aria-label="Record type" id="desk-tabs">
-          <button type="button" class="desk-tab" role="tab" id="tab-products" aria-controls="panel-products" data-tab="products" aria-selected="true">Products</button>
+          <p class="nav-group">Work</p>
+          <button type="button" class="desk-tab" role="tab" id="tab-briefs" aria-controls="panel-briefs" data-tab="briefs" aria-selected="true">Briefs</button>
+          <button type="button" class="desk-tab" role="tab" id="tab-jobs" aria-controls="panel-jobs" data-tab="jobs" aria-selected="false" tabindex="-1">Jobs</button>
+          <p class="nav-group">Catalog</p>
+          <button type="button" class="desk-tab" role="tab" id="tab-products" aria-controls="panel-products" data-tab="products" aria-selected="false" tabindex="-1">Products</button>
           <button type="button" class="desk-tab" role="tab" id="tab-projects" aria-controls="panel-projects" data-tab="projects" aria-selected="false" tabindex="-1">Projects</button>
+          <p class="nav-group">Creative / QC</p>
           <button type="button" class="desk-tab" role="tab" id="tab-assets" aria-controls="panel-assets" data-tab="assets" aria-selected="false" tabindex="-1">Assets</button>
           <button type="button" class="desk-tab" role="tab" id="tab-reviews" aria-controls="panel-reviews" data-tab="reviews" aria-selected="false" tabindex="-1">Reviews</button>
+          <p class="nav-group">After publish</p>
+          <button type="button" class="desk-tab" role="tab" id="tab-publications" aria-controls="panel-publications" data-tab="publications" aria-selected="false" tabindex="-1">Publications</button>
+          <button type="button" class="desk-tab" role="tab" id="tab-observations" aria-controls="panel-observations" data-tab="observations" aria-selected="false" tabindex="-1">Observations</button>
+          <button type="button" class="desk-tab" role="tab" id="tab-learnings" aria-controls="panel-learnings" data-tab="learnings" aria-selected="false" tabindex="-1">Learnings</button>
         </div>
 
         <div class="desk-stage">
-          <section class="desk-panel" role="tabpanel" id="panel-products" aria-labelledby="tab-products">
+          <section class="desk-panel" role="tabpanel" id="panel-briefs" aria-labelledby="tab-briefs">
+            <div class="panel-head">
+              <div>
+                <h2 id="briefs-heading">Briefs</h2>
+                <p class="meta">Creative brief: audience, insight, message hypothesis, mandatory claims, out of scope, success definition.</p>
+              </div>
+              <button type="button" class="btn" data-create="brief">New brief</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="brief-list"></ul>
+              <article class="detail" id="brief-detail" aria-live="polite"></article>
+            </div>
+          </section>
+
+          <section class="desk-panel" role="tabpanel" id="panel-jobs" aria-labelledby="tab-jobs" hidden>
+            <div class="panel-head">
+              <div>
+                <h2 id="jobs-heading">Jobs</h2>
+                <p class="meta">A traffic packet: stage, owner, due date, blocker. Pipeline is the board view of these records.</p>
+              </div>
+              <button type="button" class="btn" data-create="job">New job</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="job-list"></ul>
+              <article class="detail" id="job-detail" aria-live="polite"></article>
+            </div>
+          </section>
+
+          <section class="desk-panel" role="tabpanel" id="panel-products" aria-labelledby="tab-products" hidden>
             <div class="panel-head">
               <div>
                 <h2 id="products-heading">Products</h2>
@@ -136,7 +207,7 @@
             <div class="panel-head">
               <div>
                 <h2 id="assets-heading">Assets</h2>
-                <p class="meta">A content asset or product surface, linked to a product or project, on one channel.</p>
+                <p class="meta">A content draft or product surface. Version label and copy body are optional. Approved only via an explicit save — not auto-publish.</p>
               </div>
               <button type="button" class="btn" data-create="asset">New asset</button>
             </div>
@@ -150,13 +221,55 @@
             <div class="panel-head">
               <div>
                 <h2 id="reviews-heading">Reviews</h2>
-                <p class="meta">Pre-publish evidence notes: audience, CTA, evidence status, finding, next action. No live API reads.</p>
+                <p class="meta">Pre-publish QC notes: claim truth, channel fit, CTA, evidence status, recommend Go / edit / kill. No live API reads.</p>
               </div>
               <button type="button" class="btn" data-create="review">New review</button>
             </div>
             <div class="desk-split">
               <ul class="card-list" id="review-list"></ul>
               <article class="detail" id="review-detail" aria-live="polite"></article>
+            </div>
+          </section>
+
+          <section class="desk-panel" role="tabpanel" id="panel-publications" aria-labelledby="tab-publications" hidden>
+            <div class="panel-head">
+              <div>
+                <h2 id="publications-heading">Publications</h2>
+                <p class="meta">Placement identity after an explicit publish: channel, account label, URL or platform id, date, authorization note.</p>
+              </div>
+              <button type="button" class="btn" data-create="publication">New publication</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="publication-list"></ul>
+              <article class="detail" id="publication-detail" aria-live="polite"></article>
+            </div>
+          </section>
+
+          <section class="desk-panel" role="tabpanel" id="panel-observations" aria-labelledby="tab-observations" hidden>
+            <div class="panel-head">
+              <div>
+                <h2 id="observations-heading">Observations</h2>
+                <p class="meta">Post-publish evidence. A blank metric value stays unknown — never stored as zero.</p>
+              </div>
+              <button type="button" class="btn" data-create="observation">New observation</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="observation-list"></ul>
+              <article class="detail" id="observation-detail" aria-live="polite"></article>
+            </div>
+          </section>
+
+          <section class="desk-panel" role="tabpanel" id="panel-learnings" aria-labelledby="tab-learnings" hidden>
+            <div class="panel-head">
+              <div>
+                <h2 id="learnings-heading">Learnings</h2>
+                <p class="meta">Debrief: hypothesis, what evidence supports, what it cannot show, next action.</p>
+              </div>
+              <button type="button" class="btn" data-create="learning">New learning</button>
+            </div>
+            <div class="desk-split">
+              <ul class="card-list" id="learning-list"></ul>
+              <article class="detail" id="learning-detail" aria-live="polite"></article>
             </div>
           </section>
         </div>

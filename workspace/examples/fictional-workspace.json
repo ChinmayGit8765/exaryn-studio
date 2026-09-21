@@ -1,9 +1,8 @@
 {
   "kind": "exaryn-studio-marketing-workspace",
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "fictional": true,
   "label": "Fictional example — not studio, product, or account data",
-  "privacy": "Local browser workspace only. This file is an opt-in fictional example.",
   "products": [
     {
       "id": "ex-product-harbor-lamp",
@@ -28,6 +27,53 @@
       "updatedAt": "2026-09-02T00:00:00.000Z"
     }
   ],
+  "briefs": [
+    {
+      "id": "ex-brief-spring-landing",
+      "name": "Spring landing brief (fictional)",
+      "productId": "ex-product-harbor-lamp",
+      "projectId": "ex-project-spring-landing",
+      "audience": "Apartment renters who want warmer evening light",
+      "problemOrInsight": "Harsh overhead lighting makes a rented room feel unfinished.",
+      "messageHypothesis": "Name the hour after work, then name the lamp, before any mood claim.",
+      "mandatoryClaims": "Portable. For rented rooms. No false performance numbers.",
+      "outOfScope": "Paid social, live ads, influencer seeding, invented traffic KPIs.",
+      "successDefinition": "A reader can say what the object is after the first two sentences. No traffic KPI is claimed.",
+      "notes": "FICTIONAL EXAMPLE. Creative brief for one mini job.",
+      "createdAt": "2026-09-02T12:00:00.000Z",
+      "updatedAt": "2026-09-02T12:00:00.000Z"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "ex-job-landing-hero",
+      "name": "Landing hero packet (fictional)",
+      "briefId": "ex-brief-spring-landing",
+      "productId": "ex-product-harbor-lamp",
+      "projectId": "ex-project-spring-landing",
+      "stage": "learning",
+      "owner": "Example traffic",
+      "dueDate": "2026-09-08",
+      "blocker": "",
+      "notes": "Walked Brief → Job → Asset draft → QC Go → Publication → Observation (unknown) → Learning.",
+      "createdAt": "2026-09-02T15:00:00.000Z",
+      "updatedAt": "2026-09-14T00:00:00.000Z"
+    },
+    {
+      "id": "ex-job-reel-caption",
+      "name": "Reel caption QC (fictional)",
+      "briefId": "ex-brief-spring-landing",
+      "productId": "ex-product-harbor-lamp",
+      "projectId": "ex-project-spring-landing",
+      "stage": "qc",
+      "owner": "Example reviewer",
+      "dueDate": "2026-09-24",
+      "blocker": "Waiting on a first-line object name before any publish attempt.",
+      "notes": "FICTIONAL. Still in internal QC. Not published.",
+      "createdAt": "2026-09-05T00:00:00.000Z",
+      "updatedAt": "2026-09-06T00:00:00.000Z"
+    }
+  ],
   "assets": [
     {
       "id": "ex-asset-hero-draft",
@@ -38,10 +84,13 @@
       "channel": "website_search",
       "format": "Landing page copy",
       "message": "A lamp for the hour after work.",
+      "copyBody": "A lamp for the hour after work. Harbor Lamp is a portable light for a rented room that still looks temporary after dark.",
+      "versionLabel": "v2",
+      "creativeStatus": "approved",
       "sourceUrl": "https://example.com/fictional-harbor-lamp-hero",
-      "notes": "FICTIONAL EXAMPLE. URL is an example.com placeholder.",
+      "notes": "FICTIONAL EXAMPLE. URL is an example.com placeholder. Approved via explicit asset save, not auto-publish.",
       "createdAt": "2026-09-03T00:00:00.000Z",
-      "updatedAt": "2026-09-03T00:00:00.000Z"
+      "updatedAt": "2026-09-07T00:00:00.000Z"
     },
     {
       "id": "ex-asset-reel-caption",
@@ -52,6 +101,9 @@
       "channel": "instagram_reels",
       "format": "Short caption",
       "message": "Plug it in. The room stops looking temporary.",
+      "copyBody": "Plug it in. The room stops looking temporary.",
+      "versionLabel": "v1",
+      "creativeStatus": "ready_for_qc",
       "sourceUrl": "https://example.com/fictional-harbor-lamp-reel-caption",
       "notes": "FICTIONAL EXAMPLE. No real Instagram account.",
       "createdAt": "2026-09-05T00:00:00.000Z",
@@ -73,10 +125,14 @@
       "evidenceStatus": "unknown",
       "metricName": "",
       "metricValue": null,
-      "finding": "The first line names the hour, not the lamp. No search or answer-engine sample was collected, so discovery reach stays unknown — not zero.",
-      "nextAction": "Write a second sentence that states what the lamp is before any claim about mood.",
+      "finding": "The first line names the hour, then v2 names the lamp. No search or answer-engine sample was collected, so discovery reach stays unknown — not zero.",
+      "nextAction": "Keep the object-name sentence. Do not treat unknown reach as a KPI.",
+      "recommendDecision": "go",
+      "claimTruthOk": "yes",
+      "channelFitOk": "yes",
+      "ctaClearOk": "unknown",
       "createdAt": "2026-09-04T00:00:00.000Z",
-      "updatedAt": "2026-09-04T00:00:00.000Z"
+      "updatedAt": "2026-09-07T00:00:00.000Z"
     },
     {
       "id": "ex-review-reel-reported",
@@ -94,8 +150,60 @@
       "metricValue": null,
       "finding": "The caption assumes the viewer already knows it is a lamp. Pre-publish note only; no reach or watch-time figure exists.",
       "nextAction": "Name the object in the first five words, then keep the rented-room line.",
+      "recommendDecision": "edit",
+      "claimTruthOk": "unknown",
+      "channelFitOk": "unknown",
+      "ctaClearOk": "no",
       "createdAt": "2026-09-06T00:00:00.000Z",
       "updatedAt": "2026-09-06T00:00:00.000Z"
     }
-  ]
+  ],
+  "publications": [
+    {
+      "id": "ex-pub-hero",
+      "assetId": "ex-asset-hero-draft",
+      "assetVersion": "v2",
+      "channel": "website_search",
+      "accountLabel": "Fictional example.com draft host",
+      "publicUrl": "https://example.com/fictional-harbor-lamp-hero",
+      "platformId": "",
+      "publishedAt": "2026-09-08",
+      "authorizationNote": "Manual placeholder only. No live CMS or ads API publish.",
+      "notes": "FICTIONAL. Not a real site.",
+      "createdAt": "2026-09-08T00:00:00.000Z",
+      "updatedAt": "2026-09-08T00:00:00.000Z"
+    }
+  ],
+  "observations": [
+    {
+      "id": "ex-obs-hero",
+      "publicationId": "ex-pub-hero",
+      "assetId": "ex-asset-hero-draft",
+      "metricName": "landing_sessions",
+      "metricValue": null,
+      "windowStart": "2026-09-08",
+      "windowEnd": "2026-09-14",
+      "sourceNote": "No analytics adapter. Sessions stay unknown.",
+      "limitations": "This desk cannot read Search Console or a live host. Unknown is not zero.",
+      "capturedAt": "2026-09-14T00:00:00.000Z",
+      "notes": "FICTIONAL observation. No invented KPI.",
+      "createdAt": "2026-09-14T00:00:00.000Z",
+      "updatedAt": "2026-09-14T00:00:00.000Z"
+    }
+  ],
+  "learnings": [
+    {
+      "id": "ex-learn-hero",
+      "jobId": "ex-job-landing-hero",
+      "publicationId": "ex-pub-hero",
+      "hypothesis": "Naming the object in sentence two makes the hero understandable without a mood claim.",
+      "evidenceSupports": "Internal QC could check claim wording. Publication identity was recorded by hand.",
+      "cannotShow": "Discovery reach, sessions, and conversion stay unknown — no adapter, no invented KPI.",
+      "nextAction": "Keep the object-name sentence. Do not treat unknown sessions as zero.",
+      "notes": "FICTIONAL debrief for the landing-hero job.",
+      "createdAt": "2026-09-14T12:00:00.000Z",
+      "updatedAt": "2026-09-14T12:00:00.000Z"
+    }
+  ],
+  "privacy": "Local browser workspace only. This file is an opt-in fictional example."
 }
