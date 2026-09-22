@@ -37,6 +37,20 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
+/* Hidden until focused, matching assets/style.css. */
+.skip-link {
+  position: absolute;
+  left: var(--pad);
+  top: 8px;
+  z-index: 100;
+  padding: 8px 14px;
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-180%);
+  transition: transform 0.15s ease;
+}
+.skip-link:focus { transform: none; }
+
 /* ---------- header ---------- */
 
 .demo-header {
