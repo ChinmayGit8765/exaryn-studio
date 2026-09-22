@@ -47,7 +47,7 @@ Entirely static. A GitHub Actions cron runs a Python picker each morning, commit
 | Size | 1.3 MB |
 | Licence | none declared |
 | Created | 2026-08-24 |
-| Last push | 2026-09-20 |
+| Last push | 2026-09-21 |
 | Visibility | public |
 | Language mix | JavaScript 46.6%, CSS 31.1%, HTML 13.5%, Python 8.8% |
 
