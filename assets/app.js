@@ -47,10 +47,26 @@ async function fetchProjects() {
   return res.json();
 }
 
+const STATUS_LABEL = {
+  available: "available",
+  prototype: "prototype",
+  "in development": "in development",
+  concept: "concept",
+  archived: "archived",
+  shipped: "available",
+};
+
+function statusLabel(status) {
+  const key = String(status || "").toLowerCase();
+  return STATUS_LABEL[key] || status || "";
+}
+
 function projectRow(p, { expandable }) {
-  const visit = p.links?.live || p.links?.demo || p.links?.repo || "";
-  const status =
-    p.status && p.status !== "shipped" ? ` <span class="status">[${esc(p.status)}]</span>` : "";
+  const visit = p.links?.live || p.links?.docs || p.links?.demo || p.links?.repo || "";
+  const statusText = statusLabel(p.status);
+  const status = statusText
+    ? ` <span class="status" data-status="${esc(statusText)}">[${esc(statusText)}]</span>`
+    : "";
 
   const head = `
     <span class="num" aria-hidden="true"></span>
@@ -59,8 +75,8 @@ function projectRow(p, { expandable }) {
     <span class="project-tech">${esc((p.tech || []).slice(0, 3).join(" / "))}${status}</span>
     ${
       visit
-        ? `<a class="visit mono" href="${esc(visit)}" target="_blank" rel="noopener"
-             aria-label="Visit ${esc(p.name)}" title="Open ${esc(p.name)}">VISIT&nbsp;↗</a>`
+        ? `<a class="visit mono" href="${esc(visit)}" ${visit.startsWith("http") ? 'target="_blank" rel="noopener"' : ""}
+             aria-label="Open ${esc(p.name)}" title="Open ${esc(p.name)}">OPEN&nbsp;↗</a>`
         : `<span class="visit mono empty">—</span>`
     }
     ${expandable ? `<span class="toggle" aria-hidden="true">+</span>` : ""}`;
@@ -74,21 +90,34 @@ function projectRow(p, { expandable }) {
   }
 
   const linkBtns = [
-    p.links?.demo ? `<a href="${esc(p.links.demo)}" target="_blank" rel="noopener">WATCH DEMO ▶</a>` : "",
-    p.links?.live ? `<a href="${esc(p.links.live)}" target="_blank" rel="noopener">LIVE SITE ↗</a>` : "",
+    p.links?.live ? `<a href="${esc(p.links.live)}" target="_blank" rel="noopener">LIVE ↗</a>` : "",
+    p.links?.docs ? `<a href="${esc(p.links.docs)}" ${String(p.links.docs).startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>DOCS ↗</a>` : "",
+    p.links?.demo ? `<a href="${esc(p.links.demo)}" ${String(p.links.demo).startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>WALKTHROUGH ▶</a>` : "",
     p.links?.repo ? `<a href="${esc(p.links.repo)}" target="_blank" rel="noopener">SOURCE ↗</a>` : "",
   ].join("");
+
+  const highlights = (p.highlights || []).slice(0, 3);
+  const highlightList = highlights.length
+    ? `<ul class="detail-highlights">${highlights.map((h) => `<li>${esc(h)}</li>`).join("")}</ul>`
+    : "";
+  const architecture = p.architecture
+    ? `<p class="detail-arch">${esc(p.architecture)}</p>`
+    : "";
 
   return `
   <li class="project-row">
     <div class="row-head" role="button" tabindex="0" aria-expanded="false">${head}</div>
     <div class="row-detail">
       <div class="detail-inner">
-        <p class="detail-desc">${esc(p.description || p.tagline || "")}</p>
+        <div class="detail-copy">
+          <p class="detail-desc">${esc(p.description || p.tagline || "")}</p>
+          ${architecture}
+          ${highlightList}
+        </div>
         <dl class="detail-meta">
           <div><dt class="mono">STACK</dt><dd>${esc((p.tech || []).join(", "))}</dd></div>
           <div><dt class="mono">DEV TIME</dt><dd>${esc(p.devTime || "—")}</dd></div>
-          <div><dt class="mono">STATUS</dt><dd>${esc(p.status || "—")} · ${esc(p.year || "")}</dd></div>
+          <div><dt class="mono">STATUS</dt><dd>${esc(statusText || "—")} · ${esc(p.year || "")}</dd></div>
         </dl>
         ${linkBtns ? `<div class="detail-links mono">${linkBtns}</div>` : ""}
       </div>
@@ -124,13 +153,14 @@ async function loadProjects() {
     $("#project-count") && ($("#project-count").textContent = count);
     $("#snippet-total") && ($("#snippet-total").textContent = count);
 
+    const featured = projects.filter((p) => p.featured);
     if (full) {
       full.innerHTML = projects.map((p) => projectRow(p, { expandable: true })).join("");
       wireAccordion(full);
     }
     if (snippet) {
-      snippet.innerHTML = projects
-        .slice(0, 4)
+      const shown = (featured.length ? featured : projects).slice(0, 4);
+      snippet.innerHTML = shown
         .map((p) => projectRow(p, { expandable: false }))
         .join("");
     }
@@ -314,8 +344,8 @@ async function loadTokenMeter() {
     const lit = Math.max(1, Math.round(pct * CELLS));
     cellsEl.innerHTML = "<i></i>".repeat(CELLS);
     $("#token-sub").textContent = tokenBudget
-      ? `/ ${compact(tokenBudget)} ${goalNote} · APPROX.`.replace("  ", " ")
-      : "· APPROX.";
+      ? `/ ${compact(tokenBudget)} ${goalNote} · UNMEASURED`.replace("  ", " ")
+      : "· UNMEASURED";
 
     const animate = () => {
       // cells light up left to right
@@ -332,7 +362,7 @@ async function loadTokenMeter() {
         const eased = 1 - Math.pow(1 - p, 3);
         valueEl.textContent = `≈ ${compact(claudeTokens * eased)}`;
         if (dollars && dollarsEl) {
-          dollarsEl.textContent = `≈ $${compact(dollars * eased)} API-EQUIV THIS YEAR`;
+          dollarsEl.textContent = `≈ $${compact(dollars * eased)} UNMEASURED API-EQUIV`;
         }
         if (p < 1) requestAnimationFrame(tick);
       };
@@ -343,7 +373,7 @@ async function loadTokenMeter() {
       $$("i", cellsEl).forEach((cell, idx) => idx < lit && cell.classList.add("on"));
       $("#token-value").textContent = `≈ ${compact(claudeTokens)}`;
       if (dollars) {
-        $("#token-dollars").textContent = `≈ $${compact(dollars)} API-EQUIV THIS YEAR`;
+        $("#token-dollars").textContent = `≈ $${compact(dollars)} UNMEASURED API-EQUIV`;
       }
       return;
     }
@@ -536,11 +566,52 @@ async function loadRoadmap() {
 
 loadRoadmap();
 
+/* ================= CASE STUDIES ================= */
+
+function caseCard(c) {
+  const links = [
+    c.links?.live ? `<a href="${esc(c.links.live)}" target="_blank" rel="noopener">LIVE ↗</a>` : "",
+    c.links?.docs ? `<a href="${esc(c.links.docs)}" ${String(c.links.docs).startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>DOCS ↗</a>` : "",
+    c.links?.repo ? `<a href="${esc(c.links.repo)}" target="_blank" rel="noopener">SOURCE ↗</a>` : "",
+    c.links?.demo ? `<a href="${esc(c.links.demo)}">WALKTHROUGH ▶</a>` : "",
+  ].filter(Boolean).join("");
+  return `
+  <article class="case-card" id="case-${esc(c.slug)}">
+    <header class="case-head">
+      <h3 class="case-name">${esc(c.name)}</h3>
+      <span class="case-status mono" data-status="${esc(statusLabel(c.status))}">${esc(statusLabel(c.status))}</span>
+    </header>
+    <dl class="case-body">
+      <div><dt class="mono">PROBLEM</dt><dd>${esc(c.problem)}</dd></div>
+      <div><dt class="mono">NOW</dt><dd>${esc(c.implementation)}</dd></div>
+      <div><dt class="mono">ARCHITECTURE</dt><dd>${esc(c.architecture)}</dd></div>
+      <div><dt class="mono">LIMITS</dt><dd>${esc(c.limitations)}</dd></div>
+    </dl>
+    ${links ? `<p class="case-links mono">${links}</p>` : ""}
+  </article>`;
+}
+
+async function loadCases() {
+  const wrap = $("#case-grid");
+  if (!wrap) return;
+  try {
+    const res = await fetch("data/cases.json");
+    if (!res.ok) throw new Error(res.status);
+    const cases = await res.json();
+    wrap.innerHTML = cases.map(caseCard).join("");
+  } catch {
+    wrap.innerHTML = `<p class="index-empty mono">COULDN'T LOAD CASE STUDIES — IF YOU'RE ON file://, RUN: npm run dev</p>`;
+  }
+}
+
+loadCases();
+
 /* ================= COMMAND PALETTE (⌘K / CTRL+K) ================= */
 
 const PALETTE_PAGES = [
   ["Home", "the front page", "index.html"],
   ["Work", "the full project index", "projects.html"],
+  ["Case studies", "three public projects, with limits", "projects.html#cases"],
   ["Roadmap", "what's being built, with progress bars", "projects.html#roadmap"],
   ["Agents", "the studio's agent structure", "agents.html"],
   ["The Brain", "obsidian vault, in the browser", "brain.html"],
@@ -552,7 +623,7 @@ const PALETTE_PAGES = [
 
 const PALETTE_DEMOS = [
   ["QuantFlex walkthrough", "price an american put under heston", "demos/quantflex.html"],
-  ["Prompterjack walkthrough", "wire an agent crew, export code", "demos/prompterjack.html"],
+  ["Prompterjack walkthrough", "staged Agent Architect canvas, not a product capture", "demos/prompterjack.html"],
   ["Solo Strength Quest walkthrough", "boss kills on real app screens", "demos/strength-quest.html"],
 ];
 
@@ -598,7 +669,7 @@ async function paletteLoad() {
     ...PALETTE_PAGES.map(([t, s, h]) => ({ type: "PAGE", t, s, h })),
     ...projects.map((p) => ({
       type: "PROJECT", t: p.name, s: p.tagline || "",
-      h: p.links?.live || p.links?.demo || p.links?.repo || "projects.html",
+      h: p.links?.live || p.links?.docs || p.links?.demo || p.links?.repo || "projects.html",
     })),
     ...articles.map((a) => ({ type: "NOTE", t: a.title, s: a.dek || "", h: `notes/${a.slug}.html` })),
     ...PALETTE_DEMOS.map(([t, s, h]) => ({ type: "DEMO", t, s, h })),

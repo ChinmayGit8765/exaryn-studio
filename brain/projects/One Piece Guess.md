@@ -2,11 +2,11 @@
 title: One Piece Guess
 type: project
 tags: [project, games-play]
-status: shipped
+status: available
 year: 2026
 category: Games & Play
-repo: ChinmayGit8765/one-piece-guess-game
 generated: true
+repo: ChinmayGit8765/one-piece-guess-game
 ---
 
 > [!warning] Generated note
@@ -38,7 +38,7 @@ Entirely static. A GitHub Actions cron runs a Python picker each morning, commit
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
 | Dev time | a weekend |
 | Category | Games & Play |
@@ -47,7 +47,7 @@ Entirely static. A GitHub Actions cron runs a Python picker each morning, commit
 | Size | 1.3 MB |
 | Licence | none declared |
 | Created | 2026-08-24 |
-| Last push | 2026-09-21 |
+| Last push | 2026-09-19 |
 | Visibility | public |
 | Language mix | JavaScript 46.6%, CSS 31.1%, HTML 13.5%, Python 8.8% |
 

@@ -2,11 +2,11 @@
 title: QuantLens
 type: project
 tags: [project, quant-finance]
-status: shipped
+status: available
 year: 2026
 category: Quant & Finance
-repo: ChinmayGit8765/FinancialServicesDashboard
 generated: true
+repo: ChinmayGit8765/FinancialServicesDashboard
 ---
 
 > [!warning] Generated note
@@ -38,7 +38,7 @@ Spring Boot 3.5 runs the quant engine; Spring AI runs tool-calling and RAG over 
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
 | Dev time | ~3 weeks |
 | Category | Quant & Finance |

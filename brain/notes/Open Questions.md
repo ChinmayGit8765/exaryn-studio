@@ -19,15 +19,14 @@ increase in autonomy has so far been paid for with an increase in audit surface.
 ## Is the token meter measuring anything?
 
 The number on the site's front page is hand-updated and the dollar figure is a
-blended estimate. Either wire it to something real or label it more loudly than
-"APPROX." — see [[Roadmap]].
+blended estimate. It is now labelled unmeasured on the home page. Wiring it to
+something real remains optional — see [[Roadmap]].
 
-## What happens to the superseded repos?
+## What happens to earlier attempts?
 
-Three private repos supersede each other on the way to [[Solo Strength Quest]],
-plus `gymapp-v2` and `GymAPP` before them. Archiving them loses the history of
-how the design converged; leaving them makes [[Repos Map]] misleading about how
-much is live.
+[[Solo Strength Quest]] is the third try at a fitness RPG. Earlier attempts
+exist in git history; they are not listed here unless they are public today.
+The public index only lists what is actually public.
 
 ## Should generated notes be committed at all?
 

@@ -5,8 +5,8 @@ tags: [project, games-play]
 status: in development
 year: 2026
 category: Games & Play
-repo: Monash-FIT3170/2026W2-GarticHands
 generated: true
+repo: Monash-FIT3170/2026W2-GarticHands
 ---
 
 > [!warning] Generated note

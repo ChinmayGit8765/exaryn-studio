@@ -18,14 +18,15 @@ render as checked in the browser.
 ## Now — in flight
 
 - [ ] **[[Solo Strength Quest]]** — third attempt; Rust/Axum API and Flutter client both moving
-- [ ] **[[QuantFlex]]** — exotics and basket coverage, keep every Greek triple-verified
+- [ ] **[[QuantFlex]]** — keep the live workbench honest: show the checks that ran, don't over-claim JAX on the live API
+- [ ] **[[holdem-ml]]** — public home is documentation-only until source lands
 - [ ] **[[ALFRED]]** — Conductor tuning against real capacity data
 - [ ] **[[Worktree Optimiser]]** — round out the [[Worktree MCP Server]] tool surface
 - [ ] **[[Gartic Hands]]** — semester project, round state machine hardening
 
 ## Next — queued
 
-- [ ] Give [[QuantFlex]] a stable public deploy rather than a landing page with sampled output
+- [x] Give [[QuantFlex]] a public workbench (`app.quantflex.dev`) and a landing page with recorded engine output
 - [ ] Publish the [[Claude Work Manager]] setup as a one-command install
 - [ ] Backfill READMEs on the older repos in [[Repos Map]] so the sweep has something to quote
 - [ ] Add per-project dev-time tracking to [[Build Log]] instead of estimating after the fact
@@ -33,11 +34,12 @@ render as checked in the browser.
 ## Brain / site
 
 - [x] Build the brain as a real Obsidian vault under `brain/`
-- [x] Sweep metadata from every repo into `data/repos.json`
+- [x] Sweep public repository metadata into `data/repos.json` (private rows are not published)
+- [x] Label the home-page token figure as an unmeasured estimate
 - [x] Publish the vault in the browser with backlinks, tags, search and a graph
 - [x] Add an **Agents** tab to the site linking into the brain
 - [x] Put every project in the index, including the ones that were missing
-- [ ] Wire the token meter to something measured rather than hand-updated
+- [ ] Wire the token meter to something measured rather than hand-updated, or keep it labelled unmeasured
 - [ ] Per-note "last touched" dates from git history rather than frontmatter
 
 ## Ideas — new projects, now that concurrency is down pat
@@ -59,8 +61,7 @@ render as checked in the browser.
 
 ## Someday / maybe
 
-- [ ] Retire the three superseded Solo Strength Quest repos properly instead of leaving them private
-- [ ] A written post-mortem note for each archived repo — [[PDF Compiler]] first
+- [ ] A written post-mortem note for archived public work — [[PDF Compiler]] first
 - [ ] Let the brain graph filter by tag, not just by note type
 
 ## Related

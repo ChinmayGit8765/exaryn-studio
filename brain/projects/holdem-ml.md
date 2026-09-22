@@ -2,11 +2,11 @@
 title: holdem-ml
 type: project
 tags: [project, games-play]
-status: in development
+status: concept
 year: 2026
 category: Games & Play
-repo: ChinmayGit8765/holdem-ml
 generated: true
+repo: ChinmayGit8765/holdem-ml
 ---
 
 > [!warning] Generated note
@@ -14,31 +14,29 @@ generated: true
 
 # holdem-ml
 
-*Texas Hold'em vs bots trained from scratch — no PyTorch, every gradient hand-checked.*
+*Public home for a from-scratch Hold'em stack — documentation only until source lands.*
 
-Full no-limit Hold'em (terminal + browser multiplayer) against a from-scratch poker AI: hand-written NN framework, Monte-Carlo CFR blueprint distilled into a self-play RL policy, online opponent modelling that learns your specific leaks, card vision that reads table photos, and an analyser that grades every decision in big blinds.
+The public repository is the project home and architecture write-up. Its README states the source is not there yet and that measured results ship with the source, not before. This index does not repeat benchmark numbers that are not in the public tree. Star or watch the repo for the release.
 
 ## How it is put together
 
-Everything from scratch in NumPy: a hand-written NN framework (gradients checked against finite differences to 1e-6), external-sampling Monte-Carlo CFR over an engineered abstraction, REINFORCE self-play on the real engine, and a two-headed rank/suit CNN for card vision. Multiplayer table served on the Python standard library.
+Documented as a no-limit Hold'em engine with a hand-written NN, Monte-Carlo CFR blueprint, self-play RL, online opponent modelling and a card-vision analyser. That design is written down publicly; the implementation is not in this repository yet.
 
 ## What is actually in it
 
-- Hand evaluator exact over all 2,598,960 five-card hands; ~450k evals/sec in pure NumPy
-- Trained bot beats every baseline; the difficulty ladder is real — novice loses where pro crushes
-- Opponent model learns you mid-game from public info only, then bluffs you exactly as often as you deserve
-- 98.9% end-to-end card reading on rendered tables, validated on deck styles it never trained on
-- Every README number produced by benchmark code in the repo, honest-limitations section included
+- Public README and diagrams describe the intended stack
+- Explicit pre-release status: source lands here later
+- Benchmarks are withheld until the code that produced them is public
 
 ## What it taught
 
-> Measuring beats guessing: sweeping the blueprint blend weight found the strong bot played better with none of it — so the textbook-but-exploitable blueprint became the personality of the easy levels instead.
+> A documentation-only home is still a public claim. Do not quote numbers the tree cannot reproduce.
 
 ## Facts
 
 | | |
 | --- | --- |
-| Status | in development |
+| Status | concept |
 | Year | 2026 |
 | Dev time | days, ongoing |
 | Category | Games & Play |

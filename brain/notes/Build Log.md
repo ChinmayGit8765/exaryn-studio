@@ -9,6 +9,12 @@ tags: [log, history]
 A running record of what changed and why. Newest first. Hand-maintained —
 [[Timeline]] is the generated version built from repository dates.
 
+## 2026-09 — public presence refresh
+
+Corrected stale product copy against live public pages, added three case studies,
+labelled the token figure as unmeasured, and made the repo sweep public-only so
+generated notes never retain private metadata. See [[Roadmap]] and [[Open Questions]].
+
 ## 2026-08 — the brain
 
 Built the vault you are reading. Three moving parts: a GitHub API sweep into

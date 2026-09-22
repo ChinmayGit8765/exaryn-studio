@@ -2,10 +2,9 @@
 title: Prompterjack
 type: project
 tags: [project, agents-tooling]
-status: shipped
+status: available
 year: 2026
 category: Agents & Tooling
-repo: ChinmayGit8765/promptifyme
 generated: true
 ---
 
@@ -14,45 +13,37 @@ generated: true
 
 # Prompterjack
 
-*Design multi-agent AI systems visually, export runnable code for five frameworks.*
+*Inspect a public GitHub repo and keep CLAUDE.md and AGENTS.md aligned with the code.*
 
-Full-stack prompt-engineering and agent-design platform: pick an architecture style, design multi-agent systems visually, export production-ready code for Strands, OpenAI Agents, LangChain/LangGraph and LlamaIndex. Codebase-aware prompt generation, maintainability scoring, marketplace, real-time co-editing.
+The public product at prompterjack.com starts with repository context: scan a public GitHub repository, find stale AI instructions, and prepare CLAUDE.md and AGENTS.md you can review before they land. A public preview needs no account. Sign-in is required to save analysis or connect private repositories. Connected tools on the same site include fleet maintenance, Agent Architect (roles, routing, handoffs, and an implementation scaffold), a prompt toolkit, and security-review utilities. It does not replace Cursor, Claude Code or Copilot, and generated files still need human review. This index does not advertise planned surfaces as shipped.
 
 ## How it is put together
 
-Turborepo monorepo. React SPA on the edge, Hono API on Cloudflare Workers, Neon Postgres for state, Stripe for billing. The canvas is the source of truth: a crew graph compiles down to whichever framework you export to.
+Public product surfaces at prompterjack.com. Repository analysis is the advertised starting loop; other tools are listed on the public products page and are used from that site. Source for the product is not in this public GitHub account.
 
 ## What is actually in it
 
-- Visual canvas for supervisor/worker, router, and pipeline crew shapes
-- One graph exports to five agent frameworks — Strands, OpenAI Agents, LangChain, LangGraph, LlamaIndex
-- Prompt linter scores maintainability and flags ambiguity before you ship
-- Codebase-aware generation: point it at a repo, get prompts that know your types
-- Real-time co-editing and a marketplace for published crews
+- Public-repo scan with no account for a limited preview
+- Prepares CLAUDE.md and AGENTS.md grounded in repository evidence
+- Connected Agent Architect, fleet, prompt and security tools on the same site
+- Explicitly does not replace existing coding tools
 
 ## What it taught
 
-> Agent frameworks disagree about everything except the shape of the graph. Model the graph, generate the framework.
+> Ship the loop people can try without an account, and say what still needs review.
 
 ## Facts
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
-| Dev time | ~6 months |
+| Dev time | ongoing |
 | Category | Agents & Tooling |
-| Repository | [ChinmayGit8765/promptifyme](https://github.com/ChinmayGit8765/promptifyme) |
-| Primary language | JavaScript |
-| Size | 7.7 MB |
-| Licence | none declared |
-| Created | 2026-02-04 |
-| Last push | 2026-08-24 |
-| Visibility | private |
 
 ## Stack
 
-[[React]] · [[TypeScript]] · [[Cloudflare Workers]] · [[Hono]] · [[Neon Postgres]] · Stripe · [[Turborepo]]
+[[TypeScript]] · [[React]] · GitHub
 
 ## Agents
 

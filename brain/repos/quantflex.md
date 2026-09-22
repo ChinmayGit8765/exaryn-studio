@@ -3,7 +3,7 @@ title: quantflex
 type: repo
 tags: [repo, public, derivatives, monte-carlo, options-pricing, quant-finance]
 language: 
-pushed: 2026-09-21
+pushed: 2026-09-17
 generated: true
 ---
 
@@ -25,11 +25,11 @@ Project note: [[QuantFlex]]
 | Full name | [ChinmayGit8765/quantflex](https://github.com/ChinmayGit8765/quantflex) |
 | Visibility | public |
 | Primary language | — |
-| Size | 241 KB |
+| Size | 237 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-24 |
-| Last push | 2026-09-21 |
+| Last push | 2026-09-17 |
 | Stars | 0 |
 | Open issues | 0 |
 | GitHub Pages | no |

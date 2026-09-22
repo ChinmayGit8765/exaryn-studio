@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Exaryn Studio",
+    "slug": "exaryn-studio",
+    "status": "available",
+    "problem": "A one-person studio needed a public front door that stayed current without a server, a CMS, or a private knowledge leak.",
+    "implementation": "Static HTML pages fetch committed JSON. A 21:00 UTC GitHub Actions cron rebuilds the daily signal; a public-only GitHub sweep and an Obsidian vault bundler write the rest. GitHub Pages deploys the folder as-is.",
+    "architecture": "No framework, no build step. Python stdlib scripts write data/; the browser renders it. Generated vault notes are rewritten from projects.json and public repos.json \u2014 never hand-edited, never from a private listing.",
+    "limitations": "Opening a page from disk shows empty data (fetch needs http). The token figure on the home page is a hand-updated estimate, labelled as unmeasured. The marketing workspace under workspace/ is local-only and is not in public navigation.",
+    "links": {
+      "live": "https://chinmaygit8765.github.io/exaryn-studio/",
+      "repo": "https://github.com/ChinmayGit8765/exaryn-studio",
+      "docs": "https://github.com/ChinmayGit8765/exaryn-studio#readme"
+    }
+  },
+  {
+    "name": "QuantFlex",
+    "slug": "quantflex",
+    "status": "available",
+    "problem": "Most public option calculators hide the method. This one has to show how a number was produced, and which checks actually ran.",
+    "implementation": "A live workbench at app.quantflex.dev plus a landing page that commits a recorded engine snapshot, method notes, and a daily public-headline feed. Exports carry inputs, seed, engine version and a request hash.",
+    "architecture": "Hand-rolled Monte Carlo, PDE and AAD in the engine; FastAPI over HTTP; Vue on the workbench. The landing is explicit: snapshot figures are not live quotes, JAX is n/a on the live API, and several Excel/portfolio features are coming soon rather than shipped.",
+    "limitations": "Not market data, not advice, no OPRA feed. The public GitHub engine home is still landing source. Planned workbook download, live Excel refresh and portfolio VaR are listed as not built.",
+    "links": {
+      "live": "https://app.quantflex.dev",
+      "docs": "https://chinmaygit8765.github.io/quantflex-site/",
+      "repo": "https://github.com/ChinmayGit8765/quantflex",
+      "demo": "demos/quantflex.html"
+    }
+  },
+  {
+    "name": "One Piece Guess",
+    "slug": "one-piece-guess",
+    "status": "available",
+    "problem": "A daily puzzle needs a new answer every morning without an application server or a database to babysit.",
+    "implementation": "A static game: eight attribute clues per guess, unlockable hints, a shareable emoji grid. A GitHub Actions cron runs a Python picker, commits the day's character, and Pages redeploys. Playable on its own site and embedded on this Play tab.",
+    "architecture": "Cron \u2192 Python script \u2192 committed JSON \u2192 static page. The README is also a how-to for building any daily-anything game on the same skeleton.",
+    "limitations": "One puzzle per UTC morning; no realtime duel mode (that remains an idea, not a shipped feature). Needs JavaScript. Character data is a curated list, not a live API.",
+    "links": {
+      "live": "https://chinmaygit8765.github.io/one-piece-guess-game/",
+      "repo": "https://github.com/ChinmayGit8765/one-piece-guess-game",
+      "docs": "https://github.com/ChinmayGit8765/one-piece-guess-game#readme"
+    }
+  }
+]

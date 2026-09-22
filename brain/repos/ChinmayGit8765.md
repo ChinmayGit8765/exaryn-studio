@@ -3,7 +3,7 @@ title: ChinmayGit8765
 type: repo
 tags: [repo, public]
 language: Python
-pushed: 2026-09-20
+pushed: 2026-09-01
 generated: true
 ---
 
@@ -14,7 +14,7 @@ generated: true
 
 *✳ profile*
 
-> I run **[Exaryn](https://chinmaygit8765.github.io/exaryn-studio/)** — a one-person R&D studio in Melbourne. AI agents, quant engines, daily games — built, shipped, and written up honestly. Happily AI-native: over a billion Claude tokens this year, turned into working software.
+> I run Exaryn — a one-person R&D studio in Melbourne. Public tools, daily games, a pricing workbench, and honest write-ups of what actually shipped.
 
 ## Metadata
 
@@ -23,13 +23,13 @@ generated: true
 | Full name | [ChinmayGit8765/ChinmayGit8765](https://github.com/ChinmayGit8765/ChinmayGit8765) |
 | Visibility | public |
 | Primary language | Python |
-| Size | 25 KB |
+| Size | 24 KB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-30 |
-| Last push | 2026-09-20 |
+| Last push | 2026-09-01 |
 | Stars | 0 |
-| Open issues | 1 |
+| Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
 

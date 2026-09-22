@@ -2,55 +2,50 @@
  {
   "name": "Prompterjack",
   "slug": "prompterjack",
-  "tagline": "Design multi-agent AI systems visually, export runnable code for five frameworks.",
-  "description": "Full-stack prompt-engineering and agent-design platform: pick an architecture style, design multi-agent systems visually, export production-ready code for Strands, OpenAI Agents, LangChain/LangGraph and LlamaIndex. Codebase-aware prompt generation, maintainability scoring, marketplace, real-time co-editing.",
+  "tagline": "Inspect a public GitHub repo and keep CLAUDE.md and AGENTS.md aligned with the code.",
+  "description": "The public product at prompterjack.com starts with repository context: scan a public GitHub repository, find stale AI instructions, and prepare CLAUDE.md and AGENTS.md you can review before they land. A public preview needs no account. Sign-in is required to save analysis or connect private repositories. Connected tools on the same site include fleet maintenance, Agent Architect (roles, routing, handoffs, and an implementation scaffold), a prompt toolkit, and security-review utilities. It does not replace Cursor, Claude Code or Copilot, and generated files still need human review. This index does not advertise planned surfaces as shipped.",
   "tech": [
-   "React",
    "TypeScript",
-   "Cloudflare Workers",
-   "Hono",
-   "Neon Postgres",
-   "Stripe",
-   "Turborepo"
+   "React",
+   "GitHub"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
-  "devTime": "~6 months",
+  "devTime": "ongoing",
   "featured": true,
   "category": "Agents & Tooling",
-  "repo": "ChinmayGit8765/promptifyme",
   "agents": [
    "Prompterjack Crew Designer"
   ],
-  "architecture": "Turborepo monorepo. React SPA on the edge, Hono API on Cloudflare Workers, Neon Postgres for state, Stripe for billing. The canvas is the source of truth: a crew graph compiles down to whichever framework you export to.",
+  "architecture": "Public product surfaces at prompterjack.com. Repository analysis is the advertised starting loop; other tools are listed on the public products page and are used from that site. Source for the product is not in this public GitHub account.",
   "highlights": [
-   "Visual canvas for supervisor/worker, router, and pipeline crew shapes",
-   "One graph exports to five agent frameworks — Strands, OpenAI Agents, LangChain, LangGraph, LlamaIndex",
-   "Prompt linter scores maintainability and flags ambiguity before you ship",
-   "Codebase-aware generation: point it at a repo, get prompts that know your types",
-   "Real-time co-editing and a marketplace for published crews"
+   "Public-repo scan with no account for a limited preview",
+   "Prepares CLAUDE.md and AGENTS.md grounded in repository evidence",
+   "Connected Agent Architect, fleet, prompt and security tools on the same site",
+   "Explicitly does not replace existing coding tools"
   ],
-  "lessons": "Agent frameworks disagree about everything except the shape of the graph. Model the graph, generate the framework.",
+  "lessons": "Ship the loop people can try without an account, and say what still needs review.",
   "links": {
    "live": "https://prompterjack.com",
+   "docs": "https://prompterjack.com/products",
    "demo": "demos/prompterjack.html"
   }
  },
  {
   "name": "Claude Work Manager",
   "slug": "claude-work-manager",
-  "tagline": "Run a fleet of Claude Code agents across git worktrees — from your phone.",
-  "description": "Self-hosted, mobile-first dashboard for concurrent Claude Code sessions: spawn an isolated git worktree per agent, chat with each one, watch localhost previews of their dev servers, and commit/push from the couch. Rides the claude CLI you're already logged into — no API keys stored anywhere.",
+  "tagline": "Self-hosted, mobile-first dashboard for concurrent Claude Code sessions across git worktrees.",
+  "description": "A personal Node dashboard that spawns the local claude CLI you already logged into \u2014 one isolated git worktree per session \u2014 then lets you chat, watch tool calls, iframe localhost previews, and commit or push from a phone. The public README calls this version 0.1.0: a working personal tool, not a product. No test suite yet. It should stay off the public internet.",
   "tech": [
    "Node.js",
    "Claude Code CLI",
    "Git worktrees",
    "Vanilla JS"
   ],
-  "status": "shipped",
+  "status": "prototype",
   "year": "2026",
   "devTime": "days, ongoing",
-  "featured": true,
+  "featured": false,
   "category": "Agents & Tooling",
   "repo": "ChinmayGit8765/claude-work-manager",
   "agents": [
@@ -58,13 +53,12 @@
   ],
   "architecture": "A Node server wraps the local `claude` CLI. One git worktree per agent means agents never fight over the working tree. The browser talks to the server; the server talks to the CLI you already authenticated.",
   "highlights": [
-   "One isolated git worktree per agent — parallel work with no merge chaos",
-   "Mobile-first: review, steer, and push from a phone",
-   "Live localhost previews of each agent's dev server",
-   "No API keys stored: it borrows the CLI session you already have",
-   "Commit and push per worktree without leaving the dashboard"
+   "One git worktree per agent, matching Claude Code's wt/ convention",
+   "Uses the local CLI login \u2014 no API keys stored in the repo",
+   "Phone-first UI with git status, diff, commit and push",
+   "Access-key gate before the instance leaves localhost"
   ],
-  "lessons": "Isolation is the whole trick. Once each agent owns a worktree, running five at once stops being scary.",
+  "lessons": "Isolation is the whole trick. Once each agent owns a worktree, running several at once stops being a merge fight.",
   "links": {
    "repo": "https://github.com/ChinmayGit8765/claude-work-manager"
   }
@@ -73,7 +67,7 @@
   "name": "Worktree Optimiser",
   "slug": "worktree-optimiser",
   "tagline": "Every branch of a repo as its own containerised dev server, routed by hostname.",
-  "description": "Run all your worktrees at once — main.localhost, fix-login.localhost — each in its own Docker container behind Traefik, managed from one dashboard. Review a PR and your own work side by side in two tabs. Ships an MCP server so coding agents can drive it too.",
+  "description": "Run worktrees at once \u2014 main.localhost, fix-login.localhost \u2014 each in its own Docker container behind Traefik, managed from one dashboard. Detection proposes a runnable config; you confirm. Ships an MCP server so coding agents can create, probe and diagnose environments. Public source is MIT-licensed. Not published to npm yet; run from a clone. Kubernetes backend is documented as planned, not implemented.",
   "tech": [
    "Node.js",
    "Docker",
@@ -93,11 +87,10 @@
   ],
   "architecture": "Traefik does hostname routing; every worktree gets a container and a `<branch>.localhost` name. A dashboard drives the lifecycle, and an MCP server exposes the same lifecycle to coding agents as tools.",
   "highlights": [
-   "`main.localhost`, `fix-login.localhost` — every branch live at once",
-   "Container per worktree, routed by Traefik, no port juggling",
-   "Review a PR and your own branch side by side in two tabs",
-   "MCP server so Claude Code can spin environments up and down itself",
-   "MIT licensed"
+   "Hostname and direct-port routing, no port juggling",
+   "No database: git worktrees plus Docker labels are the state",
+   "MCP tools for create, probe, diagnose; delete is off by default",
+   "Doctor command names the fix for each environment failure"
   ],
   "lessons": "Anything a human clicks in a dashboard, an agent should be able to call as a tool. Building the MCP layer second was a mistake worth not repeating.",
   "links": {
@@ -107,8 +100,8 @@
  {
   "name": "ALFRED",
   "slug": "alfred",
-  "tagline": "Local-first multi-agent life-optimization system. Your hardware, your data, no cloud.",
-  "description": "Decomposes goals into weekly plans a Conductor reconciles against real capacity, delivers over Discord/Telegram, watches what happens, and adapts. Every tool call passes an allowlist, capability tier and audit trail. 529 offline tests in CI.",
+  "tagline": "Local-first multi-agent life-optimisation system. Your hardware, your data, no cloud.",
+  "description": "Turns a goal into small wins a Conductor keeps inside one capacity budget, then delivers over CLI, Discord, Telegram or local HTTP. Every tool call passes an allowlist, capability tier and audit trail. Models stay local. The public README reports 578 offline tests across 34 files \u2014 not a live hosted product.",
   "tech": [
    "Python",
    "Pydantic",
@@ -120,7 +113,7 @@
   "status": "in development",
   "year": "2026",
   "devTime": "~3 months, ongoing",
-  "featured": true,
+  "featured": false,
   "category": "Agents & Tooling",
   "repo": "ChinmayGit8765/AlfredOpenSource",
   "agents": [
@@ -129,11 +122,10 @@
   ],
   "architecture": "Local models via Ollama, SQLite for state, Pydantic contracts between every agent. A Conductor reconciles specialist plans against real capacity before anything reaches you. Chat surfaces are Discord and Telegram.",
   "highlights": [
-   "Runs entirely on your hardware — no cloud, no data leaving the house",
-   "Conductor reconciles specialist plans against actual weekly capacity",
+   "Runs on hardware you own \u2014 SQLite, local models, no cloud requirement",
+   "Conductor reconciles specialist plans against actual capacity",
    "Every tool call checked against an allowlist and a capability tier, then audited",
-   "Adapts from what actually happened, not what was planned",
-   "529 offline tests in CI — the whole suite runs with no network",
+   "578 offline tests in CI against in-memory fakes",
    "MIT licensed"
   ],
   "lessons": "A planner that ignores capacity is a to-do list generator. The Conductor exists because the first version cheerfully planned 60-hour weeks.",
@@ -144,8 +136,8 @@
  {
   "name": "QuantFlex",
   "slug": "quantflex",
-  "tagline": "Free web derivatives pricing engine with hand-rolled Monte Carlo, PDE and autodiff.",
-  "description": "Prices vanillas, American options, exotics and baskets under GBM, Merton and Heston with hand-rolled solvers and Greeks from a custom autodiff tape. Every price validated against analytic anchors; every Greek triple-verified against JAX.",
+  "tagline": "Pricing workbench: see how an option price was made, then reproduce it.",
+  "description": "The public landing page and live app are the product you can use today. Closed form, Monte Carlo, Crank\u2013Nicolson PDE and Longstaff\u2013Schwartz across GBM, Merton and Heston; Greeks from a reverse-mode AAD tape shown against finite differences. The landing page's engine snapshot is recorded output, not a live market quote. The live API's JAX column is n/a \u2014 JAX appears on the snapshot when that machine had it, not as a standing live-API claim. The GitHub engine home is still landing source. Planned Excel workbooks, live Excel refresh and portfolio VaR are listed as coming soon, not shipped.",
   "tech": [
    "Python",
    "NumPy",
@@ -154,34 +146,35 @@
    "Vue 3",
    "Cloud Run"
   ],
-  "status": "in development",
+  "status": "available",
   "year": "2026",
   "devTime": "~2 months, ongoing",
   "category": "Quant & Finance",
   "repo": "ChinmayGit8765/quantflex",
   "relatedRepos": [
-   "ChinmayGit8765/quantflex-site",
-   "ChinmayGit8765/thequantflex"
+   "ChinmayGit8765/quantflex-site"
   ],
-  "architecture": "Hand-rolled numerics in NumPy — Monte Carlo, finite-difference PDE, and a custom reverse-mode autodiff tape for Greeks. FastAPI in front, Vue 3 SPA on top, Cloud Run underneath. JAX is used only as an oracle in tests.",
+  "architecture": "Public workbench at app.quantflex.dev, with methodology and a recorded engine snapshot on the GitHub Pages landing. Hand-rolled numerics (Monte Carlo, PDE, AAD) sit behind a documented HTTP API. JAX is an optional snapshot check, not the live-API verifier.",
   "highlights": [
-   "Vanillas, Americans, exotics and baskets under GBM, Merton jump-diffusion and Heston",
-   "Greeks from a custom autodiff tape, not bumped finite differences",
-   "Every price anchored to a closed-form or published benchmark",
-   "Every Greek triple-verified: tape vs bump vs JAX",
-   "Separate landing site with live engine output and a daily market feed"
+   "Live app plus a landing page with recorded engine output you can inspect",
+   "Methods and payoffs listed on the public landing, including American exercise and path-dependent options",
+   "Greeks panel shows AAD against finite differences with per-Greek tolerance",
+   "CSV/JSON export carries inputs, seed, engine version and request hash",
+   "Daily public headline feed on the landing page \u2014 not market data, not advice"
   ],
-  "lessons": "Write the oracle before the solver. The analytic anchors caught more bugs than the unit tests did.",
+  "lessons": "Show the checks that actually ran. A missing column beats a borrowed triple-verify slogan.",
   "links": {
-   "demo": "demos/quantflex.html",
+   "live": "https://app.quantflex.dev",
+   "docs": "https://chinmaygit8765.github.io/quantflex-site/",
    "repo": "https://github.com/ChinmayGit8765/quantflex",
-   "live": "https://chinmaygit8765.github.io/quantflex-site/"
-  }
+   "demo": "demos/quantflex.html"
+  },
+  "featured": true
  },
  {
   "name": "QuantLens",
   "slug": "quantlens",
-  "tagline": "AI-narrated portfolio dashboard — Sharpe, VaR, Monte Carlo, factors, RAG Q&A.",
+  "tagline": "AI-narrated portfolio dashboard \u2014 Sharpe, VaR, Monte Carlo, factors, RAG Q&A.",
   "description": "Quant-finance Spring Boot backend plus Vue 3 SPA: P&L, risk metrics, Fama-French factors and cointegration pairs, narrated by Spring AI with RAG over pgvector. One docker compose up, no API keys, three seeded demo personas.",
   "tech": [
    "Java",
@@ -191,7 +184,7 @@
    "Vue 3",
    "Docker"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "~3 weeks",
   "category": "Quant & Finance",
@@ -202,7 +195,7 @@
   "architecture": "Spring Boot 3.5 runs the quant engine; Spring AI runs tool-calling and RAG over pgvector, with an embedded MCP server. Vue 3 on the front. `docker compose up` brings the whole thing, seed data included.",
   "highlights": [
    "P&L, Sharpe, VaR, Monte Carlo, Fama-French factors, cointegration pairs",
-   "The AI narrates real engine output — it calls tools, it does not hallucinate numbers",
+   "The AI narrates real engine output \u2014 it calls tools, it does not hallucinate numbers",
    "RAG over pgvector for portfolio Q&A",
    "Embedded MCP server so external agents can query the same engine",
    "One `docker compose up`, no API keys, three seeded demo personas"
@@ -225,14 +218,14 @@
    "FastAPI",
    "Streamlit"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "~1 month",
   "category": "Quant & Finance",
   "repo": "ChinmayGit8765/VolatilityModel",
   "architecture": "Prefect orchestrates the lifecycle; MLflow holds the champion/challenger registry; LightGBM does the forecasting; FastAPI serves and Streamlit inspects. Promotion is gated on QLIKE against the baselines.",
   "highlights": [
-   "Leak-free walk-forward evaluation — no peeking, ever",
+   "Leak-free walk-forward evaluation \u2014 no peeking, ever",
    "Benchmarked against GARCH, EWMA and HAR instead of a strawman",
    "Champion/challenger registry with QLIKE-gated promotion",
    "Drift detection triggers automated retraining",
@@ -246,7 +239,7 @@
  {
   "name": "Solo Strength Quest",
   "slug": "solo-strength-quest",
-  "tagline": "A fitness RPG — every workout is a quest, every PR is a boss kill.",
+  "tagline": "A fitness RPG \u2014 every workout is a quest, every PR is a boss kill.",
   "description": "Gamified training app: workouts become quests, progressive overload becomes XP, and your profile is a character sheet that levels up because you did. Rust/Axum API with server-side gamification math, Flutter app with a custom design system, Postgres + Redis underneath.",
   "tech": [
    "Rust",
@@ -262,16 +255,14 @@
   "category": "Games & Play",
   "repo": "ChinmayGit8765/strength-quest",
   "relatedRepos": [
-   "ChinmayGit8765/solo-strength-quest-play",
-   "ChinmayGit8765/solo_strength-quest"
+   "ChinmayGit8765/solo-strength-quest-play"
   ],
-  "architecture": "Rust/Axum API owns all gamification maths server-side — the client never decides what an XP award is. SQLx over Postgres, Redis for hot state, Flutter client with its own design system.",
+  "architecture": "Rust/Axum API owns all gamification maths server-side \u2014 the client never decides what an XP award is. SQLx over Postgres, Redis for hot state, Flutter client with its own design system.",
   "highlights": [
    "Workouts become quests; progressive overload becomes XP",
    "Personal records land as boss kills and level-ups",
-   "All gamification maths server-side — clients can't mint XP",
-   "Flutter client with a hand-built design system",
-   "Playable web demo published separately"
+   "Public playable web demo published separately",
+   "Rust/Axum API described in the public source home; the app is still in development"
   ],
   "lessons": "Third attempt at this app. The two rewrites before it died of client-side game logic and no schema discipline.",
   "links": {
@@ -283,15 +274,15 @@
  {
   "name": "One Piece Guess",
   "slug": "one-piece-guess",
-  "tagline": "Wordle, but for One Piece — a daily character riddle picked by a cron job.",
-  "description": "Guess the daily character: eight attribute clues per guess (crew, bounty, haki, fruit, debut saga…), hints that unlock as you struggle, a shareable emoji grid. A GitHub Actions cron picks a new pirate every morning; the README doubles as a guide to building your own daily-anything game.",
+  "tagline": "Wordle, but for One Piece \u2014 a daily character riddle picked by a cron job.",
+  "description": "Guess the daily character: eight attribute clues per guess (crew, bounty, haki, fruit, debut saga\u2026), hints that unlock as you struggle, a shareable emoji grid. A GitHub Actions cron picks a new pirate every morning; the README doubles as a guide to building your own daily-anything game.",
   "tech": [
    "Vanilla JS",
    "Python",
    "GitHub Actions",
    "GitHub Pages"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "a weekend",
   "category": "Games & Play",
@@ -311,20 +302,21 @@
   "links": {
    "live": "https://chinmaygit8765.github.io/one-piece-guess-game/",
    "repo": "https://github.com/ChinmayGit8765/one-piece-guess-game"
-  }
+  },
+  "featured": true
  },
  {
   "name": "Side by Side",
   "slug": "side-by-side",
-  "tagline": "A self-updating Collingwood super-fan suite — reskinnable for any AFL club.",
-  "description": "Next-game countdown, form guide, live ladder and a daily news sweep, rebuilt every morning by a cron job from the free Squiggle API and Google News. Everything club-specific lives in one config file — fork it, edit club.json, and it's your club's suite.",
+  "tagline": "A self-updating Collingwood super-fan suite \u2014 reskinnable for any AFL club.",
+  "description": "Next-game countdown, form guide, live ladder and a daily news sweep, rebuilt every morning by a cron job from the free Squiggle API and Google News. Everything club-specific lives in one config file \u2014 fork it, edit club.json, and it's your club's suite.",
   "tech": [
    "Vanilla JS",
    "Python",
    "Squiggle API",
    "GitHub Actions"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "a weekend",
   "category": "Games & Play",
@@ -337,7 +329,7 @@
    "Next-game countdown, form guide and live ladder from the free Squiggle API",
    "Daily news sweep via Google News",
    "Reskins to any AFL club by editing one config file",
-   "Rebuilt every morning by a cron job — nothing to host"
+   "Rebuilt every morning by a cron job \u2014 nothing to host"
   ],
   "lessons": "Config file over fork. Making the club swappable took an hour and turned a personal page into something anyone can use.",
   "links": {
@@ -348,8 +340,8 @@
  {
   "name": "holdem-ml",
   "slug": "holdem-ml",
-  "tagline": "Texas Hold'em vs bots trained from scratch — no PyTorch, every gradient hand-checked.",
-  "description": "Full no-limit Hold'em (terminal + browser multiplayer) against a from-scratch poker AI: hand-written NN framework, Monte-Carlo CFR blueprint distilled into a self-play RL policy, online opponent modelling that learns your specific leaks, card vision that reads table photos, and an analyser that grades every decision in big blinds.",
+  "tagline": "Public home for a from-scratch Hold'em stack \u2014 documentation only until source lands.",
+  "description": "The public repository is the project home and architecture write-up. Its README states the source is not there yet and that measured results ship with the source, not before. This index does not repeat benchmark numbers that are not in the public tree. Star or watch the repo for the release.",
   "tech": [
    "Python",
    "NumPy",
@@ -357,21 +349,19 @@
    "Self-play RL",
    "Computer vision"
   ],
-  "status": "in development",
+  "status": "concept",
   "year": "2026",
   "devTime": "days, ongoing",
   "category": "Games & Play",
-  "featured": null,
+  "featured": false,
   "agents": null,
-  "architecture": "Everything from scratch in NumPy: a hand-written NN framework (gradients checked against finite differences to 1e-6), external-sampling Monte-Carlo CFR over an engineered abstraction, REINFORCE self-play on the real engine, and a two-headed rank/suit CNN for card vision. Multiplayer table served on the Python standard library.",
+  "architecture": "Documented as a no-limit Hold'em engine with a hand-written NN, Monte-Carlo CFR blueprint, self-play RL, online opponent modelling and a card-vision analyser. That design is written down publicly; the implementation is not in this repository yet.",
   "highlights": [
-   "Hand evaluator exact over all 2,598,960 five-card hands; ~450k evals/sec in pure NumPy",
-   "Trained bot beats every baseline; the difficulty ladder is real — novice loses where pro crushes",
-   "Opponent model learns you mid-game from public info only, then bluffs you exactly as often as you deserve",
-   "98.9% end-to-end card reading on rendered tables, validated on deck styles it never trained on",
-   "Every README number produced by benchmark code in the repo, honest-limitations section included"
+   "Public README and diagrams describe the intended stack",
+   "Explicit pre-release status: source lands here later",
+   "Benchmarks are withheld until the code that produced them is public"
   ],
-  "lessons": "Measuring beats guessing: sweeping the blueprint blend weight found the strong bot played better with none of it — so the textbook-but-exploitable blueprint became the personality of the easy levels instead.",
+  "lessons": "A documentation-only home is still a public claim. Do not quote numbers the tree cannot reproduce.",
   "repo": "ChinmayGit8765/holdem-ml",
   "links": {
    "repo": "https://github.com/ChinmayGit8765/holdem-ml"
@@ -397,10 +387,10 @@
   "repo": "Monash-FIT3170/2026W2-GarticHands",
   "architecture": "MediaPipe hand tracking in the browser turns a webcam into a brush. Round state lives on an Express + Socket.IO server so no client can desync the party loop. Dockerised for the team.",
   "highlights": [
-   "Draw with your hands in front of a webcam — no mouse, no stylus",
+   "Draw with your hands in front of a webcam \u2014 no mouse, no stylus",
    "Server-held round state machine drives the full Gartic-style loop",
    "Real-time multiplayer over Socket.IO",
-   "Built with a Monash FIT3170 team — the only group project in the index"
+   "Built with a Monash FIT3170 team \u2014 the only group project in the index"
   ],
   "lessons": "Hand tracking is the easy half. Keeping eight browsers agreed on whose turn it is was the actual project.",
   "links": {
@@ -420,7 +410,7 @@
    "Anchor",
    "Ollama"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "~2 weeks",
   "category": "Web & Product",
@@ -433,7 +423,7 @@
    "ERC-20, ERC-721, ERC-1155 and Solana SPL templates",
    "Every Solidity contract compiled in-process before it's written out",
    "Emits a DEPLOY.md with copy-pasteable commands, not just a contract",
-   "Optional AI patching runs locally through Ollama — nothing leaves your machine",
+   "Optional AI patching runs locally through Ollama \u2014 nothing leaves your machine",
    "Published on npm; MIT licensed"
   ],
   "lessons": "Refuse to write a file that doesn't compile. It turns a code generator into a tool you can trust half-asleep.",
@@ -456,19 +446,19 @@
    "Tailwind",
    "Docker"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "~2 weeks",
   "category": "Web & Product",
   "repo": "ChinmayGit8765/ContactUsPage",
   "architecture": "NestJS + TypeORM over Postgres on the API side, Next.js 14 App Router with Tailwind on the front. Validation schemas run in both places; the server never trusts the client's word for it.",
   "highlights": [
-   "Validation done properly on both sides — the server re-checks everything",
+   "Validation done properly on both sides \u2014 the server re-checks everything",
    "NestJS + TypeORM + PostgreSQL API with real layering",
    "Next.js 14 + Tailwind frontend",
    "One `docker compose up` brings the whole stack"
   ],
-  "lessons": "'Simple CRUD form' is the best place to practise the boring parts — layering, validation, migrations — where nothing exotic hides the mistakes.",
+  "lessons": "'Simple CRUD form' is the best place to practise the boring parts \u2014 layering, validation, migrations \u2014 where nothing exotic hides the mistakes.",
   "links": {
    "repo": "https://github.com/ChinmayGit8765/ContactUsPage"
   }
@@ -476,7 +466,7 @@
  {
   "name": "TODO List",
   "slug": "todo-list",
-  "tagline": "A deliberately simple todo app built like a real codebase — .NET + Angular.",
+  "tagline": "A deliberately simple todo app built like a real codebase \u2014 .NET + Angular.",
   "description": "A todo app that is deliberately boring on the surface and deliberately rigorous underneath: .NET Web API with proper layering, Angular frontend with presentational components, tests on both sides. Subtasks, inline edit, active/completed tabs. Built as a reference implementation for how a small app should actually be structured.",
   "tech": [
    "C#",
@@ -485,12 +475,12 @@
    "Angular",
    "TypeScript"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "~2 weeks",
   "category": "Web & Product",
   "repo": "ChinmayGit8765/TODO-list",
-  "architecture": ".NET Web API split into real layers — controllers, services, data — rather than one fat controller. Angular front end keeps components presentational and pushes state up. Both halves have tests.",
+  "architecture": ".NET Web API split into real layers \u2014 controllers, services, data \u2014 rather than one fat controller. Angular front end keeps components presentational and pushes state up. Both halves have tests.",
   "highlights": [
    "Subtasks, inline edit, and active/completed tabs",
    "Proper layering in the API instead of logic in controllers",
@@ -505,8 +495,8 @@
  {
   "name": "Exaryn Studio",
   "slug": "exaryn-studio",
-  "tagline": "This site — portfolio, daily AI signal digest, and the Obsidian brain.",
-  "description": "The studio's own site: a pure static portfolio with no framework and no build step, a self-updating daily AI digest rebuilt every morning by a GitHub Actions cron, and the Exaryn Brain — an Obsidian vault of markdown notes about everything built here, browsable in-page with backlinks and a graph view.",
+  "tagline": "This site \u2014 public portfolio, daily AI signal, and an Obsidian vault in the browser.",
+  "description": "The studio's public front door: static HTML with no framework and no build step, a daily AI digest rebuilt by a GitHub Actions cron, and the Exaryn Brain \u2014 an Obsidian vault of markdown notes, browsable in-page. Generated repository metadata is public-only.",
   "tech": [
    "Vanilla JS",
    "CSS",
@@ -515,7 +505,7 @@
    "GitHub Pages",
    "Obsidian"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2026",
   "devTime": "ongoing",
   "category": "Infrastructure",
@@ -526,11 +516,10 @@
   ],
   "architecture": "No framework, no build step. HTML pages fetch JSON out of `/data`; Python scripts in `/scripts` regenerate that JSON on a cron; GitHub Actions commits the result and redeploys Pages.",
   "highlights": [
-   "Zero dependencies — the whole site is HTML, CSS and one JS file per surface",
+   "Zero install for readers \u2014 HTML, CSS and one JS file per surface",
    "Daily AI digest with a browsable day-by-day archive",
-   "Repo metadata swept from the GitHub API into `data/repos.json`",
-   "The Exaryn Brain: a real Obsidian vault, readable in the browser",
-   "Everything regenerates on one morning cron"
+   "Public repo metadata swept into data/repos.json",
+   "The Exaryn Brain: a real Obsidian vault, readable in the browser"
   ],
   "lessons": "A static site that regenerates itself is the cheapest infrastructure there is. The cron job is the whole backend.",
   "links": {
@@ -546,7 +535,7 @@
   "tech": [
    "Python"
   ],
-  "status": "shipped",
+  "status": "available",
   "year": "2025",
   "devTime": "a few evenings",
   "category": "Agents & Tooling",
@@ -565,25 +554,53 @@
  {
   "name": "PDF Compiler",
   "slug": "pdf-compiler",
-  "tagline": "An early browser-side document compiler — the oldest thing still in the index.",
-  "description": "An early experiment in assembling and compiling documents in the browser. Kept in the index as the honest starting point: it predates the studio, has no tests, and is here because the timeline should include the beginning, not just the parts that went well.",
+  "tagline": "Merge a zip of PDFs into one file \u2014 CLI or a two-field Tkinter window.",
+  "description": "An early utility: drop in a .zip of scanned pages (PDFs, including nested folders), sort by path, and write one merged PDF with PyPDF2. Two entry points \u2014 PDFCompiler.py and a Tkinter GUI \u2014 plus committed Windows executables in dist/. No requirements.txt, no tests, no page-order control beyond filename sort. Kept in the index as early work, described as it actually is.",
   "tech": [
-   "HTML",
-   "JavaScript"
+   "Python",
+   "PyPDF2",
+   "Tkinter"
   ],
   "status": "archived",
   "year": "2025",
   "devTime": "a weekend",
   "category": "Web & Product",
   "repo": "ChinmayGit8765/PDFCompiler",
-  "architecture": "Browser-side only. No build, no server, no tests.",
+  "architecture": "Extract the zip into a TemporaryDirectory, os.walk for *.pdf, sort paths, feed PyPDF2.PdfMerger. The GUI is a file picker and save dialog over the same function.",
   "highlights": [
-   "The oldest surviving project in the index",
-   "Kept unchanged as a before-picture"
+   "CLI: python PDFCompiler.py <zip> <output.pdf>",
+   "Tkinter GUI with Browse / Compile and a save dialog",
+   "Prebuilt Windows executables committed in dist/"
   ],
-  "lessons": "Left as-is on purpose. Every index should contain at least one thing you'd write differently now.",
+  "lessons": "Left in the index on purpose. The timeline should include the beginning, described accurately.",
   "links": {
    "repo": "https://github.com/ChinmayGit8765/PDFCompiler"
+  }
+ },
+ {
+  "name": "mploy",
+  "slug": "mploy",
+  "tagline": "Automatically updated job board for Australian students looking for internships and work.",
+  "description": "A Next.js job board that refreshes itself. Public source and a live site at jobs.monashcoding.com. Built to help Australian students find internships and jobs rather than as a studio flagship.",
+  "tech": [
+   "Next.js",
+   "TypeScript"
+  ],
+  "status": "available",
+  "year": "2026",
+  "devTime": "ongoing",
+  "featured": false,
+  "category": "Web & Product",
+  "repo": "ChinmayGit8765/mploy-app",
+  "architecture": "Next.js app with a public listing at jobs.monashcoding.com. Details beyond the public README are not claimed here.",
+  "highlights": [
+   "Live board at jobs.monashcoding.com",
+   "Public source on GitHub"
+  ],
+  "lessons": "A useful public page does not need a studio origin story.",
+  "links": {
+   "live": "https://jobs.monashcoding.com/",
+   "repo": "https://github.com/ChinmayGit8765/mploy-app"
   }
  }
 ]

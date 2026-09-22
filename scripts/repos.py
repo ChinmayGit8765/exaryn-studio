@@ -1,21 +1,17 @@
 #!/usr/bin/env python3
-"""Build data/repos.json — metadata for every repo the studio owns.
+"""Build data/repos.json — public repository metadata only.
 
-Sweeps the GitHub REST API for all repos under OWNER, keeps the fields the
+Sweeps the GitHub REST API for public repos under OWNER, keeps the fields the
 brain actually uses, and (unless --fast) enriches each one with its language
 byte-breakdown and the first useful paragraph of its README.
 
 Stdlib only, so CI needs no pip install.
 
 Auth:
-  GITHUB_TOKEN  — raises the rate limit from 60 to 5000 req/h. GitHub Actions
-                  injects one for free, but it is scoped to a single repo, so
-                  listing still goes through the public search API.
-  GH_PAT        — a personal access token with `repo` scope. Only this can
-                  enumerate private repositories. Optional.
-
-Private repos already recorded in data/repos.json are kept across a run that
-cannot see them, so a sweep without a PAT never silently deletes them.
+  GITHUB_TOKEN / GH_TOKEN / GH_PAT  — optional. Any of these only raise the
+                  rate limit. Listing always uses the public search API with
+                  `is:public`. Private repositories are never written, and a
+                  previous private row is never retained.
 
 Run:  python scripts/repos.py            # full sweep, needs network
       python scripts/repos.py --fast     # skip languages + READMEs
@@ -30,6 +26,9 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from public_meta import is_public_repo, public_document, select_public_repos
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "repos.json"
 
@@ -84,22 +83,23 @@ def api(path: str, raw: bool = False):
 
 
 def list_repos() -> list[dict]:
-    """Every repo we can see.
+    """Public repositories owned by OWNER.
 
-    A personal access token enumerates the account directly, private repos
-    included. Anything else — including the single-repo token GitHub Actions
-    injects — falls back to the public search API.
+    Always uses the public user-repos listing with `type=public`. A token, if
+    present, only raises the rate limit — it never switches listing to the
+    authenticated /user/repos endpoint (which can include private rows).
     """
-    pat = os.environ.get("GH_PAT", "")
-    path = (f"/user/repos?per_page={PER_PAGE}&affiliation=owner&page=" if pat
-            else f"/search/repositories?q=user:{OWNER}&per_page={PER_PAGE}&page=")
+    path = f"/users/{OWNER}/repos?type=public&per_page={PER_PAGE}&page="
     repos, page = [], 1
     while True:
         got = api(f"{path}{page}")
-        batch = got if isinstance(got, list) else (got or {}).get("items", [])
+        batch = got if isinstance(got, list) else []
         if not batch:
             break
-        repos.extend(r for r in batch if (r.get("owner") or {}).get("login") == OWNER)
+        repos.extend(
+            r for r in batch
+            if (r.get("owner") or {}).get("login") == OWNER and is_public_repo(r)
+        )
         if len(batch) < PER_PAGE:
             break
         page += 1
@@ -162,46 +162,43 @@ def main() -> None:
         print("no repos returned — check network/token; leaving data/repos.json alone",
               file=sys.stderr)
         sys.exit(1)
-    print(f"  {len(repos)} repos")
+    repos = select_public_repos(repos)
+    print(f"  {len(repos)} public repos")
 
     if not fast:
         with ThreadPoolExecutor(max_workers=6) as pool:
             repos = list(pool.map(enrich, repos))
 
-    # Keep whatever the previous run learned about repos this run couldn't reach.
+    # Keep language/README enrichment for public repos this run still sees.
+    # Never retain a row that is private or that this public sweep omitted.
     previous = {}
     if OUT.exists():
         try:
-            previous = {r["name"]: r for r in json.loads(OUT.read_text())["repos"]}
+            previous = {
+                r["name"]: r
+                for r in select_public_repos(json.loads(OUT.read_text())["repos"])
+            }
         except Exception:
             pass
 
     rows = []
     for repo in repos:
         row = shrink(repo)
+        if not is_public_repo(row):
+            continue
         old = previous.get(row["name"], {})
         row["languages"] = row["languages"] or old.get("languages") or {}
         row["readme"] = row["readme"] or old.get("readme") or ""
         rows.append(row)
 
-    # A sweep without a PAT cannot see private repos — keep the ones we already
-    # know about rather than deleting them from the record.
-    seen = {r["name"] for r in rows}
-    kept = [r for name, r in previous.items()
-            if name not in seen and r.get("private")]
-    if kept:
-        print(f"  keeping {len(kept)} private repos this run could not see")
-    rows.extend(kept)
     rows.sort(key=lambda r: r["pushed_at"] or "", reverse=True)
-
-    OUT.write_text(json.dumps({
-        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "owner": OWNER,
-        "count": len(rows),
-        "source": "GitHub REST API",
-        "repos": rows,
-    }, indent=2) + "\n")
-    print(f"wrote {OUT.relative_to(OUT.parent.parent)} — {len(rows)} repos")
+    doc = public_document(
+        {"repos": rows},
+        datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        OWNER,
+    )
+    OUT.write_text(json.dumps(doc, indent=2) + "\n")
+    print(f"wrote {OUT.relative_to(OUT.parent.parent)} — {doc['count']} public repos")
 
 
 if __name__ == "__main__":

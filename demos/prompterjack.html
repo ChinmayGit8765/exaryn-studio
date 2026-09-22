@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prompterjack — interactive walkthrough · Exaryn</title>
-  <meta name="description" content="A 70-second interactive walkthrough of Prompterjack: design a multi-agent system visually, score its maintainability, and export runnable code for five frameworks." />
+  <meta name="description" content="Staged Agent Architect canvas walkthrough for Prompterjack — not a capture of the current PrompterJack landing page." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="demo.css?v=2" />
+  <link rel="stylesheet" href="demo.css?v=3" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
   <style>
     /* ---- Prompterjack skin: light canvas app, one violet ---- */
@@ -68,10 +68,11 @@
   </style>
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 
   <header class="demo-header">
     <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
-    <nav class="demo-nav mono">
+    <nav class="demo-nav mono" aria-label="Primary">
       <a href="../projects.html">Work</a>
       <a href="../notes.html">Notes</a>
       <a href="../feed.html">Feed</a>
@@ -80,7 +81,7 @@
     </nav>
   </header>
 
-  <div class="demo-wrap">
+  <div class="demo-wrap" id="top">
     <div class="demo-title">
       <h1>Prompterjack — <em>how it works</em></h1>
       <span class="sim-tag">SIMULATED WALKTHROUGH · NOT A SCREEN RECORDING</span>
@@ -187,7 +188,7 @@
         { name: "Export the code", at: 53 },
       ],
       cues: [
-        { at: 0.3, sub: "<b>Prompterjack</b> — design multi-agent systems visually, export code that actually runs.", do: () => on("#pj-shell") },
+        { at: 0.3, sub: "<b>Prompterjack</b> — staged Agent Architect canvas. The live product starts with a public-repo scan at prompterjack.com.", do: () => on("#pj-shell") },
         { at: 4, sub: "Start from an architecture, not a blank page.", do: () => on("#tpl-row") },
         { at: 7, sub: "<b>Supervisor–workers</b>: one orchestrator, three specialists.", do: () => demoEl("#tpl-sw").classList.add("sel") },
         { at: 11, sub: "Drop in the agents…", do: () => on("#node-sup") },
@@ -208,7 +209,7 @@
         { at: 53, sub: "Export runnable code — Strands, OpenAI Agents, LangChain/LangGraph, LlamaIndex.", do: () => on("#export-panel") },
         { at: 56.5, sub: "Same graph, five frameworks. Pick your poison.", do: () => { demoEl("#tab-lg").classList.add("sel"); on("#code"); } },
         { at: 63, sub: "Copy, paste, run.", do: () => on("#copied") },
-        { at: 66.5, sub: "Prompterjack is live — go break it.", do: () => on("#end-card") },
+        { at: 66.5, sub: "This walkthrough is staged. The live product is at <b>prompterjack.com</b>.", do: () => on("#end-card") },
       ],
       reset() {
         stage.querySelectorAll(".on").forEach((el) => el.classList.remove("on"));

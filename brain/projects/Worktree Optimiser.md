@@ -5,8 +5,8 @@ tags: [project, agents-tooling]
 status: in development
 year: 2026
 category: Agents & Tooling
-repo: ChinmayGit8765/worktree-optimiser
 generated: true
+repo: ChinmayGit8765/worktree-optimiser
 ---
 
 > [!warning] Generated note
@@ -16,7 +16,7 @@ generated: true
 
 *Every branch of a repo as its own containerised dev server, routed by hostname.*
 
-Run all your worktrees at once — main.localhost, fix-login.localhost — each in its own Docker container behind Traefik, managed from one dashboard. Review a PR and your own work side by side in two tabs. Ships an MCP server so coding agents can drive it too.
+Run worktrees at once — main.localhost, fix-login.localhost — each in its own Docker container behind Traefik, managed from one dashboard. Detection proposes a runnable config; you confirm. Ships an MCP server so coding agents can create, probe and diagnose environments. Public source is MIT-licensed. Not published to npm yet; run from a clone. Kubernetes backend is documented as planned, not implemented.
 
 ## How it is put together
 
@@ -24,11 +24,10 @@ Traefik does hostname routing; every worktree gets a container and a `<branch>.l
 
 ## What is actually in it
 
-- `main.localhost`, `fix-login.localhost` — every branch live at once
-- Container per worktree, routed by Traefik, no port juggling
-- Review a PR and your own branch side by side in two tabs
-- MCP server so Claude Code can spin environments up and down itself
-- MIT licensed
+- Hostname and direct-port routing, no port juggling
+- No database: git worktrees plus Docker labels are the state
+- MCP tools for create, probe, diagnose; delete is off by default
+- Doctor command names the fix for each environment failure
 
 ## What it taught
 

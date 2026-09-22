@@ -154,7 +154,7 @@ async function boot() {
     ]);
     vault = v;
     projects = p;
-    repos = r.repos || [];
+    repos = (r.repos || []).filter((row) => !row.private && row.visibility !== "private");
   } catch {
     A("#tier-grid").innerHTML =
       `<p class="index-empty mono">COULDN'T LOAD THE STRUCTURE — IF YOU'RE ON file://, RUN: npm run dev</p>`;

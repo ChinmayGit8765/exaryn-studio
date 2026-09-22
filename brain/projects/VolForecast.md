@@ -2,11 +2,11 @@
 title: VolForecast
 type: project
 tags: [project, quant-finance]
-status: shipped
+status: available
 year: 2026
 category: Quant & Finance
-repo: ChinmayGit8765/VolatilityModel
 generated: true
+repo: ChinmayGit8765/VolatilityModel
 ---
 
 > [!warning] Generated note
@@ -38,7 +38,7 @@ Prefect orchestrates the lifecycle; MLflow holds the champion/challenger registr
 
 | | |
 | --- | --- |
-| Status | shipped |
+| Status | available |
 | Year | 2026 |
 | Dev time | ~1 month |
 | Category | Quant & Finance |

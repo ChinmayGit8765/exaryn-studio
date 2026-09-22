@@ -5,8 +5,8 @@ tags: [project, web-product]
 status: archived
 year: 2025
 category: Web & Product
-repo: ChinmayGit8765/PDFCompiler
 generated: true
+repo: ChinmayGit8765/PDFCompiler
 ---
 
 > [!warning] Generated note
@@ -14,22 +14,23 @@ generated: true
 
 # PDF Compiler
 
-*An early browser-side document compiler — the oldest thing still in the index.*
+*Merge a zip of PDFs into one file — CLI or a two-field Tkinter window.*
 
-An early experiment in assembling and compiling documents in the browser. Kept in the index as the honest starting point: it predates the studio, has no tests, and is here because the timeline should include the beginning, not just the parts that went well.
+An early utility: drop in a .zip of scanned pages (PDFs, including nested folders), sort by path, and write one merged PDF with PyPDF2. Two entry points — PDFCompiler.py and a Tkinter GUI — plus committed Windows executables in dist/. No requirements.txt, no tests, no page-order control beyond filename sort. Kept in the index as early work, described as it actually is.
 
 ## How it is put together
 
-Browser-side only. No build, no server, no tests.
+Extract the zip into a TemporaryDirectory, os.walk for *.pdf, sort paths, feed PyPDF2.PdfMerger. The GUI is a file picker and save dialog over the same function.
 
 ## What is actually in it
 
-- The oldest surviving project in the index
-- Kept unchanged as a before-picture
+- CLI: python PDFCompiler.py <zip> <output.pdf>
+- Tkinter GUI with Browse / Compile and a save dialog
+- Prebuilt Windows executables committed in dist/
 
 ## What it taught
 
-> Left as-is on purpose. Every index should contain at least one thing you'd write differently now.
+> Left in the index on purpose. The timeline should include the beginning, described accurately.
 
 ## Facts
 
@@ -50,7 +51,7 @@ Browser-side only. No build, no server, no tests.
 
 ## Stack
 
-HTML · [[JavaScript]]
+[[Python]] · PyPDF2 · Tkinter
 
 ## Links
 
