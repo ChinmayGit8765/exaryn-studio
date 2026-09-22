@@ -1,0 +1,12 @@
+{
+  "name": "exaryn-marketing-private-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker that serves the marketing workspace only to Cloudflare Access-authenticated users (EXA-59).",
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "check": "npx -y wrangler@4 deploy --dry-run --outdir /tmp/exaryn-marketing-private-dry-run",
+    "deploy": "npx -y wrangler@4 deploy"
+  }
+}
