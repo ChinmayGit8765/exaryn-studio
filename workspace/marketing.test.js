@@ -976,6 +976,25 @@ test("brief lock rejects edits until unlocked, and claims keep unknown unless ma
   assert.equal(unlocked.state.briefs[0].claims[0].evidenceStatus, "unsupported");
 });
 
+test("claim text containing a pipe survives the edit-form round trip", () => {
+  const store = fresh();
+  const created = store.upsertBrief({
+    name: "Pipe brief",
+    claims: [{ text: "Warm | dimmable light", evidenceStatus: "supported" }],
+  });
+  assert.equal(created.ok, true);
+  const brief = created.state.briefs[0];
+  const resaved = store.upsertBrief({
+    id: brief.id,
+    name: brief.name,
+    claimsText: storeLib.formatClaimsText(brief.claims),
+  });
+  assert.equal(resaved.ok, true);
+  assert.deepEqual(resaved.state.briefs[0].claims, [
+    { text: "Warm | dimmable light", evidenceStatus: "supported" },
+  ]);
+});
+
 test("review gates distinguish internal QC from approval and keep round", () => {
   const seeded = seedJourney(fresh());
   const qc = seeded.store.upsertReview({

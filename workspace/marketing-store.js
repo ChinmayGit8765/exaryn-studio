@@ -488,9 +488,11 @@
         .map((line) => line.trim())
         .filter(Boolean)
         .map((line) => {
-          const parts = line.split("|").map((part) => part.trim());
-          const text = parts[0] || "";
-          const status = parts[1] || "unknown";
+          // Split on the last "|" so claim text that itself contains "|" survives
+          // the formatClaimsText -> edit form -> save round trip.
+          const cut = line.lastIndexOf("|");
+          const text = (cut >= 0 ? line.slice(0, cut) : line).trim();
+          const status = cut >= 0 ? line.slice(cut + 1).trim() : "unknown";
           return { text, evidenceStatus: CLAIM_EVIDENCE.includes(status) ? status : "unknown" };
         });
     }
