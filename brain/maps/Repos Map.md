@@ -16,10 +16,12 @@ Public repositories on the account — 25 of them, including experiments that we
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[exaryn-studio]] | JavaScript | 2026-09-20 | 2.6 MB | [[Exaryn Studio]] |
-| [[quantflex-site]] | JavaScript | 2026-09-20 | 1.7 MB | [[QuantFlex]] |
-| [[one-piece-guess-game]] | JavaScript | 2026-09-19 | 1.3 MB | [[One Piece Guess]] |
-| [[collingwood-fan-suite]] | CSS | 2026-09-19 | 1.3 MB | [[Side by Side]] |
+| [[collingwood-fan-suite]] | CSS | 2026-09-23 | 1.4 MB | [[Side by Side]] |
+| [[quantflex-site]] | JavaScript | 2026-09-23 | 1.7 MB | [[QuantFlex]] |
+| [[quantflex]] | — | 2026-09-22 | 464 KB | [[QuantFlex]] |
+| [[ChinmayGit8765]] | Python | 2026-09-22 | 26 KB | — |
+| [[exaryn-studio]] | JavaScript | 2026-09-22 | 2.9 MB | [[Exaryn Studio]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-09-22 | 1.3 MB | [[One Piece Guess]] |
 | [[PDFCompiler]] | HTML | 2026-09-17 | 18.4 MB | [[PDF Compiler]] |
 | [[MyBlog]] | — | 2026-09-17 | 5 KB | — |
 | [[holdem-ml]] | — | 2026-09-17 | 16 KB | [[holdem-ml]] |
@@ -31,14 +33,12 @@ Public repositories on the account — 25 of them, including experiments that we
 | [[strength-quest]] | — | 2026-09-17 | 425 KB | [[Solo Strength Quest]] |
 | [[solo-strength-quest-play]] | JavaScript | 2026-09-17 | 9.9 MB | [[Solo Strength Quest]] |
 | [[SmartContract-Creator]] | TypeScript | 2026-09-17 | 1.2 MB | [[smartc]] |
-| [[quantflex]] | — | 2026-09-17 | 237 KB | [[QuantFlex]] |
 | [[json_api_simplifier]] | Python | 2026-09-17 | 59 KB | [[JSON API Simplifier]] |
 | [[FinancialServicesDashboard]] | Java | 2026-09-17 | 2.6 MB | [[QuantLens]] |
 | [[ContactUsPage]] | TypeScript | 2026-09-17 | 628 KB | [[Contact Flow]] |
 | [[claude-code-test]] | Vue | 2026-09-17 | 135 KB | — |
 | [[AlfredOpenSource]] | Python | 2026-09-17 | 949 KB | [[ALFRED]] |
 | [[mploy-app]] | — | 2026-09-01 | 1.7 MB | [[mploy]] |
-| [[ChinmayGit8765]] | Python | 2026-09-01 | 24 KB | — |
 | [[chinmay-tech-portfolio]] | — | 2025-09-20 | — | — |
 | [[Universal-LPC-Spritesheet-Character-Generator]] | — | 2025-09-08 | 1513.0 MB | — |
 

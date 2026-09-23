@@ -44,10 +44,10 @@ Public workbench at app.quantflex.dev, with methodology and a recorded engine sn
 | Category | Quant & Finance |
 | Repository | [ChinmayGit8765/quantflex](https://github.com/ChinmayGit8765/quantflex) |
 | Primary language | — |
-| Size | 237 KB |
+| Size | 464 KB |
 | Licence | none declared |
 | Created | 2026-08-24 |
-| Last push | 2026-09-17 |
+| Last push | 2026-09-22 |
 | Visibility | public |
 
 ## Stack
