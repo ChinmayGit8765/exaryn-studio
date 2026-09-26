@@ -46,7 +46,7 @@ Same shape as One Piece Guess: cron job, Python fetcher, committed JSON, static 
 | Size | 1.4 MB |
 | Licence | none declared |
 | Created | 2026-08-24 |
-| Last push | 2026-09-25 |
+| Last push | 2026-09-26 |
 | Visibility | public |
 | Language mix | CSS 32.4%, JavaScript 24.7%, Python 22.1%, HTML 20.8% |
 
