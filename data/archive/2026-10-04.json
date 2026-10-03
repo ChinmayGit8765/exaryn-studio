@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T22:00:47.421685+00:00",
+ "generated_at": "2026-10-03T22:07:14.200486+00:00",
  "items": [
   {
    "title": "September sponsors-only newsletter",
@@ -24,6 +24,14 @@
    "kind": "news",
    "published": "2026-10-03T18:06:45+00:00",
    "summary": "Article URL: https://notoriousbfg.com/hole-punch/ Comments URL: https://news.ycombinator.com/item?id=49946393 Points: 138 # Comments: 43"
+  },
+  {
+   "title": "Pop!_OS bans AI-generated code from much of its codebase",
+   "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-03T17:57:03+00:00",
+   "summary": "Article URL: https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/ Comments URL: https://news.ycombinator.com/item?id=49946321 Points: 91 # Comments: 126"
   },
   {
    "title": "Capcom is preparing for a ‘future where we create games together with AI’",
@@ -64,6 +72,22 @@
    "kind": "news",
    "published": "2026-10-03T14:00:00+00:00",
    "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work."
+  },
+  {
+   "title": "US killer's sentence quashed because of AI video of victim shown in court",
+   "url": "https://www.bbc.com/news/articles/cwgkvygg5nzvo",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-03T13:34:18+00:00",
+   "summary": "Article URL: https://www.bbc.com/news/articles/cwgkvygg5nzvo Comments URL: https://news.ycombinator.com/item?id=49944127 Points: 68 # Comments: 60"
+  },
+  {
+   "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+   "url": "https://tej.as/blog/aleph-alpha-kolibri",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-03T10:43:51+00:00",
+   "summary": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-soverei... Comments URL: https://news.ycombinator.com/item?id=49943034 Points: 409 # Comments: 11"
   },
   {
    "title": "Kolibri: A Sovereign Open-Weight Model",
@@ -138,6 +162,14 @@
    "summary": "Apple will add new limits for \"full disk access\" on Mac in response to risks posed by AI agents, as reported earlier by TechCrunch. In an update on Friday, Apple says it's rolling out new controls to \"ensure that users…"
   },
   {
+   "title": "Show HN: Made an open-source Lego AI generator",
+   "url": "https://github.com/anteloc/ldraw-nova",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-02T20:00:15+00:00",
+   "summary": "Hi there :-) New on HN, first time posting. Past year, around December, I started experimenting with making ChatGPT and Claude generate source code in LDraw language. This LDraw is literally an \"assembly\" language, a…"
+  },
+  {
    "title": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
    "url": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
    "source": "TechCrunch AI",
@@ -152,6 +184,14 @@
    "kind": "news",
    "published": "2026-10-02T18:27:47+00:00",
    "summary": "In a throwback to MySpace-style internet drama, Shivon Zilis announced that she and the father of her four children, Elon Musk, had broken up on X. To do so, she quote-tweeted a post from \"Big Tech Alert,\" an account…"
+  },
+  {
+   "title": "From the creator of Redis; run LLM locally with ds4",
+   "url": "https://dwarfstar.sh/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-02T18:01:16+00:00",
+   "summary": "Article URL: https://dwarfstar.sh/ Comments URL: https://news.ycombinator.com/item?id=49936575 Points: 338 # Comments: 97"
   },
   {
    "title": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
@@ -183,6 +223,14 @@
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-10-02T15:19:50+00:00"
+  },
+  {
+   "title": "AI Makes Me Sad",
+   "url": "https://mondobe.com/ai-makes-me-sad",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-02T15:18:00+00:00",
+   "summary": "Article URL: https://mondobe.com/ai-makes-me-sad Comments URL: https://news.ycombinator.com/item?id=49934487 Points: 189 # Comments: 235"
   },
   {
    "title": "The latest AI news we announced in September 2026",
