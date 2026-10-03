@@ -17,46 +17,124 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  site:
+  # Cron / manual runs regenerate the data and push it. Plain pushes deploy
+  # as-is, and the bot commit below uses [skip ci] so it does not start another run.
+  refresh:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history so a re-run can rebase onto the branch after it has moved.
+          fetch-depth: 0
 
-      # Cron / manual runs regenerate the data; plain pushes deploy as-is.
       - name: Refresh daily digest
-        if: github.event_name != 'push'
         run: python3 scripts/digest.py
 
       # A failed sweep must not blank the metadata — repos.py exits non-zero
       # and leaves the previous data/repos.json standing.
       - name: Sweep repo metadata
-        if: github.event_name != 'push'
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/repos.py
 
       - name: Rebuild the brain
-        if: github.event_name != 'push'
         run: python3 scripts/brain.py
 
       - name: Commit refreshed data
-        if: github.event_name != 'push'
+        id: commit
         run: |
           git config user.name "exaryn-digest-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/ brain/
+          branch="${GITHUB_REF_NAME}"
           if git diff --cached --quiet; then
             echo "nothing changed, nothing to commit"
+            git fetch origin "$branch"
+            if git merge-base --is-ancestor HEAD "origin/$branch"; then
+              echo "sha=$(git rev-parse "origin/$branch")" >> "$GITHUB_OUTPUT"
+            else
+              echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+            fi
           else
             git commit -m "data: daily refresh — digest, repos, brain [skip ci]"
-            git push
+            # Re-runs checkout this workflow's original SHA, so the branch may
+            # already contain the same refresh. Replay onto the latest tip
+            # before pushing so a stale checkout is not rejected as non-fast-forward.
+            saved=$(git rev-parse HEAD)
+            pushed=0
+            for attempt in 1 2 3; do
+              git fetch origin "$branch"
+              if ! git rebase "origin/$branch"; then
+                echo "rebase conflict; replaying regenerated data/ and brain/ onto origin/$branch"
+                git rebase --abort
+                git reset --hard "origin/$branch"
+                git rm -r -q --ignore-unmatch data brain
+                git checkout "$saved" -- data brain
+                git add data brain
+                if git diff --cached --quiet; then
+                  echo "refreshed data already on $branch"
+                else
+                  git commit -m "data: daily refresh — digest, repos, brain [skip ci]"
+                fi
+              fi
+              if git push origin "HEAD:$branch"; then
+                pushed=1
+                break
+              fi
+              echo "push rejected, retrying ($attempt)"
+              sleep 2
+            done
+            if [ "$pushed" -ne 1 ]; then
+              echo "failed to push refreshed data" >&2
+              exit 1
+            fi
+            echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/configure-pages@v5
+  deploy:
+    needs: [refresh]
+    # refresh is skipped on push; still deploy. Skip deploy only when refresh
+    # failed or the run was cancelled.
+    if: ${{ !cancelled() && (needs.refresh.result == 'success' || needs.refresh.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Jobs do not share a workspace. On a refresh, publish the commit just
+      # pushed; on a plain push, refresh is skipped and this is that push SHA.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.refresh.outputs.sha || github.sha }}
+
+      # configure-pages has failed on a transient Pages API 5xx. Retry it
+      # alone; upload and deploy still run once configuration succeeds.
+      - name: Configure GitHub Pages
+        id: configure_pages
+        uses: actions/configure-pages@v5
+        continue-on-error: true
+
+      - name: Wait before Pages retry
+        if: steps.configure_pages.outcome == 'failure'
+        run: sleep 10
+
+      - name: Configure GitHub Pages (attempt 2)
+        id: configure_pages_2
+        if: steps.configure_pages.outcome == 'failure'
+        uses: actions/configure-pages@v5
+        continue-on-error: true
+
+      - name: Wait before Pages retry
+        if: steps.configure_pages.outcome == 'failure' && steps.configure_pages_2.outcome == 'failure'
+        run: sleep 20
+
+      - name: Configure GitHub Pages (attempt 3)
+        if: steps.configure_pages.outcome == 'failure' && steps.configure_pages_2.outcome == 'failure'
+        uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
