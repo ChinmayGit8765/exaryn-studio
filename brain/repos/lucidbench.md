@@ -2,8 +2,8 @@
 title: lucidbench
 type: repo
 tags: [repo, public]
-language: TypeScript
-pushed: 2026-10-05
+language: Go
+pushed: 2026-10-06
 generated: true
 ---
 
@@ -14,7 +14,7 @@ generated: true
 
 *Open-source all-in-one AI workspace: your Claude, Codex, Grok and Cursor accounts in one clear place, a cross-model council, usage planning, and a Kubernetes job runner.*
 
-> Lucidbench is an open-source, all-in-one AI workspace: your Claude, ChatGPT/Codex, Grok and Cursor accounts in one clear workspace, a cross-model council that lets models check each other, usage planning across all of them, Linear, GitHub and Obsidian integrations, and a Kubernetes job runner for agent work.
+> Lucidbench is an open-source, all-in-one AI workspace for building things with the AI accounts you already pay for (Claude, ChatGPT/Codex, Grok and Cursor). It turns a messy idea into clear, reviewed work and runs agents on it, from one desktop app.
 
 ## Metadata
 
@@ -22,14 +22,14 @@ generated: true
 | --- | --- |
 | Full name | [ChinmayGit8765/lucidbench](https://github.com/ChinmayGit8765/lucidbench) |
 | Visibility | public |
-| Primary language | TypeScript |
-| Size | 732 KB |
+| Primary language | Go |
+| Size | 2.7 MB |
 | Licence | Apache-2.0 |
 | Default branch | main |
 | Created | 2026-10-03 |
-| Last push | 2026-10-05 |
+| Last push | 2026-10-06 |
 | Stars | 0 |
-| Open issues | 0 |
+| Open issues | 2 |
 | GitHub Pages | no |
 | Archived | no |
 
@@ -37,14 +37,15 @@ generated: true
 
 | Language | Share |
 | --- | --- |
-| TypeScript | 49.6% |
-| Go | 45.1% |
-| Rust | 2.7% |
-| CSS | 1.4% |
-| HTML | 0.6% |
-| Dockerfile | 0.2% |
-| JavaScript | 0.2% |
-| NSIS | 0.1% |
+| Go | 54.3% |
+| TypeScript | 42.9% |
+| CSS | 1.2% |
+| Rust | 0.6% |
+| Astro | 0.6% |
+| HTML | 0.2% |
+| JavaScript | 0.1% |
+| Dockerfile | 0.1% |
+| NSIS | 0.0% |
 
 ## Related
 
