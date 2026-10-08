@@ -16,10 +16,10 @@ Public repositories on the account — 26 of them, including experiments that we
 
 | Repo | Language | Last push | Size | Project |
 | --- | --- | --- | --- | --- |
-| [[collingwood-fan-suite]] | CSS | 2026-10-07 | 1.4 MB | [[Side by Side]] |
-| [[quantflex-site]] | JavaScript | 2026-10-07 | 1.8 MB | [[QuantFlex]] |
-| [[one-piece-guess-game]] | JavaScript | 2026-10-06 | 1.3 MB | [[One Piece Guess]] |
-| [[exaryn-studio]] | JavaScript | 2026-10-06 | 2.7 MB | [[Exaryn Studio]] |
+| [[collingwood-fan-suite]] | CSS | 2026-10-08 | 1.4 MB | [[Side by Side]] |
+| [[quantflex-site]] | JavaScript | 2026-10-08 | 1.8 MB | [[QuantFlex]] |
+| [[one-piece-guess-game]] | JavaScript | 2026-10-07 | 1.3 MB | [[One Piece Guess]] |
+| [[exaryn-studio]] | JavaScript | 2026-10-07 | 2.8 MB | [[Exaryn Studio]] |
 | [[lucidbench]] | Go | 2026-10-06 | 2.7 MB | — |
 | [[quantflex]] | — | 2026-09-22 | 464 KB | [[QuantFlex]] |
 | [[ChinmayGit8765]] | Python | 2026-09-22 | 26 KB | — |
