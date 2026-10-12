@@ -3,7 +3,7 @@ title: lucidbench
 type: repo
 tags: [repo, public]
 language: Go
-pushed: 2026-10-09
+pushed: 2026-10-12
 generated: true
 ---
 
@@ -23,11 +23,11 @@ generated: true
 | Full name | [ChinmayGit8765/lucidbench](https://github.com/ChinmayGit8765/lucidbench) |
 | Visibility | public |
 | Primary language | Go |
-| Size | 2.9 MB |
+| Size | 3.4 MB |
 | Licence | Apache-2.0 |
 | Default branch | main |
 | Created | 2026-10-03 |
-| Last push | 2026-10-09 |
+| Last push | 2026-10-12 |
 | Stars | 0 |
 | Open issues | 2 |
 | GitHub Pages | no |
@@ -37,14 +37,14 @@ generated: true
 
 | Language | Share |
 | --- | --- |
-| Go | 55.4% |
-| TypeScript | 42.1% |
-| CSS | 1.1% |
-| Rust | 0.6% |
+| Go | 55.2% |
+| TypeScript | 42.4% |
+| CSS | 1.0% |
+| Rust | 0.5% |
 | Astro | 0.5% |
 | HTML | 0.1% |
 | JavaScript | 0.1% |
-| Dockerfile | 0.1% |
+| Dockerfile | 0.0% |
 | NSIS | 0.0% |
 
 ## Related

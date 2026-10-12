@@ -1,21 +1,237 @@
 {
- "generated_at": "2026-10-11T21:09:29.509167+00:00",
+ "generated_at": "2026-10-12T21:09:07.240527+00:00",
  "items": [
   {
-   "title": "Be The Onion's Hero for Once",
-   "url": "https://mailchi.mp/email.theonion.com/archivehunt",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-11T19:43:32+00:00",
-   "summary": "Article URL: https://mailchi.mp/email.theonion.com/archivehunt Comments URL: https://news.ycombinator.com/item?id=50047055 Points: 117 # Comments: 5"
+   "title": "Every app on Earth is now open source... whether it likes it or not",
+   "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-10-12T19:15:23+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/wajoP_5Cpw8/hqdefault.jpg"
   },
   {
-   "title": "48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next",
-   "url": "https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next/",
+   "title": "Introducing OpenFatigue",
+   "url": "https://openfatigue.ai/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-12T19:08:21+00:00",
+   "summary": "Article URL: https://openfatigue.ai/ Comments URL: https://news.ycombinator.com/item?id=50061278 Points: 129 # Comments: 27"
+  },
+  {
+   "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+   "url": "https://github.com/openai/codex/issues/48195",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-12T18:29:04+00:00",
+   "summary": "Article URL: https://github.com/openai/codex/issues/48195 Comments URL: https://news.ycombinator.com/item?id=50060694 Points: 320 # Comments: 193"
+  },
+  {
+   "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+   "url": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-12T18:15:38+00:00",
+   "summary": "Python 3.15 is here ! Here's the essential What's new in Python 3.15 guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As someone who builds open source software that works in every supported…"
+  },
+  {
+   "title": "P.S. Don't Upgrade For Ultrafast (Yet)",
+   "url": "https://www.youtube.com/shorts/XkmZ1nOtuDc",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-12T18:00:14+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/XkmZ1nOtuDc/hqdefault.jpg"
+  },
+  {
+   "title": "Meta releases its first frontier model, Muse Wonder",
+   "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
    "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-10-11T19:00:00+00:00",
-   "summary": "Less than 48 hours, TechCrunch Disrupt 2026 starts in San Francisco’s Moscone West. Save up to $100 on your pass before prices increase at the door, plus get 50% on a second pass. Or score other deals."
+   "published": "2026-10-12T17:56:56+00:00",
+   "summary": "Where Muse Spark aimed to be a lightweight model that could perform at low latency, the Wonder models are larger and said to be more capable, with higher benchmark scores and better results on complex tasks like coding."
+  },
+  {
+   "title": "WindBorne wins a hefty US Air Force contract for its balloon data",
+   "url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-12T17:19:14+00:00",
+   "summary": "A Silicon Valley startup that uses weather balloons and AI to predict the weather won a U.S. military contract worth almost $50 million."
+  },
+  {
+   "title": "AI coding agents generate more code, but not more software",
+   "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-12T17:14:01+00:00",
+   "summary": "Article URL: https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/ Comments URL: https://news.ycombinator.com/item?id=50059523 Points: 218 # Comments: 187"
+  },
+  {
+   "title": "Feds got warrants to use fake cell towers to hunt down Don Lemon's producer",
+   "url": "https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-12T17:08:16+00:00",
+   "summary": "Article URL: https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/ Comments URL: https://news.ycombinator.com/item?id=50059446 Points: 113 # Comments: 68"
+  },
+  {
+   "title": "Thinking will become a hobby",
+   "url": "https://www.spinellis.gr/blog/20261008/?li261008",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-12T16:54:08+00:00",
+   "summary": "Article URL: https://www.spinellis.gr/blog/20261008/?li261008 Comments URL: https://news.ycombinator.com/item?id=50059204 Points: 151 # Comments: 196"
+  },
+  {
+   "title": "Muse Wonder",
+   "url": "https://research.meta.ai/blog/muse-wonder",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-12T16:48:01+00:00",
+   "summary": "Article URL: https://research.meta.ai/blog/muse-wonder Comments URL: https://news.ycombinator.com/item?id=50059115 Points: 428 # Comments: 210"
+  },
+  {
+   "title": "Honeyjar offers AI tools to improve PR and comms at every company",
+   "url": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-12T15:45:00+00:00",
+   "summary": "Journalists, entrepreneurs, and even some public relations professionals will tell you that the PR process is broken. But could AI actually make things better?"
+  },
+  {
+   "title": "Microsoft president says UK is best placed to drive AI regulation",
+   "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-12T15:31:19+00:00",
+   "summary": "Microsoft president Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies."
+  },
+  {
+   "title": "This AI startup says it can generate permit-ready blueprints in minutes",
+   "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-12T15:27:59+00:00",
+   "summary": "Blueprints AI, a bootstrapped startup based in Santa Monica, developed software that produces code-compliant construction blueprints from a photo, PDF, or sketch."
+  },
+  {
+   "title": "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
+   "url": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-12T14:00:00+00:00",
+   "summary": "Tomorrow at 8 a.m. PT, it all begins z— 10,000+ founders, investors, and tech operators will gather at San Francisco’s Moscone West for TechCrunch Disrupt 2026 for three days of ideas, connections, and startups shaping…"
+  },
+  {
+   "title": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+   "url": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-12T13:33:06+00:00",
+   "summary": "Microsoft is announcing its third-generation Maia in-house AI chip today, designed to be the \"primary AI inference system\" for Microsoft's products and services. Maia 300 not only improves the cost and efficiency of…"
+  },
+  {
+   "title": "Meta has some Wonder Full new AI models",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-12T11:13:10+00:00",
+   "summary": "Meta is making up for lost time in the AI race. After launching Muse Spark, the first model from its revamped Superintelligence Labs division, and buzzy AI agent Muse, it's now launching two new models it claims can go…"
+  },
+  {
+   "title": "datasette-ports 0.4",
+   "url": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-12T04:57:07+00:00",
+   "summary": "Release: datasette-ports 0.4 My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier…"
+  },
+  {
+   "title": "Faithfulness Without Anchors: A Position Paper on the Structural Misalignments of Explainable AI Faithfulness Metrics for Feature Importance",
+   "url": "https://arxiv.org/abs/2610.12493",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12493v1 Announce Type: new Abstract: Explainable Artificial Intelligence (XAI) tools have often been presented as methods to increase trust in machine learning models by making aspects of their algorithms…"
+  },
+  {
+   "title": "EliteTable: Self-Improving Program Search for Executable Control Policies",
+   "url": "https://arxiv.org/abs/2610.12536",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12536v1 Announce Type: new Abstract: EliteTable is a self-improving program-search algorithm guided by large language models (LLMs) that uses a fixed-capacity table of high-scoring solutions to guide new…"
+  },
+  {
+   "title": "Equal-Budget Monte Carlo Tree Search versus Randomized-Restart List Scheduling for DAG Workflows: A Controlled Equal-Budget Computational Study",
+   "url": "https://arxiv.org/abs/2610.12542",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12542v1 Announce Type: new Abstract: Monte Carlo Tree Search (MCTS) is often proposed for scheduling directed-acyclic-graph (DAG) workflows, yet most studies never run the comparison that could refute it -…"
+  },
+  {
+   "title": "Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning",
+   "url": "https://arxiv.org/abs/2610.12593",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12593v1 Announce Type: new Abstract: The continued improvement of large language models increasingly depends on synthetic experience, yet effective data synthesis for interactive agents requires not only…"
+  },
+  {
+   "title": "SpireBench: Evaluating Long-Horizon Strategic Play of Agentic Models with Slay the Spire",
+   "url": "https://arxiv.org/abs/2610.12596",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12596v1 Announce Type: new Abstract: Agentic large language models now tackle complex tasks, yet strategic reasoning over long horizons is under-studied: most agentic benchmarks are short and episodic, and…"
+  },
+  {
+   "title": "Algebraic Integer Quantization for Machine Learning Applications",
+   "url": "https://arxiv.org/abs/2610.12494",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12494v1 Announce Type: new Abstract: In this article, we propose algebraic integer number formats (AINF) as a framework for highly configurable and accurate compressed computation. A key property of AINF is…"
+  },
+  {
+   "title": "Kairos: Toward a Byte-Level Foundation Model for Every Modality",
+   "url": "https://arxiv.org/abs/2610.12495",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12495v1 Announce Type: new Abstract: Small language models trained on a single local machine leave little room for architectural trial and error. Kairos combines bidirectional gated-DeltaNet linear attention…"
+  },
+  {
+   "title": "An Input-Dependent Readout Phase for Resonant Sequence Models",
+   "url": "https://arxiv.org/abs/2610.12496",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12496v1 Announce Type: new Abstract: Sequence models with a fixed-size state avoid the quadratic cost of attention, but face a design choice. An input-dependent state transition gives content-dependent memory…"
+  },
+  {
+   "title": "CircuitTree: Composing Circuits into A Syllable Transcriber",
+   "url": "https://arxiv.org/abs/2610.12520",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12520v1 Announce Type: new Abstract: The goal of circuit discovery is to decompose a monolithic neural network into tiny modular subnetworks which are interpretable in the sense that each does an identifiable…"
+  },
+  {
+   "title": "Behind-the-Meter Photovoltaic Visibility from Net Smart Meters: Deployment Regimes and Operational Insights",
+   "url": "https://arxiv.org/abs/2610.12527",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-12T04:00:00+00:00",
+   "summary": "arXiv:2610.12527v1 Announce Type: new Abstract: Distribution operators need visibility of behind-the-meter photovoltaic (PV) generation, yet most residential customers are observed only through net smart meters.…"
+  },
+  {
+   "title": "I thought AI was gonna get cheaper?",
+   "url": "https://www.youtube.com/watch?v=vRS2leJLAI0",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-12T02:39:38+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/vRS2leJLAI0/hqdefault.jpg"
   },
   {
    "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
@@ -26,22 +242,6 @@
    "summary": "When President Donald Trump announced his plans to rebrand artificial intelligence as \"super intelligence,\" you'd be forgiven for being skeptical that it would catch on. While most of the broader population is sticking…"
   },
   {
-   "title": "Total Annihilation, rebuilt for modern computers",
-   "url": "https://nanolathe.gg",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-11T18:04:47+00:00",
-   "summary": "Article URL: https://nanolathe.gg Comments URL: https://news.ycombinator.com/item?id=50045984 Points: 211 # Comments: 86"
-  },
-  {
-   "title": "NYC's \"Click to Cancel\" rule is now in effect",
-   "url": "https://www.nyc.gov/main/click-to-cancel",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-11T18:01:16+00:00",
-   "summary": "Article URL: https://www.nyc.gov/main/click-to-cancel Comments URL: https://news.ycombinator.com/item?id=50045946 Points: 218 # Comments: 84"
-  },
-  {
    "title": "DeepSeek Solved AI’s Memory Problem",
    "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc",
    "source": "Two Minute Papers",
@@ -50,84 +250,12 @@
    "thumbnail": "https://i1.ytimg.com/vi/4fLVq6HJsKc/hqdefault.jpg"
   },
   {
-   "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
-   "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-11T16:52:33+00:00",
-   "summary": "On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem."
-  },
-  {
-   "title": "I'm sorry, but you still have to think",
-   "url": "https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-11T14:29:07+00:00",
-   "summary": "Article URL: https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/ Comments URL: https://news.ycombinator.com/item?id=50043689 Points: 256 # Comments: 96"
-  },
-  {
-   "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-   "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-11T14:00:00+00:00",
-   "summary": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break"
-  },
-  {
-   "title": "Terence Tao: Math 2.0 [pdf]",
-   "url": "https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-11T13:16:45+00:00",
-   "summary": "Article URL: https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf Comments URL: https://news.ycombinator.com/item?id=50043026 Points: 246 # Comments: 295"
-  },
-  {
-   "title": "The tilde in your PATH may not be your HOME",
-   "url": "https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-11T12:13:13+00:00",
-   "summary": "Article URL: https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/ Comments URL: https://news.ycombinator.com/item?id=50042425 Points: 187 # Comments: 121"
-  },
-  {
-   "title": "AI is creating a 'human premium' for art created by people",
-   "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-11T11:34:28+00:00",
-   "summary": "Article URL: https://www.bbc.com/news/articles/c5vgjm3gk7rzo Comments URL: https://news.ycombinator.com/item?id=50042107 Points: 68 # Comments: 106"
-  },
-  {
-   "title": "Nicolas Cage says he won't work with Amazon again over AI dispute",
-   "url": "https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-11T11:03:21+00:00",
-   "summary": "Article URL: https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute Comments URL: https://news.ycombinator.com/item?id=50041873 Points: 71 #…"
-  },
-  {
-   "title": "Using AI for Just 10 Minutes Erodes Your Ability to Persist at Hard Things",
-   "url": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-11T10:47:21+00:00",
-   "summary": "Article URL: https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things Comments URL: https://news.ycombinator.com/item?id=50041765 Points: 60 # Comments: 70"
-  },
-  {
    "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
    "source": "The Verge AI",
    "kind": "news",
    "published": "2026-10-11T04:53:46+00:00",
    "summary": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run…"
-  },
-  {
-   "title": "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
-   "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-11T02:02:38+00:00",
-   "summary": "Article URL: https://momo5502.com/posts/2026-10-09-game-decompilation/ Comments URL: https://news.ycombinator.com/item?id=50039092 Points: 126 # Comments: 94"
   },
   {
    "title": "Dwarf Fortress uses version control now",
@@ -154,60 +282,12 @@
    "summary": "In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a \"set of…"
   },
   {
-   "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
-   "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-10T21:47:51+00:00",
-   "summary": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI."
-  },
-  {
    "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
    "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
    "source": "The Verge AI",
    "kind": "news",
    "published": "2026-10-10T21:23:38+00:00",
    "summary": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by…"
-  },
-  {
-   "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-   "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-10T19:50:00+00:00",
-   "summary": "Is Apple hoping to get into the AI-generated podcast business?"
-  },
-  {
-   "title": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
-   "url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-10T18:48:35+00:00",
-   "summary": "Article URL: https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a Comments URL: https://news.ycombinator.com/item?id=50035886 Points: 175 # Comments: 112"
-  },
-  {
-   "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
-   "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-10T15:00:00+00:00",
-   "summary": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions. Register…"
-  },
-  {
-   "title": "My personal AI agent posted my bank details on company Slack",
-   "url": "https://www.businessinsider.com/personal-ai-agent-grok-bot-posted-bank-details-company-slack-2026-10",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-10T14:46:16+00:00",
-   "summary": "Article URL: https://www.businessinsider.com/personal-ai-agent-grok-bot-posted-bank-details-company-slack-2026-10 Comments URL: https://news.ycombinator.com/item?id=50033517 Points: 62 # Comments: 67"
-  },
-  {
-   "title": "Anthropic is cutting off its internal evaluations from the internet",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-10T14:41:16+00:00",
-   "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model…"
   },
   {
    "title": "You can rewrite typescript in rust for $420k",
@@ -226,14 +306,6 @@
    "summary": "Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa…"
   },
   {
-   "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-09T23:45:03+00:00",
-   "summary": "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc. In a statement released on Friday, the PPD said the AI…"
-  },
-  {
    "title": "Deno is joining Cloudflare",
    "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
    "source": "Simon Willison",
@@ -247,22 +319,6 @@
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-10-09T15:20:29+00:00"
-  },
-  {
-   "title": "Quoting Matthew Green",
-   "url": "https://simonwillison.net/2026/Oct/9/matthew-green/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-09T15:02:29+00:00",
-   "summary": "Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose…"
-  },
-  {
-   "title": "A new feature for my blog, built using my voice",
-   "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-09T12:54:06+00:00",
-   "summary": "I shipped a new feature for my blog today: the Newsletters page, which offers an index of all of the newsletters I've sent out, both my free weekly Substack and my monthly sponsors-only updates. I built the feature…"
   },
   {
    "title": "We’re putting too much faith in AI’s ability to say no",
@@ -287,14 +343,6 @@
    "kind": "news",
    "published": "2026-10-09T07:00:00+00:00",
    "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
-  },
-  {
-   "title": "finally a good small model",
-   "url": "https://www.youtube.com/watch?v=38_6C0dkKmU",
-   "source": "Theo",
-   "kind": "video",
-   "published": "2026-10-09T02:20:47+00:00",
-   "thumbnail": "https://i4.ytimg.com/vi/38_6C0dkKmU/hqdefault.jpg"
   },
   {
    "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
@@ -353,14 +401,6 @@
    "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex…"
   },
   {
-   "title": "Disrupting AI-enabled “false front” operations",
-   "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-08T00:00:00+00:00",
-   "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging."
-  },
-  {
    "title": "The model that didn't exist, so you made it yourself",
    "url": "https://huggingface.co/blog/building-with-ml-intern",
    "source": "Hugging Face",
@@ -368,12 +408,12 @@
    "published": "2026-10-08T00:00:00+00:00"
   },
   {
-   "title": "Does the $200 Codex plan suck now?",
-   "url": "https://www.youtube.com/watch?v=nYA0yASgaZI",
-   "source": "Theo",
-   "kind": "video",
-   "published": "2026-10-07T20:40:02+00:00",
-   "thumbnail": "https://i3.ytimg.com/vi/nYA0yASgaZI/hqdefault.jpg"
+   "title": "Disrupting AI-enabled “false front” operations",
+   "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-08T00:00:00+00:00",
+   "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging."
   },
   {
    "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
@@ -429,22 +469,6 @@
    "thumbnail": "https://i4.ytimg.com/vi/_5p1_TNSWqQ/hqdefault.jpg"
   },
   {
-   "title": "Connecting AI agents to enterprise knowledge",
-   "url": "https://www.technologyreview.com/2026/10/05/1145580/connecting-ai-agents-to-enterprise-knowledge/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-10-05T15:47:52+00:00",
-   "summary": "For all the data that AI systems continually amass and analyze, enterprise AI agents often suffer from a curious shortcoming: a lack of knowledge. More than data, knowledge is the understanding of what the data means in…"
-  },
-  {
-   "title": "Bringing predictive analytics to the agentic AI era",
-   "url": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-10-05T13:29:32+00:00",
-   "summary": "In 2026, the question for enterprise AI is no longer whether predictive models can outperform statistical forecasts—that argument is settled. The big question now is how to enable predictive systems to act on their own…"
-  },
-  {
    "title": "The Billion Dollar AI Advantage Is Disappearing",
    "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
    "source": "Two Minute Papers",
@@ -459,14 +483,6 @@
    "kind": "video",
    "published": "2026-10-01T21:20:12+00:00",
    "thumbnail": "https://i4.ytimg.com/vi/_rtp1XzaP6Q/hqdefault.jpg"
-  },
-  {
-   "title": "The one OpenAI announcement that can actually make you money...",
-   "url": "https://www.youtube.com/watch?v=No-JPdFvYWU",
-   "source": "Fireship",
-   "kind": "video",
-   "published": "2026-10-01T19:34:14+00:00",
-   "thumbnail": "https://i3.ytimg.com/vi/No-JPdFvYWU/hqdefault.jpg"
   },
   {
    "title": "Implementing Undo - Computerphile",
