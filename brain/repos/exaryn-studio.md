@@ -3,7 +3,7 @@ title: exaryn-studio
 type: repo
 tags: [repo, public]
 language: JavaScript
-pushed: 2026-10-14
+pushed: 2026-10-15
 generated: true
 ---
 
@@ -29,7 +29,7 @@ Project note: [[Exaryn Studio]]
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-17 |
-| Last push | 2026-10-14 |
+| Last push | 2026-10-15 |
 | Stars | 0 |
 | Open issues | 1 |
 | GitHub Pages | yes |
