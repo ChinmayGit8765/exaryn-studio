@@ -1,29 +1,149 @@
 {
- "generated_at": "2026-10-16T21:08:25.247482+00:00",
+ "generated_at": "2026-10-17T21:08:09.809617+00:00",
  "items": [
   {
-   "title": "Claude reveals ECDSA curve origins",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "source": "Hacker News",
+   "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+   "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+   "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-10-16T18:55:59+00:00",
-   "summary": "https://words.filippo.io/seeds-solved/ Comments URL: https://news.ycombinator.com/item?id=50122800 Points: 365 # Comments: 145"
+   "published": "2026-10-17T20:21:19+00:00",
+   "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year."
   },
   {
-   "title": "Anthropic assigned highest junk credit rating in June",
-   "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-   "source": "Hacker News",
+   "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+   "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+   "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-10-16T18:11:42+00:00",
-   "summary": "Article URL: https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d Comments URL: https://news.ycombinator.com/item?id=50122112 Points: 127 # Comments: 39"
+   "published": "2026-10-17T18:48:08+00:00",
+   "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform."
   },
   {
-   "title": "eBay Restricts Listings of Radio Equipment, but Exempts Ham-Band-Only Gear",
-   "url": "https://www.arrl.org/arrlletterissue?issue=2026-10-15#eBay-Restricts-Listings-of-Radio-Equipment_-But-Exempts-Ham-Band-Only-Gear",
+   "title": "OpenCode Hacked: User credentials leaked",
+   "url": "https://twitter.com/opencode/status/2111516673953935833",
    "source": "Hacker News",
    "kind": "news",
-   "published": "2026-10-16T18:06:17+00:00",
-   "summary": "Article URL: https://www.arrl.org/arrlletterissue?issue=2026-10-15#eBay-Restricts-Listings-of-Radio-Equipment_-But-Exempts-Ham-Band-Only-Gear Comments URL: https://news.ycombinator.com/item?id=50122034 Points: 100 #…"
+   "published": "2026-10-17T18:01:41+00:00",
+   "summary": "Article URL: https://twitter.com/opencode/status/2111516673953935833 Comments URL: https://news.ycombinator.com/item?id=50133401 Points: 394 # Comments: 67"
+  },
+  {
+   "title": "Development statistics for the 7.2 kernel",
+   "url": "https://lwn.net/Articles/1088776/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-17T17:14:12+00:00",
+   "summary": "Article URL: https://lwn.net/Articles/1088776/ Comments URL: https://news.ycombinator.com/item?id=50132950 Points: 107 # Comments: 82"
+  },
+  {
+   "title": "Gold is now the top U.S. export",
+   "url": "https://www.numismaticnews.net/gold-now-top-u-s-export",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-17T17:06:07+00:00",
+   "summary": "Article URL: https://www.numismaticnews.net/gold-now-top-u-s-export Comments URL: https://news.ycombinator.com/item?id=50132870 Points: 117 # Comments: 55"
+  },
+  {
+   "title": "Meta’s new terms may allow it to train AI on news sites for free",
+   "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-17T15:08:35+00:00",
+   "summary": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from Nieman Lab. The new terms,…"
+  },
+  {
+   "title": "Meta removes language that may have allowed it to scrape news sites",
+   "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-17T15:04:36+00:00",
+   "summary": "After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no longer appears on the…"
+  },
+  {
+   "title": "Solar surpasses nuclear power globally for first time",
+   "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-17T14:01:01+00:00",
+   "summary": "Article URL: https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/ Comments URL: https://news.ycombinator.com/item?id=50131256 Points: 395 # Comments: 238"
+  },
+  {
+   "title": "Making chicken transparent using Dorito dust",
+   "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-17T13:55:28+00:00",
+   "summary": "Article URL: https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using Comments URL: https://news.ycombinator.com/item?id=50131213 Points: 209 # Comments: 59"
+  },
+  {
+   "title": "DeepSeek-v4.1-Flash-1017",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-17T08:21:25+00:00",
+   "summary": "https://api-docs.deepseek.com/news/news261017/ https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017 Comments URL: https://news.ycombinator.com/item?id=50129045 Points: 571 # Comments: 513"
+  },
+  {
+   "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+   "url": "https://arxiv.org/abs/2610.20665",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-17T04:00:00+00:00",
+   "summary": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct…"
+  },
+  {
+   "title": "Evaluating Model Capabilities After Benchmark Saturation",
+   "url": "https://arxiv.org/abs/2610.20667",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-17T04:00:00+00:00",
+   "summary": "arXiv:2610.20667v1 Announce Type: new Abstract: Rapid advances in AI capabilities are causing benchmarks to saturate. Once several models approach perfect scores, a benchmark loses its power to differentiate between…"
+  },
+  {
+   "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
+   "url": "https://arxiv.org/abs/2610.20669",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-17T04:00:00+00:00",
+   "summary": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is…"
+  },
+  {
+   "title": "AlphaDiana: A Measurement System for Agents in Verifiable Reasoning Tasks",
+   "url": "https://arxiv.org/abs/2610.20675",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-17T04:00:00+00:00",
+   "summary": "arXiv:2610.20675v1 Announce Type: new Abstract: Agents pair reasoning models with harnesses that organize model calls, execute tools, load skill instructions, and retain history in memory. Understanding agent…"
+  },
+  {
+   "title": "When Correctness Feedback Erases Evidence: Phase-Separated Completeness Auditing in Verus",
+   "url": "https://arxiv.org/abs/2610.20676",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-17T04:00:00+00:00",
+   "summary": "arXiv:2610.20676v1 Announce Type: new Abstract: Correctness feedback suppresses the very evidence that specification-completeness auditing is designed to uncover: programs that satisfy a written contract but violate…"
+  },
+  {
+   "title": "Websites are closing their doors to AI agents",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-16T22:31:39+00:00",
+   "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out…"
+  },
+  {
+   "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+   "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-16T22:06:37+00:00",
+   "summary": "We think \"did a human read the code?\" is an imprecise proxy for \"what could go wrong with this change, and which check—automated or human—is the right one to catch it?\" Asking that question also changed when review…"
+  },
+  {
+   "title": "How Itaú is building generative AI for its entire customer base",
+   "url": "https://openai.com/index/itau-generative-ai",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-16T19:00:00+00:00",
+   "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors."
   },
   {
    "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
@@ -40,14 +160,6 @@
    "kind": "news",
    "published": "2026-10-16T17:52:24+00:00",
    "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles."
-  },
-  {
-   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-16T17:08:38+00:00",
-   "summary": "Article URL: https://www.mercor.com/research/labor-index/benchmark-map/ Comments URL: https://news.ycombinator.com/item?id=50121179 Points: 291 # Comments: 263"
   },
   {
    "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
@@ -82,28 +194,12 @@
    "thumbnail": "https://i1.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg"
   },
   {
-   "title": "JPEG XL vs. AVIF for web use-cases",
-   "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-16T16:12:02+00:00",
-   "summary": "Article URL: https://jakearchibald.com/2026/jpeg-xl-vs-avif/ Comments URL: https://news.ycombinator.com/item?id=50120224 Points: 144 # Comments: 111"
-  },
-  {
    "title": "Elorian’s first AI model wants to reason with images, not just about them",
    "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
    "source": "TechCrunch AI",
    "kind": "news",
    "published": "2026-10-16T16:01:37+00:00",
    "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks."
-  },
-  {
-   "title": "Jev is Vercel’s fastest-adopted AI model ever",
-   "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-16T15:33:49+00:00",
-   "summary": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter."
   },
   {
    "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
@@ -114,30 +210,6 @@
    "summary": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be a high-performing Arm-based…"
   },
   {
-   "title": "Meta’s new terms may allow it to train AI on news sites for free",
-   "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-16T15:22:13+00:00",
-   "summary": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from Nieman Lab. The new terms,…"
-  },
-  {
-   "title": "Waymo in Toronto",
-   "url": "https://waymo.com/blog/2026/10/waymo-in-toronto/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-16T14:44:17+00:00",
-   "summary": "Article URL: https://waymo.com/blog/2026/10/waymo-in-toronto/ Comments URL: https://news.ycombinator.com/item?id=50118981 Points: 180 # Comments: 288"
-  },
-  {
-   "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
-   "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-16T14:26:51+00:00",
-   "summary": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\""
-  },
-  {
    "title": "Anthropic Rebuilt Git (yes really)",
    "url": "https://www.youtube.com/watch?v=hiI0Vk4NgeY",
    "source": "Theo",
@@ -146,91 +218,19 @@
    "thumbnail": "https://i1.ytimg.com/vi/hiI0Vk4NgeY/hqdefault.jpg"
   },
   {
-   "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
-   "url": "https://arxiv.org/abs/2610.20665",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct…"
-  },
-  {
-   "title": "Evaluating Model Capabilities After Benchmark Saturation",
-   "url": "https://arxiv.org/abs/2610.20667",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20667v1 Announce Type: new Abstract: Rapid advances in AI capabilities are causing benchmarks to saturate. Once several models approach perfect scores, a benchmark loses its power to differentiate between…"
-  },
-  {
-   "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
-   "url": "https://arxiv.org/abs/2610.20669",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is…"
-  },
-  {
-   "title": "AlphaDiana: A Measurement System for Agents in Verifiable Reasoning Tasks",
-   "url": "https://arxiv.org/abs/2610.20675",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20675v1 Announce Type: new Abstract: Agents pair reasoning models with harnesses that organize model calls, execute tools, load skill instructions, and retain history in memory. Understanding agent…"
-  },
-  {
-   "title": "When Correctness Feedback Erases Evidence: Phase-Separated Completeness Auditing in Verus",
-   "url": "https://arxiv.org/abs/2610.20676",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20676v1 Announce Type: new Abstract: Correctness feedback suppresses the very evidence that specification-completeness auditing is designed to uncover: programs that satisfy a written contract but violate…"
-  },
-  {
-   "title": "FlowBudget: Training-Free Sampling-Budget Estimation for Flow Matching Models",
-   "url": "https://arxiv.org/abs/2610.20636",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20636v1 Announce Type: new Abstract: Sampling from continuous flow-based generators such as flow matching models requires numerical ODE or SDE integration, making inference cost depend on the number of…"
-  },
-  {
-   "title": "Expanding Attention: A Taylor-Series Route to Linear-Time Transformers with a Fixed Number of Recurrent States",
-   "url": "https://arxiv.org/abs/2610.20637",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20637v1 Announce Type: new Abstract: We expand the exponential kernel of attention into a truncated Taylor series of $n$ terms and factorize each term into a tensor-power inner product, which collapses the…"
-  },
-  {
-   "title": "Feature Elicitation for SAE Steering of Deceptive Behaviour in Small LLMs",
-   "url": "https://arxiv.org/abs/2610.20638",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20638v1 Announce Type: new Abstract: Research on deceptive alignment is becoming increasingly urgent as frontier-model capabilities advance and their risk of causing catastrophic harm increases. Alignment…"
-  },
-  {
-   "title": "Same Answer, New Box: How Much of RLVR's Out-of-Domain Gain Is Answer Format?",
-   "url": "https://arxiv.org/abs/2610.20639",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20639v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards (RLVR) is credited with gains beyond the domain its rewards check, such as higher MMLU accuracy after training on…"
-  },
-  {
-   "title": "KNOU-Flood: Advancing global streamflow forecasting with lead-aware probabilistic machine learning",
-   "url": "https://arxiv.org/abs/2610.20640",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-16T04:00:00+00:00",
-   "summary": "arXiv:2610.20640v1 Announce Type: new Abstract: Global streamflow forecasting supports flood preparedness, yet data-driven models trained on reanalysis lose skill when driven by operational forecasts, increasingly so…"
-  },
-  {
    "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
    "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-10-16T01:44:47+00:00"
+  },
+  {
+   "title": "Benefit Street Partners answers questions faster with Codex",
+   "url": "https://openai.com/index/benefit-street-partners",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-16T00:00:00+00:00",
+   "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups."
   },
   {
    "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
@@ -254,22 +254,6 @@
    "kind": "news",
    "published": "2026-10-15T22:43:23+00:00",
    "summary": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT…"
-  },
-  {
-   "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
-   "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-15T22:35:55+00:00",
-   "summary": "Sega is removing Total War: Shogun 2 - Complete Edition from storefronts following a disastrous launch where users complained about issues like bugs and upscaling that appears to have been done by AI. Complete Edition,…"
-  },
-  {
-   "title": "Trump posts AI-edited photo to brag about White House restoration work",
-   "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-15T21:32:54+00:00",
-   "summary": "President Donald Trump posted a series of photos on Truth Social showing off renovations to the White House - but one of them appears to be modified with AI. The picture, which compares an old White House column to a…"
   },
   {
    "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
@@ -325,6 +309,14 @@
    "kind": "news",
    "published": "2026-10-15T13:00:00+00:00",
    "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
+  },
+  {
+   "title": "LaTeX renderer",
+   "url": "https://simonwillison.net/2026/Oct/15/latex/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-15T02:07:28+00:00",
+   "summary": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation Builder, Spreadsheet,…"
   },
   {
    "title": "Sullivan & Cromwell brings legal expertise into agreement review",
@@ -386,38 +378,6 @@
    "kind": "video",
    "published": "2026-10-14T15:45:44+00:00",
    "thumbnail": "https://i3.ytimg.com/vi/NE006pkiAnk/hqdefault.jpg"
-  },
-  {
-   "title": "Amp puts AI agents to work beyond code with OpenAI models",
-   "url": "https://openai.com/index/amp-beyond-coding",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-14T12:00:00+00:00",
-   "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
-  },
-  {
-   "title": "SentinelOne cuts malware analysis from weeks to hours",
-   "url": "https://openai.com/index/sentinelone",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-14T12:00:00+00:00",
-   "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
-  },
-  {
-   "title": "Redesigning source control at Anthropic",
-   "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-13T23:00:06+00:00",
-   "summary": "Redesigning source control at Anthropic Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the…"
-  },
-  {
-   "title": "llm-gemini 0.35",
-   "url": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-13T22:28:54+00:00",
-   "summary": "Release: llm-gemini 0.35 I added support to llm-gemini for the new Gemini 4 Argon model, made available today via the Gemini API and for customers of their $100/month subscription plan. Here are the low, medium and high…"
   },
   {
    "title": "Gemini 4 Argon: Built to solve your hardest problems",
