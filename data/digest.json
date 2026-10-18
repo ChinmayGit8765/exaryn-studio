@@ -1,6 +1,94 @@
 {
- "generated_at": "2026-10-17T21:08:09.809617+00:00",
+ "generated_at": "2026-10-18T21:08:09.096849+00:00",
  "items": [
+  {
+   "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+   "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-18T20:37:40+00:00",
+   "summary": "Anthropic said that it will commit 5% of its shares to the fund."
+  },
+  {
+   "title": "A woman was arrested in Philly for blocking a delivery robot",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-18T18:28:10+00:00",
+   "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of…"
+  },
+  {
+   "title": "Namecheap just seized and disabled all my domains",
+   "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-18T16:56:56+00:00",
+   "summary": "Article URL: https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/ Comments URL: https://news.ycombinator.com/item?id=50142866 Points: 236 # Comments: 127"
+  },
+  {
+   "title": "Someone behind the software",
+   "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-18T16:32:00+00:00",
+   "summary": "Article URL: https://karrisaarinen.com/posts/someone-behind-the-software/ Comments URL: https://news.ycombinator.com/item?id=50142573 Points: 203 # Comments: 74"
+  },
+  {
+   "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+   "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-18T16:30:00+00:00",
+   "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer."
+  },
+  {
+   "title": "macOS 15.8.2 Breaks OpenGL",
+   "url": "https://developer.apple.com/forums/verify-human/verify.html?next=/forums/thread/850550",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-18T15:26:06+00:00",
+   "summary": "Article URL: https://developer.apple.com/forums/verify-human/verify.html?next=/forums/thread/850550 Comments URL: https://news.ycombinator.com/item?id=50141909 Points: 224 # Comments: 225"
+  },
+  {
+   "title": "Will it be a golden age or a dark age for mathematics (and science)?",
+   "url": "https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-18T15:00:40+00:00",
+   "summary": "Article URL: https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/ Comments URL: https://news.ycombinator.com/item?id=50141681 Points: 108 # Comments: 148"
+  },
+  {
+   "title": "Java sealed classes and exhaustive pattern matching",
+   "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-18T14:47:37+00:00",
+   "summary": "Article URL: https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/ Comments URL: https://news.ycombinator.com/item?id=50141579 Points: 108 # Comments: 81"
+  },
+  {
+   "title": "RepRapMicron",
+   "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-18T13:48:48+00:00",
+   "summary": "Article URL: https://github.com/VikOlliver/RepRapMicron/wiki Comments URL: https://news.ycombinator.com/item?id=50141076 Points: 289 # Comments: 44"
+  },
+  {
+   "title": "Meta removes language that raised scraping and AI training concerns",
+   "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-17T21:31:32+00:00",
+   "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web."
+  },
+  {
+   "title": "Inline rendering with document​.currentScript",
+   "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-17T21:11:12+00:00",
+   "summary": "Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline element that replaces itself when the…"
+  },
   {
    "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
    "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
@@ -16,30 +104,6 @@
    "kind": "news",
    "published": "2026-10-17T18:48:08+00:00",
    "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform."
-  },
-  {
-   "title": "OpenCode Hacked: User credentials leaked",
-   "url": "https://twitter.com/opencode/status/2111516673953935833",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-17T18:01:41+00:00",
-   "summary": "Article URL: https://twitter.com/opencode/status/2111516673953935833 Comments URL: https://news.ycombinator.com/item?id=50133401 Points: 394 # Comments: 67"
-  },
-  {
-   "title": "Development statistics for the 7.2 kernel",
-   "url": "https://lwn.net/Articles/1088776/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-17T17:14:12+00:00",
-   "summary": "Article URL: https://lwn.net/Articles/1088776/ Comments URL: https://news.ycombinator.com/item?id=50132950 Points: 107 # Comments: 82"
-  },
-  {
-   "title": "Gold is now the top U.S. export",
-   "url": "https://www.numismaticnews.net/gold-now-top-u-s-export",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-17T17:06:07+00:00",
-   "summary": "Article URL: https://www.numismaticnews.net/gold-now-top-u-s-export Comments URL: https://news.ycombinator.com/item?id=50132870 Points: 117 # Comments: 55"
   },
   {
    "title": "Meta’s new terms may allow it to train AI on news sites for free",
@@ -58,68 +122,12 @@
    "summary": "After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no longer appears on the…"
   },
   {
-   "title": "Solar surpasses nuclear power globally for first time",
-   "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
-   "source": "Hacker News",
+   "title": "web-edit 0.1a2",
+   "url": "https://simonwillison.net/2026/Oct/17/web-edit/",
+   "source": "Simon Willison",
    "kind": "news",
-   "published": "2026-10-17T14:01:01+00:00",
-   "summary": "Article URL: https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/ Comments URL: https://news.ycombinator.com/item?id=50131256 Points: 395 # Comments: 238"
-  },
-  {
-   "title": "Making chicken transparent using Dorito dust",
-   "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-17T13:55:28+00:00",
-   "summary": "Article URL: https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using Comments URL: https://news.ycombinator.com/item?id=50131213 Points: 209 # Comments: 59"
-  },
-  {
-   "title": "DeepSeek-v4.1-Flash-1017",
-   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-17T08:21:25+00:00",
-   "summary": "https://api-docs.deepseek.com/news/news261017/ https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017 Comments URL: https://news.ycombinator.com/item?id=50129045 Points: 571 # Comments: 513"
-  },
-  {
-   "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
-   "url": "https://arxiv.org/abs/2610.20665",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-17T04:00:00+00:00",
-   "summary": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct…"
-  },
-  {
-   "title": "Evaluating Model Capabilities After Benchmark Saturation",
-   "url": "https://arxiv.org/abs/2610.20667",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-17T04:00:00+00:00",
-   "summary": "arXiv:2610.20667v1 Announce Type: new Abstract: Rapid advances in AI capabilities are causing benchmarks to saturate. Once several models approach perfect scores, a benchmark loses its power to differentiate between…"
-  },
-  {
-   "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
-   "url": "https://arxiv.org/abs/2610.20669",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-17T04:00:00+00:00",
-   "summary": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is…"
-  },
-  {
-   "title": "AlphaDiana: A Measurement System for Agents in Verifiable Reasoning Tasks",
-   "url": "https://arxiv.org/abs/2610.20675",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-17T04:00:00+00:00",
-   "summary": "arXiv:2610.20675v1 Announce Type: new Abstract: Agents pair reasoning models with harnesses that organize model calls, execute tools, load skill instructions, and retain history in memory. Understanding agent…"
-  },
-  {
-   "title": "When Correctness Feedback Erases Evidence: Phase-Separated Completeness Auditing in Verus",
-   "url": "https://arxiv.org/abs/2610.20676",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-17T04:00:00+00:00",
-   "summary": "arXiv:2610.20676v1 Announce Type: new Abstract: Correctness feedback suppresses the very evidence that specification-completeness auditing is designed to uncover: programs that satisfy a written contract but violate…"
+   "published": "2026-10-17T13:16:49+00:00",
+   "summary": "Release: web-edit 0.1a2 web-edit ( previously ) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale. I added a \"copy to clipboard\"…"
   },
   {
    "title": "Websites are closing their doors to AI agents",
@@ -162,22 +170,6 @@
    "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles."
   },
   {
-   "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-   "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-16T16:30:00+00:00",
-   "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software,…"
-  },
-  {
-   "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
-   "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-16T16:30:00+00:00",
-   "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software,…"
-  },
-  {
    "title": "The tech backlash is now in theaters",
    "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
    "source": "The Verge AI",
@@ -192,14 +184,6 @@
    "kind": "video",
    "published": "2026-10-16T16:15:20+00:00",
    "thumbnail": "https://i1.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg"
-  },
-  {
-   "title": "Elorian’s first AI model wants to reason with images, not just about them",
-   "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-16T16:01:37+00:00",
-   "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks."
   },
   {
    "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
@@ -246,14 +230,6 @@
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-10-16T00:00:00+00:00"
-  },
-  {
-   "title": "ChatGPT can peek at your Chrome tabs now",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-15T22:43:23+00:00",
-   "summary": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT…"
   },
   {
    "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
@@ -341,28 +317,12 @@
    "published": "2026-10-15T00:00:00+00:00"
   },
   {
-   "title": "Tree Appreciator",
-   "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-14T21:23:01+00:00",
-   "summary": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode), where I prompted Claude Opus 5.5 Max with: Build a three js game called \"Tree…"
-  },
-  {
    "title": "OpenAI’s lead engineer was secretly a spy...",
    "url": "https://www.youtube.com/watch?v=QZVzuq28eFw",
    "source": "Fireship",
    "kind": "video",
    "published": "2026-10-14T17:48:10+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/QZVzuq28eFw/hqdefault.jpg"
-  },
-  {
-   "title": "AI is mass decompiling games. That's both awesome and scary.",
-   "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-14T16:26:53+00:00",
-   "summary": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and…"
   },
   {
    "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
