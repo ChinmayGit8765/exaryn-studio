@@ -1,21 +1,385 @@
 {
- "generated_at": "2026-10-20T21:09:36.921175+00:00",
+ "generated_at": "2026-10-21T21:09:09.656719+00:00",
  "items": [
   {
-   "title": "SpaceX’s AI business is beating expectations",
-   "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-20T20:40:41+00:00",
-   "summary": "SpaceX hit profitably in the third-quarter, with net income of $4.4 billion. AI was the engine."
+   "title": "I'm getting impatient...",
+   "url": "https://www.youtube.com/watch?v=v4OMMTRsD5g",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-21T20:59:24+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/v4OMMTRsD5g/hqdefault.jpg"
   },
   {
-   "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
-   "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+   "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+   "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
    "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-10-20T20:35:10+00:00",
-   "summary": "OpenAI says it's adding Orchestra's team and technology to work on Rosalind, its AI model for life sciences research, and to its related Rosalind Workbench tool, a harness that aims to help researchers plan experiments…"
+   "published": "2026-10-21T20:27:41+00:00",
+   "summary": "Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itself."
+  },
+  {
+   "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-21T19:54:52+00:00",
+   "summary": "Anthropic just announced an AI agent competitor to Meta's Muse and OpenAI's Dots: Claude Duet. The new agent, designed for professionals and small business owners, is launching as a \"research preview,\" according to…"
+  },
+  {
+   "title": "Walmart is inviting AI agents to shop for you",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-21T19:50:17+00:00",
+   "summary": "Walmart will soon let AI agents shop on its website for you. Next month, the retail giant will allow you to connect your own AI agent to the site, with systems in place to let you approve and review purchases and set…"
+  },
+  {
+   "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-21T19:30:00+00:00",
+   "summary": "As Amazon blocks AI agents from shopping on its site, Walmart is taking the opposite approach, introducing new technology that lets AI agents make purchases on customers' behalf, with controls over spending and…"
+  },
+  {
+   "title": "Meta hit with $25B penalty for deceiving users about privacy on Facebook",
+   "url": "https://nmdoj.gov/press-release/the-new-mexico-department-of-justice-secures-another-landmark-victory-against-big-tech-with-historic-25-billion-penalty-against-facebook/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-21T19:26:20+00:00",
+   "summary": "Article URL: https://nmdoj.gov/press-release/the-new-mexico-department-of-justice-secures-another-landmark-victory-against-big-tech-with-historic-25-billion-penalty-against-facebook/ Comments URL:…"
+  },
+  {
+   "title": "Mistral Large 4",
+   "url": "https://docs.mistral.ai/models/mistral-large-4-0",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-21T19:20:55+00:00",
+   "summary": "Article URL: https://docs.mistral.ai/models/mistral-large-4-0 Comments URL: https://news.ycombinator.com/item?id=50186129 Points: 269 # Comments: 67"
+  },
+  {
+   "title": "Claude Duet",
+   "url": "https://claude.com/product/claude-duet",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-21T19:14:01+00:00",
+   "summary": "Article URL: https://claude.com/product/claude-duet Comments URL: https://news.ycombinator.com/item?id=50186037 Points: 161 # Comments: 145"
+  },
+  {
+   "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+   "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-21T18:41:53+00:00",
+   "summary": "Today's PHP Security Release, and How We're Strengthening PHP Security If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes,…"
+  },
+  {
+   "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+   "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-21T18:26:30+00:00"
+  },
+  {
+   "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+   "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-21T17:45:13+00:00",
+   "summary": "Article URL: https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html Comments URL: https://news.ycombinator.com/item?id=50184820 Points: 171 # Comments: 57"
+  },
+  {
+   "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-21T17:35:36+00:00"
+  },
+  {
+   "title": "EA is shutting down BioWare",
+   "url": "https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-21T17:29:33+00:00",
+   "summary": "Article URL: https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware Comments URL: https://news.ycombinator.com/item?id=50184586 Points: 363 # Comments: 225"
+  },
+  {
+   "title": "How AT&T is rethinking in-house legal work with OpenAI",
+   "url": "https://openai.com/index/att-legal",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-21T17:00:00+00:00",
+   "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment."
+  },
+  {
+   "title": "Rust off Rails: The opinionated web stack for the AI era",
+   "url": "https://rustoffrails.org/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-21T16:34:16+00:00",
+   "summary": "Article URL: https://rustoffrails.org/ Comments URL: https://news.ycombinator.com/item?id=50183727 Points: 65 # Comments: 71"
+  },
+  {
+   "title": "Panache — RTS Belle Époque pour mobile",
+   "url": "https://simonwillison.net/2026/Oct/21/panache/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-21T16:25:16+00:00",
+   "summary": "Panache — RTS Belle Époque pour mobile Well this is delightful: I released Battle Drones yesterday under an Apache 2.0 License and there's already a French language fork which reskins the game to take place in steampunk…"
+  },
+  {
+   "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+   "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-21T16:04:43+00:00"
+  },
+  {
+   "title": "Today's PHP security release, and how we're strengthening security",
+   "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-21T15:48:56+00:00",
+   "summary": "Related ongoing thread: PHP 8.2.35 - https://news.ycombinator.com/item?id=50180873 (links to more at https://news.ycombinator.com/item?id=50184935 ) Comments URL: https://news.ycombinator.com/item?id=50182987 Points:…"
+  },
+  {
+   "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-21T14:58:18+00:00"
+  },
+  {
+   "title": "AI promises productivity, but for managers, it’s mostly a headache for now",
+   "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-21T14:00:00+00:00",
+   "summary": "More than 50% of managers say they're finding it harder to evaluate employees' work after adopting AI, according to a new survey."
+  },
+  {
+   "title": "OpenAI says an AI agent lied about disabling its safety monitoring system",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-21T13:57:43+00:00",
+   "summary": "OpenAI disclosed a pair of safety incidents that involved AI agents weakening their safety monitoring systems during internal coding tasks. In one incident, OpenAI says its GPT-6 Astra agent disabled its safety monitor…"
+  },
+  {
+   "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-21T13:43:19+00:00",
+   "summary": "https://www.php2shell.com/ Comments URL: https://news.ycombinator.com/item?id=50180836 Points: 419 # Comments: 164"
+  },
+  {
+   "title": "Using thousands of AI agents to uncover new leads in biological data",
+   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-21T13:37:00+00:00",
+   "summary": "Article URL: https://openai.com/index/scaling-ai-research-for-complex-biological-data/ Comments URL: https://news.ycombinator.com/item?id=50180752 Points: 110 # Comments: 55"
+  },
+  {
+   "title": "Conversational Gemini navigation comes to Apple CarPlay",
+   "url": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-21T13:01:28+00:00",
+   "summary": "After introducing its Gemini AI assistant to Android Auto last year, Google is now bringing it to Apple CarPlay users. The conversational Gemini in navigation is available today for US drivers, with \"rollout happening…"
+  },
+  {
+   "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-21T13:00:00+00:00",
+   "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT."
+  },
+  {
+   "title": "LayerFS: The filesystem for AI coding agents",
+   "url": "https://layerfs.ai/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-21T12:34:46+00:00",
+   "summary": "Article URL: https://layerfs.ai/ Comments URL: https://news.ycombinator.com/item?id=50179857 Points: 69 # Comments: 40"
+  },
+  {
+   "title": "OpenAI models are coming to Google Cloud",
+   "url": "https://openai.com/index/openai-models-google-cloud",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-21T12:00:00+00:00",
+   "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace."
+  },
+  {
+   "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-21T07:00:00+00:00",
+   "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source."
+  },
+  {
+   "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+   "url": "https://openai.com/index/building-chatgpt-ad-stack",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-21T07:00:00+00:00",
+   "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale."
+  },
+  {
+   "title": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Horizon Post-Training",
+   "url": "https://arxiv.org/abs/2610.26887",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.26887v1 Announce Type: new Abstract: Large language model (LLM) agents are evolving from conversational assistants into Cowork Agents capable of autonomous planning, tool use, and complex task execution.…"
+  },
+  {
+   "title": "Large language model and reinforcement learning based autonomous construction and progress updates",
+   "url": "https://arxiv.org/abs/2610.26899",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.26899v1 Announce Type: new Abstract: Due to the rapid growth of the global population, traditional construction methods are gradually unable to meet the current housing demand. The advancement of machine…"
+  },
+  {
+   "title": "Pareto-Optimal RTL Code Generation via Multi-Objective Reinforcement Learning with Large Language Models",
+   "url": "https://arxiv.org/abs/2610.26904",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.26904v1 Announce Type: new Abstract: Recent studies have proposed reinforcement learning with verifiable rewards (RLVR) methods that enable LLMs to generate high-quality RTL circuits from natural-language…"
+  },
+  {
+   "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+   "url": "https://arxiv.org/abs/2610.26913",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.26913v1 Announce Type: new Abstract: The adoption of Large Language Models for radiology report structuring has been largely dominated by either proprietary cloud-based models or large open models requiring…"
+  },
+  {
+   "title": "DataPraxis: Scaling Analytics Tasks via Verified Workspace Evolution",
+   "url": "https://arxiv.org/abs/2610.26924",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.26924v1 Announce Type: new Abstract: General-purpose agents are increasingly expected to perform professional analytics work, which requires sustained reasoning, iterative investigation, and reliable…"
+  },
+  {
+   "title": "Southeast Asia’s digital economy to hit $368 billion",
+   "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "Cover image for the e-Conomy SEA 2026 report titled Building the intelligent economy by Google, Temasek, and Bain and Company. A 3D illustration features a glowing yellow star surrounded by miniature scenes representing…"
+  },
+  {
+   "title": "Web Agent Agentic Reinforcement Learning Decision Model Under Multi-Cost and Failure Risk",
+   "url": "https://arxiv.org/abs/2610.23857",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.23857v1 Announce Type: new Abstract: Intelligent agent interactions in real-world web environments are commonly constrained by request budgets, time delays, anti-crawling restrictions, and operational failure…"
+  },
+  {
+   "title": "PolyGraph: Plan-Buffered CUDA Graphs for Adaptive Speculative Decoding",
+   "url": "https://arxiv.org/abs/2610.23861",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.23861v1 Announce Type: new Abstract: Adaptive speculative decoding changes the active batch size B and draft length d from one decode step to the next, whereas a CUDA Graph replays a fixed launch…"
+  },
+  {
+   "title": "Forecasting Patient Trajectories from the Electronic Health Records with Action-Conditioned World Models",
+   "url": "https://arxiv.org/abs/2610.23862",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.23862v1 Announce Type: new Abstract: We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling…"
+  },
+  {
+   "title": "SAGE-CP: When Marginal Coverage Hides Route-Conditional Failures in Adaptive VLM Ensembles",
+   "url": "https://arxiv.org/abs/2610.23864",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.23864v1 Announce Type: new Abstract: Adaptive VLM ensembles save computation by stopping early on easy images and escalating harder ones. Although a single conformal threshold can make the final predictor…"
+  },
+  {
+   "title": "Announced Breaks Separate Conformal Reliability from Frequency Calibration",
+   "url": "https://arxiv.org/abs/2610.23917",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "arXiv:2610.23917v1 Announce Type: new Abstract: An announced boundary reveals the partition before the first affected outcome, and a reset there serves one of two audits. The per-time audit reads conformal reliability,…"
+  },
+  {
+   "title": "eMudhra Intermediate CA Compromise",
+   "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-20T23:50:25+00:00",
+   "summary": "eMudhra Intermediate CA Compromise This is very, very bad news: The private keys of eight eMudhra intermediate CA certificates have been compromised. They chain to roots trusted by the Mozilla, Microsoft, Apple and…"
+  },
+  {
+   "title": "Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-20T23:37:55+00:00",
+   "summary": "On Tuesday, US District Judge Zachary Bluestone dismissed the lawsuit Ann Altman filed last year alleging that her brother, OpenAI CEO Sam Altman, had sexually abused her throughout her childhood. As reported earlier by…"
+  },
+  {
+   "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+   "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-20T23:01:23+00:00",
+   "summary": "The proposed policy seems to offer protections against AI running amok but actually forbids federal agencies from blocking a model's release without the permission of a judge."
+  },
+  {
+   "title": "Google’s more personalized Gemini AI is heading to your car",
+   "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-20T22:42:47+00:00",
+   "summary": "Google is bringing Personal Intelligence to Gemini AI in your car. With this update, Gemini in Android Auto and cars with Google built-in can tap into your information across Google apps, including Gmail, Calendar,…"
+  },
+  {
+   "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+   "url": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-20T22:24:02+00:00",
+   "summary": "Before you share the Netflix documentary \"AI Gone Rogue,\" take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went \"full doomer mode\" and isn't accurate."
+  },
+  {
+   "title": "Opus 5.5 is proof that we do need smarter models",
+   "url": "https://www.youtube.com/watch?v=3OshsLm3_OQ",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-20T22:13:42+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/3OshsLm3_OQ/hqdefault.jpg"
+  },
+  {
+   "title": "Anthropic’s cloud partnerships are getting messy",
+   "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-20T21:25:22+00:00",
+   "summary": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO."
+  },
+  {
+   "title": "On AI writing",
+   "url": "https://www.bolkunov.com/p/on-ai-writing",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-20T19:55:11+00:00",
+   "summary": "Article URL: https://www.bolkunov.com/p/on-ai-writing Comments URL: https://news.ycombinator.com/item?id=50171771 Points: 92 # Comments: 60"
   },
   {
    "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
@@ -24,77 +388,6 @@
    "kind": "news",
    "published": "2026-10-20T19:34:19+00:00",
    "summary": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat…"
-  },
-  {
-   "title": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
-   "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-20T18:38:24+00:00",
-   "summary": "Google has joined Amazon in releasing a developer tool that makes it easy for PyTorch users to move their apps off Nvidia GPUs."
-  },
-  {
-   "title": "ChatGPT now lets you lock your chats",
-   "url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-20T18:36:53+00:00",
-   "summary": "The company says the feature is designed for situations where users might be discussing something personal or planning a surprise and want to keep those conversations private when handing their device to friends or…"
-  },
-  {
-   "title": "SimCity, but with Permits",
-   "url": "https://permit.petercai.com/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-20T18:29:09+00:00",
-   "summary": "Article URL: https://permit.petercai.com/ Comments URL: https://news.ycombinator.com/item?id=50170593 Points: 274 # Comments: 132"
-  },
-  {
-   "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-   "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-10-20T18:17:47+00:00"
-  },
-  {
-   "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
-   "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-20T18:07:34+00:00",
-   "summary": "Meta says it paused a Muse feature that lets you share conversations with the AI assistant after researchers found the URLs publicly available on the web, as reported by Ars Technica. In a report published this week,…"
-  },
-  {
-   "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
-   "url": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-20T17:55:12+00:00",
-   "summary": "The former Google CEO owns about 1% stake in the leading AI lab, Bloomberg reported."
-  },
-  {
-   "title": "What shall I teach my son?",
-   "url": "https://stevekrouse.com/ends",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-20T17:25:07+00:00",
-   "summary": "Article URL: https://stevekrouse.com/ends Comments URL: https://news.ycombinator.com/item?id=50169707 Points: 110 # Comments: 195"
-  },
-  {
-   "title": "Meta’s Muse hits 10M U.S. downloads in 40 days, a milestone reached by only 11 other apps",
-   "url": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-20T17:12:48+00:00",
-   "summary": "Meta's AI companion Muse has surpassed 10 million U.S. downloads in its first 40 days, joining an exclusive group of apps that includes Threads. New data also shows Muse is retaining users at higher rates than its AI…"
-  },
-  {
-   "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
-   "url": "https://github.com/google-pytorch/torch_tpu",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-20T16:40:24+00:00",
-   "summary": "Article URL: https://github.com/google-pytorch/torch_tpu Comments URL: https://news.ycombinator.com/item?id=50169053 Points: 187 # Comments: 47"
   },
   {
    "title": "Did Google just dethrone OpenAI and Anthropic?",
@@ -112,28 +405,12 @@
    "published": "2026-10-20T16:09:19+00:00"
   },
   {
-   "title": "Voxtral 3",
-   "url": "https://mistral.ai/news/voxtral-3/",
-   "source": "Hacker News",
+   "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+   "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-10-20T16:02:07+00:00",
-   "summary": "Article URL: https://mistral.ai/news/voxtral-3/ Comments URL: https://news.ycombinator.com/item?id=50168396 Points: 406 # Comments: 111"
-  },
-  {
-   "title": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
-   "url": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-20T15:53:21+00:00",
-   "summary": "Spotify says it has removed more than 50 million songs considered AI-generated slop or spam from user recommendations over the past year. That's according to an announcement on Tuesday that says Spotify has also made…"
-  },
-  {
-   "title": "IKEA – 3D Guide",
-   "url": "https://sael.net/flatpack/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-20T15:42:45+00:00",
-   "summary": "Article URL: https://sael.net/flatpack/ Comments URL: https://news.ycombinator.com/item?id=50168096 Points: 100 # Comments: 26"
+   "published": "2026-10-20T15:48:26+00:00",
+   "summary": "Article URL: https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop Comments URL: https://news.ycombinator.com/item?id=50168190 Points: 183 # Comments: 224"
   },
   {
    "title": "The new economics of enterprise AI",
@@ -151,44 +428,12 @@
    "published": "2026-10-20T15:19:48+00:00"
   },
   {
-   "title": "Facebook Pages require paid subscription to post more than two links per month",
-   "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-20T15:06:08+00:00",
-   "summary": "Article URL: https://mastodon.gamedev.place/@AshleyGullen/117473851565913919 Comments URL: https://news.ycombinator.com/item?id=50167536 Points: 373 # Comments: 324"
-  },
-  {
-   "title": "Adobe Lightroom mobile can now open closed eyes in photos with a simple tap",
-   "url": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-20T13:12:02+00:00",
-   "summary": "Adobe announced yesterday that the mobile version of Lightroom, available for iOS, iPadOS, and Android, can now open closed eyes in photos using generative AI with just a single tap. When the app detects a person, or a…"
-  },
-  {
    "title": "AI adoption by industry shows what other sectors can learn",
    "url": "https://www.technologyreview.com/2026/10/20/1145423/ai-adoption-by-industry-shows-what-other-sectors-can-learn/",
    "source": "MIT Tech Review",
    "kind": "news",
    "published": "2026-10-20T12:00:00+00:00",
    "summary": "The current narrative around artificial intelligence in the workplace is largely driven by Silicon Valley. But treating the tech sector as an island misses the actual trends in technology adoption–tech is just the first…"
-  },
-  {
-   "title": "CoreWeave’s debt is becoming the whole AI industry’s problem",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-20T10:26:38+00:00",
-   "summary": "CoreWeave had a bad week last week. Its bonds slipped into distressed territory by a common definition - when investors demand 1,000 basis points more in yield than they'd get from government bonds. Last Tuesday Chamath…"
-  },
-  {
-   "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-   "url": "https://openai.com/index/ted-taylor-restaurant",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-20T10:00:00+00:00",
-   "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow."
   },
   {
    "title": "A visit to Samsung’s massive new semiconductor hub",
@@ -199,129 +444,12 @@
    "summary": "Generative AI models run on powerful chips known as GPUs, which depend on stacks of specialized memory chips packaged with the processor. To meet growing demand for memory, Samsung is building a massive new…"
   },
   {
-   "title": "GardenBench: A lightweight, daily evaluation of LLM capabilities",
-   "url": "https://arxiv.org/abs/2610.23866",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks. By systematically…"
-  },
-  {
-   "title": "Doing Less with More: A First-Principles Exploration of the Suitability of Agentic Computing over Alternative Architectural Choices",
-   "url": "https://arxiv.org/abs/2610.23921",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.23921v1 Announce Type: new Abstract: There is growing interest in automating business activities with Agentic Artificial Intelligence (AI) due to latter's seeming ease of use. Never has it been easier, or…"
-  },
-  {
-   "title": "A Controlled LLM Workflow for Evidence-Grounded Diagnosis of Risk Score Differences",
-   "url": "https://arxiv.org/abs/2610.23962",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.23962v1 Announce Type: new Abstract: We propose a controlled Large Language Model (LLM) workflow for explaining risk score differences using similar historical transactions. The workflow combines reference…"
-  },
-  {
-   "title": "What Social Media Teaches Us About Accumulative AI Risks",
-   "url": "https://arxiv.org/abs/2610.24006",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.24006v1 Announce Type: new Abstract: Prominent AI safety discussions emphasize existential threats and catastrophic events, such as AI-enabled nuclear conflict or engineered biological outbreaks. This…"
-  },
-  {
-   "title": "Beyond Explicit Intent: Discovering and Shaping Artistic Intent through Human-AI Co-Creation",
-   "url": "https://arxiv.org/abs/2610.24010",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.24010v1 Announce Type: new Abstract: Generative AI is becoming an important medium for artistic creation, yet existing interactions often assume that creators can specify intentions in advance and accurately…"
-  },
-  {
-   "title": "Web Agent Agentic Reinforcement Learning Decision Model Under Multi-Cost and Failure Risk",
-   "url": "https://arxiv.org/abs/2610.23857",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.23857v1 Announce Type: new Abstract: Intelligent agent interactions in real-world web environments are commonly constrained by request budgets, time delays, anti-crawling restrictions, and operational failure…"
-  },
-  {
-   "title": "PolyGraph: Plan-Buffered CUDA Graphs for Adaptive Speculative Decoding",
-   "url": "https://arxiv.org/abs/2610.23861",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.23861v1 Announce Type: new Abstract: Adaptive speculative decoding changes the active batch size B and draft length d from one decode step to the next, whereas a CUDA Graph replays a fixed launch…"
-  },
-  {
-   "title": "Forecasting Patient Trajectories from the Electronic Health Records with Action-Conditioned World Models",
-   "url": "https://arxiv.org/abs/2610.23862",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.23862v1 Announce Type: new Abstract: We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling…"
-  },
-  {
-   "title": "SAGE-CP: When Marginal Coverage Hides Route-Conditional Failures in Adaptive VLM Ensembles",
-   "url": "https://arxiv.org/abs/2610.23864",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.23864v1 Announce Type: new Abstract: Adaptive VLM ensembles save computation by stopping early on easy images and escalating harder ones. Although a single conformal threshold can make the final predictor…"
-  },
-  {
-   "title": "Announced Breaks Separate Conformal Reliability from Frequency Calibration",
-   "url": "https://arxiv.org/abs/2610.23917",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-20T04:00:00+00:00",
-   "summary": "arXiv:2610.23917v1 Announce Type: new Abstract: An announced boundary reveals the partition before the first affected outcome, and a reset there serves one of two audits. The per-time audit reads conformal reliability,…"
-  },
-  {
-   "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
-   "url": "https://huggingface.co/blog/hf-torchtpu",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-10-20T00:00:00+00:00"
-  },
-  {
-   "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
-   "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-10-20T00:00:00+00:00"
-  },
-  {
-   "title": "MPS in PyTorch 2.15",
-   "url": "https://huggingface.co/blog/mps-pytorch-2-15",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-10-20T00:00:00+00:00"
-  },
-  {
-   "title": "OpenAI acquires Orchestra Bio",
-   "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-20T00:00:00+00:00",
-   "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments."
-  },
-  {
    "title": "My obituary for programming",
    "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
    "source": "Simon Willison",
    "kind": "news",
    "published": "2026-10-19T23:58:25+00:00",
    "summary": "My obituary for programming Jeremy Scheff poignantly captures the key loss caused by coding agents for career programmers who enjoyed the puzzle of developing code: Programming turned into one of the greatest jobs you…"
-  },
-  {
-   "title": "The fossil fuel comeback is here",
-   "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-19T21:48:01+00:00",
-   "summary": "The US is building more fossil fuel infrastructure than it has in a decade while renewable energy growth slows down, a new report shows. Electricity demand is also climbing faster than it has in more than a decade with…"
   },
   {
    "title": "Making the internet better for AI agents might make it worse for everyone else",
@@ -338,22 +466,6 @@
    "kind": "news",
    "published": "2026-10-19T17:45:55+00:00",
    "summary": "“I think I have good news about the nature of neural networks.” With those simple words of optimism, Nick Cammarata, a researcher at the AI startup Goodfire, kicked off a 26,000-word blog post that has knocked the AI…"
-  },
-  {
-   "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-19T17:33:16+00:00",
-   "summary": "A hacker broke into more than 100 websites using an army of AI agents that mostly operated on their own, according to findings from the AI security firm Norforge. Though Norforge doesn't name the targets, Reuters…"
-  },
-  {
-   "title": "Advancing coding in low‑resource programming languages",
-   "url": "https://openai.com/index/low-resource-programming-languages",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-19T12:00:00+00:00",
-   "summary": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration."
   },
   {
    "title": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
@@ -388,68 +500,12 @@
    "summary": "Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those…"
   },
   {
-   "title": "llm-echo 0.5",
-   "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-18T23:16:16+00:00",
-   "summary": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the…"
-  },
-  {
-   "title": "Inline rendering with document​.currentScript",
-   "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-17T21:11:12+00:00",
-   "summary": "Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline element that replaces itself when the…"
-  },
-  {
-   "title": "web-edit 0.1a2",
-   "url": "https://simonwillison.net/2026/Oct/17/web-edit/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-17T13:16:49+00:00",
-   "summary": "Release: web-edit 0.1a2 web-edit ( previously ) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale. I added a \"copy to clipboard\"…"
-  },
-  {
-   "title": "How Itaú is building generative AI for its entire customer base",
-   "url": "https://openai.com/index/itau-generative-ai",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-16T19:00:00+00:00",
-   "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors."
-  },
-  {
    "title": "There's never been a better time to go into math",
    "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
    "source": "3Blue1Brown",
    "kind": "video",
    "published": "2026-10-16T16:15:20+00:00",
    "thumbnail": "https://i1.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg"
-  },
-  {
-   "title": "Anthropic Rebuilt Git (yes really)",
-   "url": "https://www.youtube.com/watch?v=hiI0Vk4NgeY",
-   "source": "Theo",
-   "kind": "video",
-   "published": "2026-10-16T04:38:27+00:00",
-   "thumbnail": "https://i1.ytimg.com/vi/hiI0Vk4NgeY/hqdefault.jpg"
-  },
-  {
-   "title": "Benefit Street Partners answers questions faster with Codex",
-   "url": "https://openai.com/index/benefit-street-partners",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-16T00:00:00+00:00",
-   "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups."
-  },
-  {
-   "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-   "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-16T00:00:00+00:00",
-   "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation."
   },
   {
    "title": "The runtime wars are over... and Node won",
@@ -474,14 +530,6 @@
    "kind": "video",
    "published": "2026-10-14T17:48:10+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/QZVzuq28eFw/hqdefault.jpg"
-  },
-  {
-   "title": "So I've been testing Gemini 4...",
-   "url": "https://www.youtube.com/watch?v=NE006pkiAnk",
-   "source": "Theo",
-   "kind": "video",
-   "published": "2026-10-14T15:45:44+00:00",
-   "thumbnail": "https://i3.ytimg.com/vi/NE006pkiAnk/hqdefault.jpg"
   },
   {
    "title": "OpenAI’s New AI Is Doing Things We Barely Understand",
@@ -522,14 +570,6 @@
    "kind": "video",
    "published": "2026-10-01T21:20:12+00:00",
    "thumbnail": "https://i4.ytimg.com/vi/_rtp1XzaP6Q/hqdefault.jpg"
-  },
-  {
-   "title": "Implementing Undo - Computerphile",
-   "url": "https://www.youtube.com/watch?v=S6PqsZ65Mg4",
-   "source": "Computerphile",
-   "kind": "video",
-   "published": "2026-09-30T13:00:36+00:00",
-   "thumbnail": "https://i4.ytimg.com/vi/S6PqsZ65Mg4/hqdefault.jpg"
   }
  ]
 }
