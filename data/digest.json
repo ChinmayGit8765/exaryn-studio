@@ -1,6 +1,134 @@
 {
- "generated_at": "2026-10-23T21:09:30.735208+00:00",
+ "generated_at": "2026-10-24T21:08:22.939660+00:00",
  "items": [
+  {
+   "title": "No Signs of AI Payoff Outside the Tech Sector",
+   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-24T19:47:19+00:00",
+   "summary": "Article URL: https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector Comments URL: https://news.ycombinator.com/item?id=50224463 Points: 186 # Comments: 140"
+  },
+  {
+   "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+   "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-24T19:00:00+00:00",
+   "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations."
+  },
+  {
+   "title": "Pennsylvania will require labels on AI-generated ads",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-24T18:32:44+00:00",
+   "summary": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image,…"
+  },
+  {
+   "title": "Danish Government silently drops plan to dump MS Office",
+   "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-24T18:31:48+00:00",
+   "summary": "Article URL: https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft Comments URL:…"
+  },
+  {
+   "title": "Roku developer repositories moved from GitHub to GitLab",
+   "url": "https://blog.roku.com/developer/gitlab-move",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-24T16:06:26+00:00",
+   "summary": "Article URL: https://blog.roku.com/developer/gitlab-move Comments URL: https://news.ycombinator.com/item?id=50222622 Points: 201 # Comments: 137"
+  },
+  {
+   "title": "Block’s new voice model sounds eerily human",
+   "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-24T16:00:00+00:00",
+   "summary": "Block said that the voice model can run locally on a MacBook M4 Max"
+  },
+  {
+   "title": "FreeDNS",
+   "url": "https://freedns.afraid.org/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-24T15:20:01+00:00",
+   "summary": "Article URL: https://freedns.afraid.org/ Comments URL: https://news.ycombinator.com/item?id=50222133 Points: 201 # Comments: 55"
+  },
+  {
+   "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+   "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-24T15:00:00+00:00",
+   "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races."
+  },
+  {
+   "title": "Here are the top AI agents that can live in your text messages",
+   "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-24T14:00:00+00:00",
+   "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work."
+  },
+  {
+   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+   "url": "https://github.com/Zagitta/gpu-unlock",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-24T09:58:27+00:00",
+   "summary": "Article URL: https://github.com/Zagitta/gpu-unlock Comments URL: https://news.ycombinator.com/item?id=50219700 Points: 141 # Comments: 51"
+  },
+  {
+   "title": "I don't understand quantum physics (2018)",
+   "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-24T09:53:26+00:00",
+   "summary": "Article URL: https://www.southampton.ac.uk/~doug/quantum_physics/index.html Comments URL: https://news.ycombinator.com/item?id=50219666 Points: 240 # Comments: 179"
+  },
+  {
+   "title": "battledrones v14: Compass Rose, a four player map",
+   "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-24T03:59:57+00:00",
+   "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle -…"
+  },
+  {
+   "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+   "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-23T23:05:49+00:00",
+   "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work."
+  },
+  {
+   "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+   "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-23T21:59:19+00:00",
+   "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command."
+  },
+  {
+   "title": "Quick Study",
+   "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-23T21:35:13+00:00",
+   "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my…"
+  },
+  {
+   "title": "OpenAI now trains its frontier AI models with no internet access",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-23T21:11:07+00:00",
+   "summary": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can…"
+  },
   {
    "title": "Even The NSA Got Involved",
    "url": "https://www.youtube.com/shorts/nXpoU99pTho",
@@ -24,14 +152,6 @@
    "kind": "news",
    "published": "2026-10-23T19:32:39+00:00",
    "summary": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a…"
-  },
-  {
-   "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
-   "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-23T19:06:23+00:00",
-   "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder…"
   },
   {
    "title": "The most vulnerable week in internet history...",
@@ -58,28 +178,12 @@
    "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
   },
   {
-   "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-23T16:59:08+00:00",
-   "summary": "https://www.kimi.com/code/docs/en/kimi-code/models.html https://artificialanalysis.ai/models/kimi-k3-1-pro https://www.modelcompare.ai/blog/china-open-source-ai Comments URL:…"
-  },
-  {
    "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
    "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
    "source": "The Verge AI",
    "kind": "news",
    "published": "2026-10-23T16:52:55+00:00",
    "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an…"
-  },
-  {
-   "title": "Today, we hacked what we'd set out to hack: the iPhone",
-   "url": "https://blog.calif.io/p/iphone",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-23T16:21:50+00:00",
-   "summary": "Article URL: https://blog.calif.io/p/iphone Comments URL: https://news.ycombinator.com/item?id=50211474 Points: 583 # Comments: 398"
   },
   {
    "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
@@ -97,148 +201,12 @@
    "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to…"
   },
   {
-   "title": "Retro gaming is being overrun with AI",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-23T13:52:15+00:00",
-   "summary": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these…"
-  },
-  {
-   "title": "Apple Music 404 Not Found",
-   "url": "https://music.apple.com/this-url-doesnt-exist",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-23T12:28:47+00:00",
-   "summary": "https://www.macrumors.com/2026/10/23/apple-music-has-a-hidde... Comments URL: https://news.ycombinator.com/item?id=50207910 Points: 301 # Comments: 114"
-  },
-  {
-   "title": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-23T11:28:50+00:00",
-   "summary": "Oh sure, SpaceX's credit risk is pretty high because it's about to borrow another $40 billion to spend on Nvidia chips, but who cares about that? SpaceX and Tesla have formed special committees to discuss a merger! The…"
-  },
-  {
-   "title": "Job loss and cortisone mania",
-   "url": "https://tilschuenemann.de/job-loss-cortisone-mania",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-23T10:31:24+00:00",
-   "summary": "Article URL: https://tilschuenemann.de/job-loss-cortisone-mania Comments URL: https://news.ycombinator.com/item?id=50206840 Points: 156 # Comments: 89"
-  },
-  {
    "title": "Securing our frontier model training environment",
    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
    "source": "OpenAI",
    "kind": "news",
    "published": "2026-10-23T10:00:00+00:00",
    "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
-  },
-  {
-   "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
-   "url": "https://berget.ai/en/blog/per-request-co2-press-release",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-23T06:41:11+00:00",
-   "summary": "Article URL: https://berget.ai/en/blog/per-request-co2-press-release Comments URL: https://news.ycombinator.com/item?id=50205229 Points: 139 # Comments: 150"
-  },
-  {
-   "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
-   "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027."
-  },
-  {
-   "title": "MoEZip: Routing-Aware KV Cache Compression for Sparse Mixture-of-Experts LLMs",
-   "url": "https://arxiv.org/abs/2610.30206",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30206v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) language models scale model capacity efficiently by activating a small subset of parameters per token. However, in long-context inference, memory…"
-  },
-  {
-   "title": "Spectral Uncertainty Decomposition for Sparse Bayesian Learning",
-   "url": "https://arxiv.org/abs/2610.30207",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30207v1 Announce Type: new Abstract: Estimating distributed neural sources from M/EEG measurements is an ill-posed inverse problem where principled uncertainty quantification remains challenging. The usual…"
-  },
-  {
-   "title": "Prediction Is Not Calibration: Item Parameter Recovery and Representation Coupling in Knowledge Tracing",
-   "url": "https://arxiv.org/abs/2610.30211",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30211v1 Announce Type: new Abstract: Knowledge tracing (KT) models can estimate item parameters through an item response decoder trained solely for next-response prediction, yet predictive accuracy does not…"
-  },
-  {
-   "title": "AI Mindmeld: A Latent Interconnect Protocol",
-   "url": "https://arxiv.org/abs/2610.30215",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30215v1 Announce Type: new Abstract: LLMs can act as scientific agents using tools to consult specialists and run experiments. Yet specialist information must enter their context, generally as text, images,…"
-  },
-  {
-   "title": "When Reconstruction Is Not Enough: Doubly Robust Counterfactual and Interventional Mediation Analysis with Learned Multimodal Representations",
-   "url": "https://arxiv.org/abs/2610.30220",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30220v1 Announce Type: new Abstract: Learned representations of high-dimensional multimodal health records are increasingly used to adjust for confounding, yet they are usually trained to reconstruct the data…"
-  },
-  {
-   "title": "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols",
-   "url": "https://arxiv.org/abs/2610.30151",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30151v1 Announce Type: new Abstract: Every interaction between AI agents begins with a handshake: the initiating agent must locate its counterpart, learn what it can do, and establish a session before the…"
-  },
-  {
-   "title": "MCP vs CLI for AI Agents: A Comparative Analysis of Tool Integration Strategies for Autonomous Systems",
-   "url": "https://arxiv.org/abs/2610.30157",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30157v1 Announce Type: new Abstract: AI agents require interfaces to interact with external systems such as files, APIs, databases, and cloud services. Two competing paradigms have emerged: CLI (Command Line…"
-  },
-  {
-   "title": "Accelerating Wildfire Hazard Mapping Across Canada with an AI Surrogate Modelling Framework",
-   "url": "https://arxiv.org/abs/2610.30170",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30170v1 Announce Type: new Abstract: Canada's increasing wildfire activity requires frequent national hazard mapping to guide proactive mitigation, including fuel management, land-use planning, infrastructure…"
-  },
-  {
-   "title": "Neural Networks with Differentiable Belief-Function Layers",
-   "url": "https://arxiv.org/abs/2610.30173",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30173v1 Announce Type: new Abstract: Yager's 1987 rule of combination $\\boxplus$ was proposed on epistemic grounds: under high conflict, mass should be redistributed to ignorance rather than renormalised onto…"
-  },
-  {
-   "title": "When Stable and Preferred Semantics Agree: A Path-Based Approach",
-   "url": "https://arxiv.org/abs/2610.30176",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-23T04:00:00+00:00",
-   "summary": "arXiv:2610.30176v1 Announce Type: new Abstract: We investigate structural conditions under which preferred and stable semantics agree in abstract argumentation frameworks. Our approach is based on suitably chosen sets…"
-  },
-  {
-   "title": "Left alone with nothing to do, AI agents started playing",
-   "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-23T00:45:37+00:00",
-   "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs."
   },
   {
    "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
@@ -256,35 +224,11 @@
    "published": "2026-10-23T00:00:00+00:00"
   },
   {
-   "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-   "url": "https://edjefferson.com/localwiki/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-22T23:01:18+00:00",
-   "summary": "Article URL: https://edjefferson.com/localwiki/ Comments URL: https://news.ycombinator.com/item?id=50202285 Points: 1114 # Comments: 214"
-  },
-  {
-   "title": "Canadians are running out of time to oppose Bill C-22",
-   "url": "https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-22T22:43:19+00:00",
-   "summary": "Article URL: https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill Comments URL: https://news.ycombinator.com/item?id=50202114 Points: 216 # Comments: 87"
-  },
-  {
    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
    "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-10-22T22:24:34+00:00"
-  },
-  {
-   "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-   "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-22T22:08:24+00:00",
-   "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever."
   },
   {
    "title": "Designing an AI serving harness built to last",
@@ -293,14 +237,6 @@
    "kind": "news",
    "published": "2026-10-22T21:17:29+00:00",
    "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has…"
-  },
-  {
-   "title": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
-   "url": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-22T20:51:23+00:00",
-   "summary": "Article URL: https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085 Comments URL: https://news.ycombinator.com/item?id=50200843 Points: 89 # Comments: 59"
   },
   {
    "title": "DE STAAT - FREEDOM (Official Music Video)",
@@ -319,22 +255,6 @@
    "thumbnail": "https://i2.ytimg.com/vi/USeyDcWyVCc/hqdefault.jpg"
   },
   {
-   "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
-   "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-22T19:07:09+00:00",
-   "summary": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts."
-  },
-  {
-   "title": "Canva releases its first image generation model",
-   "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-22T19:00:00+00:00",
-   "summary": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs."
-  },
-  {
    "title": "Build more responsive apps with the Decisions API",
    "url": "https://openai.com/index/decisions-api",
    "source": "OpenAI",
@@ -351,44 +271,12 @@
    "summary": "A scalable AI system requires a strong foundation. Data, engineering, platforms, operating models, and governance must converge to work as one. This session from MIT Technology Review’s EmTech Future conference explores…"
   },
   {
-   "title": "Show HN: UI micro interactions prompts for AI",
-   "url": "https://www.typeui.sh/micro-interactions",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-22T18:32:57+00:00",
-   "summary": "Article URL: https://www.typeui.sh/micro-interactions Comments URL: https://news.ycombinator.com/item?id=50199290 Points: 78 # Comments: 44"
-  },
-  {
-   "title": "Award-winning AI literature",
-   "url": "https://jamesyu.org/award-winning-ai-literature/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-22T18:28:26+00:00",
-   "summary": "Article URL: https://jamesyu.org/award-winning-ai-literature/ Comments URL: https://news.ycombinator.com/item?id=50199232 Points: 65 # Comments: 75"
-  },
-  {
-   "title": "AI and the Enclosure of the Scientific Commons",
-   "url": "https://arxiv.org/abs/2610.27251",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-22T18:28:16+00:00",
-   "summary": "Article URL: https://arxiv.org/abs/2610.27251 Comments URL: https://news.ycombinator.com/item?id=50199230 Points: 137 # Comments: 80"
-  },
-  {
    "title": "Donating Agent Skills to the Agentic AI Foundation",
    "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
    "source": "Simon Willison",
    "kind": "news",
    "published": "2026-10-22T18:09:56+00:00",
    "summary": "Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI…"
-  },
-  {
-   "title": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
-   "url": "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-22T18:02:54+00:00",
-   "summary": "Article URL: https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients Comments…"
   },
   {
    "title": "Quoting Armin Ronacher",
@@ -454,14 +342,6 @@
    "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows."
   },
   {
-   "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
-   "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-21T18:41:53+00:00",
-   "summary": "Today's PHP Security Release, and How We're Strengthening PHP Security If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes,…"
-  },
-  {
    "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
    "url": "https://huggingface.co/blog/nvidia/kumo-relational",
    "source": "Hugging Face",
@@ -474,14 +354,6 @@
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-10-21T17:35:36+00:00"
-  },
-  {
-   "title": "Panache — RTS Belle Époque pour mobile",
-   "url": "https://simonwillison.net/2026/Oct/21/panache/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-21T16:25:16+00:00",
-   "summary": "Panache — RTS Belle Époque pour mobile Well this is delightful: I released Battle Drones yesterday under an Apache 2.0 License and there's already a French language fork which reskins the game to take place in steampunk…"
   },
   {
    "title": "Southeast Asia’s digital economy to hit $368 billion",
