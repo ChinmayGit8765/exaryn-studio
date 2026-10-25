@@ -1,13 +1,133 @@
 {
- "generated_at": "2026-10-24T21:08:22.939660+00:00",
+ "generated_at": "2026-10-25T21:08:30.590036+00:00",
  "items": [
   {
-   "title": "No Signs of AI Payoff Outside the Tech Sector",
-   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+   "title": "Dolly Parton's Imagination Library",
+   "url": "https://imaginationlibrary.com/",
    "source": "Hacker News",
    "kind": "news",
+   "published": "2026-10-25T18:23:54+00:00",
+   "summary": "With today's news, I thought I'd share this great program: “When I was growing up in the hills of East Tennessee, I knew my dreams would come true. I know there are children in your community with their own dreams. They…"
+  },
+  {
+   "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+   "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-25T18:04:11+00:00",
+   "summary": "Article URL: https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/ Comments URL: https://news.ycombinator.com/item?id=50234232 Points: 231 # Comments: 53"
+  },
+  {
+   "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+   "url": "https://talkweb.eu/openweb/4558/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-25T17:30:55+00:00",
+   "summary": "Article URL: https://talkweb.eu/openweb/4558/ Comments URL: https://news.ycombinator.com/item?id=50233929 Points: 271 # Comments: 133"
+  },
+  {
+   "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+   "url": "https://lynchlab.net/llm-skin-cancer",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-25T17:15:38+00:00",
+   "summary": "Article URL: https://lynchlab.net/llm-skin-cancer Comments URL: https://news.ycombinator.com/item?id=50233779 Points: 289 # Comments: 145"
+  },
+  {
+   "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-25T16:57:32+00:00",
+   "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\""
+  },
+  {
+   "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+   "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-25T16:28:26+00:00",
+   "summary": "Article URL: https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html Comments URL:…"
+  },
+  {
+   "title": "JetBrains Thinkrail",
+   "url": "https://github.com/JetBrains/thinkrail",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-25T16:27:12+00:00",
+   "summary": "Article URL: https://github.com/JetBrains/thinkrail Comments URL: https://news.ycombinator.com/item?id=50233294 Points: 103 # Comments: 60"
+  },
+  {
+   "title": "Sphere Intersection Puzzle Corrected",
+   "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-10-25T14:30:46+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/V_uq3v6xK-4/hqdefault.jpg"
+  },
+  {
+   "title": "The hottest AI wearables and gadgets you should know about",
+   "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-25T14:10:00+00:00",
+   "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more."
+  },
+  {
+   "title": "r/opensource just banned AI, non-English speakers, and more",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-25T13:52:12+00:00",
+   "summary": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If your project uses AI, is made by AI, or is intended for AI,…"
+  },
+  {
+   "title": "Imagine an AI future where being banned means you are now economically useless",
+   "url": "https://twitter.com/boneGPT/status/2114035719853265264",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-25T12:47:20+00:00",
+   "summary": "Article URL: https://twitter.com/boneGPT/status/2114035719853265264 Comments URL: https://news.ycombinator.com/item?id=50230995 Points: 91 # Comments: 74"
+  },
+  {
+   "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
+   "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-25T09:51:17+00:00",
+   "summary": "Article URL: https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html Comments URL: https://news.ycombinator.com/item?id=50229827 Points: 124 # Comments: 60"
+  },
+  {
+   "title": "Cerebras Deploys Trillion-Parameter AI Models",
+   "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-25T01:33:49+00:00",
+   "summary": "Article URL: https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras Comments URL: https://news.ycombinator.com/item?id=50227356 Points: 339 # Comments: 121"
+  },
+  {
+   "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+   "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-24T23:11:54+00:00",
+   "summary": "Article URL: https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class Comments URL: https://news.ycombinator.com/item?id=50226419 Points: 489 # Comments: 526"
+  },
+  {
+   "title": "Blue Planet III is keeping the rough edges in the age of AI",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-24T21:29:12+00:00",
+   "summary": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost…"
+  },
+  {
+   "title": "No signs of AI payoff outside the tech sector",
+   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+   "source": "Hacker News · AI",
+   "kind": "news",
    "published": "2026-10-24T19:47:19+00:00",
-   "summary": "Article URL: https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector Comments URL: https://news.ycombinator.com/item?id=50224463 Points: 186 # Comments: 140"
+   "summary": "Article URL: https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector Comments URL: https://news.ycombinator.com/item?id=50224463 Points: 603 # Comments: 643"
   },
   {
    "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
@@ -26,36 +146,12 @@
    "summary": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image,…"
   },
   {
-   "title": "Danish Government silently drops plan to dump MS Office",
-   "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-24T18:31:48+00:00",
-   "summary": "Article URL: https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft Comments URL:…"
-  },
-  {
-   "title": "Roku developer repositories moved from GitHub to GitLab",
-   "url": "https://blog.roku.com/developer/gitlab-move",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-24T16:06:26+00:00",
-   "summary": "Article URL: https://blog.roku.com/developer/gitlab-move Comments URL: https://news.ycombinator.com/item?id=50222622 Points: 201 # Comments: 137"
-  },
-  {
    "title": "Block’s new voice model sounds eerily human",
    "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
    "source": "TechCrunch AI",
    "kind": "news",
    "published": "2026-10-24T16:00:00+00:00",
    "summary": "Block said that the voice model can run locally on a MacBook M4 Max"
-  },
-  {
-   "title": "FreeDNS",
-   "url": "https://freedns.afraid.org/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-24T15:20:01+00:00",
-   "summary": "Article URL: https://freedns.afraid.org/ Comments URL: https://news.ycombinator.com/item?id=50222133 Points: 201 # Comments: 55"
   },
   {
    "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
@@ -74,44 +170,12 @@
    "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work."
   },
   {
-   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-   "url": "https://github.com/Zagitta/gpu-unlock",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-24T09:58:27+00:00",
-   "summary": "Article URL: https://github.com/Zagitta/gpu-unlock Comments URL: https://news.ycombinator.com/item?id=50219700 Points: 141 # Comments: 51"
-  },
-  {
-   "title": "I don't understand quantum physics (2018)",
-   "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-24T09:53:26+00:00",
-   "summary": "Article URL: https://www.southampton.ac.uk/~doug/quantum_physics/index.html Comments URL: https://news.ycombinator.com/item?id=50219666 Points: 240 # Comments: 179"
-  },
-  {
    "title": "battledrones v14: Compass Rose, a four player map",
    "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
    "source": "Simon Willison",
    "kind": "news",
    "published": "2026-10-24T03:59:57+00:00",
    "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle -…"
-  },
-  {
-   "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-   "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-23T23:05:49+00:00",
-   "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work."
-  },
-  {
-   "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-   "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-23T21:59:19+00:00",
-   "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command."
   },
   {
    "title": "Quick Study",
@@ -138,6 +202,14 @@
    "thumbnail": "https://i3.ytimg.com/vi/nXpoU99pTho/hqdefault.jpg"
   },
   {
+   "title": "Google’s AI search changes upended online publishing",
+   "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-23T20:42:34+00:00",
+   "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM…"
+  },
+  {
    "title": "Introducing Kimi K3.1 Pro",
    "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
    "source": "Simon Willison",
@@ -162,14 +234,6 @@
    "thumbnail": "https://i4.ytimg.com/vi/SMGg7iisHmc/hqdefault.jpg"
   },
   {
-   "title": "The iPhone Duo should have been an iPad",
-   "url": "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-23T17:00:18+00:00",
-   "summary": "We gave the iPhone Duo a 7 /10. But that wasn't always the score we planned, and it might not be the right score forever. Such are the challenges of reviewing - and assessing - a big, new idea about the most popular…"
-  },
-  {
    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
    "source": "OpenAI",
@@ -178,27 +242,11 @@
    "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
   },
   {
-   "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-   "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-23T16:52:55+00:00",
-   "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an…"
-  },
-  {
    "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
    "url": "https://huggingface.co/blog/allenai/litpivot",
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-10-23T16:15:50+00:00"
-  },
-  {
-   "title": "Meta delays new business terms after publisher pushback on AI scraping",
-   "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-23T14:47:41+00:00",
-   "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to…"
   },
   {
    "title": "Securing our frontier model training environment",
@@ -209,19 +257,19 @@
    "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
   },
   {
+   "title": "Does Your Model Run on AWS Trainium? Look It Up",
+   "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-23T00:00:00+00:00"
+  },
+  {
    "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
    "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
    "source": "OpenAI",
    "kind": "news",
    "published": "2026-10-23T00:00:00+00:00",
    "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
-  },
-  {
-   "title": "Does Your Model Run on AWS Trainium? Look It Up",
-   "url": "https://huggingface.co/blog/torch-neuronx-model-support",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-10-23T00:00:00+00:00"
   },
   {
    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
