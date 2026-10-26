@@ -1,0 +1,543 @@
+{
+ "generated_at": "2026-10-26T21:09:01.736646+00:00",
+ "items": [
+  {
+   "title": "Kevin Roose is AGI-pilled. Why aren’t you?",
+   "url": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-26T20:01:42+00:00",
+   "summary": "Today, I’m talking to Kevin Roose, journalist and author of the new book The AGI Chronicles, which details the recent and explosive transformation of the AI industry. Kevin was a longtime New York Times reporter and…"
+  },
+  {
+   "title": "The EPA Is Quietly Killing Its Web Archive",
+   "url": "https://www.motherjones.com/environment/2026/10/epa-online-archive-deletion-zeldin-camp-lejeune-trump-clean-power/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-26T19:05:41+00:00",
+   "summary": "Article URL: https://www.motherjones.com/environment/2026/10/epa-online-archive-deletion-zeldin-camp-lejeune-trump-clean-power/ Comments URL: https://news.ycombinator.com/item?id=50249275 Points: 133 # Comments: 14"
+  },
+  {
+   "title": "Quoting Jason Koebler",
+   "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-26T19:00:25+00:00",
+   "summary": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And,…"
+  },
+  {
+   "title": "China just dropped a new frontier model... and nobody can explain how",
+   "url": "https://www.youtube.com/watch?v=G_em1hHPnXY",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-10-26T18:55:29+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/G_em1hHPnXY/hqdefault.jpg"
+  },
+  {
+   "title": "US designates helium as a critical material",
+   "url": "https://apnews.com/article/energy-critical-materials-minerals-helium-43da160adc1bad389fba0b9ffbd14c3c",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-26T18:31:39+00:00",
+   "summary": "Article URL: https://apnews.com/article/energy-critical-materials-minerals-helium-43da160adc1bad389fba0b9ffbd14c3c Comments URL: https://news.ycombinator.com/item?id=50248665 Points: 117 # Comments: 53"
+  },
+  {
+   "title": "Type Server Protocol",
+   "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-26T18:14:49+00:00",
+   "summary": "Article URL: https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md Comments URL: https://news.ycombinator.com/item?id=50248371 Points: 134 # Comments: 91"
+  },
+  {
+   "title": "GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-26T18:01:17+00:00",
+   "summary": "Article URL: https://openai.com/index/introducing-gpt-6-1-terra/ Comments URL: https://news.ycombinator.com/item?id=50248124 Points: 360 # Comments: 209"
+  },
+  {
+   "title": "Oldest GUI application that still runs on Windows 11",
+   "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-26T17:56:55+00:00",
+   "summary": "Article URL: https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/ Comments URL: https://news.ycombinator.com/item?id=50248055 Points: 160 # Comments: 79"
+  },
+  {
+   "title": "In Leaked Audio, Flock CEO Tells Cops Backlash to the Company Isn't Real",
+   "url": "https://www.404media.co/in-leaked-audio-flock-ceo-tells-cops-backlash-to-the-company-isnt-real/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-26T17:54:00+00:00",
+   "summary": "Article URL: https://www.404media.co/in-leaked-audio-flock-ceo-tells-cops-backlash-to-the-company-isnt-real/ Comments URL: https://news.ycombinator.com/item?id=50248005 Points: 160 # Comments: 85"
+  },
+  {
+   "title": "Will the real Anthropic please stand up",
+   "url": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-26T17:45:43+00:00",
+   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. After weeks of frenzied speculation, Anthropic has filed its IPO prospectus. The…"
+  },
+  {
+   "title": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-26T17:37:44+00:00",
+   "summary": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission, preparing the company behind Claude to beat OpenAI to the punch with an IPO. In a filing with the SEC, Anthropic said it plans to list…"
+  },
+  {
+   "title": "The RealReal won’t let AI agents hog designer clothing",
+   "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-26T17:30:55+00:00",
+   "summary": "The RealReal, a secondhand luxury fashion consignment retailer, said it's updating its bot defense system, effectively making it harder for AI agents to shop on its site. The change comes days after The Verge reported…"
+  },
+  {
+   "title": "Five weird details from Anthropic’s IPO filing",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-26T17:10:23+00:00",
+   "summary": "Anthropic has finally filed its S-1 prospectus with the SEC, a document designed to give investors a look under the hood of its business, from how much its executives are making and plans for spending its IPO billions…"
+  },
+  {
+   "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-26T16:49:42+00:00",
+   "summary": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier."
+  },
+  {
+   "title": "SpaceX locks in $40B GPU financing deal with Apollo",
+   "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-26T16:46:36+00:00",
+   "summary": "The financing gives SpaceX another way to fund its rapidly expanding AI ambitions without relying solely on traditional debt markets."
+  },
+  {
+   "title": "Microsoft offers buyouts to 60,000 employees",
+   "url": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-26T16:07:16+00:00",
+   "summary": "Microsoft is offering voluntary buyouts to up to 60,000 employees across the US, UK, Canada, and India. In a message to employees, Microsoft chief people officer Amy Coleman writes that this gives staff members \"the…"
+  },
+  {
+   "title": "Our newest AI Quest: Mapping the human brain",
+   "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-10-26T16:00:00+00:00",
+   "summary": "An illustration of a planet rotating to show various cartoon figures waving. At the top is the text \"AI Quests\""
+  },
+  {
+   "title": "Anthropic officially files for its public debut",
+   "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-26T14:35:22+00:00",
+   "summary": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission."
+  },
+  {
+   "title": "Can AI help solve the COBOL code crisis?",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-26T13:26:44+00:00",
+   "summary": "What do the IRS, banks, airlines, and government infrastructure around the world have in common? They're all running on systems propped up by antique computer code that nobody dares touch, lest everything come crashing…"
+  },
+  {
+   "title": "ChatGPT’s expanding world of work",
+   "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-26T10:00:00+00:00",
+   "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time."
+  },
+  {
+   "title": "The focus on AI safety disasters ignores everyday harms",
+   "url": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-26T09:01:00+00:00",
+   "summary": "Consider what passes for success in technology policy. An AI company promises that its chatbot will not encourage suicide. A social media platform makes it more difficult for children to buy fentanyl. These are…"
+  },
+  {
+   "title": "These 3 skills changed my life",
+   "url": "https://www.youtube.com/watch?v=5Bmp9cz1JN8",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-26T07:16:35+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/5Bmp9cz1JN8/hqdefault.jpg"
+  },
+  {
+   "title": "How Fanatics and OpenAI streamline the fan experience",
+   "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-26T07:00:00+00:00",
+   "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement."
+  },
+  {
+   "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+   "url": "https://openai.com/index/openai-cut-incident-investigation",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-26T07:00:00+00:00",
+   "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows."
+  },
+  {
+   "title": "Tradeoff-Aware Territory Design: A Multi-Objective Decision System for Enterprise Customer-to-Seller Allocation",
+   "url": "https://arxiv.org/abs/2610.31701",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31701v1 Announce Type: new Abstract: Enterprise customer journeys are shaped not only by product experiences and marketing, but also by recurring resource-allocation decisions. In B2B go-to-market (GTM)…"
+  },
+  {
+   "title": "Phronix: The Capability-Centric Learning Paradigm for Agents",
+   "url": "https://arxiv.org/abs/2610.31789",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31789v1 Announce Type: new Abstract: Scientific computing increasingly relies on large language model-based agents for performance engineering tasks such as instrumentation, analysis, and workflow porting.…"
+  },
+  {
+   "title": "Patronizing and Condescending Language Detection in English and Mandarin",
+   "url": "https://arxiv.org/abs/2610.31808",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31808v1 Announce Type: new Abstract: Patronizing and condescending language (PCL) is a form of harmful language that belittles and assumes pity for vulnerable groups, reinforcing negative societal…"
+  },
+  {
+   "title": "PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean",
+   "url": "https://arxiv.org/abs/2610.31810",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31810v1 Announce Type: new Abstract: Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions. We introduce PaperFormalizer, a Lean-based agentic pipeline that helps…"
+  },
+  {
+   "title": "Don't Forget What You Just Learned: Self-Directed Repair Turns Agent Mistakes Into Lasting Lessons",
+   "url": "https://arxiv.org/abs/2610.31846",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31846v1 Announce Type: new Abstract: Intelligent agents should learn from their mistakes so that experience leads to continuous improvement. Yet today's agents recover from a mistake only temporarily:…"
+  },
+  {
+   "title": "Collaborative In-Context Learning for Indoor Radio Map Estimation",
+   "url": "https://arxiv.org/abs/2610.31702",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31702v1 Announce Type: new Abstract: Indoor radio map estimation (RME) is essential for wireless applications such as coverage planning, localization, and network deployment. However, most existing methods…"
+  },
+  {
+   "title": "The Path to NDE 4.0: A Review of Algorithms, Techniques, and Strategies for Autonomous Inspection",
+   "url": "https://arxiv.org/abs/2610.31704",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31704v1 Announce Type: new Abstract: Non-Destructive Inspection (NDI) is a cornerstone of modern quality assurance, critical for ensuring the safety and reliability of infrastructure and manufactured…"
+  },
+  {
+   "title": "Does LeWorldModel Preserve Local Action Geometry?",
+   "url": "https://arxiv.org/abs/2610.31716",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31716v1 Announce Type: new Abstract: We examine how closely pretrained LeWorldModel (LeWM) reproduces the effects of small action changes. Using matched simulator and model responses, we measure action…"
+  },
+  {
+   "title": "Towards Adversarially Robust Multigraph Neural Networks for Financial Crime Analysis",
+   "url": "https://arxiv.org/abs/2610.31718",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31718v1 Announce Type: new Abstract: Financial transaction networks are naturally represented as multigraphs, where repeated transactions between the same pair of accounts are modeled as distinct edges.…"
+  },
+  {
+   "title": "End-to-End Differentiable Diffusion Conditioning for Physics-Informed Optimization",
+   "url": "https://arxiv.org/abs/2610.31721",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-26T04:00:00+00:00",
+   "summary": "arXiv:2610.31721v1 Announce Type: new Abstract: Optimizing high-dimensional physical systems under expensive evaluations and complex constraints is a central challenge in science and engineering. In offline model-based…"
+  },
+  {
+   "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+   "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-25T21:31:16+00:00",
+   "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest."
+  },
+  {
+   "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-25T16:57:32+00:00",
+   "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\""
+  },
+  {
+   "title": "Seam Cutter",
+   "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-25T15:10:19+00:00",
+   "summary": "Tool: Seam Cutter I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a…"
+  },
+  {
+   "title": "Sphere Intersection Puzzle Corrected",
+   "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-10-25T14:30:46+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/V_uq3v6xK-4/hqdefault.jpg"
+  },
+  {
+   "title": "The hottest AI wearables and gadgets you should know about",
+   "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-25T14:10:00+00:00",
+   "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more."
+  },
+  {
+   "title": "battledrones v14: Compass Rose, a four player map",
+   "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-24T03:59:57+00:00",
+   "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle -…"
+  },
+  {
+   "title": "Quick Study",
+   "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-23T21:35:13+00:00",
+   "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my…"
+  },
+  {
+   "title": "Even The NSA Got Involved",
+   "url": "https://www.youtube.com/shorts/nXpoU99pTho",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-23T21:00:31+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/nXpoU99pTho/hqdefault.jpg"
+  },
+  {
+   "title": "Introducing Kimi K3.1 Pro",
+   "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-23T19:40:54+00:00",
+   "summary": "Introducing Kimi K3.1 Pro Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise \"Full model weights will be released by Nov 4, 2026\". They're also offering a \"Highspeed\" version…"
+  },
+  {
+   "title": "The most vulnerable week in internet history...",
+   "url": "https://www.youtube.com/watch?v=SMGg7iisHmc",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-10-23T18:19:58+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/SMGg7iisHmc/hqdefault.jpg"
+  },
+  {
+   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+   "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-23T17:00:00+00:00",
+   "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
+  },
+  {
+   "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+   "url": "https://huggingface.co/blog/allenai/litpivot",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-23T16:15:50+00:00"
+  },
+  {
+   "title": "Securing our frontier model training environment",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-23T10:00:00+00:00",
+   "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
+  },
+  {
+   "title": "Does Your Model Run on AWS Trainium? Look It Up",
+   "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-23T00:00:00+00:00"
+  },
+  {
+   "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+   "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-22T22:24:34+00:00"
+  },
+  {
+   "title": "Designing an AI serving harness built to last",
+   "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-22T21:17:29+00:00",
+   "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has…"
+  },
+  {
+   "title": "DE STAAT - FREEDOM (Official Music Video)",
+   "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-22T19:42:26+00:00",
+   "summary": "DE STAAT - FREEDOM (Official Music Video) OK well this is a first for me... at 00:44 in this new music video by Dutch alternative rock band De Staat : The visual effects are credited to Matties Grooten of Fake it or…"
+  },
+  {
+   "title": "Even The NSA Got Involved",
+   "url": "https://www.youtube.com/watch?v=USeyDcWyVCc",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-22T19:14:45+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/USeyDcWyVCc/hqdefault.jpg"
+  },
+  {
+   "title": "The Foundations of Scalable AI",
+   "url": "https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-22T18:48:04+00:00",
+   "summary": "A scalable AI system requires a strong foundation. Data, engineering, platforms, operating models, and governance must converge to work as one. This session from MIT Technology Review’s EmTech Future conference explores…"
+  },
+  {
+   "title": "The last real programmers are dying out...",
+   "url": "https://www.youtube.com/watch?v=zv6B6PQOuHE",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-10-22T15:09:31+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/zv6B6PQOuHE/hqdefault.jpg"
+  },
+  {
+   "title": "How Image Watermarking Works - Computerphile",
+   "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-22T13:00:06+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/h6j_ixGnpiY/hqdefault.jpg"
+  },
+  {
+   "title": "Making the case for context-aware AI",
+   "url": "https://www.technologyreview.com/2026/10/22/1146812/making-the-case-for-context-aware-ai/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-22T10:00:00+00:00",
+   "summary": "Enterprise AI can generate recommendations, automate tasks, and help organizations make decisions faster. But without an understanding of how a business actually operates, even powerful models can miss the constraints…"
+  },
+  {
+   "title": "AI’s hidden storage bill: What inference leaves behind",
+   "url": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-22T08:41:18+00:00",
+   "summary": "Ask most executives to picture the cost of AI and they’ll likely see GPUs—racks of accelerators with gigawatts of power—and a waitlist for silicon. But that picture leaves something out: Data storage costs. What happens…"
+  },
+  {
+   "title": "Ensemble forecasting with IBM Granite time-series models",
+   "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-22T07:51:31+00:00"
+  },
+  {
+   "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+   "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-21T18:26:30+00:00"
+  },
+  {
+   "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-21T17:35:36+00:00"
+  },
+  {
+   "title": "Southeast Asia’s digital economy to hit $368 billion",
+   "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-10-21T04:00:00+00:00",
+   "summary": "Cover image for the e-Conomy SEA 2026 report titled Building the intelligent economy by Google, Temasek, and Bain and Company. A 3D illustration features a glowing yellow star surrounded by miniature scenes representing…"
+  },
+  {
+   "title": "Gemini 4 Argon Is Not What I Expected",
+   "url": "https://www.youtube.com/watch?v=LWxX6vvHfrc",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-10-19T08:49:21+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/LWxX6vvHfrc/hqdefault.jpg"
+  },
+  {
+   "title": "There's never been a better time to go into math",
+   "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-10-16T16:15:20+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg"
+  },
+  {
+   "title": "Multiplayer Gaming & Flight Simulation - Computerphile",
+   "url": "https://www.youtube.com/watch?v=WqrwAFs-fq0",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-15T13:30:19+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/WqrwAFs-fq0/hqdefault.jpg"
+  },
+  {
+   "title": "OpenAI’s New AI Is Doing Things We Barely Understand",
+   "url": "https://www.youtube.com/watch?v=z_sXLlLVUls",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-10-13T08:56:12+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/z_sXLlLVUls/hqdefault.jpg"
+  },
+  {
+   "title": "AI Labs Warn Race Makes Breach ‘Inevitable’",
+   "url": "https://www.youtube.com/watch?v=C4Sq3Rot8FU",
+   "source": "AI Explained",
+   "kind": "video",
+   "published": "2026-10-12T22:52:31+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/C4Sq3Rot8FU/hqdefault.jpg"
+  },
+  {
+   "title": "DeepSeek Solved AI’s Memory Problem",
+   "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-10-11T16:53:17+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/4fLVq6HJsKc/hqdefault.jpg"
+  },
+  {
+   "title": "Race Conditions on a Human Scale - Computerphile",
+   "url": "https://www.youtube.com/watch?v=W0jPTqIo5oE",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-08T13:00:25+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/W0jPTqIo5oE/hqdefault.jpg"
+  }
+ ]
+}
