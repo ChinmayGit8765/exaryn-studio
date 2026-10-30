@@ -1,69 +1,316 @@
 {
- "generated_at": "2026-10-29T21:07:04.744678+00:00",
+ "generated_at": "2026-10-30T21:05:58.268391+00:00",
  "items": [
   {
-   "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
-   "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-29T20:08:31+00:00",
-   "summary": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business."
-  },
-  {
-   "title": "Rivian expands joint venture with VW to include AI assistant",
-   "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-29T20:05:47+00:00",
-   "summary": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result."
-  },
-  {
-   "title": "OpenAI-backed Thrive Holdings acquires ADT",
-   "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-29T19:56:19+00:00",
-   "summary": "OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business."
-  },
-  {
-   "title": "Patrick Stewart has died",
-   "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-29T19:41:39+00:00",
-   "summary": "https://archive.ph/y4Egm https://en.wikipedia.org/wiki/Patrick_Stewart Comments URL: https://news.ycombinator.com/item?id=50294702 Points: 1165 # Comments: 215"
-  },
-  {
-   "title": "Meta quietly launches an AI fashion app called Style Sketch",
-   "url": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-29T19:14:36+00:00",
-   "summary": "The app connects to Instagram to build a virtual closet from photos you’ve already shared, or lets you add items manually by snapping a photo, recording a quick video, or uploading images from your camera roll."
-  },
-  {
-   "title": "You can generate and edit Google Docs files directly in Gemini chats now",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+   "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
    "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-10-29T18:45:31+00:00",
-   "summary": "Now you can generate, preview, and edit PDFs, Google Docs, Google Sheets, slide decks, Markdown files, TXT files, and code directly within Google Gemini. The new file editing capabilities are available starting today…"
+   "published": "2026-10-30T20:48:43+00:00",
+   "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky…"
   },
   {
-   "title": "Granola crunches up a dictation feature to compete with Wispr",
-   "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
-   "source": "TechCrunch AI",
+   "title": "The biggest names in AI are backing a new way to opt out of scraping",
+   "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+   "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-10-29T17:54:38+00:00",
-   "summary": "Uno reverse! After Wispr added meeting notes to its dictation app, Granola is adding dictation to its meeting notetaker. The voice AI wars are getting interesting."
+   "published": "2026-10-30T20:26:10+00:00",
+   "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can…"
   },
   {
-   "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
-   "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+   "title": "Google’s satellite AI server transmits its first response to Earth",
+   "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T18:21:38+00:00",
+   "summary": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board…"
+  },
+  {
+   "title": "GitHub Incident with Actions, Pages, and Webhooks",
+   "url": "https://www.githubstatus.com/incidents/pwxsjgnvrk6b",
    "source": "Hacker News",
    "kind": "news",
-   "published": "2026-10-29T17:43:48+00:00",
-   "summary": "https://www.nytimes.com/2026/10/29/us/politics/nvidia-china-... , https://archive.ph/K7bih Comments URL: https://news.ycombinator.com/item?id=50293047 Points: 137 # Comments: 76"
+   "published": "2026-10-30T17:57:35+00:00",
+   "summary": "Article URL: https://www.githubstatus.com/incidents/pwxsjgnvrk6b Comments URL: https://news.ycombinator.com/item?id=50307723 Points: 115 # Comments: 43"
+  },
+  {
+   "title": "nemotron-halloween",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-30T17:57:24+00:00"
+  },
+  {
+   "title": "Zest’s new AI agent finds restaurants and books reservations over text",
+   "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T17:47:12+00:00",
+   "summary": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation."
+  },
+  {
+   "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T17:38:04+00:00",
+   "summary": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that…"
+  },
+  {
+   "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+   "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-30T17:27:25+00:00",
+   "summary": "Article URL: https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f Comments URL: https://news.ycombinator.com/item?id=50307219 Points: 187 # Comments: 133"
+  },
+  {
+   "title": "My favourite PowerMac is a Nintendo Wii",
+   "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-30T17:25:15+00:00",
+   "summary": "Article URL: https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/ Comments URL: https://news.ycombinator.com/item?id=50307190 Points: 152 # Comments: 40"
+  },
+  {
+   "title": "Proton's CEO Cancels AI 'Re-Interviews'",
+   "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-30T17:24:45+00:00",
+   "summary": "Article URL: https://www.404media.co/protons-ceo-cancels-ai-re-interviews/ Comments URL: https://news.ycombinator.com/item?id=50307183 Points: 224 # Comments: 191"
+  },
+  {
+   "title": "Google’s first data center satellite is online and writing poetry",
+   "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T17:00:00+00:00",
+   "summary": "The first TPU in space is running a Google DeepMind Gemma 4 model and writing cheesy poetry."
+  },
+  {
+   "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+   "url": "https://github.com/dbreunig/nesformer",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-30T16:40:22+00:00",
+   "summary": "Article URL: https://github.com/dbreunig/nesformer Comments URL: https://news.ycombinator.com/item?id=50306442 Points: 138 # Comments: 95"
+  },
+  {
+   "title": "US tech stocks see sharp falls over AI cost fears",
+   "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-30T16:13:02+00:00",
+   "summary": "Article URL: https://www.bbc.co.uk/news/articles/cvwy72e0n72yo Comments URL: https://news.ycombinator.com/item?id=50306008 Points: 213 # Comments: 239"
+  },
+  {
+   "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
+   "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T16:08:56+00:00",
+   "summary": "The Wikimedia Foundation is staking out a middle ground in a group of landmark AI copyright cases, pushing courts to legally protect large language models (LLMs) training on copyrighted work - but not chatbots…"
+  },
+  {
+   "title": "Theranos whistleblower Tyler Shultz warns that the AI boom is ‘a great opportunity to go deceive people’",
+   "url": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T16:03:45+00:00",
+   "summary": "The cautionary Theranos tale takes on a new significance in the AI era, when companies that have never turned a profit are raising capital at trillion-dollar valuations."
+  },
+  {
+   "title": "OpenAI Claims It Just Did The Impossible",
+   "url": "https://www.youtube.com/watch?v=CWdTBLsbaQs",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-10-30T15:57:16+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/CWdTBLsbaQs/hqdefault.jpg"
+  },
+  {
+   "title": "AI isn't replacing SREs, it's deskilling them",
+   "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-30T15:52:18+00:00",
+   "summary": "Article URL: https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling Comments URL: https://news.ycombinator.com/item?id=50305693 Points: 393 # Comments: 300"
+  },
+  {
+   "title": "Florilegium: Procedural Flowers in LaTeX",
+   "url": "https://github.com/kevinraymond/florilegium",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-30T15:48:12+00:00",
+   "summary": "Article URL: https://github.com/kevinraymond/florilegium Comments URL: https://news.ycombinator.com/item?id=50305637 Points: 150 # Comments: 26"
+  },
+  {
+   "title": "The Private Key Mistake! (TLS Key set to \"4\") - Computerphile",
+   "url": "https://www.youtube.com/watch?v=NDgS__J1U-M",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-30T15:47:25+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/NDgS__J1U-M/hqdefault.jpg"
+  },
+  {
+   "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T15:14:37+00:00",
+   "summary": "Pope Leo XIV says AI systems should be \"disarmed,\" adding that humans \"have the responsibility to guide, change and, when necessary, reject its applications.\" In Friday's Papal Address, Pope Leo encourages United…"
+  },
+  {
+   "title": "Skip the small talk: Make game-changing connections at TechCrunch Founder Summit with Braindate",
+   "url": "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T14:00:00+00:00",
+   "summary": "At TechCrunch Founder Summit 2026, happening November 4 at SoWa Power Station in Boston, networking powered by Braindate is designed to make those conversations easier to find, whether they are in 1:1 or small-group…"
+  },
+  {
+   "title": "DoorDash said it’s only received ‘several hundred’ orders from AI agents",
+   "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T13:54:25+00:00",
+   "summary": "DoorDash said that it is open to working with third-party agent makers."
+  },
+  {
+   "title": "5 days left: Your last chance to connect, scale, and save at TechCrunch Founder Summit 2026",
+   "url": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T13:00:00+00:00",
+   "summary": "5 days to save up to $100, plus a second pass for free to TechCrunch Founder Summit 2026 in Boston on November 4. Register now."
+  },
+  {
+   "title": "Making it easier for websites to express AI training preferences",
+   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-30T09:30:00+00:00",
+   "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+  },
+  {
+   "title": "Ask HN: Are you tired too in this AI era?",
+   "url": "https://news.ycombinator.com/item?id=50301479",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-30T09:17:43+00:00",
+   "summary": "Although AI lets us do much more, I feel considerably more tired than before. We need to keep track of many things happening in parallel and read enormous amounts of generated text. The constant guardrailing, decision…"
+  },
+  {
+   "title": "Community safety report and new protections for teens",
+   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-30T09:00:00+00:00",
+   "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
+  },
+  {
+   "title": "Moment-Guided Optimizers for Noisy Deep Learning: MGO-SC as a Simple Consistency Gate for Adam-Style Updates",
+   "url": "https://arxiv.org/abs/2610.37712",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37712v1 Announce Type: new Abstract: Adaptive optimizers are widely used in deep learning, yet their behavior can degrade under heavy stochasticity and label noise where the sign and magnitude of gradients…"
+  },
+  {
+   "title": "What a Weight Update Buys: Leverage Across Training Stages",
+   "url": "https://arxiv.org/abs/2610.37719",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37719v1 Announce Type: new Abstract: Post-training moves a language model's weights by about a thousandth of their norm and changes its behavior sharply; pretraining moves them by a third and buys a slow…"
+  },
+  {
+   "title": "Threshold Compatibility and Support-Selection Diagnostics in Neural Discovery of Partial Differential Equations",
+   "url": "https://arxiv.org/abs/2610.37726",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37726v1 Announce Type: new Abstract: Accurate regression need not yield the correct equation after support selection. For a median/sample-standard-deviation threshold in neural PDE discovery, we derive an…"
+  },
+  {
+   "title": "Predicate Neuron: Differentiable Quantization of Predicate Relations in Gradient-based Learning",
+   "url": "https://arxiv.org/abs/2610.37727",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37727v1 Announce Type: new Abstract: In machine learning, symbolic reasoning approaches often rely on static architectures that hinder integration into deep neural networks and gradient-based optimization. To…"
+  },
+  {
+   "title": "Selective Transfer Learning for Groundwater Level Anomaly Forecasting: Accuracy-Risk Trade-offs",
+   "url": "https://arxiv.org/abs/2610.37733",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37733v1 Announce Type: new Abstract: This work studies context-aware selective transfer learning for multi-well groundwater anomaly forecasting in the Netherlands. Source-domain pretraining can raise average…"
+  },
+  {
+   "title": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
+   "url": "https://arxiv.org/abs/2610.37720",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37720v1 Announce Type: new Abstract: Sparse Mixture-of-Experts (MoE) models offer scalable capacity for Web applications, but uneven routing creates computation and communication bottlenecks. Existing…"
+  },
+  {
+   "title": "Amortized Localized Posterior Inference for Model Calibration with Application to an Ocean Turbulence Closure",
+   "url": "https://arxiv.org/abs/2610.37731",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37731v1 Announce Type: new Abstract: Model discrepancy may prevent a single calibration parameter from reproducing a physical response across the context domain. In addition, uncertainties in observations and…"
+  },
+  {
+   "title": "ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions",
+   "url": "https://arxiv.org/abs/2610.37732",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37732v1 Announce Type: new Abstract: Many uses of language models end in a typed decision: a choice among a closed set of options, whose probabilities code can act on. Reading those probabilities from one…"
+  },
+  {
+   "title": "OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery",
+   "url": "https://arxiv.org/abs/2610.37739",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37739v1 Announce Type: new Abstract: Large language models (LLMs) have shown increasing promise in research-level problem solving, yet a comprehensive collection of such problems is still missing, and…"
+  },
+  {
+   "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
+   "url": "https://arxiv.org/abs/2610.37786",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-30T04:00:00+00:00",
+   "summary": "arXiv:2610.37786v1 Announce Type: new Abstract: Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering,…"
+  },
+  {
+   "title": "API credits benefit for eligible ChatGPT subscriptions",
+   "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-29T22:48:29+00:00",
+   "summary": "API credits benefit for eligible ChatGPT subscriptions Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500 per month subscribers would get the…"
+  },
+  {
+   "title": "Google value plunges by $500B as AI fears rattle Wall Street",
+   "url": "https://www.bbc.com/news/articles/cm9qzdqpxy48o",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-29T22:22:13+00:00",
+   "summary": "Article URL: https://www.bbc.com/news/articles/cm9qzdqpxy48o Comments URL: https://news.ycombinator.com/item?id=50297037 Points: 75 # Comments: 33"
+  },
+  {
+   "title": "Building an AI-native engineering org",
+   "url": "https://twitter.com/sgondala2/status/2115832070274723875",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-29T21:58:34+00:00",
+   "summary": "Article URL: https://twitter.com/sgondala2/status/2115832070274723875 Comments URL: https://news.ycombinator.com/item?id=50296730 Points: 73 # Comments: 80"
   },
   {
    "title": "T3 Code broke me",
@@ -82,100 +329,12 @@
    "summary": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of…"
   },
   {
-   "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
-   "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-29T17:00:00+00:00",
-   "summary": "Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can't."
-  },
-  {
    "title": "An updated Model Spec for more capable and beneficial AI",
    "url": "https://openai.com/index/updated-model-spec",
    "source": "OpenAI",
    "kind": "news",
    "published": "2026-10-29T17:00:00+00:00",
    "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
-  },
-  {
-   "title": "Tomáš Mikolov awarded the Medal of Merit by the President of the Czech Republic",
-   "url": "https://www.vut.cz/en/but/news-f19528/two-but-graduates-received-state-honors-from-the-president-of-the-republic-d378468",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-29T16:56:54+00:00",
-   "summary": "Article URL: https://www.vut.cz/en/but/news-f19528/two-but-graduates-received-state-honors-from-the-president-of-the-republic-d378468 Comments URL: https://news.ycombinator.com/item?id=50292233 Points: 140 # Comments: 14"
-  },
-  {
-   "title": "Microsoft’s AI future has fewer jobs",
-   "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-29T16:48:16+00:00",
-   "summary": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's…"
-  },
-  {
-   "title": "AI has come for Arizona’s water",
-   "url": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-29T16:47:27+00:00",
-   "summary": "A hulking gray giant rises from the desert. Inside, engineers create the force behind our phones and computers and appliances, our streaming services and search engines and chatbots and vibe-coded apps and websites. The…"
-  },
-  {
-   "title": "Google Search is now less than half of Alphabet’s revenue",
-   "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-29T16:42:17+00:00",
-   "summary": "Article URL: https://www.kadoa.com/companies/insights/google-search-below-half Comments URL: https://news.ycombinator.com/item?id=50291945 Points: 364 # Comments: 310"
-  },
-  {
-   "title": "The NYT Cooking app is testing AI recipe modifications",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-29T16:02:16+00:00",
-   "summary": "The New York Times is testing a new AI feature for its Cooking app that helps users to modify recipes, and it has sparked some drama among users. Last Friday, NYT Cooking senior editor Genevieve Ko announced the…"
-  },
-  {
-   "title": "H.264 Is Magic (2016)",
-   "url": "https://sidbala.com/h-264-is-magic/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-29T15:53:03+00:00",
-   "summary": "Article URL: https://sidbala.com/h-264-is-magic/ Comments URL: https://news.ycombinator.com/item?id=50291054 Points: 229 # Comments: 103"
-  },
-  {
-   "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
-   "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-29T15:45:05+00:00",
-   "summary": "Article URL: https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler Comments URL: https://news.ycombinator.com/item?id=50290912 Points: 104 # Comments: 18"
-  },
-  {
-   "title": "Zombie stats: Where the numbers AI quotes come from",
-   "url": "https://trakkr.ai/trakkr-research/zombie-stats",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-29T15:06:17+00:00",
-   "summary": "Article URL: https://trakkr.ai/trakkr-research/zombie-stats Comments URL: https://news.ycombinator.com/item?id=50290283 Points: 117 # Comments: 58"
-  },
-  {
-   "title": "LLM Voice",
-   "url": "https://martinfowler.com/bliki/LLM-Voice.html",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-29T14:57:55+00:00",
-   "summary": "Article URL: https://martinfowler.com/bliki/LLM-Voice.html Comments URL: https://news.ycombinator.com/item?id=50290177 Points: 260 # Comments: 138"
-  },
-  {
-   "title": "Manifestos, Fear, and 'Loser Thinking': Inside Proton's AI Reckoning",
-   "url": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-29T14:29:06+00:00",
-   "summary": "Article URL: https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/ Comments URL: https://news.ycombinator.com/item?id=50289692 Points: 77 # Comments: 32"
   },
   {
    "title": "Quoting Ben Hylak",
@@ -186,27 +345,11 @@
    "summary": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our product, customers love the ui and love us…"
   },
   {
-   "title": "Anthropic is asking Wall Street to believe in AGI",
-   "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-29T13:47:56+00:00",
-   "summary": "Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of the Anthropic IPO filing — a document known as an S-1.…"
-  },
-  {
    "title": "Granite Switch 4.1.1 — Update models like you update software",
    "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-10-29T13:37:07+00:00"
-  },
-  {
-   "title": "Anthropic’s business plan: Build God or die trying",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-29T13:20:35+00:00",
-   "summary": "The Anthropic S-1 seems to have provided the financial justification for the company to spend as much as it possibly can on compute. If you are the kind of person who wonders if Anthropic is doing its level best to…"
   },
   {
    "title": "We urgently need to monitor AI agents’ actions in real time",
@@ -233,46 +376,6 @@
    "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
   },
   {
-   "title": "Counting the Bandages: On measuring the time that AI saves",
-   "url": "https://arxiv.org/abs/2610.35942",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-29T04:00:00+00:00",
-   "summary": "arXiv:2610.35942v1 Announce Type: new Abstract: I consider what it means for AI assistance to save time. I contrast a stopwatch view, on which time saved is whatever the clock records, with a ledger view, on which it is…"
-  },
-  {
-   "title": "Enhancing Deep Learning Model Performance through Data Generation Strategies: Classification of Olive Tree Diseases",
-   "url": "https://arxiv.org/abs/2610.35984",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-29T04:00:00+00:00",
-   "summary": "arXiv:2610.35984v1 Announce Type: new Abstract: Deep learning models are highly effective in a wide range of domains, particu larly in plant disease diagnosis. However, their performance is often limited by challenges…"
-  },
-  {
-   "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
-   "url": "https://arxiv.org/abs/2610.36077",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-29T04:00:00+00:00",
-   "summary": "arXiv:2610.36077v1 Announce Type: new Abstract: Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks:…"
-  },
-  {
-   "title": "CohortFlow: A Steerable Clinical Cohort Curation Agent with Localized Semantic Correction",
-   "url": "https://arxiv.org/abs/2610.36100",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-29T04:00:00+00:00",
-   "summary": "arXiv:2610.36100v1 Announce Type: new Abstract: Language model agents for clinical cohort curation should accommodate evolving eligibility criteria without repeatedly processing unchanged requirements. We introduce…"
-  },
-  {
-   "title": "Why and How to Do Science When AI Is Better at It: A Framework Grounded in Human Understanding and Direction",
-   "url": "https://arxiv.org/abs/2610.36116",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-29T04:00:00+00:00",
-   "summary": "arXiv:2610.36116v1 Announce Type: new Abstract: As AI begins to match or exceed human researchers at core scientific tasks, two questions become pressing: \\emph{why} should humans keep doing science, and \\emph{how}…"
-  },
-  {
    "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
    "url": "https://huggingface.co/blog/announcing-project-protostar",
    "source": "Hugging Face",
@@ -294,6 +397,14 @@
    "published": "2026-10-29T00:00:00+00:00"
   },
   {
+   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+   "url": "https://openai.com/index/credit-saison",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-29T00:00:00+00:00",
+   "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption."
+  },
+  {
    "title": "Quoting Ted Sanders",
    "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
    "source": "Simon Willison",
@@ -302,28 +413,12 @@
    "summary": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes. Despite that complexity, much of the…"
   },
   {
-   "title": "AI execs may be too out of touch to build for the general public",
-   "url": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-28T22:27:46+00:00",
-   "summary": "Article URL: https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/ Comments URL: https://news.ycombinator.com/item?id=50281826 Points: 88 # Comments: 68"
-  },
-  {
    "title": "Creating AI value with enterprise context",
    "url": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
    "source": "MIT Tech Review",
    "kind": "news",
    "published": "2026-10-28T20:32:02+00:00",
    "summary": "Across a business, any number of AI platforms, systems, and tools may be at work simultaneously—for example, AI-powered customer platforms, conversational assistants, and workflow and process automation tools. Each one…"
-  },
-  {
-   "title": "Google AI gets cagey when asked who won the 2020 elections",
-   "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-28T20:10:16+00:00",
-   "summary": "Article URL: https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/ Comments URL: https://news.ycombinator.com/item?id=50280178 Points: 165 # Comments: 74"
   },
   {
    "title": "How To Give Claude Unlimited Usage",
@@ -358,21 +453,6 @@
    "thumbnail": "https://i4.ytimg.com/vi/cI8IquVEyVY/hqdefault.jpg"
   },
   {
-   "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
-   "url": "https://surgehq.ai/blog/dayjob-tax",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-28T15:46:30+00:00",
-   "summary": "Article URL: https://surgehq.ai/blog/dayjob-tax Comments URL: https://news.ycombinator.com/item?id=50275626 Points: 250 # Comments: 170"
-  },
-  {
-   "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
-   "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-10-28T14:58:17+00:00"
-  },
-  {
    "title": "The October inflection point for vibe game development",
    "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
    "source": "Simon Willison",
@@ -389,43 +469,11 @@
    "thumbnail": "https://i3.ytimg.com/vi/nEaJMdM1djM/hqdefault.jpg"
   },
   {
-   "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-   "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-28T13:15:00+00:00",
-   "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex."
-  },
-  {
    "title": "Pairing industrial AI autonomy and human control",
    "url": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
    "source": "MIT Tech Review",
    "kind": "news",
    "published": "2026-10-28T12:00:00+00:00"
-  },
-  {
-   "title": "Quoting Terk Terkowitz",
-   "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-28T10:09:07+00:00",
-   "summary": "If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work to find solutions. An engineer who can…"
-  },
-  {
-   "title": "The future of the firm",
-   "url": "https://openai.com/index/the-future-of-the-firm",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-28T10:00:00+00:00",
-   "summary": "How AI might enter the org chart—beneath, beside, and between us."
-  },
-  {
-   "title": "Legora is building the agentic operating system for legal work",
-   "url": "https://openai.com/index/legora",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-28T09:30:00+00:00",
-   "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
   },
   {
    "title": "Build specialized multimodal models with LFM3",
@@ -521,22 +569,6 @@
    "kind": "video",
    "published": "2026-10-16T16:15:20+00:00",
    "thumbnail": "https://i1.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg"
-  },
-  {
-   "title": "Multiplayer Gaming & Flight Simulation - Computerphile",
-   "url": "https://www.youtube.com/watch?v=WqrwAFs-fq0",
-   "source": "Computerphile",
-   "kind": "video",
-   "published": "2026-10-15T13:30:19+00:00",
-   "thumbnail": "https://i4.ytimg.com/vi/WqrwAFs-fq0/hqdefault.jpg"
-  },
-  {
-   "title": "OpenAI’s New AI Is Doing Things We Barely Understand",
-   "url": "https://www.youtube.com/watch?v=z_sXLlLVUls",
-   "source": "Two Minute Papers",
-   "kind": "video",
-   "published": "2026-10-13T08:56:12+00:00",
-   "thumbnail": "https://i3.ytimg.com/vi/z_sXLlLVUls/hqdefault.jpg"
   },
   {
    "title": "AI Labs Warn Race Makes Breach ‘Inevitable’",
