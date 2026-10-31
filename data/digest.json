@@ -1,6 +1,214 @@
 {
- "generated_at": "2026-10-30T21:05:58.268391+00:00",
+ "generated_at": "2026-10-31T21:05:38.474279+00:00",
  "items": [
+  {
+   "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+   "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-31T19:16:30+00:00",
+   "summary": "Article URL: https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf Comments URL: https://news.ycombinator.com/item?id=50319143 Points: 112 # Comments: 56"
+  },
+  {
+   "title": "GPT-5.6 Sol can beat Factorio on peaceful mode",
+   "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-31T18:50:34+00:00",
+   "summary": "Article URL: https://ryanmadden.net/gpt-56-beats-factorio/ Comments URL: https://news.ycombinator.com/item?id=50318871 Points: 100 # Comments: 102"
+  },
+  {
+   "title": "The Impact of Generative AI on Critical Thinking: Self-Reported (2025)",
+   "url": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-31T18:02:29+00:00",
+   "summary": "https://www.microsoft.com/en-us/research/wp-content/uploads/... Comments URL: https://news.ycombinator.com/item?id=50318401 Points: 67 # Comments: 43"
+  },
+  {
+   "title": "OpenAI reportedly lowers funding target for new round",
+   "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-31T16:12:55+00:00",
+   "summary": "OpenAI’s latest funding round doesn't seem to be living up to expectations."
+  },
+  {
+   "title": "I built an AI Tamagotchi before Meta could",
+   "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-31T16:09:02+00:00",
+   "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I…"
+  },
+  {
+   "title": "Casio Watches of the 1980s",
+   "url": "https://www.casio.com/us/watches/50th/Heritage/1980s/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-31T16:00:48+00:00",
+   "summary": "Article URL: https://www.casio.com/us/watches/50th/Heritage/1980s/ Comments URL: https://news.ycombinator.com/item?id=50317363 Points: 172 # Comments: 92"
+  },
+  {
+   "title": "Malware uses LLMs to rank victims by how much they're worth",
+   "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-31T14:29:03+00:00",
+   "summary": "Article URL: https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/ Comments URL: https://news.ycombinator.com/item?id=50316531 Points: 211 # Comments: 115"
+  },
+  {
+   "title": "Jepsen: ParticleDB 1.1.4",
+   "url": "https://jepsen.io/analyses/particledb-1.1.4",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-31T13:39:52+00:00",
+   "summary": "https://github.com/jepsen-io/particledb Comments URL: https://news.ycombinator.com/item?id=50316100 Points: 123 # Comments: 64"
+  },
+  {
+   "title": "AI startup hacks Anthropic, gains access to employee details, internal messages",
+   "url": "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-31T13:25:10+00:00",
+   "summary": "Article URL: https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26 Comments URL:…"
+  },
+  {
+   "title": "Do the math: How we took over ChatGPT accounts",
+   "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-10-31T10:30:11+00:00",
+   "summary": "Article URL: https://www.parameter.ai/labs/we-found-a-gap-at-openai Comments URL: https://news.ycombinator.com/item?id=50314699 Points: 283 # Comments: 138"
+  },
+  {
+   "title": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
+   "url": "https://arxiv.org/abs/2610.37720",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-31T04:00:00+00:00",
+   "summary": "arXiv:2610.37720v1 Announce Type: new Abstract: Sparse Mixture-of-Experts (MoE) models offer scalable capacity for Web applications, but uneven routing creates computation and communication bottlenecks. Existing…"
+  },
+  {
+   "title": "Amortized Localized Posterior Inference for Model Calibration with Application to an Ocean Turbulence Closure",
+   "url": "https://arxiv.org/abs/2610.37731",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-31T04:00:00+00:00",
+   "summary": "arXiv:2610.37731v1 Announce Type: new Abstract: Model discrepancy may prevent a single calibration parameter from reproducing a physical response across the context domain. In addition, uncertainties in observations and…"
+  },
+  {
+   "title": "ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions",
+   "url": "https://arxiv.org/abs/2610.37732",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-31T04:00:00+00:00",
+   "summary": "arXiv:2610.37732v1 Announce Type: new Abstract: Many uses of language models end in a typed decision: a choice among a closed set of options, whose probabilities code can act on. Reading those probabilities from one…"
+  },
+  {
+   "title": "OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery",
+   "url": "https://arxiv.org/abs/2610.37739",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-31T04:00:00+00:00",
+   "summary": "arXiv:2610.37739v1 Announce Type: new Abstract: Large language models (LLMs) have shown increasing promise in research-level problem solving, yet a comprehensive collection of such problems is still missing, and…"
+  },
+  {
+   "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
+   "url": "https://arxiv.org/abs/2610.37786",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-10-31T04:00:00+00:00",
+   "summary": "arXiv:2610.37786v1 Announce Type: new Abstract: Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering,…"
+  },
+  {
+   "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+   "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-31T01:20:05+00:00",
+   "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan."
+  },
+  {
+   "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+   "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T22:56:13+00:00",
+   "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week."
+  },
+  {
+   "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+   "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T22:32:53+00:00",
+   "summary": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta…"
+  },
+  {
+   "title": "The biggest names in AI are backing a new way to opt out of scraping",
+   "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T22:04:23+00:00",
+   "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can…"
+  },
+  {
+   "title": "dbreunig/nesformer",
+   "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-30T21:59:22+00:00",
+   "summary": "dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super…"
+  },
+  {
+   "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+   "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T21:54:34+00:00",
+   "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise."
+  },
+  {
+   "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
+   "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T21:52:03+00:00",
+   "summary": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its…"
+  },
+  {
+   "title": "My last video about ai harnesses",
+   "url": "https://www.youtube.com/watch?v=ebILGCoN4UU",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-30T21:42:50+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/ebILGCoN4UU/hqdefault.jpg"
+  },
+  {
+   "title": "Silicon Valley wants you to invest in miracles",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T21:33:57+00:00",
+   "summary": "Investing in any stock is kind of like gambling in the sense that you're betting your money on a company's future performance. But how do you bet on a technology that could, in the worst-case scenario, \"pose…"
+  },
+  {
+   "title": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff",
+   "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-10-30T21:32:35+00:00",
+   "summary": "Article URL: https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/ Comments URL: https://news.ycombinator.com/item?id=50310431 Points: 68 # Comments: 15"
+  },
+  {
+   "title": "Last-minute Halloween costumes for tech nerds",
+   "url": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-10-30T21:26:59+00:00",
+   "summary": "No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson."
+  },
   {
    "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
@@ -8,14 +216,6 @@
    "kind": "news",
    "published": "2026-10-30T20:48:43+00:00",
    "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky…"
-  },
-  {
-   "title": "The biggest names in AI are backing a new way to opt out of scraping",
-   "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-30T20:26:10+00:00",
-   "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can…"
   },
   {
    "title": "Google’s satellite AI server transmits its first response to Earth",
@@ -26,14 +226,6 @@
    "summary": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board…"
   },
   {
-   "title": "GitHub Incident with Actions, Pages, and Webhooks",
-   "url": "https://www.githubstatus.com/incidents/pwxsjgnvrk6b",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-30T17:57:35+00:00",
-   "summary": "Article URL: https://www.githubstatus.com/incidents/pwxsjgnvrk6b Comments URL: https://news.ycombinator.com/item?id=50307723 Points: 115 # Comments: 43"
-  },
-  {
    "title": "nemotron-halloween",
    "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
    "source": "Hugging Face",
@@ -41,60 +233,12 @@
    "published": "2026-10-30T17:57:24+00:00"
   },
   {
-   "title": "Zest’s new AI agent finds restaurants and books reservations over text",
-   "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-30T17:47:12+00:00",
-   "summary": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation."
-  },
-  {
-   "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-30T17:38:04+00:00",
-   "summary": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that…"
-  },
-  {
-   "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
-   "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-30T17:27:25+00:00",
-   "summary": "Article URL: https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f Comments URL: https://news.ycombinator.com/item?id=50307219 Points: 187 # Comments: 133"
-  },
-  {
-   "title": "My favourite PowerMac is a Nintendo Wii",
-   "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-30T17:25:15+00:00",
-   "summary": "Article URL: https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/ Comments URL: https://news.ycombinator.com/item?id=50307190 Points: 152 # Comments: 40"
-  },
-  {
    "title": "Proton's CEO Cancels AI 'Re-Interviews'",
    "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
    "source": "Hacker News · AI",
    "kind": "news",
    "published": "2026-10-30T17:24:45+00:00",
-   "summary": "Article URL: https://www.404media.co/protons-ceo-cancels-ai-re-interviews/ Comments URL: https://news.ycombinator.com/item?id=50307183 Points: 224 # Comments: 191"
-  },
-  {
-   "title": "Google’s first data center satellite is online and writing poetry",
-   "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-30T17:00:00+00:00",
-   "summary": "The first TPU in space is running a Google DeepMind Gemma 4 model and writing cheesy poetry."
-  },
-  {
-   "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
-   "url": "https://github.com/dbreunig/nesformer",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-30T16:40:22+00:00",
-   "summary": "Article URL: https://github.com/dbreunig/nesformer Comments URL: https://news.ycombinator.com/item?id=50306442 Points: 138 # Comments: 95"
+   "summary": "Article URL: https://www.404media.co/protons-ceo-cancels-ai-re-interviews/ Comments URL: https://news.ycombinator.com/item?id=50307183 Points: 289 # Comments: 245"
   },
   {
    "title": "US tech stocks see sharp falls over AI cost fears",
@@ -102,23 +246,7 @@
    "source": "Hacker News · AI",
    "kind": "news",
    "published": "2026-10-30T16:13:02+00:00",
-   "summary": "Article URL: https://www.bbc.co.uk/news/articles/cvwy72e0n72yo Comments URL: https://news.ycombinator.com/item?id=50306008 Points: 213 # Comments: 239"
-  },
-  {
-   "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
-   "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-30T16:08:56+00:00",
-   "summary": "The Wikimedia Foundation is staking out a middle ground in a group of landmark AI copyright cases, pushing courts to legally protect large language models (LLMs) training on copyrighted work - but not chatbots…"
-  },
-  {
-   "title": "Theranos whistleblower Tyler Shultz warns that the AI boom is ‘a great opportunity to go deceive people’",
-   "url": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-30T16:03:45+00:00",
-   "summary": "The cautionary Theranos tale takes on a new significance in the AI era, when companies that have never turned a profit are raising capital at trillion-dollar valuations."
+   "summary": "Article URL: https://www.bbc.co.uk/news/articles/cvwy72e0n72yo Comments URL: https://news.ycombinator.com/item?id=50306008 Points: 263 # Comments: 293"
   },
   {
    "title": "OpenAI Claims It Just Did The Impossible",
@@ -129,20 +257,12 @@
    "thumbnail": "https://i4.ytimg.com/vi/CWdTBLsbaQs/hqdefault.jpg"
   },
   {
-   "title": "AI isn't replacing SREs, it's deskilling them",
-   "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
-   "source": "Hacker News",
+   "title": "Some Thing is Happening A note from the AI companies",
+   "url": "https://alanbellows.com/some-thing-is-happening/",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-10-30T15:52:18+00:00",
-   "summary": "Article URL: https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling Comments URL: https://news.ycombinator.com/item?id=50305693 Points: 393 # Comments: 300"
-  },
-  {
-   "title": "Florilegium: Procedural Flowers in LaTeX",
-   "url": "https://github.com/kevinraymond/florilegium",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-10-30T15:48:12+00:00",
-   "summary": "Article URL: https://github.com/kevinraymond/florilegium Comments URL: https://news.ycombinator.com/item?id=50305637 Points: 150 # Comments: 26"
+   "published": "2026-10-30T15:53:42+00:00",
+   "summary": "Article URL: https://alanbellows.com/some-thing-is-happening/ Comments URL: https://news.ycombinator.com/item?id=50305724 Points: 63 # Comments: 16"
   },
   {
    "title": "The Private Key Mistake! (TLS Key set to \"4\") - Computerphile",
@@ -153,52 +273,12 @@
    "thumbnail": "https://i3.ytimg.com/vi/NDgS__J1U-M/hqdefault.jpg"
   },
   {
-   "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-10-30T15:14:37+00:00",
-   "summary": "Pope Leo XIV says AI systems should be \"disarmed,\" adding that humans \"have the responsibility to guide, change and, when necessary, reject its applications.\" In Friday's Papal Address, Pope Leo encourages United…"
-  },
-  {
-   "title": "Skip the small talk: Make game-changing connections at TechCrunch Founder Summit with Braindate",
-   "url": "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-30T14:00:00+00:00",
-   "summary": "At TechCrunch Founder Summit 2026, happening November 4 at SoWa Power Station in Boston, networking powered by Braindate is designed to make those conversations easier to find, whether they are in 1:1 or small-group…"
-  },
-  {
-   "title": "DoorDash said it’s only received ‘several hundred’ orders from AI agents",
-   "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-30T13:54:25+00:00",
-   "summary": "DoorDash said that it is open to working with third-party agent makers."
-  },
-  {
-   "title": "5 days left: Your last chance to connect, scale, and save at TechCrunch Founder Summit 2026",
-   "url": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-10-30T13:00:00+00:00",
-   "summary": "5 days to save up to $100, plus a second pass for free to TechCrunch Founder Summit 2026 in Boston on November 4. Register now."
-  },
-  {
    "title": "Making it easier for websites to express AI training preferences",
    "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
    "source": "OpenAI",
    "kind": "news",
    "published": "2026-10-30T09:30:00+00:00",
    "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
-  },
-  {
-   "title": "Ask HN: Are you tired too in this AI era?",
-   "url": "https://news.ycombinator.com/item?id=50301479",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-30T09:17:43+00:00",
-   "summary": "Although AI lets us do much more, I feel considerably more tired than before. We need to keep track of many things happening in parallel and read enormous amounts of generated text. The constant guardrailing, decision…"
   },
   {
    "title": "Community safety report and new protections for teens",
@@ -209,84 +289,12 @@
    "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
   },
   {
-   "title": "Moment-Guided Optimizers for Noisy Deep Learning: MGO-SC as a Simple Consistency Gate for Adam-Style Updates",
-   "url": "https://arxiv.org/abs/2610.37712",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37712v1 Announce Type: new Abstract: Adaptive optimizers are widely used in deep learning, yet their behavior can degrade under heavy stochasticity and label noise where the sign and magnitude of gradients…"
-  },
-  {
-   "title": "What a Weight Update Buys: Leverage Across Training Stages",
-   "url": "https://arxiv.org/abs/2610.37719",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37719v1 Announce Type: new Abstract: Post-training moves a language model's weights by about a thousandth of their norm and changes its behavior sharply; pretraining moves them by a third and buys a slow…"
-  },
-  {
-   "title": "Threshold Compatibility and Support-Selection Diagnostics in Neural Discovery of Partial Differential Equations",
-   "url": "https://arxiv.org/abs/2610.37726",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37726v1 Announce Type: new Abstract: Accurate regression need not yield the correct equation after support selection. For a median/sample-standard-deviation threshold in neural PDE discovery, we derive an…"
-  },
-  {
-   "title": "Predicate Neuron: Differentiable Quantization of Predicate Relations in Gradient-based Learning",
-   "url": "https://arxiv.org/abs/2610.37727",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37727v1 Announce Type: new Abstract: In machine learning, symbolic reasoning approaches often rely on static architectures that hinder integration into deep neural networks and gradient-based optimization. To…"
-  },
-  {
-   "title": "Selective Transfer Learning for Groundwater Level Anomaly Forecasting: Accuracy-Risk Trade-offs",
-   "url": "https://arxiv.org/abs/2610.37733",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37733v1 Announce Type: new Abstract: This work studies context-aware selective transfer learning for multi-well groundwater anomaly forecasting in the Netherlands. Source-domain pretraining can raise average…"
-  },
-  {
-   "title": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
-   "url": "https://arxiv.org/abs/2610.37720",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37720v1 Announce Type: new Abstract: Sparse Mixture-of-Experts (MoE) models offer scalable capacity for Web applications, but uneven routing creates computation and communication bottlenecks. Existing…"
-  },
-  {
-   "title": "Amortized Localized Posterior Inference for Model Calibration with Application to an Ocean Turbulence Closure",
-   "url": "https://arxiv.org/abs/2610.37731",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37731v1 Announce Type: new Abstract: Model discrepancy may prevent a single calibration parameter from reproducing a physical response across the context domain. In addition, uncertainties in observations and…"
-  },
-  {
-   "title": "ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions",
-   "url": "https://arxiv.org/abs/2610.37732",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37732v1 Announce Type: new Abstract: Many uses of language models end in a typed decision: a choice among a closed set of options, whose probabilities code can act on. Reading those probabilities from one…"
-  },
-  {
-   "title": "OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery",
-   "url": "https://arxiv.org/abs/2610.37739",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37739v1 Announce Type: new Abstract: Large language models (LLMs) have shown increasing promise in research-level problem solving, yet a comprehensive collection of such problems is still missing, and…"
-  },
-  {
-   "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
-   "url": "https://arxiv.org/abs/2610.37786",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-10-30T04:00:00+00:00",
-   "summary": "arXiv:2610.37786v1 Announce Type: new Abstract: Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering,…"
+   "title": "Fair use benefits everyone",
+   "url": "https://openai.com/index/fair-use-benefits-everyone",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-30T00:00:00+00:00",
+   "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
   },
   {
    "title": "API credits benefit for eligible ChatGPT subscriptions",
@@ -295,22 +303,6 @@
    "kind": "news",
    "published": "2026-10-29T22:48:29+00:00",
    "summary": "API credits benefit for eligible ChatGPT subscriptions Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500 per month subscribers would get the…"
-  },
-  {
-   "title": "Google value plunges by $500B as AI fears rattle Wall Street",
-   "url": "https://www.bbc.com/news/articles/cm9qzdqpxy48o",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-29T22:22:13+00:00",
-   "summary": "Article URL: https://www.bbc.com/news/articles/cm9qzdqpxy48o Comments URL: https://news.ycombinator.com/item?id=50297037 Points: 75 # Comments: 33"
-  },
-  {
-   "title": "Building an AI-native engineering org",
-   "url": "https://twitter.com/sgondala2/status/2115832070274723875",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-10-29T21:58:34+00:00",
-   "summary": "Article URL: https://twitter.com/sgondala2/status/2115832070274723875 Comments URL: https://news.ycombinator.com/item?id=50296730 Points: 73 # Comments: 80"
   },
   {
    "title": "T3 Code broke me",
@@ -397,14 +389,6 @@
    "published": "2026-10-29T00:00:00+00:00"
   },
   {
-   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-   "url": "https://openai.com/index/credit-saison",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-10-29T00:00:00+00:00",
-   "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption."
-  },
-  {
    "title": "Quoting Ted Sanders",
    "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
    "source": "Simon Willison",
@@ -453,14 +437,6 @@
    "thumbnail": "https://i4.ytimg.com/vi/cI8IquVEyVY/hqdefault.jpg"
   },
   {
-   "title": "The October inflection point for vibe game development",
-   "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-10-28T13:55:15+00:00",
-   "summary": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily…"
-  },
-  {
    "title": "Did the AI bubble just pop?",
    "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
    "source": "Fireship",
@@ -489,14 +465,6 @@
    "kind": "news",
    "published": "2026-10-27T11:19:18+00:00",
    "summary": "Every manufacturer has its own industrial intelligence. Some is documented, and some resides in the knowledge of experienced workers. Consider an experienced operator preparing to restart a line after a changeover. The…"
-  },
-  {
-   "title": "the hard truth about token spend",
-   "url": "https://www.youtube.com/watch?v=FHGfSjDGUIw",
-   "source": "Theo",
-   "kind": "video",
-   "published": "2026-10-27T04:02:18+00:00",
-   "thumbnail": "https://i3.ytimg.com/vi/FHGfSjDGUIw/hqdefault.jpg"
   },
   {
    "title": "China just dropped a new frontier model... and nobody can explain how",
