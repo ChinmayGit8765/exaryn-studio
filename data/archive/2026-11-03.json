@@ -1,0 +1,590 @@
+{
+ "generated_at": "2026-11-02T21:06:11.829788+00:00",
+ "items": [
+  {
+   "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+   "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-02T19:27:37+00:00",
+   "summary": "Article URL: https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html Comments URL: https://news.ycombinator.com/item?id=50342284 Points: 64 # Comments: 32"
+  },
+  {
+   "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+   "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-02T19:19:17+00:00",
+   "summary": "The New York Times is suing privacy-focused web browser company Brave for allegedly scraping the outlet’s copyrighted content and unlawfully distributing it to its own customers, like Anthropic and Perplexity."
+  },
+  {
+   "title": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
+   "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-02T19:04:04+00:00",
+   "summary": "The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass their paywalls, as…"
+  },
+  {
+   "title": "Anthropic clamps down on Claude’s AI video game clones",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-02T18:56:02+00:00",
+   "summary": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to recreate existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with AI-made…"
+  },
+  {
+   "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+   "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-02T18:39:38+00:00",
+   "summary": "Article URL: https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432 Comments URL: https://news.ycombinator.com/item?id=50341462 Points: 102 # Comments: 14"
+  },
+  {
+   "title": "Astra can read and write weights to improve Qwen",
+   "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-02T18:21:28+00:00",
+   "summary": "Article URL: https://rikiyat.github.io/blog/weight-space-programming/ Comments URL: https://news.ycombinator.com/item?id=50341174 Points: 1000 # Comments: 310"
+  },
+  {
+   "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-02T18:01:30+00:00",
+   "summary": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during…"
+  },
+  {
+   "title": "The latest AI news we announced in October 2026",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-02T17:45:00+00:00",
+   "summary": "Animated carousel of images from AI posts in October"
+  },
+  {
+   "title": "Let Me Ch...",
+   "url": "https://blog.alxgsv.com/let-me-check/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-02T17:33:20+00:00",
+   "summary": "Article URL: https://blog.alxgsv.com/let-me-check/ Comments URL: https://news.ycombinator.com/item?id=50340369 Points: 148 # Comments: 52"
+  },
+  {
+   "title": "Show HN: Subvocal – Talk to your computer without making noise",
+   "url": "https://news.ycombinator.com/item?id=50340088",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-02T17:16:17+00:00",
+   "summary": "Hi HN, we're Aarush and Arnav from The Subvocal Company (YC F26) ( https://subvocal.company/ ). We’re building smart glasses that let you talk to your computer without talking out loud. You can mouth words silently and…"
+  },
+  {
+   "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
+   "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
+   "source": "AI Explained",
+   "kind": "video",
+   "published": "2026-11-02T17:02:16+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/0Kw6_DTZPrY/hqdefault.jpg"
+  },
+  {
+   "title": "Raising the quality of insights in agentic analytics",
+   "url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-02T17:00:00+00:00",
+   "summary": "In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire…"
+  },
+  {
+   "title": "My Favourite Laptop",
+   "url": "https://blog.jsbarretto.com/post/laptop",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-02T16:59:57+00:00",
+   "summary": "Article URL: https://blog.jsbarretto.com/post/laptop Comments URL: https://news.ycombinator.com/item?id=50339815 Points: 121 # Comments: 84"
+  },
+  {
+   "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+   "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-02T16:40:29+00:00",
+   "summary": "Article URL: https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11 Comments URL: https://news.ycombinator.com/item?id=50339494 Points: 229 # Comments: 177"
+  },
+  {
+   "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
+   "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-02T16:30:00+00:00",
+   "summary": "Here's a question straight out of sci-fi: What if AI could predict what you were going to do before you decided to, even in a completely new situation?"
+  },
+  {
+   "title": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
+   "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-02T16:23:21+00:00",
+   "summary": "Musk recently referred to Grok Bot as having \"the fastest growth of a product that I've ever seen in my life.\""
+  },
+  {
+   "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
+   "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-02T15:00:00+00:00",
+   "summary": "Two startups tackling the data center water problem are joining forces in a $16 million deal."
+  },
+  {
+   "title": "Introducing the Grid Protectors Program",
+   "url": "https://openai.com/index/grid-protectors-program",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-02T15:00:00+00:00",
+   "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+  },
+  {
+   "title": "Jobless tech workers are being left out of San Francisco's AI boom",
+   "url": "https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-02T14:40:05+00:00",
+   "summary": "Article URL: https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near Comments URL: https://news.ycombinator.com/item?id=50337454 Points: 138 #…"
+  },
+  {
+   "title": "2 days till TechCrunch Founder Summit: Boston founders don’t need a Silicon Valley address to build something big",
+   "url": "https://techcrunch.com/2026/11/02/2-days-till-techcrunch-founder-summit-boston-founders-dont-need-a-silicon-valley-address-to-build-something-big/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-02T14:00:00+00:00",
+   "summary": "TechCrunch Founder Summit happens on November 4 in Boston for a founder-focused agenda and impactful connections. Save up to $100 or get discounts with group passes."
+  },
+  {
+   "title": "OpenAI is finally merging ChatGPT’s Chat and Work tabs",
+   "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-02T13:57:53+00:00",
+   "summary": "OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change."
+  },
+  {
+   "title": "The U.S. Census Bureau and “Super Intelligence”",
+   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-02T13:31:26+00:00",
+   "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on…"
+  },
+  {
+   "title": "Stop counting tokens, start counting what ships",
+   "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-02T13:10:32+00:00",
+   "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens…"
+  },
+  {
+   "title": "Last night an AI agent performed brain surgery on a mouse",
+   "url": "https://twitter.com/OcanaSantero/status/2115442964574908902",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-02T12:50:59+00:00",
+   "summary": "Article URL: https://twitter.com/OcanaSantero/status/2115442964574908902 Comments URL: https://news.ycombinator.com/item?id=50336138 Points: 108 # Comments: 95"
+  },
+  {
+   "title": "The agentic web is here",
+   "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-02T09:35:19+00:00",
+   "summary": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he…"
+  },
+  {
+   "title": "Anthropic can't stop winning",
+   "url": "https://www.youtube.com/watch?v=y5TEATUDDfc",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-02T09:10:01+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/y5TEATUDDfc/hqdefault.jpg"
+  },
+  {
+   "title": "LifeVal",
+   "url": "https://openai.com/index/lifeval",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-02T09:00:00+00:00",
+   "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
+  },
+  {
+   "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-02T07:27:28+00:00",
+   "summary": "Article URL: https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/ Comments URL: https://news.ycombinator.com/item?id=50334038 Points: 146 # Comments: 81"
+  },
+  {
+   "title": "More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum",
+   "url": "https://arxiv.org/abs/2610.40758",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40758v1 Announce Type: new Abstract: Self-evolving agents rewrite a persistent state from feedback, but it is largely untested whether this lets them learn a rule nobody told them. An agent can also pass by…"
+  },
+  {
+   "title": "Beyond Plausible Prediction: Safety Sufficiency in Web World Models",
+   "url": "https://arxiv.org/abs/2610.40798",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40798v1 Announce Type: new Abstract: Web world models increasingly predict the consequences of candidate actions before agents act, yet a plausible predicted future does not necessarily support the correct…"
+  },
+  {
+   "title": "Circumventing the Computational Hardness of Computational Arbitrage",
+   "url": "https://arxiv.org/abs/2610.40831",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40831v1 Announce Type: new Abstract: AI model marketplaces host providers with heterogeneous costs and capabilities. These differences create an opportunity for computational arbitrage (Olmedo et al., 2026),…"
+  },
+  {
+   "title": "Incongruence-Aware Evaluation of Multimodal Speech Emotion Recognition in Audio Large Language Models",
+   "url": "https://arxiv.org/abs/2610.40883",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40883v1 Announce Type: new Abstract: Voice-interactive large language models process both what a speaker says and how they say it, yet the two channels do not always agree. We ask whether that disagreement…"
+  },
+  {
+   "title": "ChatGPT as a Surveillance Assistant? An Exploratory Case Study of AI-Assisted Surveillance Risks",
+   "url": "https://arxiv.org/abs/2610.40890",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40890v1 Announce Type: new Abstract: Large language models (LLMs) can generate detailed guidance, functional code, and persuasive text at scale. As one of the most widely used consumer language model products…"
+  },
+  {
+   "title": "Automatic Construction of Strong Simple Baselines",
+   "url": "https://arxiv.org/abs/2610.40700",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40700v1 Announce Type: new Abstract: To rigorously establish the value of a novel deep learning method, it must be compared against appropriate baselines. As deep learning has become increasingly common in…"
+  },
+  {
+   "title": "Bayesian Distribution System State Estimation with Flow Matching",
+   "url": "https://arxiv.org/abs/2610.40728",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40728v1 Announce Type: new Abstract: Medium-voltage feeders have few real-time measurements, so distribution system state estimation (DSSE) rests on pseudo-measurements of the secondary substations, a prior…"
+  },
+  {
+   "title": "Don't Just Impute, Detect: Task-Aware Diffusion Pipelines for Edge Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.40732",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40732v1 Announce Type: new Abstract: Industrial Internet of Things (IIoT) edge pipelines routinely lose contiguous blocks of multi-sensor data to network dropouts and hardware faults. The standard remedy is a…"
+  },
+  {
+   "title": "Unsupervised Feature Selection Using Local Intrinsic Dimensionality -- Extended Version",
+   "url": "https://arxiv.org/abs/2610.40736",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40736v1 Announce Type: new Abstract: High dimensionality degrades both the efficiency and the effectiveness of learning algorithms, and in many applications no class labels are available to guide…"
+  },
+  {
+   "title": "Certified Behavioral Retention for Continual Adaptation with Held-Out Anchors",
+   "url": "https://arxiv.org/abs/2610.40740",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-02T05:00:00+00:00",
+   "summary": "arXiv:2610.40740v1 Announce Type: new Abstract: Continual adaptation requires deciding not only how to update a model, but whether to commit an update without exceeding a declared budget for changes to protected…"
+  },
+  {
+   "title": "AI fan wikis riddled with errors are muddying the waters of games culture",
+   "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-02T01:47:07+00:00",
+   "summary": "Article URL: https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture Comments URL: https://news.ycombinator.com/item?id=50332086 Points: 100 # Comments: 107"
+  },
+  {
+   "title": "Qodo builds context into AI code review with Codex",
+   "url": "https://openai.com/index/qodo-codex-plugin",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-02T00:00:00+00:00",
+   "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
+  },
+  {
+   "title": "If in doubt, delete the uv.lock file",
+   "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-01T23:24:22+00:00",
+   "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which…"
+  },
+  {
+   "title": "Quoting Kyle Kingsbury",
+   "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-01T16:49:04+00:00",
+   "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to…"
+  },
+  {
+   "title": "How We Took Over ChatGPT Accounts",
+   "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-31T23:15:22+00:00",
+   "summary": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is…"
+  },
+  {
+   "title": "datasette-llm 0.1a9",
+   "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-31T22:10:01+00:00",
+   "summary": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default…"
+  },
+  {
+   "title": "I built an AI Tamagotchi before Meta could",
+   "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-31T16:09:02+00:00",
+   "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I…"
+  },
+  {
+   "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+   "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T22:32:53+00:00",
+   "summary": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta…"
+  },
+  {
+   "title": "The biggest names in AI are backing a new way to opt out of scraping",
+   "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-10-30T22:04:23+00:00",
+   "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can…"
+  },
+  {
+   "title": "dbreunig/nesformer",
+   "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-10-30T21:59:22+00:00",
+   "summary": "dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super…"
+  },
+  {
+   "title": "My last video about ai harnesses",
+   "url": "https://www.youtube.com/watch?v=ebILGCoN4UU",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-30T21:42:50+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/ebILGCoN4UU/hqdefault.jpg"
+  },
+  {
+   "title": "nemotron-halloween",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-30T17:57:24+00:00"
+  },
+  {
+   "title": "OpenAI Claims It Just Did The Impossible",
+   "url": "https://www.youtube.com/watch?v=CWdTBLsbaQs",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-10-30T15:57:16+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/CWdTBLsbaQs/hqdefault.jpg"
+  },
+  {
+   "title": "The Private Key Mistake! (TLS Key set to \"4\") - Computerphile",
+   "url": "https://www.youtube.com/watch?v=NDgS__J1U-M",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-30T15:47:25+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/NDgS__J1U-M/hqdefault.jpg"
+  },
+  {
+   "title": "Making it easier for websites to express AI training preferences",
+   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-30T09:30:00+00:00",
+   "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+  },
+  {
+   "title": "Community safety report and new protections for teens",
+   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-30T09:00:00+00:00",
+   "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
+  },
+  {
+   "title": "Fair use benefits everyone",
+   "url": "https://openai.com/index/fair-use-benefits-everyone",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-10-30T00:00:00+00:00",
+   "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
+  },
+  {
+   "title": "T3 Code broke me",
+   "url": "https://www.youtube.com/watch?v=uLGxb4F3SyI",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-10-29T17:34:08+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/uLGxb4F3SyI/hqdefault.jpg"
+  },
+  {
+   "title": "Granite Switch 4.1.1 — Update models like you update software",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-29T13:37:07+00:00"
+  },
+  {
+   "title": "We urgently need to monitor AI agents’ actions in real time",
+   "url": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-29T10:11:12+00:00",
+   "summary": "This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be…"
+  },
+  {
+   "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+   "url": "https://huggingface.co/blog/announcing-project-protostar",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-29T00:00:00+00:00"
+  },
+  {
+   "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+   "url": "https://huggingface.co/blog/mistral-large4",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-29T00:00:00+00:00"
+  },
+  {
+   "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+   "url": "https://huggingface.co/blog/anydecisionmodel",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-29T00:00:00+00:00"
+  },
+  {
+   "title": "Creating AI value with enterprise context",
+   "url": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-28T20:32:02+00:00",
+   "summary": "Across a business, any number of AI platforms, systems, and tools may be at work simultaneously—for example, AI-powered customer platforms, conversational assistants, and workflow and process automation tools. Each one…"
+  },
+  {
+   "title": "DeepSeek's New AI Is An Absolute Monster",
+   "url": "https://www.youtube.com/watch?v=pryCaGv8wuo",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-10-28T17:32:40+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/pryCaGv8wuo/hqdefault.jpg"
+  },
+  {
+   "title": "?PHP Problem? - Computerphile",
+   "url": "https://www.youtube.com/watch?v=cI8IquVEyVY",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-28T16:23:55+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/cI8IquVEyVY/hqdefault.jpg"
+  },
+  {
+   "title": "Did the AI bubble just pop?",
+   "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-10-28T13:31:29+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/nEaJMdM1djM/hqdefault.jpg"
+  },
+  {
+   "title": "Pairing industrial AI autonomy and human control",
+   "url": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-10-28T12:00:00+00:00"
+  },
+  {
+   "title": "Build specialized multimodal models with LFM3",
+   "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-10-27T17:16:52+00:00"
+  },
+  {
+   "title": "China just dropped a new frontier model... and nobody can explain how",
+   "url": "https://www.youtube.com/watch?v=G_em1hHPnXY",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-10-26T18:55:29+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/G_em1hHPnXY/hqdefault.jpg"
+  },
+  {
+   "title": "The Sphere Intersection Puzzle",
+   "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-10-25T14:30:46+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/V_uq3v6xK-4/hqdefault.jpg"
+  },
+  {
+   "title": "The most vulnerable week in internet history...",
+   "url": "https://www.youtube.com/watch?v=SMGg7iisHmc",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-10-23T18:19:58+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/SMGg7iisHmc/hqdefault.jpg"
+  },
+  {
+   "title": "How Image Watermarking Works - Computerphile",
+   "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-22T13:00:06+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/h6j_ixGnpiY/hqdefault.jpg"
+  },
+  {
+   "title": "Gemini 4 Argon Is Not What I Expected",
+   "url": "https://www.youtube.com/watch?v=LWxX6vvHfrc",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-10-19T08:49:21+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/LWxX6vvHfrc/hqdefault.jpg"
+  },
+  {
+   "title": "There's never been a better time to go into math",
+   "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-10-16T16:15:20+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg"
+  },
+  {
+   "title": "AI Labs Warn Race Makes Breach ‘Inevitable’",
+   "url": "https://www.youtube.com/watch?v=C4Sq3Rot8FU",
+   "source": "AI Explained",
+   "kind": "video",
+   "published": "2026-10-12T22:52:31+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/C4Sq3Rot8FU/hqdefault.jpg"
+  }
+ ]
+}

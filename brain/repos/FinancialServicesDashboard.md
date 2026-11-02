@@ -30,7 +30,7 @@ Project note: [[QuantLens]]
 | Default branch | main |
 | Created | 2026-06-06 |
 | Last push | 2026-09-17 |
-| Stars | 0 |
+| Stars | 1 |
 | Open issues | 0 |
 | GitHub Pages | no |
 | Archived | no |
