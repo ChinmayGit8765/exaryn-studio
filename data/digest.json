@@ -1,21 +1,251 @@
 {
- "generated_at": "2026-11-05T21:05:37.927649+00:00",
+ "generated_at": "2026-11-06T21:05:25.150269+00:00",
  "items": [
   {
-   "title": "Goodbye from Salon",
-   "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
-   "source": "Hacker News",
+   "title": "All the latest updates on AI data centers",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+   "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-05T20:03:29+00:00",
-   "summary": "Article URL: https://www.salon.com/2026/11/05/goodbye-from-salon/ Comments URL: https://news.ycombinator.com/item?id=50383739 Points: 144 # Comments: 35"
+   "published": "2026-11-06T20:03:32+00:00",
+   "summary": "Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the world over their…"
   },
   {
-   "title": "Meta says US users can now video chat with their Muse AI avatar",
-   "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
+   "title": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
+   "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-06T20:00:43+00:00",
+   "summary": "Meta will now allow you to build customized, app-like experiences within Muse. The new feature, called \"spaces,\" allows its AI assistant to build things like a shopping hub, school dashboard, music tracker, trivia game,…"
+  },
+  {
+   "title": "AI is the new dating dealbreaker",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-06T19:58:08+00:00",
+   "summary": "When Irene moved to San Francisco last year, she started using dating apps as a way to meet new people, get to know her new city, and connect with others who care about the things she does. After the 25-year-old analyst…"
+  },
+  {
+   "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+   "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
    "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-11-05T19:48:28+00:00",
-   "summary": "Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life."
+   "published": "2026-11-06T18:44:38+00:00",
+   "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool."
+  },
+  {
+   "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+   "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-06T18:44:20+00:00",
+   "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers."
+  },
+  {
+   "title": "How a Blue Wave midterm might reshape the AI industry",
+   "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-06T18:00:00+00:00",
+   "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to…"
+  },
+  {
+   "title": "After the midterms, is the AI industry in for a rough two years?",
+   "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-06T17:23:52+00:00",
+   "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to…"
+  },
+  {
+   "title": "Quoting Nilay Patel",
+   "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-06T17:13:12+00:00",
+   "summary": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop…"
+  },
+  {
+   "title": "Big Tech lost big in the 2026 election",
+   "url": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-06T17:09:01+00:00",
+   "summary": "On Tuesday, millions of American voters went to the polls and voted overwhelmingly for Democrats and against AI. The fight against Big Tech is about to come roaring back, and the fight over data centers is looking even…"
+  },
+  {
+   "title": "The one thing holding theoretical CS together just broke... kinda",
+   "url": "https://www.youtube.com/watch?v=iw9SZgyahqg",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-06T16:42:38+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/iw9SZgyahqg/hqdefault.jpg"
+  },
+  {
+   "title": "How Akai and Moog are embracing vibe-coded mods",
+   "url": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-06T16:34:39+00:00",
+   "summary": "inMusic, the parent company of Akai, Moog, Native Instruments, and more, has decided to embrace the modding community. In an interview with The Verge, inMusic CEO Jack O'Donnell said, \"We're going to provide a toolbox…"
+  },
+  {
+   "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+   "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-06T15:54:47+00:00",
+   "summary": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth."
+  },
+  {
+   "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+   "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-06T14:10:00+00:00",
+   "summary": "Amazon said that the feature will roll out to millions of users in coming weeks."
+  },
+  {
+   "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+   "url": "https://huggingface.co/blog/allenai/toyblocks",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-06T14:00:48+00:00"
+  },
+  {
+   "title": "Amazon will let you text Alexa your shopping list",
+   "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-06T13:56:32+00:00",
+   "summary": "Amazon is adding a new feature to Alexa for Shopping that allows customers to purchase items by texting the AI shopping assistant. Users can describe the products they're looking to buy and/or provide a photograph of…"
+  },
+  {
+   "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+   "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-06T10:00:00+00:00",
+   "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new…"
+  },
+  {
+   "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+   "url": "https://openai.com/index/partnering-with-hacktron",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-06T08:00:00+00:00",
+   "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI."
+  },
+  {
+   "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
+   "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-06T07:27:02+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/XgC1QTs6A2U/hqdefault.jpg"
+  },
+  {
+   "title": "Formalizing inverse problems in the age of AI: possibilities, pitfalls, and an invitation",
+   "url": "https://arxiv.org/abs/2611.06962",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06962v1 Announce Type: new Abstract: Proof assistants such as Lean check mathematical proofs down to the axioms, and AI agents have recently made writing such proofs cheap. We describe AutoIP, a Lean library…"
+  },
+  {
+   "title": "KDASO: Knowledge-Data Dual-Driven Automated Skill Optimization for Liability Adjudication Tasks",
+   "url": "https://arxiv.org/abs/2611.06972",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06972v1 Announce Type: new Abstract: Liability adjudication tasks (e.g., legal charge determination) require analyzing event descriptions against domain-specific skills to determine whether a party should…"
+  },
+  {
+   "title": "BlockLock: Reproducible LLM Inference with Fixed Batch Geometry",
+   "url": "https://arxiv.org/abs/2611.06977",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06977v1 Announce Type: new Abstract: Reproducible LLM inference requires that a request produces the same output regardless of the other requests in the batch. Existing solutions pay for this in different…"
+  },
+  {
+   "title": "Resource-Efficient Reinforcement Learning Post-Training through Elastic Expert Parallelism",
+   "url": "https://arxiv.org/abs/2611.06984",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06984v1 Announce Type: new Abstract: Reinforcement learning post-training improves the capabilities of large language models, but generating training responses is a major computational bottleneck. In…"
+  },
+  {
+   "title": "The Two-Ledger Model: Transaction-Grain Cost Accounting for Multi-Agent AI Systems Across Clouds, Models, and Systems of Record",
+   "url": "https://arxiv.org/abs/2611.06989",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06989v1 Announce Type: new Abstract: Enterprises run business transactions through multi-agent AI systems spanning clouds, large language models (LLMs), orchestration harnesses, and systems of record. Finance…"
+  },
+  {
+   "title": "SteelAgent: LLM-Orchestrated, Physics-Informed Steel Property Prediction with Audited Generalization and Calibrated Uncertainty",
+   "url": "https://arxiv.org/abs/2611.06953",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06953v1 Announce Type: new Abstract: Steel property models can perform well on random test splits even when they extrapolate poorly to unfamiliar alloys. SteelAgent couples metallurgical descriptors and…"
+  },
+  {
+   "title": "Octopus: One Brain, Many Branches for Latent-KV Multi-Agent Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2611.06956",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06956v1 Announce Type: new Abstract: Multi-agent LLM systems explore in parallel by spawning sub-agents with isolated context windows, whereas single-agent systems append every search and verification step…"
+  },
+  {
+   "title": "Uncertainty calibration in Bayesian M/EEG source imaging",
+   "url": "https://arxiv.org/abs/2611.06979",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06979v1 Announce Type: new Abstract: M/EEG source imaging requires accurate localization and reliable uncertainty estimates, yet posterior credible regions are rarely assessed for empirical calibration. We…"
+  },
+  {
+   "title": "Big Models, Small Gains: Frozen Forecasters as Classifiers on MONSTER",
+   "url": "https://arxiv.org/abs/2611.06988",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06988v1 Announce Type: new Abstract: Forecasting foundation models are increasingly used as frozen feature extractors for time series classification, but it remains unclear whether their pretrained…"
+  },
+  {
+   "title": "Robust Stream Classification using Time Neutralising Decision Trees",
+   "url": "https://arxiv.org/abs/2611.06991",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-06T05:00:00+00:00",
+   "summary": "arXiv:2611.06991v1 Announce Type: new Abstract: Data Streams are characterised as a potentially infinite source of data subject to non-stationarity. This non-stationarity, also called Concept Drift, often results in…"
+  },
+  {
+   "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+   "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-06T00:00:00+00:00"
+  },
+  {
+   "title": "Measuring how AI agents handle everyday wet-lab science",
+   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-06T00:00:00+00:00",
+   "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science."
+  },
+  {
+   "title": "Cult.fit builds operational muscle with Codex",
+   "url": "https://openai.com/index/cultfit-builds-with-codex",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-05T20:00:00+00:00",
+   "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done."
   },
   {
    "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
@@ -23,62 +253,6 @@
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-11-05T19:35:16+00:00"
-  },
-  {
-   "title": "Meta warns that election backlash against data centers could make AI expansion harder",
-   "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-05T19:12:39+00:00",
-   "summary": "Meta warns that growing political opposition to data centers could threaten future AI investments, as communities push back against massive infrastructure projects."
-  },
-  {
-   "title": "Muse has a voice mode now",
-   "url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-05T19:07:13+00:00",
-   "summary": "Meta now lets you have voice conversations with your Muse AI agent in real time, CEO Mark Zuckerberg announced today. The feature has been rolled out to me, and I gave it a spin on the iOS app while writing this…"
-  },
-  {
-   "title": "OpenAI released a new cybersecurity model. Is that enough?",
-   "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-05T19:06:12+00:00",
-   "summary": "OpenAI's newest cybersecurity model comes out as AI labs face scrutiny of their work to protect digital infrastructure."
-  },
-  {
-   "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
-   "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-05T18:02:27+00:00",
-   "summary": "OpenAI president Greg Brockman says the company could be ready to go public in 2027, pointing to accelerating enterprise revenue and a turnaround in its business."
-  },
-  {
-   "title": "Claude can now analyze your spending with its new Personal Finance tool",
-   "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-05T18:00:00+00:00",
-   "summary": "With Personal Finance in Claude, users can connect their bank and card accounts through Plaid and ask questions about their finances."
-  },
-  {
-   "title": "‘Total repudiation’: The blue wave is about to hit AI",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-05T17:51:52+00:00",
-   "summary": "On Tuesday night, Democrats made history as they took control of the House and the Senate, and a blue wave swept through traditionally red and swing states - with the nation's first Black woman governor elected in…"
-  },
-  {
-   "title": "Claude AI can plug directly into your bank account",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-05T17:49:25+00:00",
-   "summary": "Anthropic has a new pitch for managing your personal finances: let Claude do it instead, with a new Personal Finance feature that connects it to your bank and card accounts via the Plaid bank bridging platform. You can…"
   },
   {
    "title": "Quoting Paul Ford",
@@ -89,20 +263,12 @@
    "summary": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day . — Paul Ford , The Web Is More Than Enough Tags: browsers , paul-ford ,…"
   },
   {
-   "title": "Nasdaq plummets 4% into correction territory",
-   "url": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
-   "source": "Hacker News",
+   "title": "Australian universities are creating AI-native graduates",
+   "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+   "source": "OpenAI",
    "kind": "news",
-   "published": "2026-11-05T17:11:15+00:00",
-   "summary": "Article URL: https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html Comments URL: https://news.ycombinator.com/item?id=50381623 Points: 143 # Comments: 112"
-  },
-  {
-   "title": "OpenAI says its new cybersecurity model is better at not hacking other companies",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-05T17:10:19+00:00",
-   "summary": "OpenAI is launching GPT-6 Cyber, the latest version of its cybersecurity AI model, which it says is better at finding vulnerabilities and less likely to go rogue and hack other platforms in the process. OpenAI says that…"
+   "published": "2026-11-05T17:00:00+00:00",
+   "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
   },
   {
    "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
@@ -111,62 +277,6 @@
    "kind": "news",
    "published": "2026-11-05T17:00:00+00:00",
    "summary": "Text \"Gemini Introducing Gemini Omni 1.2 Flash\" surroudned by images of a beehive, animals in conversation, a squid, and a woman walking down a street"
-  },
-  {
-   "title": "Window Sweaters",
-   "url": "https://github.com/saragordic/window-sweaters",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-05T16:50:14+00:00",
-   "summary": "Article URL: https://github.com/saragordic/window-sweaters Comments URL: https://news.ycombinator.com/item?id=50381383 Points: 148 # Comments: 54"
-  },
-  {
-   "title": "My psychophysics as a bilateral cochlear implant user",
-   "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-05T16:21:12+00:00",
-   "summary": "Article URL: https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf Comments URL: https://news.ycombinator.com/item?id=50381033 Points: 131 # Comments: 33"
-  },
-  {
-   "title": "Axiom Math wants to keep AI slop out of mathematics",
-   "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-05T16:16:45+00:00",
-   "summary": "As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries."
-  },
-  {
-   "title": "Motorola Signature 27 with GrapheneOS support",
-   "url": "https://motorolanews.com/motorola-signature-27-2/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-05T16:01:34+00:00",
-   "summary": "Article URL: https://motorolanews.com/motorola-signature-27-2/ Comments URL: https://news.ycombinator.com/item?id=50380810 Points: 296 # Comments: 203"
-  },
-  {
-   "title": "You can post AI music straight to SoundCloud from ElevenLabs",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-05T14:47:10+00:00",
-   "summary": "After partnering with Moises earlier this year, SoundCloud is now adding integration with another AI music platform, ElevenLabs. Now, rather than having to export and download your outputs from ElevenLabs and then…"
-  },
-  {
-   "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
-   "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-05T14:44:20+00:00",
-   "summary": "Article URL: https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/ Comments URL: https://news.ycombinator.com/item?id=50379704 Points: 473 # Comments: 93"
-  },
-  {
-   "title": "The hidden supply chain costs of the AI boom",
-   "url": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-05T14:03:27+00:00",
-   "summary": "Today, I’m talking with Willy Shih, an economist, a professor of management practice at Harvard Business School, and the author of the upcoming book, Where Does My Stuff Come From? The Powerful Economics Behind Global…"
   },
   {
    "title": "Mutex Explained - Computerphile",
@@ -193,92 +303,12 @@
    "thumbnail": "https://i1.ytimg.com/vi/tc8GNdrhozA/hqdefault.jpg"
   },
   {
-   "title": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions",
-   "url": "https://arxiv.org/abs/2611.05390",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were…"
-  },
-  {
-   "title": "Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents",
-   "url": "https://arxiv.org/abs/2611.05391",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.05391v1 Announce Type: new Abstract: Tool descriptions tell an agent what an action can do, but they do not necessarily reveal whether that action is healthy or suitable at the moment of use. Execution…"
-  },
-  {
-   "title": "Uncertainty-Aware Resource Orchestration for Agentic AI Systems",
-   "url": "https://arxiv.org/abs/2611.05392",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.05392v1 Announce Type: new Abstract: Agentic artificial intelligence (AI) systems powered by large language models (LLMs) execute as autonomous multi-step pipelines that dynamically invoke tools, integrate…"
-  },
-  {
-   "title": "Challenge-Aware Knowledge Recruitment with Meta-Agent Supervision for Medical Multi-Agent Reasoning",
-   "url": "https://arxiv.org/abs/2611.05393",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.05393v1 Announce Type: new Abstract: Large language models perform strongly on standard medical QA but degrade on harder reasoning tasks, where multi-agent debate often fails to beat strong single-model…"
-  },
-  {
-   "title": "A Feasibility Condition for Confidence-Gated Tiered LLM Inference",
-   "url": "https://arxiv.org/abs/2611.05394",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.05394v1 Announce Type: new Abstract: Tiered inference distributes large language model computation across a hierarchy of devices, from on-device and edge hardware to the datacenter, and is increasingly…"
-  },
-  {
-   "title": "Latent Cluster Separation as a Regularizer for Lifelong Anomaly Detection",
-   "url": "https://arxiv.org/abs/2611.03652",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.03652v1 Announce Type: new Abstract: Lifelong (continual) anomaly detection systems must learn a sequence of tasks without forgetting how to recognize anomaly types seen earlier -- a property known as…"
-  },
-  {
-   "title": "Four Extensions of the Universal Law of Robustness: Log-Concave Covariates, Heterogeneous Mixtures, Vector-Valued Predictors, and Markovian Data",
-   "url": "https://arxiv.org/abs/2611.03653",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.03653v1 Announce Type: new Abstract: Bubeck and Sellke's universal law of robustness says that fitting $n$ noisy samples below the noise level with a class of $p$ real parameters forces a Lipschitz constant…"
-  },
-  {
-   "title": "Towards Automatic Heart Murmur Characterization from Multi-spot Phonocardiograms",
-   "url": "https://arxiv.org/abs/2611.03654",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.03654v1 Announce Type: new Abstract: Cardiac auscultation traditionally detects the presence of a heart murmur, but clinicians further characterize it by timing, shape, pitch, quality, and grade. Most…"
-  },
-  {
-   "title": "Mixture of Wide Experts: Sparse Routing for Interpretable Native Coordinates",
-   "url": "https://arxiv.org/abs/2611.03655",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.03655v1 Announce Type: new Abstract: Language models often spread a concept across many internal dimensions, making their features difficult to interpret. Sparse autoencoders (SAEs) recover clearer features…"
-  },
-  {
-   "title": "Stress-Testing the Robustness of LLM-Based Causal Inference",
-   "url": "https://arxiv.org/abs/2611.03656",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-05T05:00:00+00:00",
-   "summary": "arXiv:2611.03656v1 Announce Type: new Abstract: Why do some of the world's most powerful Artificial Intelligence (AI) systems still struggle to reason about cause and effect? Causal discovery, the ability to discern the…"
-  },
-  {
-   "title": "Setting a new standard for responsible AI infrastructure",
-   "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+   "title": "Merge builds product and business tools with OpenAI technology",
+   "url": "https://openai.com/index/merge-builds-with-openai",
    "source": "OpenAI",
    "kind": "news",
-   "published": "2026-11-05T02:00:00+00:00",
-   "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development."
+   "published": "2026-11-05T08:00:00+00:00",
+   "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
   },
   {
    "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
@@ -311,14 +341,6 @@
    "summary": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm"
   },
   {
-   "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-   "url": "https://openai.com/index/openai-to-acquire-pierre",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-04T14:30:00+00:00",
-   "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code."
-  },
-  {
    "title": "Securing the agentic enterprise with data lineage",
    "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
    "source": "MIT Tech Review",
@@ -327,36 +349,12 @@
    "summary": "A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the…"
   },
   {
-   "title": "A thousand fewer paths to root",
-   "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-04T08:00:00+00:00",
-   "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel."
-  },
-  {
-   "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-   "url": "https://openai.com/index/daybreak-red-aws-govcloud",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-04T07:00:00+00:00",
-   "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
-  },
-  {
    "title": "datasette-apps 0.3a0",
    "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
    "source": "Simon Willison",
    "kind": "news",
    "published": "2026-11-04T00:29:36+00:00",
    "summary": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent…"
-  },
-  {
-   "title": "Introducing Images 2.6",
-   "url": "https://openai.com/index/introducing-images-2-6",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-04T00:00:00+00:00",
-   "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API."
   },
   {
    "title": "datasette-agent 0.5a0",
@@ -391,26 +389,11 @@
    "thumbnail": "https://i4.ytimg.com/vi/k2ruCf_z75I/hqdefault.jpg"
   },
   {
-   "title": "StateBench: Testing how language models track state changes over long documents",
-   "url": "https://huggingface.co/blog/allenai/statebench",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-03T17:15:21+00:00"
-  },
-  {
    "title": "Palette: teaching a small model to build decks in your design language",
    "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-11-03T16:35:36+00:00"
-  },
-  {
-   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-03T16:29:48+00:00",
-   "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as…"
   },
   {
    "title": "How “reverse game theory” could keep AI agents in check",
@@ -437,13 +420,6 @@
    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. At the end of September, President Trump signed an executive order that contained…"
   },
   {
-   "title": "CWE-bench v2: More coverage, quality, and transparency",
-   "url": "https://huggingface.co/blog/cwe-bench",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-03T00:00:00+00:00"
-  },
-  {
    "title": "The latest AI news we announced in October 2026",
    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
    "source": "Google AI",
@@ -466,14 +442,6 @@
    "kind": "news",
    "published": "2026-11-02T17:00:00+00:00",
    "summary": "In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire…"
-  },
-  {
-   "title": "Stop counting tokens, start counting what ships",
-   "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-11-02T13:10:32+00:00",
-   "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens…"
   },
   {
    "title": "OpenAI Claims It Just Did The Impossible",
@@ -516,36 +484,12 @@
    "thumbnail": "https://i3.ytimg.com/vi/nEaJMdM1djM/hqdefault.jpg"
   },
   {
-   "title": "China just dropped a new frontier model... and nobody can explain how",
-   "url": "https://www.youtube.com/watch?v=G_em1hHPnXY",
-   "source": "Fireship",
-   "kind": "video",
-   "published": "2026-10-26T18:55:29+00:00",
-   "thumbnail": "https://i4.ytimg.com/vi/G_em1hHPnXY/hqdefault.jpg"
-  },
-  {
    "title": "The Sphere Intersection Puzzle",
    "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
    "source": "3Blue1Brown",
    "kind": "video",
    "published": "2026-10-25T14:30:46+00:00",
    "thumbnail": "https://i3.ytimg.com/vi/V_uq3v6xK-4/hqdefault.jpg"
-  },
-  {
-   "title": "Gemini 4 Argon Is Not What I Expected",
-   "url": "https://www.youtube.com/watch?v=LWxX6vvHfrc",
-   "source": "Two Minute Papers",
-   "kind": "video",
-   "published": "2026-10-19T08:49:21+00:00",
-   "thumbnail": "https://i1.ytimg.com/vi/LWxX6vvHfrc/hqdefault.jpg"
-  },
-  {
-   "title": "There's never been a better time to go into math",
-   "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
-   "source": "3Blue1Brown",
-   "kind": "video",
-   "published": "2026-10-16T16:15:20+00:00",
-   "thumbnail": "https://i1.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg"
   }
  ]
 }
