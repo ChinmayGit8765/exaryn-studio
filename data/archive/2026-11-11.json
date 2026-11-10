@@ -1,0 +1,607 @@
+{
+ "generated_at": "2026-11-10T21:06:00.384705+00:00",
+ "items": [
+  {
+   "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+   "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-10T20:52:13+00:00",
+   "summary": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines."
+  },
+  {
+   "title": "llm-gemini 0.36",
+   "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-10T20:09:44+00:00",
+   "summary": "Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else . This is Google's best ever Gemini, priced at $2/million input and…"
+  },
+  {
+   "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
+   "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-10T19:57:52+00:00",
+   "summary": "Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control…"
+  },
+  {
+   "title": "Nobody Is Competing With Anthropic",
+   "url": "https://www.youtube.com/watch?v=yh5IAUow4Hc",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-10T19:38:40+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/yh5IAUow4Hc/hqdefault.jpg"
+  },
+  {
+   "title": "The US is winning the AI race. Jensen Huang could have blown it",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T19:31:58+00:00",
+   "summary": "As espionage targets go, Jensen Huang is perhaps one of the least surprising on Earth. The Nvidia CEO runs one of the world's most valuable companies, controls the in-demand technology fueling the AI boom, and is cozy…"
+  },
+  {
+   "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
+   "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-10T19:23:34+00:00",
+   "summary": "The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”"
+  },
+  {
+   "title": "The indie game community is in disarray over AI and Big Walk",
+   "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T19:06:22+00:00",
+   "summary": "Some Independent Games Festival (IGF) jurors published a statement yesterday saying they would not vote for games that use generative AI in \"any capacity.\" Soon after, the developer of indie hit Big Walk has published a…"
+  },
+  {
+   "title": "PSI is trying to make a business out of AI-driven scientific discovery",
+   "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-10T19:03:52+00:00",
+   "summary": "PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades."
+  },
+  {
+   "title": "Gemini Intelligence: New features, on more devices",
+   "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-10T19:00:00+00:00",
+   "summary": "A man speaks into a phone. Text on the screen reads 'Gemini Intelligence'"
+  },
+  {
+   "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
+   "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-10T18:49:52+00:00",
+   "summary": "OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that."
+  },
+  {
+   "title": "Starlink Mini 2",
+   "url": "https://starlink.com/mini-2",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-10T18:22:32+00:00",
+   "summary": "Article URL: https://starlink.com/mini-2 Comments URL: https://news.ycombinator.com/item?id=50444129 Points: 160 # Comments: 174"
+  },
+  {
+   "title": "Did Anthropic just save its $1 trillion IPO?",
+   "url": "https://www.youtube.com/watch?v=1FurWDiK9A4",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-10T18:19:55+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/1FurWDiK9A4/hqdefault.jpg"
+  },
+  {
+   "title": "Synaptics patent claims stop work on DisplayLink drivers",
+   "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-10T18:02:02+00:00",
+   "summary": "Article URL: https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/ Comments URL: https://news.ycombinator.com/item?id=50443824 Points: 161 # Comments: 72"
+  },
+  {
+   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+   "url": "https://github.com/GoogleChrome/modern-web-guidance",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-10T18:01:15+00:00",
+   "summary": "Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without s everywhere, ` ` and showModal() give you backdrops and ideal focus management,…"
+  },
+  {
+   "title": "Val Town is winding down",
+   "url": "https://blog.val.town/winding-down",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-10T17:31:14+00:00",
+   "summary": "Article URL: https://blog.val.town/winding-down Comments URL: https://news.ycombinator.com/item?id=50443427 Points: 187 # Comments: 50"
+  },
+  {
+   "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+   "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-10T17:30:00+00:00",
+   "summary": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's…"
+  },
+  {
+   "title": "AMD's Zen 6 Family: Feeding the Beast",
+   "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-10T17:02:32+00:00",
+   "summary": "Article URL: https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast Comments URL: https://news.ycombinator.com/item?id=50443090 Points: 120 # Comments: 39"
+  },
+  {
+   "title": "Anthropic targets $1.4 trillion IPO",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T16:38:24+00:00",
+   "summary": "Anthropic confirmed on Tuesday that its IPO could be one of the biggest ever, even while falling short of previous expectations. Its IPO price is expected to be between $70.00 and $78.00 per share, which would put its…"
+  },
+  {
+   "title": ".name Grandfathered",
+   "url": "https://neil.fraser.name/news/2026/11/10/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-10T16:37:44+00:00",
+   "summary": "Article URL: https://neil.fraser.name/news/2026/11/10/ Comments URL: https://news.ycombinator.com/item?id=50442736 Points: 486 # Comments: 97"
+  },
+  {
+   "title": "ChatGPT is getting verified AI ‘Business Agents’",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T16:34:41+00:00",
+   "summary": "ChatGPT is going to let you chat with verified \"Business Agents\" that represent a brand to help you with things like comparison shopping. The feature, available first to \"eligible\" e-commerce and online service…"
+  },
+  {
+   "title": "eBay appears to have shut the door on third-party AI agents",
+   "url": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T16:20:30+00:00",
+   "summary": "eBay appears to have blocked AI agents, including Meta's Muse, from browsing on the platform - the latest speed bump in the AI agent race. A reader tells The Verge that for several weeks he's had his Muse agent browse…"
+  },
+  {
+   "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
+   "url": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T15:49:40+00:00",
+   "summary": "Adobe is expanding its Creative Cloud apps and Firefly AI platform with new capabilities that aim to make design and editing projects faster and less complicated. Some of the announcements from Adobe's Max event today…"
+  },
+  {
+   "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+   "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-10T14:00:00+00:00",
+   "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership."
+  },
+  {
+   "title": "Google Cloud launches Gemini for healthcare.",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-10T13:00:00+00:00",
+   "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works."
+  },
+  {
+   "title": "Helping caregivers use AI in everyday life",
+   "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-10T12:00:00+00:00",
+   "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life."
+  },
+  {
+   "title": "Meet the Sad Wives of AI",
+   "url": "https://www.wired.com/story/meet-the-sad-wives-of-ai/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-10T10:40:51+00:00",
+   "summary": "Article URL: https://www.wired.com/story/meet-the-sad-wives-of-ai/ Comments URL: https://news.ycombinator.com/item?id=50438429 Points: 74 # Comments: 66"
+  },
+  {
+   "title": "AI usage generates a fragile codebase",
+   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-10T10:25:58+00:00",
+   "summary": "Article URL: https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/ Comments URL: https://news.ycombinator.com/item?id=50438318 Points: 269 # Comments: 326"
+  },
+  {
+   "title": "Is Software Over?",
+   "url": "https://www.youtube.com/watch?v=vug73goPJaM",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-10T10:15:57+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/vug73goPJaM/hqdefault.jpg"
+  },
+  {
+   "title": "Introducing Businesses in ChatGPT",
+   "url": "https://openai.com/index/introducing-businesses-chatgpt",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-10T10:00:00+00:00",
+   "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT."
+  },
+  {
+   "title": "Closing the AI guidance gap in education",
+   "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-10T09:00:00+00:00",
+   "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning."
+  },
+  {
+   "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+   "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-10T07:28:21+00:00",
+   "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model…"
+  },
+  {
+   "title": "Fireworks AI security breach impacts Notion and their customers",
+   "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-10T07:19:38+00:00",
+   "summary": "Article URL: https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor Comments URL: https://news.ycombinator.com/item?id=50437106 Points: 154 # Comments: 57"
+  },
+  {
+   "title": "Work at the Frontier: AI’s effect on freelance work",
+   "url": "https://openai.com/index/ai-effect-on-freelance-work",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-10T07:00:00+00:00",
+   "summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects."
+  },
+  {
+   "title": "Quoting Prompting Claude Fable 5.2",
+   "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-10T05:34:14+00:00",
+   "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as…"
+  },
+  {
+   "title": "Don't Blame The Preferences: Examining The Emergence of Sycophancy in LLM Training",
+   "url": "https://arxiv.org/abs/2611.10045",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.10045v1 Announce Type: new Abstract: AI sycophancy, the tendency of large language models (LLMs) to flatter users and affirm their beliefs, can undermine accuracy and contribute to misinformation, dependence,…"
+  },
+  {
+   "title": "Veterans' Mental Health Crisis Severity Annotation: Do LLMs Agree More Than Human Experts?",
+   "url": "https://arxiv.org/abs/2611.10048",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.10048v1 Announce Type: new Abstract: Large language models (LLMs) offer a scalable approach for annotating mental health and crisis-related social media content, but their reliability in safety-critical tasks…"
+  },
+  {
+   "title": "LoRazor: Trimming Adapter Execution for Efficient Multi-LoRA Serving",
+   "url": "https://arxiv.org/abs/2611.10049",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.10049v1 Announce Type: new Abstract: LoRA offers a parameter-efficient adaptation strategy, supporting multi-user workloads via customized adapters on a shared backbone. However, serving concurrent requests…"
+  },
+  {
+   "title": "AYO: A Safe and Privacy-Preserving Platform for Studying Children's Interaction with LLMs",
+   "url": "https://arxiv.org/abs/2611.10054",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.10054v1 Announce Type: new Abstract: Children and adolescents are increasingly interacting with generative AI and large language models (LLMs), yet little is known about how these interactions may influence…"
+  },
+  {
+   "title": "META-IR: Meta-Introspective Reasoning for Adaptive Safety Alignment in LLM",
+   "url": "https://arxiv.org/abs/2611.10089",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.10089v1 Announce Type: new Abstract: Large Language Models (LLMs) remain vulnerable to jailbreak attacks and harmful-content prompts, particularly under adversarial distribution shifts where static alignment…"
+  },
+  {
+   "title": "Process then Retrieve: Investigating the Origins of the Modality Gap in Vision-Language Models",
+   "url": "https://arxiv.org/abs/2611.09897",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.09897v1 Announce Type: new Abstract: Understanding the origins of the modality gap in vision language models remains a significant challenge. This work investigates whether differences in information density…"
+  },
+  {
+   "title": "MAGE: Towards Generalizable Multi-timescale EEG Representations",
+   "url": "https://arxiv.org/abs/2611.09928",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.09928v1 Announce Type: new Abstract: Electroencephalography (EEG) data plays an important role in understanding human brain activity, with various major applications. While current approaches, which largely…"
+  },
+  {
+   "title": "Causal Discovery Bench: Can LLMs Autonomously Conduct Effective Experiments?",
+   "url": "https://arxiv.org/abs/2611.09934",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.09934v1 Announce Type: new Abstract: As large language model (LLM) agents get actively adopted for autonomous research, they must not only reason over existing evidence, but also design informative…"
+  },
+  {
+   "title": "Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems",
+   "url": "https://arxiv.org/abs/2611.09935",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.09935v1 Announce Type: new Abstract: Resource-constrained IoT devices cache learned models for real-time decisions, but frequent updates incur substantial bandwidth, energy, and service overhead. Because…"
+  },
+  {
+   "title": "Topological Deep Learning Challenge 2026: Bridging the Gap",
+   "url": "https://arxiv.org/abs/2611.10046",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-10T05:00:00+00:00",
+   "summary": "arXiv:2611.10046v1 Announce Type: new Abstract: This paper describes the 2026 edition of the Topological Deep Learning Challenge: Bridging the Gap, hosted at the second Topology, Algebra, and Geometry in Data Science…"
+  },
+  {
+   "title": "Yonkers Rises",
+   "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-10T03:53:04+00:00",
+   "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation…"
+  },
+  {
+   "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
+   "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-10T03:20:06+00:00",
+   "summary": "Article URL: https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html Comments URL: https://news.ycombinator.com/item?id=50435660 Points: 190 # Comments: 181"
+  },
+  {
+   "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+   "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-10T00:00:00+00:00"
+  },
+  {
+   "title": "Decision Models in Hugging Face",
+   "url": "https://huggingface.co/blog/decision",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-10T00:00:00+00:00"
+  },
+  {
+   "title": "llm-anthropic 0.31",
+   "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-09T23:58:46+00:00",
+   "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so…"
+  },
+  {
+   "title": "Locating the source of a mysterious beep with Claude",
+   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-09T23:57:21+00:00",
+   "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in…"
+  },
+  {
+   "title": "A year after the 100% AI mandate nobody understands our code",
+   "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-09T22:19:12+00:00",
+   "summary": "https://redlib.catsarch.com/r/ClaudeCode/comments/1xq2n3t/a_... Comments URL: https://news.ycombinator.com/item?id=50433079 Points: 144 # Comments: 188"
+  },
+  {
+   "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
+   "url": "https://www.youtube.com/watch?v=pf5tXJZM1Rw",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-09T21:04:16+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/pf5tXJZM1Rw/hqdefault.jpg"
+  },
+  {
+   "title": "The backlash about data centers might really just be about electricity",
+   "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-09T19:35:33+00:00",
+   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia,…"
+  },
+  {
+   "title": "ChatGPT Enterprise now available in AWS Marketplace",
+   "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-09T19:00:00+00:00",
+   "summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships."
+  },
+  {
+   "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
+   "url": "https://github.com/Dodaios/ste80-humanizer",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-09T18:05:44+00:00",
+   "summary": "Article URL: https://github.com/Dodaios/ste80-humanizer Comments URL: https://news.ycombinator.com/item?id=50429144 Points: 104 # Comments: 38"
+  },
+  {
+   "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+   "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-09T17:05:43+00:00",
+   "summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco…"
+  },
+  {
+   "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-09T15:05:57+00:00"
+  },
+  {
+   "title": "Innovating with AI in the special chemicals industry",
+   "url": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-09T13:00:00+00:00",
+   "summary": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the…"
+  },
+  {
+   "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+   "url": "https://openai.com/index/control-room",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-09T13:00:00+00:00",
+   "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise."
+  },
+  {
+   "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+   "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-09T12:34:29+00:00"
+  },
+  {
+   "title": "Coding Isn't About Code Anymore",
+   "url": "https://www.youtube.com/watch?v=GtJKFhztgdM",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-09T06:41:14+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/GtJKFhztgdM/hqdefault.jpg"
+  },
+  {
+   "title": "OpenAI's Astra Just Opened The Black Box Of AI",
+   "url": "https://www.youtube.com/watch?v=GJ6PMUm5oTA",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-07T16:24:47+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/GJ6PMUm5oTA/hqdefault.jpg"
+  },
+  {
+   "title": "How Claude Fixes It's Own Code",
+   "url": "https://www.youtube.com/watch?v=TFCDWrEBaFM",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-06T23:00:39+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/TFCDWrEBaFM/hqdefault.jpg"
+  },
+  {
+   "title": "The one thing holding theoretical CS together just broke... kinda",
+   "url": "https://www.youtube.com/watch?v=iw9SZgyahqg",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-06T16:42:38+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/iw9SZgyahqg/hqdefault.jpg"
+  },
+  {
+   "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+   "url": "https://huggingface.co/blog/allenai/toyblocks",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-06T14:00:48+00:00"
+  },
+  {
+   "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+   "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-06T10:00:00+00:00",
+   "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new…"
+  },
+  {
+   "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
+   "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-06T07:27:02+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/XgC1QTs6A2U/hqdefault.jpg"
+  },
+  {
+   "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+   "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-06T00:00:00+00:00"
+  },
+  {
+   "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-05T17:00:00+00:00",
+   "summary": "Text \"Gemini Introducing Gemini Omni 1.2 Flash\" surroudned by images of a beehive, animals in conversation, a squid, and a woman walking down a street"
+  },
+  {
+   "title": "Mutex Explained - Computerphile",
+   "url": "https://www.youtube.com/watch?v=BmBw827GgFA",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-11-05T14:00:16+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/BmBw827GgFA/hqdefault.jpg"
+  },
+  {
+   "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+   "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-04T18:50:55+00:00",
+   "summary": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech’s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position. Democrat James Talarico won…"
+  },
+  {
+   "title": "Securing the agentic enterprise with data lineage",
+   "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-04T13:00:00+00:00",
+   "summary": "A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the…"
+  },
+  {
+   "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
+   "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
+   "source": "AI Explained",
+   "kind": "video",
+   "published": "2026-11-02T17:02:16+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/0Kw6_DTZPrY/hqdefault.jpg"
+  },
+  {
+   "title": "The Private Key Mistake! (TLS Key set to \"4\") - Computerphile",
+   "url": "https://www.youtube.com/watch?v=NDgS__J1U-M",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-30T15:47:25+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/NDgS__J1U-M/hqdefault.jpg"
+  },
+  {
+   "title": "?PHP Problem? - Computerphile",
+   "url": "https://www.youtube.com/watch?v=cI8IquVEyVY",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-28T16:23:55+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/cI8IquVEyVY/hqdefault.jpg"
+  },
+  {
+   "title": "The Sphere Intersection Puzzle",
+   "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-10-25T14:30:46+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/V_uq3v6xK-4/hqdefault.jpg"
+  }
+ ]
+}
