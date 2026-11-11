@@ -1,0 +1,567 @@
+{
+ "generated_at": "2026-11-11T21:12:05.824482+00:00",
+ "items": [
+  {
+   "title": "Gilbert + Tobin rethinks the business of law with AI",
+   "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-12T00:00:00+00:00",
+   "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin."
+  },
+  {
+   "title": "Why the data center you dread might never even be built",
+   "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-11T20:15:15+00:00",
+   "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a…"
+  },
+  {
+   "title": "Meta is losing its longtime head of  infrastructure",
+   "url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-11T20:12:01+00:00",
+   "summary": "Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role."
+  },
+  {
+   "title": "Why are we still working this hard?",
+   "url": "https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-11T20:05:29+00:00",
+   "summary": "Article URL: https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/ Comments URL: https://news.ycombinator.com/item?id=50457939 Points: 125 # Comments: 110"
+  },
+  {
+   "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
+   "url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-11T20:02:14+00:00",
+   "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a…"
+  },
+  {
+   "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
+   "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-11T19:54:00+00:00",
+   "summary": "CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings."
+  },
+  {
+   "title": "With $720M round, Britain’s Fractile gets a leg up in the race for AI chips",
+   "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-11T19:34:55+00:00",
+   "summary": "Fractile has now become one of the top-funded players in the race for purpose-built AI chips."
+  },
+  {
+   "title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
+   "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-11T19:22:22+00:00",
+   "summary": "Nvidia CEO Jensen Huang has until the end of the day Wednesday to answer a call from House Republicans for a closed-door briefing on his affair with alleged Chinese spy."
+  },
+  {
+   "title": "Browse tools.simonwillison.net by tag",
+   "url": "https://simonwillison.net/2026/Nov/11/tools-tags/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-11T18:42:50+00:00",
+   "summary": "Browse tools.simonwillison.net by tag I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it…"
+  },
+  {
+   "title": "AWS Finally Built Its Own AWS Emulator",
+   "url": "https://github.com/aws/aws-emulator",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-11T18:21:38+00:00",
+   "summary": "Article URL: https://github.com/aws/aws-emulator Comments URL: https://news.ycombinator.com/item?id=50456631 Points: 410 # Comments: 126"
+  },
+  {
+   "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-11T18:00:00+00:00",
+   "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions."
+  },
+  {
+   "title": "llm 0.37.2",
+   "url": "https://simonwillison.net/2026/Nov/11/llm/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-11T17:19:52+00:00",
+   "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai…"
+  },
+  {
+   "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+   "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-11T16:38:44+00:00",
+   "summary": "Article URL: https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/ Comments URL: https://news.ycombinator.com/item?id=50455394 Points: 302 # Comments: 157"
+  },
+  {
+   "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-11T16:00:00+00:00",
+   "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist."
+  },
+  {
+   "title": "Gemini 4 Still Isn't What I Need (Yet)",
+   "url": "https://www.youtube.com/watch?v=OBNVzWYMKbE",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-11T15:50:36+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/OBNVzWYMKbE/hqdefault.jpg"
+  },
+  {
+   "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+   "url": "https://github.com/FrigadeHQ/yogurt",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-11T15:33:06+00:00",
+   "summary": "Hey HN, I’m Eric and I want to share an OSS project that I’ve been building in my free time. Yogurt is a free, MIT licensed desktop app that uses on-device AI models to transcribe, summarize, and chat with your…"
+  },
+  {
+   "title": "Anthropic's IPO roadshow video",
+   "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-11T15:11:59+00:00",
+   "summary": "Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\"…"
+  },
+  {
+   "title": "Pharo in the Browser with WebAssembly",
+   "url": "https://massimo-nocentini.github.io/pharo-vm/world.html",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-11T14:21:27+00:00",
+   "summary": "Article URL: https://massimo-nocentini.github.io/pharo-vm/world.html Comments URL: https://news.ycombinator.com/item?id=50453763 Points: 108 # Comments: 31"
+  },
+  {
+   "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-11T14:18:08+00:00",
+   "summary": "Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold…"
+  },
+  {
+   "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
+   "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-11T14:15:27+00:00",
+   "summary": "Google has cooked up a new experimental AI tool called Tabletop that generates customized collaborative hubs to help you coordinate with family, and friends. The Tabletop platform shares some visual similarities with…"
+  },
+  {
+   "title": "Atuin Threads: All your agent sessions on every machine",
+   "url": "https://blog.atuin.sh/threads-agent-sessions/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-11T14:10:46+00:00",
+   "summary": "Article URL: https://blog.atuin.sh/threads-agent-sessions/ Comments URL: https://news.ycombinator.com/item?id=50453637 Points: 154 # Comments: 62"
+  },
+  {
+   "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+   "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-11T12:56:24+00:00",
+   "summary": "Some of the most impressive tech that Adobe showcases at its annual Max conference each year is the experimental features it's developing, and the latest of those tools are being announced today: they can transform…"
+  },
+  {
+   "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+   "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-11T09:00:00+00:00",
+   "summary": "A portrait of Dr Nontobeko Ntombela, Senior Lecturer, Department of Curatorial, Public and Visual Cultures, Wits School of Arts, University of the Witwatersrand"
+  },
+  {
+   "title": "ChatGPT Plus for veterans and servicemembers",
+   "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-11T08:00:00+00:00",
+   "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers."
+  },
+  {
+   "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+   "url": "https://huggingface.co/blog/qvac/botpsy",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-11T05:01:16+00:00"
+  },
+  {
+   "title": "Auditable Human-Agent Teams for Autonomous X-ray Experimentation",
+   "url": "https://arxiv.org/abs/2611.12933",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12933v1 Announce Type: new Abstract: Closed-loop autonomous experimentation can accelerate scientific discovery, but implementation effort limits accessibility. Agentic systems may lower this barrier,…"
+  },
+  {
+   "title": "EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery",
+   "url": "https://arxiv.org/abs/2611.12934",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12934v1 Announce Type: new Abstract: While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for…"
+  },
+  {
+   "title": "Train on prefill, monitor at decode: Using sparse autoencoders for topic monitoring",
+   "url": "https://arxiv.org/abs/2611.12935",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12935v1 Announce Type: new Abstract: Topic monitoring is the task of labelling the topic of each token in a model's response during generation. Activation-based monitors that run at generation time have so…"
+  },
+  {
+   "title": "LandslideFM: A Foundation Model Towards Unified Landslide Perception and Understanding",
+   "url": "https://arxiv.org/abs/2611.12936",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12936v1 Announce Type: new Abstract: Intelligent landslide detection is essential for disaster prevention. However, existing models primarily focus on isolated visual tasks, require extensive labeled data,…"
+  },
+  {
+   "title": "Tracing Psychometric Inference in Large Language Models",
+   "url": "https://arxiv.org/abs/2611.12937",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We address this question…"
+  },
+  {
+   "title": "An ensemble of graph generative models for assisted history matching of the Brugge field case",
+   "url": "https://arxiv.org/abs/2611.12927",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12927v1 Announce Type: new Abstract: Assisted history matching remains non-unique because many geological realisations can reproduce equivalent production responses with substantial differences between…"
+  },
+  {
+   "title": "Predictive Surprise as Self-Grounding Concept Bottleneck for Interpretable Time Series",
+   "url": "https://arxiv.org/abs/2611.12955",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12955v1 Announce Type: new Abstract: Time-series classifiers deployed in risk-sensitive domains must be (1) accurate, (2) interpretable, and (3) able to abstain when evidence is weak. Existing methods do not…"
+  },
+  {
+   "title": "ADIndex: Layer-Adaptive Sparse Attention Indexing via Group-Level Distillation",
+   "url": "https://arxiv.org/abs/2611.12956",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12956v1 Announce Type: new Abstract: DeepSeek Sparse Attention (DSA) reduces the computational cost of attention through token-level selection. However, its indexer still scores the entire causal prefix for…"
+  },
+  {
+   "title": "Exploration via Exploitation: The Blessing of Reward Diversity in Personalized Federated RL",
+   "url": "https://arxiv.org/abs/2611.12964",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12964v1 Announce Type: new Abstract: While federated reinforcement learning (RL) has traditionally guaranteed high efficiency in homogeneous environments, collaboration is often hindered when agents possess…"
+  },
+  {
+   "title": "StatPrompt-LLM: A Lightweight Statistical Refinement for Foundation-Style Time-Series Forecasting",
+   "url": "https://arxiv.org/abs/2611.12974",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-11T05:00:00+00:00",
+   "summary": "arXiv:2611.12974v1 Announce Type: new Abstract: Time-series forecasting has recently seen a paradigm shift with the introduction of foundation-style models that adapt large pretrained language architectures to…"
+  },
+  {
+   "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+   "url": "https://openai.com/index/jiostar-vijay-seshadri",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-11T00:00:00+00:00",
+   "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production."
+  },
+  {
+   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+   "url": "https://huggingface.co/blog/token-pooling",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-11T00:00:00+00:00"
+  },
+  {
+   "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
+   "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
+   "source": "AI Explained",
+   "kind": "video",
+   "published": "2026-11-10T23:11:36+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/583ThJIqQ7k/hqdefault.jpg"
+  },
+  {
+   "title": "llm-gemini 0.36",
+   "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-10T20:09:44+00:00",
+   "summary": "Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else . This is Google's best ever Gemini, priced at $2/million input and…"
+  },
+  {
+   "title": "Nobody Is Competing With Anthropic",
+   "url": "https://www.youtube.com/watch?v=yh5IAUow4Hc",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-10T19:38:40+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/yh5IAUow4Hc/hqdefault.jpg"
+  },
+  {
+   "title": "The US is winning the AI race. Jensen Huang could have blown it",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T19:31:58+00:00",
+   "summary": "As espionage targets go, Jensen Huang is perhaps one of the least surprising on Earth. The Nvidia CEO runs one of the world's most valuable companies, controls the in-demand technology fueling the AI boom, and is cozy…"
+  },
+  {
+   "title": "The indie game community is in disarray over AI and Big Walk",
+   "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T19:06:22+00:00",
+   "summary": "Some Independent Games Festival (IGF) jurors published a statement yesterday saying they would not vote for games that use generative AI in \"any capacity.\" Soon after, the developer of indie hit Big Walk has published a…"
+  },
+  {
+   "title": "Gemini Intelligence: New features, on more devices",
+   "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-10T19:00:00+00:00",
+   "summary": "A man speaks into a phone. Text on the screen reads 'Gemini Intelligence'"
+  },
+  {
+   "title": "Did Anthropic just save its $1 trillion IPO?",
+   "url": "https://www.youtube.com/watch?v=1FurWDiK9A4",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-10T18:19:55+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/1FurWDiK9A4/hqdefault.jpg"
+  },
+  {
+   "title": "Anthropic targets $1.4 trillion IPO",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-10T16:38:24+00:00",
+   "summary": "Anthropic confirmed on Tuesday that its IPO could be one of the biggest ever, even while falling short of previous expectations. Its IPO price is expected to be between $70.00 and $78.00 per share, which would put its…"
+  },
+  {
+   "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+   "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-10T14:00:00+00:00",
+   "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership."
+  },
+  {
+   "title": "Google Cloud launches Gemini for healthcare.",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-10T13:00:00+00:00",
+   "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works."
+  },
+  {
+   "title": "Helping caregivers use AI in everyday life",
+   "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-10T12:00:00+00:00",
+   "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life."
+  },
+  {
+   "title": "Is Software Over?",
+   "url": "https://www.youtube.com/watch?v=vug73goPJaM",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-10T10:15:57+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/vug73goPJaM/hqdefault.jpg"
+  },
+  {
+   "title": "Introducing Businesses in ChatGPT",
+   "url": "https://openai.com/index/introducing-businesses-chatgpt",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-10T10:00:00+00:00",
+   "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT."
+  },
+  {
+   "title": "Closing the AI guidance gap in education",
+   "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-10T09:00:00+00:00",
+   "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning."
+  },
+  {
+   "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+   "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-10T07:28:21+00:00",
+   "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model…"
+  },
+  {
+   "title": "Quoting Prompting Claude Fable 5.2",
+   "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-10T05:34:14+00:00",
+   "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as…"
+  },
+  {
+   "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+   "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-10T00:00:00+00:00"
+  },
+  {
+   "title": "Decision Models in Hugging Face",
+   "url": "https://huggingface.co/blog/decision",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-10T00:00:00+00:00"
+  },
+  {
+   "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
+   "url": "https://www.youtube.com/watch?v=pf5tXJZM1Rw",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-09T21:04:16+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/pf5tXJZM1Rw/hqdefault.jpg"
+  },
+  {
+   "title": "The backlash about data centers might really just be about electricity",
+   "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-09T19:35:33+00:00",
+   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia,…"
+  },
+  {
+   "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+   "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-09T17:05:43+00:00",
+   "summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco…"
+  },
+  {
+   "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-09T15:05:57+00:00"
+  },
+  {
+   "title": "Innovating with AI in the special chemicals industry",
+   "url": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-09T13:00:00+00:00",
+   "summary": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the…"
+  },
+  {
+   "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+   "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-09T12:34:29+00:00"
+  },
+  {
+   "title": "Coding Isn't About Code Anymore",
+   "url": "https://www.youtube.com/watch?v=GtJKFhztgdM",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-09T06:41:14+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/GtJKFhztgdM/hqdefault.jpg"
+  },
+  {
+   "title": "OpenAI's Astra Just Opened The Black Box Of AI",
+   "url": "https://www.youtube.com/watch?v=GJ6PMUm5oTA",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-07T16:24:47+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/GJ6PMUm5oTA/hqdefault.jpg"
+  },
+  {
+   "title": "The one thing holding theoretical CS together just broke... kinda",
+   "url": "https://www.youtube.com/watch?v=iw9SZgyahqg",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-06T16:42:38+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/iw9SZgyahqg/hqdefault.jpg"
+  },
+  {
+   "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+   "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-06T10:00:00+00:00",
+   "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new…"
+  },
+  {
+   "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
+   "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-06T07:27:02+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/XgC1QTs6A2U/hqdefault.jpg"
+  },
+  {
+   "title": "Mutex Explained - Computerphile",
+   "url": "https://www.youtube.com/watch?v=BmBw827GgFA",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-11-05T14:00:16+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/BmBw827GgFA/hqdefault.jpg"
+  },
+  {
+   "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
+   "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
+   "source": "AI Explained",
+   "kind": "video",
+   "published": "2026-11-02T17:02:16+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/0Kw6_DTZPrY/hqdefault.jpg"
+  },
+  {
+   "title": "The Private Key Mistake! (TLS Key set to \"4\") - Computerphile",
+   "url": "https://www.youtube.com/watch?v=NDgS__J1U-M",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-30T15:47:25+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/NDgS__J1U-M/hqdefault.jpg"
+  },
+  {
+   "title": "?PHP Problem? - Computerphile",
+   "url": "https://www.youtube.com/watch?v=cI8IquVEyVY",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-10-28T16:23:55+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/cI8IquVEyVY/hqdefault.jpg"
+  },
+  {
+   "title": "The Sphere Intersection Puzzle",
+   "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-10-25T14:30:46+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/V_uq3v6xK-4/hqdefault.jpg"
+  }
+ ]
+}
