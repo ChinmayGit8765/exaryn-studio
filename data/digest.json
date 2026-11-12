@@ -1,6 +1,212 @@
 {
- "generated_at": "2026-11-11T21:12:05.824482+00:00",
+ "generated_at": "2026-11-12T21:05:55.643249+00:00",
  "items": [
+  {
+   "title": "I reviewed the Apple HomeView, ask me anything",
+   "url": "https://www.theverge.com/tech/1031868/i-reviewed-the-apple-homeview-ask-me-anything",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-12T20:55:42+00:00",
+   "summary": "Hi! I'm Jen Tuohy, The Verge's senior smart home reviewer. I've tested every smart display Amazon and Google have ever made, and for the past week I've been testing Apple's first: The $299 HomeView. I put the tabletop…"
+  },
+  {
+   "title": "Jensen Huang was having a third affair, Reuters reports",
+   "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-12T20:26:47+00:00",
+   "summary": "Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia."
+  },
+  {
+   "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+   "url": "https://openai.com/index/amplitude",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-12T20:00:00+00:00",
+   "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact."
+  },
+  {
+   "title": "No, AI agents did not discover a previously unknown Maya site",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-12T19:42:40+00:00",
+   "summary": "Armed with a team of AI agents, Google researcher Pietro Miotti claimed earlier this week to have discovered a potentially unmapped Maya site in Mexico. There was just one problem: The site had already been discovered…"
+  },
+  {
+   "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
+   "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-12T19:27:45+00:00",
+   "summary": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses."
+  },
+  {
+   "title": "The Jensen Huang scandal is hardly over",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-12T19:16:51+00:00",
+   "summary": "I was certain, until the story of Jensen Huang's second affair hit, that Huang was bulletproof. After all, why wouldn't he be? He's placed himself indispensably at the center of the AI industry and famously had no…"
+  },
+  {
+   "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
+   "url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-12T19:11:00+00:00",
+   "summary": "Nectar's new AI agent automates influencer marketing, helping brands discover creators, manage outreach and partnerships, and track campaign results."
+  },
+  {
+   "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+   "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-12T19:07:35+00:00"
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang has resigned. What happens next?",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-12T18:59:29+00:00",
+   "summary": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation. However, The New York Times…"
+  },
+  {
+   "title": "Gemini 4 Hydrogen and Orchestrator",
+   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-12T18:52:01+00:00",
+   "summary": "Article URL: https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/ Comments URL: https://news.ycombinator.com/item?id=50472260 Points: 129 # Comments: 25"
+  },
+  {
+   "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
+   "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-12T18:39:23+00:00",
+   "summary": "Jensen Huang’s resignation raises questions about Nvidia’s commitment to open source AI, including its Hugging Face acquisition, open-weight models, and advocacy against restrictions, as the company navigates a…"
+  },
+  {
+   "title": "AI chatbots are recommending fake retail websites, study finds",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-12T18:35:54+00:00",
+   "summary": "Shoppers using AI chatbots to research products or find places to buy items could be directed to imposters and other risky websites, a new study found. The study conducted by IP protection firm Podqi and shared…"
+  },
+  {
+   "title": "Ask HN: Microsoft/Azure Outage?",
+   "url": "https://news.ycombinator.com/item?id=50471668",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-12T18:17:13+00:00",
+   "summary": "For the past 5 minutes all of our Microsoft Cloud connections are down. Anyone else? The Status page won't even load. Comments URL: https://news.ycombinator.com/item?id=50471668 Points: 298 # Comments: 161"
+  },
+  {
+   "title": "Oh, Palantir is ‘progressive’ now, is it?",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-12T18:13:39+00:00",
+   "summary": "I had other things to do today, but Alex Karp's pathetic attempt to pivot back to the left gave me no choice but to put them on hold. Last week's elections were a bloodbath for the right, a problem for all the wannabe…"
+  },
+  {
+   "title": "Gemini 4 Hydrogen",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-12T18:01:48+00:00",
+   "summary": "Article URL: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/ Comments URL: https://news.ycombinator.com/item?id=50471431 Points: 340 # Comments: 230"
+  },
+  {
+   "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+   "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-12T18:00:00+00:00",
+   "summary": "Rotating carousel of cards with text \"Gemini 4 Hydrogen\" \"Now in Google Search\" and examples from the Google Search UI"
+  },
+  {
+   "title": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit",
+   "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-12T17:36:40+00:00",
+   "summary": "Hugging Face's CEO pledged to keep fighting for open source AI after Huang's exit, raising questions about Nvidia's $12.9 billion acquisition."
+  },
+  {
+   "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+   "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-12T17:17:58+00:00",
+   "summary": "The airline said it will not allow customers to use AI agents to book flights and manage reservations."
+  },
+  {
+   "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
+   "url": "https://github.com/simpsoka/zigzag",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-12T17:02:42+00:00",
+   "summary": "Article URL: https://github.com/simpsoka/zigzag Comments URL: https://news.ycombinator.com/item?id=50470488 Points: 145 # Comments: 65"
+  },
+  {
+   "title": "Nintendo Takes Down Emulators and Firmware in Massive GitHub DMCA Sweep",
+   "url": "https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-12T16:29:13+00:00",
+   "summary": "Article URL: https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep Comments URL: https://news.ycombinator.com/item?id=50469994 Points: 201 # Comments: 130"
+  },
+  {
+   "title": "I'm making LLMs work on small and old devices",
+   "url": "https://github.com/hyperionaidev/smolmaxxing/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-12T15:23:10+00:00",
+   "summary": "Article URL: https://github.com/hyperionaidev/smolmaxxing/ Comments URL: https://news.ycombinator.com/item?id=50468888 Points: 194 # Comments: 73"
+  },
+  {
+   "title": "Atomic Operations - Computerphile",
+   "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-11-12T14:59:29+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/BHOw09O3ZsI/hqdefault.jpg"
+  },
+  {
+   "title": "DeepMind’s AI Just Did The Impossible",
+   "url": "https://www.youtube.com/watch?v=gPNiuyYirfw",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-12T13:41:41+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/gPNiuyYirfw/hqdefault.jpg"
+  },
+  {
+   "title": "Holiday Extras is rethinking what it can build with Codex",
+   "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-12T09:30:00+00:00",
+   "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth."
+  },
+  {
+   "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+   "url": "https://huggingface.co/blog/3d-lora-finetuning",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-12T00:00:00+00:00"
+  },
+  {
+   "title": "Supporting research on AI and children’s safety",
+   "url": "https://openai.com/index/children-first-declaration",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-12T00:00:00+00:00",
+   "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people."
+  },
   {
    "title": "Gilbert + Tobin rethinks the business of law with AI",
    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
@@ -10,60 +216,36 @@
    "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin."
   },
   {
-   "title": "Why the data center you dread might never even be built",
-   "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
-   "source": "TechCrunch AI",
+   "title": "Gemini Decisions API",
+   "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+   "source": "Simon Willison",
    "kind": "news",
-   "published": "2026-11-11T20:15:15+00:00",
-   "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a…"
+   "published": "2026-11-11T22:03:25+00:00",
+   "summary": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and…"
   },
   {
-   "title": "Meta is losing its longtime head of  infrastructure",
-   "url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/",
-   "source": "TechCrunch AI",
+   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-11-11T20:12:01+00:00",
-   "summary": "Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role."
+   "published": "2026-11-11T21:24:35+00:00",
+   "summary": "Article URL: https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/ Comments URL: https://news.ycombinator.com/item?id=50458900 Points: 656 # Comments: 680"
   },
   {
-   "title": "Why are we still working this hard?",
-   "url": "https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/",
-   "source": "Hacker News",
+   "title": "aws-emulator",
+   "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+   "source": "Simon Willison",
    "kind": "news",
-   "published": "2026-11-11T20:05:29+00:00",
-   "summary": "Article URL: https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/ Comments URL: https://news.ycombinator.com/item?id=50457939 Points: 125 # Comments: 110"
+   "published": "2026-11-11T21:18:30+00:00",
+   "summary": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents…"
   },
   {
-   "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
-   "url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
-   "source": "TechCrunch AI",
+   "title": "Retirement Savings Are Fueling the AI Bubble",
+   "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-11-11T20:02:14+00:00",
-   "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a…"
-  },
-  {
-   "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
-   "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-11T19:54:00+00:00",
-   "summary": "CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings."
-  },
-  {
-   "title": "With $720M round, Britain’s Fractile gets a leg up in the race for AI chips",
-   "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-11T19:34:55+00:00",
-   "summary": "Fractile has now become one of the top-funded players in the race for purpose-built AI chips."
-  },
-  {
-   "title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
-   "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-11T19:22:22+00:00",
-   "summary": "Nvidia CEO Jensen Huang has until the end of the day Wednesday to answer a call from House Republicans for a closed-door briefing on his affair with alleged Chinese spy."
+   "published": "2026-11-11T19:06:43+00:00",
+   "summary": "Article URL: https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/ Comments URL: https://news.ycombinator.com/item?id=50457164 Points: 165 # Comments: 191"
   },
   {
    "title": "Browse tools.simonwillison.net by tag",
@@ -72,14 +254,6 @@
    "kind": "news",
    "published": "2026-11-11T18:42:50+00:00",
    "summary": "Browse tools.simonwillison.net by tag I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it…"
-  },
-  {
-   "title": "AWS Finally Built Its Own AWS Emulator",
-   "url": "https://github.com/aws/aws-emulator",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-11T18:21:38+00:00",
-   "summary": "Article URL: https://github.com/aws/aws-emulator Comments URL: https://news.ycombinator.com/item?id=50456631 Points: 410 # Comments: 126"
   },
   {
    "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
@@ -98,12 +272,12 @@
    "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai…"
   },
   {
-   "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
-   "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
-   "source": "Hacker News",
+   "title": "AI, activity, and outcomes in software engineering",
+   "url": "https://cabird.com/talks/shipping-faster/",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-11-11T16:38:44+00:00",
-   "summary": "Article URL: https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/ Comments URL: https://news.ycombinator.com/item?id=50455394 Points: 302 # Comments: 157"
+   "published": "2026-11-11T16:33:28+00:00",
+   "summary": "https://www.youtube.com/watch?v=0wumMeZsNsI Comments URL: https://news.ycombinator.com/item?id=50455332 Points: 124 # Comments: 111"
   },
   {
    "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
@@ -114,20 +288,12 @@
    "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist."
   },
   {
-   "title": "Gemini 4 Still Isn't What I Need (Yet)",
+   "title": "Progress?",
    "url": "https://www.youtube.com/watch?v=OBNVzWYMKbE",
    "source": "Theo",
    "kind": "video",
    "published": "2026-11-11T15:50:36+00:00",
    "thumbnail": "https://i4.ytimg.com/vi/OBNVzWYMKbE/hqdefault.jpg"
-  },
-  {
-   "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
-   "url": "https://github.com/FrigadeHQ/yogurt",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-11T15:33:06+00:00",
-   "summary": "Hey HN, I’m Eric and I want to share an OSS project that I’ve been building in my free time. Yogurt is a free, MIT licensed desktop app that uses on-device AI models to transcribe, summarize, and chat with your…"
   },
   {
    "title": "Anthropic's IPO roadshow video",
@@ -138,44 +304,12 @@
    "summary": "Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\"…"
   },
   {
-   "title": "Pharo in the Browser with WebAssembly",
-   "url": "https://massimo-nocentini.github.io/pharo-vm/world.html",
-   "source": "Hacker News",
+   "title": "My AI agents found an unmapped Maya site?",
+   "url": "https://pietromiotti.com/latest/maya-site",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-11-11T14:21:27+00:00",
-   "summary": "Article URL: https://massimo-nocentini.github.io/pharo-vm/world.html Comments URL: https://news.ycombinator.com/item?id=50453763 Points: 108 # Comments: 31"
-  },
-  {
-   "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-11T14:18:08+00:00",
-   "summary": "Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold…"
-  },
-  {
-   "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
-   "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-11T14:15:27+00:00",
-   "summary": "Google has cooked up a new experimental AI tool called Tabletop that generates customized collaborative hubs to help you coordinate with family, and friends. The Tabletop platform shares some visual similarities with…"
-  },
-  {
-   "title": "Atuin Threads: All your agent sessions on every machine",
-   "url": "https://blog.atuin.sh/threads-agent-sessions/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-11T14:10:46+00:00",
-   "summary": "Article URL: https://blog.atuin.sh/threads-agent-sessions/ Comments URL: https://news.ycombinator.com/item?id=50453637 Points: 154 # Comments: 62"
-  },
-  {
-   "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
-   "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-11T12:56:24+00:00",
-   "summary": "Some of the most impressive tech that Adobe showcases at its annual Max conference each year is the experimental features it's developing, and the latest of those tools are being announced today: they can transform…"
+   "published": "2026-11-11T12:05:22+00:00",
+   "summary": "Article URL: https://pietromiotti.com/latest/maya-site Comments URL: https://news.ycombinator.com/item?id=50452455 Points: 1025 # Comments: 385"
   },
   {
    "title": "Experience the art and legacy of Dr. Esther Mahlangu",
@@ -184,6 +318,14 @@
    "kind": "news",
    "published": "2026-11-11T09:00:00+00:00",
    "summary": "A portrait of Dr Nontobeko Ntombela, Senior Lecturer, Department of Curatorial, Public and Visual Cultures, Wits School of Arts, University of the Witwatersrand"
+  },
+  {
+   "title": "OSS projects banning AI-generated contributions",
+   "url": "https://osssaysno.com",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-11T08:51:45+00:00",
+   "summary": "Article URL: https://osssaysno.com Comments URL: https://news.ycombinator.com/item?id=50451102 Points: 64 # Comments: 112"
   },
   {
    "title": "ChatGPT Plus for veterans and servicemembers",
@@ -201,84 +343,11 @@
    "published": "2026-11-11T05:01:16+00:00"
   },
   {
-   "title": "Auditable Human-Agent Teams for Autonomous X-ray Experimentation",
-   "url": "https://arxiv.org/abs/2611.12933",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12933v1 Announce Type: new Abstract: Closed-loop autonomous experimentation can accelerate scientific discovery, but implementation effort limits accessibility. Agentic systems may lower this barrier,…"
-  },
-  {
-   "title": "EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery",
-   "url": "https://arxiv.org/abs/2611.12934",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12934v1 Announce Type: new Abstract: While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for…"
-  },
-  {
-   "title": "Train on prefill, monitor at decode: Using sparse autoencoders for topic monitoring",
-   "url": "https://arxiv.org/abs/2611.12935",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12935v1 Announce Type: new Abstract: Topic monitoring is the task of labelling the topic of each token in a model's response during generation. Activation-based monitors that run at generation time have so…"
-  },
-  {
-   "title": "LandslideFM: A Foundation Model Towards Unified Landslide Perception and Understanding",
-   "url": "https://arxiv.org/abs/2611.12936",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12936v1 Announce Type: new Abstract: Intelligent landslide detection is essential for disaster prevention. However, existing models primarily focus on isolated visual tasks, require extensive labeled data,…"
-  },
-  {
-   "title": "Tracing Psychometric Inference in Large Language Models",
-   "url": "https://arxiv.org/abs/2611.12937",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We address this question…"
-  },
-  {
-   "title": "An ensemble of graph generative models for assisted history matching of the Brugge field case",
-   "url": "https://arxiv.org/abs/2611.12927",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12927v1 Announce Type: new Abstract: Assisted history matching remains non-unique because many geological realisations can reproduce equivalent production responses with substantial differences between…"
-  },
-  {
-   "title": "Predictive Surprise as Self-Grounding Concept Bottleneck for Interpretable Time Series",
-   "url": "https://arxiv.org/abs/2611.12955",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12955v1 Announce Type: new Abstract: Time-series classifiers deployed in risk-sensitive domains must be (1) accurate, (2) interpretable, and (3) able to abstain when evidence is weak. Existing methods do not…"
-  },
-  {
-   "title": "ADIndex: Layer-Adaptive Sparse Attention Indexing via Group-Level Distillation",
-   "url": "https://arxiv.org/abs/2611.12956",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12956v1 Announce Type: new Abstract: DeepSeek Sparse Attention (DSA) reduces the computational cost of attention through token-level selection. However, its indexer still scores the entire causal prefix for…"
-  },
-  {
-   "title": "Exploration via Exploitation: The Blessing of Reward Diversity in Personalized Federated RL",
-   "url": "https://arxiv.org/abs/2611.12964",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12964v1 Announce Type: new Abstract: While federated reinforcement learning (RL) has traditionally guaranteed high efficiency in homogeneous environments, collaboration is often hindered when agents possess…"
-  },
-  {
-   "title": "StatPrompt-LLM: A Lightweight Statistical Refinement for Foundation-Style Time-Series Forecasting",
-   "url": "https://arxiv.org/abs/2611.12974",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-11T05:00:00+00:00",
-   "summary": "arXiv:2611.12974v1 Announce Type: new Abstract: Time-series forecasting has recently seen a paradigm shift with the introduction of foundation-style models that adapt large pretrained language architectures to…"
+   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+   "url": "https://huggingface.co/blog/token-pooling",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-11T00:00:00+00:00"
   },
   {
    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
@@ -289,19 +358,20 @@
    "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production."
   },
   {
-   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-   "url": "https://huggingface.co/blog/token-pooling",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-11T00:00:00+00:00"
-  },
-  {
    "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
    "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
    "source": "AI Explained",
    "kind": "video",
    "published": "2026-11-10T23:11:36+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/583ThJIqQ7k/hqdefault.jpg"
+  },
+  {
+   "title": "Apple has new Mac app coming to make running local AI models easy",
+   "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-10T21:25:03+00:00",
+   "summary": "Article URL: https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/ Comments URL: https://news.ycombinator.com/item?id=50446520 Points: 550 # Comments: 550"
   },
   {
    "title": "llm-gemini 0.36",
@@ -320,22 +390,6 @@
    "thumbnail": "https://i2.ytimg.com/vi/yh5IAUow4Hc/hqdefault.jpg"
   },
   {
-   "title": "The US is winning the AI race. Jensen Huang could have blown it",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-10T19:31:58+00:00",
-   "summary": "As espionage targets go, Jensen Huang is perhaps one of the least surprising on Earth. The Nvidia CEO runs one of the world's most valuable companies, controls the in-demand technology fueling the AI boom, and is cozy…"
-  },
-  {
-   "title": "The indie game community is in disarray over AI and Big Walk",
-   "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-10T19:06:22+00:00",
-   "summary": "Some Independent Games Festival (IGF) jurors published a statement yesterday saying they would not vote for games that use generative AI in \"any capacity.\" Soon after, the developer of indie hit Big Walk has published a…"
-  },
-  {
    "title": "Gemini Intelligence: New features, on more devices",
    "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
    "source": "Google AI",
@@ -352,14 +406,6 @@
    "thumbnail": "https://i2.ytimg.com/vi/1FurWDiK9A4/hqdefault.jpg"
   },
   {
-   "title": "Anthropic targets $1.4 trillion IPO",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-10T16:38:24+00:00",
-   "summary": "Anthropic confirmed on Tuesday that its IPO could be one of the biggest ever, even while falling short of previous expectations. Its IPO price is expected to be between $70.00 and $78.00 per share, which would put its…"
-  },
-  {
    "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
    "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
    "source": "Google AI",
@@ -368,60 +414,12 @@
    "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership."
   },
   {
-   "title": "Google Cloud launches Gemini for healthcare.",
-   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
-   "source": "Google AI",
-   "kind": "news",
-   "published": "2026-11-10T13:00:00+00:00",
-   "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works."
-  },
-  {
-   "title": "Helping caregivers use AI in everyday life",
-   "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-10T12:00:00+00:00",
-   "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life."
-  },
-  {
    "title": "Is Software Over?",
    "url": "https://www.youtube.com/watch?v=vug73goPJaM",
    "source": "Two Minute Papers",
    "kind": "video",
    "published": "2026-11-10T10:15:57+00:00",
    "thumbnail": "https://i3.ytimg.com/vi/vug73goPJaM/hqdefault.jpg"
-  },
-  {
-   "title": "Introducing Businesses in ChatGPT",
-   "url": "https://openai.com/index/introducing-businesses-chatgpt",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-10T10:00:00+00:00",
-   "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT."
-  },
-  {
-   "title": "Closing the AI guidance gap in education",
-   "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-10T09:00:00+00:00",
-   "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning."
-  },
-  {
-   "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
-   "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-10T07:28:21+00:00",
-   "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model…"
-  },
-  {
-   "title": "Quoting Prompting Claude Fable 5.2",
-   "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-10T05:34:14+00:00",
-   "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as…"
   },
   {
    "title": "Pay for Hugging Face Hub with your Google Cloud Account",
@@ -462,26 +460,12 @@
    "summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco…"
   },
   {
-   "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
-   "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-09T15:05:57+00:00"
-  },
-  {
    "title": "Innovating with AI in the special chemicals industry",
    "url": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
    "source": "MIT Tech Review",
    "kind": "news",
    "published": "2026-11-09T13:00:00+00:00",
    "summary": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the…"
-  },
-  {
-   "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
-   "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-09T12:34:29+00:00"
   },
   {
    "title": "Coding Isn't About Code Anymore",
@@ -516,14 +500,6 @@
    "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new…"
   },
   {
-   "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
-   "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
-   "source": "Two Minute Papers",
-   "kind": "video",
-   "published": "2026-11-06T07:27:02+00:00",
-   "thumbnail": "https://i1.ytimg.com/vi/XgC1QTs6A2U/hqdefault.jpg"
-  },
-  {
    "title": "Mutex Explained - Computerphile",
    "url": "https://www.youtube.com/watch?v=BmBw827GgFA",
    "source": "Computerphile",
@@ -546,14 +522,6 @@
    "kind": "video",
    "published": "2026-10-30T15:47:25+00:00",
    "thumbnail": "https://i3.ytimg.com/vi/NDgS__J1U-M/hqdefault.jpg"
-  },
-  {
-   "title": "?PHP Problem? - Computerphile",
-   "url": "https://www.youtube.com/watch?v=cI8IquVEyVY",
-   "source": "Computerphile",
-   "kind": "video",
-   "published": "2026-10-28T16:23:55+00:00",
-   "thumbnail": "https://i4.ytimg.com/vi/cI8IquVEyVY/hqdefault.jpg"
   },
   {
    "title": "The Sphere Intersection Puzzle",
