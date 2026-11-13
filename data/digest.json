@@ -1,25 +1,318 @@
 {
- "generated_at": "2026-11-12T21:05:55.643249+00:00",
+ "generated_at": "2026-11-13T21:05:34.549141+00:00",
  "items": [
   {
-   "title": "I reviewed the Apple HomeView, ask me anything",
-   "url": "https://www.theverge.com/tech/1031868/i-reviewed-the-apple-homeview-ask-me-anything",
+   "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
    "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-12T20:55:42+00:00",
-   "summary": "Hi! I'm Jen Tuohy, The Verge's senior smart home reviewer. I've tested every smart display Amazon and Google have ever made, and for the past week I've been testing Apple's first: The $299 HomeView. I put the tabletop…"
+   "published": "2026-11-13T20:45:10+00:00",
+   "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US…"
   },
   {
-   "title": "Jensen Huang was having a third affair, Reuters reports",
-   "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
+   "title": "No AI Slop: A Manifesto",
+   "url": "https://www.slopmanifesto.com/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-13T19:51:56+00:00",
+   "summary": "Article URL: https://www.slopmanifesto.com/ Comments URL: https://news.ycombinator.com/item?id=50488769 Points: 61 # Comments: 33"
+  },
+  {
+   "title": "AI agent startup LangChain hits $3B valuation",
+   "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
    "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-11-12T20:26:47+00:00",
-   "summary": "Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia."
+   "published": "2026-11-13T19:37:57+00:00",
+   "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith."
+  },
+  {
+   "title": "What’s really at stake in the Jensen Huang saga",
+   "url": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-13T19:17:15+00:00",
+   "summary": "One part of the saga surrounding Nvidia CEO Jensen Huang ended on Thursday, when Huang resigned from his position at the top of AI's most important company. But in the coming weeks and months, a much bigger story may be…"
+  },
+  {
+   "title": "Let’s talk about Jensen Huang’s many affairs!",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032339/lets-talk-about-the-nvidia-shitshow",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-13T19:07:12+00:00",
+   "summary": "Usually, we'd be offering to answer your questions about a news event, but honestly we don't really have any answers about what the hell is going on over at Nvidia. I can't speak for Nilay but at the rate Jensen Huang's…"
+  },
+  {
+   "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
+   "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-13T18:40:30+00:00",
+   "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips."
+  },
+  {
+   "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+   "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-13T18:18:37+00:00",
+   "summary": "Article URL: https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/ Comments URL: https://news.ycombinator.com/item?id=50487522 Points: 147 # Comments: 66"
+  },
+  {
+   "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+   "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-13T18:00:39+00:00"
+  },
+  {
+   "title": "After 600 experiments, here's what I discovered about JEPA world models",
+   "url": "https://haddyalchaer.com/jepa",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-13T17:55:28+00:00",
+   "summary": "Article URL: https://haddyalchaer.com/jepa Comments URL: https://news.ycombinator.com/item?id=50487185 Points: 149 # Comments: 29"
+  },
+  {
+   "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+   "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-13T17:30:10+00:00",
+   "summary": "Article URL: https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths Comments URL: https://news.ycombinator.com/item?id=50486748 Points: 238 #…"
+  },
+  {
+   "title": "LibreOffice actually works 365 days a year",
+   "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-13T17:09:58+00:00",
+   "summary": "Article URL: https://twitter.com/LibreOffice/status/2121205272479998268 Comments URL: https://news.ycombinator.com/item?id=50486482 Points: 680 # Comments: 218"
+  },
+  {
+   "title": "XYBench: Helping with the problem behind the question",
+   "url": "https://huggingface.co/blog/allenai/xybench",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-13T17:02:35+00:00"
+  },
+  {
+   "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+   "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-13T16:00:12+00:00",
+   "summary": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers."
+  },
+  {
+   "title": "The unfolding Jensen Huang scandal: a timeline",
+   "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-13T15:58:00+00:00",
+   "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure."
+  },
+  {
+   "title": "Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers",
+   "url": "https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-13T15:52:04+00:00",
+   "summary": "Article URL: https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e Comments URL: https://news.ycombinator.com/item?id=50485295 Points: 153 # Comments: 63"
+  },
+  {
+   "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+   "url": "https://text.npr.org/nx-s1-6029408",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-13T15:29:10+00:00",
+   "summary": "Article URL: https://text.npr.org/nx-s1-6029408 Comments URL: https://news.ycombinator.com/item?id=50484960 Points: 145 # Comments: 141"
+  },
+  {
+   "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
+   "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-13T15:08:44+00:00",
+   "summary": "Article URL: https://www.youtube.com/watch?v=IRK8h67ol7Q Comments URL: https://news.ycombinator.com/item?id=50484658 Points: 140 # Comments: 125"
+  },
+  {
+   "title": "Introducing ChatGPT Wallet",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-13T15:00:00+00:00",
+   "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections."
+  },
+  {
+   "title": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
+   "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-13T14:44:48+00:00",
+   "summary": "ElevenAI is a new meeting notetaker and dictation app aimed at teams and enterprises."
+  },
+  {
+   "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-13T14:05:22+00:00"
+  },
+  {
+   "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
+   "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-13T12:52:19+00:00",
+   "summary": "Given Nvidia’s stronghold on AI and its importance in Israel, many in the country's startup ecosystem are worried about the impact of his departure."
+  },
+  {
+   "title": "AI is destroying the trust between writers and readers",
+   "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-13T11:13:46+00:00",
+   "summary": "Article URL: https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/ Comments URL: https://news.ycombinator.com/item?id=50481870 Points: 289 # Comments: 177"
+  },
+  {
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-13T10:18:13+00:00",
+   "summary": "Article URL: https://status.claude.com/incidents/nn11wk485zfn Comments URL: https://news.ycombinator.com/item?id=50481187 Points: 473 # Comments: 376"
+  },
+  {
+   "title": "CAFIN: CUDA-accelerated Adaptive Fisher Information Matrix Network Optimization via GPU-Native Kernel Fusion",
+   "url": "https://arxiv.org/abs/2611.14589",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14589v1 Announce Type: new Abstract: Second-order optimizers improve deep neural network training using curvature information, but their practical efficiency is limited by GPU execution overhead. AdaFisher…"
+  },
+  {
+   "title": "An Asynchronous Federated Learning Platform for Lung Adenocarcinoma Grading via Foundation Models and Structural Pruning",
+   "url": "https://arxiv.org/abs/2611.14590",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14590v1 Announce Type: new Abstract: Classification of lung adenocarcinoma into poorly differentiated (PD) and well-to-moderately differentiated (WMD) subtypes plays an important role in patient survival;…"
+  },
+  {
+   "title": "Adversarial Risk in the Generative AI Era Necessitates Dropping the Small Epsilon Ball",
+   "url": "https://arxiv.org/abs/2611.14594",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14594v1 Announce Type: new Abstract: Adversarial Machine Learning research is currently centered on the search for the epsilon-ball: minimal perturbations designed to fool models while remaining imperceptible…"
+  },
+  {
+   "title": "StructRL: Model-Free Reinforcement Learning with Replay Graphs",
+   "url": "https://arxiv.org/abs/2611.14599",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14599v1 Announce Type: new Abstract: StructRL turns the experience collected during reinforcement learning into an explicit replay graph. Once the graph contains a path to the task goal, dynamic programming…"
+  },
+  {
+   "title": "KernelMosaic: An Open Dataset and Agentic Framework for CUDA Kernel Generation",
+   "url": "https://arxiv.org/abs/2611.14604",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14604v1 Announce Type: new Abstract: Training large language models to generate efficient CUDA kernels requires supervision spanning diverse computational requirements and iterative code optimization.…"
+  },
+  {
+   "title": "Zugwise: Domain-Aware Game Reconstruction for Digitizing Handwritten Chess Scoresheets",
+   "url": "https://arxiv.org/abs/2611.14544",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14544v1 Announce Type: new Abstract: Digitizing handwritten chess scoresheets has been studied as a handwriting-recognition problem: read the move in each box and check that it is legal. This framing misses…"
+  },
+  {
+   "title": "Cleaning an Agent's History Hurts When the World Still Holds the Error",
+   "url": "https://arxiv.org/abs/2611.14654",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14654v1 Announce Type: new Abstract: Tool-using language-model agents accumulate histories of their own mistakes, and a system that compacts, repairs or hands off such a history decides what it says about…"
+  },
+  {
+   "title": "Together Compiler: Continual Compilation for AI Inference",
+   "url": "https://arxiv.org/abs/2611.14681",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14681v1 Announce Type: new Abstract: Today's AI workloads are rapidly changing: new models are released more often, model architectures are increasingly diverse, and traffic distributions change frequently.…"
+  },
+  {
+   "title": "When Should Semantic Priors Enter Partially-Identified Causal Discovery?",
+   "url": "https://arxiv.org/abs/2611.14736",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14736v1 Announce Type: new Abstract: Observational causal discovery often leaves causal di- rections unresolved or unstable. Large language mod- els (LLMs) can provide semantic information to resolve these…"
+  },
+  {
+   "title": "SynthCorp: A Platform for Creating Benchmarks for Data Agents",
+   "url": "https://arxiv.org/abs/2611.14765",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-13T05:00:00+00:00",
+   "summary": "arXiv:2611.14765v1 Announce Type: new Abstract: Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a platform that creates customizable data…"
+  },
+  {
+   "title": "I think I figured it out",
+   "url": "https://www.youtube.com/watch?v=XtykeVoSmP8",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-13T02:34:12+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/XtykeVoSmP8/hqdefault.jpg"
+  },
+  {
+   "title": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-13T00:23:32+00:00",
+   "summary": "Normally, the products I test don't offer to help me write up my experience with them. Duet is different. Claude Duet is Anthropic's AI agent for consumers, the latest attempt by an AI company to try to convince us that…"
+  },
+  {
+   "title": "llm-gemini 0.37",
+   "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-12T22:55:19+00:00",
+   "summary": "Release: llm-gemini 0.37 Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family. It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini…"
+  },
+  {
+   "title": "Google’s new Gemini model is better at understanding complicated questions",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-12T21:55:32+00:00",
+   "summary": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break…"
+  },
+  {
+   "title": "Jensen Huang just pulled out of Nvidia...",
+   "url": "https://www.youtube.com/watch?v=SOwUWPtXQ9I",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-12T21:17:10+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/SOwUWPtXQ9I/hqdefault.jpg"
+  },
+  {
+   "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+   "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-12T20:16:24+00:00",
+   "summary": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review…"
   },
   {
    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-   "url": "https://openai.com/index/amplitude",
+   "url": "https://openai.com/business/customer-stories/amplitude",
    "source": "OpenAI",
    "kind": "news",
    "published": "2026-11-12T20:00:00+00:00",
@@ -34,91 +327,11 @@
    "summary": "Armed with a team of AI agents, Google researcher Pietro Miotti claimed earlier this week to have discovered a potentially unmapped Maya site in Mexico. There was just one problem: The site had already been discovered…"
   },
   {
-   "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
-   "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-12T19:27:45+00:00",
-   "summary": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses."
-  },
-  {
-   "title": "The Jensen Huang scandal is hardly over",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-12T19:16:51+00:00",
-   "summary": "I was certain, until the story of Jensen Huang's second affair hit, that Huang was bulletproof. After all, why wouldn't he be? He's placed himself indispensably at the center of the AI industry and famously had no…"
-  },
-  {
-   "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
-   "url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-12T19:11:00+00:00",
-   "summary": "Nectar's new AI agent automates influencer marketing, helping brands discover creators, manage outreach and partnerships, and track campaign results."
-  },
-  {
    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-11-12T19:07:35+00:00"
-  },
-  {
-   "title": "Nvidia CEO Jensen Huang has resigned. What happens next?",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-12T18:59:29+00:00",
-   "summary": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation. However, The New York Times…"
-  },
-  {
-   "title": "Gemini 4 Hydrogen and Orchestrator",
-   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-12T18:52:01+00:00",
-   "summary": "Article URL: https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/ Comments URL: https://news.ycombinator.com/item?id=50472260 Points: 129 # Comments: 25"
-  },
-  {
-   "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
-   "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-12T18:39:23+00:00",
-   "summary": "Jensen Huang’s resignation raises questions about Nvidia’s commitment to open source AI, including its Hugging Face acquisition, open-weight models, and advocacy against restrictions, as the company navigates a…"
-  },
-  {
-   "title": "AI chatbots are recommending fake retail websites, study finds",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-12T18:35:54+00:00",
-   "summary": "Shoppers using AI chatbots to research products or find places to buy items could be directed to imposters and other risky websites, a new study found. The study conducted by IP protection firm Podqi and shared…"
-  },
-  {
-   "title": "Ask HN: Microsoft/Azure Outage?",
-   "url": "https://news.ycombinator.com/item?id=50471668",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-12T18:17:13+00:00",
-   "summary": "For the past 5 minutes all of our Microsoft Cloud connections are down. Anyone else? The Status page won't even load. Comments URL: https://news.ycombinator.com/item?id=50471668 Points: 298 # Comments: 161"
-  },
-  {
-   "title": "Oh, Palantir is ‘progressive’ now, is it?",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-12T18:13:39+00:00",
-   "summary": "I had other things to do today, but Alex Karp's pathetic attempt to pivot back to the left gave me no choice but to put them on hold. Last week's elections were a bloodbath for the right, a problem for all the wannabe…"
-  },
-  {
-   "title": "Gemini 4 Hydrogen",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-12T18:01:48+00:00",
-   "summary": "Article URL: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/ Comments URL: https://news.ycombinator.com/item?id=50471431 Points: 340 # Comments: 230"
   },
   {
    "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
@@ -127,46 +340,6 @@
    "kind": "news",
    "published": "2026-11-12T18:00:00+00:00",
    "summary": "Rotating carousel of cards with text \"Gemini 4 Hydrogen\" \"Now in Google Search\" and examples from the Google Search UI"
-  },
-  {
-   "title": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit",
-   "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-12T17:36:40+00:00",
-   "summary": "Hugging Face's CEO pledged to keep fighting for open source AI after Huang's exit, raising questions about Nvidia's $12.9 billion acquisition."
-  },
-  {
-   "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
-   "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-12T17:17:58+00:00",
-   "summary": "The airline said it will not allow customers to use AI agents to book flights and manage reservations."
-  },
-  {
-   "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
-   "url": "https://github.com/simpsoka/zigzag",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-12T17:02:42+00:00",
-   "summary": "Article URL: https://github.com/simpsoka/zigzag Comments URL: https://news.ycombinator.com/item?id=50470488 Points: 145 # Comments: 65"
-  },
-  {
-   "title": "Nintendo Takes Down Emulators and Firmware in Massive GitHub DMCA Sweep",
-   "url": "https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-12T16:29:13+00:00",
-   "summary": "Article URL: https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep Comments URL: https://news.ycombinator.com/item?id=50469994 Points: 201 # Comments: 130"
-  },
-  {
-   "title": "I'm making LLMs work on small and old devices",
-   "url": "https://github.com/hyperionaidev/smolmaxxing/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-12T15:23:10+00:00",
-   "summary": "Article URL: https://github.com/hyperionaidev/smolmaxxing/ Comments URL: https://news.ycombinator.com/item?id=50468888 Points: 194 # Comments: 73"
   },
   {
    "title": "Atomic Operations - Computerphile",
@@ -183,6 +356,14 @@
    "kind": "video",
    "published": "2026-11-12T13:41:41+00:00",
    "thumbnail": "https://i4.ytimg.com/vi/gPNiuyYirfw/hqdefault.jpg"
+  },
+  {
+   "title": "Gondola doubles revenue as its team builds more with Codex",
+   "url": "https://openai.com/business/customer-stories/gondola",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work."
   },
   {
    "title": "Holiday Extras is rethinking what it can build with Codex",
@@ -224,28 +405,12 @@
    "summary": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and…"
   },
   {
-   "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-11T21:24:35+00:00",
-   "summary": "Article URL: https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/ Comments URL: https://news.ycombinator.com/item?id=50458900 Points: 656 # Comments: 680"
-  },
-  {
    "title": "aws-emulator",
    "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
    "source": "Simon Willison",
    "kind": "news",
    "published": "2026-11-11T21:18:30+00:00",
    "summary": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents…"
-  },
-  {
-   "title": "Retirement Savings Are Fueling the AI Bubble",
-   "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-11T19:06:43+00:00",
-   "summary": "Article URL: https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/ Comments URL: https://news.ycombinator.com/item?id=50457164 Points: 165 # Comments: 191"
   },
   {
    "title": "Browse tools.simonwillison.net by tag",
@@ -272,14 +437,6 @@
    "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai…"
   },
   {
-   "title": "AI, activity, and outcomes in software engineering",
-   "url": "https://cabird.com/talks/shipping-faster/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-11T16:33:28+00:00",
-   "summary": "https://www.youtube.com/watch?v=0wumMeZsNsI Comments URL: https://news.ycombinator.com/item?id=50455332 Points: 124 # Comments: 111"
-  },
-  {
    "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
    "source": "Google AI",
@@ -304,36 +461,12 @@
    "summary": "Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\"…"
   },
   {
-   "title": "My AI agents found an unmapped Maya site?",
-   "url": "https://pietromiotti.com/latest/maya-site",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-11T12:05:22+00:00",
-   "summary": "Article URL: https://pietromiotti.com/latest/maya-site Comments URL: https://news.ycombinator.com/item?id=50452455 Points: 1025 # Comments: 385"
-  },
-  {
    "title": "Experience the art and legacy of Dr. Esther Mahlangu",
    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
    "source": "Google AI",
    "kind": "news",
    "published": "2026-11-11T09:00:00+00:00",
    "summary": "A portrait of Dr Nontobeko Ntombela, Senior Lecturer, Department of Curatorial, Public and Visual Cultures, Wits School of Arts, University of the Witwatersrand"
-  },
-  {
-   "title": "OSS projects banning AI-generated contributions",
-   "url": "https://osssaysno.com",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-11T08:51:45+00:00",
-   "summary": "Article URL: https://osssaysno.com Comments URL: https://news.ycombinator.com/item?id=50451102 Points: 64 # Comments: 112"
-  },
-  {
-   "title": "ChatGPT Plus for veterans and servicemembers",
-   "url": "https://openai.com/index/chatgpt-plus-for-veterans",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-11T08:00:00+00:00",
-   "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers."
   },
   {
    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
@@ -343,43 +476,12 @@
    "published": "2026-11-11T05:01:16+00:00"
   },
   {
-   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-   "url": "https://huggingface.co/blog/token-pooling",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-11T00:00:00+00:00"
-  },
-  {
-   "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-   "url": "https://openai.com/index/jiostar-vijay-seshadri",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-11T00:00:00+00:00",
-   "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production."
-  },
-  {
    "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
    "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
    "source": "AI Explained",
    "kind": "video",
    "published": "2026-11-10T23:11:36+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/583ThJIqQ7k/hqdefault.jpg"
-  },
-  {
-   "title": "Apple has new Mac app coming to make running local AI models easy",
-   "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-10T21:25:03+00:00",
-   "summary": "Article URL: https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/ Comments URL: https://news.ycombinator.com/item?id=50446520 Points: 550 # Comments: 550"
-  },
-  {
-   "title": "llm-gemini 0.36",
-   "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-10T20:09:44+00:00",
-   "summary": "Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else . This is Google's best ever Gemini, priced at $2/million input and…"
   },
   {
    "title": "Nobody Is Competing With Anthropic",
@@ -422,20 +524,6 @@
    "thumbnail": "https://i3.ytimg.com/vi/vug73goPJaM/hqdefault.jpg"
   },
   {
-   "title": "Pay for Hugging Face Hub with your Google Cloud Account",
-   "url": "https://huggingface.co/blog/hub-gcp-marketplace",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-10T00:00:00+00:00"
-  },
-  {
-   "title": "Decision Models in Hugging Face",
-   "url": "https://huggingface.co/blog/decision",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-10T00:00:00+00:00"
-  },
-  {
    "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
    "url": "https://www.youtube.com/watch?v=pf5tXJZM1Rw",
    "source": "Fireship",
@@ -468,36 +556,12 @@
    "summary": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the…"
   },
   {
-   "title": "Coding Isn't About Code Anymore",
-   "url": "https://www.youtube.com/watch?v=GtJKFhztgdM",
-   "source": "Theo",
-   "kind": "video",
-   "published": "2026-11-09T06:41:14+00:00",
-   "thumbnail": "https://i4.ytimg.com/vi/GtJKFhztgdM/hqdefault.jpg"
-  },
-  {
    "title": "OpenAI's Astra Just Opened The Black Box Of AI",
    "url": "https://www.youtube.com/watch?v=GJ6PMUm5oTA",
    "source": "Two Minute Papers",
    "kind": "video",
    "published": "2026-11-07T16:24:47+00:00",
    "thumbnail": "https://i4.ytimg.com/vi/GJ6PMUm5oTA/hqdefault.jpg"
-  },
-  {
-   "title": "The one thing holding theoretical CS together just broke... kinda",
-   "url": "https://www.youtube.com/watch?v=iw9SZgyahqg",
-   "source": "Fireship",
-   "kind": "video",
-   "published": "2026-11-06T16:42:38+00:00",
-   "thumbnail": "https://i2.ytimg.com/vi/iw9SZgyahqg/hqdefault.jpg"
-  },
-  {
-   "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
-   "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-11-06T10:00:00+00:00",
-   "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new…"
   },
   {
    "title": "Mutex Explained - Computerphile",
