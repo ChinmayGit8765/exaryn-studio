@@ -1,93 +1,395 @@
 {
- "generated_at": "2026-11-15T21:05:18.021079+00:00",
+ "generated_at": "2026-11-16T21:06:03.321926+00:00",
  "items": [
   {
-   "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
-   "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+   "title": "Big Nuclear isn’t worried about the Democrats stopping data centers",
+   "url": "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats",
    "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-15T20:43:49+00:00",
-   "summary": "The drama around Nvidia co-founder and former CEO Jensen Huang is evolving quickly. The latest edition of our Stepback newsletter should get you up to speed, but there have already been a number of new developments…"
+   "published": "2026-11-16T20:32:51+00:00",
+   "summary": "Constellation Energy - America's largest operator of nuclear power plants - does not share Wall Street's concerns that the Democrats will slow down data center development. On the company's third-quarter earnings call…"
   },
   {
-   "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
-   "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+   "title": "US data centers now burn more electricity than a midsized country",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-16T20:27:58+00:00",
+   "summary": "Fossil fuels are still the biggest source of electricity for hyperscale data centers in the US, a new paper published in the journal Nature Sustainability shows. They likely burn through more electricity collectively…"
+  },
+  {
+   "title": "The $7 billion bug hiding inside Microsoft’s network...",
+   "url": "https://www.youtube.com/watch?v=ytmawkPTP24",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-16T20:18:59+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/ytmawkPTP24/hqdefault.jpg"
+  },
+  {
+   "title": "California state AG sues OpenAI over rogue agent incidents",
+   "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
    "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-11-15T20:20:57+00:00",
-   "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once."
+   "published": "2026-11-16T20:07:13+00:00",
+   "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident"
   },
   {
-   "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+   "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
+   "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
    "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-15T19:15:43+00:00",
-   "summary": "Unsurprisingly, following the scandal involving now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, Congress is looking to further restrict exports of AI chips. Both Democrats and Republicans have voiced…"
+   "published": "2026-11-16T19:25:42+00:00",
+   "summary": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to…"
   },
   {
-   "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
-   "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
-   "source": "Hacker News",
+   "title": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
+   "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+   "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-15T18:36:10+00:00",
-   "summary": "Article URL: https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html Comments URL: https://news.ycombinator.com/item?id=50509411 Points: 163 # Comments: 77"
+   "published": "2026-11-16T19:23:45+00:00",
+   "summary": "OpenAI is announcing a tool that it says will help child sexual abuse investigators cut through the noise to find harmful material they can act on quickly. At a Monday press briefing in Washington, DC, OpenAI announced…"
   },
   {
-   "title": "Emacs Is My Browser",
-   "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+   "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
+   "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-16T19:12:02+00:00",
+   "summary": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy."
+  },
+  {
+   "title": "Nvidia’s board is reportedly ‘not considering’ hiring Jensen Huang back",
+   "url": "https://www.theverge.com/tech/1034501/nvidia-board-jensen-huang-not-bringing-back",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-16T18:43:35+00:00",
+   "summary": "Nvidia's board of directors \"isn't considering\" having Jensen Huang return as CEO, according to a report from CNBC. A source tells the outlet the board \"is focused on an investigation into Huang, and is not in…"
+  },
+  {
+   "title": "The open-source movement wants Jensen Huang back",
+   "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-16T18:38:47+00:00",
+   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began…"
+  },
+  {
+   "title": "Outages reported at Bank of America, Chase, U.S. Bank, Wells Fargo and Zelle",
+   "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
    "source": "Hacker News",
    "kind": "news",
-   "published": "2026-11-15T15:21:21+00:00",
-   "summary": "Article URL: https://joshblais.com/blog/emacs-as-my-browser/ Comments URL: https://news.ycombinator.com/item?id=50507553 Points: 137 # Comments: 69"
+   "published": "2026-11-16T18:31:30+00:00",
+   "summary": "Article URL: https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda Comments URL: https://news.ycombinator.com/item?id=50521045 Points: 455 # Comments: 334"
+  },
+  {
+   "title": "Software is breaking down at a systemic level",
+   "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-16T18:17:17+00:00",
+   "summary": "Article URL: https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/ Comments URL: https://news.ycombinator.com/item?id=50520866 Points: 246 # Comments: 134"
+  },
+  {
+   "title": "Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’",
+   "url": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-16T18:11:10+00:00",
+   "summary": "OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm."
+  },
+  {
+   "title": "FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’",
+   "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-16T17:36:43+00:00",
+   "summary": "The FBI says that the open-source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry."
+  },
+  {
+   "title": "Grazing sheep in fields with solar arrays",
+   "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-16T17:27:46+00:00",
+   "summary": "Article URL: https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains Comments URL: https://news.ycombinator.com/item?id=50520182 Points: 141 # Comments: 109"
+  },
+  {
+   "title": "Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’",
+   "url": "https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-16T17:10:00+00:00",
+   "summary": "Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year."
+  },
+  {
+   "title": "The Nvidia scandal isn’t slowing down",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-16T17:05:03+00:00",
+   "summary": "For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips are \"the bedrock upon which advanced AI…"
+  },
+  {
+   "title": "OpenAI will embed safety researchers to investigate AI subversion",
+   "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-16T17:02:43+00:00",
+   "summary": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence."
+  },
+  {
+   "title": "Broadening access to AI for scientists",
+   "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-16T17:00:00+00:00",
+   "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models."
+  },
+  {
+   "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+   "url": "https://openai.com/index/strengthening-online-child-safety",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-16T17:00:00+00:00",
+   "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse."
+  },
+  {
+   "title": "Jiff 1.0: A datetime library for Rust",
+   "url": "https://burntsushi.net/jiff/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-16T16:53:39+00:00",
+   "summary": "Article URL: https://burntsushi.net/jiff/ Comments URL: https://news.ycombinator.com/item?id=50519744 Points: 217 # Comments: 47"
+  },
+  {
+   "title": "Frame – 31.5\" color ePaper display",
+   "url": "https://trmnl.com/blog/introducing-frame",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-16T16:23:22+00:00",
+   "summary": "Article URL: https://trmnl.com/blog/introducing-frame Comments URL: https://news.ycombinator.com/item?id=50519354 Points: 166 # Comments: 93"
+  },
+  {
+   "title": "Building trustworthy AI by fencing it in, not predicting it",
+   "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-16T16:04:28+00:00",
+   "summary": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other…"
+  },
+  {
+   "title": "Nvidia was in trouble before the Jensen Huang mess",
+   "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-16T15:24:09+00:00",
+   "summary": "Article URL: https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/ Comments URL: https://news.ycombinator.com/item?id=50518567 Points: 188 # Comments: 186"
+  },
+  {
+   "title": "New Ask Maps features to help with holiday travel and prep",
+   "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-16T14:00:00+00:00",
+   "summary": "tbd"
+  },
+  {
+   "title": "Building AI that can work across the enterprise",
+   "url": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-16T13:00:00+00:00",
+   "summary": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving…"
+  },
+  {
+   "title": "Science at the Frontier: How scientists use ChatGPT",
+   "url": "https://openai.com/index/science-at-the-frontier",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-16T12:00:00+00:00",
+   "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery."
+  },
+  {
+   "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+   "url": "https://openai.com/index/lvmh-media-division-partnership",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT."
+  },
+  {
+   "title": "Our first phase of embedded assessments",
+   "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems."
+  },
+  {
+   "title": "Advancing computer-use agents for healthcare teams",
+   "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-16T06:00:00+00:00"
+  },
+  {
+   "title": "Alignment with Reflect-Reasoning: Learning How To Follow Principles",
+   "url": "https://arxiv.org/abs/2611.17398",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17398v1 Announce Type: new Abstract: The appropriate governing norms and principles for the alignment of Large Language Models (LLMs) often depend on cultural context and deployment application. However, most…"
+  },
+  {
+   "title": "WETW: Learning Pair-Specific Weighted Euclidean Distances for Efficient DTW Search",
+   "url": "https://arxiv.org/abs/2611.17412",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17412v1 Announce Type: new Abstract: Dynamic Time Warping (DTW) is the standard distance for similarity search over time series that are misaligned in time, but its cost is quadratic in the series length and…"
+  },
+  {
+   "title": "Classification with Large-Step Gradient Descent: Unifying Self-Stabilization and Convergence Rates",
+   "url": "https://arxiv.org/abs/2611.17459",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17459v1 Announce Type: new Abstract: Neural networks are often trained with gradient descent (GD) using step sizes that exceed classical stability thresholds, a regime where standard convergence theory no…"
+  },
+  {
+   "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
+   "url": "https://arxiv.org/abs/2611.17460",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17460v1 Announce Type: new Abstract: AI agents are increasingly equipped with persistence toward task completion to run delegated work autonomously for long periods, under many unstated constraints from…"
+  },
+  {
+   "title": "Diffusion Tree Sampling for Inference Time Adaptation of Crystal Generative Models",
+   "url": "https://arxiv.org/abs/2611.17462",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17462v1 Announce Type: new Abstract: Diffusion-based generative models have become strong priors over plausible crystal structures, but turning that prior into promising candidates requires steering toward…"
+  },
+  {
+   "title": "When Should LLM Agents Forget? Memory Filtering Under Query-Critical Resolver Errors",
+   "url": "https://arxiv.org/abs/2611.17338",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17338v1 Announce Type: new Abstract: LLM memory systems often delete facts classified as stale. We show that this hard-filtering step can reduce downstream accuracy when resolver errors delete query-critical…"
+  },
+  {
+   "title": "Does the Ranking Hold? A Practitioner-Facing Audit of Hallucination Detectors on Small, Quantized, On-Device LLMs",
+   "url": "https://arxiv.org/abs/2611.17339",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17339v1 Announce Type: new Abstract: Hallucination detection for large language models is dominated by methods evaluated on 7B-70B research models with abundant sampling budgets and exact-match or ROUGE…"
+  },
+  {
+   "title": "LoRAWeaver: Directional Adapter Routing in LoRA Representation Space",
+   "url": "https://arxiv.org/abs/2611.17340",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17340v1 Announce Type: new Abstract: Large language models are expensive to update through full retraining. Parameter-efficient fine-tuning reduces the cost of adaptation, but repeated adaptation creates a…"
+  },
+  {
+   "title": "Tabular Population Priors as Structured Retrieval for EHR Medication Set Prediction",
+   "url": "https://arxiv.org/abs/2611.17341",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17341v1 Announce Type: new Abstract: Medication prediction from electronic health records is a fixed vocabulary structured prediction problem, yet recent clinical RAG systems often treat it like open ended…"
+  },
+  {
+   "title": "An Operationalization of Opaque Serial Depth",
+   "url": "https://arxiv.org/abs/2611.17495",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-16T05:00:00+00:00",
+   "summary": "arXiv:2611.17495v1 Announce Type: new Abstract: Chain-of-thought (CoT) is currently a valuable tool for overseeing AI models, but some architectural shifts could significantly reduce CoT monitorability. We…"
+  },
+  {
+   "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+   "url": "https://www.hntrends.com/2026/november.html",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-16T01:31:30+00:00",
+   "summary": "Article URL: https://www.hntrends.com/2026/november.html Comments URL: https://news.ycombinator.com/item?id=50512950 Points: 93 # Comments: 82"
+  },
+  {
+   "title": "Stop Searching For the Perfect Model",
+   "url": "https://www.youtube.com/watch?v=TWoS5Nmyoc8",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-16T00:09:03+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/TWoS5Nmyoc8/hqdefault.jpg"
+  },
+  {
+   "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+   "url": "https://huggingface.co/blog/openrouter",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-16T00:00:00+00:00"
+  },
+  {
+   "title": "datasette-maplibre 0.1a0",
+   "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-15T23:58:36+00:00",
+   "summary": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you…"
+  },
+  {
+   "title": "datasette 1.0a43",
+   "url": "https://simonwillison.net/2026/Nov/15/datasette/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-15T23:20:27+00:00",
+   "summary": "Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output…"
+  },
+  {
+   "title": "datasette 0.65.6",
+   "url": "https://simonwillison.net/2026/Nov/15/datasette-2/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-15T23:18:17+00:00",
+   "summary": "Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be…"
+  },
+  {
+   "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
+   "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-15T19:39:46+00:00",
+   "summary": "Article URL: https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/ Comments URL: https://news.ycombinator.com/item?id=50509953 Points: 68 # Comments: 67"
   },
   {
    "title": "All AI-generated code should be Open Source",
    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-   "source": "Hacker News",
+   "source": "Hacker News · AI",
    "kind": "news",
    "published": "2026-11-15T14:46:58+00:00",
-   "summary": "Article URL: https://jakub.jankiewicz.org/blog/ai-code-open-source/ Comments URL: https://news.ycombinator.com/item?id=50507303 Points: 928 # Comments: 509"
+   "summary": "Article URL: https://jakub.jankiewicz.org/blog/ai-code-open-source/ Comments URL: https://news.ycombinator.com/item?id=50507303 Points: 1240 # Comments: 650"
   },
   {
-   "title": "Things That Turbo Pascal Is Smaller Than (2011)",
-   "url": "https://prog21.dadgum.com/116.html",
-   "source": "Hacker News",
+   "title": "datasette-apps 0.4a0",
+   "url": "https://simonwillison.net/2026/Nov/15/datasette-apps/",
+   "source": "Simon Willison",
    "kind": "news",
-   "published": "2026-11-15T13:44:16+00:00",
-   "summary": "Article URL: https://prog21.dadgum.com/116.html Comments URL: https://news.ycombinator.com/item?id=50506894 Points: 158 # Comments: 76"
+   "published": "2026-11-15T04:02:45+00:00",
+   "summary": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support…"
   },
   {
-   "title": "The MacBook Pro's OLED PWM problem",
-   "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
-   "source": "Hacker News",
+   "title": "datasette-agent 0.6a0",
+   "url": "https://simonwillison.net/2026/Nov/15/datasette-agent/",
+   "source": "Simon Willison",
    "kind": "news",
-   "published": "2026-11-15T13:15:22+00:00",
-   "summary": "Article URL: https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/ Comments URL: https://news.ycombinator.com/item?id=50506719 Points: 339 # Comments: 177"
-  },
-  {
-   "title": "Understanding Positional Embeddings in Modern LLMs",
-   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-15T12:14:06+00:00",
-   "summary": "Article URL: https://magazine.sebastianraschka.com/p/understanding-positional-embeddings Comments URL: https://news.ycombinator.com/item?id=50506376 Points: 169 # Comments: 13"
-  },
-  {
-   "title": "An overview of Jensen Huang’s messy days",
-   "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-15T00:09:10+00:00",
-   "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence O'Brien. The…"
-  },
-  {
-   "title": "Where was Nvidia’s security team?",
-   "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-15T00:08:07+00:00",
-   "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former…"
+   "published": "2026-11-15T03:49:47+00:00",
+   "summary": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette…"
   },
   {
    "title": "datasette-llm 0.1a11",
@@ -98,44 +400,12 @@
    "summary": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you…"
   },
   {
-   "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
-   "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
-   "source": "TechCrunch AI",
+   "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-11-14T21:41:22+00:00",
-   "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon."
-  },
-  {
-   "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-   "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-14T17:30:00+00:00",
-   "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations."
-  },
-  {
-   "title": "datasette-vega 0.7",
-   "url": "https://simonwillison.net/2026/Nov/14/datasette-vega/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-14T17:09:09+00:00",
-   "summary": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it…"
-  },
-  {
-   "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-   "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-14T16:34:15+00:00",
-   "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations."
-  },
-  {
-   "title": "Jensen Huang and the decline of the visionary showman founder CEO",
-   "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-14T15:12:19+00:00",
-   "summary": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers…"
+   "published": "2026-11-14T15:58:57+00:00",
+   "summary": "Article URL:…"
   },
   {
    "title": "AI Can Do Everything…Except This",
@@ -146,20 +416,20 @@
    "thumbnail": "https://i1.ytimg.com/vi/x7iwI6WfWS0/hqdefault.jpg"
   },
   {
-   "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
-   "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-   "source": "The Verge AI",
+   "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
+   "url": "https://news.ycombinator.com/item?id=50494696",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-11-14T00:06:40+00:00",
-   "summary": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known…"
+   "published": "2026-11-14T06:56:42+00:00",
+   "summary": "Specifically, what are the most useful, concrete skills to learn as an individual to take economic advantage of the advances in LLMs, agents and associated new technological capabilities? What is accessible to learn…"
   },
   {
-   "title": "Amazon has a plan to index the world’s online shopping data",
-   "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
-   "source": "The Verge AI",
+   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+   "source": "Hacker News · AI",
    "kind": "news",
-   "published": "2026-11-13T23:49:11+00:00",
-   "summary": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project,…"
+   "published": "2026-11-14T02:52:59+00:00",
+   "summary": "Article URL: https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus Comments URL: https://news.ycombinator.com/item?id=50493251 Points: 1111 # Comments: 649"
   },
   {
    "title": "It’s so much worse than I thought…",
@@ -168,30 +438,6 @@
    "kind": "video",
    "published": "2026-11-13T23:45:49+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/5BrgFY5jIn4/hqdefault.jpg"
-  },
-  {
-   "title": "datasette-cluster-map 0.19",
-   "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-13T23:02:45+00:00",
-   "summary": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are…"
-  },
-  {
-   "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-   "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-13T22:43:00+00:00",
-   "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations."
-  },
-  {
-   "title": "datasette-leaflet 0.3",
-   "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-13T22:30:54+00:00",
-   "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header,…"
   },
   {
    "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
@@ -208,27 +454,11 @@
    "published": "2026-11-13T17:02:35+00:00"
   },
   {
-   "title": "Introducing ChatGPT Wallet",
-   "url": "https://openai.com/index/introducing-chatgpt-wallet",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-13T15:00:00+00:00",
-   "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections."
-  },
-  {
    "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
    "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-11-13T14:05:22+00:00"
-  },
-  {
-   "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-   "url": "https://openai.com/business/customer-stories/shield",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-13T08:00:00+00:00",
-   "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment."
   },
   {
    "title": "I think I figured it out",
@@ -237,14 +467,6 @@
    "kind": "video",
    "published": "2026-11-13T02:34:12+00:00",
    "thumbnail": "https://i1.ytimg.com/vi/XtykeVoSmP8/hqdefault.jpg"
-  },
-  {
-   "title": "llm-gemini 0.37",
-   "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-12T22:55:19+00:00",
-   "summary": "Release: llm-gemini 0.37 Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family. It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini…"
   },
   {
    "title": "Jensen Huang just pulled out of Nvidia...",
@@ -261,14 +483,6 @@
    "kind": "news",
    "published": "2026-11-12T20:16:24+00:00",
    "summary": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review…"
-  },
-  {
-   "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-   "url": "https://openai.com/business/customer-stories/amplitude",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-12T20:00:00+00:00",
-   "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact."
   },
   {
    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
@@ -302,43 +516,11 @@
    "thumbnail": "https://i4.ytimg.com/vi/gPNiuyYirfw/hqdefault.jpg"
   },
   {
-   "title": "Gondola doubles revenue as its team builds more with Codex",
-   "url": "https://openai.com/business/customer-stories/gondola",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-12T12:00:00+00:00",
-   "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work."
-  },
-  {
-   "title": "Holiday Extras is rethinking what it can build with Codex",
-   "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-12T09:30:00+00:00",
-   "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth."
-  },
-  {
    "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
    "url": "https://huggingface.co/blog/3d-lora-finetuning",
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-11-12T00:00:00+00:00"
-  },
-  {
-   "title": "Supporting research on AI and children’s safety",
-   "url": "https://openai.com/index/children-first-declaration",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-12T00:00:00+00:00",
-   "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people."
-  },
-  {
-   "title": "Gemini Decisions API",
-   "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-11T22:03:25+00:00",
-   "summary": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and…"
   },
   {
    "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
@@ -357,27 +539,12 @@
    "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist."
   },
   {
-   "title": "Progress?",
-   "url": "https://www.youtube.com/watch?v=OBNVzWYMKbE",
-   "source": "Theo",
-   "kind": "video",
-   "published": "2026-11-11T15:50:36+00:00",
-   "thumbnail": "https://i4.ytimg.com/vi/OBNVzWYMKbE/hqdefault.jpg"
-  },
-  {
    "title": "Experience the art and legacy of Dr. Esther Mahlangu",
    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
    "source": "Google AI",
    "kind": "news",
    "published": "2026-11-11T09:00:00+00:00",
    "summary": "A portrait of Dr Nontobeko Ntombela, Senior Lecturer, Department of Curatorial, Public and Visual Cultures, Wits School of Arts, University of the Witwatersrand"
-  },
-  {
-   "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-   "url": "https://huggingface.co/blog/qvac/botpsy",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-11T05:01:16+00:00"
   },
   {
    "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
@@ -404,52 +571,12 @@
    "thumbnail": "https://i2.ytimg.com/vi/1FurWDiK9A4/hqdefault.jpg"
   },
   {
-   "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-   "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
-   "source": "Google AI",
-   "kind": "news",
-   "published": "2026-11-10T14:00:00+00:00",
-   "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership."
-  },
-  {
    "title": "Is Software Over?",
    "url": "https://www.youtube.com/watch?v=vug73goPJaM",
    "source": "Two Minute Papers",
    "kind": "video",
    "published": "2026-11-10T10:15:57+00:00",
    "thumbnail": "https://i3.ytimg.com/vi/vug73goPJaM/hqdefault.jpg"
-  },
-  {
-   "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
-   "url": "https://www.youtube.com/watch?v=pf5tXJZM1Rw",
-   "source": "Fireship",
-   "kind": "video",
-   "published": "2026-11-09T21:04:16+00:00",
-   "thumbnail": "https://i1.ytimg.com/vi/pf5tXJZM1Rw/hqdefault.jpg"
-  },
-  {
-   "title": "The backlash about data centers might really just be about electricity",
-   "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-11-09T19:35:33+00:00",
-   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia,…"
-  },
-  {
-   "title": "Nancy Pelosi’s replacement is ready to regulate AI",
-   "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-11-09T17:05:43+00:00",
-   "summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco…"
-  },
-  {
-   "title": "Innovating with AI in the special chemicals industry",
-   "url": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-11-09T13:00:00+00:00",
-   "summary": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the…"
   },
   {
    "title": "Mutex Explained - Computerphile",
