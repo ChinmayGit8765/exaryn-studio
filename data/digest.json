@@ -1,69 +1,325 @@
 {
- "generated_at": "2026-11-16T21:06:03.321926+00:00",
+ "generated_at": "2026-11-17T21:05:52.720349+00:00",
  "items": [
   {
-   "title": "Big Nuclear isn’t worried about the Democrats stopping data centers",
-   "url": "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats",
+   "title": "Not even Sam Altman is safe from AI deepfakes on Instagram",
+   "url": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
    "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-16T20:32:51+00:00",
-   "summary": "Constellation Energy - America's largest operator of nuclear power plants - does not share Wall Street's concerns that the Democrats will slow down data center development. On the company's third-quarter earnings call…"
+   "published": "2026-11-17T21:00:55+00:00",
+   "summary": "Instagram is filled with people posting deepfaked content - including, as of late, from one of Meta's most prominent executives. Earlier in November, Alexandr Wang, Meta's chief AI officer, shared a short clip to…"
   },
   {
-   "title": "US data centers now burn more electricity than a midsized country",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
+   "title": "Model ML raises $250M to automate investment banking grunt work",
+   "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-17T19:32:11+00:00",
+   "summary": "The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis."
+  },
+  {
+   "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
+   "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-17T19:02:20+00:00",
+   "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf."
+  },
+  {
+   "title": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
+   "url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
    "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-16T20:27:58+00:00",
-   "summary": "Fossil fuels are still the biggest source of electricity for hyperscale data centers in the US, a new paper published in the journal Nature Sustainability shows. They likely burn through more electricity collectively…"
+   "published": "2026-11-17T18:58:54+00:00",
+   "summary": "Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage your calendar, and dig…"
   },
   {
-   "title": "The $7 billion bug hiding inside Microsoft’s network...",
+   "title": "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
+   "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-17T18:48:23+00:00",
+   "summary": "Google's Gemini update extending chat retention will roll out globally over the coming weeks."
+  },
+  {
+   "title": "Phrack 73 Released",
+   "url": "https://phrack.org/issues/73/introduction_md",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-17T18:31:25+00:00",
+   "summary": "Article URL: https://phrack.org/issues/73/introduction_md Comments URL: https://news.ycombinator.com/item?id=50535992 Points: 113 # Comments: 5"
+  },
+  {
+   "title": "MAI Code 2 and Code 2 Flash",
+   "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-17T18:25:13+00:00",
+   "summary": "Article URL: https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/ Comments URL: https://news.ycombinator.com/item?id=50535885 Points: 163 # Comments: 77"
+  },
+  {
+   "title": "As decision model use skyrockets, is customization the next frontier?",
+   "url": "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-17T18:10:00+00:00",
+   "summary": "Sqwish Labs has a new wrinkle on the decision model: Train it with your own data to max its capabilities."
+  },
+  {
+   "title": "Pedestal AI raises $4.7 million to agentify the supply chain",
+   "url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-17T18:04:16+00:00",
+   "summary": "The company uses agentic AI to make supply chains faster and more reliable."
+  },
+  {
+   "title": "Apple Services Down",
+   "url": "https://developer.apple.com/system-status/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-17T17:47:14+00:00",
+   "summary": "Article URL: https://developer.apple.com/system-status/ Comments URL: https://news.ycombinator.com/item?id=50535238 Points: 458 # Comments: 255"
+  },
+  {
+   "title": "GPT‑6.2 Astra and Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-17T17:46:43+00:00",
+   "summary": "Article URL: https://openai.com/index/introducing-gpt-6-2-astra-sol/ Comments URL: https://news.ycombinator.com/item?id=50535230 Points: 764 # Comments: 472"
+  },
+  {
+   "title": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
+   "url": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-17T17:32:25+00:00",
+   "summary": "Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access."
+  },
+  {
+   "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+   "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-17T17:12:06+00:00",
+   "summary": "Article URL: https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf Comments URL: https://news.ycombinator.com/item?id=50534631 Points: 156 # Comments: 90"
+  },
+  {
+   "title": "Jensen Huang says he’s willing to return as Nvidia CEO",
+   "url": "https://www.theverge.com/tech/1035420/jensen-huang-nvidia-return-as-ceo-statement",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-17T17:04:40+00:00",
+   "summary": "Jensen Huang, who resigned as Nvidia's CEO last week, would be willing to return as CEO if the company's board of directors wanted it, he said in a statement reported on by The Wall Street Journal. \"Since my departure,…"
+  },
+  {
+   "title": "Put Gemini to work for you",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-17T17:00:00+00:00",
+   "summary": "A user interface displaying the prompt \"What can I get done for you?\" above an input box containing placeholder text \"Describe a task\"."
+  },
+  {
+   "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+   "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-17T16:48:33+00:00",
+   "summary": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost…"
+  },
+  {
+   "title": "How to compress text to 1 bit per character | Compression is Intelligence Part 3",
+   "url": "https://www.youtube.com/watch?v=qbsb9DpdZ6s",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-11-17T16:43:16+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/qbsb9DpdZ6s/hqdefault.jpg"
+  },
+  {
+   "title": "Encoding the encyclopedia on a rod",
+   "url": "https://www.youtube.com/shorts/0IZcjWtWmDA",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-11-17T16:43:03+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/0IZcjWtWmDA/hqdefault.jpg"
+  },
+  {
+   "title": "The DOJ says it’s investigating Megaspeed",
+   "url": "https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-17T16:19:03+00:00",
+   "summary": "The Justice and Commerce Departments said that they are investigating Megaspeed, the Singapore-based data center company intertwined with the resignation of Nvidia CEO Jensen Huang, after reporting suggested an…"
+  },
+  {
+   "title": "NSA Internal Network Down",
+   "url": "https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-17T15:50:48+00:00",
+   "summary": "Article URL: https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/ Comments URL: https://news.ycombinator.com/item?id=50533089 Points: 322 # Comments:…"
+  },
+  {
+   "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-17T14:45:26+00:00",
+   "summary": "OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own…"
+  },
+  {
+   "title": "Research Reports",
+   "url": "https://www.technologyreview.com/2026/11/17/1148203/research-reports/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-17T14:39:46+00:00",
+   "summary": "To access a report, click on the corresponding image below."
+  },
+  {
+   "title": "OpenAI's New Breakthrough Is... Utter Chaos",
+   "url": "https://www.youtube.com/watch?v=gl2U4fGTr6g",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-17T12:46:24+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/gl2U4fGTr6g/hqdefault.jpg"
+  },
+  {
+   "title": "Quoting Go Proverbs",
+   "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-17T06:16:26+00:00",
+   "summary": "A little copying is better than a little dependency. — Go Proverbs , via Tags: go , programming"
+  },
+  {
+   "title": "Check Token: Real-Time Self-Verification and Precise Truncation in LLM Reasoning",
+   "url": "https://arxiv.org/abs/2611.18564",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18564v1 Announce Type: new Abstract: ECC memory embeds 8 parity bits for every 64 data bits and automatically detects and corrects errors on each read. The parity bits carry no data and only safeguard…"
+  },
+  {
+   "title": "Quantize, Qualify, Rerank: A Recipe for Compressing LLMs Without Losing Quality",
+   "url": "https://arxiv.org/abs/2611.18587",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18587v1 Announce Type: new Abstract: Compressing large language models lowers serving cost, but a single automatic metric may miss quality loss. For the WMT26 Model Compression constrained track, we compress…"
+  },
+  {
+   "title": "Skill-Latent Rewards: LLM-Guided Reward Formulation for Hierarchical Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2611.18597",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18597v1 Announce Type: new Abstract: Long-horizon reinforcement learning under sparse and delayed feedback remains an open challenge. Existing return-decomposition methods redistribute episodic rewards to…"
+  },
+  {
+   "title": "Not All Data Leakage Is Equal: A Controlled Benchmark of Evaluation Inflation in Tabular Classification",
+   "url": "https://arxiv.org/abs/2611.18598",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18598v1 Announce Type: new Abstract: Data leakage is widely recognized as a threat to trustworthy machine-learning evaluation, yet the phrase covers mechanisms with very different statistical consequences. We…"
+  },
+  {
+   "title": "Mechanistic Interpretability of Mambas Selective Gate in Financial Markets: A Leakage-Controlled Study",
+   "url": "https://arxiv.org/abs/2611.18599",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18599v1 Announce Type: new Abstract: Selectively gated state-space models (SSMs), notably Mamba, are increasingly used for financial time series, yet how they internally represent market regimes (bull, bear,…"
+  },
+  {
+   "title": "Agents Cannot Hand Over What They Have Not Yet Understood",
+   "url": "https://arxiv.org/abs/2611.18642",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18642v1 Announce Type: new Abstract: Agents that work beyond a single context window, or in teams, hand their work to a successor as a short written summary. Evaluation has focused on whether an agent can…"
+  },
+  {
+   "title": "How to make a moral agent: sentimentalism and rationalism as lenses on AI",
+   "url": "https://arxiv.org/abs/2611.18714",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18714v1 Announce Type: new Abstract: Can AI systems be moral agents? That is, can they undertake actions that can be correctly assessed as morally right or wrong? There is no settled normative criterion of…"
+  },
+  {
+   "title": "Video-as-Experience: Learning Computer Use via Audio-Visual Understanding",
+   "url": "https://arxiv.org/abs/2611.18747",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18747v1 Announce Type: new Abstract: Multimodal large language models (LLMs) have enabled capable computer-use agents that perceive graphical user interfaces, reason over instructions, and execute actions.…"
+  },
+  {
+   "title": "Multimodal Fusion: A Review of Breast Cancer Advanced and Traditional Modalities",
+   "url": "https://arxiv.org/abs/2611.18793",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18793v1 Announce Type: new Abstract: Purpose: Multimodal medical imaging fusion (MMIF) is an increasingly important approach to breast cancer detection (BCD), as different imaging modalities rely on different…"
+  },
+  {
+   "title": "D\\'ecoupage: Directorial Audio-Visual Control for Long Multi-Shot Video Generation",
+   "url": "https://arxiv.org/abs/2611.18866",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-17T05:00:00+00:00",
+   "summary": "arXiv:2611.18866v1 Announce Type: new Abstract: In cinematic storytelling, sound and visual transitions do not always coincide in lockstep: dialogue frequently bridges across cuts to reveal reactions or introduces new…"
+  },
+  {
+   "title": "Strengthening NATO and allied cyber defenses with AI",
+   "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-17T00:00:00+00:00",
+   "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems."
+  },
+  {
+   "title": "Introducing OpenAI for Chile",
+   "url": "https://openai.com/index/introducing-openai-for-chile",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-17T00:00:00+00:00",
+   "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications."
+  },
+  {
+   "title": "Astra for Law leads in legal intelligence",
+   "url": "https://openai.com/index/astra-law-6-2",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-17T00:00:00+00:00",
+   "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access."
+  },
+  {
+   "title": "llm 0.37.3",
+   "url": "https://simonwillison.net/2026/Nov/16/llm/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-16T23:57:26+00:00",
+   "summary": "Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's…"
+  },
+  {
+   "title": "Tech leaders are convinced that Jensen Huang’s exit was a plot against him",
+   "url": "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-16T23:20:44+00:00",
+   "summary": "Jensen Huang's stunning resignation from Nvidia after more than 33 years has sent shockwaves throughout the tech industry. Now prominent figures are calling for Huang's reinstatement, and many are also hopping on board…"
+  },
+  {
+   "title": "Why Microsoft couldn’t fix its own servers for 36 hours...",
    "url": "https://www.youtube.com/watch?v=ytmawkPTP24",
    "source": "Fireship",
    "kind": "video",
    "published": "2026-11-16T20:18:59+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/ytmawkPTP24/hqdefault.jpg"
-  },
-  {
-   "title": "California state AG sues OpenAI over rogue agent incidents",
-   "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-16T20:07:13+00:00",
-   "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident"
-  },
-  {
-   "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
-   "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-16T19:25:42+00:00",
-   "summary": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to…"
-  },
-  {
-   "title": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
-   "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-16T19:23:45+00:00",
-   "summary": "OpenAI is announcing a tool that it says will help child sexual abuse investigators cut through the noise to find harmful material they can act on quickly. At a Monday press briefing in Washington, DC, OpenAI announced…"
-  },
-  {
-   "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
-   "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-16T19:12:02+00:00",
-   "summary": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy."
-  },
-  {
-   "title": "Nvidia’s board is reportedly ‘not considering’ hiring Jensen Huang back",
-   "url": "https://www.theverge.com/tech/1034501/nvidia-board-jensen-huang-not-bringing-back",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-16T18:43:35+00:00",
-   "summary": "Nvidia's board of directors \"isn't considering\" having Jensen Huang return as CEO, according to a report from CNBC. A source tells the outlet the board \"is focused on an investigation into Huang, and is not in…"
   },
   {
    "title": "The open-source movement wants Jensen Huang back",
@@ -72,70 +328,6 @@
    "kind": "news",
    "published": "2026-11-16T18:38:47+00:00",
    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began…"
-  },
-  {
-   "title": "Outages reported at Bank of America, Chase, U.S. Bank, Wells Fargo and Zelle",
-   "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-16T18:31:30+00:00",
-   "summary": "Article URL: https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda Comments URL: https://news.ycombinator.com/item?id=50521045 Points: 455 # Comments: 334"
-  },
-  {
-   "title": "Software is breaking down at a systemic level",
-   "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-16T18:17:17+00:00",
-   "summary": "Article URL: https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/ Comments URL: https://news.ycombinator.com/item?id=50520866 Points: 246 # Comments: 134"
-  },
-  {
-   "title": "Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’",
-   "url": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-16T18:11:10+00:00",
-   "summary": "OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm."
-  },
-  {
-   "title": "FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’",
-   "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-16T17:36:43+00:00",
-   "summary": "The FBI says that the open-source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry."
-  },
-  {
-   "title": "Grazing sheep in fields with solar arrays",
-   "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-16T17:27:46+00:00",
-   "summary": "Article URL: https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains Comments URL: https://news.ycombinator.com/item?id=50520182 Points: 141 # Comments: 109"
-  },
-  {
-   "title": "Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’",
-   "url": "https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-16T17:10:00+00:00",
-   "summary": "Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year."
-  },
-  {
-   "title": "The Nvidia scandal isn’t slowing down",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-16T17:05:03+00:00",
-   "summary": "For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips are \"the bedrock upon which advanced AI…"
-  },
-  {
-   "title": "OpenAI will embed safety researchers to investigate AI subversion",
-   "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-16T17:02:43+00:00",
-   "summary": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence."
   },
   {
    "title": "Broadening access to AI for scientists",
@@ -154,36 +346,12 @@
    "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse."
   },
   {
-   "title": "Jiff 1.0: A datetime library for Rust",
-   "url": "https://burntsushi.net/jiff/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-16T16:53:39+00:00",
-   "summary": "Article URL: https://burntsushi.net/jiff/ Comments URL: https://news.ycombinator.com/item?id=50519744 Points: 217 # Comments: 47"
-  },
-  {
-   "title": "Frame – 31.5\" color ePaper display",
-   "url": "https://trmnl.com/blog/introducing-frame",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-16T16:23:22+00:00",
-   "summary": "Article URL: https://trmnl.com/blog/introducing-frame Comments URL: https://news.ycombinator.com/item?id=50519354 Points: 166 # Comments: 93"
-  },
-  {
    "title": "Building trustworthy AI by fencing it in, not predicting it",
    "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
    "source": "MIT Tech Review",
    "kind": "news",
    "published": "2026-11-16T16:04:28+00:00",
    "summary": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other…"
-  },
-  {
-   "title": "Nvidia was in trouble before the Jensen Huang mess",
-   "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-16T15:24:09+00:00",
-   "summary": "Article URL: https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/ Comments URL: https://news.ycombinator.com/item?id=50518567 Points: 188 # Comments: 186"
   },
   {
    "title": "New Ask Maps features to help with holiday travel and prep",
@@ -200,125 +368,6 @@
    "kind": "news",
    "published": "2026-11-16T13:00:00+00:00",
    "summary": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving…"
-  },
-  {
-   "title": "Science at the Frontier: How scientists use ChatGPT",
-   "url": "https://openai.com/index/science-at-the-frontier",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-16T12:00:00+00:00",
-   "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery."
-  },
-  {
-   "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
-   "url": "https://openai.com/index/lvmh-media-division-partnership",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-16T09:00:00+00:00",
-   "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT."
-  },
-  {
-   "title": "Our first phase of embedded assessments",
-   "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-16T08:00:00+00:00",
-   "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems."
-  },
-  {
-   "title": "Advancing computer-use agents for healthcare teams",
-   "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-16T06:00:00+00:00"
-  },
-  {
-   "title": "Alignment with Reflect-Reasoning: Learning How To Follow Principles",
-   "url": "https://arxiv.org/abs/2611.17398",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17398v1 Announce Type: new Abstract: The appropriate governing norms and principles for the alignment of Large Language Models (LLMs) often depend on cultural context and deployment application. However, most…"
-  },
-  {
-   "title": "WETW: Learning Pair-Specific Weighted Euclidean Distances for Efficient DTW Search",
-   "url": "https://arxiv.org/abs/2611.17412",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17412v1 Announce Type: new Abstract: Dynamic Time Warping (DTW) is the standard distance for similarity search over time series that are misaligned in time, but its cost is quadratic in the series length and…"
-  },
-  {
-   "title": "Classification with Large-Step Gradient Descent: Unifying Self-Stabilization and Convergence Rates",
-   "url": "https://arxiv.org/abs/2611.17459",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17459v1 Announce Type: new Abstract: Neural networks are often trained with gradient descent (GD) using step sizes that exceed classical stability thresholds, a regime where standard convergence theory no…"
-  },
-  {
-   "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
-   "url": "https://arxiv.org/abs/2611.17460",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17460v1 Announce Type: new Abstract: AI agents are increasingly equipped with persistence toward task completion to run delegated work autonomously for long periods, under many unstated constraints from…"
-  },
-  {
-   "title": "Diffusion Tree Sampling for Inference Time Adaptation of Crystal Generative Models",
-   "url": "https://arxiv.org/abs/2611.17462",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17462v1 Announce Type: new Abstract: Diffusion-based generative models have become strong priors over plausible crystal structures, but turning that prior into promising candidates requires steering toward…"
-  },
-  {
-   "title": "When Should LLM Agents Forget? Memory Filtering Under Query-Critical Resolver Errors",
-   "url": "https://arxiv.org/abs/2611.17338",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17338v1 Announce Type: new Abstract: LLM memory systems often delete facts classified as stale. We show that this hard-filtering step can reduce downstream accuracy when resolver errors delete query-critical…"
-  },
-  {
-   "title": "Does the Ranking Hold? A Practitioner-Facing Audit of Hallucination Detectors on Small, Quantized, On-Device LLMs",
-   "url": "https://arxiv.org/abs/2611.17339",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17339v1 Announce Type: new Abstract: Hallucination detection for large language models is dominated by methods evaluated on 7B-70B research models with abundant sampling budgets and exact-match or ROUGE…"
-  },
-  {
-   "title": "LoRAWeaver: Directional Adapter Routing in LoRA Representation Space",
-   "url": "https://arxiv.org/abs/2611.17340",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17340v1 Announce Type: new Abstract: Large language models are expensive to update through full retraining. Parameter-efficient fine-tuning reduces the cost of adaptation, but repeated adaptation creates a…"
-  },
-  {
-   "title": "Tabular Population Priors as Structured Retrieval for EHR Medication Set Prediction",
-   "url": "https://arxiv.org/abs/2611.17341",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17341v1 Announce Type: new Abstract: Medication prediction from electronic health records is a fixed vocabulary structured prediction problem, yet recent clinical RAG systems often treat it like open ended…"
-  },
-  {
-   "title": "An Operationalization of Opaque Serial Depth",
-   "url": "https://arxiv.org/abs/2611.17495",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-16T05:00:00+00:00",
-   "summary": "arXiv:2611.17495v1 Announce Type: new Abstract: Chain-of-thought (CoT) is currently a valuable tool for overseeing AI models, but some architectural shifts could significantly reduce CoT monitorability. We…"
-  },
-  {
-   "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
-   "url": "https://www.hntrends.com/2026/november.html",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-16T01:31:30+00:00",
-   "summary": "Article URL: https://www.hntrends.com/2026/november.html Comments URL: https://news.ycombinator.com/item?id=50512950 Points: 93 # Comments: 82"
   },
   {
    "title": "Stop Searching For the Perfect Model",
@@ -360,76 +409,12 @@
    "summary": "Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be…"
   },
   {
-   "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
-   "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-15T19:39:46+00:00",
-   "summary": "Article URL: https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/ Comments URL: https://news.ycombinator.com/item?id=50509953 Points: 68 # Comments: 67"
-  },
-  {
-   "title": "All AI-generated code should be Open Source",
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-15T14:46:58+00:00",
-   "summary": "Article URL: https://jakub.jankiewicz.org/blog/ai-code-open-source/ Comments URL: https://news.ycombinator.com/item?id=50507303 Points: 1240 # Comments: 650"
-  },
-  {
-   "title": "datasette-apps 0.4a0",
-   "url": "https://simonwillison.net/2026/Nov/15/datasette-apps/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-15T04:02:45+00:00",
-   "summary": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support…"
-  },
-  {
-   "title": "datasette-agent 0.6a0",
-   "url": "https://simonwillison.net/2026/Nov/15/datasette-agent/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-15T03:49:47+00:00",
-   "summary": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette…"
-  },
-  {
-   "title": "datasette-llm 0.1a11",
-   "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-14T23:59:28+00:00",
-   "summary": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you…"
-  },
-  {
-   "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
-   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-14T15:58:57+00:00",
-   "summary": "Article URL:…"
-  },
-  {
    "title": "AI Can Do Everything…Except This",
    "url": "https://www.youtube.com/watch?v=x7iwI6WfWS0",
    "source": "Two Minute Papers",
    "kind": "video",
    "published": "2026-11-14T08:40:55+00:00",
    "thumbnail": "https://i1.ytimg.com/vi/x7iwI6WfWS0/hqdefault.jpg"
-  },
-  {
-   "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
-   "url": "https://news.ycombinator.com/item?id=50494696",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-14T06:56:42+00:00",
-   "summary": "Specifically, what are the most useful, concrete skills to learn as an individual to take economic advantage of the advances in LLMs, agents and associated new technological capabilities? What is accessible to learn…"
-  },
-  {
-   "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-14T02:52:59+00:00",
-   "summary": "Article URL: https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus Comments URL: https://news.ycombinator.com/item?id=50493251 Points: 1111 # Comments: 649"
   },
   {
    "title": "It’s so much worse than I thought…",
@@ -555,28 +540,12 @@
    "thumbnail": "https://i2.ytimg.com/vi/583ThJIqQ7k/hqdefault.jpg"
   },
   {
-   "title": "Gemini Intelligence: New features, on more devices",
-   "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
-   "source": "Google AI",
-   "kind": "news",
-   "published": "2026-11-10T19:00:00+00:00",
-   "summary": "A man speaks into a phone. Text on the screen reads 'Gemini Intelligence'"
-  },
-  {
    "title": "Did Anthropic just save its $1 trillion IPO?",
    "url": "https://www.youtube.com/watch?v=1FurWDiK9A4",
    "source": "Fireship",
    "kind": "video",
    "published": "2026-11-10T18:19:55+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/1FurWDiK9A4/hqdefault.jpg"
-  },
-  {
-   "title": "Is Software Over?",
-   "url": "https://www.youtube.com/watch?v=vug73goPJaM",
-   "source": "Two Minute Papers",
-   "kind": "video",
-   "published": "2026-11-10T10:15:57+00:00",
-   "thumbnail": "https://i3.ytimg.com/vi/vug73goPJaM/hqdefault.jpg"
   },
   {
    "title": "Mutex Explained - Computerphile",
