@@ -625,6 +625,7 @@ const PALETTE_DEMOS = [
   ["QuantFlex walkthrough", "price an american put under heston", "demos/quantflex.html"],
   ["Prompterjack walkthrough", "staged Agent Architect canvas, not a product capture", "demos/prompterjack.html"],
   ["Solo Strength Quest walkthrough", "boss kills on real app screens", "demos/strength-quest.html"],
+  ["Receipt → Tax automation", "claude skill → drive, sheets, whatsapp draft", "demos/receipt-tax.html"],
 ];
 
 let paletteData = null;
