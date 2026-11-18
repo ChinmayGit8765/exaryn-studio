@@ -14,7 +14,7 @@ What got built when, by repository creation date. The narrative version — why 
 
 ## 2026
 
-20 repositories created.
+21 repositories created.
 
 | Created | Repo | Language | Project |
 | --- | --- | --- | --- |
@@ -38,6 +38,7 @@ What got built when, by repository creation date. The narrative version — why 
 | 2026-08-31 | [[mploy-app]] | — | [[mploy]] |
 | 2026-09-01 | [[holdem-ml]] | — | [[holdem-ml]] |
 | 2026-10-03 | [[lucidbench]] | Go | — |
+| 2026-11-18 | [[receipt-tax]] | Python | — |
 
 ## 2025
 
