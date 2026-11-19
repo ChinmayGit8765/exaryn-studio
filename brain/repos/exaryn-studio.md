@@ -25,7 +25,7 @@ Project note: [[Exaryn Studio]]
 | Full name | [ChinmayGit8765/exaryn-studio](https://github.com/ChinmayGit8765/exaryn-studio) |
 | Visibility | public |
 | Primary language | JavaScript |
-| Size | 7.2 MB |
+| Size | 7.3 MB |
 | Licence | none declared |
 | Default branch | main |
 | Created | 2026-08-17 |
