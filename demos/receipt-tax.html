@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receipt → Tax — automation walkthrough · Exaryn</title>
+  <meta name="description" content="A 45-second walkthrough of a Claude skill that reads a receipt photo, files it in Google Drive, logs it to a spreadsheet and drafts a WhatsApp message to the accountant — plus how it is built and where automations like it pay off." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="demo.css?v=3" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>" />
+  <style>
+    /* ---- video stage: the recording carries its own captions and scrubber ---- */
+    .rt-stage { aspect-ratio: 1728 / 866; height: auto; background: #2b211c; }
+    .rt-stage video { display: block; width: 100%; height: 100%; object-fit: contain; background: #2b211c; }
+
+    /* ---- write-up ---- */
+    .rt-doc { max-width: 1180px; margin: 0 auto; padding: 10px var(--pad) 80px; }
+    .rt-sec { border-top: 1px solid var(--line); padding: 44px 0 8px; display: grid; grid-template-columns: 240px 1fr; gap: 28px; }
+    .rt-sec > h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(26px, 3vw, 36px); line-height: 1.05; letter-spacing: -0.01em; }
+    .rt-sec > h2 em { color: var(--accent); }
+    .rt-sec > h2 .mono { display: block; color: var(--muted); margin-bottom: 10px; font-size: 10.5px; }
+    .rt-sec > * { min-width: 0; }
+    .rt-body { max-width: 72ch; overflow-wrap: anywhere; }
+    .rt-scroll { overflow-x: auto; }
+    .rt-body p { margin-bottom: 14px; color: #2c2925; }
+    .rt-body p b { color: var(--ink); }
+    .rt-body code { font-family: var(--mono); font-size: 13px; background: #ebe6db; padding: 1px 5px; border-radius: 3px; }
+    .rt-lede { font-family: var(--serif); font-size: clamp(22px, 2.4vw, 28px); line-height: 1.25; color: var(--ink); margin-bottom: 18px; }
+
+    /* pipeline */
+    .rt-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 6px 0 18px; }
+    .rt-step { padding: 16px 16px 18px; border-right: 1px solid var(--line); background: #faf8f3; position: relative; }
+    .rt-step:last-child { border-right: none; }
+    .rt-step .n { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; color: var(--muted); }
+    .rt-step .who { font-weight: 600; margin: 4px 0 6px; display: flex; align-items: center; gap: 8px; }
+    .rt-step .who i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+    .rt-step p { font-size: 13.5px; color: var(--muted); line-height: 1.5; margin: 0; }
+
+    /* tech table */
+    .rt-table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 4px 0 18px; }
+    .rt-table th { text-align: left; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--ink); }
+    .rt-table td { padding: 11px 10px 11px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: #2c2925; }
+    .rt-table td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+    /* decisions list */
+    .rt-list { list-style: none; margin: 0 0 18px; }
+    .rt-list li { padding: 12px 0 12px 28px; border-bottom: 1px solid var(--line); position: relative; font-size: 15px; color: #2c2925; }
+    .rt-list li::before { content: "✳"; position: absolute; left: 2px; top: 12px; color: var(--accent); }
+    .rt-list li b { color: var(--ink); }
+
+    /* time stats */
+    .rt-stats { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 6px 0 18px; }
+    .rt-stat { padding: 18px 18px 20px; border-right: 1px solid var(--line); background: #faf8f3; }
+    .rt-stat:last-child { border-right: none; }
+    .rt-stat .v { font-family: var(--serif); font-size: clamp(30px, 3.6vw, 44px); line-height: 1; }
+    .rt-stat .v em { color: var(--accent); font-style: normal; }
+    .rt-stat .l { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+    .rt-fine { font-size: 13px; color: var(--muted); }
+
+    /* use cases */
+    .rt-cases { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 6px 0 18px; }
+    .rt-case { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; background: #faf8f3; }
+    .rt-case h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+    .rt-case p { font-size: 13.5px; color: var(--muted); line-height: 1.5; margin: 0; }
+
+    @media (max-width: 860px) {
+      .rt-sec { grid-template-columns: 1fr; gap: 14px; padding-top: 34px; }
+      .rt-flow, .rt-stats { grid-template-columns: 1fr; }
+      .rt-step, .rt-stat { border-right: none; border-bottom: 1px solid var(--line); }
+      .rt-step:last-child, .rt-stat:last-child { border-bottom: none; }
+      .rt-cases { grid-template-columns: 1fr; }
+      .rt-table td:first-child { white-space: normal; }
+      .rt-table { font-size: 13px; }
+      .demo-title { flex-wrap: wrap; }
+    }
+    @media (max-width: 700px) {
+      .rt-stage { aspect-ratio: 1728 / 866; height: auto; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#top">Skip to content</a>
+
+  <header class="demo-header">
+    <a class="wordmark" href="../index.html">Exaryn<span class="mark">✳</span></a>
+    <nav class="demo-nav mono" aria-label="Primary">
+      <a href="../projects.html">Work</a>
+      <a href="../notes.html">Notes</a>
+      <a href="../feed.html">Feed</a>
+      <a href="../play.html">Play</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="demo-wrap" id="top">
+    <div class="demo-title">
+      <h1>Receipt → Tax — <em>an automation</em></h1>
+      <span class="sim-tag">STAGED WALKTHROUGH · SAMPLE DATA · NOT A LIVE CAPTURE</span>
+    </div>
+
+    <div class="demo-stage rt-stage">
+      <video id="rt-video" controls playsinline muted preload="metadata"
+             poster="assets/receipt-tax-poster.jpg"
+             aria-label="Walkthrough: a receipt photo is read by Claude, filed in Google Drive, logged to a Google Sheet, and turned into a WhatsApp draft for the accountant. Captions are burned into the video; there is no audio.">
+        <source src="assets/receipt-tax-walkthrough.mp4" type="video/mp4" />
+        Your browser can't play this video. <a href="assets/receipt-tax-walkthrough.mp4">Download the walkthrough (MP4, 1.3 MB)</a>.
+      </video>
+    </div>
+
+    <div id="chapters"></div>
+    <p class="demo-note">
+      45 seconds, captions on screen, no audio. The supplier, ABN, card and accountant are sample data.
+      The code is open source (MIT): <a href="https://github.com/ChinmayGit8765/receipt-tax" target="_blank" rel="noopener">github.com/ChinmayGit8765/receipt-tax ↗</a>
+    </p>
+  </div>
+
+  <main class="rt-doc">
+
+    <section class="rt-sec">
+      <h2><span class="mono">01 · What it does</span>Admin, <em>off my plate</em></h2>
+      <div class="rt-body">
+        <p class="rt-lede">Take a photo of a receipt, say “log this receipt”, answer one question. Everything else is done for you.</p>
+        <p>The receipt is read and filed in the right Google Drive folder for the financial year. A row goes into that year's
+          spreadsheet. A neatly formatted WhatsApp message to my accountant is ready to send, asking how much I can claim.
+          When the accountant replies, I tell Claude, and the answer goes onto the same row. At tax time the spreadsheet is
+          already complete.</p>
+        <p>It runs as a <b>Claude skill</b>, so it works the same from the Claude phone app, the web, the desktop app and
+          Claude Code on my PC. The same skill also runs in <b>OpenAI Codex</b>, and a ChatGPT Custom GPT can call the same
+          backend. They all write to one spreadsheet.</p>
+        <p>It's <a href="https://github.com/ChinmayGit8765/receipt-tax" target="_blank" rel="noopener" style="color:var(--accent)">open source on GitHub</a> under the MIT licence.
+          Set it up with your own Google account (about 10 minutes), or use a local Excel file (about 1 minute).</p>
+      </div>
+    </section>
+
+    <section class="rt-sec">
+      <h2><span class="mono">02 · The pipeline</span>Four hands, <em>one flow</em></h2>
+      <div class="rt-body">
+        <div class="rt-flow">
+          <div class="rt-step">
+            <span class="n">01</span>
+            <div class="who"><i style="background:#e8553a"></i>Claude</div>
+            <p>Reads the photo, asks “roughly, what's this for?”, tidies the answer and confirms once.</p>
+          </div>
+          <div class="rt-step">
+            <span class="n">02</span>
+            <div class="who"><i style="background:#4f6bd8"></i>Files</div>
+            <p>The photo and the extracted record are packaged in Claude's code sandbox and sent on.</p>
+          </div>
+          <div class="rt-step">
+            <span class="n">03</span>
+            <div class="who"><i style="background:#e8a33a"></i>Google</div>
+            <p>An Apps Script backend checks for duplicates, files the photo in Drive and appends the row to the Sheet.</p>
+          </div>
+          <div class="rt-step">
+            <span class="n">04</span>
+            <div class="who"><i style="background:#3cae6a"></i>WhatsApp</div>
+            <p>A <code>wa.me</code> link opens a pre-filled draft. Nothing sends until I press send.</p>
+          </div>
+        </div>
+        <p>The split is deliberate. Claude does the three steps that need judgement: <b>read</b>, <b>ask and clean</b>,
+          <b>confirm</b>. Everything mechanical runs in a small deterministic backend. Filing, naming, numbering, duplicate
+          checks and the message template come out the same every time, whichever model or app made the request.</p>
+      </div>
+    </section>
+
+    <section class="rt-sec">
+      <h2><span class="mono">03 · Under the hood</span>Tech &amp; <em>connectors</em></h2>
+      <div class="rt-body">
+        <div class="rt-scroll"><table class="rt-table">
+          <thead><tr><th>Piece</th><th>What it is</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Claude skill</td><td>A <code>SKILL.md</code> playbook covering extraction rules, the one question, the cleanup rules and the report format</td><td>Runs on phone, web, desktop and Claude Code with no extra app</td></tr>
+            <tr><td>Python client</td><td><code>receipt_tax.py</code> runs in the assistant's sandbox and works out the tax year, storage, duplicates and message drafts. It uses the standard library only (<code>openpyxl</code> is optional, for local .xlsx)</td><td>Nothing to install, so it works in any sandbox</td></tr>
+            <tr><td>Google Apps Script</td><td>A ~300-line web app you deploy in your own Google account, which is the whole backend</td><td>Free, no server to run, native access to Drive and Sheets</td></tr>
+            <tr><td>Google Drive</td><td><code>DriveApp</code> keeps one folder per financial year (<code>Tax26-27/</code>) and renames files by date, supplier, total and ID</td><td>Your accountant gets a tidy folder instead of a camera roll</td></tr>
+            <tr><td>Google Sheets</td><td><code>SpreadsheetApp</code> keeps a receipts tab and a summary tab per year, with claim % and claimable amount added later</td><td>One ledger, exportable to Excel</td></tr>
+            <tr><td>Local Excel / CSV</td><td>Optional storage on your own computer: an .xlsx with formulas, or a CSV</td><td>No cloud account needed when you run it from Claude Code or Codex</td></tr>
+            <tr><td>Messaging</td><td>Draft links for WhatsApp (<code>wa.me</code>), Telegram, SMS/iMessage and email; webhooks for Discord and Slack; or plain text to copy</td><td>Draft links need no API account. Webhooks only post after you say yes</td></tr>
+            <tr><td>Regions</td><td>Tax-year start, folder label, currency and tax names (GST/ABN, VAT, GSTIN…) are settings</td><td>Presets for Australia, New Zealand, the UK, India, the US and Canada</td></tr>
+            <tr><td>Tests</td><td>Python unit tests, plus the Apps Script backend run in Node against fake Google services</td><td>The backend gets tested without touching a real Drive</td></tr>
+            <tr><td>ChatGPT (optional)</td><td>A Custom GPT Action pointed at the same backend</td><td>Same spreadsheet, whichever assistant I use</td></tr>
+          </tbody>
+        </table></div>
+        <ul class="rt-list">
+          <li><b>Never guess.</b> Fields are copied exactly as printed. Anything missing or unreadable becomes <code>null</code>.
+            Claude flags line items that don't add up, a missing GST line, or a missing ABN on an invoice over $82.50. It asks for a
+            better photo instead of inventing a value.</li>
+          <li><b>Clean the wording, change nothing else.</b> The purpose is fixed for spelling, grammar and punctuation only. No new facts,
+            no “deductible”, no making it sound more persuasive. Private use stays in. The accountant sees what I actually said.</li>
+          <li><b>Idempotent by design.</b> The backend hashes the photo (SHA-256) and also matches on supplier, date and total. Sending the same
+            receipt twice gives back a “possible duplicate” (exit code 2), not a second row.</li>
+          <li><b>Safe concurrent writes.</b> Each request runs under Apps Script's <code>LockService</code>, so two receipts sent at
+            once still get sequential IDs (<code>Tax26-27-0001</code>, <code>-0002</code>…).</li>
+          <li><b>Rolls over automatically.</b> The financial year comes from the receipt date. From 1 July the next year's folder and sheet
+            are created the first time they're needed.</li>
+          <li><b>Token-gated and private.</b> The web app only accepts requests that carry a secret token. The token lives in a git-ignored
+            <code>config.json</code>, never in the repo, a prompt or this page. The backend has no delete action, so a leaked token can
+            add rows but can't remove anything.</li>
+          <li><b>Human in the loop where it matters.</b> One confirmation before anything is written. Messages are drafts you send
+            yourself; the Discord and Slack webhooks only post after that confirmation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="rt-sec">
+      <h2><span class="mono">04 · Time saved</span>Evenings, <em>given back</em></h2>
+      <div class="rt-body">
+        <div class="rt-stats">
+          <div class="rt-stat"><div class="v"><em>~1</em> hr</div><div class="l">saved per receipt: reading it, filing it, typing the ledger row, writing to the accountant and chasing the answer</div></div>
+          <div class="rt-stat"><div class="v"><em>6–8</em> hrs</div><div class="l">of personal time back each month, on a normal month of receipts</div></div>
+          <div class="rt-stat"><div class="v"><em>1</em> question</div><div class="l">is all that's left for me: “roughly, what's this for?”</div></div>
+        </div>
+        <p>Done by hand, one receipt can take a couple of hours from start to finish. You find the photo, rename it, work out which folder
+          and year it belongs in, type the row, then write a message to your accountant that is clear enough to answer. Then you wait,
+          and copy their answer back into the spreadsheet. Most of that happens <b>outside work hours</b>, which is exactly the time
+          nobody wants to spend on admin.</p>
+        <p>The conversations with the accountant get easier too. Every message has the same layout: item, purpose, supplier and ABN,
+          date, total with GST, and payment method. Every receipt has an ID and a filed photo they can open. They answer faster, with
+          less back-and-forth, and their answer lands on the same row as the receipt it belongs to.</p>
+        <p class="rt-fine">These figures are my own estimate from using it, not a controlled measurement. How much you save depends
+          on how many receipts you have and how organised the manual process was to begin with.</p>
+      </div>
+    </section>
+
+    <section class="rt-sec">
+      <h2><span class="mono">05 · The pattern</span>Where else <em>this pays off</em></h2>
+      <div class="rt-body">
+        <p>Receipts are just the example. The reusable shape is <b>capture → structured record → file it → draft the follow-up</b>, with
+          a model making the judgement calls and a plain, deterministic backend doing the writing. The same shape fits a lot of
+          everyday admin:</p>
+        <div class="rt-cases">
+          <div class="rt-case"><h3>Business expenses</h3><p>Photos to an expense sheet with categories, then a reimbursement email drafted for a manager or finance.</p></div>
+          <div class="rt-case"><h3>Supplier invoices</h3><p>Due dates and amounts into a payables tracker, with a payment reminder drafted for the week each one is due.</p></div>
+          <div class="rt-case"><h3>Warranties &amp; big purchases</h3><p>Serial numbers, purchase dates and receipts stored together, ready when something breaks.</p></div>
+          <div class="rt-case"><h3>Small-business intake</h3><p>Customer forms, job photos or quotes logged to a sheet, with a confirmation message ready to send.</p></div>
+        </div>
+        <p>Why it works: <b>the expensive part of admin is context-switching, not typing.</b> Taking a photo and answering one
+          question takes seconds and fits into the moment you get the receipt. The automation handles everything that used to
+          make you put it off. Nothing reaches another person without a human pressing send, so it is safe to hand over.</p>
+        <p>Want it for your own receipts? <a href="https://github.com/ChinmayGit8765/receipt-tax" target="_blank" rel="noopener" style="color:var(--accent)">Clone the repo ↗</a>,
+          pick a client, a storage option and a messaging channel, and follow the quick start.</p>
+        <p class="rt-fine">Limits, plainly: it's built for one person and their own storage. In the Claude app the sandbox needs network
+          access to <code>script.google.com</code>. Reading accuracy depends on the photo, and a bad photo gets flagged rather than
+          guessed. It doesn't give tax advice; the accountant decides what's claimable.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Chapter chips jump the native player; the recording carries its own captions.
+    (function () {
+      const video = document.getElementById("rt-video");
+      const host = document.getElementById("chapters");
+      const chapters = [
+        ["Drop the photo", 0], ["Read it", 5], ["Ask &amp; clean", 10], ["Confirm", 17],
+        ["File &amp; log", 28], ["WhatsApp draft", 33], ["Accountant replies", 39],
+      ];
+      const btns = chapters.map(([name, at], i) => {
+        const b = document.createElement("button");
+        b.className = "chapter";
+        b.type = "button";
+        b.innerHTML = `<span class="ch-num">${i + 1}</span>${name}`;
+        b.addEventListener("click", () => { video.currentTime = at; video.play().catch(() => {}); });
+        host.appendChild(b);
+        return b;
+      });
+      video.addEventListener("timeupdate", () => {
+        let idx = 0;
+        chapters.forEach(([, at], i) => { if (video.currentTime >= at) idx = i; });
+        btns.forEach((b, i) => b.classList.toggle("active", i === idx));
+      });
+    })();
+  </script>
+</body>
+</html>
