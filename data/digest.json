@@ -1,13 +1,125 @@
 {
- "generated_at": "2026-11-20T21:05:44.761823+00:00",
+ "generated_at": "2026-11-21T21:05:16.254120+00:00",
  "items": [
   {
-   "title": "Inkling 2 Mini",
-   "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "title": "The UN fails to agree on rules regulating ‘killer robots’",
+   "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-21T20:03:37+00:00",
+   "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings…"
+  },
+  {
+   "title": "Inkling-2-Mini in 5.4 GB Memory",
+   "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
    "source": "Hacker News",
    "kind": "news",
-   "published": "2026-11-20T20:12:19+00:00",
-   "summary": "Article URL: https://thinkingmachines.ai/news/inkling-2-mini/ Comments URL: https://news.ycombinator.com/item?id=50581260 Points: 121 # Comments: 12"
+   "published": "2026-11-21T18:02:19+00:00",
+   "summary": "Article URL: https://github.com/ShinMegamiBoson/lookatmyquant Comments URL: https://news.ycombinator.com/item?id=50591853 Points: 228 # Comments: 42"
+  },
+  {
+   "title": "Here are the top AI agents that can live in your text messages",
+   "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-21T17:00:00+00:00",
+   "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work."
+  },
+  {
+   "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+   "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-21T16:00:00+00:00",
+   "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too."
+  },
+  {
+   "title": "Lean verification of the Riemann Hypothesis",
+   "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-21T14:36:45+00:00",
+   "summary": "Article URL: https://leanprover-community.github.io/blog/posts/riemann-hypothesis/ Comments URL: https://news.ycombinator.com/item?id=50589618 Points: 628 # Comments: 490"
+  },
+  {
+   "title": "Can Anthropic afford to put safety first?",
+   "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-21T13:29:45+00:00",
+   "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last…"
+  },
+  {
+   "title": "Detonating a pile of lead azide",
+   "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-21T13:23:14+00:00",
+   "summary": "Article URL: https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really Comments URL: https://news.ycombinator.com/item?id=50588982 Points: 425 # Comments: 287"
+  },
+  {
+   "title": "My monitor was cutting my download speed by 75%",
+   "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-21T10:36:32+00:00",
+   "summary": "Article URL: https://blog.tymscar.com/posts/studiodisplayethernet/ Comments URL: https://news.ycombinator.com/item?id=50587875 Points: 381 # Comments: 194"
+  },
+  {
+   "title": "RCE in Gnupg",
+   "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-21T08:32:58+00:00",
+   "summary": "Article URL: https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html Comments URL: https://news.ycombinator.com/item?id=50587208 Points: 200 # Comments: 76"
+  },
+  {
+   "title": "ClawDOS – An AI coding agent for DOS",
+   "url": "http://ricapar.net/ClawDOS/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-21T05:38:01+00:00",
+   "summary": "Article URL: http://ricapar.net/ClawDOS/ Comments URL: https://news.ycombinator.com/item?id=50586292 Points: 146 # Comments: 44"
+  },
+  {
+   "title": "PsyWorld: Profile-Conditioned World Modeling for Human Behavior Prediction",
+   "url": "https://arxiv.org/abs/2611.24999",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-21T05:00:00+00:00",
+   "summary": "arXiv:2611.24999v1 Announce Type: new Abstract: Understanding how stable psychometric traits and time-varying states jointly inform behavior is an important problem in computational behavioral science. Existing…"
+  },
+  {
+   "title": "Watch Where You Linearize: Predicting and Correcting Model-Merging Interference",
+   "url": "https://arxiv.org/abs/2611.25000",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-21T05:00:00+00:00",
+   "summary": "arXiv:2611.25000v1 Announce Type: new Abstract: Model merging combines separately fine-tuned models by adding their task vectors to a shared backbone. Interference is typically assessed only after constructing and…"
+  },
+  {
+   "title": "Density Feedback Control for Transferability of Generative Sparse Adversarial Attacks",
+   "url": "https://arxiv.org/abs/2611.25001",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-21T05:00:00+00:00",
+   "summary": "arXiv:2611.25001v1 Announce Type: new Abstract: Generator-based sparse adversarial attacks train encoder--decoder networks to produce transferable sparse perturbations for black-box robustness evaluation. Their…"
+  },
+  {
+   "title": "A Model of Diverse Sampling from Language Models",
+   "url": "https://arxiv.org/abs/2611.25003",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-21T05:00:00+00:00",
+   "summary": "arXiv:2611.25003v1 Announce Type: new Abstract: Language models often produce high-quality individual samples but poor sets, with repeated samples clustering around the same semantic modes. We formalize diverse…"
+  },
+  {
+   "title": "On the Impact of Feature Reduction Techniques on Adversarial Attacks",
+   "url": "https://arxiv.org/abs/2611.25004",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-21T05:00:00+00:00",
+   "summary": "arXiv:2611.25004v1 Announce Type: new Abstract: Adversarial attacks have posed significant threats to machine learning models by exploiting their inherent vulnerabilities. Researchers have established an…"
   },
   {
    "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
@@ -26,7 +138,7 @@
    "thumbnail": "https://i3.ytimg.com/vi/rMaMe32qQkA/hqdefault.jpg"
   },
   {
-   "title": "AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too",
+   "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
    "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
    "source": "TechCrunch AI",
    "kind": "news",
@@ -50,22 +162,6 @@
    "summary": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them.…"
   },
   {
-   "title": "Hurried Announcement: Alessandro Masullo GRH",
-   "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-20T18:33:14+00:00",
-   "summary": "Article URL: https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/ Comments URL: https://news.ycombinator.com/item?id=50579568 Points: 801 # Comments: 370"
-  },
-  {
-   "title": "We promoted developers into architects without informing them",
-   "url": "https://manidoraisamy.com/developer-to-architect.html",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-20T18:17:51+00:00",
-   "summary": "Article URL: https://manidoraisamy.com/developer-to-architect.html Comments URL: https://news.ycombinator.com/item?id=50579331 Points: 113 # Comments: 73"
-  },
-  {
    "title": "The most misunderstood graph in AI just got a major update",
    "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
    "source": "MIT Tech Review",
@@ -82,22 +178,6 @@
    "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?"
   },
   {
-   "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
-   "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-20T17:21:36+00:00",
-   "summary": "Article URL: https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/ Comments URL: https://news.ycombinator.com/item?id=50578358…"
-  },
-  {
-   "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
-   "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-20T16:59:27+00:00",
-   "summary": "Article URL: https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/ Comments URL: https://news.ycombinator.com/item?id=50577901 Points: 158 # Comments: 111"
-  },
-  {
    "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
    "source": "The Verge AI",
@@ -112,14 +192,6 @@
    "kind": "news",
    "published": "2026-11-20T16:30:48+00:00",
    "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time,…"
-  },
-  {
-   "title": "Language Models Can Rewrite Their Own Weights",
-   "url": "https://arxiv.org/abs/2611.21885",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-20T16:29:06+00:00",
-   "summary": "Article URL: https://arxiv.org/abs/2611.21885 Comments URL: https://news.ycombinator.com/item?id=50577265 Points: 259 # Comments: 91"
   },
   {
    "title": "holy sh*t",
@@ -154,46 +226,6 @@
    "summary": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems…"
   },
   {
-   "title": "A brief history of Nvidia’s recent stock fluctuations",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-20T14:20:13+00:00",
-   "summary": "\"We've got this,\" Colette Kress, interim CEO of Nvidia, said Tuesday night as she closed out the embattled chip company's third quarter earnings call. By Thursday, the company's stock price was hovering at around $150…"
-  },
-  {
-   "title": "The week everything fell apart",
-   "url": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-20T14:06:59+00:00",
-   "summary": "There was a dayslong Outlook outage. A nationwide ground stop for only the second time in 25 years. Banks seemed to suddenly stop working. Even iCloud couldn't stay up and running. This week, it felt like the…"
-  },
-  {
-   "title": "Six AI-powered gadgets that could make your home office smarter",
-   "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-20T14:00:00+00:00",
-   "summary": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace."
-  },
-  {
-   "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
-   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-20T13:29:59+00:00",
-   "summary": "Article URL: https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off Comments URL: https://news.ycombinator.com/item?id=50574383 Points: 183 # Comments: 216"
-  },
-  {
-   "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-   "url": "https://architectlabs.com/blog/frostbite",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-20T10:01:41+00:00",
-   "summary": "Article URL: https://architectlabs.com/blog/frostbite Comments URL: https://news.ycombinator.com/item?id=50572503 Points: 567 # Comments: 300"
-  },
-  {
    "title": "Combatting adversarial distillation",
    "url": "https://openai.com/index/combatting-adversarial-distillation",
    "source": "OpenAI",
@@ -202,84 +234,12 @@
    "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction."
   },
   {
-   "title": "PsyWorld: Profile-Conditioned World Modeling for Human Behavior Prediction",
-   "url": "https://arxiv.org/abs/2611.24999",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.24999v1 Announce Type: new Abstract: Understanding how stable psychometric traits and time-varying states jointly inform behavior is an important problem in computational behavioral science. Existing…"
-  },
-  {
-   "title": "Watch Where You Linearize: Predicting and Correcting Model-Merging Interference",
-   "url": "https://arxiv.org/abs/2611.25000",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25000v1 Announce Type: new Abstract: Model merging combines separately fine-tuned models by adding their task vectors to a shared backbone. Interference is typically assessed only after constructing and…"
-  },
-  {
-   "title": "Density Feedback Control for Transferability of Generative Sparse Adversarial Attacks",
-   "url": "https://arxiv.org/abs/2611.25001",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25001v1 Announce Type: new Abstract: Generator-based sparse adversarial attacks train encoder--decoder networks to produce transferable sparse perturbations for black-box robustness evaluation. Their…"
-  },
-  {
-   "title": "A Model of Diverse Sampling from Language Models",
-   "url": "https://arxiv.org/abs/2611.25003",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25003v1 Announce Type: new Abstract: Language models often produce high-quality individual samples but poor sets, with repeated samples clustering around the same semantic modes. We formalize diverse…"
-  },
-  {
-   "title": "On the Impact of Feature Reduction Techniques on Adversarial Attacks",
-   "url": "https://arxiv.org/abs/2611.25004",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25004v1 Announce Type: new Abstract: Adversarial attacks have posed significant threats to machine learning models by exploiting their inherent vulnerabilities. Researchers have established an…"
-  },
-  {
-   "title": "Closing the Analyze-to-Design Gap: An Authorization-Bounded Agent for Self-Driving Laboratories",
-   "url": "https://arxiv.org/abs/2611.25043",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25043v1 Announce Type: new Abstract: Artificial intelligence (AI) agents are increasingly integrated into self-driving laboratories (SDLs) to plan experiments and interpret results. However, analytical…"
-  },
-  {
-   "title": "An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance",
-   "url": "https://arxiv.org/abs/2611.25070",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework…"
-  },
-  {
-   "title": "SailSearch: Agent-Assisted Discovery in Combinatorial Optimization",
-   "url": "https://arxiv.org/abs/2611.25087",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25087v1 Announce Type: new Abstract: We present SailSearch, a human-guided workflow for algorithmic research with two language-model agents, and report results on Market Split and maximum independent set…"
-  },
-  {
-   "title": "BuggyMLE: Scaling Machine Learning Engineering Difficulty with Bug Injection",
-   "url": "https://arxiv.org/abs/2611.25088",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25088v1 Announce Type: new Abstract: Enabling AI systems to autonomously improve AI models requires agents capable of performing machine learning engineering (MLE). In practice, designing, training, and…"
-  },
-  {
-   "title": "CoMPASS: A Multi-Turn Benchmark for Measuring LLM Reinforcement of Parasocial Behavior",
-   "url": "https://arxiv.org/abs/2611.25109",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-20T05:00:00+00:00",
-   "summary": "arXiv:2611.25109v1 Announce Type: new Abstract: Users of conversational LLMs sometimes anthropomorphize these systems, form emotional attachments to them, and become dependent on them. This behavior, known as parasocial…"
+   "title": "llm-gemini 0.38.1",
+   "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-20T03:01:57+00:00",
+   "summary": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the…"
   },
   {
    "title": "Token fraud is here and it’s BAD (YouTube)",
@@ -288,28 +248,6 @@
    "kind": "news",
    "published": "2026-11-20T02:49:57+00:00",
    "summary": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it…"
-  },
-  {
-   "title": "Apple may be developing its own AI agent that runs your Mac",
-   "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-20T00:56:01+00:00",
-   "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots."
-  },
-  {
-   "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-   "url": "https://huggingface.co/blog/inkling2mini",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-20T00:00:00+00:00"
-  },
-  {
-   "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
-   "url": "https://huggingface.co/blog/harness-adapters-at-scale",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-20T00:00:00+00:00"
   },
   {
    "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
@@ -328,12 +266,18 @@
    "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery."
   },
   {
-   "title": "Court: 4th Amendment Disallows Use Of AI-Generated 'Probable Cause'",
-   "url": "https://www.techdirt.com/2026/11/19/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/",
-   "source": "Hacker News · AI",
+   "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+   "url": "https://huggingface.co/blog/inkling2mini",
+   "source": "Hugging Face",
    "kind": "news",
-   "published": "2026-11-19T22:56:59+00:00",
-   "summary": "Article URL: https://www.techdirt.com/2026/11/19/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/ Comments URL: https://news.ycombinator.com/item?id=50567735 Points: 68 # Comments: 20"
+   "published": "2026-11-20T00:00:00+00:00"
+  },
+  {
+   "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+   "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-20T00:00:00+00:00"
   },
   {
    "title": "PostgreSQL 19 Released",
@@ -352,14 +296,6 @@
    "thumbnail": "https://i4.ytimg.com/vi/KGA7B_c_S4s/hqdefault.jpg"
   },
   {
-   "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-   "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-19T18:47:16+00:00",
-   "summary": "Article URL: https://www.youtube.com/watch?v=lwfewYL7X0o Comments URL: https://news.ycombinator.com/item?id=50564366 Points: 112 # Comments: 236"
-  },
-  {
    "title": "Introducing Tool Retrieval in the Gemini API",
    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
    "source": "Google AI",
@@ -374,14 +310,6 @@
    "kind": "video",
    "published": "2026-11-19T17:59:24+00:00",
    "thumbnail": "https://i1.ytimg.com/vi/TDoXk7o3rxs/hqdefault.jpg"
-  },
-  {
-   "title": "AI came for the coders. Understanding why tells us who's next",
-   "url": "https://www.robertpeake.com/archives/104254-ai-came-for-the-coders-understanding-why-tells-us-whos-next.html",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-19T17:43:38+00:00",
-   "summary": "Article URL: https://www.robertpeake.com/archives/104254-ai-came-for-the-coders-understanding-why-tells-us-whos-next.html Comments URL: https://news.ycombinator.com/item?id=50563328 Points: 64 # Comments: 78"
   },
   {
    "title": "The only software that didn’t break this week...",
@@ -460,14 +388,6 @@
    "kind": "video",
    "published": "2026-11-18T17:48:56+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/9KvI-zg4mfo/hqdefault.jpg"
-  },
-  {
-   "title": "datasette-arrows 0.1a0",
-   "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-18T17:09:59+00:00",
-   "summary": "Release: datasette-arrows 0.1a0 Datasette 1.0a43 added the ability for plugins to implement streaming export formats. Datasette core supports streaming CSV and TSV - you can export millions of lines of data from a table…"
   },
   {
    "title": "The Gemini app is now available on lower-memory Android devices.",
