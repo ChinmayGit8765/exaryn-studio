@@ -1,69 +1,299 @@
 {
- "generated_at": "2026-11-22T21:05:23.640663+00:00",
+ "generated_at": "2026-11-23T21:05:44.257946+00:00",
  "items": [
   {
-   "title": "What Happened to Silicon Valley?",
-   "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-22T19:20:15+00:00",
-   "summary": "Article URL: https://www.oreilly.com/radar/what-happened-to-silicon-valley/ Comments URL: https://news.ycombinator.com/item?id=50602947 Points: 104 # Comments: 29"
-  },
-  {
-   "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
-   "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-22T19:10:34+00:00",
-   "summary": "Article URL: https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife Comments URL: https://news.ycombinator.com/item?id=50602843 Points: 104 # Comments: 19"
-  },
-  {
-   "title": "Why data centers are at the center of the Big Tech backlash",
-   "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+   "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+   "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
    "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-11-22T18:08:43+00:00",
-   "summary": "Journalist Paris Marx unpacks his new book \"Hyperscale.\""
+   "published": "2026-11-23T20:38:53+00:00",
+   "summary": "\"I'm going to be a better CEO the second time around,\" Huang told employees."
   },
   {
-   "title": "Binding of Isaac developer removes AI music from Repentance Plus",
-   "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+   "title": "How Jensen Huang ended up as Nvidia CEO again",
+   "url": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
    "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-22T17:25:20+00:00",
-   "summary": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs…"
+   "published": "2026-11-23T20:38:44+00:00",
+   "summary": "The Jensen Huang era of Nvidia nearly came to an end this month. Huang, who three decades ago cofounded what's come to be considered one of the most important companies in AI, resigned from his role on November 12th…"
   },
   {
-   "title": "Perplexity and Intelligence",
-   "url": "https://openai.com/index/perplexity-and-intelligence/",
-   "source": "Hacker News",
+   "title": "Tech leaders are celebrating Jensen Huang’s return",
+   "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
+   "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-22T17:06:27+00:00",
-   "summary": "Article URL: https://openai.com/index/perplexity-and-intelligence/ Comments URL: https://news.ycombinator.com/item?id=50601525 Points: 334 # Comments: 217"
+   "published": "2026-11-23T20:16:17+00:00",
+   "summary": "Let's say you're Jensen Huang. You (allegedly) cheated on your wife with an alleged Chinese spy, allegedly had an affair with not one, but two subordinates, and (allegedly!) \"terrorized\" your employees, a series of…"
   },
   {
-   "title": "Europe weakens chemical rules as science links them to 'lifestyle diseases'",
-   "url": "https://www.lemonde.fr/en/opinion/article/2026/11/22/as-science-increasingly-shows-the-role-chemical-substances-play-in-lifestyle-diseases-europe-weakens-its-regulations_6786595_23.html",
+   "title": "\"Per ARM's Request, This Site Will Be Discontinued on 4 December 2026\"",
+   "url": "https://arm.jonpalmisc.com/",
    "source": "Hacker News",
    "kind": "news",
-   "published": "2026-11-22T15:42:40+00:00",
-   "summary": "Article URL: https://www.lemonde.fr/en/opinion/article/2026/11/22/as-science-increasingly-shows-the-role-chemical-substances-play-in-lifestyle-diseases-europe-weakens-its-regulations_6786595_23.html Comments URL:…"
+   "published": "2026-11-23T19:17:55+00:00",
+   "summary": "Article URL: https://arm.jonpalmisc.com/ Comments URL: https://news.ycombinator.com/item?id=50617499 Points: 469 # Comments: 94"
   },
   {
-   "title": "Open Social Web Alliance",
-   "url": "https://osw-alliance.net/en/",
-   "source": "Hacker News",
+   "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+   "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+   "source": "TechCrunch AI",
    "kind": "news",
-   "published": "2026-11-22T15:24:32+00:00",
-   "summary": "Article URL: https://osw-alliance.net/en/ Comments URL: https://news.ycombinator.com/item?id=50600511 Points: 176 # Comments: 181"
+   "published": "2026-11-23T19:14:46+00:00",
+   "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem"
   },
   {
-   "title": "Backblaze customers worried of personal data sale/sharing after policy update",
-   "url": "https://www.neowin.net/news/backblaze-customers-worried-of-personal-data-salesharing-after-policy-update/",
+   "title": "Opus just lost to the last company you'd expect...",
+   "url": "https://www.youtube.com/watch?v=jP9yjEDlc4k",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-23T19:14:30+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/jP9yjEDlc4k/hqdefault.jpg"
+  },
+  {
+   "title": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+   "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-23T19:04:52+00:00",
+   "summary": "Nothing's new AI device is the Ear Note, a set of earbuds and their microphone-equipped charging case that can record and transcribe conversations, with a connected app to manage the recordings, transcriptions and…"
+  },
+  {
+   "title": "Fable 5.2 Is More Capable But Not \"Better\"",
+   "url": "https://www.youtube.com/shorts/l1PlTcVGqok",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-23T19:00:15+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/l1PlTcVGqok/hqdefault.jpg"
+  },
+  {
+   "title": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
+   "url": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-23T18:48:59+00:00",
+   "summary": "It sure looked like President Donald Trump played a role in Jensen Huang's reinstatement as Nvidia CEO - and now the White House is making sure everyone knows he was. \"President Trump was totally involved and this is a…"
+  },
+  {
+   "title": "Apple removed my open-source app from EU App Stores after 9 years",
+   "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
    "source": "Hacker News",
    "kind": "news",
-   "published": "2026-11-22T15:16:02+00:00",
-   "summary": "Article URL: https://www.neowin.net/news/backblaze-customers-worried-of-personal-data-salesharing-after-policy-update/ Comments URL: https://news.ycombinator.com/item?id=50600435 Points: 110 # Comments: 49"
+   "published": "2026-11-23T18:48:10+00:00",
+   "summary": "Article URL: https://github.com/glushchenko/fsnotes/discussions/2056 Comments URL: https://news.ycombinator.com/item?id=50616933 Points: 289 # Comments: 54"
+  },
+  {
+   "title": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-23T18:26:47+00:00",
+   "summary": "In separate but similar lawsuits filed on Monday, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones accused SpaceX of violating state consumer protection laws by ignoring industry-standard…"
+  },
+  {
+   "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+   "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-23T18:12:22+00:00",
+   "summary": "The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy."
+  },
+  {
+   "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+   "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-23T17:36:08+00:00",
+   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be…"
+  },
+  {
+   "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+   "url": "https://huggingface.co/blog/allenai/robotrack",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-23T17:20:37+00:00"
+  },
+  {
+   "title": "Kagi Mail (public beta)",
+   "url": "https://blog.kagi.com/kagi-mail-public-beta",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-23T17:17:01+00:00",
+   "summary": "Article URL: https://blog.kagi.com/kagi-mail-public-beta Comments URL: https://news.ycombinator.com/item?id=50615481 Points: 230 # Comments: 177"
+  },
+  {
+   "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+   "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-23T17:14:23+00:00",
+   "summary": "Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal."
+  },
+  {
+   "title": "Claude AI can review pull requests and ship fixes on its own now",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-23T17:10:02+00:00",
+   "summary": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have…"
+  },
+  {
+   "title": "Dario is hyping the dangers so OSS models are illegal and *he* stays in control",
+   "url": "https://twitter.com/ylecun/status/2124550037912920090",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-23T17:07:26+00:00",
+   "summary": "Article URL: https://twitter.com/ylecun/status/2124550037912920090 Comments URL: https://news.ycombinator.com/item?id=50615308 Points: 494 # Comments: 251"
+  },
+  {
+   "title": "A more tailored Google Search that’s uniquely yours",
+   "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-23T17:00:00+00:00",
+   "summary": "Google Search bar with the text \"Personal Intelligence\" surrounded by the Google Wallet, Google Drive, GMail, Google Photos, Google Calendar, and Google G logo icons"
+  },
+  {
+   "title": "Jensen Huang isn’t out of the woods yet",
+   "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-23T16:57:40+00:00",
+   "summary": "Tech leaders should be clear-eyed about all the problems likely to come with Huang's reinstatement."
+  },
+  {
+   "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+   "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-23T16:39:10+00:00",
+   "summary": "\"I spoke to them, let me put it that way … And I convinced them,\" the president told CNBC."
+  },
+  {
+   "title": "Ladybird is now in alpha",
+   "url": "https://ladybird.org/posts/alpha/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-23T16:13:12+00:00",
+   "summary": "Article URL: https://ladybird.org/posts/alpha/ Comments URL: https://news.ycombinator.com/item?id=50614249 Points: 940 # Comments: 253"
+  },
+  {
+   "title": "Cyberleek posted the GTA 6 Xbox build executable",
+   "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3jzqe/cyberleek_posted_the_gta_6_xbox_build_executable/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-23T14:49:44+00:00",
+   "summary": "Article URL: https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3jzqe/cyberleek_posted_the_gta_6_xbox_build_executable/ Comments URL: https://news.ycombinator.com/item?id=50612686 Points: 194 # Comments: 201"
+  },
+  {
+   "title": "Connected intelligence for in-house legal",
+   "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside…"
+  },
+  {
+   "title": "Claude AI Solved The Secret Of Black Holes",
+   "url": "https://www.youtube.com/watch?v=1jPdehG3Hms",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-23T07:37:52+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/1jPdehG3Hms/hqdefault.jpg"
+  },
+  {
+   "title": "Adding One More Agent: How AI Team Size and Formation Shape Productivity and Diversity in Human-AI Brainstorming Teams",
+   "url": "https://arxiv.org/abs/2611.26663",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26663v1 Announce Type: new Abstract: Generative AI has improved individual productivity, but whether adding a plurality of AI partners helps or hurts remains open. We crossed AI partnership (one versus two)…"
+  },
+  {
+   "title": "Coherence by Construction: Synthesizing CTI Knowledge Graphs and the Formal Limits of Coherence Validation",
+   "url": "https://arxiv.org/abs/2611.26717",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26717v1 Announce Type: new Abstract: Synthesizing relational training data such as knowledge graphs with a large language model typically emits structured objects one at a time, which keeps each object valid…"
+  },
+  {
+   "title": "TOUMAII: A 4.5M-Pair Tool-Calling Preference Dataset and Its Source-Agnostic Generator",
+   "url": "https://arxiv.org/abs/2611.26722",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26722v1 Announce Type: new Abstract: To autonomously execute multi-step tasks, enterprise agents must reliably interact with tools, call APIs, or query databases, making tool-calling a fundamental capability…"
+  },
+  {
+   "title": "ChatAtom: A Multi-Agent LLM System for Molecular Dynamics Simulation and Visualization",
+   "url": "https://arxiv.org/abs/2611.26782",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26782v1 Announce Type: new Abstract: Molecular dynamics (MD) simulation resolves atomic-scale motion and predicts the structural, mechanical, and dynamic properties of materials, making it cen- tral to…"
+  },
+  {
+   "title": "Beyond Final Answers: Interpretable Tumor Immune Microenvironment Reasoning from H&E and mIF",
+   "url": "https://arxiv.org/abs/2611.26794",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26794v1 Announce Type: new Abstract: Readouts of the tumor immune microenvironment (TIME), such as CD8+ T-cell density, intra-epithelial infiltration and the Ki67 index, combine tissue architecture from H&E…"
+  },
+  {
+   "title": "On the loss landscape of the linear neural network: beyond critical points",
+   "url": "https://arxiv.org/abs/2611.26671",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26671v1 Announce Type: new Abstract: While the critical points of the loss landscape in linear neural networks have been extensively studied since the seminal work of Baldi \\& Hornik in the late 1980s, a…"
+  },
+  {
+   "title": "Parasite Features: Causal Abstraction Through Spurious Pathways",
+   "url": "https://arxiv.org/abs/2611.26711",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26711v1 Announce Type: new Abstract: Causal Abstraction defines a notion of \\emph{equivalence} between a neural network and an algorithm, thus serving as a powerful framework for mechanistic interpretability.…"
+  },
+  {
+   "title": "Cross-Attack Robust Aggregation for Federated Learning",
+   "url": "https://arxiv.org/abs/2611.26731",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26731v1 Announce Type: new Abstract: Federated learning (FL) lets resource-constrained IoT and edge devices train a shared model without exchanging raw data, but compromised or faulty devices can poison the…"
+  },
+  {
+   "title": "Depth-Linked Residual Tokens for Multimodal Retrieval and Generation",
+   "url": "https://arxiv.org/abs/2611.26752",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26752v1 Announce Type: new Abstract: Iterative architectures such as looped language models improve parameter efficiency and reasoning capacity of transformers, yet their sequential backbone iterations…"
+  },
+  {
+   "title": "Who Should Verify? Reviewer Selection with Partial Information and Outcome Audits",
+   "url": "https://arxiv.org/abs/2611.26770",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-23T05:00:00+00:00",
+   "summary": "arXiv:2611.26770v1 Announce Type: new Abstract: Selecting an AI reviewer requires evidence about what it does after reading a draft. On a fixed batch of items, a team can keep the original answers or adopt one…"
+  },
+  {
+   "title": "How to build and maintain an agentic evaluation",
+   "url": "https://huggingface.co/blog/agentic-evals",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-23T00:00:00+00:00"
+  },
+  {
+   "title": "Select Styling Specimens",
+   "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-22T19:45:06+00:00",
+   "summary": "Tool: Select Styling Specimens I got frustrated at how HTML boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of…"
   },
   {
    "title": "If you like Open Models, I'm sorry",
@@ -82,76 +312,20 @@
    "thumbnail": "https://i3.ytimg.com/vi/zqzk43bSdDI/hqdefault.jpg"
   },
   {
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-22T00:00:00+00:00",
+   "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities."
+  },
+  {
    "title": "Muru",
    "url": "https://simonwillison.net/2026/Nov/21/muru/",
    "source": "Simon Willison",
    "kind": "news",
    "published": "2026-11-21T23:56:28+00:00",
    "summary": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the…"
-  },
-  {
-   "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-   "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-21T21:37:10+00:00",
-   "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps."
-  },
-  {
-   "title": "A tale of two Nvidias",
-   "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-21T21:07:42+00:00",
-   "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return."
-  },
-  {
-   "title": "The UN fails to agree on rules regulating ‘killer robots’",
-   "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-21T20:03:37+00:00",
-   "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings…"
-  },
-  {
-   "title": "Here are the top AI agents that can live in your text messages",
-   "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-21T17:00:00+00:00",
-   "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work."
-  },
-  {
-   "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
-   "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-21T16:00:00+00:00",
-   "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too."
-  },
-  {
-   "title": "Can Anthropic afford to put safety first?",
-   "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-21T13:29:45+00:00",
-   "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last…"
-  },
-  {
-   "title": "The vibe-coding revolution is coming to all the gadgets",
-   "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-20T21:30:59+00:00",
-   "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback arrives in our subscribers' inboxes on…"
-  },
-  {
-   "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
-   "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-20T19:53:41+00:00",
-   "summary": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building."
   },
   {
    "title": "If you’ve deployed anything since 2015, I have bad news...",
@@ -170,28 +344,12 @@
    "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking…"
   },
   {
-   "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-   "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-20T18:50:19+00:00",
-   "summary": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them.…"
-  },
-  {
    "title": "The most misunderstood graph in AI just got a major update",
    "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
    "source": "MIT Tech Review",
    "kind": "news",
    "published": "2026-11-20T18:15:15+00:00",
    "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require…"
-  },
-  {
-   "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-20T16:57:47+00:00",
-   "summary": "Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's…"
   },
   {
    "title": "Quoting Levent Alpöge",
@@ -234,6 +392,20 @@
    "summary": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it…"
   },
   {
+   "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+   "url": "https://huggingface.co/blog/inkling2mini",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-20T00:00:00+00:00"
+  },
+  {
+   "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+   "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-20T00:00:00+00:00"
+  },
+  {
    "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
    "url": "https://openai.com/business/customer-stories/hebbia",
    "source": "OpenAI",
@@ -250,28 +422,6 @@
    "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery."
   },
   {
-   "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-   "url": "https://huggingface.co/blog/inkling2mini",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-20T00:00:00+00:00"
-  },
-  {
-   "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
-   "url": "https://huggingface.co/blog/harness-adapters-at-scale",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-20T00:00:00+00:00"
-  },
-  {
-   "title": "PostgreSQL 19 Released",
-   "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-19T20:43:57+00:00",
-   "summary": "PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of…"
-  },
-  {
    "title": "Anthropic IPOs, GPT 6.2 Astra Arrives, But There’s a Bigger Story",
    "url": "https://www.youtube.com/watch?v=KGA7B_c_S4s",
    "source": "AI Explained",
@@ -286,14 +436,6 @@
    "kind": "news",
    "published": "2026-11-19T18:00:00+00:00",
    "summary": "Gemini spark on a space background"
-  },
-  {
-   "title": "I'm gonna miss coding",
-   "url": "https://www.youtube.com/watch?v=TDoXk7o3rxs",
-   "source": "Theo",
-   "kind": "video",
-   "published": "2026-11-19T17:59:24+00:00",
-   "thumbnail": "https://i1.ytimg.com/vi/TDoXk7o3rxs/hqdefault.jpg"
   },
   {
    "title": "The only software that didn’t break this week...",
@@ -328,14 +470,6 @@
    "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast."
   },
   {
-   "title": "Deploying Daybreak Red",
-   "url": "https://openai.com/business/learn/deploying-daybreak-red",
-   "source": "OpenAI",
-   "kind": "news",
-   "published": "2026-11-19T00:00:00+00:00",
-   "summary": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring."
-  },
-  {
    "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
    "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
    "source": "Hugging Face",
@@ -358,13 +492,6 @@
    "summary": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today."
   },
   {
-   "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
-   "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-18T15:00:23+00:00"
-  },
-  {
    "title": "The AI Hype Index: AI is everywhere",
    "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
    "source": "MIT Tech Review",
@@ -379,13 +506,6 @@
    "kind": "news",
    "published": "2026-11-18T10:20:30+00:00",
    "summary": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced…"
-  },
-  {
-   "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
-   "url": "https://huggingface.co/blog/moe-expert-streaming",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-18T00:00:00+00:00"
   },
   {
    "title": "Put Gemini to work for you",
@@ -428,46 +548,6 @@
    "thumbnail": "https://i4.ytimg.com/vi/gl2U4fGTr6g/hqdefault.jpg"
   },
   {
-   "title": "Why Microsoft couldn’t fix its own servers for 36 hours...",
-   "url": "https://www.youtube.com/watch?v=ytmawkPTP24",
-   "source": "Fireship",
-   "kind": "video",
-   "published": "2026-11-16T20:18:59+00:00",
-   "thumbnail": "https://i2.ytimg.com/vi/ytmawkPTP24/hqdefault.jpg"
-  },
-  {
-   "title": "The open-source movement wants Jensen Huang back",
-   "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-11-16T18:38:47+00:00",
-   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began…"
-  },
-  {
-   "title": "Building trustworthy AI by fencing it in, not predicting it",
-   "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-11-16T16:04:28+00:00",
-   "summary": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other…"
-  },
-  {
-   "title": "New Ask Maps features to help with holiday travel and prep",
-   "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
-   "source": "Google AI",
-   "kind": "news",
-   "published": "2026-11-16T14:00:00+00:00",
-   "summary": "tbd"
-  },
-  {
-   "title": "AI Can Do Everything…Except This",
-   "url": "https://www.youtube.com/watch?v=x7iwI6WfWS0",
-   "source": "Two Minute Papers",
-   "kind": "video",
-   "published": "2026-11-14T08:40:55+00:00",
-   "thumbnail": "https://i1.ytimg.com/vi/x7iwI6WfWS0/hqdefault.jpg"
-  },
-  {
    "title": "Atomic Operations - Computerphile",
    "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
    "source": "Computerphile",
@@ -490,14 +570,6 @@
    "kind": "video",
    "published": "2026-11-05T14:00:16+00:00",
    "thumbnail": "https://i3.ytimg.com/vi/BmBw827GgFA/hqdefault.jpg"
-  },
-  {
-   "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
-   "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
-   "source": "AI Explained",
-   "kind": "video",
-   "published": "2026-11-02T17:02:16+00:00",
-   "thumbnail": "https://i1.ytimg.com/vi/0Kw6_DTZPrY/hqdefault.jpg"
   }
  ]
 }
