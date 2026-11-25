@@ -397,7 +397,7 @@ em {
 
 .reel-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid var(--line);
 }
 
@@ -410,7 +410,8 @@ em {
   transition: background 0.18s ease, color 0.18s ease;
 }
 
-.reel:last-child { border-right: none; }
+.reel:nth-child(2n) { border-right: none; }
+.reel:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
 
 .reel-kicker { color: var(--accent); letter-spacing: 0.14em; }
 
