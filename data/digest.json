@@ -1,6 +1,259 @@
 {
- "generated_at": "2026-11-25T21:06:23.736906+00:00",
+ "generated_at": "2026-11-26T21:06:17.960001+00:00",
  "items": [
+  {
+   "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+   "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-26T20:03:54+00:00",
+   "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China."
+  },
+  {
+   "title": "CTO of 'RansomwareHelp' Indicted for Wire Fraud",
+   "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-26T17:47:45+00:00",
+   "summary": "Article URL: https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/ Comments URL: https://news.ycombinator.com/item?id=50657645 Points: 118 # Comments: 52"
+  },
+  {
+   "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+   "url": "https://github.com/antonpictures/youtube-punisher",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-26T17:36:47+00:00",
+   "summary": "Article URL: https://github.com/antonpictures/youtube-punisher Comments URL: https://news.ycombinator.com/item?id=50657530 Points: 111 # Comments: 166"
+  },
+  {
+   "title": "Tracking Diseases Cured by AI",
+   "url": "https://diseasescuredbyai.com/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-26T17:16:41+00:00",
+   "summary": "Article URL: https://diseasescuredbyai.com/ Comments URL: https://news.ycombinator.com/item?id=50657307 Points: 283 # Comments: 173"
+  },
+  {
+   "title": "AMD Specific Patches for Llama.cpp",
+   "url": "https://devnull.land/amd-specific-llama-cpp",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-26T17:11:29+00:00",
+   "summary": "Article URL: https://devnull.land/amd-specific-llama-cpp Comments URL: https://news.ycombinator.com/item?id=50657265 Points: 183 # Comments: 48"
+  },
+  {
+   "title": "NP_R ≠ PAR_R",
+   "url": "https://github.com/samueleverett01/bss-permanent-separations",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-26T16:50:55+00:00",
+   "summary": "Article URL: https://github.com/samueleverett01/bss-permanent-separations Comments URL: https://news.ycombinator.com/item?id=50657059 Points: 121 # Comments: 140"
+  },
+  {
+   "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+   "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-26T16:00:00+00:00",
+   "summary": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time."
+  },
+  {
+   "title": "Quoting Jack Despain Zhou",
+   "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-26T15:09:31+00:00",
+   "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find…"
+  },
+  {
+   "title": "Tell HN: Happy Thanksgiving",
+   "url": "https://news.ycombinator.com/item?id=50655664",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-26T14:26:54+00:00",
+   "summary": "Hopefully it’s a great day spent with your friends and family. And if it’s not, make it a great day anyway! Comments URL: https://news.ycombinator.com/item?id=50655664 Points: 506 # Comments: 128"
+  },
+  {
+   "title": "Jensen Huang deepfakes are the hot new AI slop",
+   "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-26T12:29:18+00:00",
+   "summary": "Jensen Huang is partying it up in Ibiza. In a video with nearly 6 million views on Instagram, the former CEO of Nvidia is dancing in a crowded club, champagne glass in hand, still wearing his signature black leather…"
+  },
+  {
+   "title": "Nextcloud Office Desktop app",
+   "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-26T11:50:49+00:00",
+   "summary": "Article URL: https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/ Comments URL: https://news.ycombinator.com/item?id=50654289 Points: 367 # Comments: 183"
+  },
+  {
+   "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+   "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-26T11:37:17+00:00"
+  },
+  {
+   "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+   "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-26T09:54:40+00:00",
+   "summary": "A coalition of 42 state attorneys general is trying to prevent Character.AI from selling off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly identical press releases, the various AGs…"
+  },
+  {
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-26T09:44:23+00:00",
+   "summary": "Article URL: https://techstackups.com/articles/google-workspace-ai-agents-mcp/ Comments URL: https://news.ycombinator.com/item?id=50653477 Points: 142 # Comments: 157"
+  },
+  {
+   "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+   "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-26T06:08:25+00:00",
+   "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025…"
+  },
+  {
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-26T05:08:46+00:00",
+   "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features — Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly…"
+  },
+  {
+   "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+   "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-26T05:05:36+00:00"
+  },
+  {
+   "title": "Attributing Agentic Failure in Reasoning Vision-Language Models with Interactive 2D Environments",
+   "url": "https://arxiv.org/abs/2611.33162",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33162v1 Announce Type: new Abstract: Agentic benchmarks report a success rate that confounds distinct causes of failure: misreading the environment, never working out how components of the environment…"
+  },
+  {
+   "title": "Quantum Machine Learning for Signature Forgery Detection",
+   "url": "https://arxiv.org/abs/2611.33163",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33163v1 Announce Type: new Abstract: Offline handwritten signatures remain a primary behavioural biometric in legal and financial documents. Detecting skilled forgeries from a static raster image is hard…"
+  },
+  {
+   "title": "Code availability is not enough: schemas for documenting and extending data analysis",
+   "url": "https://arxiv.org/abs/2611.33167",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33167v1 Announce Type: new Abstract: A data analysis involves a sequence of decisions, from data cleaning to model specification, each of which can affect the reported result. Reproducing that result is not…"
+  },
+  {
+   "title": "Temporal Exposure to Byzantine Vulnerability Under Intermittent Participation in Federated Learning",
+   "url": "https://arxiv.org/abs/2611.33168",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33168v1 Announce Type: new Abstract: In this paper, we study the effect of participation variability on per-round Byzantine vulnerability. We formalise Dynamic Participation Exposure (DPE), a phenomenon in…"
+  },
+  {
+   "title": "Geophysics-informed invertible operator network for Bayesian geophysical inversion",
+   "url": "https://arxiv.org/abs/2611.33178",
+   "source": "arXiv cs.LG",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33178v1 Announce Type: new Abstract: Geophysical inverse problems are inherently ill-posed because of sparse observations and measurement noise. Classical sampling-based Bayesian inference methods, such as…"
+  },
+  {
+   "title": "Context Scaling: A New Frontier of AI Scaling",
+   "url": "https://arxiv.org/abs/2611.33160",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33160v1 Announce Type: new Abstract: Many failures of deployed AI arise not from weak inference but from a mismatch between the state a task depends on and the context available when the system acts. Relevant…"
+  },
+  {
+   "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+   "url": "https://arxiv.org/abs/2611.33161",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each…"
+  },
+  {
+   "title": "AutoformBench: A Lean Formalization Benchmark for Advanced Mathematics",
+   "url": "https://arxiv.org/abs/2611.33165",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33165v1 Announce Type: new Abstract: AI systems are increasingly capable of producing machine-checked Lean proofs of advanced mathematical results. Real mathematical formalization, however, is not isolated…"
+  },
+  {
+   "title": "General-Purpose Decision Models for AI Configuration Tuning",
+   "url": "https://arxiv.org/abs/2611.33190",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33190v1 Announce Type: new Abstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget. Existing tuners use different sampling and search…"
+  },
+  {
+   "title": "What, Who, and When: Structured Harm Assessment for Mental Health Safety via Short Reasoning",
+   "url": "https://arxiv.org/abs/2611.33263",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-26T05:00:00+00:00",
+   "summary": "arXiv:2611.33263v1 Announce Type: new Abstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns. Existing guard models primarily identify categories of harmful…"
+  },
+  {
+   "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+   "url": "https://huggingface.co/blog/training-swarms",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-26T00:00:00+00:00"
+  },
+  {
+   "title": "Quoting Scott Aaronson",
+   "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-25T23:26:32+00:00",
+   "summary": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van…"
+  },
+  {
+   "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+   "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-25T22:44:32+00:00",
+   "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating."
+  },
+  {
+   "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+   "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-25T21:51:26+00:00",
+   "summary": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users.…"
+  },
+  {
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-25T21:18:02+00:00",
+   "summary": "https://archive.ph/pcUgy Comments URL: https://news.ycombinator.com/item?id=50647673 Points: 634 # Comments: 505"
+  },
   {
    "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
    "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
@@ -26,14 +279,6 @@
    "summary": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development."
   },
   {
-   "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-   "url": "https://scottaaronson.blog/?p=10379",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-25T19:11:27+00:00",
-   "summary": "See also The matrix multiplication exponent is nine fourths [pdf] - https://news.ycombinator.com/item?id=50637220 Comments URL: https://news.ycombinator.com/item?id=50646108 Points: 387 # Comments: 243"
-  },
-  {
    "title": "Where scientists draw the line on AI agents",
    "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
    "source": "Hugging Face",
@@ -41,12 +286,12 @@
    "published": "2026-11-25T18:52:55+00:00"
   },
   {
-   "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
-   "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
-   "source": "TechCrunch AI",
+   "title": "datasette-charts 0.3a0",
+   "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+   "source": "Simon Willison",
    "kind": "news",
-   "published": "2026-11-25T18:11:46+00:00",
-   "summary": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development."
+   "published": "2026-11-25T18:16:50+00:00",
+   "summary": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations…"
   },
   {
    "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
@@ -57,14 +302,6 @@
    "summary": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative. With several others also pursuing…"
   },
   {
-   "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
-   "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-25T17:35:58+00:00",
-   "summary": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said."
-  },
-  {
    "title": "17 million lines of AI slop just cracked a 167-year-old math problem...",
    "url": "https://www.youtube.com/watch?v=Jatwf_XOncE",
    "source": "Fireship",
@@ -73,60 +310,12 @@
    "thumbnail": "https://i3.ytimg.com/vi/Jatwf_XOncE/hqdefault.jpg"
   },
   {
-   "title": "1Password Security Incident",
-   "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-25T17:18:26+00:00",
-   "summary": "Article URL: https://1password.com/blog/update-on-nov-2026-security-incident Comments URL: https://news.ycombinator.com/item?id=50644817 Points: 720 # Comments: 296"
-  },
-  {
    "title": "Nothing offers a full look at its AI earbuds and charging case",
    "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
    "source": "The Verge AI",
    "kind": "news",
    "published": "2026-11-25T16:00:59+00:00",
    "summary": "Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcribe, and summarize…"
-  },
-  {
-   "title": "Investigating degraded experiences across GitHub products",
-   "url": "https://www.githubstatus.com/incidents/qn8mfv6q5hlx",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-25T15:59:23+00:00",
-   "summary": "Article URL: https://www.githubstatus.com/incidents/qn8mfv6q5hlx Comments URL: https://news.ycombinator.com/item?id=50643720 Points: 172 # Comments: 90"
-  },
-  {
-   "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
-   "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
-   "source": "TechCrunch AI",
-   "kind": "news",
-   "published": "2026-11-25T15:41:43+00:00",
-   "summary": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that…"
-  },
-  {
-   "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
-   "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-25T15:14:32+00:00",
-   "summary": "Article URL: https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts Comments URL: https://news.ycombinator.com/item?id=50643129 Points: 371 # Comments: 92"
-  },
-  {
-   "title": "Rumors swirling that labs might have cracked Factoring in P",
-   "url": "https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-25T15:08:44+00:00",
-   "summary": "Article URL: https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/ Comments URL: https://news.ycombinator.com/item?id=50643065 Points: 388 # Comments: 271"
-  },
-  {
-   "title": "I checked Clojure's core with Lean and found unreported bugs",
-   "url": "https://s.conao3.com/blog/2026/e4f733",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-25T14:56:52+00:00",
-   "summary": "Article URL: https://s.conao3.com/blog/2026/e4f733 Comments URL: https://news.ycombinator.com/item?id=50642939 Points: 134 # Comments: 50"
   },
   {
    "title": "Amazon is reportedly in talks to end Muse AI shopping block",
@@ -160,92 +349,12 @@
    "thumbnail": "https://i1.ytimg.com/vi/hwWlEuI359w/hqdefault.jpg"
   },
   {
-   "title": "Local subspace encoding for spectral prediction: from TabPFN to operator-adaptive calibration",
-   "url": "https://arxiv.org/abs/2611.31245",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31245v1 Announce Type: new Abstract: TabPFN has already shown useful predictive performance on near-infrared spectra. RamanPFN subsequently proposed two spectral representations for tabular inference: Global…"
-  },
-  {
-   "title": "Actionwave: A Systematic Benchmark for Waveform-Centric Clinical Prediction Across Care Scenarios",
-   "url": "https://arxiv.org/abs/2611.31249",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31249v1 Announce Type: new Abstract: Continuous bedside waveforms record rapid physiological changes that can inform clinical decisions. Existing benchmarks examine selected prediction conditions, but it…"
-  },
-  {
-   "title": "Chain-of-Thought Is Not Explainability",
-   "url": "https://arxiv.org/abs/2611.31271",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31271v1 Announce Type: new Abstract: Chain-of-thought (CoT) allows language models to verbalise multi-step rationales before producing their final answer. While this technique often boosts task performance…"
-  },
-  {
-   "title": "Hidden Clues in WM-811K: Uncovering the Spatial Signals Behind Wafer Map Prediction",
-   "url": "https://arxiv.org/abs/2611.31292",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31292v1 Announce Type: new Abstract: WM-811K (also known as LSWMD) is a wafer map dataset first made publicly available in a 2015 paper by Wu et al. Convolutional neural networks have been used to achieve…"
-  },
-  {
-   "title": "Conformalized Tree-Based Gradient Ensembles for Out-of-Distribution Detection and Plausible Recourse",
-   "url": "https://arxiv.org/abs/2611.31319",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31319v1 Announce Type: new Abstract: Counterfactual recourse provides actionable feature adjustments that reverse unfavourable predictions made by automated decision models. However, when recourse search…"
-  },
-  {
-   "title": "Irreducible Governance Structure for Autonomous Agent Systems: Fair Allocation, Strategy-Proofness, and Multi-Scale Composition",
-   "url": "https://arxiv.org/abs/2611.31284",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31284v1 Announce Type: new Abstract: Autonomous agent governance is commonly framed as a problem of enforcing correct execution. However, in multi-agent systems, an equally fundamental question precedes…"
-  },
-  {
-   "title": "MOZAIC: An Audio-Video Deepfake Benchmark for Telling What Is Fake",
-   "url": "https://arxiv.org/abs/2611.31301",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31301v1 Announce Type: new Abstract: Audio-video (AV) deepfakes can fake the face, the voice, or both. Most benchmarks only ask whether a clip is real or fake, so they cannot show whether a detector relies on…"
-  },
-  {
-   "title": "Conservative Overlap Fuzzy Rough Sets for Incomplete Data",
-   "url": "https://arxiv.org/abs/2611.31329",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31329v1 Announce Type: new Abstract: Attribute reduction in incomplete information systems is difficult because missing values break the equivalence-class structure of rough set theory. We propose the…"
-  },
-  {
-   "title": "Beyond Static Charts: Benchmarking Interactive Chart-to-Code Generation for MLLMs",
-   "url": "https://arxiv.org/abs/2611.31345",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31345v1 Announce Type: new Abstract: In recent years, multimodal large language models (MLLMs) have achieved significant progress in chart-to-code generation. However, existing benchmarks mainly focus on…"
-  },
-  {
-   "title": "What People Choose Not to Say: A Multimodal Benchmark for Fine-Grained Information Manipulation in Conversations",
-   "url": "https://arxiv.org/abs/2611.31346",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-25T05:00:00+00:00",
-   "summary": "arXiv:2611.31346v1 Announce Type: new Abstract: Recent advances in MLLMs have improved social understanding, enabling models to recognize emotions and distinguish truthful from deceptive behaviors. However, existing…"
-  },
-  {
    "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
    "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
    "source": "Hacker News · AI",
    "kind": "news",
    "published": "2026-11-25T03:47:42+00:00",
-   "summary": "Article URL: https://www.marginalia.nu/log/a_141_marginalia_update/ Comments URL: https://news.ycombinator.com/item?id=50638220 Points: 210 # Comments: 81"
+   "summary": "Article URL: https://www.marginalia.nu/log/a_141_marginalia_update/ Comments URL: https://news.ycombinator.com/item?id=50638220 Points: 222 # Comments: 85"
   },
   {
    "title": "Top open problems in mathematics ranked by LLM-assessed importance",
@@ -253,7 +362,7 @@
    "source": "Hacker News · AI",
    "kind": "news",
    "published": "2026-11-25T03:01:36+00:00",
-   "summary": "Article URL: https://www.proofatlas.ai/open-problems/ Comments URL: https://news.ycombinator.com/item?id=50637871 Points: 99 # Comments: 49"
+   "summary": "Article URL: https://www.proofatlas.ai/open-problems/ Comments URL: https://news.ycombinator.com/item?id=50637871 Points: 104 # Comments: 53"
   },
   {
    "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
@@ -276,15 +385,7 @@
    "source": "Hacker News · AI",
    "kind": "news",
    "published": "2026-11-24T21:07:38+00:00",
-   "summary": "Article URL: https://www.anthropic.com/research/working-with-ai Comments URL: https://news.ycombinator.com/item?id=50634734 Points: 85 # Comments: 74"
-  },
-  {
-   "title": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
-   "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-24T20:52:19+00:00",
-   "summary": "Nvidia CEO Jensen Huang apologized to staff during his first all-hands since returning to the company, while attempting to distance himself from the narrative that the White House and tech leaders helped him get his job…"
+   "summary": "Article URL: https://www.anthropic.com/research/working-with-ai Comments URL: https://news.ycombinator.com/item?id=50634734 Points: 89 # Comments: 77"
   },
   {
    "title": "Which One Should You Use: Fable 5.2 or Opus 5.5",
@@ -303,45 +404,6 @@
    "thumbnail": "https://i1.ytimg.com/vi/4nFA4zntF7I/hqdefault.jpg"
   },
   {
-   "title": "David Fincher is being dragged for suspected use of AI in his latest film",
-   "url": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-24T18:38:16+00:00",
-   "summary": "Though David Fincher's fans had been eagerly anticipating The Further Mis-Adventures of Cliff Booth, early screenings of the Once Upon a Time in Hollywood sequel starring Brad Pitt have raised questions about whether…"
-  },
-  {
-   "title": "Tidal will start banning AI-generated music next month",
-   "url": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-24T17:17:09+00:00",
-   "summary": "Tidal is officially banning AI-generated music on December 9th. As a result of this change, Tidal will delete around 29 million AI-generated songs and reject an estimated 80,000 to 85,000 tracks per day, according to…"
-  },
-  {
-   "title": "GPT 6.2 Astra Solves a Historical Mystery",
-   "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-24T16:53:59+00:00",
-   "summary": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to…"
-  },
-  {
-   "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
-   "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-24T16:34:13+00:00"
-  },
-  {
-   "title": "Tidal bans AI-generated music",
-   "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-24T16:12:38+00:00",
-   "summary": "Article URL: https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/ Comments URL: https://news.ycombinator.com/item?id=50630309 Points: 334 # Comments: 328"
-  },
-  {
    "title": "How Gemini is changing the game for Golden State's organization and fans.",
    "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
    "source": "Google AI",
@@ -358,44 +420,12 @@
    "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets."
   },
   {
-   "title": "LLM agents work for their parent companies, not for you",
-   "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-24T12:40:15+00:00",
-   "summary": "Article URL: https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/ Comments URL: https://news.ycombinator.com/item?id=50627340 Points: 997 # Comments: 410"
-  },
-  {
    "title": "Searching for distant planets with Astra",
    "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
    "source": "OpenAI",
    "kind": "news",
    "published": "2026-11-24T11:00:00+00:00",
    "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes."
-  },
-  {
-   "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
-   "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-24T09:39:50+00:00",
-   "summary": "Article URL: https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex/ Comments URL: https://news.ycombinator.com/item?id=50625888 Points: 81 # Comments: 40"
-  },
-  {
-   "title": "datasette-charts 0.2a0",
-   "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-24T04:24:29+00:00",
-   "summary": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you…"
-  },
-  {
-   "title": "datasette-agent 0.7a1",
-   "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-24T03:45:57+00:00",
-   "summary": "Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment…"
   },
   {
    "title": "How Intentful uses dots to make more time for growth",
@@ -419,22 +449,6 @@
    "kind": "news",
    "published": "2026-11-24T00:00:00+00:00",
    "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning."
-  },
-  {
-   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-   "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-23T23:40:49+00:00",
-   "summary": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a…"
-  },
-  {
-   "title": "Ladybird's first alpha release",
-   "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
-   "source": "Simon Willison",
-   "kind": "news",
-   "published": "2026-11-23T21:46:35+00:00",
-   "summary": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few…"
   },
   {
    "title": "OpenAI and Cisco introduce Shirudo",
@@ -485,13 +499,6 @@
    "thumbnail": "https://i2.ytimg.com/vi/1jPdehG3Hms/hqdefault.jpg"
   },
   {
-   "title": "How to build and maintain an agentic evaluation",
-   "url": "https://huggingface.co/blog/agentic-evals",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-23T00:00:00+00:00"
-  },
-  {
    "title": "If you like Open Models, I'm sorry",
    "url": "https://www.youtube.com/watch?v=B2rFx4Fy1us",
    "source": "Theo",
@@ -524,35 +531,12 @@
    "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require…"
   },
   {
-   "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-   "url": "https://huggingface.co/blog/inkling2mini",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-20T00:00:00+00:00"
-  },
-  {
    "title": "Anthropic IPOs, GPT 6.2 Astra Arrives, But There’s a Bigger Story",
    "url": "https://www.youtube.com/watch?v=KGA7B_c_S4s",
    "source": "AI Explained",
    "kind": "video",
    "published": "2026-11-19T20:03:10+00:00",
    "thumbnail": "https://i4.ytimg.com/vi/KGA7B_c_S4s/hqdefault.jpg"
-  },
-  {
-   "title": "Introducing Tool Retrieval in the Gemini API",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-   "source": "Google AI",
-   "kind": "news",
-   "published": "2026-11-19T18:00:00+00:00",
-   "summary": "Gemini spark on a space background"
-  },
-  {
-   "title": "Walter Isaacson on curiosity and creativity in the AI age.",
-   "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
-   "source": "Google AI",
-   "kind": "news",
-   "published": "2026-11-19T17:00:00+00:00",
-   "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode."
   },
   {
    "title": "DeepMind Just Released The Best Thing AI Ever Did",
@@ -563,7 +547,7 @@
    "thumbnail": "https://i4.ytimg.com/vi/Cy7Wz6Z4TWU/hqdefault.jpg"
   },
   {
-   "title": "This algorithm changed how I think about compression | Information theory, part 3",
+   "title": "This algorithm changed how I think about compression | Compression & Intelligence, part 3",
    "url": "https://www.youtube.com/watch?v=qbsb9DpdZ6s",
    "source": "3Blue1Brown",
    "kind": "video",
@@ -593,14 +577,6 @@
    "kind": "video",
    "published": "2026-11-10T23:11:36+00:00",
    "thumbnail": "https://i2.ytimg.com/vi/583ThJIqQ7k/hqdefault.jpg"
-  },
-  {
-   "title": "Mutex Explained - Computerphile",
-   "url": "https://www.youtube.com/watch?v=BmBw827GgFA",
-   "source": "Computerphile",
-   "kind": "video",
-   "published": "2026-11-05T14:00:16+00:00",
-   "thumbnail": "https://i3.ytimg.com/vi/BmBw827GgFA/hqdefault.jpg"
   }
  ]
 }
