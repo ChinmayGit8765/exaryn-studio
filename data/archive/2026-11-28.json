@@ -1,0 +1,534 @@
+{
+ "generated_at": "2026-11-27T21:05:35.937602+00:00",
+ "items": [
+  {
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T19:31:01+00:00",
+   "summary": "Article URL: https://twitter.com/michael_nielsen/status/2126359767362748777 Comments URL: https://news.ycombinator.com/item?id=50670757 Points: 138 # Comments: 92"
+  },
+  {
+   "title": "Convex skills send the user's app idea to a remote server without telling them",
+   "url": "https://github.com/convex/convex-backend-skill/issues/64",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T18:02:45+00:00",
+   "summary": "Article URL: https://github.com/convex/convex-backend-skill/issues/64 Comments URL: https://news.ycombinator.com/item?id=50669765 Points: 118 # Comments: 44"
+  },
+  {
+   "title": "I'm Scared of AI",
+   "url": "https://thesoapbox.email/archive/3",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-27T17:45:31+00:00",
+   "summary": "Article URL: https://thesoapbox.email/archive/3 Comments URL: https://news.ycombinator.com/item?id=50669561 Points: 191 # Comments: 214"
+  },
+  {
+   "title": "The wild world of tech in 2027...",
+   "url": "https://www.youtube.com/watch?v=sPGzM3ktJVE",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-27T16:08:25+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/sPGzM3ktJVE/hqdefault.jpg"
+  },
+  {
+   "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+   "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T15:40:31+00:00",
+   "summary": "Article URL: https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer Comments URL: https://news.ycombinator.com/item?id=50668145 Points: 282 # Comments: 160"
+  },
+  {
+   "title": "False computer-checked proofs",
+   "url": "https://cr.yp.to/proofs/falseccp.html",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T15:26:09+00:00",
+   "summary": "Article URL: https://cr.yp.to/proofs/falseccp.html Comments URL: https://news.ycombinator.com/item?id=50667989 Points: 135 # Comments: 60"
+  },
+  {
+   "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+   "url": "https://bouncemarket.minhanhday.com/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T15:01:50+00:00",
+   "summary": "a ball will fall. trade on where it lands. I made this game! Some technical details: The entire drop of the ball is simulated server-side, then streamed to each client as server-sent events with a small buffer. Every…"
+  },
+  {
+   "title": "US Air Force's cloud computing platform hacked",
+   "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T12:54:11+00:00",
+   "summary": "Article URL: https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163 Comments URL: https://news.ycombinator.com/item?id=50666375 Points: 281 # Comments: 178"
+  },
+  {
+   "title": "AI on brink of making online security useless, mathematicians fear",
+   "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-27T11:09:04+00:00",
+   "summary": "https://archive.ph/4hRp8 Comments URL: https://news.ycombinator.com/item?id=50665488 Points: 111 # Comments: 146"
+  },
+  {
+   "title": "DeepMind’s New AI Just Changed The AI Race",
+   "url": "https://www.youtube.com/watch?v=u6UYsl-KEoc",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-27T08:42:30+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/u6UYsl-KEoc/hqdefault.jpg"
+  },
+  {
+   "title": "Group chat where your AI talks behind your back",
+   "url": "https://construct22.com/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-27T06:44:34+00:00",
+   "summary": "Article URL: https://construct22.com/ Comments URL: https://news.ycombinator.com/item?id=50663595 Points: 633 # Comments: 273"
+  },
+  {
+   "title": "Context Scaling: A New Frontier of AI Scaling",
+   "url": "https://arxiv.org/abs/2611.33160",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33160v1 Announce Type: new Abstract: Many failures of deployed AI arise not from weak inference but from a mismatch between the state a task depends on and the context available when the system acts. Relevant…"
+  },
+  {
+   "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+   "url": "https://arxiv.org/abs/2611.33161",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each…"
+  },
+  {
+   "title": "AutoformBench: A Lean Formalization Benchmark for Advanced Mathematics",
+   "url": "https://arxiv.org/abs/2611.33165",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33165v1 Announce Type: new Abstract: AI systems are increasingly capable of producing machine-checked Lean proofs of advanced mathematical results. Real mathematical formalization, however, is not isolated…"
+  },
+  {
+   "title": "General-Purpose Decision Models for AI Configuration Tuning",
+   "url": "https://arxiv.org/abs/2611.33190",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33190v1 Announce Type: new Abstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget. Existing tuners use different sampling and search…"
+  },
+  {
+   "title": "What, Who, and When: Structured Harm Assessment for Mental Health Safety via Short Reasoning",
+   "url": "https://arxiv.org/abs/2611.33263",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33263v1 Announce Type: new Abstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns. Existing guard models primarily identify categories of harmful…"
+  },
+  {
+   "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+   "url": "https://huggingface.co/blog/video-trainium3",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-27T00:00:00+00:00"
+  },
+  {
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-26T21:47:45+00:00",
+   "summary": "Article URL: https://janlukas.blog/posts/ai-self-hosting Comments URL: https://news.ycombinator.com/item?id=50660180 Points: 1042 # Comments: 492"
+  },
+  {
+   "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+   "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-26T20:03:54+00:00",
+   "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China."
+  },
+  {
+   "title": "Tracking Diseases Cured by AI",
+   "url": "https://diseasescuredbyai.com/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-26T17:16:41+00:00",
+   "summary": "Article URL: https://diseasescuredbyai.com/ Comments URL: https://news.ycombinator.com/item?id=50657307 Points: 317 # Comments: 192"
+  },
+  {
+   "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+   "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-26T16:00:00+00:00",
+   "summary": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time."
+  },
+  {
+   "title": "Quoting Jack Despain Zhou",
+   "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-26T15:09:31+00:00",
+   "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find…"
+  },
+  {
+   "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+   "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-26T11:37:17+00:00"
+  },
+  {
+   "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+   "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-26T09:54:40+00:00",
+   "summary": "A coalition of 42 state attorneys general is trying to prevent Character.AI from selling off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly identical press releases, the various AGs…"
+  },
+  {
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-26T09:44:23+00:00",
+   "summary": "Article URL: https://techstackups.com/articles/google-workspace-ai-agents-mcp/ Comments URL: https://news.ycombinator.com/item?id=50653477 Points: 416 # Comments: 329"
+  },
+  {
+   "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+   "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-26T06:08:25+00:00",
+   "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025…"
+  },
+  {
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-26T05:08:46+00:00",
+   "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features — Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly…"
+  },
+  {
+   "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+   "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-26T05:05:36+00:00"
+  },
+  {
+   "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+   "url": "https://huggingface.co/blog/training-swarms",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-26T00:00:00+00:00"
+  },
+  {
+   "title": "Quoting Scott Aaronson",
+   "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-25T23:26:32+00:00",
+   "summary": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van…"
+  },
+  {
+   "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+   "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-25T22:44:32+00:00",
+   "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating."
+  },
+  {
+   "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+   "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-25T21:51:26+00:00",
+   "summary": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users.…"
+  },
+  {
+   "title": "Android’s DIY widgets are a bit of vibe-coding fun",
+   "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-25T21:43:14+00:00",
+   "summary": "Aside from dealing with my calendar, there's one thing I want AI to do: tell me if I'm about to miss the bus. What I need is a widget. It needs to tell me real-time arrivals for the bus stop near my house. Tapping…"
+  },
+  {
+   "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+   "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-25T20:03:27+00:00",
+   "summary": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences."
+  },
+  {
+   "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+   "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-25T19:54:57+00:00",
+   "summary": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences."
+  },
+  {
+   "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+   "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+   "source": "TechCrunch AI",
+   "kind": "news",
+   "published": "2026-11-25T19:44:24+00:00",
+   "summary": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development."
+  },
+  {
+   "title": "Where scientists draw the line on AI agents",
+   "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-25T18:52:55+00:00"
+  },
+  {
+   "title": "datasette-charts 0.3a0",
+   "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-25T18:16:50+00:00",
+   "summary": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations…"
+  },
+  {
+   "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+   "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-25T17:44:57+00:00",
+   "summary": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative. With several others also pursuing…"
+  },
+  {
+   "title": "17 million lines of AI slop just cracked a 167-year-old math problem...",
+   "url": "https://www.youtube.com/watch?v=Jatwf_XOncE",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-25T17:19:51+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/Jatwf_XOncE/hqdefault.jpg"
+  },
+  {
+   "title": "Nothing offers a full look at its AI earbuds and charging case",
+   "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-25T16:00:59+00:00",
+   "summary": "Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcribe, and summarize…"
+  },
+  {
+   "title": "Amazon is reportedly in talks to end Muse AI shopping block",
+   "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+   "source": "The Verge AI",
+   "kind": "news",
+   "published": "2026-11-25T14:12:33+00:00",
+   "summary": "Amazon has held talks about letting Meta's Muse AI agent shop on its online marketplace, according to a report from Fortune. The discussions, which could end Amazon's block on Muse, reportedly center on the kinds of…"
+  },
+  {
+   "title": "An Indic Voice Agent with CUGA",
+   "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-25T10:22:09+00:00"
+  },
+  {
+   "title": "AI is straining America’s open records systems",
+   "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-25T10:00:00+00:00",
+   "summary": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During…"
+  },
+  {
+   "title": "Claude AI’s Biggest Math Breakthrough Has A Problem.",
+   "url": "https://www.youtube.com/watch?v=hwWlEuI359w",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-25T09:54:23+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/hwWlEuI359w/hqdefault.jpg"
+  },
+  {
+   "title": "Three LLM inflection points in twelve months",
+   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+   "source": "Simon Willison",
+   "kind": "news",
+   "published": "2026-11-24T23:02:07+00:00",
+   "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve…"
+  },
+  {
+   "title": "Which One Should You Use: Fable 5.2 or Opus 5.5",
+   "url": "https://www.youtube.com/shorts/7XC1A1TXMok",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-24T20:00:10+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/7XC1A1TXMok/hqdefault.jpg"
+  },
+  {
+   "title": "Java4Shell Exploit - Computerphile",
+   "url": "https://www.youtube.com/watch?v=4nFA4zntF7I",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-11-24T19:07:58+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/4nFA4zntF7I/hqdefault.jpg"
+  },
+  {
+   "title": "How Gemini is changing the game for Golden State's organization and fans.",
+   "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-24T16:00:00+00:00",
+   "summary": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news."
+  },
+  {
+   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-24T13:00:00+00:00",
+   "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets."
+  },
+  {
+   "title": "Searching for distant planets with Astra",
+   "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-24T11:00:00+00:00",
+   "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes."
+  },
+  {
+   "title": "How Intentful uses dots to make more time for growth",
+   "url": "https://openai.com/business/customer-stories/intentful-dots",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-24T00:00:00+00:00",
+   "summary": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues."
+  },
+  {
+   "title": "How iFood scales coding agents across 15,000 repositories",
+   "url": "https://openai.com/business/customer-stories/ifood",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-24T00:00:00+00:00"
+  },
+  {
+   "title": "Clay helps sales teams win with Codex and ChatGPT",
+   "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-24T00:00:00+00:00",
+   "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning."
+  },
+  {
+   "title": "OpenAI and Cisco introduce Shirudo",
+   "url": "https://openai.com/index/introducing-shirudo",
+   "source": "OpenAI",
+   "kind": "news",
+   "published": "2026-11-23T21:20:00+00:00",
+   "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches."
+  },
+  {
+   "title": "Opus just lost to the last company you'd expect...",
+   "url": "https://www.youtube.com/watch?v=jP9yjEDlc4k",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-23T19:14:30+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/jP9yjEDlc4k/hqdefault.jpg"
+  },
+  {
+   "title": "Fable 5.2 Is More Capable But Not \"Better\"",
+   "url": "https://www.youtube.com/shorts/l1PlTcVGqok",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-23T19:00:15+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/l1PlTcVGqok/hqdefault.jpg"
+  },
+  {
+   "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+   "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+   "source": "MIT Tech Review",
+   "kind": "news",
+   "published": "2026-11-23T17:36:08+00:00",
+   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be…"
+  },
+  {
+   "title": "A more tailored Google Search that’s uniquely yours",
+   "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+   "source": "Google AI",
+   "kind": "news",
+   "published": "2026-11-23T17:00:00+00:00",
+   "summary": "Google Search bar with the text \"Personal Intelligence\" surrounded by the Google Wallet, Google Drive, GMail, Google Photos, Google Calendar, and Google G logo icons"
+  },
+  {
+   "title": "Claude AI Solved The Secret Of Black Holes",
+   "url": "https://www.youtube.com/watch?v=1jPdehG3Hms",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-23T07:37:52+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/1jPdehG3Hms/hqdefault.jpg"
+  },
+  {
+   "title": "If you like Open Models, I'm sorry",
+   "url": "https://www.youtube.com/watch?v=B2rFx4Fy1us",
+   "source": "Theo",
+   "kind": "video",
+   "published": "2026-11-22T15:00:39+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/B2rFx4Fy1us/hqdefault.jpg"
+  },
+  {
+   "title": "We've been asking: “What if AI solved the Riemann Hypothesis?”",
+   "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-11-22T02:02:12+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/zqzk43bSdDI/hqdefault.jpg"
+  },
+  {
+   "title": "Anthropic IPOs, GPT 6.2 Astra Arrives, But There’s a Bigger Story",
+   "url": "https://www.youtube.com/watch?v=KGA7B_c_S4s",
+   "source": "AI Explained",
+   "kind": "video",
+   "published": "2026-11-19T20:03:10+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/KGA7B_c_S4s/hqdefault.jpg"
+  },
+  {
+   "title": "This algorithm changed how I think about compression | Compression & Intelligence, part 3",
+   "url": "https://www.youtube.com/watch?v=qbsb9DpdZ6s",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-11-17T16:43:16+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/qbsb9DpdZ6s/hqdefault.jpg"
+  },
+  {
+   "title": "Encoding the encyclopedia on a rod",
+   "url": "https://www.youtube.com/shorts/0IZcjWtWmDA",
+   "source": "3Blue1Brown",
+   "kind": "video",
+   "published": "2026-11-17T16:43:03+00:00",
+   "thumbnail": "https://i1.ytimg.com/vi/0IZcjWtWmDA/hqdefault.jpg"
+  },
+  {
+   "title": "Atomic Operations - Computerphile",
+   "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
+   "source": "Computerphile",
+   "kind": "video",
+   "published": "2026-11-12T14:59:29+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/BHOw09O3ZsI/hqdefault.jpg"
+  },
+  {
+   "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
+   "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
+   "source": "AI Explained",
+   "kind": "video",
+   "published": "2026-11-10T23:11:36+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/583ThJIqQ7k/hqdefault.jpg"
+  }
+ ]
+}

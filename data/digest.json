@@ -1,6 +1,149 @@
 {
- "generated_at": "2026-11-26T21:06:17.960001+00:00",
+ "generated_at": "2026-11-27T21:05:35.937602+00:00",
  "items": [
+  {
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T19:31:01+00:00",
+   "summary": "Article URL: https://twitter.com/michael_nielsen/status/2126359767362748777 Comments URL: https://news.ycombinator.com/item?id=50670757 Points: 138 # Comments: 92"
+  },
+  {
+   "title": "Convex skills send the user's app idea to a remote server without telling them",
+   "url": "https://github.com/convex/convex-backend-skill/issues/64",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T18:02:45+00:00",
+   "summary": "Article URL: https://github.com/convex/convex-backend-skill/issues/64 Comments URL: https://news.ycombinator.com/item?id=50669765 Points: 118 # Comments: 44"
+  },
+  {
+   "title": "I'm Scared of AI",
+   "url": "https://thesoapbox.email/archive/3",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-27T17:45:31+00:00",
+   "summary": "Article URL: https://thesoapbox.email/archive/3 Comments URL: https://news.ycombinator.com/item?id=50669561 Points: 191 # Comments: 214"
+  },
+  {
+   "title": "The wild world of tech in 2027...",
+   "url": "https://www.youtube.com/watch?v=sPGzM3ktJVE",
+   "source": "Fireship",
+   "kind": "video",
+   "published": "2026-11-27T16:08:25+00:00",
+   "thumbnail": "https://i4.ytimg.com/vi/sPGzM3ktJVE/hqdefault.jpg"
+  },
+  {
+   "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+   "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T15:40:31+00:00",
+   "summary": "Article URL: https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer Comments URL: https://news.ycombinator.com/item?id=50668145 Points: 282 # Comments: 160"
+  },
+  {
+   "title": "False computer-checked proofs",
+   "url": "https://cr.yp.to/proofs/falseccp.html",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T15:26:09+00:00",
+   "summary": "Article URL: https://cr.yp.to/proofs/falseccp.html Comments URL: https://news.ycombinator.com/item?id=50667989 Points: 135 # Comments: 60"
+  },
+  {
+   "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+   "url": "https://bouncemarket.minhanhday.com/",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T15:01:50+00:00",
+   "summary": "a ball will fall. trade on where it lands. I made this game! Some technical details: The entire drop of the ball is simulated server-side, then streamed to each client as server-sent events with a small buffer. Every…"
+  },
+  {
+   "title": "US Air Force's cloud computing platform hacked",
+   "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+   "source": "Hacker News",
+   "kind": "news",
+   "published": "2026-11-27T12:54:11+00:00",
+   "summary": "Article URL: https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163 Comments URL: https://news.ycombinator.com/item?id=50666375 Points: 281 # Comments: 178"
+  },
+  {
+   "title": "AI on brink of making online security useless, mathematicians fear",
+   "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-27T11:09:04+00:00",
+   "summary": "https://archive.ph/4hRp8 Comments URL: https://news.ycombinator.com/item?id=50665488 Points: 111 # Comments: 146"
+  },
+  {
+   "title": "DeepMind’s New AI Just Changed The AI Race",
+   "url": "https://www.youtube.com/watch?v=u6UYsl-KEoc",
+   "source": "Two Minute Papers",
+   "kind": "video",
+   "published": "2026-11-27T08:42:30+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/u6UYsl-KEoc/hqdefault.jpg"
+  },
+  {
+   "title": "Group chat where your AI talks behind your back",
+   "url": "https://construct22.com/",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-27T06:44:34+00:00",
+   "summary": "Article URL: https://construct22.com/ Comments URL: https://news.ycombinator.com/item?id=50663595 Points: 633 # Comments: 273"
+  },
+  {
+   "title": "Context Scaling: A New Frontier of AI Scaling",
+   "url": "https://arxiv.org/abs/2611.33160",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33160v1 Announce Type: new Abstract: Many failures of deployed AI arise not from weak inference but from a mismatch between the state a task depends on and the context available when the system acts. Relevant…"
+  },
+  {
+   "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+   "url": "https://arxiv.org/abs/2611.33161",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each…"
+  },
+  {
+   "title": "AutoformBench: A Lean Formalization Benchmark for Advanced Mathematics",
+   "url": "https://arxiv.org/abs/2611.33165",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33165v1 Announce Type: new Abstract: AI systems are increasingly capable of producing machine-checked Lean proofs of advanced mathematical results. Real mathematical formalization, however, is not isolated…"
+  },
+  {
+   "title": "General-Purpose Decision Models for AI Configuration Tuning",
+   "url": "https://arxiv.org/abs/2611.33190",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33190v1 Announce Type: new Abstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget. Existing tuners use different sampling and search…"
+  },
+  {
+   "title": "What, Who, and When: Structured Harm Assessment for Mental Health Safety via Short Reasoning",
+   "url": "https://arxiv.org/abs/2611.33263",
+   "source": "arXiv cs.AI",
+   "kind": "paper",
+   "published": "2026-11-27T05:00:00+00:00",
+   "summary": "arXiv:2611.33263v1 Announce Type: new Abstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns. Existing guard models primarily identify categories of harmful…"
+  },
+  {
+   "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+   "url": "https://huggingface.co/blog/video-trainium3",
+   "source": "Hugging Face",
+   "kind": "news",
+   "published": "2026-11-27T00:00:00+00:00"
+  },
+  {
+   "title": "AI made self-hosting fun again",
+   "url": "https://janlukas.blog/posts/ai-self-hosting",
+   "source": "Hacker News · AI",
+   "kind": "news",
+   "published": "2026-11-26T21:47:45+00:00",
+   "summary": "Article URL: https://janlukas.blog/posts/ai-self-hosting Comments URL: https://news.ycombinator.com/item?id=50660180 Points: 1042 # Comments: 492"
+  },
   {
    "title": "Nvidia hits pause on chip shipments to Southeast Asia",
    "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
@@ -10,44 +153,12 @@
    "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China."
   },
   {
-   "title": "CTO of 'RansomwareHelp' Indicted for Wire Fraud",
-   "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-26T17:47:45+00:00",
-   "summary": "Article URL: https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/ Comments URL: https://news.ycombinator.com/item?id=50657645 Points: 118 # Comments: 52"
-  },
-  {
-   "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
-   "url": "https://github.com/antonpictures/youtube-punisher",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-26T17:36:47+00:00",
-   "summary": "Article URL: https://github.com/antonpictures/youtube-punisher Comments URL: https://news.ycombinator.com/item?id=50657530 Points: 111 # Comments: 166"
-  },
-  {
    "title": "Tracking Diseases Cured by AI",
    "url": "https://diseasescuredbyai.com/",
    "source": "Hacker News · AI",
    "kind": "news",
    "published": "2026-11-26T17:16:41+00:00",
-   "summary": "Article URL: https://diseasescuredbyai.com/ Comments URL: https://news.ycombinator.com/item?id=50657307 Points: 283 # Comments: 173"
-  },
-  {
-   "title": "AMD Specific Patches for Llama.cpp",
-   "url": "https://devnull.land/amd-specific-llama-cpp",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-26T17:11:29+00:00",
-   "summary": "Article URL: https://devnull.land/amd-specific-llama-cpp Comments URL: https://news.ycombinator.com/item?id=50657265 Points: 183 # Comments: 48"
-  },
-  {
-   "title": "NP_R ≠ PAR_R",
-   "url": "https://github.com/samueleverett01/bss-permanent-separations",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-26T16:50:55+00:00",
-   "summary": "Article URL: https://github.com/samueleverett01/bss-permanent-separations Comments URL: https://news.ycombinator.com/item?id=50657059 Points: 121 # Comments: 140"
+   "summary": "Article URL: https://diseasescuredbyai.com/ Comments URL: https://news.ycombinator.com/item?id=50657307 Points: 317 # Comments: 192"
   },
   {
    "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
@@ -64,30 +175,6 @@
    "kind": "news",
    "published": "2026-11-26T15:09:31+00:00",
    "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find…"
-  },
-  {
-   "title": "Tell HN: Happy Thanksgiving",
-   "url": "https://news.ycombinator.com/item?id=50655664",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-26T14:26:54+00:00",
-   "summary": "Hopefully it’s a great day spent with your friends and family. And if it’s not, make it a great day anyway! Comments URL: https://news.ycombinator.com/item?id=50655664 Points: 506 # Comments: 128"
-  },
-  {
-   "title": "Jensen Huang deepfakes are the hot new AI slop",
-   "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
-   "source": "The Verge AI",
-   "kind": "news",
-   "published": "2026-11-26T12:29:18+00:00",
-   "summary": "Jensen Huang is partying it up in Ibiza. In a video with nearly 6 million views on Instagram, the former CEO of Nvidia is dancing in a crowded club, champagne glass in hand, still wearing his signature black leather…"
-  },
-  {
-   "title": "Nextcloud Office Desktop app",
-   "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
-   "source": "Hacker News",
-   "kind": "news",
-   "published": "2026-11-26T11:50:49+00:00",
-   "summary": "Article URL: https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/ Comments URL: https://news.ycombinator.com/item?id=50654289 Points: 367 # Comments: 183"
   },
   {
    "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
@@ -110,7 +197,7 @@
    "source": "Hacker News · AI",
    "kind": "news",
    "published": "2026-11-26T09:44:23+00:00",
-   "summary": "Article URL: https://techstackups.com/articles/google-workspace-ai-agents-mcp/ Comments URL: https://news.ycombinator.com/item?id=50653477 Points: 142 # Comments: 157"
+   "summary": "Article URL: https://techstackups.com/articles/google-workspace-ai-agents-mcp/ Comments URL: https://news.ycombinator.com/item?id=50653477 Points: 416 # Comments: 329"
   },
   {
    "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
@@ -134,86 +221,6 @@
    "source": "Hugging Face",
    "kind": "news",
    "published": "2026-11-26T05:05:36+00:00"
-  },
-  {
-   "title": "Attributing Agentic Failure in Reasoning Vision-Language Models with Interactive 2D Environments",
-   "url": "https://arxiv.org/abs/2611.33162",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33162v1 Announce Type: new Abstract: Agentic benchmarks report a success rate that confounds distinct causes of failure: misreading the environment, never working out how components of the environment…"
-  },
-  {
-   "title": "Quantum Machine Learning for Signature Forgery Detection",
-   "url": "https://arxiv.org/abs/2611.33163",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33163v1 Announce Type: new Abstract: Offline handwritten signatures remain a primary behavioural biometric in legal and financial documents. Detecting skilled forgeries from a static raster image is hard…"
-  },
-  {
-   "title": "Code availability is not enough: schemas for documenting and extending data analysis",
-   "url": "https://arxiv.org/abs/2611.33167",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33167v1 Announce Type: new Abstract: A data analysis involves a sequence of decisions, from data cleaning to model specification, each of which can affect the reported result. Reproducing that result is not…"
-  },
-  {
-   "title": "Temporal Exposure to Byzantine Vulnerability Under Intermittent Participation in Federated Learning",
-   "url": "https://arxiv.org/abs/2611.33168",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33168v1 Announce Type: new Abstract: In this paper, we study the effect of participation variability on per-round Byzantine vulnerability. We formalise Dynamic Participation Exposure (DPE), a phenomenon in…"
-  },
-  {
-   "title": "Geophysics-informed invertible operator network for Bayesian geophysical inversion",
-   "url": "https://arxiv.org/abs/2611.33178",
-   "source": "arXiv cs.LG",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33178v1 Announce Type: new Abstract: Geophysical inverse problems are inherently ill-posed because of sparse observations and measurement noise. Classical sampling-based Bayesian inference methods, such as…"
-  },
-  {
-   "title": "Context Scaling: A New Frontier of AI Scaling",
-   "url": "https://arxiv.org/abs/2611.33160",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33160v1 Announce Type: new Abstract: Many failures of deployed AI arise not from weak inference but from a mismatch between the state a task depends on and the context available when the system acts. Relevant…"
-  },
-  {
-   "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
-   "url": "https://arxiv.org/abs/2611.33161",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each…"
-  },
-  {
-   "title": "AutoformBench: A Lean Formalization Benchmark for Advanced Mathematics",
-   "url": "https://arxiv.org/abs/2611.33165",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33165v1 Announce Type: new Abstract: AI systems are increasingly capable of producing machine-checked Lean proofs of advanced mathematical results. Real mathematical formalization, however, is not isolated…"
-  },
-  {
-   "title": "General-Purpose Decision Models for AI Configuration Tuning",
-   "url": "https://arxiv.org/abs/2611.33190",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33190v1 Announce Type: new Abstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget. Existing tuners use different sampling and search…"
-  },
-  {
-   "title": "What, Who, and When: Structured Harm Assessment for Mental Health Safety via Short Reasoning",
-   "url": "https://arxiv.org/abs/2611.33263",
-   "source": "arXiv cs.AI",
-   "kind": "paper",
-   "published": "2026-11-26T05:00:00+00:00",
-   "summary": "arXiv:2611.33263v1 Announce Type: new Abstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns. Existing guard models primarily identify categories of harmful…"
   },
   {
    "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
@@ -247,12 +254,12 @@
    "summary": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users.…"
   },
   {
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-   "source": "Hacker News · AI",
+   "title": "Android’s DIY widgets are a bit of vibe-coding fun",
+   "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+   "source": "The Verge AI",
    "kind": "news",
-   "published": "2026-11-25T21:18:02+00:00",
-   "summary": "https://archive.ph/pcUgy Comments URL: https://news.ycombinator.com/item?id=50647673 Points: 634 # Comments: 505"
+   "published": "2026-11-25T21:43:14+00:00",
+   "summary": "Aside from dealing with my calendar, there's one thing I want AI to do: tell me if I'm about to miss the bus. What I need is a widget. It needs to tell me real-time arrivals for the bus stop near my house. Tapping…"
   },
   {
    "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
@@ -349,43 +356,12 @@
    "thumbnail": "https://i1.ytimg.com/vi/hwWlEuI359w/hqdefault.jpg"
   },
   {
-   "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
-   "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-25T03:47:42+00:00",
-   "summary": "Article URL: https://www.marginalia.nu/log/a_141_marginalia_update/ Comments URL: https://news.ycombinator.com/item?id=50638220 Points: 222 # Comments: 85"
-  },
-  {
-   "title": "Top open problems in mathematics ranked by LLM-assessed importance",
-   "url": "https://www.proofatlas.ai/open-problems/",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-25T03:01:36+00:00",
-   "summary": "Article URL: https://www.proofatlas.ai/open-problems/ Comments URL: https://news.ycombinator.com/item?id=50637871 Points: 104 # Comments: 53"
-  },
-  {
-   "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
-   "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
-   "source": "Hugging Face",
-   "kind": "news",
-   "published": "2026-11-25T00:00:00+00:00"
-  },
-  {
    "title": "Three LLM inflection points in twelve months",
    "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
    "source": "Simon Willison",
    "kind": "news",
    "published": "2026-11-24T23:02:07+00:00",
    "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve…"
-  },
-  {
-   "title": "Working with AI",
-   "url": "https://www.anthropic.com/research/working-with-ai",
-   "source": "Hacker News · AI",
-   "kind": "news",
-   "published": "2026-11-24T21:07:38+00:00",
-   "summary": "Article URL: https://www.anthropic.com/research/working-with-ai Comments URL: https://news.ycombinator.com/item?id=50634734 Points: 89 # Comments: 77"
   },
   {
    "title": "Which One Should You Use: Fable 5.2 or Opus 5.5",
@@ -515,36 +491,12 @@
    "thumbnail": "https://i3.ytimg.com/vi/zqzk43bSdDI/hqdefault.jpg"
   },
   {
-   "title": "If you’ve deployed anything since 2015, I have bad news...",
-   "url": "https://www.youtube.com/watch?v=rMaMe32qQkA",
-   "source": "Fireship",
-   "kind": "video",
-   "published": "2026-11-20T19:49:02+00:00",
-   "thumbnail": "https://i3.ytimg.com/vi/rMaMe32qQkA/hqdefault.jpg"
-  },
-  {
-   "title": "The most misunderstood graph in AI just got a major update",
-   "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-   "source": "MIT Tech Review",
-   "kind": "news",
-   "published": "2026-11-20T18:15:15+00:00",
-   "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require…"
-  },
-  {
    "title": "Anthropic IPOs, GPT 6.2 Astra Arrives, But There’s a Bigger Story",
    "url": "https://www.youtube.com/watch?v=KGA7B_c_S4s",
    "source": "AI Explained",
    "kind": "video",
    "published": "2026-11-19T20:03:10+00:00",
    "thumbnail": "https://i4.ytimg.com/vi/KGA7B_c_S4s/hqdefault.jpg"
-  },
-  {
-   "title": "DeepMind Just Released The Best Thing AI Ever Did",
-   "url": "https://www.youtube.com/watch?v=Cy7Wz6Z4TWU",
-   "source": "Two Minute Papers",
-   "kind": "video",
-   "published": "2026-11-19T09:26:19+00:00",
-   "thumbnail": "https://i4.ytimg.com/vi/Cy7Wz6Z4TWU/hqdefault.jpg"
   },
   {
    "title": "This algorithm changed how I think about compression | Compression & Intelligence, part 3",
